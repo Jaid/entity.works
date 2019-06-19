@@ -1,30 +1,22 @@
 {
+  "title": "Entity Works",
   "private": true,
-  "webpackConfigJaid": "INSERT",
+  "webpackConfigJaid": "webapp",
   "version": "0.1.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
     "@babel/runtime": "^7.4.5",
-    "arraybuffer-equal": "^1.0.4",
-    "base64-arraybuffer-es6": "^0.5.0",
     "classnames": "^2.2.6",
     "debug": "^4.1.1",
-    "howler": "^2.1.2",
     "immer": "^3.1.3",
+    "lodash": "^4.17.11",
     "modern-normalize": "^0.5.0",
     "query-string": "^6.7.0",
-    "rc-input-number": "^4.4.5",
-    "rc-select": "^9.1.5",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.1.0",
-    "react-switch": "^5.0.0",
     "redux": "^4.0.1",
-    "redux-action": "^1.2.2",
-    "redux-form": "^8.2.4",
-    "redux-thunk": "^2.3.0",
-    "shortid": "^2.2.14",
-    "socket.io-client": "^2.2.0"
+    "redux-action": "^1.2.2"
   },
   "devDependencies": {
     "@hot-loader/react-dom": "^16.8.6",
@@ -43,10 +35,9 @@
     "webpack-config-jaid": "^5.7.1"
   },
   "scripts": {
-    "clean": "rimraf dist/ test/**/dist/",
+    "clean": "rimraf dist/",
     "start": "webpackPort=1212 START_HOT=1 NODE_ENV=development webpack-dev-server",
     "build:prod": "NODE_ENV=production webpack",
-    "build:dev": "webpack",
-    "release": "npm run clean && npm test && git tag v$npm_package_version && git push --tags && opn https://github.com/$npm_package_author_name/$(basename $PWD)/releases/new?tag=v$npm_package_version"
+    "build:dev": "NODE_ENV=development webpack"
   }
 }
