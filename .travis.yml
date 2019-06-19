@@ -1,0 +1,35 @@
+language: node_js
+node_js: [node, lts/*]
+script:
+  - curl https://gist.githubusercontent.com/Jaid/284917bd3e938add97b699a18b957d8c/raw/ciNode.bash | bash
+jobs:
+  include:
+    - stage: Deploy
+      if: tag IS present
+      node_js: node
+      script:
+        - curl https://gist.githubusercontent.com/Jaid/284917bd3e938add97b699a18b957d8c/raw/ciNodeRelease.bash | bash
+        - pkgName=$(npx package-name-cli)
+      deploy:
+        - provider: pages
+          local_dir: dist/page
+          fqdn: $pkgName.jaid.codes
+          skip_cleanup: true
+          github_token: $GITHUB_TOKEN
+          on:
+            tags: true
+            condition: "-f ~/deployPage"
+        - provider: releases
+          file_glob: true
+          file: dist/github/*
+          skip_cleanup: true
+          api_key: $GITHUB_TOKEN
+          on:
+            tags: true
+            condition: "-f ~/deployReleases"
+        - provider: script
+          script: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc && npm publish dist/package/production
+          skip_cleanup: true
+          on:
+            tags: true
+            condition: "-f ~/deployNpm"

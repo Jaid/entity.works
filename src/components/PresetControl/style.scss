@@ -1,0 +1,30 @@
+.container {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.presetName {
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.removeButton {
+  float: right;
+  cursor: pointer;
+  color: red;
+  background: transparent;
+  border: 1px solid red;
+  border-radius: 20%;
+  outline: none;
+  position: relative;
+  right: -5px;
+  bottom: 5px;
+
+  &:hover {
+    color: white;
+    border-color: white;
+  }
+}

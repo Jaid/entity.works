@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "charset": "utf8",
+    "baseUrl": "./",
+    "paths": {
+      "root/*": [
+        "./*"
+      ],
+      "src/*": [
+        "src/*"
+      ],
+      "lib/*": [
+        "src/lib/*"
+      ],
+      "components/*": [
+        "src/components/*"
+      ],
+    },
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+}
