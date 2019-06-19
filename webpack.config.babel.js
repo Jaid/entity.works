@@ -4,6 +4,10 @@ import configure from "webpack-config-jaid"
 
 export default configure({
   publishimo: {fetchGithub: true},
+  optimizeCss: true,
+  createCssFile: true,
+  robots: true,
+  domain: "entity.works",
   extra: {
     resolve: {
       alias: {
