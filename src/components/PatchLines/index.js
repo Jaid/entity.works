@@ -4,14 +4,19 @@ import classnames from "classnames"
 import {ensureObject, ensureArray} from "magina"
 import reactStringReplace from "react-string-replace"
 import PerkBox from "components/PerkBox"
+import KillerBox from "components/KillerBox"
 
 import css from "./style.scss"
 
 const getRichText = text => {
   return reactStringReplace(text, /{{([\w:]+)}}/g, token => {
     const [type, name] = token.split(":")
-    console.log(token)
-    return <PerkBox perk={name}/>
+    if (type === "killer") {
+      return <KillerBox killer={name}/>
+    }
+    if (type === "perk") {
+      return <PerkBox perk={name}/>
+    }
   })
 }
 
@@ -19,7 +24,7 @@ export default class PatchLines extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
-    points: PropTypes.arrayOf(PropTypes.any).isRequired,
+    points: PropTypes.oneOf([PropTypes.arrayOf(PropTypes.any), PropTypes.string]).isRequired,
   }
 
   render() {

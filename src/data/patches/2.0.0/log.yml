@@ -90,29 +90,29 @@ points:
   fixes:
     - text: Killers
       points:
-        - Fixed an issue that caused Bloodlust to be reset at the end of a Chainsaw Sprint with the Hillbilly. Bloodlust will now reset at the start of the Chainsaw Sprint instead.
-        - Fixed an issue that caused The Doctor's Maple Knight add-on not to work properly
-        - Fixed an issue that caused The Huntress' hatchets to hit a collision over a picnic bench in Lampkin Lane
-        - Fixed an issue that caused The Huntress' hatchets to hit a collision when thrown over the engine part of the generators
-        - Fixed an issue that caused The Huntress' hatchets to hit a collisions when thrown over the flatbed of the pick up truck asset
-        - Fixed an issue that caused The Huntress' red stain to flicker while idle
-        - Fixed an issue that caused The Wraith's red stain to be visible for a few seconds after successfully cloaking
-        - Fixed an issue that caused blood splatters to appear on the Huntress' screen when successfully hitting a Survivor with a hatchet
+        - Fixed an issue that caused Bloodlust to be reset at the end of a Chainsaw Sprint with the {{killer:hillbilly}}. Bloodlust will now reset at the start of the Chainsaw Sprint instead.
+        - Fixed an issue that caused {{killer:doctor}}'s Maple Knight add-on not to work properly
+        - Fixed an issue that caused {{killer:huntress}}' hatchets to hit a collision over a picnic bench in Lampkin Lane
+        - Fixed an issue that caused {{killer:huntress}}' hatchets to hit a collision when thrown over the engine part of the generators
+        - Fixed an issue that caused {{killer:huntress}}' hatchets to hit a collisions when thrown over the flatbed of the pick up truck asset
+        - Fixed an issue that caused {{killer:huntress}}' red stain to flicker while idle
+        - Fixed an issue that caused {{killer:wraith}}'s red stain to be visible for a few seconds after successfully cloaking
+        - Fixed an issue that caused blood splatters to appear on {{killer:huntress}}' screen when successfully hitting a Survivor with a hatchet
         - Fixed an issue that caused players to become stuck if attempting to cleanse a totem that has a bear trap in front of it
-        - Fixed an issue that caused the Killer Burn score events for The Wraith and Nurse not properly trigger
+        - Fixed an issue that caused the Killer Burn score events for {{killer:wraith}} and Nurse not properly trigger
         - Fixed an issue that caused the Survivor to briefly go flying when a Survivor dropped a pallet on the Killer during the pick up animation
         - Fixed an issue that caused the Survivors camera to become offset when being pulled out of a locker or interrupted by the Killer
-        - Fixed an issue that caused the Trappers add-on Logwood Dye to take priority over the Tar Bottle add-on
-        - Fixed an issue that could cause The Hag to fall out of world when teleporting to a trap with the Mint Rag add-on
+        - Fixed an issue that caused {{killer:trapper}} add-on Logwood Dye to take priority over the Tar Bottle add-on
+        - Fixed an issue that could cause {{killer:hag}} to fall out of world when teleporting to a trap with the Mint Rag add-on
         - Fixed an issue that could cause a client to be unable to interact and repeatedly teleport from their location if the Killer had interrupted their exit locker animation
-        - Fixed an issue that could caused a non-host Trapper to be launched in the air when picking up a trapped Survivor
+        - Fixed an issue that could caused a non-host {{killer:trapper}} to be launched in the air when picking up a trapped Survivor
         - Fixed an issue that made it impossible to heal, Snap Out of It, or use Dead Hard during the Killer stun animation when getting free from their shoulder
         - Fixed an issue that made it impossible to hit a Survivor that was underneath the Killer
-        - Fixed an issue that made it possible for The Huntress' hatchets to hit Survivors through walls
-        - Fixed an issue that would cause the nurse blink destination (and thus the plaid flannel's target blink indicator) to wiggle around obstructions while moving/charging blink
-        - Fixed an issue where The Doctor's illusions did not match the equipped customization items
-        - Fixed an issue where hair was not highlighted when stalking a Survivor as the Shape
-        - Fixed an issue which caused the Hag, the Nightmare and the Pig to vault windows slower than intended. All killers should now vault windows in 1.7 seconds.
+        - Fixed an issue that made it possible for {{killer:huntress}}' hatchets to hit Survivors through walls
+        - Fixed an issue that would cause {{killer:nurse}} blink destination (and thus the plaid flannel's target blink indicator) to wiggle around obstructions while moving/charging blink
+        - Fixed an issue where {{killer:doctor}}'s illusions did not match the equipped customization items
+        - Fixed an issue where hair was not highlighted when stalking a Survivor as {{killer:shape}}
+        - Fixed an issue which caused {{killer:hag}}, {{killer:nightmare}} and {{killer:pig}} to vault windows slower than intended. All killers should now vault windows in 1.7 seconds.
     - text: Maps
       points:
         - Changed the position of the white arrows on the ground in The Game map to properly indicate where the stair cases are
@@ -171,6 +171,6 @@ points:
     - Misc stability improvements
   known issues:
     - Kate's hair and t-shirts are stretching when running or performing an action
-    - The Clown's reload related add-ons are currently affected by the Tinkerer Perk. We're currently in the process of changing the mechanics for the Tinkerer perk and this will result in it not affecting add-ons directly in the future.
-    - The Hag's killer stain is too pale.
-    - The Hillbilly's First Anniversary weapon doesn't display in the inventory
+    - "{{killer:clown}}'s reload related add-ons are currently affected by the {{perk:tinkerer}}. We're currently in the process of changing the mechanics for the {{perk:tinkerer}} perk and this will result in it not affecting add-ons directly in the future."
+    - "{{killer:hag}}'s killer stain is too pale."
+    - "{{killer:hillbilly}}'s First Anniversary weapon doesn't display in the inventory"

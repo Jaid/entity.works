@@ -1,6 +1,7 @@
 const path = require("path")
 
 const fsp = require("@absolunet/fsp")
+const {titleCase} = require("change-case")
 
 module.exports = async () => {
   const perksFolder = __dirname
@@ -13,7 +14,7 @@ module.exports = async () => {
     }
     const data = await fsp.readYaml(infoFile)
     return {
-      title: data.id,
+      title: data.id |> titleCase,
       teachable: false,
       visible: true,
       ...data,
