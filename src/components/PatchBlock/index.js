@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import patchData from "src/data/patches"
 import moment from "moment"
+import {omit} from "lodash"
+import PatchContent from "components/PatchContent"
 
 import css from "./style.scss"
 
@@ -36,7 +38,7 @@ export default class PatchBlock extends React.Component {
         <div className={css.headerInfo}>{headerText.info}</div>
         <div className={css.title}>{headerText.title}</div>
       </div>
-      <div className={css.content}>Content</div>
+     <PatchContent points={this.props.patch.points}/>
     </div>
   }
 

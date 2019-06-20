@@ -1,39 +1,40 @@
 - semver: "2.0.0"
   date: 12.06.2018
-  features:
-    - Added a new head customization item for Dwight for players who own the Leatherface DLC
-    - Added new idle animations for Killers in the offline lobby & store sections
-    - Added new main menu music to tie in with the DLC Chapter
-    - Added new sounds when Emblems appear in the Tally Screen based on their quality
-    - Integrated Simplified Chinese, Japanese and Korean community localization
-    - Removed the RedShell third party tool from the game
-    - Added Tutorial levels to explain Survivor & Killer gameplay
-    - Added an in-game Store to purchase characters and cosmetics. The store now also hosts the Shrine of Secrets.
-    - Added the Player Level functionality. This is an account based progression that rewards the player with Iridescent Shards upon leveling up.
-    - Re-designed all confirmation prompts
-    - Updated the main menu and player loadout button layouts to accommodate for the newly added Store and Tutorials.
-  balance:
-    - Adjusted the level requirements for unlocking perk slots. The 2nd, 3rd and 4th perk slots now unlock at levels 5/10/15 respectively (down from 15/20/25)
-    - Adjusted the red aura intensity for killers on totems, bear traps, hooks and generators.
-    - All characters now start with their 3 personal perks unlocked by default (at level 1)
-    - Changed hook auras to always be visible from the Killer's standpoint while carrying a survivor. Prior to this change, hook auras would only be displayed if the hook was hidden behind another object.
-    - Decreased the Wraith flashlight uncloak stun time from 4 seconds to 3 seconds
-    - Decreased the range of activation for the Killer pick up interaction
-    - Fixed an issue that caused The Wraith's red stain and terror radius to remain for several seconds after successfully cloaking. This change gives the Wraith the bit of a boost that he needs, and also applies when damaging generators and destroying pallets.
-    - Removed the acceleration curve when the Survivor was hit by the Killer. Removing the acceleration curve should allow the Survivors to use their default acceleration and have more control over their character during the speed boost.
-    - Removed the possibility of spawning the Doctor or the Hag splinters in the Bloodweb because these characters can now be purchased for Iridescent Shards.
-  map:
-    - Added a few totem spawn points in the buildings of Macmillan Estate
-    - Adjusted Torment Creek and Rancid Abattoir map layouts to create more distance between the maze tiles
-    - Changed the number of hooks for each map to be based on its number of tiles (Total Tile Count / 3)
-    - Improved totem placement in various maps
-    - Pallet loops in the maps of Macmillan Estate, Autohaven Wreckers and Coldwind Farm themes have been tweaked in order to increase their fun factor
-    - Relaxed the default Survivor-on-Survivor spawning rules in order to minimize the occurrence of killers spawning close to survivors.
-    - Updated pallets within Badham, Hospital and "map" The Game to use procedural distribution system. This should result in a more fair pallet generation.
-  misc:
-    - text: The shards economy has been reworked completely
-      points:
-        - Shards are now obtained by leveling up your Player Level
-        - The maximum cap for the Shards has been removed
-        - Shrine of Secrets teachable perk costs have been increased to 2700/2000 (previously at 750/550). Note that the Shrine of Secrets will remain empty until this update is released on all platforms.
-        - Shrine can now be used to purchase certain characters and cosmetics from the Store, in addition to purchasing teachable perks from the Shrine of Secrets. The amount of Bloodpoints received when purchasing an already owned Teachable Perk from the Shrine has been reduced to 200000 / 150000 (from 250000 / 200000) for new and old perks respectively
+  points:
+    features:
+      - Added a new head customization item for Dwight for players who own the Leatherface DLC
+      - Added new idle animations for Killers in the offline lobby & store sections
+      - Added new main menu music to tie in with the DLC Chapter
+      - Added new sounds when Emblems appear in the Tally Screen based on their quality
+      - Integrated Simplified Chinese, Japanese and Korean community localization
+      - Removed the RedShell third party tool from the game
+      - Added Tutorial levels to explain Survivor & Killer gameplay
+      - Added an in-game Store to purchase characters and cosmetics. The store now also hosts the Shrine of Secrets.
+      - Added the Player Level functionality. This is an account based progression that rewards the player with Iridescent Shards upon leveling up.
+      - Re-designed all confirmation prompts
+      - Updated the main menu and player loadout button layouts to accommodate for the newly added Store and Tutorials.
+    balance:
+      - Adjusted the level requirements for unlocking perk slots. The 2nd, 3rd and 4th perk slots now unlock at levels 5/10/15 respectively (down from 15/20/25)
+      - Adjusted the red aura intensity for killers on totems, bear traps, hooks and generators.
+      - All characters now start with their 3 personal perks unlocked by default (at level 1)
+      - Changed hook auras to always be visible from the Killer's standpoint while carrying a survivor. Prior to this change, hook auras would only be displayed if the hook was hidden behind another object.
+      - Decreased the Wraith flashlight uncloak stun time from 4 seconds to 3 seconds
+      - Decreased the range of activation for the Killer pick up interaction
+      - Fixed an issue that caused The Wraith's red stain and terror radius to remain for several seconds after successfully cloaking. This change gives the Wraith the bit of a boost that he needs, and also applies when damaging generators and destroying pallets.
+      - Removed the acceleration curve when the Survivor was hit by the Killer. Removing the acceleration curve should allow the Survivors to use their default acceleration and have more control over their character during the speed boost.
+      - Removed the possibility of spawning the Doctor or the Hag splinters in the Bloodweb because these characters can now be purchased for Iridescent Shards.
+    map:
+      - Added a few totem spawn points in the buildings of Macmillan Estate
+      - Adjusted Torment Creek and Rancid Abattoir map layouts to create more distance between the maze tiles
+      - Changed the number of hooks for each map to be based on its number of tiles (Total Tile Count / 3)
+      - Improved totem placement in various maps
+      - Pallet loops in the maps of Macmillan Estate, Autohaven Wreckers and Coldwind Farm themes have been tweaked in order to increase their fun factor
+      - Relaxed the default Survivor-on-Survivor spawning rules in order to minimize the occurrence of killers spawning close to survivors.
+      - Updated pallets within Badham, Hospital and "map" The Game to use procedural distribution system. This should result in a more fair pallet generation.
+    misc:
+      - text: The shards economy has been reworked completely
+        points:
+          - Shards are now obtained by leveling up your Player Level
+          - The maximum cap for the Shards has been removed
+          - Shrine of Secrets teachable perk costs have been increased to 2700/2000 (previously at 750/550). Note that the Shrine of Secrets will remain empty until this update is released on all platforms.
+          - Shrine can now be used to purchase certain characters and cosmetics from the Store, in addition to purchasing teachable perks from the Shrine of Secrets. The amount of Bloodpoints received when purchasing an already owned Teachable Perk from the Shrine has been reduced to 200000 / 150000 (from 250000 / 200000) for new and old perks respectively
