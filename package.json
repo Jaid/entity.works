@@ -1,5 +1,6 @@
 {
   "title": "Entity Works",
+  "domain": "entity.works",
   "private": true,
   "webpackConfigJaid": "webapp",
   "version": "0.4.2",
