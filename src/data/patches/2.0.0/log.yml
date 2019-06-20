@@ -99,14 +99,14 @@ points:
         - Fixed an issue that caused {{killer:wraith}}'s red stain to be visible for a few seconds after successfully cloaking
         - Fixed an issue that caused blood splatters to appear on {{killer:huntress}}' screen when successfully hitting a Survivor with a hatchet
         - Fixed an issue that caused players to become stuck if attempting to cleanse a totem that has a bear trap in front of it
-        - Fixed an issue that caused the Killer Burn score events for {{killer:wraith}} and Nurse not properly trigger
+        - Fixed an issue that caused the Killer Burn score events for {{killer:wraith}} and {{killer:nurse}} not properly trigger
         - Fixed an issue that caused the Survivor to briefly go flying when a Survivor dropped a pallet on the Killer during the pick up animation
         - Fixed an issue that caused the Survivors camera to become offset when being pulled out of a locker or interrupted by the Killer
         - Fixed an issue that caused {{killer:trapper}} add-on Logwood Dye to take priority over the Tar Bottle add-on
         - Fixed an issue that could cause {{killer:hag}} to fall out of world when teleporting to a trap with the Mint Rag add-on
         - Fixed an issue that could cause a client to be unable to interact and repeatedly teleport from their location if the Killer had interrupted their exit locker animation
         - Fixed an issue that could caused a non-host {{killer:trapper}} to be launched in the air when picking up a trapped Survivor
-        - Fixed an issue that made it impossible to heal, Snap Out of It, or use Dead Hard during the Killer stun animation when getting free from their shoulder
+        - Fixed an issue that made it impossible to heal, Snap Out of It, or use {{perk:DeadHard}} during the Killer stun animation when getting free from their shoulder
         - Fixed an issue that made it impossible to hit a Survivor that was underneath the Killer
         - Fixed an issue that made it possible for {{killer:huntress}}' hatchets to hit Survivors through walls
         - Fixed an issue that would cause {{killer:nurse}} blink destination (and thus the plaid flannel's target blink indicator) to wiggle around obstructions while moving/charging blink

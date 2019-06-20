@@ -8,6 +8,7 @@ export default configure({
   createCssFile: true,
   robots: true,
   domain: "entity.works",
+  configOutput: true,
   extra: {
     resolve: {
       alias: {

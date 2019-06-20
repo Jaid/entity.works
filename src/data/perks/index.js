@@ -12,15 +12,8 @@ module.exports = async () => {
     if (!infoFileExists) {
       return null
     }
-    const data = await fsp.readYaml(infoFile)
-    return {
-      title: data.id |> titleCase,
-      teachable: false,
-      visible: true,
-      ...data,
-    }
+    return fsp.readYaml(infoFile)
   })
   const perks = await Promise.all(fetchPerksJobs)
-  return perks
-    |> #.filter(perk => perk)
+  return perks.filter(Boolean)
 }

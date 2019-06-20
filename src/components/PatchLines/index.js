@@ -9,13 +9,13 @@ import KillerBox from "components/KillerBox"
 import css from "./style.scss"
 
 const getRichText = text => {
-  return reactStringReplace(text, /{{([\w:]+)}}/g, token => {
+  return reactStringReplace(text, /{{([\w:]+)}}/g, (token, index) => {
     const [type, name] = token.split(":")
     if (type === "killer") {
-      return <KillerBox killer={name}/>
+      return <KillerBox key={index} killer={name}/>
     }
     if (type === "perk") {
-      return <PerkBox perk={name}/>
+      return <PerkBox key={index} perk={name}/>
     }
   })
 }
@@ -24,7 +24,7 @@ export default class PatchLines extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
-    points: PropTypes.oneOf([PropTypes.arrayOf(PropTypes.any), PropTypes.string]).isRequired,
+    points: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.any), PropTypes.string]).isRequired,
   }
 
   render() {

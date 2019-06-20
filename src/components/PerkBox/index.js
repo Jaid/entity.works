@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
-import perks from "src/data/perks?aot"
+import perks from "lib/perks"
 
 import css from "./style.scss"
 

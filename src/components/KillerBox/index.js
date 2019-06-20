@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
-import killers from "src/data/killers?aot"
+import killers from "lib/killers"
 
 import css from "./style.scss"
 

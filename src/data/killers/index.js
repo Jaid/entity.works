@@ -12,11 +12,7 @@ module.exports = async () => {
     if (!infoFileExists) {
       return null
     }
-    const data = await fsp.readYaml(infoFile)
-    return {
-      title: `The ${data.id |> capitalize}`,
-      ...data,
-    }
+    return fsp.readYaml(infoFile)
   })
   const killers = await Promise.all(fetchJobs)
   return killers
