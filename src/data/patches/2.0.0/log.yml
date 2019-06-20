@@ -76,17 +76,17 @@ points:
         - Removed the ability to drop a pallet and rapidly cross the zone, what is often referred to as the pallet vacuum. With this change, a survivor will always stay on the same side of the pallet when triggering the interaction.
         - The way survivors drop pallets has changed, the interaction is now input based rather than velocity/ direction based. If you want to drop a pallet from a standstill, you simply need to be on the side of the pallet that you would like to stay after dropping the pallet, and press the drop pallet interaction key. If you would like to drop the pallet on the opposite side of you, as there is no longer a vacuum to take you from one side to the other, you must run through the pallet and press the drop pallet interaction key when you are on the other side of the pallet. *We are looking into fixing an issue where you cannot drop the pallet if you are holding the rush key (SHIFT key on PC) while dropping the pallet.
   perks:
-    - text: "{{perk:deadHard}}"
+    - text: "{{perk:DeadHard}}"
       points:
         - Added an new animation to indicate that the perk is active
-        - Removed the speed boost from Dead Hard while in the air. This change aims to fix a variety of game hostage issues in multiple maps
-    - text: Balanced Landing
+        - Removed the speed boost from {{perk:DeadHard}} while in the air. This change aims to fix a variety of game hostage issues in multiple maps
+    - text: "{{perk:balancedLanding}}"
       points:
         - Added sprint of 150% for 3 seconds for all Tiers
         - Sprint causes Exhaustion for 60/50/40 seconds
         - Stagger effects from long falls are reduced by 75% for all Tiers, without cooldown
-    - text: Stake Out
-      points: Stake Out's progression is not lost anymore when a token is consumed
+    - text: "{{perk:stakeOut}}"
+      points: "{{perk:stakeOut}}'s progression is not lost anymore when a token is consumed"
   fixes:
     - text: Killers
       points:

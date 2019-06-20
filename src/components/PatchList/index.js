@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
-import patchData from "src/data/patches.js?aot"
+import patchData from "src/data/patches?aot"
 import PatchBlock from "components/PatchBlock"
 
 import css from "./style.scss"
