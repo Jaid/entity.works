@@ -19,11 +19,11 @@ points:
     - Adjusted the red aura intensity for killers on totems, bear traps, hooks and generators.
     - All characters now start with their 3 personal perks unlocked by default (at level 1)
     - Changed hook auras to always be visible from the Killer's standpoint while carrying a survivor. Prior to this change, hook auras would only be displayed if the hook was hidden behind another object.
-    - Decreased the Wraith flashlight uncloak stun time from 4 seconds to 3 seconds
+    - Decreased the {{killer:wraith}} flashlight uncloak stun time from 4 seconds to 3 seconds
     - Decreased the range of activation for the Killer pick up interaction
-    - Fixed an issue that caused The Wraith's red stain and terror radius to remain for several seconds after successfully cloaking. This change gives the Wraith the bit of a boost that he needs, and also applies when damaging generators and destroying pallets.
+    - Fixed an issue that caused {{killer:wraith}}'s red stain and terror radius to remain for several seconds after successfully cloaking. This change gives the {{killer:wraith}} the bit of a boost that he needs, and also applies when damaging generators and destroying pallets.
     - Removed the acceleration curve when the Survivor was hit by the Killer. Removing the acceleration curve should allow the Survivors to use their default acceleration and have more control over their character during the speed boost.
-    - Removed the possibility of spawning the Doctor or the Hag splinters in the Bloodweb because these characters can now be purchased for Iridescent Shards.
+    - Removed the possibility of spawning {{killer:doctor}} or {{killer:hag}} splinters in the Bloodweb because these characters can now be purchased for Iridescent Shards.
   map:
     - Added a few totem spawn points in the buildings of Macmillan Estate
     - Adjusted Torment Creek and Rancid Abattoir map layouts to create more distance between the maze tiles
@@ -128,20 +128,20 @@ points:
         - Fixed an issue that could cause Killers to become stuck when hitting a Survivor in the corner next to one of the exit gates in Lery's Memorial Institute map
         - Fixed an issue that could cause an impassable gap between a brick wall and a tree by the exit in the MacMillan Estate theme maps
         - Fixed an issue that could cause the generator in the Vat Room of The Game map to be inaccessible from one side
-        - Fixed an issue that made it impossible for The Nurse to use her blink power to get on top of assets in the Autohaven Wrecker's and Coldwind Farm themes
+        - Fixed an issue that made it impossible for {{killer:nurse}} to use her blink power to get on top of assets in the Autohaven Wrecker's and Coldwind Farm themes
         - Fixed an issue that made it impossible to cleanse a totem between crates and a small log pile in the Suffocation Pit map
         - Fixed an issue that prevented Killers from damaging the generator in the Foundry building from one side
         - Fixed various LOD issues in the multiple maps
-        - Tweaked the brightness in a few of the darker rooms in The Game map to make it more visible when in the Dream State with The Nightmare
+        - Tweaked the brightness in a few of the darker rooms in The Game map to make it more visible when in the Dream State with {{killer:nightmare}}
   audio & localization:
-    - "Changed the requirements for unlocking the Adept achievements for Dwight, Meg, Claudette, Jake, Trapper, Wraith and Hillbilly to keep consistency with the other Adept achievements. Please note: If there is partial progress on the achievement, it will be lost since the unlock requirements have changed."
+    - "Changed the requirements for unlocking the Adept achievements for Dwight, Meg, Claudette, Jake, {{killer:trapper}}, {{killer:wraith}} and {{killer:hillbilly}} to keep consistency with the other Adept achievements. Please note: If there is partial progress on the achievement, it will be lost since the unlock requirements have changed."
     - Fixed an instance of an issue that could cause a client to get kicked out of a lobby, followed by an Easy Anti Cheat error message
-    - Fixed an issue that caused The Shape's Vanity Mirror add-on to use the wrong description when the language was set to Polish
+    - Fixed an issue that caused {{killer:shape}}'s Vanity Mirror add-on to use the wrong description when the language was set to Polish
     - Fixed an issue that caused the unhook audio to play shortly after hooking a Survivor
-    - Fixed an issue that could make the heartbeat extremely difficult to hear when the Killer had the perk Monitor & Abuse equipped
-    - Fixed improper formatting in the Dead Hard perk in English
+    - Fixed an issue that could make the heartbeat extremely difficult to hear when the Killer had the perk {{perk:monitorAndAbuse}} equipped
+    - Fixed improper formatting in the {{perk:DeadHard}} perk in English
     - Fixed the description for Claudette's Myopian Frohawk head customization in French, Italian, German and Spanish
-    - Fixed the improper values in the Bloodhound perk for Tier II in English
+    - Fixed the improper values in the {{perk:bloodhound}} perk for Tier II in English
     - Integrated some missing localization for Italian
     - Misc UI and icon improvements
     - Tweaked the hatch audio to be a bit louder and fixed sound occlusion
@@ -164,7 +164,7 @@ points:
     - Fixed an issue that could rarely cause the interrupt animation not to play
     - Fixed an issue that made it impossible to blind the Killer with a Survivor standing in front of them
     - Fixed an issue that made it impossible to make progress on the Taking One For The Team achievement
-    - Fixed an issue where The Cannibal's chainsaw didn't make noise during his memento mori if he hadn't previously used it
+    - Fixed an issue where {{killer:cannibal}}'s chainsaw didn't make noise during his memento mori if he hadn't previously used it
     - Fixed an issue where pips for players at rank one would be displayed on the Tally screen page (causing an inconsistency with the rank display at the top right)
     - Fixed multiple instances of character customization stretching from other players point of view
     - Improvements to customization clipping and skinning issues for multiple characters & customization items
