@@ -6,8 +6,12 @@
 body {
   color     : #DCDDDE;
   background: black;
+}
+
+.container {
   max-width : 800px;
   margin    : 0 auto;
+  margin-top: 20px;
 }
 
 ::-webkit-scrollbar {
@@ -17,8 +21,4 @@ body {
 ::-webkit-scrollbar-thumb {
   width     : 2px;
   background: rgba(255, 255, 255, 0.1);
-}
-
-.container {
-  margin-top: 20px;
 }
