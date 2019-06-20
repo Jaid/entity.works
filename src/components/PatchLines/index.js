@@ -2,8 +2,17 @@ import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
 import {ensureObject, ensureArray} from "magina"
+import reactStringReplace from "react-string-replace"
 
 import css from "./style.scss"
+
+const getRichText = text => {
+  return reactStringReplace(text, /{{([\w:]+)}}/g, token => {
+    const [type, name] = token.split(":")
+    console.log(token)
+    return <span style={{color: "red"}}>{name}</span>
+  })
+}
 
 export default class PatchLines extends React.Component {
 
@@ -15,7 +24,8 @@ export default class PatchLines extends React.Component {
   render() {
     const lines = ensureArray(this.props.points).map((point, index) => {
       point = ensureObject(point, "text")
-      return <li key={index} className={css.patchLine}>{point.text}{point.points && <PatchLines points={point.points}/>}</li>
+      const richText = getRichText(point.text)
+      return <li key={index} className={css.patchLine}>{richText}{point.points && <PatchLines points={point.points}/>}</li>
     })
     return <div className={classnames(css.container, this.props.className)}>
       <ul>{lines}</ul>

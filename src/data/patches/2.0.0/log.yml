@@ -1,5 +1,5 @@
 semver: "2.0.0"
-title: Curtain Call
+title: CURTAIN CALL
 date: "12.06.2018"
 points:
   features:
@@ -76,7 +76,7 @@ points:
         - Removed the ability to drop a pallet and rapidly cross the zone, what is often referred to as the pallet vacuum. With this change, a survivor will always stay on the same side of the pallet when triggering the interaction.
         - The way survivors drop pallets has changed, the interaction is now input based rather than velocity/ direction based. If you want to drop a pallet from a standstill, you simply need to be on the side of the pallet that you would like to stay after dropping the pallet, and press the drop pallet interaction key. If you would like to drop the pallet on the opposite side of you, as there is no longer a vacuum to take you from one side to the other, you must run through the pallet and press the drop pallet interaction key when you are on the other side of the pallet. *We are looking into fixing an issue where you cannot drop the pallet if you are holding the rush key (SHIFT key on PC) while dropping the pallet.
   perks:
-    - text: Dead Hard
+    - text: "{{perk:deadHard}}"
       points:
         - Added an new animation to indicate that the perk is active
         - Removed the speed boost from Dead Hard while in the air. This change aims to fix a variety of game hostage issues in multiple maps

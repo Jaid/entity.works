@@ -15,7 +15,7 @@ const getHeaderText = patch => {
     }
   } else {
     return {
-      title: `Patch ${patch.semver}`,
+      title: `PATCH ${patch.semver}`,
       info: agoString,
     }
   }
