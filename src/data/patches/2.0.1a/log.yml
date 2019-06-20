@@ -1,0 +1,5 @@
+semver: "2.0.1a"
+date: "26.06.2018"
+points:
+  fixes:
+    - Fixed an issue that could cause clients to be unable to move once they have loaded into a match

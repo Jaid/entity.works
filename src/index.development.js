@@ -12,7 +12,7 @@ const logger = createLogger({
   level: "info",
   collapsed: true,
 })
-const enhancer = composeWithDevTools(applyMiddleware( logger))
+const enhancer = composeWithDevTools(applyMiddleware(logger))
 const store = createStore(reducer, enhancer)
 if (module.hot) {
   module.hot.accept("./redux/reducer", () => store.replaceReducer(require("./redux/reducer").default))

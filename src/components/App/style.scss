@@ -2,10 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Ramabhadra&display=swap&subset=telugu");
 @import url('https://fonts.googleapis.com/css?family=Assistant:300&display=swap&subset=hebrew');
 @import url('https://fonts.googleapis.com/css?family=Hind&display=swap&subset=devanagari,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese');
 
 body {
-  color     : #DCDDDE;
-  background: black;
+  color      : #DCDDDE;
+  background : black;
+  font-family: Roboto Condensed, sans-serif;
+  font-size  : 20px;
+  line-height: 120%;
 }
 
 .container {

@@ -22,12 +22,14 @@
     "redux-action": "^1.2.2"
   },
   "devDependencies": {
+    "@absolunet/fsp": "^1.6.1",
     "@hot-loader/react-dom": "^16.8.6",
     "acorn": "^6.1.1",
     "ajv": "^6.10.0",
     "babel-jest": "^24.8.0",
     "babel-preset-jaid": "^6.7.0",
     "caniuse-lite": "^1.0.30000975",
+    "compare-versions": "^3.4.0",
     "eslint": "^5.16.0",
     "eslint-config-jaid-react": "^1.15.0",
     "jest": "^24.8.0",
