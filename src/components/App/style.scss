@@ -1,8 +1,13 @@
 @import url("modern-normalize");
+@import url("https://fonts.googleapis.com/css?family=Ramabhadra&display=swap&subset=telugu");
+@import url('https://fonts.googleapis.com/css?family=Assistant:300&display=swap&subset=hebrew');
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap&subset=devanagari,latin-ext');
 
 body {
-  color: #DCDDDE;
-  background: #1e1e1e;
+  color     : #DCDDDE;
+  background: black;
+  max-width : 800px;
+  margin    : 0 auto;
 }
 
 ::-webkit-scrollbar {
@@ -10,34 +15,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  width: 2px;
+  width     : 2px;
   background: rgba(255, 255, 255, 0.1);
 }
 
 .container {
-  display: flex;
-}
-
-.previews {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  height: 100vh;
-  max-width: 200px;
-}
-
-.previewsRight {
-  flex-direction: row-reverse;
-}
-
-.controls {
-  height: 100vh;
-  overflow: auto;
-  padding: 8px;
-}
-
-.control {
-  margin: 0.5em;
+  margin-top: 20px;
 }
