@@ -10,7 +10,7 @@ jobs:
       script:
         - curl https://gist.githubusercontent.com/Jaid/284917bd3e938add97b699a18b957d8c/raw/ciNodeRelease.bash | bash
         - pkgName=$(npx package-name-cli)
-        - domain=$(npx package-field-cli version || echo $pkgName.jaid.codes)
+        - domain=$(npx package-field-cli domain || echo $pkgName.jaid.codes)
       deploy:
         - provider: pages
           local_dir: dist/page
