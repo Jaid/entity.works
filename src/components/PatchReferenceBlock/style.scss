@@ -9,6 +9,10 @@
   &.killers {
     background: -webkit-linear-gradient(left, rgba(162, 16, 16, 0.25) 0%, rgba(162, 16, 16, 0) 100%);
   }
+
+  &.survivors {
+    background: -webkit-linear-gradient(left, rgba(72, 215, 239, 0.25) 0%, rgba(72, 215, 239, 0) 100%);
+  }
 }
 
 .header {

@@ -3,7 +3,8 @@ title: CURTAIN CALL
 date: "12.06.2018"
 points:
   features:
-    - Added a new head customization item for Dwight for players who own the Leatherface DLC
+    - survivor: dwight
+      text: Added a new head customization item for {{survivor:dwight}} for players who own the Leatherface DLC
     - Added new idle animations for Killers in the offline lobby & store sections
     - Added new main menu music to tie in with the DLC Chapter
     - Added new sounds when Emblems appear in the Tally Screen based on their quality
@@ -161,7 +162,8 @@ points:
       text: Tweaked the brightness in a few of the darker rooms in The Game map to make it more visible when in the Dream State with {{killer:nightmare}}
   audio & localization:
     - killer: [trapper, wraith, hillbilly]
-      text: "Changed the requirements for unlocking the Adept achievements for Dwight, Meg, Claudette, Jake, {{killer:trapper}}, {{killer:wraith}} and {{killer:hillbilly}} to keep consistency with the other Adept achievements. Please note: If there is partial progress on the achievement, it will be lost since the unlock requirements have changed."
+      survivor: [dwight, meg, claudette, jake]
+      text: "Changed the requirements for unlocking the Adept achievements for {{survivor:dwight}}, {{survivor:meg}}, {{survivor:claudette}}, {{survivor:jake}}, {{killer:trapper}}, {{killer:wraith}} and {{killer:hillbilly}} to keep consistency with the other Adept achievements. Please note: If there is partial progress on the achievement, it will be lost since the unlock requirements have changed."
     - Fixed an instance of an issue that could cause a client to get kicked out of a lobby, followed by an Easy Anti Cheat error message
     - killer: shape
       text: Fixed an issue that caused {{killer:shape}}'s Vanity Mirror add-on to use the wrong description when the language was set to Polish
@@ -170,7 +172,8 @@ points:
       text: Fixed an issue that could make the heartbeat extremely difficult to hear when the Killer had the perk {{perk:monitorAndAbuse}} equipped
     - perk: DeadHard
       text: Fixed improper formatting in the {{perk:DeadHard}} perk in English
-    - Fixed the description for Claudette's Myopian Frohawk head customization in French, Italian, German and Spanish
+    - survivor: claudette
+      text: Fixed the description for {{survivor:claudette}}'s Myopian Frohawk head customization in French, Italian, German and Spanish
     - perk: bloodhound
       text: Fixed the improper values in the {{perk:bloodhound}} perk for Tier II in English
     - Integrated some missing localization for Italian
@@ -178,8 +181,10 @@ points:
     - Tweaked the hatch audio to be a bit louder and fixed sound occlusion
   misc:
     - Changed the report icon from gray to white
-    - Fixed an issue that allowed Survivors to escape with a reverse bear trap on their heads under specific conditions
-    - Fixed an issue that caused David Kings jacket collars to remain floating after being sacrificed
+    - killer: pig
+      text: Fixed an issue that allowed Survivors to escape with a reverse bear trap on their heads under specific conditions
+    - survivor: david
+      text: Fixed an issue that caused {{survivor:david}}'s jacket collars to remain floating after being sacrificed
     - Fixed an issue that caused a desync in animation when Killer picks up a falling Survivor
     - Fixed an issue that caused cleansed totems to fall through the floor/ceilings when cleansed on a 2nd floor
     - Fixed an issue that caused the Survivors health state to appear as Dead when crawling through the exit with little health left
@@ -202,7 +207,8 @@ points:
     - Improvements to customization clipping and skinning issues for multiple characters & customization items
     - Misc stability improvements
   known issues:
-    - Kate's hair and t-shirts are stretching when running or performing an action
+    - survivor: kate
+      text: "{{survivor:kate}}'s hair and t-shirts are stretching when running or performing an action"
     - killer: clown
       perk: tinkerer
       text: "{{killer:clown}}'s reload related add-ons are currently affected by the {{perk:tinkerer}}. We're currently in the process of changing the mechanics for the {{perk:tinkerer}} perk and this will result in it not affecting add-ons directly in the future."

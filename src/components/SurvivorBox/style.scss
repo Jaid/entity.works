@@ -1,0 +1,26 @@
+.container {
+  color: #5ab3e7;
+}
+
+.inline .icon {
+  width         : 1.6em;
+  margin-top    : -1em;
+  margin-bottom : -1em;
+  margin-right  : 0.25em;
+  vertical-align: middle;
+  outline       : 1px solid #47b0da6e;
+}
+
+.large {
+  text-transform: uppercase;
+  font-family   : Ramabhadra,
+    sans-serif;
+  margin-left: 20px;
+
+  .icon {
+    width         : 2.4em;
+    vertical-align: middle;
+    outline       : 1px solid #47b0da6e;
+    margin-right  : 0.75em;
+  }
+}

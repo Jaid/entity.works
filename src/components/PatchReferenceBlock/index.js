@@ -4,6 +4,7 @@ import classnames from "classnames"
 import PatchLines from "components/PatchLines"
 import KillerBox from "components/KillerBox"
 import PerkBox from "components/PerkBox"
+import SurvivorBox from "components/SurvivorBox"
 
 import css from "./style.scss"
 
@@ -13,6 +14,9 @@ const getHeader = (referenceType, referenceName) => {
   }
   if (referenceType === "perks") {
     return <PerkBox perk={referenceName} large/>
+  }
+  if (referenceType === "survivors") {
+    return <SurvivorBox survivor={referenceName} large/>
   }
 }
 
