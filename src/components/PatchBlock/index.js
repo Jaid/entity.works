@@ -3,11 +3,14 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import moment from "moment"
 import PatchLines from "components/PatchLines"
+import PatchReferenceBlock from "components/PatchReferenceBlock"
+import {sortBy} from "lodash"
+import perks from "lib/perks"
 
 import css from "./style.scss"
 
 const getHeaderText = patch => {
-  const agoString = moment(patch.date, "DD.MM.YYYY").fromNow()
+  const agoString = moment(patch.dateMs).fromNow()
   if (patch.title) {
     return {
       title: patch.title,
@@ -21,6 +24,17 @@ const getHeaderText = patch => {
   }
 }
 
+const getDisplayPriorityFromPatchReference = patchReference => {
+  return ["perks", "killers", "survivors", "maps"].indexOf(patchReference.referenceType)
+}
+
+const getTitleFromPatchReference = patchReference => {
+  if (patchReference.referenceType === "perks") {
+    return perks.find(({id}) => id === patchReference.referenceName).title
+  }
+  return patchReference.referenceName
+}
+
 export default class PatchBlock extends React.Component {
 
   static propTypes = {
@@ -30,9 +44,20 @@ export default class PatchBlock extends React.Component {
 
   render() {
     const headerText = getHeaderText(this.props.patch)
-    const categoryBlocks = Object.entries(this.props.patch.points).map(([category, points]) => {
+    const categoryBlocks = Object.entries(this.props.patch.points).map(([category, {points, references}]) => {
+      const patchReferences = []
+      for (const referenceType of ["perks", "survivors", "killers", "maps"]) {
+        for (const [referenceName, referencePoints] of Object.entries(references[referenceType])) {
+          patchReferences.push({
+            referenceType,
+            referenceName,
+            points: referencePoints,
+          })
+        }
+      }
       return <div key={category}>
         <div className={classnames(css.categoryTitle, css[category])}>{category}</div>
+        {sortBy(patchReferences, [getDisplayPriorityFromPatchReference, getTitleFromPatchReference]).map(patchReference => <PatchReferenceBlock key={`${patchReference.referenceType}-${patchReference.referenceName}`} {...patchReference}/>)}
         <PatchLines points={points}/>
       </div>
     })

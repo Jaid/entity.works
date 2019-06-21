@@ -1,0 +1,17 @@
+.container {
+  padding: 10px;
+  margin : 20px;
+
+  &.perks {
+    background: -webkit-linear-gradient(left, rgba(255, 204, 89, 0.25) 0%, rgba(255, 204, 89, 0) 100%);
+  }
+
+  &.killers {
+    background: -webkit-linear-gradient(left, rgba(162, 16, 16, 0.25) 0%, rgba(162, 16, 16, 0) 100%);
+  }
+}
+
+.header {
+  margin-top   : 20px;
+  margin-bottom: 30px;
+}

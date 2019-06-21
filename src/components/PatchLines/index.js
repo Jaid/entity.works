@@ -25,11 +25,19 @@ export default class PatchLines extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     points: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.any), PropTypes.string]).isRequired,
+    showReferences: PropTypes.bool,
+  }
+
+  static defaultProps = {
+    showReferences: false,
   }
 
   render() {
     const lines = ensureArray(this.props.points).map((point, index) => {
       point = ensureObject(point, "text")
+      if (!this.props.showReferences && point.hasReferences) {
+        return null
+      }
       const richText = getRichText(point.text)
       return <li key={index} className={css.patchLine}>{richText}{point.points && <PatchLines points={point.points}/>}</li>
     })

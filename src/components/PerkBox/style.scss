@@ -1,19 +1,43 @@
 .container {}
 
-.icon {
-  width         : 1.5em;
-  margin-top    : -1em;
-  margin-bottom : -1em;
-  margin-right  : 0.25em;
-  vertical-align: middle;
+.inline {
+  .icon {
+    width         : 1.5em;
+    margin-top    : -1em;
+    margin-bottom : -1em;
+    margin-right  : 0.25em;
+    vertical-align: middle;
+  }
+
+  .background {
+    width         : 2em;
+    margin-top    : -1em;
+    margin-bottom : -1em;
+    vertical-align: middle;
+    margin-right  : -1.75em;
+  }
 }
 
-.background {
-  width         : 2em;
-  margin-top    : -1em;
-  margin-bottom : -1em;
-  vertical-align: middle;
-  margin-right  : -1.75em;
+.large {
+  text-transform: uppercase;
+  font-family   : Ramabhadra,
+    sans-serif;
+
+  .icon {
+    width         : 4em;
+    margin-top    : -1em;
+    margin-bottom : -1em;
+    vertical-align: middle;
+    margin-right  : 0.5em;
+  }
+
+  .background {
+    width         : 4em;
+    margin-top    : -1em;
+    margin-bottom : -1em;
+    vertical-align: middle;
+    margin-right  : -4em;
+  }
 }
 
 .teachable {

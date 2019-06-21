@@ -1,7 +1,7 @@
 const path = require("path")
 
 const fsp = require("@absolunet/fsp")
-const moment = require("moment")
+const filterNil = require("filter-nil").default
 
 module.exports = async () => {
   const patchesFolder = __dirname
@@ -16,7 +16,5 @@ module.exports = async () => {
     return data
   })
   const patches = await Promise.all(fetchPatchesJobs)
-  return patches
-  |> #.filter(patch => patch)
-  |> #.sort((a, b) => -moment(a.date, "DD.MM.YYYY").diff(moment(b.date, "DD.MM.YYYY")))
+  return patches |> filterNil
 }

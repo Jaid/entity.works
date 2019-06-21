@@ -1,7 +1,7 @@
 const path = require("path")
 
 const fsp = require("@absolunet/fsp")
-const {titleCase} = require("change-case")
+const filterNil = require("filter-nil").default
 
 module.exports = async () => {
   const perksFolder = __dirname
@@ -15,5 +15,5 @@ module.exports = async () => {
     return fsp.readYaml(infoFile)
   })
   const perks = await Promise.all(fetchPerksJobs)
-  return perks.filter(Boolean)
+  return perks |> filterNil
 }

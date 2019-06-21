@@ -1,6 +1,6 @@
 const path = require("path")
 
-const {capitalize} = require("lodash")
+const filterNil = require("filter-nil").default
 const fsp = require("@absolunet/fsp")
 
 module.exports = async () => {
@@ -15,6 +15,5 @@ module.exports = async () => {
     return fsp.readYaml(infoFile)
   })
   const killers = await Promise.all(fetchJobs)
-  return killers
-    |> #.filter(killer => killer)
+  return killers |> filterNil
 }
