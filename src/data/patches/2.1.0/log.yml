@@ -1,5 +1,6 @@
 semver: "2.1.0"
 date: "24.07.2018"
+title: MID-CHAPTER (CURTAIN CALL)
 points:
   features:
     - Added progress bar to emblem tooltips
