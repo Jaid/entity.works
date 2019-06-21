@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import {connect} from "react-redux"
 import classnames from "classnames"
 import PatchList from "components/PatchList"
+import "react-tippy/dist/tippy.css"
 
 import css from "./style.scss"
 

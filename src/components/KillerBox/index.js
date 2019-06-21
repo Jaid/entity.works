@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
 import killers from "lib/killers"
+import {Tooltip} from "react-tippy"
+import KillerTooltip from "components/KillerTooltip"
 
 import css from "./style.scss"
 
@@ -19,10 +21,11 @@ export default class KillerBox extends React.Component {
 
   render() {
     const info = killers.find(({id}) => id === this.props.killer)
-    return <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
+    const content = <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
       <img className={css.icon} src={require(`../../data/killers/${this.props.killer}/icon.png`)}/>
       {info.title}
     </span>
+    return <Tooltip html={<KillerTooltip info={info}/>}>{content}</Tooltip>
   }
 
 }

@@ -1,0 +1,25 @@
+.container {
+  background: black;
+  width     : 180px;
+}
+
+.banner {
+  display      : list-item;
+  margin-bottom: -1.5em;
+}
+
+.title {
+  font-size  : 24px;
+  margin-left: 4px;
+  text-shadow: 0 0 3px black, 0 0 10px black;
+}
+
+.content {
+  margin-top: 12px;
+}
+
+.perk {
+  margin-top   : 4px;
+  margin-bottom: 4px;
+  font-size    : 80%;
+}
