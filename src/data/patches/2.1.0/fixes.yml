@@ -40,7 +40,8 @@
 - Fixed an issue that could cause specific assets to disappear from a distance in the MacMillan Estate themed maps
 - killer: [pig, nightmare]
   text: Fixed an issue where the {{killer:pig}} and the {{killer:nightmare}} didn't fall after vaulting through the window on the car crusher asset in Autohaven Wrecker's themed maps
-- Fixed an issue that caused Survivor aura not to be visible within the exit gates when using the Blood Warden perk
+- perk: bloodWarden
+  text: Fixed an issue that caused Survivor aura not to be visible within the exit gates when using the {{perk:bloodWarden}} perk
 - Fixed an issue that caused generator progression when succeeding an Overcharge skill check
 - perk: stakeOut
   text: Fixed an issue that caused the {{perk:stakeOut}} perk to accumulate tokens during the interrupt animation
