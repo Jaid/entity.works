@@ -2,6 +2,8 @@ const path = require("path")
 
 const fsp = require("@absolunet/fsp")
 const filterNil = require("filter-nil").default
+const globby = require("globby")
+const preventEnd = require("prevent-end").default
 
 module.exports = async () => {
   const patchesFolder = __dirname
@@ -13,6 +15,20 @@ module.exports = async () => {
       return null
     }
     const data = await fsp.readYaml(logFile)
+    if (!data.points) {
+      data.points = {}
+    }
+    const additionNames = await globby("*.yml", {
+      cwd: path.join(patchesFolder, version),
+      matchBase: true,
+    })
+    for (const additionName of additionNames) {
+      const additionId = preventEnd(additionName, ".yml")
+      if (additionId === "log") {
+        continue
+      }
+      data.points[additionId] = await fsp.readYaml(path.join(patchesFolder, version, additionName))
+    }
     return data
   })
   const patches = await Promise.all(fetchPatchesJobs)

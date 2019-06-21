@@ -6,6 +6,8 @@ import PatchBlock from "components/PatchBlock"
 
 import css from "./style.scss"
 
+console.log(patches)
+
 export default class PatchList extends React.Component {
 
   static propTypes = {
