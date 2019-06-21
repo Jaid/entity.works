@@ -81,10 +81,10 @@ points:
         - Removed the ability to drop a pallet and rapidly cross the zone, what is often referred to as the pallet vacuum. With this change, a survivor will always stay on the same side of the pallet when triggering the interaction.
         - The way survivors drop pallets has changed, the interaction is now input based rather than velocity/ direction based. If you want to drop a pallet from a standstill, you simply need to be on the side of the pallet that you would like to stay after dropping the pallet, and press the drop pallet interaction key. If you would like to drop the pallet on the opposite side of you, as there is no longer a vacuum to take you from one side to the other, you must run through the pallet and press the drop pallet interaction key when you are on the other side of the pallet. *We are looking into fixing an issue where you cannot drop the pallet if you are holding the rush key (SHIFT key on PC) while dropping the pallet.
   perks:
-    - perk: DeadHard
+    - perk: deadHard
       text: Added an new animation to indicate that the perk is active
-    - perk: DeadHard
-      text: Removed the speed boost from {{perk:DeadHard}} while in the air. This change aims to fix a variety of game hostage issues in multiple maps
+    - perk: deadHard
+      text: Removed the speed boost from {{perk:deadHard}} while in the air. This change aims to fix a variety of game hostage issues in multiple maps
     - perk: balancedLanding
       text: Added sprint of 150% for 3 seconds for all Tiers
     - perk: balancedLanding
@@ -123,8 +123,8 @@ points:
     - Fixed an issue that could cause a client to be unable to interact and repeatedly teleport from their location if the Killer had interrupted their exit locker animation
     - killer: trapper
       text: Fixed an issue that could caused a non-host {{killer:trapper}} to be launched in the air when picking up a trapped Survivor
-    - perk: DeadHard
-      text: Fixed an issue that made it impossible to heal, Snap Out of It, or use {{perk:DeadHard}} during the Killer stun animation when getting free from their shoulder
+    - perk: deadHard
+      text: Fixed an issue that made it impossible to heal, Snap Out of It, or use {{perk:deadHard}} during the Killer stun animation when getting free from their shoulder
     - Fixed an issue that made it impossible to hit a Survivor that was underneath the Killer
     - killer: huntress
       text: Fixed an issue that made it possible for {{killer:huntress}}' hatchets to hit Survivors through walls
@@ -170,8 +170,8 @@ points:
     - Fixed an issue that caused the unhook audio to play shortly after hooking a Survivor
     - perk: monitorAndAbuse
       text: Fixed an issue that could make the heartbeat extremely difficult to hear when the Killer had the perk {{perk:monitorAndAbuse}} equipped
-    - perk: DeadHard
-      text: Fixed improper formatting in the {{perk:DeadHard}} perk in English
+    - perk: deadHard
+      text: Fixed improper formatting in the {{perk:deadHard}} perk in English
     - survivor: claudette
       text: Fixed the description for {{survivor:claudette}}'s Myopian Frohawk head customization in French, Italian, German and Spanish
     - perk: bloodhound
