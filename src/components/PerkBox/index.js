@@ -21,7 +21,7 @@ export default class PerkBox extends React.Component {
     const perkInfo = perks.find(({id}) => id === this.props.perk)
     const type = perkInfo.teachable ? "teachable" : "template"
     return <span className={classnames(css.container, this.props.className, css[type], css[this.props.large ? "large" : "inline"])}>
-      <img className={css.background} src={require("src/data/perkBackgrounds/teachable.png")}/>
+      <img className={css.background} src={require(`../../data/perkBackgrounds/${perkInfo.rarity}.png`)}/>
       <img className={css.icon} src={require(`../../data/perks/${this.props.perk}/icon.png`)}/>
       {perkInfo.title}
     </span>
