@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import survivors from "lib/survivors"
 import SurvivorTooltip from "components/SurvivorTooltip"
-import {Tooltip} from "react-tippy"
+import Tooltip from "components/Tooltip"
 
 import css from "./style.scss"
 

@@ -1,11 +1,12 @@
 .container {
   background: black;
-  width     : 180px;
 }
 
 .banner {
-  display      : list-item;
-  margin-bottom: -1.5em;
+  margin-bottom: -2.2em;
+  margin-right : -10px;
+  margin-left  : -10px;
+  margin-top   : -3px;
 }
 
 .title {
@@ -16,10 +17,10 @@
 
 .content {
   margin-top: 12px;
+  text-align: left;
 }
 
 .perk {
   margin-top   : 4px;
   margin-bottom: 4px;
-  font-size    : 80%;
 }

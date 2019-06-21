@@ -34,7 +34,7 @@
     "ajv": "^6.10.0",
     "babel-jest": "^24.8.0",
     "babel-preset-jaid": "^6.8.0",
-    "caniuse-lite": "^1.0.30000975",
+    "caniuse-lite": "^1.0.30000976",
     "change-case": "^3.1.0",
     "eslint": "^5.16.0",
     "eslint-config-jaid-react": "^1.16.0",
@@ -43,7 +43,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^2.6.3",
-    "webpack-config-jaid": "^5.8.0"
+    "webpack-config-jaid": "^5.8.1"
   },
   "scripts": {
     "clean": "rimraf dist/",

@@ -1,0 +1,41 @@
+:global {
+  .tippy-tooltip.entity-theme {
+    border    : 1px solid white;
+    box-shadow: 0 0 10px black;
+  }
+
+  .tippy-tooltip.entity-theme {
+    background   : black;
+    border-radius: 0;
+  }
+
+  .tippy-popper[x-placement^=bottom] .entity-theme [x-arrow] {
+    border-bottom: 7px solid black;
+
+    &:before {
+      content      : " ";
+      position     : absolute;
+      z-index      : -1;
+      left         : -8px;
+      bottom       : -5.9px;
+      border-bottom: 7.5px solid white;
+      border-right : 8.5px solid transparent;
+      border-left  : 8.5px solid transparent;
+    }
+  }
+
+  .tippy-popper[x-placement^=top] .entity-theme [x-arrow] {
+    border-top: 7px solid black;
+
+    &:before {
+      content     : " ";
+      position    : absolute;
+      z-index     : -1;
+      left        : -8px;
+      bottom      : -1.6px;
+      border-top  : 7.5px solid white;
+      border-right: 8.5px solid transparent;
+      border-left : 8.5px solid transparent;
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
 import killers from "lib/killers"
-import {Tooltip} from "react-tippy"
+import Tooltip from "components/Tooltip"
 import KillerTooltip from "components/KillerTooltip"
 
 import css from "./style.scss"
