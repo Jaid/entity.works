@@ -1,0 +1,13 @@
+semver: "2.1.0"
+date: "24.07.2018"
+points:
+  features:
+    - Added progress bar to emblem tooltips
+    - Integrated additional Status Effect score notification for the Vigil and Decisive Strike perks
+    - "Integrated the Proficiency System to interaction progress bars from other players. For example, when a player is being healed by a different player, while a healing debuff perk is active (ie: {{perk:coulrophobia}}), they will see the debuff applied in their HUD."
+  balance:
+    - Adjusted the Killer pick up (Pick up Survivor from ground) time to 3 seconds, down from 4.3 seconds
+    - Changed the Obsession mechanic to show all players in the match who the Obsession is. All players will receive notification when the Obsession is in a chase (animated Entity spikes icon).
+    - Exhaustion no longer recovers while running.
+    - killer: wraith
+      text: "Wraith uncloaking: Adjusted the timing of the smoke effect (and its audio) for the {{killer:wraith}}'s uncloaking to avoid giving away his position earlier than intended"
