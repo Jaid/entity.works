@@ -4,6 +4,7 @@ import classnames from "classnames"
 import RichBox from "components/RichBox"
 import findObject, {findExactObject} from "lib/findObject"
 import reactStringReplace from "react-string-replace"
+import TiersBox from "components/TiersBox"
 
 import css from "./style.scss"
 
@@ -13,6 +14,8 @@ const getRichText = text => {
     let richObject
     if (typeMatch === null) {
       richObject = findObject(token)
+    } else if (typeMatch.groups.type === "tiers") {
+      return <TiersBox tiers={typeMatch.groups.name.split("/")}/>
     } else {
       const info = findExactObject(typeMatch.groups.name)
       if (info) {
@@ -25,7 +28,6 @@ const getRichText = text => {
     if (richObject) {
       return <RichBox key={index} info={richObject.info} type={richObject.type}/>
     }
-    return token
   })
 }
 

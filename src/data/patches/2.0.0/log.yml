@@ -61,7 +61,7 @@ points:
     - perk: balancedLanding
       text: Added sprint of 150% for 3 seconds for all Tiers
     - perk: balancedLanding
-      text: Sprint causes Exhaustion for 60/50/40 seconds
+      text: Sprint causes Exhaustion for {tiers:60/50/40} seconds
     - perk: balancedLanding
       text: Stagger effects from long falls are reduced by 75% for all Tiers, without cooldown
     - perk: stakeOut

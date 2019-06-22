@@ -30,19 +30,19 @@
     - Rank 20 will be reset to Rank 20 with 0 pips
 
 - perk: bitterMurmur
-  text: When a generator is completed, survivors within 16m of that generator will have their aura shown for 5 seconds, when the last generator is powered all survivor auras are shown for 5/7/10 seconds.
+  text: When a generator is completed, survivors within 16m of that generator will have their aura shown for 5 seconds, when the last generator is powered all survivor auras are shown for {tiers:5/7/10} seconds.
 - perk: brutalStrength
-  text: "{brutalStrength} will now increase the speed at which you damage generators in addition to pallets. 10%/15%/20% faster."
+  text: "{brutalStrength} will now increase the speed at which you damage generators in addition to pallets. {tiers:10%/15%/20%} faster."
 - perk: hangmansTrick
   text: "{hangmansTrick} will now reduce the bear trap re-spawn timer by 60 seconds."
 - perk: predator
   text: Changed the way scratch marks are distributed - a smaller cone rather than a longer duration.
 - perk: saveTheBestForLast
-  text: Made the perk token based. Tokens are gained by attacking Survivors who are not the Obsession. Each token is worth a stackable 5% decreased cooldown on successful attacks. Attacking the Obsession makes you lose 4/3/2 tokens.
+  text: Made the perk token based. Tokens are gained by attacking Survivors who are not the Obsession. Each token is worth a stackable 5% decreased cooldown on successful attacks. Attacking the Obsession makes you lose {tiers:4/3/2} tokens.
 - perk: sloppyButcher
   text: Added the Mangled Status Effect. 25% increased healing time after being hit in addition to the bleed. Mangled status effects do not stack.
 - perk: tinkerer
-  text: "When a generator is repaired to 85%, Killer receives a loud noise indicator and Terror Radius is reduced to 0 meters for 8/10/12 seconds. NOTE: Add-ons are no longer affected by this perk."
+  text: "When a generator is repaired to 85%, Killer receives a loud noise indicator and Terror Radius is reduced to 0 meters for {tiers:8/10/12} seconds. NOTE: Add-ons are no longer affected by this perk."
 
 - killer: trapper
   text: Added a new add-on "Padded Jaws" for the {trapper} (Common rarity). Bear traps do not inflict damage to trapped Survivors, and points awarded for trapping Survivors are increased by 100%.
@@ -125,12 +125,12 @@
     - The toolbox is no longer consumed when the add-on is used, add-on is consumed instead
 
 - perk: aceInTheHole
-  text: 100% chance to find an add-on of very rare rarity or lower, added a 10/25/50% chance to find a second add-on with an uncommon rarity or lower.
+  text: 100% chance to find an add-on of very rare rarity or lower, added a {tiers:10%/25%/50%} chance to find a second add-on with an uncommon rarity or lower.
 - perk: calmSpirit
   text: "Additional modifier that causes survivors to not scream in pain when: being hit, under the effects of madness or being affected by {clown}'s bottle."
 - perk: darkSense
-  text: Reveal the killer's aura for 5 seconds each time a generator is completed. When the final generator is completed, the killer's aura is revealed for 5/7/10 seconds.
+  text: Reveal the killer's aura for 5 seconds each time a generator is completed. When the final generator is completed, the killer's aura is revealed for {tiers:5/7/10} seconds.
 - perk: dejaVu
-  text: Perk now reveals the aura's of 3 generators, which are in close proximity to one another for 30/45/60 seconds, at the start of the match and each time a generator is completed for the person who is using {dejaVu}.
+  text: Perk now reveals the aura's of 3 generators, which are in close proximity to one another for {tiers:30/45/60} seconds, at the start of the match and each time a generator is completed for the person who is using {dejaVu}.
 - perk: soleSurvivor
-  text: Functionality change, for each survivor killed or sacrificed, your aura will not be readable within 16/18/20 meters from the killer.
+  text: Functionality change, for each survivor killed or sacrificed, your aura will not be readable within {tiers:16/18/20} meters from the killer.
