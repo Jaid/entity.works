@@ -2,7 +2,7 @@
 - Changed the Obsession mechanic to show all players in the match who the Obsession is. All players will receive notification when the Obsession is in a chase (animated Entity spikes icon).
 - Exhaustion no longer recovers while running.
 - killer: wraith
-  text: "Wraith uncloaking: Adjusted the timing of the smoke effect (and its audio) for the {{killer:wraith}}'s uncloaking to avoid giving away his position earlier than intended"
+  text: "Wraith uncloaking: Adjusted the timing of the smoke effect (and its audio) for the {{wraith}}'s uncloaking to avoid giving away his position earlier than intended"
 
 - Players at Rank 15 will not be able to de-rank to Rank 16 (or lower) outside of rank reset.
 - From Rank 16 - 20, players will not lose pips or de-rank.

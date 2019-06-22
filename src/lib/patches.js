@@ -5,7 +5,19 @@ import forOwn from "for-own.macro"
 import hasContent from "has-content"
 import aliasFields from "alias-fields"
 
-export default patches
+/**
+ * @typedef patch
+ * @property {string} semver
+ * @property {number} dateMs
+ * @property {string} [title]
+ * @property {string} date
+ * @property {object} points
+ */
+
+/**
+ * @type {patch[]}
+ */
+const patchesNormalized = patches
   |> #.map(patch => ({
     dateMs: Number(moment(patch.date, "DD.MM.YYYY")),
     ...patch,
@@ -62,3 +74,5 @@ export default patches
     }
     return patch
   })
+
+export default patchesNormalized
