@@ -3,32 +3,37 @@ import patches from "lib/patches"
 import survivors from "lib/survivors"
 import perks from "lib/perks"
 
-const meta = [
-  {
-    type: "killer",
+const objectSources = {
+  killer: {
     list: killers,
   },
-  {
-    type: "survivor",
+  survivor: {
     list: survivors,
   },
-  {
-    type: "perk",
+  perk: {
     list: perks,
   },
-  {
-    type: "patch",
+  patch: {
     list: patches,
     nameKey: "semver",
   },
-]
+}
+
+/**
+ * @param {string} type
+ * @param {string} id
+ */
+export const findExactObject = (type, id) => {
+  const objectSource = objectSources[type]
+  return objectSource.list.find(needle => needle[objectSource.nameKey || "id"] === id)
+}
 
 /**
  * @param {string} id
  */
 export default id => {
-  for (const {type, list, nameKey = "id"} of meta) {
-    const info = list.find(needle => needle[nameKey] === id)
+  for (const type of Object.keys(objectSources)) {
+    const info = findExactObject(type, id)
     if (info) {
       return {
         type,

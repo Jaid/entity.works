@@ -11,7 +11,21 @@ const getRarity = level => {
   return "rare"
 }
 
-export default perks.map(perk => ({
+/**
+ * @typedef perk
+ * @prop {string} id
+ * @prop {string} title
+ * @prop {string} ingameId
+ * @prop {string|boolean} owner
+ * @prop {number} level
+ * @prop {string} rarity
+ * @prop {boolean} visible
+ */
+
+/**
+ * @type {perk[]}
+ */
+const perksNormalized = perks.map(perk => ({
   title: perk.id |> titleCase,
   ingameId: perk.id,
   owner: false,
@@ -20,3 +34,5 @@ export default perks.map(perk => ({
   visible: true,
   ...perk,
 }))
+
+export default perksNormalized

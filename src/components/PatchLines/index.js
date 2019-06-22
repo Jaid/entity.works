@@ -6,23 +6,9 @@ import reactStringReplace from "react-string-replace"
 import PerkBox from "components/PerkBox"
 import KillerBox from "components/KillerBox"
 import SurvivorBox from "components/SurvivorBox"
+import RichText from "components/RichText"
 
 import css from "./style.scss"
-
-const getRichText = text => {
-  return reactStringReplace(text, /{{([\w:]+)}}/g, (token, index) => {
-    const [type, name] = token.split(":")
-    if (type === "survivor") {
-      return <SurvivorBox key={index} survivor={name}/>
-    }
-    if (type === "killer") {
-      return <KillerBox key={index} killer={name}/>
-    }
-    if (type === "perk") {
-      return <PerkBox key={index} perk={name}/>
-    }
-  })
-}
 
 export default class PatchLines extends React.Component {
 
@@ -42,8 +28,10 @@ export default class PatchLines extends React.Component {
       if (!this.props.showReferences && point.hasReferences) {
         return null
       }
-      const richText = getRichText(point.text)
-      return <li key={index} className={css.patchLine}>{richText}{point.points && <PatchLines points={point.points}/>}</li>
+      return <li key={index} className={css.patchLine}>
+        <RichText>{point.text}</RichText>
+        {point.points && <PatchLines points={point.points}/>}
+      </li>
     })
     return <div className={classnames(css.container, this.props.className)}>
       <ul>{lines}</ul>
