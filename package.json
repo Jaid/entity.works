@@ -36,7 +36,7 @@
     "babel-preset-jaid": "^6.8.0",
     "caniuse-lite": "^1.0.30000976",
     "change-case": "^3.1.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.0",
     "eslint-config-jaid-react": "^1.16.0",
     "globby": "^9.2.0",
     "jest": "^24.8.0",
