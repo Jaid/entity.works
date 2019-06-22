@@ -22,13 +22,14 @@ module.exports = async () => {
       cwd: path.join(patchesFolder, version),
       matchBase: true,
     })
-    for (const additionName of additionNames) {
+    const additionJobs = additionNames.map(async additionName => {
       const additionId = preventEnd(additionName, ".yml")
       if (additionId === "log") {
-        continue
+        return
       }
       data.points[additionId] = await fsp.readYaml(path.join(patchesFolder, version, additionName))
-    }
+    })
+    await Promise.all(additionJobs)
     return data
   })
   const patches = await Promise.all(fetchPatchesJobs)

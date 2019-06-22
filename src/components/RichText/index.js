@@ -15,7 +15,7 @@ const getRichText = text => {
     if (typeMatch === null) {
       richObject = findObject(token)
     } else if (typeMatch.groups.type === "tiers") {
-      return <TiersBox tiers={typeMatch.groups.name.split("/")}/>
+      return <TiersBox key={index} tiers={typeMatch.groups.name.split("/")}/>
     } else {
       const info = findExactObject(typeMatch.groups.name)
       if (info) {
