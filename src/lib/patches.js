@@ -12,6 +12,7 @@ import aliasFields from "alias-fields"
  * @property {string} [title]
  * @property {string} date
  * @property {object} points
+ * @property {string} linkId
  */
 
 /**
