@@ -57,7 +57,7 @@ points:
     - perk: deadHard
       text: Added an new animation to indicate that the perk is active
     - perk: deadHard
-      text: Removed the speed boost from {{perk:deadHard}} while in the air. This change aims to fix a variety of game hostage issues in multiple maps
+      text: Removed the speed boost from {deadHard} while in the air. This change aims to fix a variety of game hostage issues in multiple maps
     - perk: balancedLanding
       text: Added sprint of 150% for 3 seconds for all Tiers
     - perk: balancedLanding
@@ -65,14 +65,14 @@ points:
     - perk: balancedLanding
       text: Stagger effects from long falls are reduced by 75% for all Tiers, without cooldown
     - perk: stakeOut
-      text: "{{perk:stakeOut}}'s progression is not lost anymore when a token is consumed"
+      text: "{stakeOut}'s progression is not lost anymore when a token is consumed"
   known issues:
     - survivor: kate
-      text: "{{survivor:kate}}'s hair and t-shirts are stretching when running or performing an action"
+      text: "{kate}'s hair and t-shirts are stretching when running or performing an action"
     - killer: clown
       perk: tinkerer
-      text: "{{killer:clown}}'s reload related add-ons are currently affected by the {{perk:tinkerer}}. We're currently in the process of changing the mechanics for the {{perk:tinkerer}} perk and this will result in it not affecting add-ons directly in the future."
+      text: "{clown}'s reload related add-ons are currently affected by the {tinkerer}. We're currently in the process of changing the mechanics for the {tinkerer} perk and this will result in it not affecting add-ons directly in the future."
     - killer: hag
-      text: "{{killer:hag}}'s killer stain is too pale."
+      text: "{hag}'s killer stain is too pale."
     - killer: hillbilly
-      text: "{{killer:hillbilly}}'s First Anniversary weapon doesn't display in the inventory"
+      text: "{hillbilly}'s First Anniversary weapon doesn't display in the inventory"

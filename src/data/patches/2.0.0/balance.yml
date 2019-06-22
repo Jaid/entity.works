@@ -4,10 +4,10 @@
 - All characters now start with their 3 personal perks unlocked by default (at level 1)
 - Changed hook auras to always be visible from the Killer's standpoint while carrying a survivor. Prior to this change, hook auras would only be displayed if the hook was hidden behind another object.
 - killer: wraith
-  text: Decreased the {{killer:wraith}} flashlight uncloak stun time from 4 seconds to 3 seconds
+  text: Decreased the {wraith} flashlight uncloak stun time from 4 seconds to 3 seconds
 - Decreased the range of activation for the Killer pick up interaction
 - killer: wraith
-  text: Fixed an issue that caused {{killer:wraith}}'s red stain and terror radius to remain for several seconds after successfully cloaking. This change gives the {{killer:wraith}} the bit of a boost that he needs, and also applies when damaging generators and destroying pallets.
+  text: Fixed an issue that caused {wraith}'s red stain and terror radius to remain for several seconds after successfully cloaking. This change gives the {wraith} the bit of a boost that he needs, and also applies when damaging generators and destroying pallets.
 - Removed the acceleration curve when the Survivor was hit by the Killer. Removing the acceleration curve should allow the Survivors to use their default acceleration and have more control over their character during the speed boost.
 - killer: [doctor, hag]
-  text: Removed the possibility of spawning {{killer:doctor}} or {{killer:hag}} splinters in the Bloodweb because these characters can now be purchased for Iridescent Shards.
+  text: Removed the possibility of spawning {doctor} or {hag} splinters in the Bloodweb because these characters can now be purchased for Iridescent Shards.
