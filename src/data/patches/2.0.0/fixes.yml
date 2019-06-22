@@ -1,0 +1,112 @@
+- killer: hillbilly
+  text: Fixed an issue that caused Bloodlust to be reset at the end of a Chainsaw Sprint with the {{killer:hillbilly}}. Bloodlust will now reset at the start of the Chainsaw Sprint instead.
+- killer: doctor
+  text: Fixed an issue that caused {{killer:doctor}}'s Maple Knight add-on not to work properly
+- killer: huntress
+  text: Fixed an issue that caused {{killer:huntress}}' hatchets to hit a collision over a picnic bench in Lampkin Lane
+- killer: huntress
+  text: Fixed an issue that caused {{killer:huntress}}' hatchets to hit a collision when thrown over the engine part of the generators
+- killer: huntress
+  text: Fixed an issue that caused {{killer:huntress}}' hatchets to hit a collisions when thrown over the flatbed of the pick up truck asset
+- killer: huntress
+  text: Fixed an issue that caused {{killer:huntress}}' red stain to flicker while idle
+- killer: wraith
+  text: Fixed an issue that caused {{killer:wraith}}'s red stain to be visible for a few seconds after successfully cloaking
+- killer: huntress
+  text: Fixed an issue that caused blood splatters to appear on {{killer:huntress}}' screen when successfully hitting a Survivor with a hatchet
+- killer: trapper
+  text: Fixed an issue that caused players to become stuck if attempting to cleanse a totem that has a bear trap in front of it
+- killer: [wraith, nurse]
+  text: Fixed an issue that caused the Killer Burn score events for {{killer:wraith}} and {{killer:nurse}} not properly trigger
+- Fixed an issue that caused the Survivor to briefly go flying when a Survivor dropped a pallet on the Killer during the pick up animation
+- Fixed an issue that caused the Survivors camera to become offset when being pulled out of a locker or interrupted by the Killer
+- killer: trapper
+  text: Fixed an issue that caused {{killer:trapper}} add-on Logwood Dye to take priority over the Tar Bottle add-on
+- killer: hag
+  text: Fixed an issue that could cause {{killer:hag}} to fall out of world when teleporting to a trap with the Mint Rag add-on
+- Fixed an issue that could cause a client to be unable to interact and repeatedly teleport from their location if the Killer had interrupted their exit locker animation
+- killer: trapper
+  text: Fixed an issue that could caused a non-host {{killer:trapper}} to be launched in the air when picking up a trapped Survivor
+- perk: deadHard
+  text: Fixed an issue that made it impossible to heal, Snap Out of It, or use {{perk:deadHard}} during the Killer stun animation when getting free from their shoulder
+- Fixed an issue that made it impossible to hit a Survivor that was underneath the Killer
+- killer: huntress
+  text: Fixed an issue that made it possible for {{killer:huntress}}' hatchets to hit Survivors through walls
+- killer: nurse
+  text: Fixed an issue that would cause {{killer:nurse}} blink destination (and thus the plaid flannel's target blink indicator) to wiggle around obstructions while moving/charging blink
+- killer: doctor
+  text: Fixed an issue where {{killer:doctor}}'s illusions did not match the equipped customization items
+- killer: shape
+  text: Fixed an issue where hair was not highlighted when stalking a Survivor as {{killer:shape}}
+- killer: [hag, pig, nightmare]
+  text: Fixed an issue which caused {{killer:hag}}, {{killer:nightmare}} and {{killer:pig}} to vault windows slower than intended. All killers should now vault windows in 1.7 seconds.
+- Changed the position of the white arrows on the ground in The Game map to properly indicate where the stair cases are
+- Fixed an issue causing too many pallets to be spawned in the Pale Rose map
+- Fixed an issue that allowed players to walk on a rock in the Autohaven Wreckers maps
+- Fixed an issue that caused an impassable gap between a chest and a hedge on Lampkin Lane
+- Fixed an issue that caused an impassable gap between a chest and a row of seats in Lery's Memorial Institute map
+- Fixed an issue that caused an impassable gap between a hill and a tree in the Red Forest map
+- killer: pig
+  text: Fixed an issue that caused an inaccessible Jigsaw box or chest in Mother's Dwelling
+- killer: pig
+  text: Fixed an issue that caused an inaccessible Jigsaw box or chest in the Coldwind Farm maps
+- killer: pig
+  text: Fixed an issue that caused an inaccessible Jigsaw box or chest in the Grim Pantry map
+- killer: pig
+  text: Fixed an issue that caused an inaccessible Jigsaw box or chest in the MacMillan Estate maps
+- Fixed an issue that could cause Killers to become stuck when hitting a Survivor in the corner next to one of the exit gates in Lery's Memorial Institute map
+- Fixed an issue that could cause an impassable gap between a brick wall and a tree by the exit in the MacMillan Estate theme maps
+- Fixed an issue that could cause the generator in the Vat Room of The Game map to be inaccessible from one side
+- killer: nurse
+  text: Fixed an issue that made it impossible for {{killer:nurse}} to use her blink power to get on top of assets in the Autohaven Wrecker's and Coldwind Farm themes
+- Fixed an issue that made it impossible to cleanse a totem between crates and a small log pile in the Suffocation Pit map
+- Fixed an issue that prevented Killers from damaging the generator in the Foundry building from one side
+- Fixed various LOD issues in the multiple maps
+- killer: nightmare
+  text: Tweaked the brightness in a few of the darker rooms in The Game map to make it more visible when in the Dream State with {{killer:nightmare}}
+
+- killer: [trapper, wraith, hillbilly]
+  survivor: [dwight, meg, claudette, jake]
+  text: "Changed the requirements for unlocking the Adept achievements for {{survivor:dwight}}, {{survivor:meg}}, {{survivor:claudette}}, {{survivor:jake}}, {{killer:trapper}}, {{killer:wraith}} and {{killer:hillbilly}} to keep consistency with the other Adept achievements. Please note: If there is partial progress on the achievement, it will be lost since the unlock requirements have changed."
+- Fixed an instance of an issue that could cause a client to get kicked out of a lobby, followed by an Easy Anti Cheat error message
+- killer: shape
+  text: Fixed an issue that caused {{killer:shape}}'s Vanity Mirror add-on to use the wrong description when the language was set to Polish
+- Fixed an issue that caused the unhook audio to play shortly after hooking a Survivor
+- perk: monitorAndAbuse
+  text: Fixed an issue that could make the heartbeat extremely difficult to hear when the Killer had the perk {{perk:monitorAndAbuse}} equipped
+- perk: deadHard
+  text: Fixed improper formatting in the {{perk:deadHard}} perk in English
+- survivor: claudette
+  text: Fixed the description for {{survivor:claudette}}'s Myopian Frohawk head customization in French, Italian, German and Spanish
+- perk: bloodhound
+  text: Fixed the improper values in the {{perk:bloodhound}} perk for Tier II in English
+- Integrated some missing localization for Italian
+- Misc UI and icon improvements
+- Tweaked the hatch audio to be a bit louder and fixed sound occlusion
+
+- Changed the report icon from gray to white
+- killer: pig
+  text: Fixed an issue that allowed Survivors to escape with a reverse bear trap on their heads under specific conditions
+- survivor: david
+  text: Fixed an issue that caused {{survivor:david}}'s jacket collars to remain floating after being sacrificed
+- Fixed an issue that caused a desync in animation when Killer picks up a falling Survivor
+- Fixed an issue that caused cleansed totems to fall through the floor/ceilings when cleansed on a 2nd floor
+- Fixed an issue that caused the Survivors health state to appear as Dead when crawling through the exit with little health left
+- Fixed an issue that caused the auto-save icon to appear after tapping a generator
+- Fixed an issue that caused the disconnected Survivor body to remain floating when disconnecting from the Killers shoulder
+- Fixed an issue that caused the player profile to open when reporting or giving props to a player
+- Fixed an issue that could cause Survivors to be pushed into a generator when failing a skill check while the Killer was too close to them
+- Fixed an issue that could cause a crash when the match ended while a Survivor vaulted over a pallet
+- Fixed an issue that could cause a desync in animation & health states when the Killer hit the survivor at the same time as they were going through the hatch
+- Fixed an issue that could cause the moon to appear through trees and other assets
+- Fixed an issue that could cause the scratch marks to generate through walls and floors
+- Fixed an issue that could cause the survivor to teleport back to the side of the pallet/window they vaulted from
+- Fixed an issue that could rarely cause the interrupt animation not to play
+- Fixed an issue that made it impossible to blind the Killer with a Survivor standing in front of them
+- Fixed an issue that made it impossible to make progress on the Taking One For The Team achievement
+- killer: cannibal
+  text: Fixed an issue where {{killer:cannibal}}'s chainsaw didn't make noise during his memento mori if he hadn't previously used it
+- Fixed an issue where pips for players at rank one would be displayed on the Tally screen page (causing an inconsistency with the rank display at the top right)
+- Fixed multiple instances of character customization stretching from other players point of view
+- Improvements to customization clipping and skinning issues for multiple characters & customization items
+- Misc stability improvements
