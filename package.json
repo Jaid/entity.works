@@ -3,7 +3,7 @@
   "domain": "entity.works",
   "private": true,
   "webpackConfigJaid": "webapp",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
     "@babel/runtime": "^7.4.5",
