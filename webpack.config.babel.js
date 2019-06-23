@@ -7,6 +7,7 @@ export default configure({
   optimizeCss: true,
   createCssFile: true,
   robots: true,
+  icon: path.join(__dirname, "icon.png"),
   extra: {
     resolve: {
       alias: {
