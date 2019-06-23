@@ -41,34 +41,22 @@
 - killer: wraith
   text: Time required to burn {wraith} out of cloak with a flashlight increased from 1.5 to 2 seconds. The Blind Warrior add-ons, which previously granted further light burn protection, have been redesigned.
 - killer: wraith
-  text: '"All Seeing" - Blood: Survivor aura reading range increased from 10m to 12m.'
-- killer: wraith
-  text: '"All Seeing" - Mud: Replaced with new add-on "The Beast" - Soot. Changed rarity from Uncommon to Common. {wraith}''s terror radius no longer suppressed while cloaked, and bloodpoints granted for Stalker and Surprise Attack are increased by 100%.'
-- killer: wraith
-  text: '"All Seeing" - Spirit: Redesigned. While cloaked, the repair progress of generators can be determined by the intensity of their auras.'
-- killer: wraith
-  text: '"All Seeing" - White: Replaced with new add-on "The Serpent" - Soot. Changed rarity from Rare to Common. {wraith} will uncloak completely when breaking pallets or damaging generators while cloaked.'
-- killer: wraith
-  text: '"Blind Warrior" - Blood: Replaced with new add-on "Shadow Dance" - White. Changed rarity from Very Rare to Rare. Reduces the time required to vault windows, break pallets or damage generators while cloaked.'
-- killer: wraith
-  text: '"Blind Warrior" - Mud: Redesigned. Surprise attacks inflict survivors with aura blindness for 60 seconds.'
-- killer: wraith
-  text: '"Blind Warrior" - Soot: replaced with "The Hound" - Soot. Fresh blood marks are considerable more discernible than normal.'
-- killer: wraith
-  text: '"Blind Warrior" - Spirit: Replaced with new add-on "Shadow Dance" - Blood. Changed rarity from Ultra Rare to Very Rare. Reduces the time required to v"ault windows, break pallets or damage generators while cloaked.'
-- killer: wraith
-  text: '"Blind Warrior" - White: Redesigned. Surprise attacks inflict survivors with mangled and hemorrhage until healed.'
-- killer: wraith
-  text: '"Blink" add-ons have had their values and rarities adjusted.'
-- killer: wraith
-  text: '"Swift Hunt" add-ons have had their values and rarities adjusted.'
-- killer: wraith
-  text: '"The Ghost" - White: Redesigned and renamed "The Ghost" - Soot. Changed rarity from Rare to Common. {wraith}''s terror radius will remains suppressed for 6 seconds after uncloaking.'
-- killer: wraith
-  text: '"Windstorm" add-ons now increase {wraith}''s movement speed while cloaked and decrease {wraith}''s movement speed while uncloaking.'
-- killer: wraith
-  text: "Bone Clapper: Changed rarity from Common to Uncommon. Survivors can no longer discern the Wailing Bell's distance or direction."
-- killer: wraith
-  text: "Coxcombed Clapper: Changed rarity from Uncommon to Ultra Rare. Renders the Wailing Bell completely silent."
+  text: Addons
+  points:
+    - '"All Seeing" - Blood: Survivor aura reading range increased from 10m to 12m.'
+    - '"All Seeing" - Mud: Replaced with new add-on "The Beast" - Soot. Changed rarity from Uncommon to Common. {wraith}''s terror radius no longer suppressed while cloaked, and bloodpoints granted for Stalker and Surprise Attack are increased by 100%.'
+    - '"All Seeing" - Spirit: Redesigned. While cloaked, the repair progress of generators can be determined by the intensity of their auras.'
+    - '"All Seeing" - White: Replaced with new add-on "The Serpent" - Soot. Changed rarity from Rare to Common. {wraith} will uncloak completely when breaking pallets or damaging generators while cloaked.'
+    - '"Blind Warrior" - Blood: Replaced with new add-on "Shadow Dance" - White. Changed rarity from Very Rare to Rare. Reduces the time required to vault windows, break pallets or damage generators while cloaked.'
+    - '"Blind Warrior" - Mud: Redesigned. Surprise attacks inflict survivors with aura blindness for 60 seconds.'
+    - '"Blind Warrior" - Soot: replaced with "The Hound" - Soot. Fresh blood marks are considerable more discernible than normal.'
+    - '"Blind Warrior" - Spirit: Replaced with new add-on "Shadow Dance" - Blood. Changed rarity from Ultra Rare to Very Rare. Reduces the time required to vault windows, break pallets or damage generators while cloaked.'
+    - '"Blind Warrior" - White: Redesigned. Surprise attacks inflict survivors with mangled and hemorrhage until healed.'
+    - '"Blink" add-ons have had their values and rarities adjusted.'
+    - '"Swift Hunt" add-ons have had their values and rarities adjusted.'
+    - '"The Ghost" - White: Redesigned and renamed "The Ghost" - Soot. Changed rarity from Rare to Common. {wraith}''s terror radius will remains suppressed for 6 seconds after uncloaking.'
+    - '"Windstorm" add-ons now increase {wraith}''s movement speed while cloaked and decrease {wraith}''s movement speed while uncloaking.'
+    - "Bone Clapper: Changed rarity from Common to Uncommon. Survivors can no longer discern the Wailing Bell's distance or direction."
+    - "Coxcombed Clapper: Changed rarity from Uncommon to Ultra Rare. Renders the Wailing Bell completely silent."
 - killer: nurse
   text: Readjusted {nurse}'s interruption animations
