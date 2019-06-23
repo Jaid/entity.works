@@ -20,7 +20,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-class IndexPage extends React.Component {
+export default class IndexPage extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -44,5 +44,3 @@ class IndexPage extends React.Component {
   }
 
 }
-
-export default IndexPage

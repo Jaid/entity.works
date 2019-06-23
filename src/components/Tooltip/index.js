@@ -17,7 +17,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-class Tooltip extends React.Component {
+export default class Tooltip extends React.Component {
 
   static propTypes = {
     children: PropTypes.node.isRequired,
@@ -43,5 +43,3 @@ class Tooltip extends React.Component {
   }
 
 }
-
-export default Tooltip

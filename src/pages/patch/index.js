@@ -22,7 +22,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-class PatchPage extends React.Component {
+export default class PatchPage extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -47,5 +47,3 @@ class PatchPage extends React.Component {
   }
 
 }
-
-export default PatchPage
