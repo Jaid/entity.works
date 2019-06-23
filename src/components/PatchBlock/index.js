@@ -30,7 +30,12 @@ const getDisplayPriorityFromPatchReference = patchReference => {
 
 const getTitleFromPatchReference = patchReference => {
   if (patchReference.referenceType === "perks") {
-    return perks.find(({id}) => id === patchReference.referenceName).title
+    const foundPerk = perks.find(({id}) => id === patchReference.referenceName)
+    if (foundPerk) {
+      return foundPerk.title
+    } else {
+      throw new Error(`No perk named ${patchReference.referenceName} found`)
+    }
   }
   return patchReference.referenceName
 }
