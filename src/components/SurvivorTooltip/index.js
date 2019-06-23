@@ -4,8 +4,7 @@ import classnames from "classnames"
 import perks from "lib/perks"
 import {sortBy} from "lodash"
 import PerkBox from "components/PerkBox"
-
-import css from "./style.scss"
+import css from "components/KillerTooltip/style.scss"
 
 export default class SurvivorTooltip extends React.Component {
 

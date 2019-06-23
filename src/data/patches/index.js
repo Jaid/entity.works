@@ -16,7 +16,7 @@ module.exports = async () => {
       return null
     }
     const data = await fsp.readYaml(logFile)
-    data.linkId = paramCase(data.title ? `${data.semver}-${data.title}` : data.semver)
+    data.linkId = paramCase(data.title || data.semver)
     if (!data.points) {
       data.points = {}
     }

@@ -25,7 +25,7 @@ export default class KillerBox extends React.Component {
       <img className={css.icon} src={require(`../../data/killers/${this.props.killer}/icon.png`)}/>
       {info.title}
     </span>
-    return <Tooltip html={<KillerTooltip info={info}/>}>{content}</Tooltip>
+    return <Tooltip html={<KillerTooltip info={info}/>} noPadding>{content}</Tooltip>
   }
 
 }

@@ -7,6 +7,7 @@
   .tippy-tooltip.entity-theme {
     background   : black;
     border-radius: 0;
+    padding      : 0;
   }
 
   .tippy-popper[x-placement^=bottom] .entity-theme [x-arrow] {
@@ -37,5 +38,11 @@
       border-right: 8.5px solid transparent;
       border-left : 8.5px solid transparent;
     }
+  }
+}
+
+.container {
+  &:not(.noPadding) {
+    padding: 0.4rem 0.8rem;
   }
 }

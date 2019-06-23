@@ -3,22 +3,37 @@
 }
 
 .banner {
-  margin-bottom: -2.2em;
-  margin-right : -10px;
-  margin-left  : -10px;
-  margin-top   : -3px;
+  width        : 180px;
+  height       : 120px;
+  width        : 100%;
+  height       : auto;
+  margin-bottom: -2.5em;
+  padding      : 4px;
+  user-select  : none;
+
+  &:hover~.title {
+    opacity: 0;
+  }
 }
 
 .title {
-  font-size  : 24px;
-  margin-left: 4px;
-  text-shadow: 0 0 3px black, 0 0 10px black;
+  pointer-events: none;
+  transition    : opacity 0.1s;
+  user-select   : none;
+  font-size     : 18px;
+  margin-left   : 0.35em;
+  text-shadow   : 0 0 3px black, 0 0 10px black;
+  text-align    : left;
+  color         : white;
+  text-transform: uppercase;
+  font-family   : Hind,
+    sans-serif
 }
 
 .content {
   margin-top: 12px;
   text-align: left;
-  width     : 120px;
+  padding   : 0.2em 0.5em;
 }
 
 .perk {

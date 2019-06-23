@@ -25,7 +25,7 @@ export default class SurvivorBox extends React.Component {
       <img className={css.icon} src={require(`../../data/survivors/${this.props.survivor}/icon.png`)}/>
       {info.title}
     </span>
-    return <Tooltip html={<SurvivorTooltip info={info}/>}>{content}</Tooltip>
+    return <Tooltip html={<SurvivorTooltip info={info}/>} noPadding>{content}</Tooltip>
   }
 
 }
