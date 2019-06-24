@@ -1,6 +1,6 @@
-semver: "2.0.0"
+semver: 2.0.0
+date: 12.06.2018
 title: CURTAIN CALL
-date: "12.06.2018"
 points:
   map:
     - Added a few totem spawn points in the buildings of Macmillan Estate
