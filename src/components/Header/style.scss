@@ -1,0 +1,31 @@
+.container {}
+
+.icon {
+  width         : 3em;
+  vertical-align: middle;
+}
+
+.title {
+  display       : inline-block;
+  vertical-align: middle;
+  font-family   : Hind, sans-serif;
+  line-height   : 80%;
+  font-size     : 32px;
+  text-transform: uppercase;
+
+  &:hover>.entity {
+    color: rgb(204, 74, 243);
+  }
+
+  &:hover>.works {
+    color: rgb(79, 216, 79);
+  }
+}
+
+.entity {
+  color: rgb(139, 27, 173);
+}
+
+.works {
+  color: rgb(45, 133, 45);
+}
