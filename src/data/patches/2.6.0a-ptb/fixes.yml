@@ -1,0 +1,15 @@
+- perk: infectiousFright
+  text: Fixed an issue that caused {infectiousFright} to show auras instead of their locations. The description has been updated accordingly.
+- killer: plague
+  text: Fixed an issue that caused Survivor to play 2 different animations when being puked on right before an action.
+- killer: plague
+  text: Fixed an issue that caused gestures to increase the sickness level.
+- killer: plague
+  text: Fixed an issue that caused picking up, dropping and swapping items to increase the sickness level.
+- killer: plague
+  perk: playWithYourFood
+  text: Fixed an issue that caused {plague} not to lose {playWithYourFood} stacks when using Corrupt Purge.
+- killer: plague
+  text: Fixed an issue that caused {plague} to be unable to infect items on the ground and in open chests.
+- killer: plague
+  text: Fixed an issue that caused the vomit splatter VFX to be completely black and take up too much of the players field of view.
