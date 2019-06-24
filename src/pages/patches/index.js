@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
 import {Link} from "react-router-dom"
+import patches from "lib/patches"
 
 import css from "./style.scss"
 
@@ -12,7 +13,7 @@ import css from "./style.scss"
   *    isExact: boolean
   *    path: string
   *    url: string
-  *    params: Object.<string, string>
+  *    params: object.<string, string>
   *  }
   * }} Props
   */
@@ -21,7 +22,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class IndexPage extends React.Component {
+export default class PatchesPage extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -39,8 +40,9 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
+    const links = patches.map(patch => <div key={patch.semver}><Link to={`/patch/${patch.linkId}`}>{patch.semver}</Link></div>)
     return <main className={classnames(css.container, this.props.className)}>
-      <Link to="/patches">Patches</Link>
+      {links}
     </main>
   }
 
