@@ -7,6 +7,7 @@ export default configure({
   optimizeCss: true,
   createCssFile: true,
   robots: true,
+  appDescription: "An alternative Dead by Daylight wiki",
   icon: path.join(__dirname, "icon.png"),
   extra: {
     resolve: {
