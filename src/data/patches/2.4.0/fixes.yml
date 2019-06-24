@@ -60,7 +60,7 @@
 - perk: [distortion, deerstalker]
   text: Fixed an issue that caused {distortion} tokens to be consumed while being interrupted and carried by a Killer with the {deerstalker} perk.
 - survivor: kate
-  text: Fixed an issue that caused Kate to scream too loud when downed, hooked, gassed and shocked.
+  text: Fixed an issue that caused {kate} to scream too loud when downed, hooked, gassed and shocked.
 - Fixed an issue that caused Survivors to overlap on one another in the match result screen.
 - Fixed an issue that caused Survivors to snap back underneath the hook when unhooking themselves.
 - Fixed an issue that caused an impassable gap between a rock and a snow mound in the Mount Ormond Resort map.
