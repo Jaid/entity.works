@@ -5,13 +5,16 @@ import {capitalize} from "lodash"
  * @typedef killer
  * @prop {string} id
  * @prop {string} title
+ * @prop {string} shortTitle
+ * @prop {string} fullName
  */
 
 /**
  * @type {killer[]}
  */
 const killersNormalized = killers.map(killer => ({
-  title: `The ${killer.id |> capitalize}`,
+  shortTitle: killer.id |> capitalize,
+  title: `The ${killer.shortTitle || killer.id |> capitalize}`,
   ...killer,
 }))
 

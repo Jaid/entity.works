@@ -23,7 +23,7 @@ export default class KillerBox extends React.Component {
     const info = killers.find(({id}) => id === this.props.killer)
     const content = <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
       <img className={css.icon} src={require(`../../data/killers/${this.props.killer}/icon.png`)}/>
-      {info.title}
+      {this.props.large ? info.title : info.shortTitle}
     </span>
     return <Tooltip html={<KillerTooltip info={info}/>} noPadding>{content}</Tooltip>
   }
