@@ -16,7 +16,12 @@ module.exports = async () => {
       return null
     }
     const data = await fsp.readYaml(logFile)
-    data.linkId = paramCase(data.title || data.semver)
+    if (!data.semver) {
+      data.semver = version
+    }
+    if (!data.linkId) {
+      data.linkId = paramCase(data.title || data.semver)
+    }
     if (!data.points) {
       data.points = {}
     }
