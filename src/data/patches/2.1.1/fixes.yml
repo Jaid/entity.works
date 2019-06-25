@@ -1,4 +1,5 @@
-- Fixed an issue that caused the Hag to lose collision with Survivors after carrying them on her shoulder
+- killer: hag
+  text: Fixed an issue that caused {hag} to lose collision with Survivors after carrying them on her shoulder
 - perk: tinkerer
   text: Fixed an issue that caused the Killers terror radius to disappear indefinitely when {tinkerer} at Tier II was activated
 - Fixed an issue that could cause framerate hitches in the lobby and during matches after opening the Store

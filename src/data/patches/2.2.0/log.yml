@@ -2,7 +2,3 @@ date: 18.09.2018
 title: SHATTERED BLOODLINE
 points:
   known issues:
-    - killer: spirit
-      text: There's an issue causing the flashlight's blinding effect to build up very rapidly on {spirit}
-    - killer: hag
-      text: There's an issue causing no heartbeat or terror radius when triggering a phantasm trap

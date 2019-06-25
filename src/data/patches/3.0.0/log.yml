@@ -1,15 +1,2 @@
 date: 18.06.2019
 title: GHOST FACE
-points:
-  known issues:
-    - Cannot change the resolution while in Windowed mode.
-    - perk: [bbqAndChilli, rememberMe]
-      text: The {bbqAndChilli} and {rememberMe} perks visually only stack up to 3 tokens.
-    - killer: spirit
-      text: "{spirit}'s passive phasing is missing VFX."
-    - Heartbeat audio will overlap itself.
-    - No music for Killers when carrying Survivors.
-    - killer: plague
-      text: "Survivors won't be able to see {plague}'s vomit on windows."
-    - Generators in the Tutorials do not show progress until interacted with.
-    - The heartbeat and terror radius for {trapper} is missing in the Survivor Tutorial.
