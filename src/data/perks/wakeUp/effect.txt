@@ -1,0 +1,7 @@
+Unlocks potential in one's Aura-reading ability.
+
+Once all Generators are powered, Exit Gates are revealed to you when within 128 metres of range.
+
+While opening the Exit Gates, reveal your Aura to other Survivors within 128 metres of range.
+
+While Wake Up! is active, you open the Exit Gates {tiers:5%/10%/15%} faster.

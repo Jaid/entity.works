@@ -1,0 +1,5 @@
+You are apt at handling machinery with the greatest care and precision.
+
+The noises caused by your Repairs and their hearing distance are reduced by 8 metres.
+
+On a failed Repair Skill Check, there is a {tiers:30%/40%/50%} chance that the Generator explosion will be prevented.

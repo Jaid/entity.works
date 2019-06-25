@@ -1,0 +1,7 @@
+Your vault speed is {tiers:5%/10%/15%} faster.
+
+Performing a vault action calls upon The Entity to block that vault location for {tiers:8/12/16} seconds.
+
+Only 1 vault location may be blocked in this way at any given time. The vault location is blocked only for Survivors.
+
+Bamboozle does not affect Pallets.

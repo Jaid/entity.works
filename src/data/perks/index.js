@@ -12,7 +12,13 @@ module.exports = async () => {
     if (!infoFileExists) {
       return null
     }
-    return fsp.readYaml(infoFile)
+    const data = await fsp.readYaml(infoFile)
+    const effectFile = path.join(perksFolder, id, "effect.txt")
+    const effectFileExists = await fsp.pathExists(effectFile)
+    if (effectFileExists) {
+      data.effect = await fsp.readFile(effectFile, "utf8")
+    }
+    return data
   })
   const perks = await Promise.all(fetchPerksJobs)
   return perks |> filterNil

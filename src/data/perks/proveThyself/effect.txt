@@ -1,0 +1,3 @@
+Increases the Repair Speed by 10% for each other Survivor working on a Generator within a range of 4 metres. Gain {tiers:50%/75%/100%} more Bloodpoints for cooperative Actions.
+
+Survivors can only be affected by one Prove Thyself effect at a time.

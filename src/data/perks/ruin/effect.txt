@@ -1,0 +1,8 @@
+A Hex that affects the Survivors' skills at repairing Generators.
+
+All Survivors are affected by Ruin, which causes the following:
+
+Good Skill Checks result in {tiers:3%/4%/5%} regression on the Generator.
+Great Skill Checks grant 0% bonus progression on the Generator.
+
+The Hex effects persist as long as the related Hex Totem is standing.

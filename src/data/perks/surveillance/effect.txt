@@ -1,0 +1,5 @@
+Unlocks potential in one's Aura-reading ability.
+
+All regressing Generators will be highlighted by a white Aura. Once regression ends, Generators will be highlighted by a yellow Aura for {tiers:8/12/16} seconds.
+
+Noises created by Generator Repairs are audible at an additional 8 metres.

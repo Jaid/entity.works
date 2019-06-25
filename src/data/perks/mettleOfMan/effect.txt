@@ -1,0 +1,13 @@
+Evil has a way of always finding you.
+
+After you earn 3 Protection Hit Score Events, Mettle of Man activates.
+
+Once activated, the next occasion that would put you into the Dying State from the Injured State is ignored.
+
+The next time you heal back to full health, your Aura will be revealed to the Killer when you are farther than {tiers:12/14/16} metres from the Killer.
+
+Mettle of Man will deactivate the next time you are put into the Dying State.
+
+Increases your chances of being the Obsession.
+
+The Killer can only be obsessed with one Survivor at a time.

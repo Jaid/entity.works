@@ -1,0 +1,7 @@
+You have the undeniable capability to sense danger.
+
+Get an auditory warning when looking in the direction of Killer Traps and Totems in a 45° cone within a range of {tiers:8/10/12} metres.
+
+Small Game has a cool-down of {tiers:15/12/10} seconds each time it activates.
+
+Only works on Traps that are set by Killers.

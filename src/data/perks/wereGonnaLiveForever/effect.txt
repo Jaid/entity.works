@@ -1,0 +1,3 @@
+Your few friends deserve the best protection.
+
+Each time you perform a Safe Hook Rescue or take a hit to protect a Survivor, gain a 25% stackable bonus to all Bloodpoint gains up to a maximum of {tiers:50%/75%/100%}.

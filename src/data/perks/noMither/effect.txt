@@ -1,0 +1,5 @@
+You are affected by the Broken Status Effect for the duration of the Trial. Your thick blood coagulates practically instantly.
+
+- You don't leave pools of Blood.
+- Grunts of pain caused by injuries are reduced by {tiers:0%/25%/50%} at any time.
+- Grants the ability to fully recover from the Dying State.

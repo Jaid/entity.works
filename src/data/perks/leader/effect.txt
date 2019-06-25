@@ -1,0 +1,7 @@
+You're able to organise a team to cooperate more efficiently.
+
+Increases the other Survivors' Healing, Sabotage, Unhooking, Cleansing, Opening Exit Gates, and Chest Search speeds by {tiers:15%/20%/25%} when they are within 8 metres of range from you.
+
+Survivors can only be affected by one Leader effect at a time.
+
+This effect persists on other Survivors for 15 seconds after leaving the Leader's effective Perk range.

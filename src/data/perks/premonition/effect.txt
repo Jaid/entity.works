@@ -1,0 +1,7 @@
+You have the undeniable capability to sense danger.
+
+Get an auditory warning when looking in the direction of the Killer in a 45° cone within a range of 36 metres.
+
+Premonition has a cool-down of {tiers:60/45/30} seconds each time it activates.
+
+Premonition trumps any of the Killer's stealth abilities.

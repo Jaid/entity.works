@@ -1,0 +1,1 @@
+Any time two or more Survivors are working on the same Generator, that Generator's Aura is highlighted in yellow for {tiers:8/10/12} seconds.

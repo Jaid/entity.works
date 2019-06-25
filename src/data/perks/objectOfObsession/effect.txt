@@ -1,0 +1,11 @@
+A supernatural bond links you to the Killer.
+
+If you are looking in the Killer's direction, your link will reveal your Auras to each other.
+
+This effect applies only if you are outside of the Killer's Terror Radius.
+
+As the Killer's Obsession, this effect applies to a maximum range of {tiers:56/64/72} metres. Otherwise, it applies to a maximum range of {tiers:44/56/64} metres.
+
+Increases your chances of being the Obsession.
+
+The Killer can only be obsessed with one Survivor at a time.

@@ -1,0 +1,3 @@
+You transform plants found around The Campfire into tinctures that slow down bleeding.
+
+Healing Speed and Healing Item Efficiency is increased by {tiers:11%/22%/33%}.

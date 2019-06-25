@@ -1,0 +1,11 @@
+Activate-able Perk.
+
+You can take a beating. When Injured, tap into your adrenaline bank and dash forward quickly to avoid damage.
+
+Press the Active Ability button while running to dash forward.
+During the dash, you avoid damage.
+Causes the Exhausted Status Effect for {tiers:60/50/40} seconds.
+
+Dead Hard cannot be used while Exhausted.
+
+You do not recover from Exhaustion while running.

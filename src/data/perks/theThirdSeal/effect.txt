@@ -1,0 +1,7 @@
+A Hex that hinders one's Aura-reading ability.
+
+Hitting a Survivor while the Hex Totem is active applies the Blindness Status Effect.
+
+This effect applies to the last {tiers:2/3/4} Survivors hit.
+
+The Hex effects persist as long as the related Hex Totem is standing.

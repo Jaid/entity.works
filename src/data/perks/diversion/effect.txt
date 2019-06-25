@@ -1,0 +1,7 @@
+Activate-able Perk.
+
+Standing within the Killer's Terror Radius while not in a Chase for 45 seconds activates the Perk.
+
+Once the Perk is activated, press the Active Ability button while crouched and motionless to throw a pebble, which creates a loud noise notification for the Killer at a distance of {tiers:10/15/20} metres.
+
+The Perk deactivates once it has been used.

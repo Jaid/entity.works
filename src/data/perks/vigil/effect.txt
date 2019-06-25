@@ -1,0 +1,5 @@
+You look over your friends even in dire situations.
+
+You and your Allies within 8 metres of range recover from Exhaustion, Hemorrhage, Mangled, Hindered and Blindness Status Effects {tiers:10%/15%/20%} faster.
+
+Once out of range, this effect persists for 15 seconds.

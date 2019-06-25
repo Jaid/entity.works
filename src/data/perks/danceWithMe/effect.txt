@@ -1,0 +1,3 @@
+When performing a fast vault or leaving a Locker in a sprint, you leave no Scratch Marks for 3 seconds.
+
+Dance With Me has a cool-down of {tiers:60/50/40} seconds.

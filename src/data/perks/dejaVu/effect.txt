@@ -1,0 +1,5 @@
+Unlocks potential in one's Aura-reading ability. Paranoia paired with your horror of failure helps prepare you from repeating the same mistakes.
+
+The Auras of 3 Generators in closest proximity to each other are revealed to you for {tiers:30/45/60} seconds, at the start of the Trial and each time a Generator is completed.
+
+If you are holding a Map that can track Objectives, Generators revealed by Déjà Vu are added to the Map.

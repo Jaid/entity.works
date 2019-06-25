@@ -1,0 +1,7 @@
+Your keen senses are sharpened in the dark Realm of The Entity.
+
+Unlocks potential in one's Aura-reading ability.
+
+Any Survivor performing a rushed action outside of your Terror Radius will have their Aura revealed to you for 6 seconds.
+
+I'm All Ears can only be triggered once every {tiers:60/50/40} seconds.

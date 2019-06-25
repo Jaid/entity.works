@@ -1,0 +1,3 @@
+Animals seem to trust you as they often stay calm in your presence.
+
+Reduces chances of alerting Crows by {tiers:80%/90%/100%}.

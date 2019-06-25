@@ -1,0 +1,5 @@
+You have a knack for finding medicine.
+
+Searches through Chests are {tiers:40%/60%/80%} faster and the noises they cause along with their hearing distances are reduced by 8 metres.
+
+Pharmacy guarantees an Emergency Med-Kit on your first completed Chest search.

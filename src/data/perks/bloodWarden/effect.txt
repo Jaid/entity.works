@@ -1,0 +1,3 @@
+As soon as the Exit Gate is opened, Blood Warden is activated. The Auras of any Survivors located within Exit areas are revealed to you.
+
+Once per Trial, hooking a Survivor while Blood Warden is active calls upon The Entity to block both Exits for all Survivors for {tiers:30/40/60} seconds.

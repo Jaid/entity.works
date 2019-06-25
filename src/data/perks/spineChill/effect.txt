@@ -1,0 +1,5 @@
+An unnatural tingle warns you of impending doom.
+
+Get notified when the Killer is looking directly in your direction and standing within a range of 36 metres.
+
+When Spine Chill is active, Skill Check trigger odds are increased by 10% with success zones reduced by 10% and your Repair, Heal and Sabotage speeds are increased by {tiers:2%/4%/6%}.

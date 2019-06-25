@@ -1,0 +1,5 @@
+You know where to hit to make them bleed.
+
+Wounds inflicted by successful attacks {tiers:slightly/moderately/considerably} increase the Survivor's bleeding frequency and cause the Mangled Status Effect.
+
+Hemorrhage and Mangled effects caused by Sloppy Butcher return to normal once the Survivor is fully healed.

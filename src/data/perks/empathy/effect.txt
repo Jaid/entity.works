@@ -1,0 +1,5 @@
+Unlocks potential in one's Aura-reading ability.
+
+Dying or Injured Allies' Auras are revealed to you when within {tiers:64/96/128} metres of range.
+
+Empathy does not reveal Auras of Allies when they are in the Killer's direct contact.

@@ -1,0 +1,5 @@
+Unlocks potential in one's Aura-reading ability.
+
+Auras of Pallets and vaults are revealed to you when within a range of 20 metres.
+
+Windows of Opportunity has a cool-down of {tiers:30/25/20} seconds when vaulting or dropping a Pallet during a Chase.

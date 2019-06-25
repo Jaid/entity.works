@@ -1,0 +1,3 @@
+Unlocks the ability to heal yourself without a Med-Kit at 50 % the normal Healing speed.
+
+Increases the efficiency of Med-Kit self-heal by {tiers:10%/15%/20%}.

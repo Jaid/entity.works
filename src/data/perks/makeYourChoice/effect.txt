@@ -1,0 +1,3 @@
+When a Survivor rescues another from a Hook at least 32 metres away from you, Make Your Choice triggers and applies the Exposed Status Effect on the rescuer for {tiers:40/50/60} seconds.
+
+Make Your Choice has a cool-down of {tiers:40/50/60} seconds.

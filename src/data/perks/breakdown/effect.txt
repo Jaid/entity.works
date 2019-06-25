@@ -1,0 +1,1 @@
+Any time you are removed from a Hook (escaped or rescued), the Hook breaks and the Killer's Aura is shown to you for {tiers:4/5/6} seconds.
