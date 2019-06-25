@@ -18,7 +18,7 @@
 - killer: nightmare
   text: Fixed an issue that caused {nightmare}'s movement speed to drop considerably when using his power.
 - perk: spiesFromTheShadows
-  text: Fixed an issue that caused the crow bombs in the Backwater Swamp maps not to have the correct notification icon when using Spies From The Shadows.
+  text: Fixed an issue that caused the crow bombs in the Backwater Swamp maps not to have the correct notification icon when using {spiesFromTheShadows}.
 - Fixed an issue that caused the host to see the blood spurt VFX (when not the Nightmare) when a Survivor failed a generator skill check.
 - killer: legion
   text: Fixed an issue that made it impossible for {legion} to Frenzy vault over any windows above ground level.
