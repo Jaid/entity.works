@@ -4,6 +4,7 @@ import classnames from "classnames"
 import patches from "lib/patches"
 import PatchBlock from "components/PatchBlock"
 import {NavLink} from "react-router-dom"
+import DocumentTitle from "react-document-title"
 
 import css from "./style.scss"
 
@@ -43,12 +44,14 @@ export default class PatchPage extends React.Component {
   render() {
     const links = patches.map(patch => <div key={patch.semver}><NavLink activeClassName={css.activeLink} to={`/patch/${patch.linkId}`}>{patch.semver}</NavLink></div>)
     const patch = patches.find(({linkId}) => linkId === this.props.match.params.version)
-    return <div className={classnames(css.container, this.props.className)}>
-      <nav className={css.nav}>{links}</nav>
-      <main>
-        <PatchBlock patch={patch}/>
-      </main>
-    </div>
+    return <DocumentTitle title={`Patch ${patch.semver} in Dead by Daylight`}>
+      <div className={classnames(css.container, this.props.className)}>
+        <nav className={css.nav}>{links}</nav>
+        <main>
+          <PatchBlock patch={patch}/>
+        </main>
+      </div>
+    </DocumentTitle>
   }
 
 }
