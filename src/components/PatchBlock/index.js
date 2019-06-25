@@ -40,6 +40,40 @@ const getTitleFromPatchReference = patchReference => {
   return patchReference.referenceName
 }
 
+const processCategoryBlocks = ([category, {points, references}]) => {
+  const patchReferences = []
+  for (const referenceType of ["perks", "survivors", "killers", "maps"]) {
+    for (const [referenceName, referencePoints] of Object.entries(references[referenceType])) {
+      patchReferences.push({
+        referenceType,
+        referenceName,
+        points: referencePoints,
+      })
+    }
+  }
+  return <div key={category}>
+    <div className={classnames(css.categoryTitle, css[category])}>{category}</div>
+    {sortBy(patchReferences, [getDisplayPriorityFromPatchReference, getTitleFromPatchReference]).map(patchReference => <PatchReferenceBlock key={`${patchReference.referenceType}-${patchReference.referenceName}`} {...patchReference}/>)}
+    <PatchLines points={points}/>
+  </div>
+}
+
+const sortCategories = ([category]) => {
+  if (category === "features") {
+    return -4
+  }
+  if (category === "balance") {
+    return -3
+  }
+  if (category === "fixes") {
+    return -2
+  }
+  if (category === "balance") {
+    return -1
+  }
+  return category
+}
+
 export default class PatchBlock extends React.Component {
 
   static propTypes = {
@@ -49,23 +83,7 @@ export default class PatchBlock extends React.Component {
 
   render() {
     const headerText = getHeaderText(this.props.patch)
-    const categoryBlocks = Object.entries(this.props.patch.points).map(([category, {points, references}]) => {
-      const patchReferences = []
-      for (const referenceType of ["perks", "survivors", "killers", "maps"]) {
-        for (const [referenceName, referencePoints] of Object.entries(references[referenceType])) {
-          patchReferences.push({
-            referenceType,
-            referenceName,
-            points: referencePoints,
-          })
-        }
-      }
-      return <div key={category}>
-        <div className={classnames(css.categoryTitle, css[category])}>{category}</div>
-        {sortBy(patchReferences, [getDisplayPriorityFromPatchReference, getTitleFromPatchReference]).map(patchReference => <PatchReferenceBlock key={`${patchReference.referenceType}-${patchReference.referenceName}`} {...patchReference}/>)}
-        <PatchLines points={points}/>
-      </div>
-    })
+    const categoryBlocks = sortBy(Object.entries(this.props.patch.points), sortCategories).map(processCategoryBlocks)
     return <div className={classnames(css.container, this.props.className)}>
       <div className={css.header}>
         <div className={css.headerInfo}>{headerText.info}</div>
