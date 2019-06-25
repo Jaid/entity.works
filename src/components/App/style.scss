@@ -22,12 +22,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 2px;
+  width      : 6px;
+  border-left: 1px solid rgba(255, 255, 255, 0.212);
 }
 
 ::-webkit-scrollbar-thumb {
-  width     : 2px;
-  background: rgba(255, 255, 255, 0.1);
+  width     : 6px;
+  background: rgb(146, 22, 22);
 }
 
 :global {
