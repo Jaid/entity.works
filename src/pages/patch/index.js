@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import patches from "lib/patches"
 import PatchBlock from "components/PatchBlock"
-import {Link} from "react-router-dom"
+import {NavLink} from "react-router-dom"
 
 import css from "./style.scss"
 
@@ -41,7 +41,7 @@ export default class PatchPage extends React.Component {
   }
 
   render() {
-    const links = patches.map(patch => <div key={patch.semver}><Link to={`/patch/${patch.linkId}`}>{patch.semver}</Link></div>)
+    const links = patches.map(patch => <div key={patch.semver}><NavLink activeClassName={css.activeLink} to={`/patch/${patch.linkId}`}>{patch.semver}</NavLink></div>)
     const patch = patches.find(({linkId}) => linkId === this.props.match.params.version)
     return <div className={classnames(css.container, this.props.className)}>
       <nav className={css.nav}>{links}</nav>
