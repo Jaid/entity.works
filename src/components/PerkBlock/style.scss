@@ -1,11 +1,14 @@
 .container {}
 
 .perkInfo {
-  display: flex;
+  display        : flex;
+  justify-content: space-evenly;
 }
 
 .icon {
   vertical-align: middle;
 }
 
-.effect {}
+.effect {
+  width: 16em;
+}

@@ -1,0 +1,6 @@
+index: /
+patch: /patch/:version
+perk: /perk/:id
+perks:
+  - /perks
+  - /perks/:type
