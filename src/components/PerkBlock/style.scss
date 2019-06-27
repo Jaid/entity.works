@@ -1,5 +1,15 @@
 .container {}
 
+.basicInfo {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.level {
+  color      : #dac17c;
+  margin-left: 4px;
+}
+
 .title {
   margin-bottom: 20px;
   display      : block;
@@ -17,4 +27,9 @@
 
 .icon {
   vertical-align: middle;
+}
+
+.owner {
+  display: block;
+  width  : fit-content;
 }
