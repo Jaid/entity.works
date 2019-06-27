@@ -41,7 +41,7 @@ export default class PerksPage extends React.Component {
 
   render() {
     const perkBlocks = perks.map(perk => {
-      return <PerkBlock key={perk.id} perkInfo={perk}/>
+      return <PerkBlock key={perk.id} className={css.perkBlock} perkInfo={perk}/>
     })
     return <main className={classnames(css.container, this.props.className)}>
       {perkBlocks}
