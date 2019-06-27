@@ -7,6 +7,7 @@ import RichText from "components/RichText"
 import killers from "lib/killers"
 import survivors from "lib/survivors"
 import perks from "lib/perks"
+import Headline from "components/Headline"
 
 import description from "./description.txt"
 import css from "./style.scss"
@@ -47,10 +48,7 @@ export default class IndexPage extends React.Component {
   render() {
     const latestPatch = patches[0]
     return <main className={classnames(css.container, this.props.className)}>
-      {_PKG_TITLE}
-      <br/>
-      <RichText>{description}</RichText>
-      <br/>
+      <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>      <br/>
       <br/>
       <Link to={`/patch/${latestPatch.linkId}`}>{patches.length} Patches</Link>
       <br/>
