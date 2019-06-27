@@ -3,6 +3,7 @@
 .perkInfo {
   display        : flex;
   justify-content: space-evenly;
+  align-items    : center;
 }
 
 .icon {
@@ -10,5 +11,5 @@
 }
 
 .effect {
-  width: 16em;
+  width: 20em;
 }
