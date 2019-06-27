@@ -1,5 +1,5 @@
 - perk: wakeUp
-  text: Fixed an issue that caused the Wake Up! perk to grant {tiers:5%/10%/15%} increased action speed to all interactions at all times.
+  text: Fixed an issue that caused {wakeUp} to grant {tiers:5%/10%/15%} increased action speed to all interactions at all times.
 - perk: bamboozle
   text: Fixed an issue that caused the {bamboozle} perk not to have an activation sound.
 - perk: [bbqAndChilli, fireUp, rememberMe, wereGonnaLiveForever]
