@@ -43,7 +43,7 @@ export default class PerkBlock extends React.Component {
             }}/>
         </Link>
         <div className={css.description}>
-          <Link to={`/perk/${this.props.perkInfo.id}`}><div className={css.title}>{this.props.perkInfo.title}</div></Link>
+          <Link className={css.title} to={`/perk/${this.props.perkInfo.id}`}>{this.props.perkInfo.title}</Link>
           <RichText className={css.effect}>{this.props.perkInfo.effect}</RichText>
         </div>
       </section>

@@ -2,6 +2,13 @@
 
 .title {
   margin-bottom: 20px;
+  display      : block;
+  color        : #ffc542;
+  width        : fit-content;
+
+  &:hover {
+    color: #ffdf95;
+  }
 }
 
 .perkInfo {
