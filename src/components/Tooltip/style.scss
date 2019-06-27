@@ -44,6 +44,8 @@
 }
 
 .container {
+  text-align: left;
+
   &:not(.noPadding) {
     padding: 0.4rem 0.8rem;
   }

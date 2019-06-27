@@ -40,8 +40,12 @@ export default class RichText extends React.Component {
       }
     })
 
+    const formattedText = reactStringReplace(processedRichText, "\n", () => {
+      return <br/>
+    })
+
     return <span className={classnames(css.container, this.props.className)}>
-      {processedRichText}
+      {formattedText}
     </span>
   }
 
