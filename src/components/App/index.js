@@ -13,9 +13,9 @@ export default class App extends React.Component {
   render() {
     const routeBlocks = []
     Object.entries(routes).forEach(([id, paths], index) => {
-      for (const path of paths |> ensureArray) {
-        routeBlocks.push(<Route key={index} component={require(`../../pages/${id}`).default} path={path} exact/>)
-      }
+      ensureArray(paths).forEach((path, pathIndex) => {
+        routeBlocks.push(<Route key={`${index}-${pathIndex}`} component={require(`../../pages/${id}`).default} path={path} exact/>)
+      })
     })
     return <DocumentTitle title={_PKG_TITLE}>
       <div className={css.container}>

@@ -25,7 +25,7 @@ export default class RichText extends React.Component {
       if (typeMatch === null) {
         richObject = findObject(token)
       } else if (typeMatch.groups.type === "tiers") {
-        return <TiersBox key={index} tiers={typeMatch.groups.name.split("/")}/>
+        return <TiersBox key={`TiersBox${index}`} tiers={typeMatch.groups.name.split("/")}/>
       } else {
         const info = findExactObject(typeMatch.groups.name)
         if (info) {
@@ -36,12 +36,13 @@ export default class RichText extends React.Component {
         }
       }
       if (richObject) {
-        return <RichBox key={index} info={richObject.info} type={richObject.type}/>
+        return <RichBox key={`RichBox${index}`} info={richObject.info} type={richObject.type}/>
       }
     })
 
+    let i = 0
     const formattedText = reactStringReplace(processedRichText, "\n", () => {
-      return <br/>
+      return <br key={i++}/>
     })
 
     return <span className={classnames(css.container, this.props.className)}>
