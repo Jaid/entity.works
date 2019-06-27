@@ -37,6 +37,7 @@ export default class PerkBlock extends React.Component {
           src={require(`../../data/perks/${this.props.perkInfo.id}/icon.png`)}
           style={{
             background: `url(${require(`../../data/perkBackgrounds/${this.props.perkInfo.rarity}.png`)})`,
+            backgroundSize: "contain",
           }}/>
         <RichText className={css.effect}>{this.props.perkInfo.effect}</RichText>
       </section>
