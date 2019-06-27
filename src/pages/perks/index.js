@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import perks from "lib/perks"
 import PerkBlock from "components/PerkBlock"
+import NavigationPage from "components/NavigationPage"
 
 import css from "./style.scss"
 
@@ -53,9 +54,23 @@ export default class PerksPage extends React.Component {
     const perkBlocks = filteredPerks.map(perk => {
       return <PerkBlock key={perk.id} className={css.perkBlock} perkInfo={perk}/>
     })
-    return <main className={classnames(css.container, this.props.className)}>
+    const links = [
+      {
+        text: "All",
+        to: "/perks",
+      },
+      {
+        text: "Killers",
+        to: "/perks/killer",
+      },
+      {
+        text: "Survivors",
+        to: "/perks/survivor",
+      },
+    ]
+    return <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
       {perkBlocks}
-    </main>
+    </NavigationPage>
   }
 
 }
