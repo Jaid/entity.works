@@ -9,7 +9,7 @@
 - killer: [hillbilly, cannibal]
   text: Fixed an issue that caused The Hillbilly and The Cannibal to be missing their chainsaws on the match result screen.
 - perk: [borrowedTime, wereGonnaLiveForever, wellMakeIt]
-  text: Fixed an issue that caused the {borrowedTime, {wereGonnaLiveForever} and {wellMakeIt} perks not to work after the exit gates were powered.
+  text: Fixed an issue that caused the {borrowedTime}, {wereGonnaLiveForever} and {wellMakeIt} perks not to work after the exit gates were powered.
 - perk: infectiousFright
   text: Fixed an issue that caused {infectiousFright} to trigger on dead and disconnected Survivors.
 - killer: plague
