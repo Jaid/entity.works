@@ -4,6 +4,8 @@ import {Route, BrowserRouter, NavLink} from "react-router-dom"
 import Header from "components/Header"
 import ReactRouterScrollTop from "react-router-scroll-top"
 import {ensureArray} from "magina"
+import Switch from "react-router-transition-switch"
+import Fader from "react-fader"
 
 import routes from "./routes.yml"
 import css from "./style.scss"
@@ -22,7 +24,9 @@ export default class App extends React.Component {
         <BrowserRouter>
           <ReactRouterScrollTop>
             <Header/>
-            {routeBlocks}
+            <Switch component={Fader}>
+              {routeBlocks}
+            </Switch>
           </ReactRouterScrollTop>
         </BrowserRouter>
       </div>

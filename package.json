@@ -23,9 +23,11 @@
     "react": "^16.8.6",
     "react-document-title": "^2.0.3",
     "react-dom": "^16.8.6",
+    "react-fader": "^3.1.0",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
     "react-router-scroll-top": "^0.2.1",
+    "react-router-transition-switch": "^1.1.1",
     "react-string-replace": "^0.4.4",
     "redux": "^4.0.1",
     "redux-action": "^1.2.2"
