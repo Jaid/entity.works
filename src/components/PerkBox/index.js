@@ -4,6 +4,7 @@ import classnames from "classnames"
 import perks from "lib/perks"
 import PerkTooltip from "components/PerkTooltip"
 import Tooltip from "components/Tooltip"
+import PerkLink from "components/PerkLink"
 
 import css from "./style.scss"
 
@@ -24,7 +25,7 @@ export default class PerkBox extends React.Component {
     const text = <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
       <img className={css.background} src={require(`../../data/perkBackgrounds/${perkInfo.rarity}.png`)}/>
       <img className={css.icon} src={require(`../../data/perks/${this.props.perk}/icon.png`)}/>
-      {perkInfo.title}
+      <PerkLink perkInfo={perkInfo}/>
     </span>
     return <Tooltip html={<PerkTooltip info={perkInfo}/>}>{text}</Tooltip>
   }

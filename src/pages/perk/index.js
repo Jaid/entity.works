@@ -2,8 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
 import perks from "lib/perks"
-import Headline from "components/Headline"
-import RichText from "components/RichText"
 import PerkBlock from "components/PerkBlock"
 
 import css from "./style.scss"
