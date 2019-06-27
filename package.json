@@ -37,7 +37,7 @@
     "ajv": "^6.10.0",
     "babel-jest": "^24.8.0",
     "babel-preset-jaid": "^6.8.0",
-    "caniuse-lite": "^1.0.30000977",
+    "caniuse-lite": "^1.0.30000978",
     "change-case": "^3.1.0",
     "eslint": "^6.0.1",
     "eslint-config-jaid-react": "^1.17.0",
