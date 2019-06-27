@@ -12,7 +12,7 @@
       sans-serif;
   }
 
-  .tippy-popper[x-placement^=bottom] .entity-theme [x-arrow] {
+  .tippy-popper[x-placement^=bottom] .entity-theme .tippy-arrow {
     border-bottom: 7px solid black;
 
     &:before {
@@ -27,7 +27,7 @@
     }
   }
 
-  .tippy-popper[x-placement^=top] .entity-theme [x-arrow] {
+  .tippy-popper[x-placement^=top] .entity-theme .tippy-arrow {
     border-top: 7px solid black;
 
     &:before {
