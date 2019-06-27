@@ -52,7 +52,7 @@ export default class IndexPage extends React.Component {
       <br/>
       <Link to={`/patch/${latestPatch.linkId}`}>{patches.length} Patches</Link>
       <br/>
-      <Link to="/perks">{perks.length} Perks</Link>
+      <Link to="/perks/survivor">{perks.length} Perks</Link>
       <br/>
       <Link to="/killers">{killers.length} Killers</Link>
       <br/>

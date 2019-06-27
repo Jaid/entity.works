@@ -56,10 +56,6 @@ export default class PerksPage extends React.Component {
     })
     const links = [
       {
-        text: "All",
-        to: "/perks",
-      },
-      {
         text: "Killers",
         to: "/perks/killer",
       },
