@@ -13,10 +13,12 @@ export default class KillerBox extends React.Component {
     className: PropTypes.string,
     killer: PropTypes.string.isRequired,
     large: PropTypes.bool,
+    tooltips: PropTypes.bool,
   }
 
   static defaultProps = {
     large: false,
+    tooltips: false,
   }
 
   render() {
@@ -25,7 +27,11 @@ export default class KillerBox extends React.Component {
       <img className={css.icon} src={require(`../../data/killers/${this.props.killer}/icon.png`)}/>
       {this.props.large ? info.title : info.shortTitle}
     </span>
-    return <Tooltip html={<KillerTooltip info={info}/>} noPadding>{content}</Tooltip>
+    if (this.props.tooltips || 1) {
+      return <Tooltip html={<KillerTooltip info={info}/>} noPadding>{content}</Tooltip>
+    } else {
+      return content
+    }
   }
 
 }

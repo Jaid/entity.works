@@ -13,10 +13,12 @@ export default class PerkBox extends React.Component {
     className: PropTypes.string,
     perk: PropTypes.string.isRequired,
     large: PropTypes.bool,
+    tooltips: PropTypes.bool,
   }
 
   static defaultProps = {
     large: false,
+    tooltips: false,
   }
 
   render() {
@@ -26,7 +28,11 @@ export default class PerkBox extends React.Component {
       <img className={css.icon} src={require(`../../data/perks/${this.props.perk}/icon.png`)}/>
       {perkInfo.title}
     </span>
-    return <Tooltip html={<PerkTooltip info={perkInfo}/>}>{text}</Tooltip>
+    if (this.props.tooltips || 1) {
+      return <Tooltip html={<PerkTooltip info={perkInfo}/>}>{text}</Tooltip>
+    } else {
+      return text
+    }
   }
 
 }
