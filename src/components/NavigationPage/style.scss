@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+}
+
+.navigation {
+  min-width: 120px;
+  max-width: 200px;
+}
+
+.link {
+  display: block;
+}
+
+.activeLink {
+  color: white;
+}
