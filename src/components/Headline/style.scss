@@ -1,0 +1,36 @@
+.container {
+  display       : inline-block;
+  vertical-align: middle;
+  width         : 100%;
+  padding       : 10px 16px;
+  margin-bottom : 24px;
+
+  &.redTheme {
+    background: rgb(149, 27, 27);
+    background: linear-gradient(45deg, rgb(177, 36, 36) 15%, rgba(255, 204, 89, 0) 100%);
+  }
+
+  &.yellowTheme {
+    background: linear-gradient(45deg, rgb(177, 130, 20) 15%, rgba(255, 204, 89, 0) 100%);
+  }
+}
+
+.overTitle {
+  font-family: Hind,
+    sans-serif;
+  color         : #FFFFFF99;
+  margin-bottom : -6px;
+  user-select   : none;
+  font-size     : 16px;
+  text-transform: uppercase;
+}
+
+.title {
+  vertical-align: middle;
+  font-family   : Ramabhadra,
+    sans-serif;
+  font-size     : 130%;
+  text-transform: uppercase;
+  width         : 80%;
+  color         : white;
+}

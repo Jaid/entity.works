@@ -6,6 +6,7 @@ import PatchLines from "components/PatchLines"
 import PatchReferenceBlock from "components/PatchReferenceBlock"
 import {sortBy} from "lodash"
 import perks from "lib/perks"
+import Headline from "components/Headline"
 
 import css from "./style.scss"
 
@@ -85,10 +86,7 @@ export default class PatchBlock extends React.Component {
     const headerText = getHeaderText(this.props.patch)
     const categoryBlocks = sortBy(Object.entries(this.props.patch.points), sortCategories).map(processCategoryBlocks)
     return <div className={classnames(css.container, this.props.className)}>
-      <div className={css.header}>
-        <div className={css.headerInfo}>{headerText.info}</div>
-        <div className={css.title}>{headerText.title}</div>
-      </div>
+      <Headline miniText={headerText.info}>{headerText.title}</Headline>
       {categoryBlocks}
     </div>
   }
