@@ -1,5 +1,4 @@
 import React from "react"
-import "react-tippy/dist/tippy.css"
 import DocumentTitle from "react-document-title"
 import {Route, BrowserRouter, NavLink} from "react-router-dom"
 import Header from "components/Header"
