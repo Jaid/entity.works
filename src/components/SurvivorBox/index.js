@@ -13,12 +13,10 @@ export default class SurvivorBox extends React.Component {
     className: PropTypes.string,
     survivor: PropTypes.string.isRequired,
     large: PropTypes.bool,
-    tooltips: PropTypes.bool,
   }
 
   static defaultProps = {
     large: false,
-    tooltips: false,
   }
 
   render() {
@@ -27,11 +25,7 @@ export default class SurvivorBox extends React.Component {
       <img className={css.icon} src={require(`../../data/survivors/${this.props.survivor}/icon.png`)}/>
       {info.title}
     </span>
-    if (this.props.tooltips) {
-      return <Tooltip html={<SurvivorTooltip info={info}/>} noPadding>{content}</Tooltip>
-    } else {
-      return content
-    }
+    return <Tooltip html={<SurvivorTooltip info={info}/>} noPadding>{content}</Tooltip>
   }
 
 }

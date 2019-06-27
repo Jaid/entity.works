@@ -12,22 +12,11 @@ export default class TiersBox extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     tiers: PropTypes.arrayOf(PropTypes.string).isRequired,
-    tooltips: PropTypes.bool,
-  }
-
-  static defaultProps = {
-    tooltips: false,
   }
 
   render() {
     const text = this.props.tiers |> last
-    const content = do {
-      if (this.props.tooltips) {
-        <Tooltip html={<TiersTooltip tiers={this.props.tiers}/>}>{text}</Tooltip>
-      } else {
-        text
-      }
-    }
+    const content = <Tooltip html={<TiersTooltip tiers={this.props.tiers}/>}>{text}</Tooltip>
     return <span className={classnames(css.container, this.props.className)}>
       {content}
     </span>

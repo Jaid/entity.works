@@ -13,11 +13,9 @@ export default class RichText extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     children: PropTypes.string.isRequired,
-    tooltips: PropTypes.bool,
   }
 
   static defaultProps = {
-    tooltips: true,
   }
 
   render() {
@@ -27,7 +25,7 @@ export default class RichText extends React.Component {
       if (typeMatch === null) {
         richObject = findObject(token)
       } else if (typeMatch.groups.type === "tiers") {
-        return <TiersBox key={index} tiers={typeMatch.groups.name.split("/")} tooltips={this.props.tooltips}/>
+        return <TiersBox key={index} tiers={typeMatch.groups.name.split("/")}/>
       } else {
         const info = findExactObject(typeMatch.groups.name)
         if (info) {
@@ -38,7 +36,7 @@ export default class RichText extends React.Component {
         }
       }
       if (richObject) {
-        return <RichBox key={index} info={richObject.info} tooltips={this.props.tooltips} type={richObject.type}/>
+        return <RichBox key={index} info={richObject.info} type={richObject.type}/>
       }
     })
 
