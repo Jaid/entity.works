@@ -40,7 +40,17 @@ export default class PerksPage extends React.Component {
   }
 
   render() {
-    const perkBlocks = perks.map(perk => {
+    const visiblePerks = perks.filter(({visible}) => visible)
+    const filteredPerks = do {
+      if (this.props.match.params.type === "killer") {
+        visiblePerks.filter(perk => perk.for === "killer")
+      } else if (this.props.match.params.type === "survivor") {
+        visiblePerks.filter(perk => perk.for === "survivor")
+      } else {
+        visiblePerks
+      }
+    }
+    const perkBlocks = filteredPerks.map(perk => {
       return <PerkBlock key={perk.id} className={css.perkBlock} perkInfo={perk}/>
     })
     return <main className={classnames(css.container, this.props.className)}>

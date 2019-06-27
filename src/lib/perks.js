@@ -1,5 +1,6 @@
 import perks from /* aot */ "src/data/perks"
 import {titleCase} from "change-case"
+import survivors from "lib/survivors"
 
 const getRarity = level => {
   if (level === 30) {
@@ -25,14 +26,18 @@ const getRarity = level => {
 /**
  * @type {perk[]}
  */
-const perksNormalized = perks.map(perk => ({
-  title: perk.id |> titleCase,
-  ingameId: perk.id,
-  owner: false,
-  level: 30,
-  rarity: getRarity(perk.level),
-  visible: true,
-  ...perk,
-}))
+const perksNormalized = perks.map(perk => {
+  const defaultFor = survivors.find(({id}) => id === perk.owner) ? "survivor" : "killer"
+  return {
+    title: perk.id |> titleCase,
+    ingameId: perk.id,
+    owner: false,
+    level: 30,
+    rarity: getRarity(perk.level),
+    visible: true,
+    for: defaultFor,
+    ...perk,
+  }
+})
 
 export default perksNormalized
