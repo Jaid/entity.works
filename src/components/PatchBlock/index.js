@@ -1,29 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import classnames from "classnames"
-import moment from "moment"
 import PatchLines from "components/PatchLines"
 import PatchReferenceBlock from "components/PatchReferenceBlock"
 import {sortBy} from "lodash"
 import perks from "lib/perks"
-import Headline from "components/Headline"
+import PatchHeadline from "components/PatchHeadline"
+import PatchCategory from "components/PatchCategory"
 
 import css from "./style.scss"
-
-const getHeaderText = patch => {
-  const agoString = moment(patch.dateMs).fromNow()
-  if (patch.title) {
-    return {
-      title: patch.title,
-      info: `${patch.semver} - ${agoString}`,
-    }
-  } else {
-    return {
-      title: `PATCH ${patch.semver}`,
-      info: agoString,
-    }
-  }
-}
 
 const getDisplayPriorityFromPatchReference = patchReference => {
   return ["perks", "killers", "survivors", "maps"].indexOf(patchReference.referenceType)
@@ -53,26 +38,10 @@ const processCategoryBlocks = ([category, {points, references}]) => {
     }
   }
   return <div key={category}>
-    <div className={classnames(css.categoryTitle, css[category])}>{category}</div>
+    <PatchCategory category={category} className={classnames(css.categoryTitle, css[category])}/>
     {sortBy(patchReferences, [getDisplayPriorityFromPatchReference, getTitleFromPatchReference]).map(patchReference => <PatchReferenceBlock key={`${patchReference.referenceType}-${patchReference.referenceName}`} {...patchReference}/>)}
     <PatchLines points={points}/>
   </div>
-}
-
-const sortCategories = ([category]) => {
-  if (category === "features") {
-    return -4
-  }
-  if (category === "balance") {
-    return -3
-  }
-  if (category === "fixes") {
-    return -2
-  }
-  if (category === "balance") {
-    return -1
-  }
-  return category
 }
 
 export default class PatchBlock extends React.Component {
@@ -83,10 +52,9 @@ export default class PatchBlock extends React.Component {
   }
 
   render() {
-    const headerText = getHeaderText(this.props.patch)
-    const categoryBlocks = sortBy(Object.entries(this.props.patch.points), sortCategories).map(processCategoryBlocks)
+    const categoryBlocks = Object.entries(this.props.patch.points).map(processCategoryBlocks)
     return <div className={classnames(css.container, this.props.className)}>
-      <Headline miniText={headerText.info}>{headerText.title}</Headline>
+      <PatchHeadline patchInfo={this.props.patch}/>
       {categoryBlocks}
     </div>
   }

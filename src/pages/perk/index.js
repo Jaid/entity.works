@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import perks from "lib/perks"
 import PerkBlock from "components/PerkBlock"
+import RelevantPatches from "components/RelevantPatches"
 
 import css from "./style.scss"
 
@@ -43,6 +44,7 @@ export default class PerkPage extends React.Component {
     const perkInfo = perks.find(({id}) => id === this.props.match.params.id)
     return <main className={classnames(css.container, this.props.className)}>
       <PerkBlock perkInfo={perkInfo}/>
+      <RelevantPatches name={this.props.match.params.id} type="perks"/>
     </main>
   }
 

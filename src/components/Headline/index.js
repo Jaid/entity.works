@@ -7,7 +7,7 @@ import css from "./style.scss"
 /**
   * @typedef {{
   *  className: *,
-  *  children: string,
+  *  children: *,
   *  miniText: [string],
   *  theme: [string]
   * }} Props
@@ -26,7 +26,7 @@ export default class Headline extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    children: PropTypes.string.isRequired,
+    children: PropTypes.node.isRequired,
     miniText: PropTypes.string,
     theme: PropTypes.string,
   }
