@@ -3,7 +3,12 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import {Link} from "react-router-dom"
 import patches from "lib/patches"
+import RichText from "components/RichText"
+import killers from "lib/killers"
+import survivors from "lib/survivors"
+import perks from "lib/perks"
 
+import description from "./description.txt"
 import css from "./style.scss"
 
 /**
@@ -42,7 +47,18 @@ export default class IndexPage extends React.Component {
   render() {
     const latestPatch = patches[0]
     return <main className={classnames(css.container, this.props.className)}>
-      <Link to={`/patch/${latestPatch.linkId}`}>Patches</Link>
+      {_PKG_TITLE}
+      <br/>
+      <RichText>{description}</RichText>
+      <br/>
+      <br/>
+      <Link to={`/patch/${latestPatch.linkId}`}>{patches.length} Patches</Link>
+      <br/>
+      <Link to="/perks">{perks.length} Perks</Link>
+      <br/>
+      <Link to="/killers">{killers.length} Killers</Link>
+      <br/>
+      <Link to="/perks">{survivors.length} Survivors</Link>
     </main>
   }
 
