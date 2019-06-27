@@ -23,7 +23,7 @@ export default class SurvivorBox extends React.Component {
     const info = survivors.find(({id}) => id === this.props.survivor)
     const content = <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
       <img className={css.icon} src={require(`../../data/survivors/${this.props.survivor}/icon.png`)}/>
-      {info.title}
+      {info.shortTitle}
     </span>
     return <Tooltip html={<SurvivorTooltip info={info}/>} noPadding>{content}</Tooltip>
   }

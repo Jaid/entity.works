@@ -19,7 +19,7 @@ export default class SurvivorTooltip extends React.Component {
     const orderedPerks = sortBy(ownPerks, "level")
     return <div className={classnames(css.container, this.props.className)}>
       <img className={css.banner} src={require(`../../data/survivors/${this.props.info.id}/icon.png`)}/>
-      <div className={css.title}>{this.props.info.title}</div>
+      <div className={css.title}>{this.props.info.shortTitle}</div>
       <div className={css.content}>
         {orderedPerks.map(perk => <div key={perk.level} className={css.perk}><PerkBox perk={perk.id}/></div>)}
       </div>
