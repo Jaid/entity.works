@@ -23,7 +23,7 @@
 - killer: [nightmare, huntress]
   text: Fixed an issue that caused {nightmare} and {huntress}' lullaby to get obstructed by occlusion.
 - killer: huntress
-  text: Fixed an issue that caused {hunress}' camera to shake on a successful hatchet hit.
+  text: Fixed an issue that caused {huntress}' camera to shake on a successful hatchet hit.
 - Fixed an issue that caused the Survivors' camera to shake when hit by the Killers.
 - Fixed an issue that caused the Killers red stain to be visible on their model in-game.
 - Added more logging to investigate the ranking issue.
