@@ -6,16 +6,20 @@ import css from "./style.scss"
 
 const getCategoryTitle = category => {
   if (category === "features") {
-    return <div><i className={classnames("fa", "fa-cubes", css.categoryIcon)}/>Features & Content</div>
+    return "Features & Content"
+    // return <div><i className={classnames("fa", "fa-cubes", css.categoryIcon)}/>Features & Content</div>
   }
   if (category === "balance") {
-    return <div><i className={classnames("fa", "fa-balance-scale", css.categoryIcon)}/>Balance Changes</div>
+    return "Balance"
+    // return <div><i className={classnames("fa", "fa-balance-scale", css.categoryIcon)}/>Balance Changes</div>
   }
   if (category === "fixes") {
-    return <div><i className={classnames("fa", "fa-wrench", css.categoryIcon)}/>Bug Fixes</div>
+    return "Bug Fixes"
+    // return <div><i className={classnames("fa", "fa-wrench", css.categoryIcon)}/>Bug Fixes</div>
   }
   if (category === "issues") {
-    return <div><i className={classnames("fa", "fa-exclamation-circle", css.categoryIcon)}/>Known Issues</div>
+    return "Known Issues"
+    // return <div><i className={classnames("fa", "fa-exclamation-circle", css.categoryIcon)}/>Known Issues</div>
   }
   return category
 }
