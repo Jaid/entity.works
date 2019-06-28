@@ -49,20 +49,19 @@ export default class PerkBlock extends React.Component {
         }
       }
     }
-    const ownerNode = do {
+    const getOwnerNode = () => {
       const ownerInfo = getOwnerInfo()
       if (ownerInfo) {
-        <div className={css.owner}>
+        const tooltip = `Can be unlocked in the bloodweb of {${ownerInfo.info.id}} at level ${this.props.perkInfo.level}`
+        return <div className={css.owner}>
           {ownerInfo.box}
           <span className={css.level}>
-            <Tooltip html={`Can be unlocked in the bloodweb of ${ownerInfo.info.title} at level ${this.props.perkInfo.level}`}>
+            <Tooltip html={<RichText>{tooltip}</RichText>}>
               <i className={classnames("fa", "fa-unlock-alt", css.lockIcon)}/>
               {this.props.perkInfo.level}
             </Tooltip>
           </span>
         </div>
-      } else {
-        null
       }
     }
     return <div className={classnames(css.container, this.props.className)}>
@@ -77,7 +76,7 @@ export default class PerkBlock extends React.Component {
         <div className={css.description}>
           <div className={css.basicInfo}>
             <PerkLink className={css.title} perkInfo={this.props.perkInfo}/>
-            {ownerNode}
+            {getOwnerNode()}
           </div>
           <RichText className={css.effect}>{this.props.perkInfo.effect}</RichText>
         </div>
