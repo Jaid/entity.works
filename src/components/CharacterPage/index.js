@@ -65,7 +65,7 @@ export default class CharacterPage extends React.Component {
         {this.props.info[myMeta.titleKey]}
       </Headline>
       <div className={css.introduction}>
-        <img src={require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`)}/>
+        <img className={css.icon} src={require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`)}/>
         <RichText className={css.description}>{this.props.description}</RichText>
       </div>
       <RelevantPatches name={this.props.info.id} type={myMeta.referenceType}/>

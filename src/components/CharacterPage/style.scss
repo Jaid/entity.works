@@ -3,9 +3,15 @@
 .introduction {
   display        : flex;
   justify-content: space-evenly;
-  align-items    : center;
+  align-items    : flex-start;
 }
 
 .description {
   width: 20em;
+}
+
+.icon {
+  width     : 180px;
+  height    : 120px;
+  margin-top: 10px;
 }
