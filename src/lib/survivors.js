@@ -14,7 +14,7 @@ import paramCase from "param-case"
  */
 const survivorsNormalized = survivors.map(survivor => ({
   shortTitle: survivor.id |> capitalize,
-  linkId: killer.id |> paramCase,
+  linkId: survivor.id |> paramCase,
   ...survivor,
 }))
 
