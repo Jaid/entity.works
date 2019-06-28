@@ -4,3 +4,5 @@ perk: /perk/:id
 perks:
   - /perks
   - /perks/:type
+killer:
+  - /killer/:id
