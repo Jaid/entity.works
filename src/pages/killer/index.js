@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import CharacterPage from "components/CharacterPage"
 import killers from "lib/killers"
+import DocumentTitle from "react-document-title"
 
 import css from "./style.scss"
 
@@ -34,7 +35,9 @@ export default class KillerPage extends React.Component {
   render() {
     const info = killers.find(({linkId}) => linkId === this.props.match.params.id)
     const description = `POWER: ${info.powerTitle}\n\n${info.power}`
-    return <CharacterPage description={description} info={info} type="killer"/>
+    return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
+      <CharacterPage description={description} info={info} type="killer"/>
+    </DocumentTitle>
   }
 
 }

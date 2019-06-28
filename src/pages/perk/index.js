@@ -4,6 +4,7 @@ import classnames from "classnames"
 import perks from "lib/perks"
 import PerkBlock from "components/PerkBlock"
 import RelevantPatches from "components/RelevantPatches"
+import DocumentTitle from "react-document-title"
 
 import css from "./style.scss"
 
@@ -42,10 +43,12 @@ export default class PerkPage extends React.Component {
 
   render() {
     const perkInfo = perks.find(({linkId}) => linkId === this.props.match.params.id)
-    return <main className={classnames(css.container, this.props.className)}>
-      <PerkBlock perkInfo={perkInfo}/>
-      <RelevantPatches name={this.props.match.params.id} type="perks"/>
-    </main>
+    return <DocumentTitle title={`${perkInfo.title} in Dead by Daylight`}>
+      <main className={classnames(css.container, this.props.className)}>
+        <PerkBlock perkInfo={perkInfo}/>
+        <RelevantPatches name={this.props.match.params.id} type="perks"/>
+      </main>
+    </DocumentTitle>
   }
 
 }

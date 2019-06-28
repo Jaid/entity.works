@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import classnames from "classnames"
 import CharacterPage from "components/CharacterPage"
 import survivors from "lib/survivors"
+import DocumentTitle from "react-document-title"
 
 import css from "./style.scss"
 
@@ -42,7 +43,9 @@ export default class SurvivorPage extends React.Component {
   render() {
     const info = survivors.find(({linkId}) => linkId === this.props.match.params.id)
     const description = info.title
-    return <CharacterPage description={description} info={info} type="survivor"/>
+    return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
+      <CharacterPage description={description} info={info} type="survivor"/>
+    </DocumentTitle>
   }
 
 }

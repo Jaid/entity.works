@@ -4,6 +4,8 @@ import classnames from "classnames"
 import perks from "lib/perks"
 import PerkBlock from "components/PerkBlock"
 import NavigationPage from "components/NavigationPage"
+import {capitalize} from "lodash"
+import DocumentTitle from "react-document-title"
 
 import css from "./style.scss"
 
@@ -64,9 +66,11 @@ export default class PerksPage extends React.Component {
         to: "/perks/survivor",
       },
     ]
-    return <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
-      {perkBlocks}
-    </NavigationPage>
+    return <DocumentTitle title={`${this.props.match.params.type |> capitalize} perks in Dead by Daylight`}>
+      <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
+        {perkBlocks}
+      </NavigationPage>
+    </DocumentTitle>
   }
 
 }
