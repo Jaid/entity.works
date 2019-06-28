@@ -1,6 +1,7 @@
 import perks from /* aot */ "src/data/perks"
 import {titleCase} from "change-case"
 import survivors from "lib/survivors"
+import paramCase from "param-case"
 
 const getRarity = level => {
   if (level === 30) {
@@ -21,6 +22,7 @@ const getRarity = level => {
  * @prop {number} level
  * @prop {string} rarity
  * @prop {boolean} visible
+ * @prop {string} linkId
  */
 
 /**
@@ -36,6 +38,7 @@ const perksNormalized = perks.map(perk => {
     rarity: getRarity(perk.level),
     visible: true,
     for: defaultFor,
+    linkId: perk.id |> paramCase,
     ...perk,
   }
 })

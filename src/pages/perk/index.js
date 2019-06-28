@@ -41,7 +41,7 @@ export default class PerkPage extends React.Component {
   }
 
   render() {
-    const perkInfo = perks.find(({id}) => id === this.props.match.params.id)
+    const perkInfo = perks.find(({linkId}) => linkId === this.props.match.params.id)
     return <main className={classnames(css.container, this.props.className)}>
       <PerkBlock perkInfo={perkInfo}/>
       <RelevantPatches name={this.props.match.params.id} type="perks"/>

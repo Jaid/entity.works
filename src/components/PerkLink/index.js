@@ -30,7 +30,7 @@ export default class PerkLink extends React.Component {
 
   render() {
     const content = this.props.perkInfo.title
-    return <Link className={classnames(css.container, this.props.className)} to={`/perk/${this.props.perkInfo.id}`}>
+    return <Link className={classnames(css.container, this.props.className)} to={`/perk/${this.props.perkInfo.linkId}`}>
       {content}
     </Link>
   }
