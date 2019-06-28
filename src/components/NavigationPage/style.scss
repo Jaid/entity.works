@@ -12,7 +12,9 @@
 }
 
 .activeLink {
-  color: white;
+  color         : white;
+  cursor        : text;
+  pointer-events: none;
 }
 
 .content {
