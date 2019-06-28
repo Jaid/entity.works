@@ -7,6 +7,8 @@ import {ensureArray} from "magina"
 import Switch from "react-router-transition-switch"
 import Fader from "react-fader"
 
+import "fork-awesome/css/fork-awesome.min.css"
+
 import routes from "./routes.yml"
 import css from "./style.scss"
 
