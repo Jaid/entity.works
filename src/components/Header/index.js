@@ -31,7 +31,7 @@ export default class Header extends React.Component {
   render() {
     return <div className={classnames(css.container, this.props.className)}>
       <img className={css.icon} src={icon}/>
-      <Link className={css.title} to="/"><span className={css.entity}>Entity</span><br/><span className={css.works}>Works</span></Link>
+      <Link className={css.title} to="/"><span className={css.entity}>Entity</span><span className={css.works}>Works</span></Link>
       <nav className={css.nav}>
         <Link to={patchesLink}>Patches</Link>
         <Link to={perksLink}>Perks</Link>

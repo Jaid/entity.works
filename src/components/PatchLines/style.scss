@@ -4,3 +4,9 @@
   margin-top   : 6px;
   margin-bottom: 6px;
 }
+
+@media only screen and (max-width: 768px) {
+  .patchLine {
+    margin-right: 1em;
+  }
+}

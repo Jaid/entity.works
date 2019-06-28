@@ -40,3 +40,15 @@
   margin-left : 8px;
   margin-right: 4px;
 }
+
+@media only screen and (max-width: 768px) {
+  .icon {
+    width : 25vw;
+    height: auto;
+  }
+
+  .description {
+    width       : unset;
+    margin-right: 1em;
+  }
+}

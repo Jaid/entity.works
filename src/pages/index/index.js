@@ -13,6 +13,25 @@ import {killersLink, survivorsLink, patchesLink, perksLink} from "lib/links"
 import description from "./description.txt"
 import css from "./style.scss"
 
+const links = [
+  {
+    text: `${patches.length} Patches`,
+    to: patchesLink,
+  },
+  {
+    text: `${perks.length} Perks`,
+    to: perksLink,
+  },
+  {
+    text: `${killers.length} Killers`,
+    to: killersLink,
+  },
+  {
+    text: `${survivors.length} Survivors`,
+    to: survivorsLink,
+  },
+]
+
 /**
   * @typedef {{
   *  className: *
@@ -48,15 +67,10 @@ export default class IndexPage extends React.Component {
 
   render() {
     return <main className={classnames(css.container, this.props.className)}>
-      <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>      <br/>
-      <br/>
-      <Link to={patchesLink}>{patches.length} Patches</Link>
-      <br/>
-      <Link to={perksLink}>{perks.length} Perks</Link>
-      <br/>
-      <Link to={killersLink}>{killers.length} Killers</Link>
-      <br/>
-      <Link to={survivorsLink}>{survivors.length} Survivors</Link>
+      <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>
+      <nav className={css.linkList}>
+        {links.map(({text, to}) => <Link key={to} className={css.link} to={to}>{text}</Link>)}
+      </nav>
     </main>
   }
 

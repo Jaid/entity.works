@@ -23,8 +23,12 @@ export default class PerkBox extends React.Component {
   render() {
     const perkInfo = perks.find(({id}) => id === this.props.perk)
     const text = <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
-      <img className={css.background} src={require(`../../data/perkBackgrounds/${perkInfo.rarity}.png`)}/>
-      <img className={css.icon} src={require(`../../data/perks/${this.props.perk}/icon.png`)}/>
+      <img className={css.icon}
+        src={require(`../../data/perks/${this.props.perk}/icon.png`)}
+        style={{
+          background: `url(${require(`../../data/perkBackgrounds/${perkInfo.rarity}.png`)})`,
+          backgroundSize: "cover",
+        }}/>
       <PerkLink perkInfo={perkInfo}/>
     </span>
     return <Tooltip html={<PerkTooltip info={perkInfo}/>}>{text}</Tooltip>
