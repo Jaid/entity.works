@@ -52,7 +52,7 @@ export default class PerkBlock extends React.Component {
     const getOwnerNode = () => {
       const ownerInfo = getOwnerInfo()
       if (ownerInfo) {
-        const tooltip = `Can be unlocked in the bloodweb of {${ownerInfo.info.id}} at level ${this.props.perkInfo.level}`
+        const tooltip = `Teachable version of {${this.props.perkInfo.id}} can be unlocked in the bloodweb of {${ownerInfo.info.id}} at level ${this.props.perkInfo.level}`
         return <div className={css.owner}>
           {ownerInfo.box}
           <span className={css.level}>
