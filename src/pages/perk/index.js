@@ -46,7 +46,7 @@ export default class PerkPage extends React.Component {
     return <DocumentTitle title={`${perkInfo.title} in Dead by Daylight`}>
       <main className={classnames(css.container, this.props.className)}>
         <PerkBlock perkInfo={perkInfo}/>
-        <RelevantPatches name={this.props.match.params.id} type="perks"/>
+        <RelevantPatches name={perkInfo.id} type="perks"/>
       </main>
     </DocumentTitle>
   }
