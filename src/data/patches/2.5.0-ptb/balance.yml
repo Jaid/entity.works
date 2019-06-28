@@ -2,8 +2,6 @@
 - Remixed volume levels for footsteps, music & VOs.
 - Removed the attenuation on VOs and footsteps that were integrated in the 2.4.0 release.
 
-- perk: bamboozle
-  text: Updated text to reflect the perk does not work with pallets.
 - perk: bloodWarden
   text: Added a timer on the perk in the HUD to better indicate when and for how long Blood Warden is active.
 - perk: ironMaiden

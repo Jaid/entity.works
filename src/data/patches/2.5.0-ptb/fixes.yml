@@ -86,3 +86,6 @@
 - Fixed an issue that caused special characters not to be supported in the in-game chat in all non-English languages.
 - killer: [nurse, legion]
   text: Fixed an issue that caused {nurse} and {legion} not to have Fatigued VFX on Low graphic settings.
+
+- perk: bamboozle
+  text: Updated text to reflect the perk does not work with pallets.
