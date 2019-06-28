@@ -33,7 +33,7 @@ export default class KillerPage extends React.Component {
 
   render() {
     const info = killers.find(({linkId}) => linkId === this.props.match.params.id)
-    const description = info.power
+    const description = `POWER: ${info.powerTitle}\n\n${info.power}`
     return <CharacterPage description={description} info={info} type="killer"/>
   }
 
