@@ -12,8 +12,8 @@
   text: Fixed an issue that caused the {playWithYourFood} perk to gain a token when downing the Obsession.
 - killer: legion
   text: Fixed an issue that caused {legion}'s Nasty and Filthy Blade add-ons to increase all interaction times.
-- killer: ghostface
-  text: Fixed an issue that caused {ghostface} Face add-on Telephoto Lens not to impact the duration of a Survivor staying marked.
+- killer: ghostFace
+  text: Fixed an issue that caused {ghostFace} Face add-on Telephoto Lens not to impact the duration of a Survivor staying marked.
 - killer: doctor
   text: Fixed an issue that caused {doctor}'s illusionary pallets to spawn perfectly straight instead of leaning on an asset like a regular pallet.
 - Tentatively fixed an issue that could cause permanent Exhaustion.
