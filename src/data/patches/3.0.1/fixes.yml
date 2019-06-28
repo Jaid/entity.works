@@ -29,7 +29,7 @@
 - Added more logging to investigate the ranking issue.
 - Fixed an issue that caused placeholder text strings to appear when receiving a Player Pips Error message. We have modified these strings in English. Please note that the other translations will come in a future patch.
 - killer: trapper
-  text: Fixed an issue that allowed The Trapper to place traps while falling.
+  text: Fixed an issue that allowed {trapper} to place traps while falling.
 - Fixed an issue that caused multiple characters not to have proper idle animations in the Store.
 - Fixed an issue that caused escaping Survivors audio to keep playing within the exit threshold.
 - killer: plague
