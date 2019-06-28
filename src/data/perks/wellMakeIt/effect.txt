@@ -1,5 +1,5 @@
 Helping others heightens your morale.
 
-For each Survivor you rescue from a Hook, gain an additional 100 % speed increase to healing up others for {tiers:30/60/90} seconds.
+For each Survivor you rescue from a Hook, gain an additional 100% speed increase to healing up others for {tiers:30/60/90} seconds.
 
 Cumulative Healing Speed bonuses cannot exceed 100%.
