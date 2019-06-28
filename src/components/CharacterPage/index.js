@@ -7,6 +7,9 @@ import killers from "lib/killers"
 import Headline from "components/Headline"
 import RelevantPatches from "components/RelevantPatches"
 import RichText from "components/RichText"
+import perks from "lib/perks"
+import PerkBlock from "components/PerkBlock"
+import {sortBy} from "lodash"
 
 import css from "./style.scss"
 
@@ -23,7 +26,7 @@ const meta = {
     referenceType: "survivors",
     navigationTitleKey: "shortTitle",
     titleKey: "title",
-    overTextKey: "fullName",
+    overText: "Survivor"
   },
 }
 
@@ -60,14 +63,19 @@ export default class CharacterPage extends React.Component {
       to: `/${this.props.type}/${character.linkId}`,
       text: character[myMeta.navigationTitleKey],
     }))
+    const ownPerks = perks |> #.filter(({owner}) => owner === this.props.info.id) |> sortBy(#, "level")
+    const perkNodes = ownPerks.map(perk => {
+      return <PerkBlock className={css.perk} key={perk.id} perkInfo={perk}/>
+    })
     return <NavigationPage links={links}>
-      <Headline miniText={this.props.info[myMeta.overTextKey]} theme={this.props.type}>
+      <Headline miniText={myMeta.overText || this.props.info[myMeta.overTextKey]} theme={this.props.type}>
         {this.props.info[myMeta.titleKey]}
       </Headline>
       <div className={css.introduction}>
         <img className={css.icon} src={require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`)}/>
         <RichText className={css.description}>{this.props.description}</RichText>
       </div>
+      {perkNodes}
       <RelevantPatches name={this.props.info.id} type={myMeta.referenceType}/>
     </NavigationPage>
   }

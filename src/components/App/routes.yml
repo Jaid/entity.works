@@ -6,3 +6,5 @@ perks:
   - /perks/:type
 killer:
   - /killer/:id
+survivor:
+  - /survivor/:id

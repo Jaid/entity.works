@@ -1,12 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
+import classnames from "classnames"
 import CharacterPage from "components/CharacterPage"
-import killers from "lib/killers"
+import survivors from "lib/survivors"
 
 import css from "./style.scss"
 
 /**
   * @typedef {{
+  *  className: *,
   *  match: {
   *    isExact: boolean
   *    path: string
@@ -20,9 +22,15 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class KillerPage extends React.Component {
+export default class SurvivorPage extends React.Component {
 
   static propTypes = {
+    className: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.object,
+      PropTypes.arrayOf(PropTypes.string),
+      PropTypes.arrayOf(PropTypes.object),
+    ]),
     match: PropTypes.exact({
       isExact: PropTypes.bool.isRequired,
       path: PropTypes.string.isRequired,
@@ -32,9 +40,9 @@ export default class KillerPage extends React.Component {
   }
 
   render() {
-    const info = killers.find(({linkId}) => linkId === this.props.match.params.id)
-    const description = info.power
-    return <CharacterPage description={description} info={info} type="killer"/>
+    const info = survivors.find(({linkId}) => linkId === this.props.match.params.id)
+    const description = info.title
+    return <CharacterPage description={description} info={info} type="survivor"/>
   }
 
 }
