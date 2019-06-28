@@ -12,7 +12,13 @@ module.exports = async () => {
     if (!infoFileExists) {
       return null
     }
-    return fsp.readYaml(infoFile)
+    const data = fsp.readYaml(infoFile)
+    const powerFile = path.join(killersFolder, id, "power.txt")
+    const powerFileExists = await fsp.pathExists(powerFile)
+    if (powerFileExists) {
+      data.power = await fsp.readFile(powerFile, "utf8")
+    }
+    return data
   })
   const killers = await Promise.all(fetchJobs)
   return killers |> filterNil

@@ -1,5 +1,6 @@
 import survivors from /* aot */ "src/data/survivors"
 import {capitalize} from "lodash"
+import paramCase from "param-case"
 
 /**
  * @typedef survivor
@@ -13,6 +14,7 @@ import {capitalize} from "lodash"
  */
 const survivorsNormalized = survivors.map(survivor => ({
   shortTitle: survivor.id |> capitalize,
+  linkId: killer.id |> paramCase,
   ...survivor,
 }))
 
