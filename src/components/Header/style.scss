@@ -31,3 +31,12 @@
 .works {
   color: rgb(45, 133, 45);
 }
+
+.nav {
+  display: inline-flex;
+  float  : right;
+
+  >* {
+    margin: 10px;
+  }
+}
