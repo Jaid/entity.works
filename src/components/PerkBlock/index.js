@@ -35,14 +35,34 @@ export default class PerkBlock extends React.Component {
   }
 
   render() {
-    const ownerNode = do {
+    const getOwnerInfo = () => {
       const {type, info} = this.props.perkInfo.owner && findObject(this.props.perkInfo.owner)
       if (type === "killer") {
-        <div className={css.owner}><KillerBox killer={info.id}/><span className={css.level}><Tooltip html={`Can be unlocked in the bloodweb of ${info.title} at level ${this.props.perkInfo.level}`}>{this.props.perkInfo.level}</Tooltip></span></div>
+        return {
+          info,
+          box: <KillerBox killer={info.id}/>,
+        }
       } else if (type === "survivor") {
-        <div className={css.owner}><SurvivorBox survivor={info.id}/><span className={css.level}><Tooltip html={`Can be unlocked in the bloodweb of ${info.title} at level ${this.props.perkInfo.level}`}>{this.props.perkInfo.level}</Tooltip></span></div>
+        return {
+          info,
+          box: <SurvivorBox survivor={info.id}/>,
+        }
+      }
+    }
+    const ownerNode = do {
+      const ownerInfo = getOwnerInfo()
+      if (ownerInfo) {
+        <div className={css.owner}>
+          {ownerInfo.box}
+          <span className={css.level}>
+            <Tooltip html={`Can be unlocked in the bloodweb of ${ownerInfo.info.title} at level ${this.props.perkInfo.level}`}>
+              <i className={classnames("fa", "fa-unlock-alt", css.lockIcon)}/>
+              {this.props.perkInfo.level}
+            </Tooltip>
+          </span>
+        </div>
       } else {
-        ""
+        null
       }
     }
     return <div className={classnames(css.container, this.props.className)}>
