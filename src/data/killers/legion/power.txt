@@ -1,9 +1,9 @@
-The Legion has a Frenzy power gauge that builds up over time. Once the gauge is full, Feral Frenzy can be activated by napping the Power button. While power gauge drains rapidly and the power ends when the gauge is empty, triggering an extended recovery cooldown:
+{legion} has a Frenzy power gauge that builds up over time. Once the gauge is full, Feral Frenzy can be activated by napping the Power button. While power gauge drains rapidly and the power ends when the gauge is empty, triggering an extended recovery cooldown:
 
-When activating Feral Frenzy, The Legion enters a deadly rage. While the power is active:
+When activating Feral Frenzy, {legion} enters a deadly rage. While the power is active:
 
-• The Legion sprints faster than base movement speed.
-• The Legion can vault pallets but cannot break them.
+• {legion} sprints faster than base movement speed.
+• {legion} can vault pallets but cannot break them.
 • Survivors' scratch marks and blood pools are hidden from The Killer's view.
 • Missing an attack ends Feral Frenzy.
 

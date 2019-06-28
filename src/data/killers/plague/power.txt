@@ -6,4 +6,4 @@ If the Survivor's infection indicator is completely filled, the Survivor is forc
 
 Infected Survivors can remove all infection by interacting with a Pool of Devotion. This blocks it from further use by other Survivors. If The Survivor is injured, they become healthy. It all Pools of Devotion are corrupted at the same time, all Pools of Devotion revert to their clean state.
 
-The Plague may consume the corruption at a Pool of Devotion that has previously been used by a Survivor. This remove the corruption from the pool and transforms Vile Purge into Corrupt Purge. Corrupt Purge instantly damages any Survivors hit by the stream but does not apply infection. This effect only lasts for a short duration.
+{plague} may consume the corruption at a Pool of Devotion that has previously been used by a Survivor. This remove the corruption from the pool and transforms Vile Purge into Corrupt Purge. Corrupt Purge instantly damages any Survivors hit by the stream but does not apply infection. This effect only lasts for a short duration.
