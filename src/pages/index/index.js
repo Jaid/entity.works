@@ -8,6 +8,7 @@ import killers from "lib/killers"
 import survivors from "lib/survivors"
 import perks from "lib/perks"
 import Headline from "components/Headline"
+import {killersLink, survivorsLink, patchesLink, perksLink} from "lib/links"
 
 import description from "./description.txt"
 import css from "./style.scss"
@@ -46,17 +47,16 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    const latestPatch = patches[0]
     return <main className={classnames(css.container, this.props.className)}>
       <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>      <br/>
       <br/>
-      <Link to={`/patch/${latestPatch.linkId}`}>{patches.length} Patches</Link>
+      <Link to={patchesLink}>{patches.length} Patches</Link>
       <br/>
-      <Link to="/perks/survivor">{perks.length} Perks</Link>
+      <Link to={perksLink}>{perks.length} Perks</Link>
       <br/>
-      <Link to="/killer/trapper">{killers.length} Killers</Link>
+      <Link to={killersLink}>{killers.length} Killers</Link>
       <br/>
-      <Link to="/survivor/dwight">{survivors.length} Survivors</Link>
+      <Link to={survivorsLink}>{survivors.length} Survivors</Link>
     </main>
   }
 
