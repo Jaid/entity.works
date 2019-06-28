@@ -7,7 +7,7 @@
   height       : 120px;
   width        : 100%;
   height       : auto;
-  margin-bottom: -3.25em;
+  margin-bottom: -2.5em;
   padding      : 4px;
   user-select  : none;
 
@@ -31,8 +31,10 @@
 }
 
 .content {
-  text-align: left;
-  padding   : 0.2em 0.5em;
+  text-align    : left;
+  padding-left  : 0.5em;
+  padding-right : 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .perk {
