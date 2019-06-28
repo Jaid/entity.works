@@ -12,7 +12,7 @@ module.exports = async () => {
     if (!infoFileExists) {
       return null
     }
-    const data = fsp.readYaml(infoFile)
+    const data = await fsp.readYaml(infoFile)
     const powerFile = path.join(killersFolder, id, "power.txt")
     const powerFileExists = await fsp.pathExists(powerFile)
     if (powerFileExists) {

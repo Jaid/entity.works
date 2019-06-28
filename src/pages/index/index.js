@@ -54,7 +54,7 @@ export default class IndexPage extends React.Component {
       <br/>
       <Link to="/perks/survivor">{perks.length} Perks</Link>
       <br/>
-      <Link to="/killers">{killers.length} Killers</Link>
+      <Link to="/killer/trapper">{killers.length} Killers</Link>
       <br/>
       <Link to="/perks">{survivors.length} Survivors</Link>
     </main>

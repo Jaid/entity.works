@@ -9,6 +9,8 @@ import paramCase from "param-case"
  * @prop {string} shortTitle
  * @prop {string} fullName
  * @prop {string} linkId
+ * @prop {string} power
+ * @prop {string} powerTitle
  */
 
 /**

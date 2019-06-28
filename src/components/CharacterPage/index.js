@@ -6,6 +6,7 @@ import NavigationPage from "components/NavigationPage"
 import killers from "lib/killers"
 import Headline from "components/Headline"
 import RelevantPatches from "components/RelevantPatches"
+import RichText from "components/RichText"
 
 import css from "./style.scss"
 
@@ -13,13 +14,15 @@ const meta = {
   killer: {
     list: killers,
     referenceType: "killers",
-    titleKey: "shortTitle",
+    navigationTitleKey: "shortTitle",
+    titleKey: "title",
     overTextKey: "fullName",
   },
   survivor: {
     list: survivors,
     referenceType: "survivors",
-    titleKey: "shortTitle",
+    navigationTitleKey: "shortTitle",
+    titleKey: "title",
     overTextKey: "fullName",
   },
 }
@@ -27,8 +30,9 @@ const meta = {
 /**
   * @typedef {{
   *  className: *,
-  *  linkId: string,
   *  type: string
+  *  info: Object,
+  *  description: string
   * }} Props
   */
 
@@ -45,22 +49,26 @@ export default class CharacterPage extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    linkId: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
+    info: PropTypes.object.isRequired,
+    description: PropTypes.string,
   }
 
   render() {
     const myMeta = meta[this.props.type]
-    const characterInfo = myMeta.list.find(({linkId}) => linkId === this.props.linkId)
     const links = myMeta.list.map(character => ({
       to: `/${this.props.type}/${character.linkId}`,
-      text: character[myMeta.titleKey],
+      text: character[myMeta.navigationTitleKey],
     }))
     return <NavigationPage links={links}>
-      <Headline miniText={characterInfo[myMeta.overTextKey]} theme={this.props.type}>{characterInfo[myMeta.titleKey]}</Headline>
-      <img src={require(`../../data/${myMeta.referenceType}/${characterInfo.id}/icon.png`)}/>
-      <div>abc</div>
-      <RelevantPatches name={characterInfo.id} type={myMeta.referenceType}/>
+      <Headline miniText={this.props.info[myMeta.overTextKey]} theme={this.props.type}>
+        {this.props.info[myMeta.titleKey]}
+      </Headline>
+      <div className={css.introduction}>
+        <img src={require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`)}/>
+        <RichText className={css.description}>{this.props.description}</RichText>
+      </div>
+      <RelevantPatches name={this.props.info.id} type={myMeta.referenceType}/>
     </NavigationPage>
   }
 

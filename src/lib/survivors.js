@@ -7,6 +7,7 @@ import paramCase from "param-case"
  * @prop {string} id
  * @prop {string} title
  * @prop {string} shortTitle
+ * @prop {string} linkId
  */
 
 /**
