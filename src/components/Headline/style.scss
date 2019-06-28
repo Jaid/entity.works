@@ -19,6 +19,11 @@
     background: #1f5f0f;
     background: linear-gradient(45deg, #1f5f0f 15%, rgba(255, 204, 89, 0) 100%);
   }
+
+  &.killerTheme {
+    background: rgb(136, 0, 0);
+    background: linear-gradient(45deg, rgb(136, 0, 0) 15%, rgba(255, 204, 89, 0) 100%)
+  }
 }
 
 .overTitle {
