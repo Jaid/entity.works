@@ -51,13 +51,12 @@ export default class RelevantPatches extends React.Component {
       })
       const changes = categoriesWithChanges.map(category => {
         const referencingChanges = patch.points[category].references[this.props.type]?.[this.props.name]
-        console.log(referencingChanges)
-        return <div className={css.categoryBlock}>
+        return <div key={category} className={css.categoryBlock}>
           <PatchCategory category={category} className={css.patchCategory}/>
           <PatchLines points={referencingChanges} showReferences/>
         </div>
       })
-      return <div className={css.patchBlock}>{headline}{changes}</div>
+      return <div key={patch.semver} className={css.patchBlock}>{headline}{changes}</div>
     })
     return <div className={classnames(css.container, this.props.className)}>
       {content}
