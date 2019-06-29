@@ -32,7 +32,8 @@
     "react-router-transition-switch": "^1.1.1",
     "react-string-replace": "^0.4.4",
     "redux": "^4.0.1",
-    "redux-action": "^1.2.2"
+    "redux-action": "^1.2.2",
+    "title-case": "^2.1.1"
   },
   "devDependencies": {
     "@absolunet/fsp": "^1.6.1",
