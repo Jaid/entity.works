@@ -1,5 +1,5 @@
 import perks from /* aot */ "src/data/perks"
-import {titleCase} from "change-case"
+import titleCase from "title-case"
 import survivors from "lib/survivors"
 import paramCase from "param-case"
 

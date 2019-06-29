@@ -1,5 +1,5 @@
 import killers from /* aot */ "src/data/killers"
-import {capitalize} from "lodash"
+import titleCase from "title-case"
 import paramCase from "param-case"
 
 /**
@@ -17,8 +17,8 @@ import paramCase from "param-case"
  * @type {killer[]}
  */
 const killersNormalized = killers.map(killer => ({
-  shortTitle: killer.id |> capitalize,
-  title: `The ${killer.shortTitle || killer.id |> capitalize}`,
+  shortTitle: killer.id |> titleCase,
+  title: `The ${killer.shortTitle || killer.id |> titleCase}`,
   linkId: killer.id |> paramCase,
   ...killer,
 }))
