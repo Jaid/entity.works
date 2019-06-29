@@ -1,5 +1,2 @@
 Past battles have taught you a thing or two about survival.
-
-Grants the ability to fully recover from the Dying State once per Trial.
-
-Increases the Dying State recovery speed by {tiers:25%/30%/35%}.
+Grants the ability to fully recover from the dying state once per trial. Increases the dying recovery speed by {tiers:25%/30%/35%}.

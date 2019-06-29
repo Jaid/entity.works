@@ -1,5 +1,2 @@
-Unlocks potential in one's Aura-reading ability.
-
-While you're on the Hook, All Survivors' Auras are revealed to all other Survivors. If the Killer is within a range of {tiers:8/12/16} metres, their Aura is revealed to all other Survivors.
-
-Kindred trumps any of the Killer's stealth abilities.
+Unlocks potential in one's aura reading ability.
+While you're on the hook, All Survivors' Auras are revealed to all other Survivors. If the Killer is within a {tiers:8/12/16} meter range, their aura is revealed to all other Survivors. {this} trumps any of the Killer's stealth abilities.

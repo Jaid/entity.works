@@ -1,9 +1,4 @@
-Your agility is incomparable.
-
-Cat-like reflexes reduce your stagger duration from falls by 75%.
-
+Your agility is incomparable. Cat-like reflexes reduce your stagger duration from falls by 75%.
 Upon landing, start sprinting at 150% of your normal running speed for a maximum of 3 seconds if not exhausted.
-
-Causes the Exhausted Status Effect for {tiers:60/50/40} seconds.
-
-You do not recover from Exhaustion while running.
+Causes the Exhausted status effect for {tiers:60/50/40} seconds.
+You do not recover from the Exhausted status effect while running.

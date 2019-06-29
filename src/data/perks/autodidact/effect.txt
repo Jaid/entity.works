@@ -1,9 +1,5 @@
-You start the Trial with a -25% progression penalty for Skill Checks to heal Survivors.
-
-For every successful Skill Check completed while healing a Survivor, you receive a Token for a maximum of {tiers:3/4/5} Tokens.
-
-Each Token grants you a +15% bonus progression for a successful Skill Check while healing Survivors.
-
-Great Skill Checks cannot be performed while using Autodidact.
-
-Autodidact is not active when using a Med-Kit to heal.
+You start the trial with a -25% progression penalty for Skill Checks to heal Survivors.
+For every successful Skill Check completed while healing a Survivor, you receive a Token up to a maximum of {tiers:3/4/5} Tokens.
+Each Token grants you a +15% progress bonuts.
+Great Skill Checks cannot be performed while using {this}.
+{this} is not active when using a Med-Kit to heal.

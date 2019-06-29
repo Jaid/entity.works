@@ -30,7 +30,7 @@ export default class PerkTooltip extends React.Component {
 
   render() {
     return <div className={classnames(css.container, this.props.className)}>
-      <RichText>{this.props.info.effect || this.props.info.title}</RichText>
+      <RichText>{this.props.info.effect.replace("{this}", this.props.info.title)}</RichText>
     </div>
   }
 

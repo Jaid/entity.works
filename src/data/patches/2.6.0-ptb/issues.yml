@@ -21,4 +21,4 @@
 - killer: plague
   text: "{plague} is awarded the Contagious score event when vomiting on repaired generators and unpowered exit gates"
 - killer: plague
-  text: "{plague}'s power has no audio when more than 10 metres away, and is mostly drowned out by the terror radius when less than 10 metres away."
+  text: "{plague}'s power has no audio when more than 10 meters away, and is mostly drowned out by the terror radius when less than 10 meters away."

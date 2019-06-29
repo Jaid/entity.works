@@ -1,11 +1,6 @@
 When your mind is set, there better be no one standing in your way.
-
-While standing in a Locker for 3 seconds, Head On activates.
-
-While Head On is activated, performing a rushed action to leave a Locker stuns the Killer for 3 seconds if they are standing within range.
-
-Causes the Exhausted Status Effect for {tiers:60/50/40} seconds.
-
-Head On cannot be used while Exhausted.
-
+While standing in a locker, for 3 seconds, the perk activates.
+While the perk is activated, performing a rushed action to leave a locker stuns the Killer for 3 seconds if they are standing within range.
+Causes the Exhausted status effect for {tiers:60/50/40} seconds.
+{this} cannot be used while Exhausted.
 You do not recover from Exhaustion while running.

@@ -1,6 +1,6 @@
 - Cannot change the resolution while in Windowed mode.
-- perk: [bbqAndChilli, rememberMe]
-  text: The {bbqAndChilli} and {rememberMe} perks visually only stack up to 3 tokens.
+- perk: [bbqAndChili, rememberMe]
+  text: The {bbqAndChili} and {rememberMe} perks visually only stack up to 3 tokens.
 - killer: spirit
   text: "{spirit}'s passive phasing is missing VFX."
 - Heartbeat audio will overlap itself.

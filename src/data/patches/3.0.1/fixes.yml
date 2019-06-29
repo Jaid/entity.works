@@ -2,8 +2,8 @@
   text: Fixed an issue that caused {wakeUp} to grant {tiers:5%/10%/15%} increased action speed to all interactions at all times.
 - perk: bamboozle
   text: Fixed an issue that caused the {bamboozle} perk not to have an activation sound.
-- perk: [bbqAndChilli, fireUp, rememberMe, wereGonnaLiveForever]
-  text: Fixed an issue that caused the {bbqAndChilli}, {fireUp}, {rememberMe} and {wereGonnaLiveForever} perks to visually only gain up to 3 tokens.
+- perk: [bbqAndChili, fireUp, rememberMe, wereGonnaLiveForever]
+  text: Fixed an issue that caused the {bbqAndChili}, {fireUp}, {rememberMe} and {wereGonnaLiveForever} perks to visually only gain up to 3 tokens.
 - perk: sprintBurst
   text: Fixed an issue that caused {sprintBurst} not to always trigger Exhaustion.
 - perk: spiesFromTheShadows

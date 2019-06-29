@@ -1,7 +1,4 @@
-You start the Trial with 3 Tokens.
-
-When your Aura would be shown to the Killer, the Perk activates and a Token is consumed.
-
-For the next {tiers:6/8/10} seconds while the Perk is activated, your Aura and Scratch Marks will not be shown to the Killer.
-
-Distortion does not activate when you are in the Dying State or affected by Traps.
+You start the zrial with 3 Tokens.
+When your Aura would be shown to the Killer, the perk activates and a token is consumed.
+For the next {tiers:6/8/10} seconds while the perk is activated, your aura and scratch marks will not be shown to the Killer.
+This perk does not activate when you are in dying state or in a trap.

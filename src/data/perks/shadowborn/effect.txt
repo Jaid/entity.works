@@ -1,5 +1,2 @@
-You have a keen vision in the darkness of the night.
-
-Your Field of View is increased by {tiers:8°/12°/15°}.
-
-Field of View gains do not stack.
+You have a keen vision in the darkness of the night. Your field of view is {tiers:8/12/15} degrees wider than normal.
+Does not stack with other FOV increases.

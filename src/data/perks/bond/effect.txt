@@ -1,3 +1,2 @@
-Unlocks potential in one's Aura-reading ability.
-
-Allies' Auras are revealed to you when they are within {tiers:20/28/36} metres of range.
+Unlocks potential in one's aura reading ability.
+Allies' Auras are revealed to you when they are within a {tiers:20/28/36} meter range.

@@ -1,3 +1,1 @@
-Unlocks potential in one's Aura-reading ability.
-
-Reveals dying Survivors' Auras when standing within {tiers:20/28/36} metres.
+Unlocks potential in one's Aura-reading ability. Reveals dying Survivors' auras within a {tiers:20/28/36} meter range.

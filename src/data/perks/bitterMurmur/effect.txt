@@ -1,5 +1,3 @@
 Unlocks potential in one's Aura-reading ability.
-
-Each time a Generator is fully repaired, Survivors within 16 metres of the completed Generator will be revealed for 5 seconds.
-
+Each time a Generator is fully repaired, Survivors within 16 meters of the completed Generator will be revealed for 5 seconds.
 When the last Generator is fully repaired, all the Survivors' Auras are revealed for {tiers:5/7/10} seconds.

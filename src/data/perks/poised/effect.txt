@@ -1,3 +1,2 @@
 Achieving goals boosts your confidence.
-
-After a Generator is completed, you leave no Scratch Marks for {tiers:6/8/10} seconds.
+After a generator is completed, you leave no scratch marks for {tiers:6/8/10} seconds.

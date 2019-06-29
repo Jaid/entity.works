@@ -1,3 +1,1 @@
-Unlocks the ability to sabotage without a Toolbox at 50% the normal Sabotage speed.
-
-Hooks and Bear Traps you sabotage stay broken for an extra {tiers:10/20/30} seconds.
+Unlocks the ability to sabotage without a toolbox at 50% the normal sabotage speed. Hooks and traps you sabotage stay broken for an extra {tiers:10/20/30} seconds.

@@ -1,3 +1,1 @@
-The trauma caused by your brutal attacks makes crying for help painfully difficult.
-
-Dying Survivors' Auras are not revealed to other Survivors when they are standing outside of {tiers:32/24/16} metres of range.
+The trauma caused by your brutal attacks makes crying for help painfully difficult. Dying Survivors' auras are not revealed to other Survivors when they are standing outside of a {tiers:32/24/16} meter range.

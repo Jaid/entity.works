@@ -1,3 +1,2 @@
 You'll get the job done... No matter the cost.
-
-If you are the last Survivor remaining in the Trial, for each Generator that needs to be completed, gain a {tiers:55%/65%/75%} bonus to Repair speed.
+If you are the last Survivor remaining in the trial, for each generator that needs to be completed, gain a {tiers:55%/65%/75%} bonus to repair speed.

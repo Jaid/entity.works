@@ -1,7 +1,5 @@
 You become obsessed with one Survivor.
-
 Your Obsession's altruistic action speed is increased by {tiers:38%/44%/50%}.
-
-Once the Obsession is killed or sacrificed, every other Survivor gets a penalty of {tiers:19%/22%/25%} to Repair, Healing and Sabotage speed.
-
+Once the Obsession is killed or sacrificed, every other Survivor gets a penalty of {tiers:19%/22%/25%} to repair, healing and sabotage speed.
+If the Killer becomes obsessed with another survivor, the penalties are removed and that survivor's altruistric action speed is increased.
 The Killer can only be obsessed with one Survivor at a time.

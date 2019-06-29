@@ -1,7 +1,1 @@
-Your horrifying emanation strikes at a supernaturally long distance.
-
-Your Terror Radius is increased by {tiers:22%/24%/26%}.
-
-Gain 100% more Bloodpoints for actions in the Deviousness Category.
-
-The Bonus Bloodpoints are only awarded during the Trial.
+Your horrifying emanation strikes at a supernaturally long distance. Your Terror Radius is increased by {tiers:22%/24%/26%}. Gain 100% more Bloodpoints for actions in the Deviousness Category.

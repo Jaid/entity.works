@@ -1,5 +1,3 @@
-After performing a Safe Hook Rescue on another Survivor, the Perk activates.
-
+After performing a safe hook rescue on another Survivor, the perk activates.
 You now have a 100% chance to unhook yourself during the escape attempt.
-
-A successful Deliverance from the Hook triggers the Broken Status Effect for {tiers:100/80/60} seconds.
+A successful {this} from the hook triggers the Broken status effect for {tiers:100/80/60} seconds.

@@ -1,5 +1,2 @@
-Unlocks potential in one's Aura-reading ability.
-
-When completing a Generator, the Auras of Generators, Chests and Totems within {tiers:32/48/64} metres are revealed to you for 5 seconds.
-
-If you are holding a Map that can track Objectives, Generators revealed by Detective's Hunch are added to the Map.
+Unlocks potential in one's aura reading ability. When completing a generator, the auras of generators, chests and totems within {tiers:32/48/64} meters are revealed to you for 5 seconds.
+If you are holding a map that can track objectives, generators revealed by Detective's Hunch are added to the Map.

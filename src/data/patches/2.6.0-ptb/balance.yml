@@ -14,8 +14,8 @@
   text: Added a new scoring event for perk-based stun events ({decisiveStrike}/{headOn}) worth 500 Bloodpoints. This is referred to as Killer Stun in game.
 - Reduced the time before a player can heal a player who has recently moved, this should allow for players to start healing a recently cancelled heal quicker than before.
 
-- perk: bbqAndChilli
-  text: Auras are revealed from 40 metres for all tiers of the perk instead of 52/46/40 metres.
+- perk: bbqAndChili
+  text: Auras are revealed from 40 meters for all tiers of the perk instead of 52/46/40 meters.
 - perk: distressing
   text: All tiers award 100% bonus Bloodpoints.
 - perk: fireUp
@@ -27,7 +27,7 @@
 - perk: thrillOfTheHunt
   text: All tiers grant 10% bonus Hunting Bloodpoints per remaining totem. Cleansing speeds are the same.
 - perk: monitorAndAbuse
-  text: The FOV values are {tiers:3/5/10} instead of {tiers:slightly/moderately/considerably} increased. Also simplified the Terror Radius value so that each tier modifies the Terror Radius by the same value, 8 metres instead of 6/7/8.
+  text: The FOV values are {tiers:3/5/10} instead of {tiers:slightly/moderately/considerably} increased. Also simplified the Terror Radius value so that each tier modifies the Terror Radius by the same value, 8 meters instead of 6/7/8.
 - perk: spiesFromTheShadows
   text: Added a 5 second cool-down when the perk triggers.
 - perk: thanatophobia
@@ -62,8 +62,8 @@
 - perk: lithe
   text: "Removed the chase condition. {lithe} now only triggers on rushed vaults."
 - perk: kindred
-  text: "All Survivor's auras are shown at all tiers. If the Killer is within a {tiers:8/12/16} metre range of the hooked Survivor, the Killer's aura is revealed to all other Survivors."
+  text: "All Survivor's auras are shown at all tiers. If the Killer is within a {tiers:8/12/16} meter range of the hooked Survivor, the Killer's aura is revealed to all other Survivors."
 - perk: pharmacy
-  text: All tiers have a reduced audible distance of 8 metres.
+  text: All tiers have a reduced audible distance of 8 meters.
 - perk: wakeUp
-  text: "All tiers reveal auras at 128 metres."
+  text: "All tiers reveal auras at 128 meters."
