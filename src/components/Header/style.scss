@@ -33,8 +33,10 @@
 }
 
 .nav {
-  display: inline-flex;
-  float  : right;
+  display    : inline-flex;
+  float      : right;
+  align-items: center;
+  flex-wrap  : wrap;
 
   >* {
     margin: 10px;

@@ -1,0 +1,87 @@
+.container {}
+
+.suggestionsContainer {
+  position: absolute;
+}
+
+.suggestionsList {
+  display   : inline-block;
+  background: black;
+  border    : 1px solid white;
+  box-shadow: 0 0 5px black;
+  padding   : 10px;
+}
+
+.suggestion {
+  display: block;
+  color  : white;
+  cursor : pointer;
+}
+
+.input {
+  width: 8em;
+}
+
+.entry {
+  display            : flex;
+  justify-content    : space-between;
+  align-items        : center;
+  padding            : 8px;
+  margin             : 4px;
+  border-radius      : 5px;
+  transition-duration: 0.5s;
+  transition-property: all;
+
+  &:hover {
+    transition: none;
+    color     : black;
+  }
+
+  &>img {
+    width       : 2.5em;
+    height      : auto;
+    margin-right: 0.5em;
+  }
+}
+
+.killerEntry {
+  color: #da4747;
+
+  &:hover {
+    background: rgb(240, 147, 147);
+  }
+}
+
+.survivorEntry {
+  color: #5ab3e7;
+
+  &:hover {
+    background: rgb(159, 212, 255);
+  }
+}
+
+.perkEntry {
+  color: #fdbe2b;
+
+  &:hover {
+    background: rgb(255, 240, 158);
+  }
+}
+
+.title {
+  width: 100px;
+}
+
+.input {
+  background   : black;
+  border       : none;
+  border-bottom: 1px solid gray;
+  padding      : 4px;
+  font-family  : Roboto Condensed,
+    sans-serif;
+  color: white;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -4,6 +4,7 @@ import classnames from "classnames"
 import icon from "root/icon.png"
 import {Link} from "react-router-dom"
 import {killersLink, survivorsLink, patchesLink, perksLink} from "lib/links"
+import SearchBar from "components/SearchBar"
 
 import css from "./style.scss"
 
@@ -37,6 +38,7 @@ export default class Header extends React.Component {
         <Link to={perksLink}>Perks</Link>
         <Link to={killersLink}>Killers</Link>
         <Link to={survivorsLink}>Survivors</Link>
+        <SearchBar/>
       </nav>
     </div>
   }
