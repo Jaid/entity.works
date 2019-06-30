@@ -27,7 +27,7 @@ module.exports = async () => {
     }
     const additionNames = await globby("*.yml", {
       cwd: path.join(patchesFolder, version),
-      matchBase: true,
+      baseNameMatch: true,
     })
     const additionJobs = additionNames.map(async additionName => {
       const additionId = preventEnd(additionName, ".yml")
