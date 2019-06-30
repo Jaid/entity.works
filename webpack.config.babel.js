@@ -1,6 +1,7 @@
 import path from "path"
 
 import configure from "webpack-config-jaid"
+import ShellPlugin from "webpack-shell-plugin-next"
 
 export default configure({
   publishimo: {fetchGithub: true},
@@ -13,5 +14,14 @@ export default configure({
         theme$: path.resolve(__dirname, "src", "theme.scss"),
       },
     },
+  },
+  extraProduction: {
+    plugins: [
+      new ShellPlugin({
+        onBuildExit: {
+          scripts: ["node --require @babel/register buildSitemap"],
+        },
+      }),
+    ],
   },
 })

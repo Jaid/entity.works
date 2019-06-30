@@ -54,7 +54,9 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^2.6.3",
-    "webpack-config-jaid": "^5.16.0"
+    "sitemap": "^2.2.0",
+    "webpack-config-jaid": "^5.16.0",
+    "webpack-shell-plugin-next": "^0.6.4"
   },
   "scripts": {
     "clean": "rimraf dist/",
