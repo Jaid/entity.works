@@ -1,1 +1,1 @@
-There is nothing stopping you. Your ferocious tenacity in dire situations allows you to crawl {30%/40%/50%} faster and recover at the same time.
+There is nothing stopping you. Your ferocious tenacity in dire situations allows you to crawl {tiers:30%/40%/50%} faster and recover at the same time.
