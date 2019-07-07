@@ -1,4 +1,5 @@
-last 2 chrome versions
+#last 2 chrome versions
+chrome >= 41 # Needed for Googlebot
 last 2 firefox versions
 last 2 edge versions
 > 5%
