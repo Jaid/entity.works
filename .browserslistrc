@@ -1,6 +1,1 @@
-#last 2 chrome versions
-chrome >= 41 # Needed for Googlebot
-last 2 firefox versions
-last 2 edge versions
-> 5%
-not dead
+extends browserslist-config-jaid-web
