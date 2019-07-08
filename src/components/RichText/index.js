@@ -12,7 +12,7 @@ export default class RichText extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
-    children: PropTypes.string.isRequired,
+    children: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   }
 
   static defaultProps = {
