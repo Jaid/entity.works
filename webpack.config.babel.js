@@ -2,7 +2,6 @@ import path from "path"
 
 import configure from "webpack-config-jaid"
 import paramCase from "param-case"
-import webpack from "webpack"
 
 import patchesJob from "./src/data/patches"
 import perksJob from "./src/data/perks"
@@ -34,6 +33,7 @@ const collectUrls = async () => {
 
 export default configure({
   publishimo: {fetchGithub: true},
+  googleAnalyticsTrackingId: "UA-51563406-7",
   robots: true,
   appDescription: "A moderately/considerably/tremendously modern Dead by Daylight wiki",
   icon: path.join(__dirname, "icon.png"),
@@ -46,19 +46,5 @@ export default configure({
         theme$: path.resolve(__dirname, "src", "theme.scss"),
       },
     },
-  },
-  extraProduction: {
-    plugins: [
-      new webpack.EnvironmentPlugin({
-        GOOGLE_ANALYTICS_TRACKING_ID: "UA-51563406-7",
-      }),
-    ],
-  },
-  extraDevelopment: {
-    plugins: [
-      new webpack.EnvironmentPlugin({
-        GOOGLE_ANALYTICS_TRACKING_ID: false,
-      }),
-    ],
   },
 })
