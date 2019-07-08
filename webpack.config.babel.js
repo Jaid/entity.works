@@ -57,7 +57,7 @@ export default configure({
   extraDevelopment: {
     plugins: [
       new webpack.EnvironmentPlugin({
-        GOOGLE_ANALYTICS_TRACKING_ID: false,
+        GOOGLE_ANALYTICS_TRACKING_ID: "UA-51563406-7",
       }),
     ],
   },

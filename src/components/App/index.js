@@ -18,6 +18,7 @@ const history = createBrowserHistory()
 
 if (process.env.GOOGLE_ANALYTICS_TRACKING_ID) {
   ReactGoogleAnalytics.initialize(process.env.GOOGLE_ANALYTICS_TRACKING_ID)
+  ReactGoogleAnalytics.pageview(window.location.pathname + window.location.search)
   history.listen(location => {
     ReactGoogleAnalytics.set({page: location.pathname})
     ReactGoogleAnalytics.pageview(location.pathname)
