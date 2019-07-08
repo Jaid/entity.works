@@ -41,15 +41,24 @@ export default configure({
     paths: collectUrls(),
   },
   extra: {
-    plugins: [
-      new webpack.EnvironmentPlugin({
-        GOOGLE_ANALYTICS_TRACKING_ID: "UA-51563406-7" |> JSON.stringify,
-      }),
-    ],
     resolve: {
       alias: {
         theme$: path.resolve(__dirname, "src", "theme.scss"),
       },
     },
+  },
+  extraProduction: {
+    plugins: [
+      new webpack.EnvironmentPlugin({
+        GOOGLE_ANALYTICS_TRACKING_ID: "UA-51563406-7",
+      }),
+    ],
+  },
+  extraDevelopment: {
+    plugins: [
+      new webpack.EnvironmentPlugin({
+        GOOGLE_ANALYTICS_TRACKING_ID: false,
+      }),
+    ],
   },
 })

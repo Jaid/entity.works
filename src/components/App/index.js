@@ -1,18 +1,28 @@
 import React from "react"
 import DocumentTitle from "react-document-title"
-import {Route, BrowserRouter, NavLink} from "react-router-dom"
+import {Route, Router} from "react-router-dom"
 import Header from "components/Header"
 import ReactRouterScrollTop from "react-router-scroll-top"
 import {ensureArray} from "magina"
 import Switch from "react-router-transition-switch"
 import Fader from "react-fader"
-
-import withTracker from "./withTracker"
+import {createBrowserHistory} from "history"
+import ReactGoogleAnalytics from "react-ga"
 
 import "fork-awesome/css/fork-awesome.min.css"
 
 import routes from "./routes.yml"
 import css from "./style.scss"
+
+const history = createBrowserHistory()
+
+if (process.env.GOOGLE_ANALYTICS_TRACKING_ID) {
+  ReactGoogleAnalytics.initialize(process.env.GOOGLE_ANALYTICS_TRACKING_ID)
+  history.listen(location => {
+    ReactGoogleAnalytics.set({page: location.pathname})
+    ReactGoogleAnalytics.pageview(location.pathname)
+  })
+}
 
 export default class App extends React.Component {
 
@@ -25,14 +35,14 @@ export default class App extends React.Component {
     })
     return <DocumentTitle title={_PKG_TITLE}>
       <div className={css.container}>
-        <BrowserRouter>
+        <Router history={history}>
           <ReactRouterScrollTop>
             <Header/>
-            <Switch component={withTracker}>
+            <Switch component={Fader}>
               {routeBlocks}
             </Switch>
           </ReactRouterScrollTop>
-        </BrowserRouter>
+        </Router>
       </div>
     </DocumentTitle>
   }
