@@ -2,6 +2,7 @@ import path from "path"
 
 import configure from "webpack-config-jaid"
 import paramCase from "param-case"
+import webpack from "webpack"
 
 import patchesJob from "./src/data/patches"
 import perksJob from "./src/data/perks"
