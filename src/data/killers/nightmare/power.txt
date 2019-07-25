@@ -1,14 +1,7 @@
-Death won't accept him and thus he remains, a calamity, indisputable master of his victims' nightmares. Dream Demon allows {nightmare} to pull Survivors into the Dream World.
+Death won't accept him and thus he remains, a calamity, indusputable master of his victim's nightmares. {nightmare} passively puts Survivors to sleep over 60 seconds, after which they enter the Dream World. Awake Survivors hear the Terror Radius and see {nightmare} from within 16 meters. {nightmare} appears intermittently to awake Survivors from 16 meters to 32 meters, and is invisible to awake Survivors beyond that.
 
-• Survivors who are awake do not see {nightmare}.
-• Once targeted by {nightmare}'s power, Survivors enter the Dream Transition for a very short time.
-• During the Dream Transition they can see {nightmare}.
-• When the Dream Transition lapse, the Survivor is pulled into the Dream World.
+Hold the Power button to place a Dream Snare on the ground directly in front of {nightmare} which will afflict Survivors with the Hindered status effect, slowing them while they remain in the trap and for short duration after leaving it.
 
-Once in the Dream World:
+Hold the Active Ability button to perform a Dream Projection and teleport to a generator in your view. Releasing the button early will cancel the action. For each Survivor in the Dream World, the cooldown of Dream Projection is reduced by 15%.
 
-• Survivors' auras are revealed to {nightmare} when they are outside of his Terror Radius.
-• Survivors suffer an action speed penalty ot 50%.
-• To exit the Dream World, Survivors can find non-sleeping Survivors to perform a wake up action.
-• Some failed actions can also wake up.
-• Hooked Survivors wake up.
+Once in the Dream World, Survivors hear a Lullaby instead of the Terror Radius and can be affected by Dream Snares placed by {nightmare}. Survivors can wake up by failing skill checks, finding an awake Survivor to perform the Wake Up action, or by using the alarm clocks found within the environment. Each successive Wake Up action takes twice as long to perform. Using the alarm clock will give Survivors 30 seconds before they start falling asleep again.
