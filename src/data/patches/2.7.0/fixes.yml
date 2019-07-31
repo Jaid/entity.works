@@ -8,7 +8,7 @@
   text: Fixed an issue that caused Survivors not to have the recoiling animation when shocked by {doctor}.
 - Fixed an issue that caused Survivors' status icons to sometimes show Dead instead of Sacrificed when they die by the End Game Collapse.
 - killer: cannibal
-  text: Fixed an issue that caused The Cannibals Chainsaw File, Homemade Muffler and Carburetor Tuning Guide add-ons not to reduce the sound of the Chainsaw.
+  text: Fixed an issue that caused {cannibal}s Chainsaw File, Homemade Muffler and Carburetor Tuning Guide add-ons not to reduce the sound of the Chainsaw.
 - killer: doctor
   text: Fixed an issue that caused {doctor}'s "Calm" add-ons not to play the terror radius on the Survivor as if they were on the edge of the terror radius.
 - killer: legion

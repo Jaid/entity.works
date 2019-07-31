@@ -75,7 +75,8 @@
 - Fixed an issue that caused male Survivors to incorrectly animate when rush entering a locker.
 - killer: nightmare
   text: Fixed an issue that caused the clock and bubble not to appear in the aura.
-- Fixed an issue that caused Survivors interacting with the clock while facing another direction to slide into the animation.
+- killer: nightmare
+  text: Fixed an issue that caused Survivors interacting with the clock while facing another direction to slide into the animation.
 - Removed The Ghost Face DLC music in the menus.
 - Fixed an issue that caused the mist to disappear when changing the graphic settings.
 - killer: nightmare
