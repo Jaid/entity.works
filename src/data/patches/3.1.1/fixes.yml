@@ -27,6 +27,7 @@
 - Fixed an issue that caused some fences in the Badham Preschool maps to have an invisible collision above them, blocking Killer projectiles.
 - Fixed an issue that caused some fences to be missing in front or in the back of various houses in the Lampkin Lane map.
 - perk: sloppyButcher
+  killer: doctor
   text: Fixed an issue that caused {sloppyButcher} to affect the Snap Out of It action.
 - Fixed an issue that caused the hatch to spawn inside the ground on a specific tile in the Coal Tower map.
 - Fixed an issue that caused the tire stacks on the crane tile to disappear from a distance in the Autohaven Wrecker's maps.

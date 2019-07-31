@@ -16,6 +16,7 @@
   text: Reduced the Legion's Frenzy vault distance.
 - Reverted fast window vault interrupts.
 - perk: aNursesCalling
+  killer: doctor
   text: Snap Out Of It is no longer affected by {aNursesCalling}. Actions such as Snap Out Of It and Mending are not healing actions, thus perks should not affect them.
 - Survivors who activate a map or key item while crouched now stay crouched.
 - killer: legion

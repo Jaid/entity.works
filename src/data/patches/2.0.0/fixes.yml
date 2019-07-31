@@ -28,6 +28,7 @@
 - killer: trapper
   text: Fixed an issue that could caused a non-host {trapper} to be launched in the air when picking up a trapped Survivor
 - perk: deadHard
+  killer: doctor
   text: Fixed an issue that made it impossible to heal, Snap Out of It, or use {deadHard} during the Killer stun animation when getting free from their shoulder
 - Fixed an issue that made it impossible to hit a Survivor that was underneath the Killer
 - killer: huntress
