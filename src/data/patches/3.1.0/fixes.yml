@@ -78,7 +78,8 @@
 - Fixed an issue that caused Survivors interacting with the clock while facing another direction to slide into the animation.
 - Removed The Ghost Face DLC music in the menus.
 - Fixed an issue that caused the mist to disappear when changing the graphic settings.
-- Reduce Blood color intensity when an asleep Survivor failed a healing skill check on another Survivor.
+- killer: nightmare
+  text: Reduce Blood color intensity when an asleep Survivor failed a healing skill check on another Survivor.
 - killer: nightmare
   text: Fixed an issue that caused awake Survivors to see the blood spurt VFX when failing a healing skill check on an asleep Survivor.
 - survivor: feng
