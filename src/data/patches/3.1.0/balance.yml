@@ -19,3 +19,5 @@
   text: A buffer has been added to reduce the friction and make it easier to place Dream Snares as {nightmare}.
 - killer: nightmare
   text: Slightly reduced the charge timer for placing Dream Snares as {nightmare}.
+- killer: pig
+  text: The movement speed curves for crouching and uncrouching have been adjusted to transition between normal speed and crouched speed more smoothly. The overall average speed while performing these interactions has been slightly increased.
