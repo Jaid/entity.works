@@ -41,10 +41,10 @@
   "devDependencies": {
     "@absolunet/fsp": "^1.6.1",
     "@hot-loader/react-dom": "^16.8.6",
-    "acorn": "^6.2.1",
+    "acorn": "^6.3.0",
     "ajv": "^6.10.2",
     "babel-jest": "^24.8.0",
-    "babel-preset-jaid": "^6.8.2",
+    "babel-preset-jaid": "^6.9.0",
     "browserslist-config-jaid-web": "^2.2.0",
     "caniuse-lite": "^1.0.30000989",
     "change-case": "^3.1.0",
@@ -54,11 +54,11 @@
     "jest": "^24.8.0",
     "param-case": "^2.1.1",
     "prevent-end": "^1.0.6",
-    "react-hot-loader": "^4.12.10",
+    "react-hot-loader": "^4.12.11",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^2.6.3",
-    "sitemap": "^3.2.2",
+    "sitemap": "^4.0.1",
     "webpack-config-jaid": "^5.26.0"
   },
   "scripts": {
