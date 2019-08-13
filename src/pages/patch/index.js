@@ -10,6 +10,15 @@ import NavigationPage from "components/NavigationPage"
 import css from "./style.scss"
 
 /**
+ * @param {string} query
+ * @return {import("../../lib/patches").patch}
+ */
+const findPatch = query => {
+  return patches.find(patch => patch.linkId === query)
+  || patches.find(patch => patch.semver === query)
+}
+
+/**
   * @typedef {{
   *  className: *
   *  match: {
@@ -47,7 +56,10 @@ export default class PatchPage extends React.Component {
       to: `/patch/${patch.linkId}`,
       text: patch.semver,
     }))
-    const patch = patches.find(({linkId}) => linkId === this.props.match.params.version)
+    const patch = findPatch(this.props.match.params.version)
+    if (!patch) {
+      return
+    }
     return <DocumentTitle title={`Patch ${patch.semver} in Dead by Daylight`}>
       <NavigationPage links={links}>
         <PatchBlock patch={patch}/>

@@ -1,6 +1,6 @@
 import killers from /* aot */ "src/data/killers"
-import titleCase from "title-case"
-import paramCase from "param-case"
+
+import normalizeKillers from "./normalizeKillers"
 
 /**
  * @typedef killer
@@ -16,11 +16,4 @@ import paramCase from "param-case"
 /**
  * @type {killer[]}
  */
-const killersNormalized = killers.map(killer => ({
-  shortTitle: killer.id |> titleCase,
-  title: `The ${killer.shortTitle || killer.id |> titleCase}`,
-  linkId: killer.id |> paramCase,
-  ...killer,
-}))
-
-export default killersNormalized
+export default normalizeKillers(killers)

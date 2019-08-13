@@ -1,6 +1,6 @@
 import survivors from /* aot */ "src/data/survivors"
-import titleCase from "title-case"
-import paramCase from "param-case"
+
+import normalizeSurvivors from "./normalizeSurvivors"
 
 /**
  * @typedef survivor
@@ -13,10 +13,4 @@ import paramCase from "param-case"
 /**
  * @type {survivor[]}
  */
-const survivorsNormalized = survivors.map(survivor => ({
-  shortTitle: survivor.id |> titleCase,
-  linkId: survivor.id |> paramCase,
-  ...survivor,
-}))
-
-export default survivorsNormalized
+export default normalizeSurvivors(survivors)

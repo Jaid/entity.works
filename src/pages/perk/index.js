@@ -5,8 +5,22 @@ import perks from "lib/perks"
 import PerkBlock from "components/PerkBlock"
 import RelevantPatches from "components/RelevantPatches"
 import DocumentTitle from "react-document-title"
+import paramCase from "param-case"
+import camelCase from "camel-case"
 
 import css from "./style.scss"
+
+/**
+ * @param {string} query
+ * @return {import("../../lib/perks").perk}
+ */
+const findPerk = query => {
+  return perks.find(perk => perk.linkId === query)
+  || perks.find(perk => perk.title === paramCase(query))
+  || perks.find(perk => perk.title === camelCase(query))
+  || perks.find(perk => perk.ingameId === paramCase(query))
+  || perks.find(perk => perk.ingameId === camelCase(query))
+}
 
 /**
   * @typedef {{
@@ -42,11 +56,14 @@ export default class PerkPage extends React.Component {
   }
 
   render() {
-    const perkInfo = perks.find(({linkId}) => linkId === this.props.match.params.id)
-    return <DocumentTitle title={`${perkInfo.title} in Dead by Daylight`}>
+    const info = findPerk(this.props.match.params.id)
+    if (!info) {
+      return
+    }
+    return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
       <main className={classnames(css.container, this.props.className)}>
-        <PerkBlock perkInfo={perkInfo}/>
-        <RelevantPatches name={perkInfo.id} type="perks"/>
+        <PerkBlock perkInfo={info}/>
+        <RelevantPatches name={info.id} type="perks"/>
       </main>
     </DocumentTitle>
   }

@@ -1,11 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
-import classnames from "classnames"
 import CharacterPage from "components/CharacterPage"
 import survivors from "lib/survivors"
 import DocumentTitle from "react-document-title"
+import paramCase from "param-case"
+import camelCase from "camel-case"
 
 import css from "./style.scss"
+
+/**
+ * @param {string} query
+ * @return {import("../../lib/survivors").survivor}
+ */
+const findSurvivor = query => {
+  return survivors.find(survivor => survivor.linkId === query)
+  || survivors.find(survivor => survivor.shortTitle === paramCase(query))
+  || survivors.find(survivor => survivor.shortTitle === camelCase(query))
+}
 
 /**
   * @typedef {{
@@ -41,7 +52,10 @@ export default class SurvivorPage extends React.Component {
   }
 
   render() {
-    const info = survivors.find(({linkId}) => linkId === this.props.match.params.id)
+    const info = findSurvivor(this.props.match.params.id)
+    if (!info) {
+      return
+    }
     const description = info.title
     return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
       <CharacterPage description={description} info={info} type="survivor"/>
