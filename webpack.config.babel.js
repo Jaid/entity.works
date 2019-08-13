@@ -3,7 +3,6 @@ import path from "path"
 import configure from "webpack-config-jaid"
 import paramCase from "param-case"
 import camelCase from "camel-case"
-import {uniqBy, isString} from "lodash"
 
 import patchesJob from "./src/data/patches"
 import perksJob from "./src/data/perks"
@@ -13,7 +12,6 @@ import normalizeKillers from "./src/lib/normalizeKillers"
 import normalizeSurvivors from "./src/lib/normalizeSurvivors"
 import normalizePerks from "./src/lib/normalizePerks"
 import normalizePatches from "./src/lib/normalizePatches"
-
 
 const getPatches = async () => {
   const patches = await patchesJob()
@@ -66,6 +64,8 @@ const collectUrls = async () => {
     ...killers.map(killer => `killer/${killer.fullName |> paramCase}`),
     ...killers.map(killer => `killer/${killer.fullName |> camelCase}`),
     ...survivors.map(survivor => `survivor/${survivor.id |> paramCase}`),
+    ...survivors.map(survivor => `survivor/${survivor.title |> paramCase}`),
+    ...survivors.map(survivor => `survivor/${survivor.title |> camelCase}`),
     ...survivors.map(survivor => `survivor/${survivor.shortTitle |> paramCase}`),
     ...survivors.map(survivor => `survivor/${survivor.shortTitle |> camelCase}`),
   ]

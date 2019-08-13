@@ -58,7 +58,7 @@ export default class PatchPage extends React.Component {
     }))
     const patch = findPatch(this.props.match.params.version)
     if (!patch) {
-      return
+      return "No patch found."
     }
     return <DocumentTitle title={`Patch ${patch.semver} in Dead by Daylight`}>
       <NavigationPage links={links}>

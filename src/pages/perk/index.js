@@ -16,10 +16,10 @@ import css from "./style.scss"
  */
 const findPerk = query => {
   return perks.find(perk => perk.linkId === query)
-  || perks.find(perk => perk.title === paramCase(query))
-  || perks.find(perk => perk.title === camelCase(query))
-  || perks.find(perk => perk.ingameId === paramCase(query))
-  || perks.find(perk => perk.ingameId === camelCase(query))
+  || perks.find(perk => paramCase(perk.title) === query)
+  || perks.find(perk => camelCase(perk.title) === query)
+  || perks.find(perk => paramCase(perk.ingameId) === query)
+  || perks.find(perk => camelCase(perk.ingameId) === query)
 }
 
 /**
@@ -58,7 +58,7 @@ export default class PerkPage extends React.Component {
   render() {
     const info = findPerk(this.props.match.params.id)
     if (!info) {
-      return
+      return "No perk found."
     }
     return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
       <main className={classnames(css.container, this.props.className)}>

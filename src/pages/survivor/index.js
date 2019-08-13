@@ -14,8 +14,10 @@ import css from "./style.scss"
  */
 const findSurvivor = query => {
   return survivors.find(survivor => survivor.linkId === query)
-  || survivors.find(survivor => survivor.shortTitle === paramCase(query))
-  || survivors.find(survivor => survivor.shortTitle === camelCase(query))
+  || survivors.find(survivor => paramCase(survivor.title) === query)
+  || survivors.find(survivor => camelCase(survivor.title) === query)
+  || survivors.find(survivor => paramCase(survivor.shortTitle) === query)
+  || survivors.find(survivor => camelCase(survivor.shortTitle) === query)
 }
 
 /**
@@ -52,9 +54,10 @@ export default class SurvivorPage extends React.Component {
   }
 
   render() {
+    console.log(survivors)
     const info = findSurvivor(this.props.match.params.id)
     if (!info) {
-      return
+      return "No survivor found."
     }
     const description = info.title
     return <DocumentTitle title={`${info.title} in Dead by Daylight`}>

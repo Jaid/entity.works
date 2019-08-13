@@ -14,12 +14,12 @@ import css from "./style.scss"
  */
 const findKiller = query => {
   return killers.find(killer => killer.linkId === query)
-  || killers.find(killer => killer.shortTitle === paramCase(query))
-  || killers.find(killer => killer.shortTitle === camelCase(query))
-  || killers.find(killer => killer.title === paramCase(query))
-  || killers.find(killer => killer.title === camelCase(query))
-  || killers.find(killer => killer.fullName === paramCase(query))
-  || killers.find(killer => killer.fullName === camelCase(query))
+  || killers.find(killer => paramCase(killer.shortTitle) === query)
+  || killers.find(killer => camelCase(killer.shortTitle) === query)
+  || killers.find(killer => paramCase(killer.title) === query)
+  || killers.find(killer => camelCase(killer.title) === query)
+  || killers.find(killer => paramCase(killer.fullName) === query)
+  || killers.find(killer => camelCase(killer.fullName) === query)
 }
 
 /**
@@ -51,7 +51,7 @@ export default class KillerPage extends React.Component {
   render() {
     const info = findKiller(this.props.match.params.id)
     if (!info) {
-      return
+      return "No killer found."
     }
     const description = `POWER: ${info.powerTitle}\n\n${info.power}`
     return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
