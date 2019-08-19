@@ -49,7 +49,7 @@
     "browserslist-config-jaid-web": "^2.3.0",
     "caniuse-lite": "^1.0.30000989",
     "change-case": "^3.1.0",
-    "eslint": "^6.1.0",
+    "eslint": "^6.2.0",
     "eslint-config-jaid-react": "^1.28.0",
     "globby": "^10.0.1",
     "jest": "^24.9.0",
@@ -59,8 +59,8 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",
-    "sitemap": "^4.0.2",
-    "webpack-config-jaid": "^5.27.1"
+    "sitemap": "^4.1.1",
+    "webpack-config-jaid": "^5.27.2"
   },
   "scripts": {
     "clean": "rimraf dist/",
