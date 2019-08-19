@@ -5,6 +5,7 @@ import RichBox from "components/RichBox"
 import findObject, {findExactObject} from "lib/findObject"
 import reactStringReplace from "react-string-replace"
 import TiersBox from "components/TiersBox"
+import splitOnFirst from "split-on-first"
 
 import css from "./style.scss"
 
@@ -20,18 +21,18 @@ export default class RichText extends React.Component {
 
   render() {
     const processedRichText = reactStringReplace(this.props.children, /{(.+?)}/g, (token, index) => {
-      const typeMatch = /^(?<type>[a-z]+):(?<name>.+)/.exec(token)
+      const [type, content] = splitOnFirst(token, ":")
       let richObject
-      if (typeMatch === null) {
+      if (content === undefined) {
         richObject = findObject(token)
-      } else if (typeMatch.groups.type === "tiers") {
-        return <TiersBox key={`TiersBox${index}`} tiers={typeMatch.groups.name.split("/")}/>
+      } else if (type === "tiers") {
+        return <TiersBox key={`TiersBox${index}`} tiers={content.split("/")}/>
       } else {
-        const info = findExactObject(typeMatch.groups.name)
+        const info = findExactObject(type, content)
         if (info) {
           richObject = {
             info,
-            type: typeMatch.groups.type,
+            type,
           }
         }
       }
