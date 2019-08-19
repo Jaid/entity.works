@@ -13,4 +13,6 @@ import normalizeSurvivors from "./normalizeSurvivors"
 /**
  * @type {survivor[]}
  */
-export default normalizeSurvivors(survivors)
+const normalizedSurvivors = normalizeSurvivors(survivors)
+
+export default normalizedSurvivors

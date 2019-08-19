@@ -1,5 +1,6 @@
 import perks from /* aot */ "src/data/perks"
 
+import survivors from "./survivors"
 import normalizePerks from "./normalizePerks"
 
 /**
@@ -17,4 +18,17 @@ import normalizePerks from "./normalizePerks"
 /**
  * @type {perk[]}
  */
-export default normalizePerks(perks)
+const normalizedPerks = normalizePerks(perks).map(perk => {
+  let forValue
+  if (survivors.find(survivor => survivor.id === perk.owner)) {
+    forValue = "survivor"
+  } else {
+    forValue = "killer"
+  }
+  return {
+    for: forValue,
+    ...perk,
+  }
+})
+
+export default normalizedPerks
