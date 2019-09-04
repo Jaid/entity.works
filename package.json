@@ -61,7 +61,7 @@
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",
     "sitemap": "^4.1.1",
-    "webpack-config-jaid": "^5.27.5"
+    "webpack-config-jaid": "^5.27.6"
   },
   "scripts": {
     "clean": "rimraf dist/",
