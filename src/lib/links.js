@@ -5,4 +5,5 @@ import killers from "lib/killers"
 export const patchesLink = `/patch/${patches[0].linkId}`
 export const survivorsLink = `/survivor/${survivors[0].linkId}`
 export const killersLink = `/killer/${killers[0].linkId}`
-export const perksLink = "/perks/survivor"
+export const survivorPerksLink = "/perks/survivor"
+export const killerPerksLink = "/perks/killer"

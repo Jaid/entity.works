@@ -6,30 +6,38 @@ import patches from "lib/patches"
 import RichText from "components/RichText"
 import killers from "lib/killers"
 import survivors from "lib/survivors"
-import perks from "lib/perks"
+import {killerPerks, survivorPerks} from "lib/perks"
 import Headline from "components/Headline"
-import {killersLink, survivorsLink, patchesLink, perksLink} from "lib/links"
-import zahl from "zahl"
+import {killersLink, survivorsLink, patchesLink, survivorPerksLink, killerPerksLink} from "lib/links"
 
 import description from "./description.txt"
 import css from "./style.scss"
 
 const links = [
   {
-    text: zahl(patches, "Patch"),
-    to: patchesLink,
-  },
-  {
-    text: zahl(perks, "Perk"),
-    to: perksLink,
-  },
-  {
-    text: zahl(killers, "Killer"),
+    count: killers.length,
+    text: "Killers",
     to: killersLink,
   },
   {
-    text: zahl(survivors, "Survivor"),
+    count: killerPerks.length,
+    text: "Killer Perks",
+    to: killerPerksLink,
+  },
+  {
+    count: survivorPerks.length,
+    text: "Survivor Perks",
+    to: survivorPerksLink,
+  },
+  {
+    count: survivors.length,
+    text: "Survivors",
     to: survivorsLink,
+  },
+  {
+    count: patches.length,
+    text: "Patches",
+    to: patchesLink,
   },
 ]
 
@@ -67,10 +75,14 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
+    const linkBoxes = links.map(({count, text, to}) => <Link key={to} className={css.linkBox} to={to}>
+      <div className={css.linkBoxCount}>{count}</div>
+      <div className={css.linkBoxText}>{text}</div>
+    </Link>)
     return <main className={classnames(css.container, this.props.className)}>
       <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>
       <nav className={css.linkList}>
-        {links.map(({text, to}) => <Link key={to} className={css.link} to={to}>{text}</Link>)}
+        {linkBoxes}
       </nav>
     </main>
   }

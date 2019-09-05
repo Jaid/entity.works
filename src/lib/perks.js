@@ -31,4 +31,7 @@ const normalizedPerks = normalizePerks(perks).map(perk => {
   }
 })
 
+export const killerPerks = normalizedPerks.filter(perk => perk.for === "killer")
+export const survivorPerks = normalizedPerks.filter(perk => perk.for === "survivor")
+
 export default normalizedPerks
