@@ -70,7 +70,7 @@ export default class CharacterPage extends React.Component {
     return <NavigationPage links={links}>
       <Headline miniText={myMeta.overText || this.props.info[myMeta.overTextKey]} theme={this.props.type}>
         {this.props.info[myMeta.titleKey]}
-      </Headline>3
+      </Headline>
       <div className={css.introduction}>
         <img className={css.icon} src={require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`)}/>
         <RichText className={css.description}>{this.props.description}</RichText>
