@@ -9,25 +9,26 @@ import survivors from "lib/survivors"
 import perks from "lib/perks"
 import Headline from "components/Headline"
 import {killersLink, survivorsLink, patchesLink, perksLink} from "lib/links"
+import zahl from "zahl"
 
 import description from "./description.txt"
 import css from "./style.scss"
 
 const links = [
   {
-    text: `${patches.length} Patches`,
+    text: zahl(patches, "Patch"),
     to: patchesLink,
   },
   {
-    text: `${perks.length} Perks`,
+    text: zahl(perks, "Perk"),
     to: perksLink,
   },
   {
-    text: `${killers.length} Killers`,
+    text: zahl(killers, "Killers"),
     to: killersLink,
   },
   {
-    text: `${survivors.length} Survivors`,
+    text: zahl(survivors, "Survivors"),
     to: survivorsLink,
   },
 ]

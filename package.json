@@ -38,7 +38,8 @@
     "redux": "^4.0.4",
     "redux-action": "^1.2.2",
     "split-on-first": "^1.1.0",
-    "title-case": "^2.1.1"
+    "title-case": "^2.1.1",
+    "zahl": "^2.0.1"
   },
   "devDependencies": {
     "@absolunet/fsp": "^1.6.1",
