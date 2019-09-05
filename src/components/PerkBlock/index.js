@@ -15,6 +15,7 @@ import css from "./style.scss"
   * @typedef {{
   *  className: *,
   *  perkInfo: Object,
+  *  displayOwnerBox: boolean
   * }} Props
   */
 
@@ -32,6 +33,7 @@ export default class PerkBlock extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     perkInfo: PropTypes.object.isRequired,
+    displayOwnerBox: PropTypes.bool,
   }
 
   render() {
@@ -54,7 +56,7 @@ export default class PerkBlock extends React.Component {
       if (ownerInfo) {
         const tooltip = `Teachable version of {${this.props.perkInfo.id}} can be unlocked in the bloodweb of {${ownerInfo.info.id}} at level ${this.props.perkInfo.level}`
         return <div className={css.owner}>
-          {ownerInfo.box}
+          {this.props.displayOwnerBox && ownerInfo.box}
           <span className={css.level}>
             <Tooltip html={<RichText>{tooltip}</RichText>}>
               <i className={classnames("fa", "fa-unlock-alt", css.lockIcon)}/>
@@ -85,5 +87,3 @@ export default class PerkBlock extends React.Component {
   }
 
 }
-
-//           <RichText className={css.effect}>{this.props.perkInfo.effect.replace("{this}", `{${this.props.perkInfo.id}}`)}</RichText>
