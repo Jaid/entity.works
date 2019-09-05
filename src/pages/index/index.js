@@ -24,11 +24,11 @@ const links = [
     to: perksLink,
   },
   {
-    text: zahl(killers, "Killers"),
+    text: zahl(killers, "Killer"),
     to: killersLink,
   },
   {
-    text: zahl(survivors, "Survivors"),
+    text: zahl(survivors, "Survivor"),
     to: survivorsLink,
   },
 ]
