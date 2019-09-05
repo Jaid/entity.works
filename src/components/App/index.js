@@ -6,15 +6,13 @@ import ReactRouterScrollTop from "react-router-scroll-top"
 import {ensureArray} from "magina"
 import Switch from "react-router-transition-switch"
 import Fader from "react-fader"
-import {createBrowserHistory} from "history"
 import ReactGoogleAnalytics from "react-ga"
 
+import history from "./history"
 import "fork-awesome/css/fork-awesome.min.css"
 
 import routes from "./routes.yml"
 import css from "./style.scss"
-
-const history = createBrowserHistory()
 
 if (GOOGLE_ANALYTICS_TRACKING_ID) {
   ReactGoogleAnalytics.initialize(GOOGLE_ANALYTICS_TRACKING_ID)
