@@ -9,6 +9,7 @@ import survivors from "lib/survivors"
 import {killerPerks, survivorPerks} from "lib/perks"
 import Headline from "components/Headline"
 import {killersLink, survivorsLink, patchesLink, survivorPerksLink, killerPerksLink} from "lib/links"
+import moment from "moment"
 
 import description from "./description.txt"
 import css from "./style.scss"
@@ -75,7 +76,21 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    // TODO: moment().utcOffset(-4).set({date: 13, hour: 8, minute: 0, second: 0, millisecond: 0}).format()
+    const nowMoment = moment()
+    const thisMonth13Moment = moment().utcOffset(-4).set({
+      date: 13,
+      hour: 10,
+      minute: 0,
+      second: 0,
+      millisecond: 0,
+    })
+    const isRankResetThisMonth = nowMoment.isBefore(thisMonth13Moment)
+    const nextRankReset = moment(isRankResetThisMonth ? thisMonth13Moment : thisMonth13Moment.add(1, "month"))
+    const previousRankReset = moment(nextRankReset).subtract(1, "month")
+    const nextRankResetUnix = nextRankReset.unix()
+    const previousRankResetUnix = previousRankReset.unix()
+    console.log(nextRankReset.format())
+    console.log(previousRankReset.format())
     const linkBoxes = links.map(({count, text, to}) => <Link key={to} className={css.linkBox} to={to}>
       <div className={css.linkBoxCount}>{count}</div>
       <div className={css.linkBoxText}>{text}</div>
