@@ -75,6 +75,7 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
+    // TODO: moment().utcOffset(-4).set({date: 13, hour: 8, minute: 0, second: 0, millisecond: 0}).format()
     const linkBoxes = links.map(({count, text, to}) => <Link key={to} className={css.linkBox} to={to}>
       <div className={css.linkBoxCount}>{count}</div>
       <div className={css.linkBoxText}>{text}</div>
