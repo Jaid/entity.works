@@ -3,6 +3,7 @@
 .linkList {
   display        : flex;
   justify-content: center;
+  flex-wrap      : wrap;
 }
 
 .linkBox {
@@ -48,5 +49,10 @@
   .linkBox {
     font-size: 130%;
     padding  : 0.5em;
+  }
+
+  .rankSeasonProgressBar {
+    margin-right: 0.5em;
+    margin-left : 0.5em;
   }
 }
