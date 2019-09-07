@@ -10,6 +10,7 @@ import {killerPerks, survivorPerks} from "lib/perks"
 import Headline from "components/Headline"
 import {killersLink, survivorsLink, patchesLink, survivorPerksLink, killerPerksLink} from "lib/links"
 import moment from "moment"
+import positionInRange from "position-in-range"
 
 import description from "./description.txt"
 import css from "./style.scss"
@@ -85,12 +86,13 @@ export default class IndexPage extends React.Component {
       millisecond: 0,
     })
     const isRankResetThisMonth = nowMoment.isBefore(thisMonth13Moment)
-    const nextRankReset = moment(isRankResetThisMonth ? thisMonth13Moment : thisMonth13Moment.add(1, "month"))
-    const previousRankReset = moment(nextRankReset).subtract(1, "month")
-    const nextRankResetUnix = nextRankReset.unix()
-    const previousRankResetUnix = previousRankReset.unix()
-    console.log(nextRankReset.format())
-    console.log(previousRankReset.format())
+    const nextRankResetMoment = moment(isRankResetThisMonth ? thisMonth13Moment : thisMonth13Moment.add(1, "month"))
+    const previousRankResetMoment = moment(nextRankResetMoment).subtract(1, "month")
+    const rankSeasonProgress = positionInRange(Number(previousRankResetMoment), Number(nextRankResetMoment), Number(nowMoment)) * 100
+    const progressBar = <div className={css.rankSeasonProgressBar}
+      style={{
+        background: `linear-gradient(to right, #6dff6d44 0%, #6dff6d44 ${rankSeasonProgress}%, transparent ${rankSeasonProgress}%, transparent 100%)`,
+      }}/>
     const linkBoxes = links.map(({count, text, to}) => <Link key={to} className={css.linkBox} to={to}>
       <div className={css.linkBoxCount}>{count}</div>
       <div className={css.linkBoxText}>{text}</div>
@@ -100,6 +102,7 @@ export default class IndexPage extends React.Component {
       <nav className={css.linkList}>
         {linkBoxes}
       </nav>
+      {progressBar}
     </main>
   }
 

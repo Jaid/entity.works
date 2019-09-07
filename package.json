@@ -23,6 +23,7 @@
     "magina": "^1.1.0",
     "modern-normalize": "^0.5.0",
     "moment": "^2.24.0",
+    "position-in-range": "^1.0.0",
     "query-string": "^6.8.3",
     "react": "^16.9.0",
     "react-autosuggest": "^9.4.3",
