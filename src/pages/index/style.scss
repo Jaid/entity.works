@@ -29,10 +29,11 @@
 .rankSeasonProgressBar {
   border         : 1px solid #6dff6d;
   border-radius  : 6px;
-  margin-top     : 20px;
+  margin-top     : 22px;
   display        : flex;
   justify-content: space-between;
-  margin         : 4px;
+  margin-left    : 4px;
+  margin-right   : 4px;
 
   >span {
     padding-left  : 6px;
