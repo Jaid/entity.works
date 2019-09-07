@@ -101,7 +101,7 @@ export default class IndexPage extends React.Component {
       </nav>
       <div className={css.rankSeasonProgressBar}
         style={{
-          background: `linear-gradient(to right, #6dff6d44 0%, #6dff6d44 ${rankSeasonProgress}%, transparent ${rankSeasonProgress}%, transparent 100%)`,
+          background: `linear-gradient(to right, #6dff6d44 0%, #6dff6d44 ${rankSeasonProgress - 0.5}%, transparent ${rankSeasonProgress + 0.5}%, transparent 100%)`,
         }}>
         <span>{previousRankResetMoment.format("MMMM")} 13</span>
         <span>Next rank reset in {zahl(5, "day")}</span>
