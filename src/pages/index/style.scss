@@ -32,6 +32,7 @@
   margin-top     : 20px;
   display        : flex;
   justify-content: space-between;
+  margin         : 4px;
 
   >span {
     padding-left  : 6px;
@@ -49,10 +50,5 @@
   .linkBox {
     font-size: 130%;
     padding  : 0.5em;
-  }
-
-  .rankSeasonProgressBar {
-    margin-right: 0.5em;
-    margin-left : 0.5em;
   }
 }
