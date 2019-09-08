@@ -53,7 +53,6 @@ export default class KillerPage extends React.Component {
     if (!info) {
       return "No killer found."
     }
-    console.log(info)
     const description = `POWER: ${info.powerTitle}\n\n${info.power}`
     return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
       <CharacterPage description={description} info={info} type="killer"/>

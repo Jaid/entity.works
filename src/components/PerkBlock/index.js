@@ -66,7 +66,6 @@ export default class PerkBlock extends React.Component {
         </div>
       }
     }
-    console.log(this.props.perkInfo)
     return <div className={classnames(css.container, this.props.className)}>
       <Headline miniText="Perk" theme="yellow">{this.props.perkInfo.title}</Headline>
       <section className={css.perkInfo}>

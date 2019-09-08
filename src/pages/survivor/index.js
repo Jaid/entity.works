@@ -58,7 +58,6 @@ export default class SurvivorPage extends React.Component {
     if (!info) {
       return "No survivor found."
     }
-    console.log(info)
     return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
       <CharacterPage description={info.title} info={info} type="survivor"/>
     </DocumentTitle>
