@@ -34,6 +34,6 @@ const normalizedPerks = normalizePerks(perks).map(perk => {
 
 export const killerPerks = normalizedPerks.filter(perk => perk.for === "killer")
 export const survivorPerks = normalizedPerks.filter(perk => perk.for === "survivor")
-export const perksByOwner = ownerId => perks |> #.filter(({owner}) => owner === ownerId) |> sortBy(#, "level")
+export const perksByOwner = ownerId => normalizedPerks |> #.filter(({owner}) => owner === ownerId) |> sortBy(#, "level")
 
 export default normalizedPerks
