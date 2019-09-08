@@ -7,9 +7,8 @@ import killers from "lib/killers"
 import Headline from "components/Headline"
 import RelevantPatches from "components/RelevantPatches"
 import RichText from "components/RichText"
-import perks from "lib/perks"
+import {perksByOwner} from "lib/perks"
 import PerkBlock from "components/PerkBlock"
-import {sortBy} from "lodash"
 
 import css from "./style.scss"
 
@@ -26,7 +25,7 @@ const meta = {
     referenceType: "survivors",
     navigationTitleKey: "shortTitle",
     titleKey: "title",
-    overText: "Survivor"
+    overText: "Survivor",
   },
 }
 
@@ -63,9 +62,9 @@ export default class CharacterPage extends React.Component {
       to: `/${this.props.type}/${character.linkId}`,
       text: character[myMeta.navigationTitleKey],
     }))
-    const ownPerks = perks |> #.filter(({owner}) => owner === this.props.info.id) |> sortBy(#, "level")
+    const ownPerks = perksByOwner(this.props.info.id)
     const perkNodes = ownPerks.map(perk => {
-      return <PerkBlock className={css.perk} key={perk.id} perkInfo={perk}/>
+      return <PerkBlock key={perk.id} className={css.perk} perkInfo={perk}/>
     })
     return <NavigationPage links={links}>
       <Headline miniText={myMeta.overText || this.props.info[myMeta.overTextKey]} theme={this.props.type}>

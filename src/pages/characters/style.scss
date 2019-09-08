@@ -1,0 +1,85 @@
+.listTitle {
+  padding-bottom: 10px;
+
+  tr:not(:first-child)>& {
+    padding-top: 40px;
+  }
+}
+
+.listTitle {
+  font-size     : 30px;
+  text-transform: uppercase;
+  font-family   : Hind, sans-serif;
+}
+
+.characterEntry {
+  vertical-align: middle;
+}
+
+.characterBox {
+  display    : flex;
+  align-items: center;
+
+  >img {
+    height      : 2em !important;
+    margin-right: 6px;
+  }
+}
+
+.perkBox {
+  display    : flex;
+  align-items: center;
+  line-height: 100%;
+
+  >img {
+    width        : 2.5em !important;
+    margin-top   : -1em;
+    margin-bottom: -1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .perkCell {
+    display: table;
+  }
+
+  .killers:nth-child(odd) {
+    background: hsla(0, 100%, 50%, 0.1);
+  }
+
+  .survivors:nth-child(odd) {
+    background: hsla(202, 75%, 63%, 0.1);
+  }
+
+  .characterBox {
+    flex-direction: column-reverse;
+    font-size     : 120%;
+
+    >img {
+      height      : 4em !important;
+      margin-right: 0;
+      margin-top  : 0.2em;
+    }
+  }
+
+  .characterList {
+    width          : 100%;
+    border-collapse: collapse;
+  }
+
+  .listTitle {
+    text-align    : center;
+    padding-bottom: 20px;
+  }
+
+  .perkBox {
+    display    : flex;
+    align-items: center;
+    line-height: 100%;
+
+    >img {
+      width : 2.5em !important;
+      margin: 0;
+    }
+  }
+}

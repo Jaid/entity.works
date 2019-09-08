@@ -4,7 +4,6 @@ perk: /perk/:id
 perks:
   - /perks
   - /perks/:type
-killer:
-  - /killer/:id
-survivor:
-  - /survivor/:id
+killer: /killer/:id
+survivor: /survivor/:id
+characters: /characters

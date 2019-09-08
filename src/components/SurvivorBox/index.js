@@ -14,15 +14,20 @@ export default class SurvivorBox extends React.Component {
     className: PropTypes.string,
     survivor: PropTypes.string.isRequired,
     large: PropTypes.bool,
+    inline: PropTypes.bool,
   }
 
   static defaultProps = {
     large: false,
+    inline: true,
   }
 
   render() {
     const info = survivors.find(({id}) => id === this.props.survivor)
-    const content = <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
+    const content = <span className={classnames(css.container, this.props.className, {
+      [css.large]: this.props.large,
+      [css.inline]: this.props.inline,
+    })}>
       <img className={css.icon} src={require(`../../data/survivors/${this.props.survivor}/icon.png`)}/>
       <SurvivorLink info={info}>{info.shortTitle}</SurvivorLink>
     </span>

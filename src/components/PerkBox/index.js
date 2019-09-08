@@ -14,15 +14,20 @@ export default class PerkBox extends React.Component {
     className: PropTypes.string,
     perk: PropTypes.string.isRequired,
     large: PropTypes.bool,
+    inline: PropTypes.bool,
   }
 
   static defaultProps = {
     large: false,
+    inline: true,
   }
 
   render() {
     const perkInfo = perks.find(({id}) => id === this.props.perk)
-    const text = <span className={classnames(css.container, this.props.className, css[this.props.large ? "large" : "inline"])}>
+    const text = <span className={classnames(css.container, this.props.className, {
+      [css.large]: this.props.large,
+      [css.inline]: this.props.inline,
+    })}>
       <img className={css.icon}
         src={require(`../../data/perks/${this.props.perk}/icon.png`)}
         style={{
