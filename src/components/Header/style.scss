@@ -1,10 +1,12 @@
 .container {
   margin-bottom: 40px;
+  user-select  : none;
 }
 
 .icon {
   width         : 3em;
   vertical-align: middle;
+  user-select   : none;
 }
 
 .title {

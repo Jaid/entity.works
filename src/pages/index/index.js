@@ -11,7 +11,6 @@ import Headline from "components/Headline"
 import {killersLink, survivorsLink, patchesLink, survivorPerksLink, killerPerksLink} from "lib/links"
 import moment from "moment"
 import positionInRange from "position-in-range"
-import zahl from "zahl"
 
 import description from "./description.txt"
 import css from "./style.scss"
