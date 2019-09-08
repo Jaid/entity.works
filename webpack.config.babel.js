@@ -49,6 +49,10 @@ const collectUrls = async () => {
       url: "perks/survivor",
       priority: 0.8,
     },
+    {
+      url: "characters",
+      priority: 0.8,
+    },
     ...patches.map(patch => `patch/${patch.linkId}`),
     ...patches.map(patch => `patch/${patch.semver}`),
     ...perks.map(perk => `perk/${perk.id |> paramCase}`),
