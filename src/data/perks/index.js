@@ -18,7 +18,10 @@ module.exports = async () => {
     if (effectFileExists) {
       data.effect = await fsp.readFile(effectFile, "utf8")
     }
-    return data
+    return {
+      id,
+      ...data,
+    }
   })
   const perks = await Promise.all(fetchPerksJobs)
   return perks |> filterNil

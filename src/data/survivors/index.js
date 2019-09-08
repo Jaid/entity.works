@@ -12,7 +12,11 @@ module.exports = async () => {
     if (!infoFileExists) {
       return null
     }
-    return fsp.readYaml(infoFile)
+    const data = await fsp.readYaml(infoFile)
+    return {
+      id,
+      ...data,
+    }
   })
   const survivors = await Promise.all(fetchJobs)
   return survivors |> filterNil

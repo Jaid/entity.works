@@ -18,7 +18,10 @@ module.exports = async () => {
     if (powerFileExists) {
       data.power = await fsp.readFile(powerFile, "utf8")
     }
-    return data
+    return {
+      id,
+      ...data,
+    }
   })
   const killers = await Promise.all(fetchJobs)
   return killers |> filterNil
