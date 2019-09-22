@@ -1,0 +1,9 @@
+{
+  "version": "2.13.3",
+  "api_version": 1,
+  "layout": {
+    "logo": "//entity.works/yandex-browser-50x50.png",
+    "color": "#13061b",
+    "show_title": true
+  }
+}

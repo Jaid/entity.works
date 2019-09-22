@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://entity.works/sitemap.xml
+Host: https://entity.works

@@ -1,0 +1,14 @@
+{
+  "version": "2.13.3",
+  "name": "Entity Works",
+  "description": "A moderately/considerably/tremendously modern Dead by Daylight wiki",
+  "icons": {
+    "60": "//entity.works/firefox_app_60x60.png",
+    "128": "//entity.works/firefox_app_128x128.png",
+    "512": "//entity.works/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Jaid",
+    "url": "https://github.com/Jaid"
+  }
+}
