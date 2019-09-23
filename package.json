@@ -58,12 +58,12 @@
     "jest": "^24.9.0",
     "param-case": "^2.1.1",
     "prevent-end": "^1.0.6",
-    "react-hot-loader": "^4.12.13",
+    "react-hot-loader": "^4.12.14",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",
     "sitemap": "^4.1.1",
-    "webpack-config-jaid": "^5.27.9"
+    "webpack-config-jaid": "^5.27.10"
   },
   "scripts": {
     "clean": "rimraf dist/",
