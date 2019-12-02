@@ -76,7 +76,6 @@ const collectUrls = async () => {
 }
 
 export default configure({
-  publishimo: {fetchGithub: true},
   googleAnalyticsTrackingId: "UA-51563406-7",
   robots: true,
   appDescription: "A moderately/considerably/tremendously modern Dead by Daylight wiki",
