@@ -70,5 +70,6 @@
     "start": "webpackPort=1212 START_HOT=1 NODE_ENV=development webpack-dev-server",
     "build:prod": "NODE_ENV=production webpack",
     "build:dev": "NODE_ENV=development webpack"
-  }
+  },
+  "description": "Simple wiki for Dead by Daylight. Contains perks, killer powers and patch notes."
 }
