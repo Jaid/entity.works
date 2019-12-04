@@ -69,7 +69,8 @@
     "clean": "rimraf dist/",
     "start": "webpackPort=1212 START_HOT=1 NODE_ENV=development webpack-dev-server",
     "build:prod": "NODE_ENV=production webpack",
-    "build:dev": "NODE_ENV=development webpack"
+    "build:dev": "NODE_ENV=development webpack",
+    "prepareActionJest": "npm run build:prod"
   },
   "description": "Simple wiki for Dead by Daylight. Contains perks, killer powers and patch notes."
 }
