@@ -4,7 +4,7 @@ const fsp = require("@absolunet/fsp")
 const filterNil = require("filter-nil").default
 const globby = require("globby")
 const preventEnd = require("prevent-end").default
-const paramCase = require("param-case")
+const {paramCase} = require("param-case")
 
 module.exports = async () => {
   const patchesFolder = __dirname

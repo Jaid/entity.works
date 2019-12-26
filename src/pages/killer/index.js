@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import CharacterPage from "components/CharacterPage"
 import killers from "lib/killers"
 import DocumentTitle from "react-document-title"
-import paramCase from "param-case"
-import camelCase from "camel-case"
+import {paramCase} from "param-case"
+import {camelCase}  from "camel-case"
 
 import css from "./style.scss"
 

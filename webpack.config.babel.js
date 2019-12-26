@@ -1,17 +1,17 @@
+import {camelCase} from "camel-case"
+import filterNil from "filter-nil"
+import {paramCase} from "param-case"
 import path from "path"
-
 import configure from "webpack-config-jaid"
-import paramCase from "param-case"
-import camelCase from "camel-case"
 
+import killersJob from "./src/data/killers"
 import patchesJob from "./src/data/patches"
 import perksJob from "./src/data/perks"
-import killersJob from "./src/data/killers"
 import survivorsJob from "./src/data/survivors"
 import normalizeKillers from "./src/lib/normalizeKillers"
-import normalizeSurvivors from "./src/lib/normalizeSurvivors"
-import normalizePerks from "./src/lib/normalizePerks"
 import normalizePatches from "./src/lib/normalizePatches"
+import normalizePerks from "./src/lib/normalizePerks"
+import normalizeSurvivors from "./src/lib/normalizeSurvivors"
 
 const getPatches = async () => {
   const patches = await patchesJob()
@@ -40,7 +40,7 @@ const collectUrls = async () => {
     getKillers(),
     getSurvivors(),
   ])
-  return [
+  const urls = [
     {
       url: "perks/killer",
       priority: 0.8,
@@ -65,20 +65,19 @@ const collectUrls = async () => {
     ...killers.map(killer => `killer/${killer.shortTitle |> camelCase}`),
     ...killers.map(killer => `killer/${killer.title |> paramCase}`),
     ...killers.map(killer => `killer/${killer.title |> camelCase}`),
-    ...killers.map(killer => `killer/${killer.fullName |> paramCase}`),
-    ...killers.map(killer => `killer/${killer.fullName |> camelCase}`),
+    ...killers.map(killer => killer.fullName ? `killer/${killer.fullName |> paramCase}` : null),
+    ...killers.map(killer => killer.fullName ? `killer/${killer.fullName |> camelCase}` : null),
     ...survivors.map(survivor => `survivor/${survivor.id |> paramCase}`),
     ...survivors.map(survivor => `survivor/${survivor.title |> paramCase}`),
     ...survivors.map(survivor => `survivor/${survivor.title |> camelCase}`),
     ...survivors.map(survivor => `survivor/${survivor.shortTitle |> paramCase}`),
     ...survivors.map(survivor => `survivor/${survivor.shortTitle |> camelCase}`),
   ]
+  return filterNil(urls)
 }
 
 export default configure({
   googleAnalyticsTrackingId: "UA-51563406-7",
-  robots: true,
-  appDescription: "A moderately/considerably/tremendously modern Dead by Daylight wiki",
   icon: path.join(__dirname, "icon.png"),
   sitemap: {
     paths: collectUrls(),

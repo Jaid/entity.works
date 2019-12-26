@@ -5,8 +5,8 @@ import perks from "lib/perks"
 import PerkBlock from "components/PerkBlock"
 import RelevantPatches from "components/RelevantPatches"
 import DocumentTitle from "react-document-title"
-import paramCase from "param-case"
-import camelCase from "camel-case"
+import {paramCase} from "param-case"
+import {camelCase}  from "camel-case"
 
 import css from "./style.scss"
 

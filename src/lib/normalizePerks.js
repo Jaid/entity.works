@@ -1,5 +1,5 @@
-import paramCase from "param-case"
-import titleCase from "title-case"
+import {paramCase} from "param-case"
+import {titleCase} from "title-case"
 
 const getRarity = level => {
   if (level === 30) {

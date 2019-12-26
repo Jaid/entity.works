@@ -73,5 +73,5 @@
     "build:dev": "NODE_ENV=development webpack",
     "prepareActionJest": "npm run build:prod"
   },
-  "description": "Simple wiki for Dead by Daylight. Contains perks, killer powers and patch notes."
+  "description": "A moderately/considerably/tremendously modern Dead by Daylight wiki."
 }
