@@ -67,13 +67,15 @@ export default class PerkBlock extends React.Component {
         </div>
       }
     }
+    const imgSrc = require(`../../data/perks/${this.props.perkInfo.id}/icon.png`).default
+    const backgroundSrc = require(`../../data/perkBackgrounds/${this.props.perkInfo.rarity}.png`).default
     return <div className={classnames(css.container, this.props.className)}>
       <Headline miniText="Perk" theme="yellow">{this.props.perkInfo.title}</Headline>
       <section className={css.perkInfo}>
         <img className={css.icon}
-          src={require(`../../data/perks/${this.props.perkInfo.id}/icon.png`)}
+          src={imgSrc}
           style={{
-            background: `url(${require(`../../data/perkBackgrounds/${this.props.perkInfo.rarity}.png`)})`,
+            background: `url(${backgroundSrc})`,
             backgroundSize: "contain",
           }}/>
         <div className={css.description}>

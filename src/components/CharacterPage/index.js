@@ -67,12 +67,13 @@ export default class CharacterPage extends React.Component {
     const perkNodes = ownPerks.map(perk => {
       return <PerkBlock key={perk.id} className={css.perk} perkInfo={perk}/>
     })
+    const imgSrc = require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`).default
     return <NavigationPage links={links}>
       <Headline miniText={myMeta.overText || this.props.info[myMeta.overTextKey]} theme={this.props.type}>
         {this.props.info[myMeta.titleKey]}
       </Headline>
       <div className={css.introduction}>
-        <img className={css.icon} src={require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`)}/>
+        <img className={css.icon} src={imgSrc}/>
         <RichText className={css.description}>{this.props.description}</RichText>
       </div>
       {perkNodes}

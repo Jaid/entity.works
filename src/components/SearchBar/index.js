@@ -1,5 +1,4 @@
 import classnames from "classnames"
-import hasContent from "has-content"
 import PropTypes from "prop-types"
 import React from "react"
 import Autosuggest from "react-autosuggest"
@@ -14,13 +13,15 @@ import css from "./style.scss"
 const entries = []
 
 for (const perk of perks.filter(({visible}) => Boolean(visible))) {
+  const imgSrc = require(`../../data/perks/${perk.id}/icon.png`).default
+  const backgroundSrc = require(`../../data/perkBackgrounds/${perk.rarity}.png`).default
   entries.push({
     id: perk.id,
     title: perk.title,
     type: "perk",
-    getImage: () => <img src={require(`../../data/perks/${perk.id}/icon.png`)}
+    getImage: () => <img src={imgSrc}
       style={{
-        background: `url(${require(`../../data/perkBackgrounds/${perk.rarity}.png`)})`,
+        background: `url(${backgroundSrc})`,
         backgroundSize: "cover",
       }}/>,
     link: `/perk/${perk.linkId}`,
@@ -28,21 +29,23 @@ for (const perk of perks.filter(({visible}) => Boolean(visible))) {
 }
 
 for (const killer of killers) {
+  const imgSrc = require(`../../data/killers/${killer.id}/icon.png`).default
   entries.push({
     id: killer.id,
     title: killer.title,
     type: "killer",
-    getImage: () => <img src={require(`../../data/killers/${killer.id}/icon.png`)}/>,
+    getImage: () => <img src={imgSrc}/>,
     link: `/killer/${killer.linkId}`,
   })
 }
 
 for (const survivor of survivors) {
+  const imgSrc = require(`../../data/survivors/${survivor.id}/icon.png`).default
   entries.push({
     id: survivor.id,
     title: survivor.title,
     type: "survivor",
-    getImage: () => <img src={require(`../../data/survivors/${survivor.id}/icon.png`)}/>,
+    getImage: () => <img src={imgSrc}/>,
     link: `/survivor/${survivor.linkId}`,
   })
 }
