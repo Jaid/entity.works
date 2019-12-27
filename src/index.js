@@ -7,6 +7,8 @@ import App from "components/App"
 
 import reducer from "./redux/reducer"
 
+require("offline-plugin/runtime").install()
+
 const enhancer = applyMiddleware()
 const store = createStore(reducer, enhancer)
 
