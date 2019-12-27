@@ -3,10 +3,7 @@ import {paramCase} from "param-case"
 import titleCase from "lib/titleCase"
 
 const getRarity = level => {
-  if (level === 30) {
-    return "rare"
-  }
-  if (level) {
+  if (level > 30) {
     return "veryrare"
   }
   return "rare"
