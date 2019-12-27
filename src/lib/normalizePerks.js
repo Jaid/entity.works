@@ -13,7 +13,6 @@ const getRarity = level => {
 }
 
 export default perks => perks.map(perk => {
-  console.log(perk)
   return {
     title: titleCase(perk.id),
     ingameId: perk.id,
