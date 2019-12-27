@@ -76,11 +76,13 @@ const collectUrls = async () => {
   return filterNil(urls)
 }
 
+const development = process.env.NODE_ENV !== "production"
+
 export default configure({
   googleAnalyticsTrackingId: "UA-51563406-7",
   icon: path.join(__dirname, "icon.png"),
   sitemap: {
-    paths: collectUrls(),
+    paths: development ? null : collectUrls(),
   },
   extra: {
     resolve: {
