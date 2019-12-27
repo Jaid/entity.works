@@ -1,0 +1,37 @@
+name: Publish to Surge
+on:
+  push:
+    tags: ["v[0-9]+.[0-9]+.[0-9]+"]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: actions/checkout
+        uses: actions/checkout@v1.2.0
+      - name: actions/setup-node
+        uses: actions/setup-node@v1.3.0
+        with:
+          node-version: "12.13.1"
+      - name: npm install
+        uses: jaid/action-npm-install@master
+      - name: Install globals
+        run: npm install --global surge package-field-cli
+      - name: Build
+        run: npm run build:prod
+      - name: Rename index.html to 200.html
+        run: mv dist/package/production/index.html dist/package/production/200.html
+      - name: Set domain
+        run: echo "::set-env name=domain::$(package-field-cli domain)"
+      - name: Publish to Surge
+        if: env.domain
+        env:
+          SURGE_LOGIN: ${{ secrets.surgeLogin }}
+          SURGE_TOKEN: ${{ secrets.surgeToken }}
+        run: |
+          if [[ -n $SURGE_LOGIN ]] && [[ -n $SURGE_TOKEN ]]
+          then
+          surge --project dist/package/production --domain $domain
+          else
+          echo Secrets not set
+          exit 1
+          fi
