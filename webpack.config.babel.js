@@ -79,8 +79,9 @@ const collectUrls = async () => {
 const development = process.env.NODE_ENV !== "production"
 
 export default configure({
-  googleAnalyticsTrackingId: "UA-51563406-7",
-  icon: path.join(__dirname, "icon.png"),
+  googleAnalyticsTrackingId: "UA-154709538-3",
+  themeColor: "8b1b9d",
+  twitterAuthorHandle: "jaidchen",
   sitemap: {
     paths: development ? null : collectUrls(),
   },
