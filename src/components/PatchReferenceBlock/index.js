@@ -1,8 +1,9 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import PatchLines from "components/PatchLines"
+import PropTypes from "prop-types"
+import React from "react"
+
 import KillerBox from "components/KillerBox"
+import PatchLines from "components/PatchLines"
 import PerkBox from "components/PerkBox"
 import SurvivorBox from "components/SurvivorBox"
 

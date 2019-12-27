@@ -1,12 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import patches from "lib/patches"
 import hasContent from "has-content"
+import PropTypes from "prop-types"
+import React from "react"
+
+import patches from "lib/patches"
 import Headline from "components/Headline"
-import PatchLines from "components/PatchLines"
-import PatchHeadline from "components/PatchHeadline"
 import PatchCategory from "components/PatchCategory"
+import PatchHeadline from "components/PatchHeadline"
+import PatchLines from "components/PatchLines"
 
 import css from "./style.scss"
 

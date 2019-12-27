@@ -1,10 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import icon from "root/icon.png"
+import PropTypes from "prop-types"
+import React from "react"
 import {Link} from "react-router-dom"
+
 import {charactersLink, patchesLink, survivorPerksLink} from "lib/links"
 import SearchBar from "components/SearchBar"
+
+import icon from "root/icon.png"
 
 import css from "./style.scss"
 

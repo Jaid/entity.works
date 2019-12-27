@@ -1,11 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import perks from "lib/perks"
-import PerkBlock from "components/PerkBlock"
-import NavigationPage from "components/NavigationPage"
 import {capitalize} from "lodash"
+import PropTypes from "prop-types"
+import React from "react"
 import DocumentTitle from "react-document-title"
+
+import perks from "lib/perks"
+import NavigationPage from "components/NavigationPage"
+import PerkBlock from "components/PerkBlock"
 
 import css from "./style.scss"
 

@@ -1,10 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+
 import killers from "lib/killers"
-import Tooltip from "components/Tooltip"
-import KillerTooltip from "components/KillerTooltip"
 import KillerLink from "components/KillerLink"
+import KillerTooltip from "components/KillerTooltip"
+import Tooltip from "components/Tooltip"
 
 import css from "./style.scss"
 

@@ -1,10 +1,11 @@
 import React from "react"
 import ReactDom from "react-dom"
-import HotApp from "components/HotApp"
 import {Provider} from "react-redux"
-import {createStore, applyMiddleware} from "redux"
-import {createLogger} from "redux-logger"
+import {applyMiddleware, createStore} from "redux"
 import {composeWithDevTools} from "redux-devtools-extension"
+import {createLogger} from "redux-logger"
+
+import HotApp from "components/HotApp"
 
 import reducer from "./redux/reducer"
 

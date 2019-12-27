@@ -1,8 +1,9 @@
-import React from "react"
 import PropTypes from "prop-types"
-import SurvivorBox from "components/SurvivorBox"
+import React from "react"
+
 import KillerBox from "components/KillerBox"
 import PerkBox from "components/PerkBox"
+import SurvivorBox from "components/SurvivorBox"
 
 export default class RichBox extends React.Component {
 

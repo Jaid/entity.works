@@ -1,12 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
+import {sortBy} from "lodash"
+import PropTypes from "prop-types"
+import React from "react"
+
+import perks from "lib/perks"
+import PatchCategory from "components/PatchCategory"
+import PatchHeadline from "components/PatchHeadline"
 import PatchLines from "components/PatchLines"
 import PatchReferenceBlock from "components/PatchReferenceBlock"
-import {sortBy} from "lodash"
-import perks from "lib/perks"
-import PatchHeadline from "components/PatchHeadline"
-import PatchCategory from "components/PatchCategory"
 
 import css from "./style.scss"
 

@@ -1,10 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+
 import perks from "lib/perks"
+import PerkLink from "components/PerkLink"
 import PerkTooltip from "components/PerkTooltip"
 import Tooltip from "components/Tooltip"
-import PerkLink from "components/PerkLink"
 
 import css from "./style.scss"
 

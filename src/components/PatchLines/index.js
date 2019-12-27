@@ -1,12 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import {ensureObject, ensureArray} from "magina"
+import {ensureArray, ensureObject} from "magina"
+import PropTypes from "prop-types"
+import React from "react"
 import reactStringReplace from "react-string-replace"
-import PerkBox from "components/PerkBox"
+
 import KillerBox from "components/KillerBox"
-import SurvivorBox from "components/SurvivorBox"
+import PerkBox from "components/PerkBox"
 import RichText from "components/RichText"
+import SurvivorBox from "components/SurvivorBox"
 
 import css from "./style.scss"
 

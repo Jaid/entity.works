@@ -1,12 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import Autosuggest from "react-autosuggest"
-import perks from "lib/perks"
 import hasContent from "has-content"
-import killers from "lib/killers"
-import survivors from "lib/survivors"
+import PropTypes from "prop-types"
+import React from "react"
+import Autosuggest from "react-autosuggest"
 import {withRouter} from "react-router"
+
+import killers from "lib/killers"
+import perks from "lib/perks"
+import survivors from "lib/survivors"
 
 import css from "./style.scss"
 

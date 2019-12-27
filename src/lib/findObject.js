@@ -1,7 +1,7 @@
 import killers from "lib/killers"
 import patches from "lib/patches"
-import survivors from "lib/survivors"
 import perks from "lib/perks"
+import survivors from "lib/survivors"
 
 const objectSources = {
   killer: {

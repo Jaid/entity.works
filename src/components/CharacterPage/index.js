@@ -1,14 +1,15 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import survivors from "lib/survivors"
-import NavigationPage from "components/NavigationPage"
+import PropTypes from "prop-types"
+import React from "react"
+
 import killers from "lib/killers"
+import {perksByOwner} from "lib/perks"
+import survivors from "lib/survivors"
 import Headline from "components/Headline"
+import NavigationPage from "components/NavigationPage"
+import PerkBlock from "components/PerkBlock"
 import RelevantPatches from "components/RelevantPatches"
 import RichText from "components/RichText"
-import {perksByOwner} from "lib/perks"
-import PerkBlock from "components/PerkBlock"
 
 import css from "./style.scss"
 

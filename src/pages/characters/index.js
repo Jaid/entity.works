@@ -1,12 +1,13 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
 import zahl from "zahl"
+
 import killers from "lib/killers"
-import survivors from "lib/survivors"
 import {perksByOwner} from "lib/perks"
-import PerkBox from "components/PerkBox"
+import survivors from "lib/survivors"
 import KillerBox from "components/KillerBox"
+import PerkBox from "components/PerkBox"
 import SurvivorBox from "components/SurvivorBox"
 
 import css from "./style.scss"

@@ -1,10 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
+import PropTypes from "prop-types"
+import React from "react"
+
 import survivors from "lib/survivors"
+import SurvivorLink from "components/SurvivorLink"
 import SurvivorTooltip from "components/SurvivorTooltip"
 import Tooltip from "components/Tooltip"
-import SurvivorLink from "components/SurvivorLink"
 
 import css from "./style.scss"
 

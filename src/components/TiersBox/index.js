@@ -1,9 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
 import {last} from "lodash"
-import Tooltip from "components/Tooltip"
+import PropTypes from "prop-types"
+import React from "react"
+
 import TiersTooltip from "components/TiersTooltip"
+import Tooltip from "components/Tooltip"
 
 import css from "./style.scss"
 

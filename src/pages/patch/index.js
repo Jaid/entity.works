@@ -1,11 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import patches from "lib/patches"
-import PatchBlock from "components/PatchBlock"
-import {NavLink} from "react-router-dom"
+import PropTypes from "prop-types"
+import React from "react"
 import DocumentTitle from "react-document-title"
+import {NavLink} from "react-router-dom"
+
+import patches from "lib/patches"
 import NavigationPage from "components/NavigationPage"
+import PatchBlock from "components/PatchBlock"
 
 import css from "./style.scss"
 

@@ -1,11 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import RichBox from "components/RichBox"
-import findObject, {findExactObject} from "lib/findObject"
+import PropTypes from "prop-types"
+import React from "react"
 import reactStringReplace from "react-string-replace"
-import TiersBox from "components/TiersBox"
 import splitOnFirst from "split-on-first"
+
+import findObject, {findExactObject} from "lib/findObject"
+import RichBox from "components/RichBox"
+import TiersBox from "components/TiersBox"
 
 import css from "./style.scss"
 

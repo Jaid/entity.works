@@ -1,4 +1,4 @@
-import {mapValues, isFunction} from "lodash"
+import {isFunction, mapValues} from "lodash"
 
 export default (namespace, actionMap) => mapValues(actionMap, (value, key) => {
   const type = `@@${namespace}/${key}`

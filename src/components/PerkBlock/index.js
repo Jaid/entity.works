@@ -1,11 +1,12 @@
-import React from "react"
-import PropTypes from "prop-types"
 import classnames from "classnames"
-import Headline from "components/Headline"
-import RichText from "components/RichText"
-import PerkLink from "components/PerkLink"
+import PropTypes from "prop-types"
+import React from "react"
+
 import findObject from "lib/findObject"
+import Headline from "components/Headline"
 import KillerBox from "components/KillerBox"
+import PerkLink from "components/PerkLink"
+import RichText from "components/RichText"
 import SurvivorBox from "components/SurvivorBox"
 import Tooltip from "components/Tooltip"
 
