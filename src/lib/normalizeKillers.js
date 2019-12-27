@@ -1,5 +1,6 @@
 import {paramCase} from "param-case"
-import {titleCase} from "title-case"
+
+import titleCase from "lib/titleCase"
 
 export default killers => killers.map(killer => ({
   shortTitle: killer.id |> titleCase,

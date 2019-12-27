@@ -1,3 +1,5 @@
+import "tippy.js/animations/perspective.css"
+
 import Tippy from "@tippy.js/react"
 import classnames from "classnames"
 import PropTypes from "prop-types"
@@ -36,8 +38,10 @@ export default class Tooltip extends React.Component {
   }
 
   render() {
-    const tooltipContent = <div className={classnames(css.container, {[css.noPadding]: this.props.noPadding}, this.props.className)}>{this.props.html}</div>
-    return <Tippy animateFill={false} animation="perspective" arrowType="sharp" content={tooltipContent} distance={16} interactiveBorder={2} theme="entity" arrow inertia interactive>
+    const tooltipContent = <div className={classnames(css.container, {[css.noPadding]: this.props.noPadding}, this.props.className)}>
+      {this.props.html}
+    </div>
+    return <Tippy animation="perspective" content={tooltipContent} distance={16} theme="entity" inertia interactive>
       <span>{this.props.children}</span>
     </Tippy>
   }

@@ -1,10 +1,8 @@
 :global {
   .tippy-tooltip.entity-theme {
-    border    : 1px solid white;
-    box-shadow: 0 0 10px black;
-  }
-
-  .tippy-tooltip.entity-theme {
+    font-size    : 14px;
+    border       : 1px solid white;
+    box-shadow   : 0 0 10px black;
     background   : black;
     border-radius: 0;
     padding      : 0;
@@ -12,7 +10,7 @@
       sans-serif;
   }
 
-  .tippy-popper[x-placement^=bottom] .entity-theme .tippy-arrow {
+  .tippy-popper[data-placement^=bottom] .entity-theme .tippy-arrow {
     border-bottom: 7px solid black;
 
     &:before {
@@ -27,7 +25,7 @@
     }
   }
 
-  .tippy-popper[x-placement^=top] .entity-theme .tippy-arrow {
+  .tippy-popper[data-placement^=top] .entity-theme .tippy-arrow {
     border-top: 7px solid black;
 
     &:before {

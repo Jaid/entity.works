@@ -1,5 +1,6 @@
 import {paramCase} from "param-case"
-import {titleCase} from "title-case"
+
+import titleCase from "lib/titleCase"
 
 const getRarity = level => {
   if (level === 30) {
@@ -12,8 +13,9 @@ const getRarity = level => {
 }
 
 export default perks => perks.map(perk => {
+  console.log(perk)
   return {
-    title: perk.id |> titleCase,
+    title: titleCase(perk.id),
     ingameId: perk.id,
     owner: false,
     level: 30,
