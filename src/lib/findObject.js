@@ -3,6 +3,11 @@ import patches from "lib/patches"
 import perks from "lib/perks"
 import survivors from "lib/survivors"
 
+/**
+ * @typedef {Object} DaylightObject
+ * @prop {string} type
+ */
+
 const objectSources = {
   killer: {
     list: killers,
@@ -30,6 +35,7 @@ export const findExactObject = (type, id) => {
 
 /**
  * @param {string} id
+ * @return {DaylightObject}
  */
 export default id => {
   for (const type of Object.keys(objectSources)) {
@@ -37,8 +43,9 @@ export default id => {
     if (info) {
       return {
         type,
-        info,
+        ...info,
       }
     }
   }
+  return null
 }

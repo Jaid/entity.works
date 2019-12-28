@@ -39,23 +39,23 @@ export default class PerkBlock extends React.Component {
 
   render() {
     const getOwnerInfo = () => {
-      const {type, info} = this.props.perkInfo.owner && findObject(this.props.perkInfo.owner)
-      if (type === "killer") {
+      const ownerObject = this.props.perkInfo.owner && findObject(this.props.perkInfo.owner)
+      if (ownerObject.type === "killer") {
         return {
-          info,
-          box: <KillerBox killer={info.id}/>,
+          ownerObject,
+          box: <KillerBox killer={ownerObject.id}/>,
         }
-      } else if (type === "survivor") {
+      } else if (ownerObject.type === "survivor") {
         return {
-          info,
-          box: <SurvivorBox survivor={info.id}/>,
+          ownerObject,
+          box: <SurvivorBox survivor={ownerObject.id}/>,
         }
       }
     }
     const getOwnerNode = () => {
       const ownerInfo = getOwnerInfo()
       if (ownerInfo) {
-        const tooltip = `Teachable version of {${this.props.perkInfo.id}} can be unlocked in the bloodweb of {${ownerInfo.info.id}} at level ${this.props.perkInfo.level}`
+        const tooltip = `Teachable version of {${this.props.perkInfo.id}} can be unlocked in the bloodweb of {${ownerInfo.id}} at level ${this.props.perkInfo.level}`
         return <div className={css.owner}>
           {this.props.displayOwnerBox && ownerInfo.box}
           <span className={css.level}>

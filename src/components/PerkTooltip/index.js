@@ -35,13 +35,13 @@ export default class PerkTooltip extends React.Component {
     const perk = findObject(this.props.perkId)
     return <div className={classnames(css.container, this.props.className)}>
       <div className={css.banner}>
-        <PerkImage className={css.icon} perkId={this.props.perkId}/>
+        <PerkImage className={css.icon} perkId={perk.id}/>
         <div className={css.perkInfo}>
-          {perk.info.title}
+          {perk.title}
         </div>
       </div>
       <div className={css.effect}>
-        <RichText>{perk.info.effect.replace("{this}", perk.info.title)}</RichText>
+        <RichText>{perk.effect.replace("{this}", perk.title)}</RichText>
       </div>
     </div>
   }
