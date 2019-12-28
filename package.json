@@ -52,7 +52,7 @@
     "babel-jest": "^24.9.0",
     "babel-preset-jaid": "^7.3.0",
     "browserslist-config-jaid-web": "^2.3.0",
-    "caniuse-lite": "^1.0.30001016",
+    "caniuse-lite": "^1.0.30001017",
     "change-case": "^4.1.1",
     "eslint": "^6.8.0",
     "eslint-config-jaid-react": "^1.41.1",
