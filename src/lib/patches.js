@@ -2,7 +2,6 @@ import patches from /* aot */ "src/data/patches"
 
 import normalizePatches from "./normalizePatches"
 
-
 /**
  * @typedef patch
  * @property {string} semver

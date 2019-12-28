@@ -5,7 +5,7 @@ import normalizePerks from "./normalizePerks"
 import {sortBy} from "lodash"
 
 /**
- * @typedef perk
+ * @typedef Perk
  * @prop {string} id
  * @prop {string} title
  * @prop {string} ingameId
@@ -17,7 +17,7 @@ import {sortBy} from "lodash"
  */
 
 /**
- * @type {perk[]}
+ * @type {Perk[]}
  */
 const normalizedPerks = normalizePerks(perks).map(perk => {
   let forValue

@@ -13,7 +13,7 @@ import css from "./style.scss"
 
 /**
  * @param {string} query
- * @return {import("../../lib/perks").perk}
+ * @return {import("../../lib/perks").Perk}
  */
 const findPerk = query => {
   return perks.find(perk => perk.linkId === query)
