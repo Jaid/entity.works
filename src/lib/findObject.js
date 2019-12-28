@@ -5,14 +5,15 @@ import survivors from "lib/survivors"
 
 /**
  * @typedef {Object} DaylightObject
- * @prop {string} type
  * @prop {string} id
  * @prop {string} title
- */
-
-/**
- * @typedef Perk
- * @extends DaylightObject
+ *
+ * @typedef {Object} AnyDaylightObjectInterface
+ * @prop {string} type
+ *
+ * @typedef {DaylightObject & AnyDaylightObjectInterface} AnyDaylightObject
+ *
+ * @typedef {Object} PerkInterface
  * @prop {string} id
  * @prop {string} ingameId
  * @prop {string|boolean} owner
@@ -20,33 +21,32 @@ import survivors from "lib/survivors"
  * @prop {string} rarity
  * @prop {boolean} visible
  * @prop {string} linkId
- */
-
-/**
- * @typedef Survivor
- * @extends DaylightObject
+ *
+ * @typedef {DaylightObject & PerkInterface} Perk
+ *
+ * @typedef {Object} SurvivorInterface
  * @prop {string} shortTitle
  * @prop {string} linkId
- */
-
-/**
- * @typedef Killer
+ *
+ * @typedef {DaylightObject & SurvivorInterface} Survivor
+ *
+ * @typedef {Object} KillerInterface
  * @prop {string} shortTitle
  * @prop {string} fullName
  * @prop {string} linkId
  * @prop {string} power
  * @prop {string} powerTitle
- */
-
-/**
- * @typedef Patch
- * @extends DaylightObject
- * @property {string} semver
- * @property {number} dateMs
- * @property {string} title
- * @property {string} date
- * @property {object} points
- * @property {string} linkId
+ * @typedef {DaylightObject & KillerInterface} Killer
+ *
+ * @typedef {Object} PatchInterface
+ * @prop {string} semver
+ * @prop {number} dateMs
+ * @prop {string} title
+ * @prop {string} date
+ * @prop {object} points
+ * @prop {string} linkId
+ *
+ * @typedef {DaylightObject & PatchInterface} Patch
  */
 
 const perksObject = perks.reduce((base, current) => {
@@ -70,7 +70,7 @@ const patchesObject = patches.reduce((base, patch) => {
 }, {})
 
 /**
- * @type {string} id
+ * @param {string} id
  * @return {Perk}
  */
 export const findPerk = id => {
@@ -78,7 +78,7 @@ export const findPerk = id => {
 }
 
 /**
- * @type {string} id
+ * @param {string} id
  * @return {Survivor}
  */
 export const findSurvivor = id => {
@@ -86,7 +86,7 @@ export const findSurvivor = id => {
 }
 
 /**
- * @type {string} id
+ * @param {string} id
  * @return {Killer}
  */
 export const findKiller = id => {
@@ -94,7 +94,7 @@ export const findKiller = id => {
 }
 
 /**
- * @type {string} semver
+ * @param {string} semver
  * @return {Patch}
  */
 export const findPatch = semver => {
@@ -128,7 +128,7 @@ export const findExactObject = (type, id) => {
 
 /**
  * @param {string} id
- * @return {DaylightObject}
+ * @return {AnyDaylightObject}
  */
 export default id => {
   for (const type of Object.keys(objectSources)) {
