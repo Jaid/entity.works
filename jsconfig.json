@@ -3,6 +3,9 @@
     "charset": "utf8",
     "baseUrl": "./",
     "paths": {
+      "components/*": [
+        "src/components/*"
+      ],
       "lib/*": [
         "src/lib/*"
       ],
