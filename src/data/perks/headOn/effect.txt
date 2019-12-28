@@ -4,3 +4,4 @@ While the perk is activated, performing a rushed action to leave a locker stuns 
 Causes the Exhausted status effect for {tiers:60/50/40} seconds.
 {this} cannot be used while Exhausted.
 You do not recover from Exhaustion while running.
+{this} cannot be used when you have idle crows.
