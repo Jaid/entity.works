@@ -3,15 +3,12 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import findObject from "lib/findObject"
-import PerkImage from "components/PerkImage"
-import RichText from "components/RichText"
 
 import css from "./style.scss"
 
 /**
   * @typedef {{
   *   className: *,
-  *   perkId: string
   * }} Props
   */
 
@@ -19,7 +16,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class PerkTooltip extends React.Component {
+export default class PerkImage extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -33,17 +30,13 @@ export default class PerkTooltip extends React.Component {
 
   render() {
     const perk = findObject(this.props.perkId)
-    return <div className={classnames(css.container, this.props.className)}>
-      <div className={css.banner}>
-        <PerkImage className={css.icon} perkId={this.props.perkId}/>
-        <div className={css.perkInfo}>
-          {perk.info.title}
-        </div>
-      </div>
-      <div className={css.effect}>
-        <RichText>{perk.info.effect.replace("{this}", perk.info.title)}</RichText>
-      </div>
-    </div>
+    const imgSrc = require(`../../data/perks/${this.props.perkId}/icon.png`).default
+    const backgroundSrc = require(`../../data/perkBackgrounds/${perk.info.rarity}.png`).default
+    return <img className={classnames(css.element, this.props.className)}
+      src={imgSrc}
+      style={{
+        backgroundImage: `url(${backgroundSrc})`,
+      }}/>
   }
 
 }

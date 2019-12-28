@@ -1,3 +1,25 @@
-.container {
+.container {}
 
+.banner {
+  background   : linear-gradient(rgb(95, 62, 0), black);
+  padding      : 2px;
+  padding-left : 12px;
+  padding-right: 12px;
+  display      : flex;
+  font-size    : 150%;
+}
+
+.perkInfo {
+  flex       : 1;
+  margin-left: 12px;
+  align-self : center;
+}
+
+.icon {
+  height: 80px;
+  width : 80px;
+}
+
+.effect {
+  padding: 12px;
 }
