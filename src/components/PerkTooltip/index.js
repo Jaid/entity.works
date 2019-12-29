@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import replaceString from "replace-string"
 
 import findObject from "lib/findObject"
 import PerkImage from "components/PerkImage"
@@ -41,7 +42,7 @@ export default class PerkTooltip extends React.Component {
         </div>
       </div>
       <div className={css.effect}>
-        <RichText>{perk.effect.replace("{this}", perk.title)}</RichText>
+        <RichText>{replaceString(perk.effect, "{this}", perk.title)}</RichText>
       </div>
     </div>
   }
