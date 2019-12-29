@@ -1,6 +1,6 @@
-- killer: plague
+- for: plague
   text: Added {plague}
-- survivor: jane
+- for: jane
   text: Added {jane}
 - Added a new map for the Red Forest theme (The Temple of Purgation).
 - Added the matchmaking queue time display for both roles. This change follows the backend matchmaking changes (addition of queues) that were recently deployed.

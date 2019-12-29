@@ -1,4 +1,4 @@
-- killer: legion
+- for: legion
   text: Added {legion}
   points:
     - When teenagers get involved with an impulsive mastermind, they discover an addictive kind of freedom. Together, they spiral out of control and become the wrong kind of crowd. Players will choose to embody one of the agile teenagers able to catch Survivors off-guard with their power, Feral Frenzy.
@@ -8,7 +8,7 @@
         - "{discordance}: Any time 2 or more survivors are working on the same Generator; the Generator's aura is highlighted for a short duration."
         - "{madGrit}: While carrying a Survivor, you suffer no cooldown for missed attacks, and hitting another Survivor will pause the carried Survivor’s wiggle timer for a moment."
         - "{ironMaiden}: You open lockers faster. Additionally, when a Survivor exits a locker, their location is revealed, and they suffer from the Exposed status effect for a while."
-- survivor: jeff
+- for: jeff
   text: Added {jeff}
   points:
     - "{jeff} is an artist with a heart of gold. One morning, he got a phone call from Ormond, Alberta. Home. {jeff} revisited the home he left behind, but he should never have looked back."

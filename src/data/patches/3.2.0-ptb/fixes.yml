@@ -1,32 +1,32 @@
-- survivor: meg
+- for: meg
   text: Reworked the hair on {meg}'s Game Set Match head customization items.
-- survivor: meg
+- for: meg
   text: Adjusted the dynamic animation on the pony tail for {meg}'s Teen Angst head customization item.
-- survivor: meg
+- for: meg
   text: Added the band aid on {meg}'s knee for the Tempo Runner outfit. Icons have also been updated to reflect this.
-- survivor: jake
+- for: jake
   text: Reworked the hair on {jake}'s Sharp Mustache Jake and Old Man Jake head customization items.
 - Optimization of hair materials.
 
-- killer: clown
+- for: clown
   text: Fixed an issue that could cause Survivors to become permanently Exposed when directly hit by {clown}'s bottles twice in a row with the Redhead's Pinky Finger add-on.
-- killer: hag
+- for: hag
   text: Fixed an issue that caused {hag}'s Dead Fly Mud add-on not to have the correct teleport range.
-- killer: hag
+- for: hag
   text: Fixed an issue that caused {hag}'s add-ons to have the wrong power name displayed.
-- killer: shape
+- for: shape
   text: Fixed an issue that caused {shape}'s add-ons to have the wrong power name displayed.
-- killer: wraith
+- for: wraith
   text: Fixed an issue that caused {wraith}'s weapon to hide auras while Cloaked.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused {spirit}'s weapon to hide auras when it was deconstructing and invisible.
-- killer: ghostFace
+- for: ghostFace
   text: Fixed an issue that visually caused {ghostFace}'s model to shrink for a few frames at the end of his mori.
-- killer: [ghostFace, shape]
+- for: ghostFace, shape
   text: Fixed an issue that caused {ghostFace} and {shape} to be unable to see exit gate auras while stalking.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that caused {huntress}' head to be misplaced in her shadow.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that caused {nurse}'s arm not to fully appear when looking up and blinking.
 
 - Fixed an issue that caused an invisible collision blocking player movement on the right side of the basement stairs.
@@ -42,19 +42,19 @@
 - Minor map bug fixes.
 - Misc LOD fixes and improvements.
 
-- perk: huntressLullaby
+- for: huntressLullaby
   text: Fixed an issue that caused {huntressLullaby} to have no effect on Toolbox repair skill checks.
-- perk: huntressLullaby
+- for: huntressLullaby
   text: Fixed an issue that caused {huntressLullaby} not to show or apply the Cursed effect on any non-repairing skill checks.
-- perk: theThirdSeal
+- for: theThirdSeal
   text: Fixed an issue that caused {theThirdSeal} to visually cap at 3 tokens.
-- perk: alert
+- for: alert
   text: Fixed an issue that sometimes caused {alert} not to trigger an audio cue.
-- perk: shadowborn
+- for: shadowborn
   text: The value shown for tier 1 on {shadowborn} did not match the actual value used, we've updated the text to match the value.
-- perk: infectiousFright
+- for: infectiousFright
   text: Fixed an issue that caused {infectiousFright} to have no effect on Survivors in the dying state.
-- perk: headOn
+- for: headOn
   text: Fixed an issue that caused the stun zone from {headOn} not to last for the full animation.
 
 - Added more logging to better help understand and track the issues where players are unable to successfully escape the trial through the exit gates, or perform certain actions.
@@ -76,7 +76,7 @@
 - Fixed an issue that caused certain types of skill checks ({ruin}, {decisiveStrike}, {overcharge}, Jigsaw searches and Snap Out Of It) not to count towards the Nerves of Steel achievement.
 - Misc cosmetic clipping and improvements.
 
-- killer: shape
+- for: shape
   text: Fixed an issue that caused the Exposed status effect audio to overlap with {shape}'s Tier III audio SFX.
 - Fixed an issue that caused the audio cue when initiating a chase with the Obsession to play twice.
 - Fixed an issue that caused the Survivors sounds to have an unwanted panning.

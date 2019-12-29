@@ -1,38 +1,37 @@
 - Fixed an issue that caused missing audio at the end of a Sacrifice.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused missing audio for disarming, stepping and getting out of a bear trap.
 - Fixed an issue that caused the menu music to disappear when backing out of a Kill Your Friends, or when sent back to the offline lobby screen after a public match.
 - Minor localization and translation improvements.
 
-- killer: spirit
+- for: spirit
   text: Adjusted the intensity of {spirit}'s Phase Walk VFX. The VFX changed due to the update to Unreal Engine 4.20 and the lighting changes introduced in 2.4.0.
-- killer: wraith
-  perk: sloppyButcher
+- for: wraith, sloppyButcher
   text: Fixed an issue that caused permanent heavy bleeding when healing after {wraith} performed a Surprise attack using {sloppyButcher} and/or the "Blind - Warrior" - White add-on.
-- killer: hillbilly
+- for: hillbilly
   text: Fixed an issue that caused {hillbilly}'s arm to stretch during his mori.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s Killer Instinct to display the location of escaped Survivors.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s attack VFX to be out of sync with their attack.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s camera to snap up or down if the camera was moved in either direction during the Feral Frenzy cooldown.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s power not to stop and reset when getting blinded by a flashlight while in Feral Frenzy.
-- killer: doctor
+- for: doctor
   text: Fixed an issue that caused the Madness notification bubbles to end abruptly from Survivors perspectives.
-- killer: shape
+- for: shape
   text: Fixed an issue that caused {shape}'s Mirror Shard add-on not to show Survivor auras for the amount of time stated in the add-on.
-- killer: wraith
+- for: wraith
   text: Fixed an issue that caused {wraith}'s blade wipe animation to block most of the screen.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that could cause a desync in player states when getting out of a bear trap after attempting to vault over a window with a bear trap in front of it.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that could cause a desync in player states when picked out of a bear trap by {trapper}.
 
 - Adjusted the lighting in the basement houses in the Lampkin Lane and Badham Preschool maps.
 - Fixed an issue in Lampkin Lane that was preventing edge-object trees from spawning near the sidewalk between street tiles.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that allowed {nurse} to blink out of world through a corner wall in the bathroom of The Game map.
 - Fixed an issue that caused a hook in front of the warehouse to gloat in the Coal Tower map.
 - Fixed an issue that caused a partially transparent wall decal to appear in an empty doorway in The Game map.
@@ -43,7 +42,7 @@
 - Fixed an issue that caused players to float after falling on top of a totem and cleansing it, next to the unique tree in the Shelter Woods map.
 - "Fixed an issue that could cause multiple generators to spawn in one area in multiple maps that use the indoor generators (ie: Lampkin Lane, The Game, etc)."
 - Fixed an issue that made it impossible for hatchets, bottles and chainsaws to go through open windows and doorways into the chalet building in the Mount Ormond - Resort map.
-- killer: legion
+- for: legion
   text: Fixed an issue that made it impossible for the Legion to Frenzy vault over a specific pallet in the Grim Pantry map.
 - Fixed an issue that made it impossible to damage the short side of a specific generator on the bottom floor of The Game map.
 - Fixed an issue that made it impossible to interact with one side of a generator in the Mount Ormond Resort map.
@@ -53,29 +52,29 @@
 - Fixed an issue where a pile of wood was blocking an opening in one of the fences in Lampkin Lane.
 - Misc LOD fixes.
 
-- perk: borrowedTime
+- for: borrowedTime
   text: Fixed an issue that caused the Endurance timer from {borrowedTime} to be removed from the player unhooked if the player unhooking got downed.
-- perk: diversion
+- for: diversion
   text: Fixed an issue that caused the loud noise indicator and scratch marks from the {diversion} perk to appear on the Survivor who threw the pebble, if thrown outside of - the Killers terror radius.
-- perk: plunderersInstinct
+- for: plunderersInstinct
   text: Fixed an issue with {plunderersInstinct} causing a lower rate of Event items to appear in chests.
 
 - Added more logging to help identify the issue that caused players to encounter invisible skill checks. We will be closely monitoring the impact of this change.
 - Fixed an issue that caused disconnected clients to have the incorrect status in the scoreboard.
 - Fixed an issue that caused frame rate drops when navigating through the Loadout.
-- killer: doctor
+- for: doctor
   text: Fixed an issue that caused interaction prompts to be visible for certain items when in Madness Tier III.
 - Fixed an issue that caused the Killer to have a superfluous Spectate button on the tally screen.
 - Fixed an issue that could cause Loadout items to appear through tally screen pages.
 
 - Fixed an issue that allowed Survivors to enter a locker through the Killers collision.
 - Fixed an issue that allowed injured Survivors to finish Mending another Survivor before entering the dying state if the killer hit them.
-- killer: legion
+- for: legion
   text: Fixed an issue that allowed {legion} to have infinite Frenzy in Kill Your Friends.
 - Fixed an issue that caused cosmetics from previous special event to automatically get unequipped.
-- killer: clown
+- for: clown
   text: Fixed an issue that caused the flower and finger key ring to be missing on {clown}'s outfits from "The Showman" Collection. Icons have been updated to reflect this.
-- killer: nightmare
+- for: nightmare
   text: Fixed an issue that caused the non-Killer host not to see blood pouring VFX on failed generator skill checks when waking up from the Dream State.
 - Fixed an issue that could allow players to gain control of their character before others.
 - Fixed an issue that made it impossible to heal/mend yourself when holding the sprint button, and standing still.
@@ -84,8 +83,8 @@
 
 - Fixed an issue that caused assets in the preschool basement to disappear at varying distances on Low graphic settings in the Badham Preschool map.
 - Fixed an issue that caused special characters not to be supported in the in-game chat in all non-English languages.
-- killer: [nurse, legion]
+- for: nurse, legion
   text: Fixed an issue that caused {nurse} and {legion} not to have Fatigued VFX on Low graphic settings.
 
-- perk: bamboozle
+- for: bamboozle
   text: Updated text to reflect the perk does not work with pallets.

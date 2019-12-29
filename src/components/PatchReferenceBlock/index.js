@@ -10,13 +10,13 @@ import SurvivorBox from "components/SurvivorBox"
 import css from "./style.scss"
 
 const getHeader = (referenceType, referenceName) => {
-  if (referenceType === "killers") {
+  if (referenceType === "killer") {
     return <KillerBox killer={referenceName} large/>
   }
-  if (referenceType === "perks") {
+  if (referenceType === "perk") {
     return <PerkBox perk={referenceName} large/>
   }
-  if (referenceType === "survivors") {
+  if (referenceType === "survivor") {
     return <SurvivorBox survivor={referenceName} large/>
   }
 }
@@ -26,7 +26,7 @@ export default class PatchReferenceBlock extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     points: PropTypes.arrayOf(PropTypes.object).isRequired,
-    referenceType: PropTypes.oneOf(["killers", "perks", "survivors", "maps"]).isRequired,
+    referenceType: PropTypes.oneOf(["killer", "perk", "survivor", "map"]).isRequired,
     referenceName: PropTypes.string.isRequired,
   }
 

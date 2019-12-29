@@ -2,27 +2,27 @@
 - Remixed volume levels for footsteps, music & VOs.
 - Removed the attenuation on VOs and footsteps that were integrated in the 2.4.0 release.
 
-- perk: bloodWarden
+- for: bloodWarden
   text: Added a timer on the perk in the HUD to better indicate when and for how long Blood Warden is active.
-- perk: ironMaiden
+- for: ironMaiden
   text: Reduced Survivor location notification from 4 seconds to 3 seconds.
-- perk: spiesFromTheShadows
+- for: spiesFromTheShadows
   text: Increased the chances of a visual notification to 100% for all tiers. Added crow outline in Loud Noise notification. Increased the notification range from {tiers:16/24/36} meters to {tiers:32/40/48} meters.
-- perk: surveillance
+- for: surveillance
   text: Increased audible repair sounds by a distance by 8 meters. Any regressing generators will be highlighted by a white aura. If regression on a generator is interrupted, it will be highlighted by a yellow aura for {tiers:8/12/16} seconds.
 
-- killer: legion
+- for: legion
   text: Manually ending Frenzy no longer depletes the remainder of your Power gauge.
-- killer: legion
+- for: legion
   text: Reduced the intensity of the blurred VFX during Frenzy.
 
-- killer: pig
+- for: pig
   text: Adjusted the Combat Straps add-on in accordance to the crouch duration change, decreased value from 1 second to 0.3 seconds.
-- killer: pig
+- for: pig
   text: Changed the Terror Radius fade time for when crouching / uncrouching to fade out/in ~4 seconds, down from 6.6 seconds.
-- killer: pig
+- for: pig
   text: Decreased the base crouch and uncrouch duration from 2 seconds to 1.3 seconds.
-- killer: pig
+- for: pig
   text: Increased Terror Radius from 28 meters to 32 meters.
 - text: Scoring Adjustments
   points:
@@ -35,7 +35,7 @@
 - "Badham Preschool: Now forcing a hook to spawn in the back of the preschool school if the basement is not there."
 - Changed the basement reference point (used to calculate hook to basement distance) to the top of the basement stairs instead of being in the middle of the basement.
 - "Grim Pantry: Added a new crow bomb to the map."
-- killer: pig
+- for: pig
   text: Procedural System - Added a minimum distance between chests so that jigsaw boxes don't spawn too close together.
 - "Procedural System - Hook distribution adjustments: changed the amount and distribution of hooks for each map. Every map now has a baseline minimum distance between hooks, a minimum number of hooks and a maximum number of hooks. Procedural System - Hook offerings now modify the newly introduced minimum distance between hooks. This distance will ultimately be ignored in the case where the minimum number of hooks requirements are not fulfilled. The effect of each offering is as such: Moldy Oak (Uncommon) = -1.5m, Rotten Oak (Rare)= -2.5m, Putrid Oak (Very Rare) = -3.5m, Petrified Oak (Survivor Very Rare) = +1m."
 - Reduced basement to hook minimum distance to 16 meters.
@@ -45,13 +45,13 @@
 - All status effects that are timer based no longer stack or automatically reset the timer, but rather, take the highest remaining status timer and ignore the other.
 - If the new timer is the higher one, the previous timer is discarded and the status effect icon will visually reset to 100%. If the new timer is the lower one, the new timer is discarded and the status effect icon remains at its current progression.
 
-- perk: distortion
+- for: distortion
   text: Updated text to reflect that this perks effect does not trigger when survivors are in the dying state or affected by traps.
-- perk: leader
+- for: leader
   text: All action speeds, with the exception of repair speed, are increased to {tiers:15%/20%/25%} instead of {tiers:3%/6%/9%}. The effect now persists for 15 seconds after the perk owner is out of range. Only one {leader} effect at a time.
-- perk: proveThyself
+- for: proveThyself
   text: For every other Survivor working on a generator within a 4m range, gain 10% repair speed bonus. This same bonus is also applied to all other Survivors within range. Gain {tiers:50%/75%/100%} more Bloodpoints for coop actions. Only one Prove Thyself effect at a time.
-- perk: technician
+- for: technician
   text: All tiers reduce audible repair sounds by a distance of 8 meters, up from 0/-4/-8.
 
 - "Hidden Killer Loadout: Removed the ability for Survivors to view the Killers perks, add-ons and offerings in the tally screen during an on-going match. Killer information will be revealed once all Survivors have exited the match."

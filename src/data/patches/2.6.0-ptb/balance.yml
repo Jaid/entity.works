@@ -10,27 +10,27 @@
 
 - The intensity of the Terror Radius is now scaled based on the vertical distance (in addition to the horizontal distance).
 - Survivors entering lockers now have the Blindness Status Effect applied to them.
-- perk: [decisiveStrike, headOn]
+- for: decisiveStrike, headOn
   text: Added a new scoring event for perk-based stun events ({decisiveStrike}/{headOn}) worth 500 Bloodpoints. This is referred to as Killer Stun in game.
 - Reduced the time before a player can heal a player who has recently moved, this should allow for players to start healing a recently cancelled heal quicker than before.
 
-- perk: bbqAndChili
+- for: bbqAndChili
   text: Auras are revealed from 40 meters for all tiers of the perk instead of 52/46/40 meters.
-- perk: distressing
+- for: distressing
   text: All tiers award 100% bonus Bloodpoints.
-- perk: fireUp
+- for: fireUp
   text: Grants a stackable {tiers:2%/2.5%/3%} action speed bonus.
-- perk: devourHope
+- for: devourHope
   text: "The perk grants {tiers:3%/4%/5%} speed boost with 2 tokens, Exposed status applied at 3 tokens, and Kills are available at 5 tokens."
-- perk: ruin
+- for: ruin
   text: All tiers affect all Survivors and apply a penalty of {tiers:3%/4%/5%} regression on a good skill checks.
-- perk: thrillOfTheHunt
+- for: thrillOfTheHunt
   text: All tiers grant 10% bonus Hunting Bloodpoints per remaining totem. Cleansing speeds are the same.
-- perk: monitorAndAbuse
+- for: monitorAndAbuse
   text: The FOV values are {tiers:3/5/10} instead of {tiers:slightly/moderately/considerably} increased. Also simplified the Terror Radius value so that each tier modifies the Terror Radius by the same value, 8 meters instead of 6/7/8.
-- perk: spiesFromTheShadows
+- for: spiesFromTheShadows
   text: Added a 5 second cool-down when the perk triggers.
-- perk: thanatophobia
+- for: thanatophobia
   text: Tier values are incremented at a rate of {tiers:4%/5%/6%} up to a maximum of {tiers:16%/20%/24%}.
 
 - text: Procedural map changes
@@ -55,15 +55,15 @@
         - "Rank 5-8 (PURPLE): 0-7 points = -1 pip; 8-11 points = 0 pips; 12-14 points = +1 pip; 15-16 points = +2 pips."
         - "Rank 1-4 (RED): 0-8 points = -1 pip; 9-12 points = 0 pips; 13-15 points = +1 pip; 16 points = +2 pips."
 
-- perk: decisiveStrike
+- for: decisiveStrike
   text: "After being unhooked by another player or yourself, {decisiveStrike} becomes active for 60 seconds. If you are grabbed by the Killer while the perk is active, succeeding a skill check to cause an automatic escape and stun the Killer for 3 seconds. Succeeding or failing the skill check will disable the perk for the rest of the trial. Succeeding the skill check (and thus stunning the Killer) will result in you becoming the Obsession."
-- perk: empathy
+- for: empathy
   text: "{empathy} now works within a range of {tiers:64m/96m/128m}."
-- perk: lithe
+- for: lithe
   text: "Removed the chase condition. {lithe} now only triggers on rushed vaults."
-- perk: kindred
+- for: kindred
   text: "All Survivor's auras are shown at all tiers. If the Killer is within a {tiers:8/12/16} meter range of the hooked Survivor, the Killer's aura is revealed to all other Survivors."
-- perk: pharmacy
+- for: pharmacy
   text: All tiers have a reduced audible distance of 8 meters.
-- perk: wakeUp
+- for: wakeUp
   text: "All tiers reveal auras at 128 meters."

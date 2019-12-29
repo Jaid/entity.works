@@ -1,7 +1,7 @@
 - Adjusted the Killer pick up (Pick up Survivor from ground) time to 3 seconds, down from 4.3 seconds
 - Changed the Obsession mechanic to show all players in the match who the Obsession is. All players will receive notification when the Obsession is in a chase (animated Entity spikes icon).
 - Exhaustion no longer recovers while running.
-- killer: wraith
+- for: wraith
   text: "Wraith uncloaking: Adjusted the timing of the smoke effect (and its audio) for the {wraith}'s uncloaking to avoid giving away his position earlier than intended"
 
 - Players at Rank 15 will not be able to de-rank to Rank 16 (or lower) outside of rank reset.
@@ -29,91 +29,91 @@
     - Rank 19 will be reset to Rank 20 with 2 pips
     - Rank 20 will be reset to Rank 20 with 0 pips
 
-- perk: bitterMurmur
+- for: bitterMurmur
   text: When a generator is completed, survivors within 16m of that generator will have their aura shown for 5 seconds, when the last generator is powered all survivor auras are shown for {tiers:5/7/10} seconds.
-- perk: brutalStrength
+- for: brutalStrength
   text: "{brutalStrength} will now increase the speed at which you damage generators in addition to pallets. {tiers:10%/15%/20%} faster."
-- perk: hangmansTrick
+- for: hangmansTrick
   text: "{hangmansTrick} will now reduce the bear trap re-spawn timer by 60 seconds."
-- perk: predator
+- for: predator
   text: Changed the way scratch marks are distributed - a smaller cone rather than a longer duration.
-- perk: saveTheBestForLast
+- for: saveTheBestForLast
   text: Made the perk token based. Tokens are gained by attacking Survivors who are not the Obsession. Each token is worth a stackable 5% decreased cooldown on successful attacks. Attacking the Obsession makes you lose {tiers:4/3/2} tokens.
-- perk: sloppyButcher
+- for: sloppyButcher
   text: Added the Mangled Status Effect. 25% increased healing time after being hit in addition to the bleed. Mangled status effects do not stack.
-- perk: tinkerer
+- for: tinkerer
   text: "When a generator is repaired to 85%, Killer receives a loud noise indicator and Terror Radius is reduced to 0 meters for {tiers:8/10/12} seconds. NOTE: Add-ons are no longer affected by this perk."
 
-- killer: trapper
+- for: trapper
   text: Added a new add-on "Padded Jaws" for the {trapper} (Common rarity). Bear traps do not inflict damage to trapped Survivors, and points awarded for trapping Survivors are increased by 100%.
-- killer: trapper
+- for: trapper
   text: Added a new add-on "Trapper Sack" for the {trapper} (Common rarity). Start with and allows the transportation of 1 extra bear trap.
-- killer: trapper
+- for: trapper
   text: Changed trap setting time to have a 0.5 open phase, and 0.5 exit phase, previously it had been 1 second each. These times cannot be modified with add-ons.
-- killer: trapper
+- for: trapper
   text: Disarm time is set to 2.5 seconds instead of 1.5 seconds.
-- killer: trapper
+- for: trapper
   text: Increased loud noise indicator range for trap disarm from 48m to 10000000m
-- killer: trapper
+- for: trapper
   text: Logwood Dye and Tar bottle add-ons now stack
-- killer: trapper
+- for: trapper
   text: Sabotaged bear traps will respawn after 180 seconds, similar to the hook regeneration. The regeneration time can be modified with the Oily Coil add-on and with the perk {hangmansTrick}.
-- killer: trapper
+- for: trapper
   text: The mid phase animation has been reduced to 1.5 seconds, this can be modified using add-ons.
-- killer: trapper
+- for: trapper
   text: "Bloody Coil: Changed rarity from Very Rare to Ultra Rare."
-- killer: trapper
+- for: trapper
   text: "Bloody Coil: Complete rework: When a Survivor disarms or sabotages a bear trap the Survivor is injured. Survivors are not put into the dying state when sabotaging or disarming a Bloody Coil, they can only be injured from healthy."
-- killer: trapper
+- for: trapper
   text: "Diamond Stone: Renamed to Iridescent Stone. New mechanic where every 30 seconds one of the unset bear traps (chosen at random) will become set."
-- killer: trapper
+- for: trapper
   text: "Honing Stone: Inflicts dying upon the trapped victim if they free themselves."
-- killer: trapper
+- for: trapper
   text: "Trapper Bag: Allows the transportation of 2 extra bear traps (up from 1)"
 
-- killer: hag
+- for: hag
   text: Changed trap setting time to have a 0.5 open phase, and 0.7 exit phase, previously it had been 1 second each. These times cannot be modified with add-ons.
-- killer: hag
+- for: hag
   text: Increased the trap teleport range to 40 meters from 32 meters
-- killer: hag
+- for: hag
   text: The mid phase animation has been reduced to 1 second, this can be modified using add-ons.
-- killer: hag
+- for: hag
   text: Revisited all of the {hag}'s add-ons. We removed all the negative effects on the add-ons, giving the {hag} the bit of a buff that she needs.
-- killer: hag
+- for: hag
   text: "Bloodied Mud: Removed the slight decrease of tripped trap duration time"
-- killer: hag
+- for: hag
   text: "Cracked Turtle Egg: Removed the moderately decreased range at which the {hag} can teleport to her traps"
-- killer: hag
+- for: hag
   text: "Cypress Necklet: Removed stacks and removed {tinkerer} mention"
-- killer: hag
+- for: hag
   text: "Disfigured Ear: Removed the considerable decrease of tripped trap duration time"
-- killer: hag
+- for: hag
   text: "Dragonfly Wings: Removed the slight increase of setting time for traps and removed {tinkerer} mention"
-- killer: hag
+- for: hag
   text: "Dried Cicada: Removed the moderately increased setting time of the traps and {tinkerer} mention"
-- killer: hag
+- for: hag
   text: "Half Eggshell: Removed the slightly decreased range at which the {hag} can teleport to her traps"
-- killer: hag
+- for: hag
   text: "Pussy Willow Catkins: Removed the slightly reduced trap effective range"
-- killer: hag
+- for: hag
   text: "Rope Necklet: Removed stacks and removed {tinkerer} mention"
-- killer: hag
+- for: hag
   text: "Scarred Hand: Removed the reduced movement speed"
-- killer: hag
+- for: hag
   text: "Swamp Orchid Necklet: Removed stacks and removed {tinkerer} mention"
-- killer: hag
+- for: hag
   text: "Waterlogged Shoe: Slightly increased the {hag}'s movement speed"
-- killer: hag
+- for: hag
   text: "Willow Wreath: Removed the moderately reduced trap effective range"
 
-- killer: huntress
+- for: huntress
   text: Flower Babushka to have -12% instead of -20% charge time
-- killer: huntress
+- for: huntress
   text: Manna Grass Braid to have -8% instead of -10% charge time
 
-- killer: shape
+- for: shape
   text: Changed Myers carry speed in Tier I. Now he will carry Survivors at the same speed as Tier II and III (3.68 m/s)
-- killer: shape
+- for: shape
   text: Myers tier 1 speed buff from 90% (of 4.6 m/s) which means he currently moves at 4.14 m/s to 91.4% for 4.2 m/s
 
 - text: Brand New Part
@@ -124,13 +124,13 @@
     - Successful skill check will result in 5% progression each (for a maximum of 25% added progression)
     - The toolbox is no longer consumed when the add-on is used, add-on is consumed instead
 
-- perk: aceInTheHole
+- for: aceInTheHole
   text: 100% chance to find an add-on of very rare rarity or lower, added a {tiers:10%/25%/50%} chance to find a second add-on with an uncommon rarity or lower.
-- perk: calmSpirit
+- for: calmSpirit
   text: "Additional modifier that causes survivors to not scream in pain when: being hit, under the effects of madness or being affected by {clown}'s bottle."
-- perk: darkSense
+- for: darkSense
   text: Reveal the killer's aura for 5 seconds each time a generator is completed. When the final generator is completed, the killer's aura is revealed for {tiers:5/7/10} seconds.
-- perk: dejaVu
+- for: dejaVu
   text: Perk now reveals the aura's of 3 generators, which are in close proximity to one another for {tiers:30/45/60} seconds, at the start of the match and each time a generator is completed for the person who is using {dejaVu}.
-- perk: soleSurvivor
+- for: soleSurvivor
   text: Functionality change, for each survivor killed or sacrificed, your aura will not be readable within {tiers:16/18/20} meters from the killer.

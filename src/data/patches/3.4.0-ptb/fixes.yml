@@ -1,23 +1,23 @@
 - Fixed an issue that caused Killers to perform an obstruction hit when hitting Survivors on a hook on dedicated servers.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that caused {nurse} to snap at the beginning and ending of her blink. Fixing this issue required us to rework how the snapping of characters interacts with the movement systems, and could cause additional side effects. We will keep an eye out for movement-related problems that could've been introduced by these changes during the PTB.
-- killer: ghostFace
+- for: ghostFace
   text: Fixed an issue that caused the Classic Ghost Face Shroud customization to block a large portion of the screen when using his power.
-- killer: ghostFace
+- for: ghostFace
   text: Fixed an issue that caused the "Stalk" prompt to be displayed for {ghostFace} when first loading into a match.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that caused {huntress}' hatchet to go through walls if she hugged the wall.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused Survivors to be misaligned during {legion}'s mori.
-- killer: nightmare
+- for: nightmare
   text: Fixed an issue that caused {nightmare}'s husk to be briefly visible before completely teleporting to a generator.
-- killer: plague
+- for: plague
   text: Fixed an issue that caused downed Survivor auras to be visible to {plague} when using the Black Incense add-on.
-- killer: hag
+- for: hag
   text: Fixed an issue that caused {hag}'s phantasm traps not to have collision when using the Scarred Hand add-on.
-- killer: shape
+- for: shape
   text: Fixed an issue that caused {shape}'s camera to become slanted when canceling the mori interaction.
-- killer: plague
+- for: plague
   text: Added more logs to better help identify an issue that could cause {plague} to get stuck in her vomit stance on dedicated servers.
 
 - Fixed an issue that could caused an impassable gap between the water tower and a tree in the Ironworks of Misery map.
@@ -40,15 +40,15 @@
 - Fixed the shadows on the fire places in the small houses in the Lampkin Lane map.
 - Misc LOD fixes and improvements.
 
-- killer: legion
+- for: legion
   text: Fixed an issue that caused the visible scratch marks from Fixated to disappear when {legion} used Feral Frenzy.
-- perk: surge
+- for: surge
   text: Fixed an issue that caused generators affected by {surge} to visually remain in the damaged state when the perk triggered while a Survivor was actively working on it.
-- perk: spineChill
+- for: spineChill
   text: Fixed an issue that caused players being healed with Spine Chill equipped to see the progression speed proficiency icon when another Survivor healed them.
-- perk: dyingLight
+- for: dyingLight
   text: Fixed an issue that caused {dyingLight} not to disable when the Obsession disconnected via cable pull.
-- perk: plunderersInstinct
+- for: plunderersInstinct
   text: Fixed an issue that caused toolbox auras to appear incorrectly when shown with {plunderersInstinct}.
 
 - Fixed an issue that could cause a network timeout disconnection from a public or private lobby.

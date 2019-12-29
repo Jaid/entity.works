@@ -6,7 +6,7 @@
 
 - Updated the icon style for cosmetic items rarities.
 - Updated the Auric Cells and Iridescent Shards background colors from yellow/blue to orange/indigo respectively.
-- perk: babysitter
+- for: babysitter
   text: Added a perk indicator in the HUD when affected by the {babysitter} perk.
 
 - "Camping Aid Kit: Increased the speed at which you heal others from +15% to +25%."
@@ -22,11 +22,11 @@
 - "Styptic Agent: Applies the Endurance status effect for 15 seconds on use. Use with secondary action. Depletes Med-Kit on use."
 - "Anti-Hemorrhagic Syringe: Heals Survivor passively over 8 seconds. Time is modified by perks and add-ons that affect healing speeds. The effect is cancelled if the Survivor changes health state or picked up. Depletes Med-kit on use."
 
-- killer: nurse
+- for: nurse
   text: Rather than regaining all her blink charges immediately after finishing her fatigue animation, {nurse} now regains 1 blink charge every 3 seconds, starting at the beginning of the fatigue animation. The time can be modified by add-ons.
-- killer: nurse
+- for: nurse
   text: "{nurse} will begin her reappearance approximately 0.3 seconds earlier. This is a visual-only change to ensure that survivors are not blocked or hit by a killer they cannot see."
-- killer: nurse
+- for: nurse
   text: Addon changes
   points:
     - "White Nit Comb: Decreases the length of blink attack lunges by 50% (0.15 seconds). Increases blood point rewards for blink attack score events by 100%."
@@ -50,9 +50,9 @@
     - "Matchbox: Rarity changed from Common to Ultra Rare. Removes 1 blink charge. Increases base movement speed to 4.2 m/s."
     - "Torn Bookmark: Rarity changed from Common to Ultra Rare. Adds 1 blink charge. {nurse} can no longer blink to locations not in her line of sight."
 
-- perk: detectivesHunch
+- for: detectivesHunch
   text: Now triggers from any generator completion instead of only generators completed by the perk owner. Increased aura reading duration from 5 seconds to 10 seconds.
-- perk: plunderersInstinct
+- for: plunderersInstinct
   text: Removed the slightly and moderately stipulation from tier I and II respectively. Only unopened chest auras and items dropped on the ground will be revealed to the perk owner. Aura reading range does not change.
-- perk: mettleOfMan
+- for: mettleOfMan
   text: Made it so the perk can be activated and triggered more than once.

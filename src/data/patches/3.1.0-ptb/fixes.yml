@@ -1,18 +1,18 @@
-- killer: shape
+- for: shape
   text: Fixed an issue that caused Survivors models to reappear when {shape} used his stalking ability while the Survivor was being sacrificed.
-- killer: shape
+- for: shape
   text: Fixed an issue that caused {shape}'s stalking range to be wrongfully decreased. Stalking range has been adjusted back to within 40 meters.
-- killer: ghostFace
+- for: ghostFace
   text: Fixed an issue that caused {ghostFace} not to have an off-screen notification when spotted in the 180 degrees in front of him.
-- killer: plague
+- for: plague
   text: Fixed an issue that sometimes caused {plague}'s vomit not to appear on windows.
-- killer: plague
+- for: plague
   text: Fixed an issue that caused items to remain infected when Survivors cleansed their sickness from a fountain.
-- killer: plague
+- for: plague
   text: Fixed an issue that caused Survivors to get the Protection score event when being near an injured Survivor when reaching the Broken state by {plague}'s vomit.
-- killer: hag
+- for: hag
   text: Fixed an issue that caused the flashlight item not to reveal {hag}'s Phantasm Traps.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused trapped Survivors not to get downed when hit by {trapper} while they are struggling in the trap.
 
 - Fixed an issue that caused an invisible collision that blocked player movement on the boxes on top of the bar in the cabin of the Mount Ormond Resort map.
@@ -24,7 +24,7 @@
 - Fixed an issue that caused a hook in front of the warehouse to float in the Coal Tower map.
 - Fixed an issue that caused players to clip inside certain big tree trunks in the Backwater Swamp maps.
 - Fixed an issue that caused an impassable gap between a hooked Survivor and a bed frame on a specific tile in the Lery's Memorial Institute map.
-- killer: hillbilly
+- for: hillbilly
   text: Fixed an issue that made it impossible for {hillbilly} to chainsaw sprint into the lower floor of the temple in the Temple of Purgation map.
 - Fixed an issue that caused hiding Survivors to clip inside of lockers in the control room of The Game map.
 - Fixed an issue that caused players to become stuck on a hill between the hill and 2 bamboo trees in the Family Residence map.
@@ -33,10 +33,9 @@
 - Fixed an issue that could cause Killers to get partially stuck on top of two rock assets in the Lampkin Lane map.
 - Misc LOD fixes and improvements.
 
-- perk: mettleOfMan
-  killer: nightmare
+- for: mettleOfMan, nightmare
   text: Fixed an issue that caused {mettleOfMan} to remove the Dream State when triggered.
-- perk: vigil
+- for: vigil
   text: Fixed an issue that caused {vigil} to have no effect on Exhaustion caused by Sprint Burst.
 
 - Tentatively fixed an issue that could prevent Survivors from successfully escaping through the exit gates.
@@ -56,9 +55,9 @@
 - Fixed an issue that caused the dodged lobby timeout not to advance while in the Store or Credits.
 - Misc cosmetic clipping and improvements.
 
-- killer: legion
+- for: legion
   text: Fixed an issue that caused Julie and Suzie to sound like Frank in-game.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that caused {huntress} lullaby not to play from her perspective.
 - Fixed an issue that caused the SFX when a Survivor joined a lobby or switched characters to be missing in lobbies.
 - Major localization and translation improvements.

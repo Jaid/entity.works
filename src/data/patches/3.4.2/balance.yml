@@ -1,11 +1,11 @@
-- killer: nightmare
+- for: nightmare
   text: "Outdoor Rope add-on: Reduced the action speed debuff from 6% to 2%."
-- killer: nightmare
+- for: nightmare
   text: "Jump Rope add-on: Reduced the action speed debuff from 9% to 4%."
-- killer: nightmare
+- for: nightmare
   text: "Swing Chains add-on: Reduced the action speed debuff per sleeping Survivor from 3% to 2%."
 
-- killer: oni
+- for: oni
   text: "Renjiro's Bloody Glove add-on: Blood orbs are now absorbed by Survivors who come in contact with them. The aura reveal duration has been reduced from 3 seconds to 2 seconds, however, the duration stacks if multiple blood orbs are absorbed."
-- killer: oni
+- for: oni
   text: Updated turn ratio of {oni} Demon Dash ability to improve controller turn-rate and hard-cap turning with keyboard.

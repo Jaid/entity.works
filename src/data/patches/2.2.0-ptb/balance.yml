@@ -1,7 +1,7 @@
 - Adjusted and shortened all Killer interrupt animations
-- killer: [hag, huntress, spirit]
+- for: hag, huntress, spirit
   text: Killers with a 4.4 m/s move speed ({hag}, {huntress} and {spirit}) now lunge at the same speed as other killers.
-- killer: huntress
+- for: huntress
   text: Adjusted the collision surrounding {huntress}' hatchets so it is more accurate to their shape
 - Added a score event for healing yourself or others with an insta-heal medkit add-ons
 - The score event points for a Safe Hook Rescue (for the Survivor that performed the action) is 500
@@ -28,19 +28,19 @@
 - Scoring criteria and Emblem results breakdown have been added to the post-match Emblem screen.
 - The values represent the percentage of points you gained towards reaching the Iridescent Emblem threshold (100%), however, it is possible to receive an Emblem result with an overall percentage greater than 100%.
 - This Emblem results breakdown is intended to give more clarity and transparency to the resulting outcome, and reduce the confusion and frustration that some players feel when they receive unexpected results.
-- killer: trapper
+- for: trapper
   text: "Trap Buffering has been reintroduced: A bear trap that is being disarmed will not trap survivors who run over it"
-- killer: trapper
+- for: trapper
   text: Disarm Bear Trap time increased from 2.5s to 3.5s
-- killer: wraith
+- for: wraith
   text: After successfully uncloaking, {wraith} gains a burst of speed for 1 second, similar to the effect from the Windstorm add-ons. These add-ons have been redesigned.
-- killer: wraith
+- for: wraith
   text: Movement speed while uncloaking has been adjusted.
-- killer: wraith
+- for: wraith
   text: The uncloak exit animation, which lasts 0.3 seconds after finishing uncloaking, can now be cancelled by attacking or interacting with objects.
-- killer: wraith
+- for: wraith
   text: Time required to burn {wraith} out of cloak with a flashlight increased from 1.5 to 2 seconds. The Blind Warrior add-ons, which previously granted further light burn protection, have been redesigned.
-- killer: wraith
+- for: wraith
   text: Addons
   points:
     - '"All Seeing" - Blood: Survivor aura reading range increased from 10m to 12m.'
@@ -58,5 +58,5 @@
     - '"Windstorm" add-ons now increase {wraith}''s movement speed while cloaked and decrease {wraith}''s movement speed while uncloaking.'
     - "Bone Clapper: Changed rarity from Common to Uncommon. Survivors can no longer discern the Wailing Bell's distance or direction."
     - "Coxcombed Clapper: Changed rarity from Uncommon to Ultra Rare. Renders the Wailing Bell completely silent."
-- killer: nurse
+- for: nurse
   text: Readjusted {nurse}'s interruption animations

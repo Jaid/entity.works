@@ -27,18 +27,18 @@
     - text: Added event for Evader emblem scoring
       points: 50 points for stunning the Killer with a pallet.
 
-- perk: streetwise
+- for: streetwise
   text: Increased efficiency values to {tiers:15%/20%/25%} up from {tiers:10%/12%/15%}.
-- perk: windowsOfOpportunity
+- for: windowsOfOpportunity
   text: Reduced cooldown values to {tiers:30/25/20} seconds down from {tiers:60/50/40}.
-- perk: mettleOfMan
+- for: mettleOfMan
   text: We have changed the condition for getting tokens. It is no longer for being hit by a Killer's basic attack. Instead earn tokens by taking "Protection Hits". It still requires 3 tokens to activate. Survivors will still need to be injured in order to trigger the Endurance effect and avoid being put into the dying state. This means that {mettleOfMan} will require more work from the Survivor to trigger {mettleOfMan}'s Endurance status effect.
-- perk: unbreakable
+- for: unbreakable
   text: Increased recovery speed to {tiers:25%/30%/35%} up from {tiers:15%/20%/25%}.
 
-- perk: popGoesTheWeasel
+- for: popGoesTheWeasel
   text: Changed Regression values from 15%/20%/25% to a flat 25% across all tiers. Changed window of activation from 30 seconds to {tiers:40/50/60} seconds.
-- perk: territorialImperative
+- for: territorialImperative
   text: Reduced cooldown to {tiers:30/25/20} seconds down from {tiers:60/45/30}.
-- perk: enduring
+- for: enduring
   text: Updated {enduring} to a flat reduction in pallet stun duration of {tiers:40%/45%/50%} rather than an increase to stun recovery speed of {tiers:55%/65%/75%}. {enduring} will now only affect pallet stuns.

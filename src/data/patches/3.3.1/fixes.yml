@@ -1,11 +1,11 @@
-- killer: clown
+- for: clown
   text: Fixed an issue that caused {clown}'s gas bottles to create a constant hissing sound from the bottle's point of impact.
-- killer: clown
+- for: clown
   text: Fixed an issue that caused {clown}'s direct bottle hit score events to generate twice and leave a lingering hitbox.
 
-- killer: clown
+- for: clown
   text: Fixed an issue that caused {clown}'s knife from the Hallowed Catalyst collection to be invisible in-game.
-- killer: nightmare
+- for: nightmare
   text: Fixed an issue that caused the Dream World lighting between {nightmare} and Survivors not to match when changing the graphic settings to Low or Medium prior to the match.
 - Fixed an issue that made it impossible to use the arrows to switch characters when the game was running in an ultra wide resolution.
 - Fixed an issue that caused the Killers' red stain to be visible through walls on low graphic settings.
@@ -13,7 +13,7 @@
 
 - Fixed an issue that caused certain SFX to be missing when self-healing.
 - Fixed an issue that caused Killer Instinct audio to be not heard or significantly lowered when Survivors were near the bottom of stairs.
-- killer: pig
+- for: pig
   text: Fixed an issue that caused a missing audio cue when removing a reverse bear trap.
 
 - Fixed an issue that prevent users from loading into the match if a user in the lobby opened their Options menu before starting the loading.

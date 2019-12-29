@@ -1,11 +1,11 @@
 - Fixed an issue that could cause survivors to be unable to trigger interaction or cause the character to be teleported back to the basement after spending some time inside the basement.
 - Fixed an issue that could cause some Survivors to be standing at the campfire.
-- perk: proveThyself
+- for: proveThyself
   text: Fixed an issue that caused {proveThyself} not to affect the perk owner.
-- perk: selfCare
+- for: selfCare
   text: Fixed the incorrect values displayed in all tiers of the {selfCare} description, in all supported languages.
 - Fixed an issue that made it impossible to rush vault a specific window in Badham Preschool.
-- killer: pig
+- for: pig
   text: Fixed an issue that caused the Game Over score event to not work properly for {pig}.
 - Fixed a crash that could happen when a survivor would disconnect during a Mori.
 - Fixed a crash related to status effects that could happen at any time during gameplay.

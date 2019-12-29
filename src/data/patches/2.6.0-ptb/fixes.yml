@@ -1,58 +1,58 @@
 - Fixed an issue that caused the Halloween music to play too loud during the camera intro when loading into Lampkin Lane.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that caused {huntress} to have the charging hatchet audio cue when reloading hatchets in a locker.
-- killer: clown
+- for: clown
   text: Fixed an issue that caused the chase music to change while under the effects of {clown}'s gas bottles.
 - Fixed an issue that caused the node purchasing audio to loop if swapping characters while purchasing a node in the Bloodweb.
 - Fixed the rain audio while inside in the Red Forest maps.
-- perk: [leader, technician, distortion]
+- for: leader, technician, distortion
   text: Major localization and translation improvements. Among these improvements included fixing the proper Spanish translations for the {leader}, {technician} and {distortion} perk descriptions, that were erroneously displaying the Lunar Event objective text, then reverted to out of date texts in patch 2.5.3.
 
-- perk: playWithYourFood
+- for: playWithYourFood
   text: Fixed an issue that caused {playWithYourFood} tokens to be consumed when throwing a gas bottle.
-- killer: clown
+- for: clown
   text: Fixed an issue that caused {clown}'s bottle to disappear at the end of his Reload animation.
-- killer: doctor
+- for: doctor
   text: Fixed an issue that caused {doctor} not to see the illusionary pallet auras when using the "Order" add-ons.
-- killer: hag
+- for: hag
   text: Fixed an issue that caused {hag}'s Phantasms not to have a terror radius when the traps were triggered.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that caused {huntress}' animation to stutter when throwing a hatchet.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that caused {huntress}' hatchet cancel animation to be almost instant.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion} to snap into position when vaulting a pallet.
-- killer: nightmare
+- for: nightmare
   text: Fixed an issue that caused {nightmare}'s leg to be misaligned during the pallet break and generator damage animations.
-- killer: shape
+- for: shape
   text: Fixed an issue that caused {shape}'s Vanity Mirror and Scratched Mirror add-ons to grant the incorrect amount of points on the first 2 hits. The points are now 300 per attack, and with the bonuses are 450 & 600 respectively.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused {trapper}'s Honing Stone debuff icon to remain active in the HUD if rescued from a trap by another Survivor.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused {trapper}'s Logwood Dye and Tar Bottle add-ons not to darken traps from Survivor point of view.
 
 - Adjusted the Scratch Mark material and texture to be seen more clearly in the Mount Ormond Resort map.
-- killer: legion
+- for: legion
   text: Adjusted the collision on certain rock assets that allowed {legion}'s camera to clip inside of them in the Mount Ormond Resort map.
 - Fixed an issue that allowed players to shimmy up collision on the rocks on the hill, making them unreachable by the killer.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that allowed {huntress} to throw her hatchets through multiple car assets in the Autohaven Wrecker's maps.
-- killer: huntress
+- for: huntress
   text: Fixed an issue that allowed {huntress} to throw her hatchets through the storage bins in The Game map.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that allowed {nurse} to blink out of world through the top and bottom floor walls on a specific corner tile in The Game map.
 - Fixed an issue that caused an impassable gap between a snow pile and a tree in the Mount Ormond Resort map.
 - Fixed an issue that caused an invisible collision on one of the corners of the Resort building in the Mount Ormond Resort map.
 - Fixed an issue that caused an invisible collision on the staircases in The Game map.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused bear traps to sink below the ground in and around the two-story house in the Badham Preschool map.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused bear traps to sink below the ground in the Blood Lodge map.
 - Fixed an issue that caused the blood decals in the house basements to disappear at certain angles in Lampkin Lane.
 - Fixed an issue that caused the wrong hook to spawn when the basement was not spawned in the preschool in the Badham Preschool map.
 - Fixed an issue that could cause players to get stuck when going down a hole with a pig's head in The Game map.
 - Fixed an issue that could cause rocks on the hill assets to have the wrong texture in various maps.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that made it difficult for {nurse} to blink around, on and through the Ferry Boat in The Pale Rose map.
 - Fixed an issue that made it impossible to rush vault a specific window in one of the small houses in Lampkin Lane.
 - Fixed an issue that made it impossible to use a key when the hatch spawned the wrong way on the Garden tile in the Family Residence map.
@@ -79,13 +79,13 @@
 - Fixed an issue that caused the Left For Dead achievement to be awarded without meeting the requirements.
 - Fixed an issue that caused the Shock Therapy achievement not to unlock when meeting the requirements.
 
-- perk: bitterMurmur
+- for: bitterMurmur
   text: Fixed an issue that caused {bitterMurmur} not to show all Survivors' auras when the last generator was repaired, and for less than {tiers:5/7/10} seconds respectively.
-- perk: bloodWarden
+- for: bloodWarden
   text: Fixed an issue that caused {bloodWarden} to show Survivors' auras when outside of the exit gate, and before the requirements were met.
-- perk: calmSpirit
+- for: calmSpirit
   text: Fixed an issue that caused {calmSpirit} to continue to alert crows. Do note this is still applicable for the crow bomb in the Backwater Swamp maps.
-- perk: decisiveStrike
+- for: decisiveStrike
   text: Fixed an issue that caused interaction progress to regress when being interrupted from the action and failing the {decisiveStrike} skill check.
 
 - Fixed an issue that allowed players to switch characters and create a lobby simultaneously.

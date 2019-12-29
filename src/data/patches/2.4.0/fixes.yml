@@ -1,36 +1,36 @@
 - Major localization and translation improvements.
 
-- killer: hag
+- for: hag
   text: Fixed an issue that caused Survivors hooked by {hag} to be a bit offset from the hook.
-- killer: shape
+- for: shape
   text: Fixed an issue that caused Survivors to flip into the dead position when mori'd by {shape} with either Judith's Tombstone or Tombstone Piece add-ons.
-- killer: hillbilly
+- for: hillbilly
   text: Fixed an issue that caused an audio discrepancy between two game client who are facing in opposite directions (towards and away) from {hillbilly}'s chainsaw.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused blood VFX from the environment to appear brighter when {spirit} uses her power.
-- killer: clown
+- for: clown
   text: Fixed an issue that caused {clown}'s knife to become misaligned when interrupting a Survivor vaulting towards them.
 - Fixed an issue that caused the Killers red stain to be visible on their own character's model.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that caused {nurse} to clip into Survivors during her mori kill.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that caused {nurse} to go into the fatigued state when blink interrupting a Survivor.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused {spirit}'s Husk to start a fresh idle animation instead of using the players current animation during her Phase Walk.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused {spirit}'s head to disappear towards the end of the camera pan intro sequence at the start of a match.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused the Survivor stepped in trap loud noise bubble to appear when {trapper} was holding a bear trap near any other notification bubble.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused the Survivor to move in front of the camera when {spirit} attacks while carrying a Survivor on her shoulder.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused the blood from Survivors to be visible while {spirit} charged her power.
-- killer: shape
+- for: shape
   text: Fixed an issue that caused the camera to be incorrectly placed from Survivor perspective when being mori'd by {shape} with either Judith's Tombstone or Tombstone - Piece add-ons.
 - Fixed an issue that caused the held items to briefly appear out of the Killers' hand when interrupting a Survivor vaulting towards them.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused the wrong LOD to sometimes load on {spirit}'s customization.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that made it impossible for {trapper} to pick up Survivors from a bear trap when it was placed too close to a totem.
 - Fixed an issue that made it impossible to blind a Killer with a flashlight if there was a downed Survivor in front of them.
 
@@ -44,22 +44,21 @@
 - Fixed an issue that made it impossible to open or escape through the hatch when spawned on a specific hill in the Mother's Dwelling map.
 - Fixed an issue that made it impossible to repair a generator from one of the shorts sides next to the van in the street in Lampkin Lane.
 
-- perk: diversion
+- for: diversion
   text: Fixed an issue that allowed Survivors to spam the {diversion} perk while repairing a generator.
-- perk: adrenaline
+- for: adrenaline
   text: Fixed an issue that caused {adrenaline} to trigger during the pick-up and interrupt animations.
-- perk: noOneEscapesDeath
+- for: noOneEscapesDeath
   text: Fixed an issue that caused the attack cooldown to be applied on {noOneEscapesDeath}, after it was removed in patch 2.3.0.
-- perk: borrowedTime
-  killer: trapper
+- for: borrowedTime, trapper
   text: Fixed an issue that caused the bleedout timer from {borrowedTime} perk to cancel completely when stepping in a bear trap.
-- perk: hangmansTrick
+- for: hangmansTrick
   text: Fixed an issue that caused the hooks destroyed by a sacrifice not to respawn with {hangmansTrick}.
 
 - Disabled all VR related plugins.
-- perk: [distortion, deerstalker]
+- for: distortion, deerstalker
   text: Fixed an issue that caused {distortion} tokens to be consumed while being interrupted and carried by a Killer with the {deerstalker} perk.
-- survivor: kate
+- for: kate
   text: Fixed an issue that caused {kate} to scream too loud when downed, hooked, gassed and shocked.
 - Fixed an issue that caused Survivors to overlap on one another in the match result screen.
 - Fixed an issue that caused Survivors to snap back underneath the hook when unhooking themselves.
@@ -70,30 +69,30 @@
 - Fixed an issue that caused healing progress not to reset when being interrupted and hooked.
 - Fixed an issue that caused objects to spawn in front of driveways in Lampkin Lane.
 - Fixed an issue that caused players to be invisible to others until moving if spawned in the Shack.
-- killer: clown
+- for: clown
   text: Fixed an issue that caused {clown}'s stomach to jiggle too much in the tally screen.
 - Fixed an issue that caused the Exhaustion Status Effect not to be removed when hooked.
 - Fixed an issue that caused the Killer Prestige items to be awarded in the wrong order.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion} to be unable to use their power when a Survivor disconnected during the mori.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s animation to stay in Frenzy when picking up a Survivor while in Frenzy.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s camera to become offset when a Survivor disconnected during the mori.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s camera to become offset when they interrupted the mori.
 - Fixed an issue that caused the Mangled status effect to stack when applied from different sources (add-ons, perks).
-- perk: objectOfObsession
+- for: objectOfObsession
   text: Fixed an issue that caused the {objectOfObsession} perk not to work when the character body was not facing a non-host Killer in a Kill Your Friends match.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused the Rite of {spirit} Daily Ritual to unlock without meeting the requirements.
 - Fixed an issue that caused the Spectator camera to remain in spectate when the last player would leave the match.
-- perk: ironMaiden
+- for: ironMaiden
   text: Fixed an issue that caused the location notification to end abruptly with {ironMaiden}.
 - Fixed an issue that caused timed Status Effect icons not to disappear from the HUD when they expired
 - Fixed an issue that could cause an inaccessible hook in the Mount Ormond Resort map.
 - Fixed an issue that could cause items to disappear when swapping items in a chest.
-- killer: legion
+- for: legion
   text: Fixed an issue that could cause {legion}'s right hand to disappear during their idle animation.
 - Fixed an issue that could cause the damage protection from getting unhooked to either not trigger, or be applied long after the player has regained control of their character.
 - Fixed an issue that made it impossible to pick up Survivors in a corner in the Mount Ormond Resort map.

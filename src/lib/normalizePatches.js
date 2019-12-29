@@ -24,57 +24,29 @@ const sortCategories = category => {
 export default patches => patches
   |> #.map(patch => ({
     dateMs: Number(moment(patch.date, "DD.MM.YYYY")),
-    id: patch.semver || String(Number(moment(patch.date, "DD.MM.YYYY"))),
+    id: patch.semver,
     ...patch,
   }))
   |> #.sort((a, b) => b.dateMs - a.dateMs)
   |> #.map(patch => {
     for (const [categoryId, categoryPoints] of Object.entries(patch.points)) {
-      const categoryPointsNormalized = categoryPoints |> ensureArray
+      const categoryPointsNormalized = ensureArray(categoryPoints)
       patch.points[categoryId] = {
         points: categoryPointsNormalized,
-        references: {
-          killers: {},
-          survivors: {},
-          perks: {},
-          maps: {},
-        },
-      }
-      const references = {
-        killers: {},
-        survivors: {},
-        perks: {},
-        maps: {},
+        references: {}
       }
       categoryPointsNormalized.forEach((point, index) => {
-        const pointNormalized = point
-        |> ensureObject(#, "text")
-        |> aliasFields(#, {
-          killers: "killer",
-          perks: "perk",
-          survivors: "survivor",
-          maps: "map",
-        })
-        patch.points[categoryId].points[index] = pointNormalized
-        for (const referenceType in forOwn(references)) {
-          if (pointNormalized[referenceType]) {
-            const referenceNormalized = pointNormalized[referenceType] |> ensureArray
-            pointNormalized[referenceType] = referenceNormalized
-            for (const referenceName of referenceNormalized) {
-              if (!references[referenceType][referenceName]) {
-                references[referenceType][referenceName] = []
-              }
-              references[referenceType][referenceName].push(pointNormalized)
+        const pointNormalized = ensureObject(point, "text")
+        if (pointNormalized.for) {
+          pointNormalized.for = point.for.split(",").map(id => id.trim())
+          for (const reference of point.for) {
+            if (!patch.points[categoryId].references[reference]) {
+              patch.points[categoryId].references[reference] = []
             }
-            pointNormalized.hasReferences = true
-          }
-          if (references[referenceType] |> hasContent) {
-            if (!patch.points[categoryId].references) {
-              patch.points[categoryId].references = {}
-            }
-            patch.points[categoryId].references[referenceType] = references[referenceType]
+            patch.points[categoryId].references[reference].push(pointNormalized)
           }
         }
+        patch.points[categoryId].points[index] = pointNormalized
         patch.points = patch.points // Based on https://github.com/lodash/lodash/issues/1459#issuecomment-253969771
           |> toPairs
           |> sortBy(#, ([key]) => sortCategories(key))

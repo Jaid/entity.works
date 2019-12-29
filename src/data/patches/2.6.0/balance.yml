@@ -10,31 +10,31 @@
   points:
     - "Devout: Hook event condition reduced from 10+ to 9+ hook events required for Iridescent quality. This makes it easier to achieve Iridescent quality of Devout emblem."
     - "Gatekeeper: Scoring defended generators points reduced. Quality threshold requirements reduced. This makes it easier to achieve all qualities of Gatekeeper emblem."
-- perk: fireUp
+- for: fireUp
   text: "{fireUp} had its values increased after testing in the PTB. Value increased up from {tiers:2%/2.5%/3%} up to {tiers:3%/3.5%/4%} for a new maximum of {tiers:15%/17.5%/20%}."
-- perk: thanatophobia
+- for: thanatophobia
   text: "{thanatophobia} had its values decreased after testing in the PTB. Values decreased from {tiers:4%/5%/6%} down to {tiers:3%/3.5%/4%} for a new maximum of {tiers:12%/14%/16%}."
-- perk: wellMakeIt
+- for: wellMakeIt
   text: "{wellMakeIt} had it's value fixed to 100% across all Tiers."
 
-- killer: plague
+- for: plague
   text: Corrupt Purge base duration is now 60 seconds instead of 45 seconds.
-- killer: plague
+- for: plague
   text: Increased {plague} Brutality and Deviousness scoring.
-- killer: plague
+- for: plague
   text: Increased the duration of infection of environmental objects to 35 seconds instead of 20 seconds.
-- killer: plague
+- for: plague
   text: Slightly increased {plague} movement speed while charging Vile Purge and Corrupt Purge.
-- killer: plague
+- for: plague
   text: Slightly reduced {plague} movement Speed while fully charged and holding Vile Purge and Corrupt Purge.
-- killer: plague
+- for: plague
   text: Survivor infection no longer resets once The Survivor is hooked.
-- killer: plague
+- for: plague
   text: Vile Purge can now correctly infect gate switches.
-- killer: plague
+- for: plague
   text: When all Pools of Devotion have been corrupted, all corrupted Pools of Devotion reset and The Killer automatically gains the Corrupt Purge effect.
 
-- killer: plague
+- for: plague
   text: Scoring changes
   points:
     - Added a score event (Purge 200) for downing a Survivor with max sickness.

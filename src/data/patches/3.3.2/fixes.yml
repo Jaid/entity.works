@@ -4,7 +4,7 @@
 - Fixed an issue that could cause a crash when entering the Archives.
 - Fixed an issue that caused level 4 of the Tome to appear when opening the Tome if level 1 was fully complete.
 - Fixed an issue that caused Survivor shadow models to appear in front of bubble indicators.
-- perk: plunderersInstinct
+- for: plunderersInstinct
   text: Fixed an issue that caused some item auras not to appear correctly when viewed with {plunderersInstinct}. Please note there is still an issue with toolboxes, we are still working on a fix.
 - Fixed an issue that made it impossible to cleanse a totem on a specific tile in the Family Residence map.
 - Fixed an LOD issue on the floor of the Shack buildings when the basement spawned in it.
@@ -15,9 +15,9 @@
 
 - text: Steam
   points:
-    - killer: [shape, ghostFace]
+    - for: shape, ghostFace
       text: Fixed an issue that caused {shape} and {ghostFace}'s Stalking abilities to be delayed if the user had a high ping on Dedicated Servers.
-    - killer: nightmare
+    - for: nightmare
       text: Fixed an issue that could sometimes make it impossible to Wake Up other Survivors when playing against {nightmare}.
     - Fixed an issue that caused characters to jitter around in the match when playing with uncapped FPS.
 
@@ -25,6 +25,6 @@
   points:
     - Fixed an issue that caused Auric Cell Packs not to be available in the in-game Store.
     - Fixed an issue that made it impossible to gain progress on the In The Void She Walks achievement.
-    - killer: [shape, ghostFace]
+    - for: shape, ghostFace
       text: Fixed an issue that caused {shape} and {ghostFace}'s Stalking abilities to be delayed if the user had a high ping on Dedicated Servers.
     - Fixed an issue that caused characters to jitter around in the match when playing with uncapped FPS.

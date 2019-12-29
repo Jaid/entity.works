@@ -1,13 +1,10 @@
 import classnames from "classnames"
+import hasContent from "has-content"
 import {ensureArray, ensureObject} from "magina"
 import PropTypes from "prop-types"
 import React from "react"
-import reactStringReplace from "react-string-replace"
 
-import KillerBox from "components/KillerBox"
-import PerkBox from "components/PerkBox"
 import RichText from "components/RichText"
-import SurvivorBox from "components/SurvivorBox"
 
 import css from "./style.scss"
 
@@ -26,7 +23,7 @@ export default class PatchLines extends React.Component {
   render() {
     const lines = ensureArray(this.props.points).map((point, index) => {
       point = ensureObject(point, "text")
-      if (!this.props.showReferences && point.hasReferences) {
+      if (!this.props.showReferences && hasContent(point.for)) {
         return null
       }
       return <li key={index} className={css.patchLine}>

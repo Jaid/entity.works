@@ -1,45 +1,38 @@
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused being unable to hear Survivors attempting to escape out of bear traps.
-- killer: trapper
+- for: trapper
   text: Fixed an issue that caused the bear trap disarm audio cue to play when a Survivor successfully escaped from a trap.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that could cause {spirit}'s idle SFX to play multiple times at the same time.
 - Improved the interior rooms audio reverb which is now based on their size
 - Major localization and translation improvements. These include re-translations of various perks and customization items that showed English text in most non-English - languages.
-- killer: plague
+- for: plague
   text: Misc Plague audio improvements.
 
 - Fixed an issue that caused Killers to be unable to hear Survivors' idle crows when looking in the opposite direction.
-- killer: legion
+- for: legion
   text: Fixed an issue that caused {legion}'s Nasty and Filthy Blade add-ons to stack, causing extremely long Mending times.
-- killer: plague
+- for: plague
   text: Fixed an issue that caused {plague}'s Corrupt Purge to ignore unhook immunity.
-- killer: plague
-  perk:
-    - rememberMe
-    - saveTheBestForLast
-    - sloppyButcher
-    - theThirdSeal
-    - noOneEscapesDeath
+- for: plague, rememberMe, saveTheBestForLast, sloppyButcher, theThirdSeal, noOneEscapesDeath
   text: "Fixed an issue that caused {plague}'s Vile and Corrupt Purge to apply on-hit effects from certain perks ({rememberMe}, {saveTheBestForLast}, {sloppyButcher}, {theThirdSeal}, and {noOneEscapesDeath})."
-- killer: plague
+- for: plague
   text: Fixed an issue that caused {plague}'s mori to have incorrect vomit color effects when Corrupt Purge is active.
-- killer: spirit
+- for: spirit
   text: Fixed an issue that caused {spirit}'s Husk to replicate her animations when she finishes using her power.
-- killer: trapper
-  perk: [rememberMe, saveTheBestForLast]
+- for: trapper, rememberMe, saveTheBestForLast
   text: Fixed an issue that caused {trapper} not to gain tokens from the {rememberMe} and {saveTheBestForLast} perks when hitting a Survivor caught in a bear trap.
 - Fixed an issue that could cause Killers to lose all animations from Survivor perspectives.
-- killer: shape
+- for: shape
   text: Fixed an issue that could cause floating hair and accessories when being mori'd by {shape}'s standing kill.
 
 - Fixed an issue that allowed Killers to throw their projectiles through one side of the tarps on the crashed school buses in the Autohaven Wrecker's maps.
-- killer: nurse
+- for: nurse
   text: Fixed an issue that allowed {nurse} to blink up to the roof of Lery's Memorial Institute.
 - Fixed an issue that caused a hook to clip inside on of the Temple walls in The Temple of Purgation map.
 - Fixed an issue that caused an impassable gap between different tree models and a junk pile in the Gas Heaven map.
 - Fixed an issue that caused chests to slightly clip inside the ground on specific tiles in the Crotus Prenn Asylum maps.
-- killer: nightmare
+- for: nightmare
   text: Fixed an issue that caused maps with indoor generators to be extremely bright while in the Dream World.
 - Fixed an issue that caused the 4 wall tiles to have an extra opening in the Autohaven Wrecker's maps.
 - Fixed an issue that could cause a tree to spawn within the exit gate area in the Backwater Swamp maps.
@@ -51,11 +44,11 @@
 - Fixed an issue that made it impossible to open the hatch when it spawned at the mine in the Suffocation Pit map.
 - Fixed an issue that made it impossible to open the hatch when it spawned facing a debris pile in the chapel in the Father Campbell's Chapel map.
 - Fixed an issue that made it impossible to open the hatch when it spawned facing a wall in the Grim Pantry map.
-- killer: pig
+- for: pig
   text: Fixed an issue that made it impossible to open the hatch when it spawned next to a chest/Jigsaw box on a specific maze tile in the Coldwind Farm maps.
-- killer: pig
+- for: pig
   text: Fixed an issue that made it impossible to open the hatch when it spawned next to a chest/Jigsaw box on a specific maze tile in the MacMillan Estate maps.
-- killer: pig
+- for: pig
   text: Fixed an issue that made it impossible to open the hatch when it spawned next to a chest/Jigsaw box on a specific maze tile in the Mount Ormond Resort map.
 - Fixed an issue that made it impossible to open the hatch when it spawned on a specific tile in the Family Residence map.
 - Fixed an issue that made it impossible to open the hatch when it spawned on multiple specific tiles in The Game map.
@@ -64,18 +57,18 @@
 - Fixed an issue that made it possible to get stuck in a specific corner of a maze tile in the Coldwind Farm maps.
 - Misc LOD improvements.
 
-- killer: legion
+- for: legion
   text: Adjusted the description for the Deranged Pursuit achievement to mention the downed Survivor must have Deep Wound applied.
-- killer: wraith
+- for: wraith
   text: Adjusted the distortion VFX for {wraith} cloaked while on Low graphic settings.
 - Fixed an issue that caused Survivors held items to briefly clip through the side of the locker when hiding.
-- killer: [nurse, legion]
+- for: nurse, legion
   text: Fixed an issue that caused {nurse} and {legion} not to have Fatigued VFX on Low graphic settings.
-- survivor: meg
+- for: meg
   text: Fixed an issue that caused a hitch when equipping {meg}'s Tier III Braid head customization item.
 - Fixed an issue that caused hair shadows not to project on the ground and walls.
 - Fixed an issue that caused item charges to be consumed before the item was fully channeled.
-- survivor: ash
+- for: ash
   text: Fixed an issue that caused items to clip with {ash}'s hand customization Ashy Slashy.
 - Fixed an issue that caused players to achieve the "repair the special generator and escape" achievements if they escaped without repairing the generator, after - another player met the achievement requirements.
 - Fixed an issue that caused the "Failing Skill Checks" Tutorial message not to appear when failing a skill check on the last generator in the Survivor Tutorial.
@@ -83,7 +76,7 @@
 - Fixed an issue that caused the {meg} in the Killer Tutorial to only be able to vault over the pallet once.
 - Fixed an issue that caused the Styptic Agent Medkit add-on to be prioritized over the Anti-Hemorrhagic Syringe add-on when equipped in the first add-on slot in the Loadout.
 - Fixed an issue that could cause the Wiggle prompts to be active from the start of the match.
-- killer: plague
+- for: plague
   text: Fixed an issue that could cause the progress bar not to visually progress when Cleansing from a Pool of Devotion.
 - Fixed multiple cases that caused public matches to start with multiple Killers and/or less than 5 generators to repair.
 - Misc cosmetic clipping and improvements.

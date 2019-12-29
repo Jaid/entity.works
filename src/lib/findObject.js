@@ -122,10 +122,7 @@ export const findPatch = semver => {
   return patchesObject[semver]
 }
 
-if (process.env.NODE_ENV !== "production") {
-  console.log("Objects: ", index)
-}
-
+console.debug("Objects: ", index)
 export {index}
 
 /**

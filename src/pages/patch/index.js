@@ -63,7 +63,7 @@ export default class PatchPage extends React.Component {
     }
     return <DocumentTitle title={`Patch ${patch.semver} in Dead by Daylight`}>
       <NavigationPage links={links}>
-        <PatchBlock patch={patch}/>
+        <PatchBlock patchId={patch.id}/>
       </NavigationPage>
     </DocumentTitle>
   }

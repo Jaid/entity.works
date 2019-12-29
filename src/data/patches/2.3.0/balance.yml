@@ -4,9 +4,9 @@
 - Added new interaction prompt text for the running vault to make it more clear when to hit the input. It's pretty quick, so keep your eyes peeled. (Herman Carter laughs in the distance)
 - Adjusted the spawning rules to reduce the possibility for Survivors to spawn next to a Killer
 - Time to hook a survivor reduced from 2 seconds to 1.5 seconds. The hooking animation has been updated.
-- killer: spirit
+- for: spirit
   text: "{spirit}'s phasing audio has been adjusted: Survivors within the spirit Husk's terror radius will not hear the phasing sound. Survivors outside the Spirit Husk's terror radius can hear {spirit}'s phasing sound, but will not be able to determine its direction. Survivors will no longer be able to hear {spirit}'s breathing while she is phasing."
-- killer: [hag, nightmare, pig, shape, spirit, wraith]
+- for: hag, nightmare, pig, shape, spirit, wraith
   text: Adjusted the footstep audio for the stealthier and smaller Killers ({hag}, {nightmare}, {pig}, {shape}, {spirit} and {wraith})
 - The minimum and maximum hook rules no longer define a random range. They now specify a minimum number of hooks to spawn and a maximum that is allowed to spawn
 - Hooks will now spawn at least 20 meters away from each other (unless the minimum is not reached, no two hooks will be closer than 20 meters).
@@ -33,28 +33,28 @@
 - The recover cap has been increased from 85% to 95%.
 - Recover action speed has been increased from 40% to 50%. Recover is a form of healing, and is affected by the base healing time change. It now takes 30.4 seconds to recover to a maximum of 95%. (It previously took 25.5 seconds to recover to a maximum of 85%)
 - "Toolbox Sabotage: Removed efficiency penalty. Previously, sabotaging with a toolbox would use 3 charges per second from that toolbox. Seeing as sabotage is no longer permanent, this efficiency penalty has been removed."
-- perk: saboteur
+- for: saboteur
   text: "Seeing as toolbox sabotage no longer suffers from an item efficiency penalty, {saboteur}'s toolbox sabotage efficiency bonus has been removed. {saboteur} now causes hooks and traps sabotaged by that player to stay sabotaged for an extra {tiers:10/20/30} seconds."
 - Event specific hooks can no longer be sabotaged by Survivors.
 - "Devout: Hooking all Survivors at least once in a Trial each awards a minimum of Bronze quality in this Emblem."
 - "Chaser: Remaining within a close (16 meters) proximity of a hooked Survivor will reduce the quality of this Emblem over time. Being within 8m greatly increases this penalty. This penalty is not applied for the first 10 seconds after a Survivor is hooked. If the Killer is currently in a chase OR there are 1 or more other Survivors within a 16m radius of the hooked Survivor, the penalty is not applied. If the hooked Survivor is the last remaining Survivor in a match, the penalty is not applied."
-- perk: alert
+- for: alert
   text: "Range and cooldown have been removed, and effect duration has been adjusted. It now reads: When the Killer performs a break action, the Killer is revealed to you for {tiers:3/4/5} seconds."
-- perk: bond
+- for: bond
   text: "Increased aura reading range for levels 1 and 2. It now reads: Allies' auras are revealed to you when they are within a {tiers:20/28/36} meter range."
-- perk: ironWill
+- for: ironWill
   text: Removed the stillness condition from levels 1 and 2. Volume reduction adjusted from 75%/100%/100% to 50%/75%/100%.
-- perk: botanyKnowledge
+- for: botanyKnowledge
   text: Increased values from {tiers:10%/15%/20%} to {tiers:11%/22%/33%}.
-- perk: soleSurvivor
+- for: soleSurvivor
   text: Increased aura reading disruption ranges for all levels. Also, the perk icon will now show as activate when the perk is disrupting killer aura reading that would have revealed the player.
-- perk: saboteur
+- for: saboteur
   text: "{saboteur} now causes hooks and traps sabotaged by that player to stay sabotaged for an extra {tiers:10/20/30} seconds"
-- perk: [leader, vigil, streetwise]
+- for: leader, vigil, streetwise
   text: The effects of {leader}, {vigil} and {streetwise} now persist for 15 seconds after the perk owner is out of range
-- perk: noOneEscapesDeath
+- for: noOneEscapesDeath
   text: Survivors now suffer from the Exposed Status Effect at all levels. Movement increase bonus changed from +3%/4%/4% to +2%/3%/4%.
-- perk: makeYourChoice
+- for: makeYourChoice
   text: Changed the unhook range to 32 meters at all levels. The exposed effect now lasts for {tiers:40/50/60} seconds. Perk will stay dimmed in the HUD until at least 32 meters away from the hooked player.
-- perk: beastOfPrey
+- for: beastOfPrey
   text: The red stain disappears after gaining Bloodlust Tier I and stays hidden until you lose Bloodlust. Gain {tiers:30%/40%/50%} more Bloodpoints for actions in the Hunter category.

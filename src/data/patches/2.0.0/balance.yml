@@ -1,15 +1,15 @@
 - Adjusted the level requirements for unlocking perk slots. The 2nd, 3rd and 4th perk slots now unlock at levels 5/10/15 respectively (down from 15/20/25)
-- killer: trapper
+- for: trapper
   text: Adjusted the red aura intensity for killers on totems, bear traps, hooks and generators.
 - All characters now start with their 3 personal perks unlocked by default (at level 1)
 - Changed hook auras to always be visible from the Killer's standpoint while carrying a survivor. Prior to this change, hook auras would only be displayed if the hook was hidden behind another object.
-- killer: wraith
+- for: wraith
   text: Decreased the {wraith} flashlight uncloak stun time from 4 seconds to 3 seconds
 - Decreased the range of activation for the Killer pick up interaction
-- killer: wraith
+- for: wraith
   text: Fixed an issue that caused {wraith}'s red stain and terror radius to remain for several seconds after successfully cloaking. This change gives the {wraith} the bit of a boost that he needs, and also applies when damaging generators and destroying pallets.
 - Removed the acceleration curve when the Survivor was hit by the Killer. Removing the acceleration curve should allow the Survivors to use their default acceleration and have more control over their character during the speed boost.
-- killer: [doctor, hag]
+- for: doctor, hag
   text: Removed the possibility of spawning {doctor} or {hag} splinters in the Bloodweb because these characters can now be purchased for Iridescent Shards.
 - Added a few totem spawn points in the buildings of Macmillan Estate
 - Adjusted Torment Creek and Rancid Abattoir map layouts to create more distance between the maze tiles
@@ -40,17 +40,17 @@
         - Increased the requirement to attain Silver quality (from 1100 points to 1230 points)
         - Reduced the requirement to attain Gold quality (from 2200 points to 1800 points)
         - Reduced the requirement to attain Iridescent quality (from 3300 points to 2550 points)
-- perk: deadHard
+- for: deadHard
   text: Added an new animation to indicate that the perk is active
-- perk: deadHard
+- for: deadHard
   text: Removed the speed boost from {deadHard} while in the air. This change aims to fix a variety of game hostage issues in multiple maps
-- perk: balancedLanding
+- for: balancedLanding
   text: Added sprint of 150% for 3 seconds for all Tiers
-- perk: balancedLanding
+- for: balancedLanding
   text: Sprint causes Exhaustion for {tiers:60/50/40} seconds
-- perk: balancedLanding
+- for: balancedLanding
   text: Stagger effects from long falls are reduced by 75% for all Tiers, without cooldown
-- perk: stakeOut
+- for: stakeOut
   text: "{stakeOut}'s progression is not lost anymore when a token is consumed"
 - text: Pallet Interaction & Stun Zone changes
   points:
