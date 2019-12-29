@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import patches from "lib/patches"
-import Headline from "components/Headline"
 import PatchCategory from "components/PatchCategory"
 import PatchHeadline from "components/PatchHeadline"
 import PatchLines from "components/PatchLines"
@@ -14,8 +13,7 @@ import css from "./style.scss"
 /**
   * @typedef {{
   *   className: *,
-  *   type: string,
-  *   name: string,
+  *   referenceId: string,
   * }} Props
   */
 
@@ -32,14 +30,13 @@ export default class RelevantPatches extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    type: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    referenceId: PropTypes.string.isRequired,
   }
 
   render() {
     const filteredPatches = patches.filter(patch => {
-      for (const {references} of patch.points |> Object.values) {
-        if (references[this.props.type]?.[this.props.name] |> hasContent) {
+      for (const {references} of Object.values(patch.points)) {
+        if (hasContent(references[this.props.referenceId])) {
           return true
         }
       }
@@ -48,10 +45,10 @@ export default class RelevantPatches extends React.Component {
     const content = filteredPatches.map(patch => {
       const headline = <PatchHeadline patchInfo={patch}/>
       const categoriesWithChanges = Object.keys(patch.points).filter(category => {
-        return patch.points[category].references[this.props.type]?.[this.props.name]
+        return patch.points[category].references[this.props.referenceId]
       })
       const changes = categoriesWithChanges.map(category => {
-        const referencingChanges = patch.points[category].references[this.props.type]?.[this.props.name]
+        const referencingChanges = patch.points[category].references[this.props.referenceId]
         return <div key={category} className={css.categoryBlock}>
           <PatchCategory category={category} className={css.patchCategory}/>
           <PatchLines points={referencingChanges} showReferences/>

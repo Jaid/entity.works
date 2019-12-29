@@ -1,30 +1,16 @@
 import {camelCase} from "camel-case"
 import classnames from "classnames"
-import hasContent from "has-content"
 import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
 import DocumentTitle from "react-document-title"
 
+import findObject from "lib/findObject"
 import perks from "lib/perks"
-import PatchesForReferenceText from "components/PatchesForReferenceText"
-import PerkBlock from "components/PerkBlock"
 import RelevantPatches from "components/RelevantPatches"
 import RichText from "components/RichText"
 
 import css from "./style.scss"
-
-/**
- * @param {string} query
- * @return {import("../../lib/perks").Perk}
- */
-const findPerk = query => {
-  return perks.find(perk => perk.linkId === query)
-  || perks.find(perk => paramCase(perk.title) === query)
-  || perks.find(perk => camelCase(perk.title) === query)
-  || perks.find(perk => paramCase(perk.ingameId) === query)
-  || perks.find(perk => camelCase(perk.ingameId) === query)
-}
 
 /**
   * @typedef {{
@@ -60,14 +46,17 @@ export default class PerkPage extends React.Component {
   }
 
   render() {
-    const perk = findPerk(this.props.match.params.id)
-    if (!perk) {
-      return `No perk with id ${this.props.match.params.id} found.`
+    const referenceObject = findObject(this.props.match.params.id)
+    if (!referenceObject) {
+      return "Nothing found."
     }
-    return <DocumentTitle title={`${perk.title} · Dead by Daylight Perk`}>
+    const richTextReference = `{${referenceObject.id}}`
+    return <DocumentTitle title={`${referenceObject.title} Changelog · Dead by Daylight Patch Notes`}>
       <main className={classnames(css.container, this.props.className)}>
-        <PerkBlock perkInfo={perk} displayOwnerBox/>
-        <PatchesForReferenceText className={css.patchesText} referenceId={perk.id}/>
+        <h1>
+          <RichText>Changelog of {richTextReference}</RichText>
+        </h1>
+        <RelevantPatches referenceId={referenceObject.id}/>
       </main>
     </DocumentTitle>
   }

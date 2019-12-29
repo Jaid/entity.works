@@ -7,6 +7,7 @@ import {perksByOwner} from "lib/perks"
 import survivors from "lib/survivors"
 import Headline from "components/Headline"
 import NavigationPage from "components/NavigationPage"
+import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
 import RelevantPatches from "components/RelevantPatches"
 import RichText from "components/RichText"
@@ -76,8 +77,8 @@ export default class CharacterPage extends React.Component {
         <img className={css.icon} src={imgSrc}/>
         <RichText className={css.description}>{this.props.description}</RichText>
       </div>
+      <PatchesForReferenceText className={css.patchesText} referenceId={this.props.info.id}/>
       {perkNodes}
-      <RelevantPatches name={this.props.info.id} type={myMeta.referenceType}/>
     </NavigationPage>
   }
 

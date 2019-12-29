@@ -130,5 +130,17 @@ export {index}
  * @return {AnyDaylightObject}
  */
 export default id => {
-  return index[id]
+  const foundObjectById = index[id]
+  if (foundObjectById) {
+    return foundObjectById
+  }
+  for (const object of Object.values(index)) {
+    if (!object.linkId) {
+      continue
+    }
+    if (object.linkId === id) {
+      return object
+    }
+  }
+  return null
 }
