@@ -29,13 +29,7 @@ export default class RichText extends React.Component {
       } else if (type === "tiers") {
         return <TiersBox key={`TiersBox${index}`} tiers={content.split("/")}/>
       } else {
-        const info = findExactObject(type, content)
-        if (info) {
-          richObject = {
-            info,
-            type,
-          }
-        }
+        richObject = findObject(content)
       }
       if (richObject) {
         return <RichBox key={`RichBox${index}`} info={richObject} type={richObject.type}/>

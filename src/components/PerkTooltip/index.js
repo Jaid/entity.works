@@ -33,6 +33,7 @@ export default class PerkTooltip extends React.Component {
 
   render() {
     const perk = findObject(this.props.perkId)
+    console.log(perk)
     return <div className={classnames(css.container, this.props.className)}>
       <div className={css.banner}>
         <PerkImage className={css.icon} perkId={perk.id}/>

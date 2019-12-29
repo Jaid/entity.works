@@ -49,25 +49,46 @@ import survivors from "lib/survivors"
  * @typedef {DaylightObject & PatchInterface} Patch
  */
 
-const perksObject = perks.reduce((base, current) => {
-  base[current.id] = current
-  return base
-}, {})
+/**
+  * @type {Object<string, DaylightObject>}
+  */
+const index = {}
 
-const survivorsObject = survivors.reduce((base, survivor) => {
-  base[survivor.id] = survivor
-  return base
-}, {})
+const perksObject = {}
+for (const perk of perks) {
+  perksObject[perk.id] = perk
+  index[perk.id] = {
+    ...perk,
+    type: "perk",
+  }
+}
 
-const killersObject = killers.reduce((base, killer) => {
-  base[killer.id] = killer
-  return base
-}, {})
+const killersObject = {}
+for (const killer of killers) {
+  killersObject[killer.id] = killer
+  index[killer.id] = {
+    ...killer,
+    type: "killer",
+  }
+}
 
-const patchesObject = patches.reduce((base, patch) => {
-  base[patch.semver] = patch
-  return base
-}, {})
+const survivorsObject = {}
+for (const survivor of survivors) {
+  survivorsObject[survivor.id] = survivor
+  index[survivor.id] = {
+    ...survivor,
+    type: "survivor",
+  }
+}
+
+const patchesObject = {}
+for (const patch of patches) {
+  patchesObject[patch.id] = patch
+  index[patch.id] = {
+    ...patch,
+    type: "patch",
+  }
+}
 
 /**
  * @param {string} id
@@ -101,44 +122,16 @@ export const findPatch = semver => {
   return patchesObject[semver]
 }
 
-const objectSources = {
-  killer: {
-    list: killers,
-  },
-  survivor: {
-    list: survivors,
-  },
-  perk: {
-    list: perks,
-  },
-  patch: {
-    list: patches,
-    nameKey: "semver",
-  },
+if (process.env.NODE_ENV !== "production") {
+  console.log("Objects: ", index)
 }
 
-/**
- * @param {string} type
- * @param {string} id
- */
-export const findExactObject = (type, id) => {
-  const objectSource = objectSources[type]
-  return objectSource.list.find(needle => needle[objectSource.nameKey || "id"] === id)
-}
+export {index}
 
 /**
  * @param {string} id
  * @return {AnyDaylightObject}
  */
 export default id => {
-  for (const type of Object.keys(objectSources)) {
-    const info = findExactObject(type, id)
-    if (info) {
-      return {
-        type,
-        ...info,
-      }
-    }
-  }
-  return null
+  return index[id]
 }

@@ -24,6 +24,7 @@ const sortCategories = category => {
 export default patches => patches
   |> #.map(patch => ({
     dateMs: Number(moment(patch.date, "DD.MM.YYYY")),
+    id: patch.semver || String(Number(moment(patch.date, "DD.MM.YYYY"))),
     ...patch,
   }))
   |> #.sort((a, b) => b.dateMs - a.dateMs)

@@ -7,3 +7,4 @@ perks:
 killer: /killer/:id
 survivor: /survivor/:id
 characters: /characters
+data: /data

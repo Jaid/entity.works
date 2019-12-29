@@ -18,6 +18,7 @@ export default perks => perks.map(perk => {
     rarity: getRarity(perk.level),
     visible: true,
     linkId: perk.id |> paramCase,
+    effect: "No perk effect.",
     ...perk,
   }
 })
