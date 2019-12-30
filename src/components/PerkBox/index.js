@@ -39,7 +39,7 @@ export default class PerkBox extends React.Component {
         }}/>
       <PerkLink perkInfo={perkInfo}/>
     </span>
-    return <Tooltip html={<PerkTooltip perkId={perkInfo.id}/>} noPadding>
+    return <Tooltip html={<PerkTooltip perkId={perkInfo.id}/>} minWidth={300} noPadding>
       {text}
     </Tooltip>
   }
