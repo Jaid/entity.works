@@ -52,8 +52,6 @@
     "ajv": "^6.10.2",
     "babel-jest": "^24.9.0",
     "babel-preset-jaid": "^7.3.0",
-    "browser-sync": "^2.26.7",
-    "browser-sync-webpack-plugin": "^2.2.2",
     "browserslist-config-jaid-web": "^2.3.0",
     "caniuse-lite": "^1.0.30001017",
     "change-case": "^4.1.1",

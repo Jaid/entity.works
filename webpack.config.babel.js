@@ -1,4 +1,3 @@
-import BrowserSyncPlugin from "browser-sync-webpack-plugin"
 import {camelCase} from "camel-case"
 import filterNil from "filter-nil"
 import {paramCase} from "param-case"
@@ -92,8 +91,5 @@ export default configure({
         theme$: path.resolve(__dirname, "src", "theme.scss"),
       },
     },
-  },
-  extraDevelopment: {
-    plugins: [new BrowserSyncPlugin],
   },
 })
