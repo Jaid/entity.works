@@ -41,7 +41,7 @@ export default class Tooltip extends React.Component {
     const tooltipContent = <div className={classnames(css.container, {[css.noPadding]: this.props.noPadding}, this.props.className)}>
       {this.props.html}
     </div>
-    return <Tippy animation="perspective" content={tooltipContent} delay={100} theme="entity" touch={false} inertia interactive>
+    return <Tippy animation="perspective" content={tooltipContent} delay={100} distance={24} theme="entity" touch={false} inertia interactive>
       <span>{this.props.children}</span>
     </Tippy>
   }
