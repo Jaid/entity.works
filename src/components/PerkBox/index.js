@@ -2,7 +2,8 @@ import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 
-import perks from "lib/perks"
+import {findPerk} from "lib/findObject"
+import PerkImage from "components/PerkImage"
 import PerkLink from "components/PerkLink"
 import PerkTooltip from "components/PerkTooltip"
 import Tooltip from "components/Tooltip"
@@ -24,22 +25,15 @@ export default class PerkBox extends React.Component {
   }
 
   render() {
-    const perkInfo = perks.find(({id}) => id === this.props.perk)
-    const imgSrc = require(`../../data/perks/${this.props.perk}/icon.png`).default
-    const backgroundSrc = require(`../../data/perkBackgrounds/${perkInfo.rarity}.png`).default
+    const perk = findPerk(this.props.perk)
     const text = <span className={classnames(css.container, this.props.className, {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <img className={css.icon}
-        src={imgSrc}
-        style={{
-          background: `url(${backgroundSrc})`,
-          backgroundSize: "cover",
-        }}/>
-      <PerkLink perkInfo={perkInfo}/>
+      <PerkImage className={css.icon} perkId={perk.id}/>
+      <PerkLink perkInfo={perk}/>
     </span>
-    return <Tooltip html={<PerkTooltip perkId={perkInfo.id}/>} minWidth={300} noPadding>
+    return <Tooltip html={<PerkTooltip perkId={perk.id}/>} minWidth={300} noPadding>
       {text}
     </Tooltip>
   }
