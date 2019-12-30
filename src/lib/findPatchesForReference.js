@@ -6,13 +6,16 @@ export default id => {
     for (const [categoryName, {points, references}] of Object.entries(patch.points)) {
       if (references[id]) {
         if (!filteredPatches[patch.id]) {
-          filteredPatches[patch.id] = {}
+          filteredPatches[patch.id] = {
+            ...patch,
+            points: {},
+          }
         }
         const filteredPoints = points.filter(point => {
           const pointReferences = point.for || []
           return pointReferences.includes(id)
         })
-        filteredPatches[patch.id][categoryName] = filteredPoints
+        filteredPatches[patch.id].points[categoryName] = filteredPoints
       }
     }
   }

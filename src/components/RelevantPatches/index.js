@@ -1,9 +1,10 @@
 import classnames from "classnames"
-import hasContent from "has-content"
 import PropTypes from "prop-types"
 import React from "react"
+import {Link} from "react-router-dom"
 
-import patches from "lib/patches"
+import findObject from "lib/findObject"
+import findPatchesForReference from "lib/findPatchesForReference"
 import PatchCategory from "components/PatchCategory"
 import PatchHeadline from "components/PatchHeadline"
 import PatchLines from "components/PatchLines"
@@ -34,27 +35,22 @@ export default class RelevantPatches extends React.Component {
   }
 
   render() {
-    const filteredPatches = patches.filter(patch => {
-      for (const {references} of Object.values(patch.points)) {
-        if (hasContent(references[this.props.referenceId])) {
-          return true
-        }
-      }
-      return false
-    })
-    const content = filteredPatches.map(patch => {
+    const object = findObject(this.props.referenceId)
+    const patches = findPatchesForReference(object.id)
+    const content = Object.values(patches).map(patch => {
+      console.log(patch)
       const headline = <PatchHeadline patchInfo={patch}/>
-      const categoriesWithChanges = Object.keys(patch.points).filter(category => {
-        return patch.points[category].references[this.props.referenceId]
-      })
-      const changes = categoriesWithChanges.map(category => {
-        const referencingChanges = patch.points[category].references[this.props.referenceId]
+      const changes = Object.keys(patch.points).map(category => {
         return <div key={category} className={css.categoryBlock}>
           <PatchCategory category={category} className={css.patchCategory}/>
-          <PatchLines points={referencingChanges} showReferences/>
+          <PatchLines points={patch.points[category]} showReferences/>
         </div>
       })
-      return <div key={patch.semver} className={css.patchBlock}>{headline}{changes}</div>
+      return <div key={patch.semver} className={css.patchBlock}>
+        {headline}
+        {changes}
+        <Link to={`/patch/${patch.linkId}`}>View full patch {patch.semver}</Link>
+      </div>
     })
     return <div className={classnames(css.container, this.props.className)}>
       {content}
