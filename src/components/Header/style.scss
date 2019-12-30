@@ -51,13 +51,7 @@
   }
 
   .nav {
-    float          : unset;
-    width          : 100vw;
-    justify-content: space-around;
-
-    >* {
-      font-size: 130%;
-    }
+    display: none;
   }
 
   .container {

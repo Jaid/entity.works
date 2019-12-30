@@ -8,6 +8,7 @@ import zahl from "zahl"
 import findObject from "lib/findObject"
 import findPatchesForReferenece from "lib/findPatchesForReference"
 import RichText from "components/RichText"
+import TextSection from "components/TextSection"
 
 import css from "./style.scss"
 
@@ -42,9 +43,9 @@ export default class PatchesForReferenceText extends React.Component {
     }
     const richText = `{${object.id}}`
     const richBox = <RichText>{richText}</RichText>
-    return <div className={classnames(css.container, this.props.className)}>
+    return <TextSection className={classnames(css.container, this.props.className)}>
       <Link to={`/patches/for/${object.linkId}`}>{zahl(patches, "patch")}</Link> affected {richBox}.
-    </div>
+    </TextSection>
   }
 
 }

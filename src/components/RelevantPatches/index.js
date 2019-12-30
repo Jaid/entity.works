@@ -8,6 +8,7 @@ import findPatchesForReference from "lib/findPatchesForReference"
 import PatchCategory from "components/PatchCategory"
 import PatchHeadline from "components/PatchHeadline"
 import PatchLines from "components/PatchLines"
+import TextSection from "components/TextSection"
 
 import css from "./style.scss"
 
@@ -38,7 +39,6 @@ export default class RelevantPatches extends React.Component {
     const object = findObject(this.props.referenceId)
     const patches = findPatchesForReference(object.id)
     const content = Object.values(patches).map(patch => {
-      console.log(patch)
       const headline = <PatchHeadline patchInfo={patch}/>
       const changes = Object.keys(patch.points).map(category => {
         return <div key={category} className={css.categoryBlock}>
@@ -49,7 +49,9 @@ export default class RelevantPatches extends React.Component {
       return <div key={patch.semver} className={css.patchBlock}>
         {headline}
         {changes}
-        <Link to={`/patch/${patch.linkId}`}>View full patch {patch.semver}</Link>
+        <TextSection>
+          <Link to={`/patch/${patch.linkId}`}>View full patch {patch.semver}</Link>
+        </TextSection>
       </div>
     })
     return <div className={classnames(css.container, this.props.className)}>

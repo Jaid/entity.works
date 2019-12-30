@@ -32,15 +32,13 @@ img {
   background: rgb(146, 22, 22);
 }
 
-:global {
-  a {
-    color          : rgb(59, 189, 98);
-    text-decoration: none;
-  }
+a {
+  color          : rgb(59, 189, 98);
+  text-decoration: none;
+}
 
-  a:hover {
-    color: rgb(112, 231, 148);
-  }
+a:hover {
+  color: rgb(112, 231, 148);
 }
 
 @media only screen and (max-width: 768px) {
@@ -53,5 +51,14 @@ img {
   body {
     font-size : initial;
     overflow-x: hidden;
+  }
+
+  h1 {
+    font-size    : 28px;
+    text-align   : center;
+    margin-left  : 12px;
+    margin-right : 12px;
+    margin-top   : 12px;
+    margin-bottom: 32px;
   }
 }
