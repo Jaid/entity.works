@@ -1,6 +1,5 @@
 import {camelCase} from "camel-case"
 import classnames from "classnames"
-import hasContent from "has-content"
 import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
@@ -9,8 +8,6 @@ import DocumentTitle from "react-document-title"
 import perks from "lib/perks"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
-import RelevantPatches from "components/RelevantPatches"
-import RichText from "components/RichText"
 
 import css from "./style.scss"
 
