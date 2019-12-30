@@ -1,4 +1,4 @@
-Life has taught you the importance of friendship which has given you strength.
+{flavor:Life has taught you the importance of friendship which has given you strength.}
 
 While you are on the hook in the struggle phase, {this} activates.
 

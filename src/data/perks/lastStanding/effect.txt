@@ -1,1 +1,0 @@
-For each Survivor escaped or killed, your Action speed is increased by {tiers:7.5%/15%/25%}.

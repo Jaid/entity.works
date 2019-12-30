@@ -4,7 +4,8 @@ import React from "react"
 import reactStringReplace from "react-string-replace"
 import splitOnFirst from "split-on-first"
 
-import findObject, {findExactObject} from "lib/findObject"
+import findObject from "lib/findObject"
+import FlavorText from "components/FlavorText"
 import RichBox from "components/RichBox"
 import TiersBox from "components/TiersBox"
 
@@ -28,6 +29,8 @@ export default class RichText extends React.Component {
         richObject = findObject(token)
       } else if (type === "tiers") {
         return <TiersBox key={`TiersBox${index}`} tiers={content.split("/")}/>
+      } else if (type === "flavor") {
+        return <FlavorText key={`FlavorText${index}`} content={content}/>
       } else {
         richObject = findObject(content)
       }

@@ -1,4 +1,4 @@
-Your distressing presence drains and weakens your prey.
+{flavor:Your distressing presence drains and weakens your prey.}
 
 While repairing generators with less than 50% repair progression, Survivors are afflicted by the Exhausted status effect.
 
