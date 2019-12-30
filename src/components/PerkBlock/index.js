@@ -79,7 +79,7 @@ export default class PerkBlock extends React.Component {
             {getOwnerNode()}
           </div>
           <RichText className={css.effect}>
-            {replaceString(this.props.perkInfo.effect, "{this}", /{this}/g, this.props.perkInfo.title)}
+            {replaceString(this.props.perkInfo.effect, "{this}", `{${this.props.perkInfo.id}}`)}
           </RichText>
         </div>
       </section>
