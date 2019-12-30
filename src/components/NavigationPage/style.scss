@@ -2,9 +2,12 @@
   display: flex;
 }
 
+.desktopNavigation {
+  width: 160px;
+}
+
 .navigation {
-  min-width  : 120px;
-  max-width  : 200px;
+  width      : 160px;
   user-select: none;
 }
 
@@ -29,12 +32,13 @@
   }
 
   .navigation {
-    min-width    : unset;
-    max-width    : unset;
-    font-size    : 130%;
-    display      : flex;
-    flex-wrap    : wrap;
-    margin-bottom: 1em;
+    display         : none;
+    min-width       : unset;
+    max-width       : unset;
+    font-size       : 130%;
+    // display      : flex;
+    flex-wrap       : wrap;
+    margin-bottom   : 1em;
   }
 
   .link {

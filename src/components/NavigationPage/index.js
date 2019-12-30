@@ -2,6 +2,7 @@ import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 import {NavLink} from "react-router-dom"
+import Sticky from "wil-react-sticky"
 
 import css from "./style.scss"
 
@@ -49,7 +50,11 @@ export default class NavigationPage extends React.Component {
       return <NavLink key={text} activeClassName={css.activeLink} className={css.link} to={to}>{text}</NavLink>
     })
     return <main className={classnames(css.container, this.props.className)}>
-      <nav className={classnames(css.navigation, this.props.navigationClassName)}>{linkNodes}</nav>
+      <div className={css.desktopNavigation}>
+        <Sticky>
+          <nav className={classnames(css.navigation, this.props.navigationClassName)}>{linkNodes}</nav>
+        </Sticky>
+      </div>
       <section className={classnames(css.content, this.props.contentClassName)}>{this.props.children}</section>
     </main>
   }

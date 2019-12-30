@@ -43,6 +43,7 @@
     "sentence-case": "^3.0.3",
     "split-on-first": "^2.0.0",
     "title-case": "^3.0.2",
+    "wil-react-sticky": "^1.0.3",
     "zahl": "^2.0.6"
   },
   "devDependencies": {
