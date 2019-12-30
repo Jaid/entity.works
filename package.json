@@ -72,7 +72,7 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "start": "browserSync=1 webpackPort=1212 NODE_ENV=development webpack-dev-server",
+    "start": "browserSync=5522 webpackPort=1212 NODE_ENV=development webpack-dev-server",
     "build:prod": "NODE_ENV=production webpack",
     "build:dev": "NODE_ENV=development webpack",
     "prepareActionJest": "npm run build:prod"
