@@ -45,11 +45,13 @@ export default class PerksPage extends React.Component {
 
   render() {
     const visiblePerks = perks.filter(({visible}) => visible)
+    const killerPerks = visiblePerks.filter(perk => perk.for === "killer")
+    const survivorPerks = visiblePerks.filter(perk => perk.for === "survivor")
     const filteredPerks = do {
       if (this.props.match.params.type === "killer") {
-        visiblePerks.filter(perk => perk.for === "killer")
+        killerPerks
       } else if (this.props.match.params.type === "survivor") {
-        visiblePerks.filter(perk => perk.for === "survivor")
+        survivorPerks
       } else {
         visiblePerks
       }
@@ -59,15 +61,19 @@ export default class PerksPage extends React.Component {
     })
     const links = [
       {
-        text: "Killers",
+        text: `Killer (${killerPerks.length})`,
         to: "/perks/killer",
       },
       {
-        text: "Survivors",
+        text: `Survivor  (${survivorPerks.length})`,
         to: "/perks/survivor",
       },
+      {
+        text: `All (${visiblePerks.length})`,
+        to: "/perks/all",
+      },
     ]
-    return <DocumentTitle title={`${this.props.match.params.type |> capitalize} perks in Dead by Daylight`}>
+    return <DocumentTitle title={`${this.props.match.params.type |> capitalize} Perks - Dead by Daylight Perks`}>
       <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
         {perkBlocks}
       </NavigationPage>
