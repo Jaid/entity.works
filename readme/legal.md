@@ -1,0 +1,1 @@
+Contains official Dead by Daylight content. Copyright by [Behaviour Interactive](https://bhvr.com/).
