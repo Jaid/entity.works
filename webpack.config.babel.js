@@ -91,5 +91,10 @@ export default configure({
         theme$: path.resolve(__dirname, "src", "theme.scss"),
       },
     },
+    plugins: [
+      new EnvironmentPlugin({
+        backendHost: "server.entity.works",
+      }),
+    ],
   },
 })
