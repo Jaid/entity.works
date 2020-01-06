@@ -2,6 +2,7 @@ import {camelCase} from "camel-case"
 import filterNil from "filter-nil"
 import {paramCase} from "param-case"
 import path from "path"
+import {EnvironmentPlugin} from "webpack"
 import configure from "webpack-config-jaid"
 
 import killersJob from "./src/data/killers"

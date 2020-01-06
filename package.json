@@ -20,8 +20,8 @@
     "has-content": "^1.1.0",
     "history": "^4.10.1",
     "immer": "^5.1.0",
+    "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
-    "magina": "^1.1.0",
     "modern-normalize": "^0.6.0",
     "moment": "^2.24.0",
     "position-in-range": "^1.0.0",
@@ -72,7 +72,7 @@
   },
   "scripts": {
     "clean": "rimraf dist/",
-    "start": "backendHost=13251 browserSync=5522 webpackPort=1212 NODE_ENV=development webpack-dev-server",
+    "start": "backendHost=ws://localhost:13251 browserSync=5522 webpackPort=1212 NODE_ENV=development webpack-dev-server",
     "build:prod": "NODE_ENV=production webpack",
     "build:dev": "NODE_ENV=development webpack",
     "prepareActionJest": "npm run build:prod"
