@@ -7,7 +7,7 @@ if (GOOGLE_ANALYTICS_TRACKING_ID) {
     gaOptions: {
       siteSpeedSampleRate: 20,
     },
-    gaAddress: "https://ga.jaid.codes/script/index.js",
+    gaAddress: "https://static.jaid.codes/ga/index.js",
   })
   ReactGoogleAnalytics.pageview(window.location.pathname + window.location.search)
   history.listen(location => {
