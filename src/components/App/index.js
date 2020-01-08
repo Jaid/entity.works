@@ -1,4 +1,5 @@
 import "fork-awesome/css/fork-awesome.min.css"
+import "./analytics"
 
 import {ensureArray} from "magina"
 import React from "react"
@@ -14,15 +15,6 @@ import Header from "components/Header"
 import history from "./history"
 import routes from "./routes.yml"
 import css from "./style.scss"
-
-if (GOOGLE_ANALYTICS_TRACKING_ID) {
-  ReactGoogleAnalytics.initialize(GOOGLE_ANALYTICS_TRACKING_ID)
-  ReactGoogleAnalytics.pageview(window.location.pathname + window.location.search)
-  history.listen(location => {
-    ReactGoogleAnalytics.set({page: location.pathname})
-    ReactGoogleAnalytics.pageview(location.pathname)
-  })
-}
 
 export default class App extends React.Component {
 
