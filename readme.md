@@ -1,10 +1,13 @@
 # Entity Works
 
 
-<a href="https://actions-badge.atrox.dev/Jaid/entity.works/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fentity.works%2Fbadge" alt="Build status"/></a> <a href="https://raw.githubusercontent.com/Jaid/entity.works/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/entity.works?style=flat-square" alt="License"/></a>  
-<a href="https://github.com/Jaid/entity.works/commits"><img src="https://img.shields.io/github/commits-since/Jaid/entity.works/v2.19.0?style=flat-square&logo=github" alt="Commits since v2.19.0"/></a> <a href="https://github.com/Jaid/entity.works/commits"><img src="https://img.shields.io/github/last-commit/Jaid/entity.works?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/entity.works/issues"><img src="https://img.shields.io/github/issues/Jaid/entity.works?style=flat-square&logo=github" alt="Issues"/></a>  
+<a href="https://raw.githubusercontent.com/Jaid/entity.works/master/license.txt"><img src="https://img.shields.io/github/license/Jaid/entity.works?style=flat-square" alt="License"/></a>  
+<a href="https://actions-badge.atrox.dev/Jaid/entity.works/goto"><img src="https://img.shields.io/endpoint.svg?style=flat-square&url=https%3A%2F%2Factions-badge.atrox.dev%2FJaid%2Fentity.works%2Fbadge" alt="Build status"/></a> <a href="https://github.com/Jaid/entity.works/commits"><img src="https://img.shields.io/github/commits-since/Jaid/entity.works/v2.19.0?style=flat-square&logo=github" alt="Commits since v2.19.0"/></a> <a href="https://github.com/Jaid/entity.works/commits"><img src="https://img.shields.io/github/last-commit/Jaid/entity.works?style=flat-square&logo=github" alt="Last commit"/></a> <a href="https://github.com/Jaid/entity.works/issues"><img src="https://img.shields.io/github/issues/Jaid/entity.works?style=flat-square&logo=github" alt="Issues"/></a>  
 
 **A moderately/considerably/tremendously modern Dead by Daylight wiki.**
+
+
+
 
 
 
