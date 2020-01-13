@@ -78,5 +78,9 @@
     "prepareActionJest": "npm run build:prod"
   },
   "description": "A moderately/considerably/tremendously modern Dead by Daylight wiki.",
-  "funding": "https://github.com/sponsors/jaid"
+  "funding": "https://github.com/sponsors/jaid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaid/entity.works"
+  }
 }
