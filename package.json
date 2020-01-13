@@ -77,5 +77,6 @@
     "build:dev": "NODE_ENV=development webpack",
     "prepareActionJest": "npm run build:prod"
   },
-  "description": "A moderately/considerably/tremendously modern Dead by Daylight wiki."
+  "description": "A moderately/considerably/tremendously modern Dead by Daylight wiki.",
+  "funding": "https://github.com/sponsors/jaid"
 }
