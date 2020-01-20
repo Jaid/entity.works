@@ -8,24 +8,18 @@ import {withRouter} from "react-router"
 import killers from "lib/killers"
 import perks from "lib/perks"
 import survivors from "lib/survivors"
+import PerkImage from "components/PerkImage"
 
 import css from "./style.scss"
 
 const entries = []
 
 for (const perk of perks.filter(({visible}) => Boolean(visible))) {
-  const imgSrc = require(`../../data/perks/${perk.id}/icon.png`).default
-  const backgroundSrc = require(`../../data/perkBackgrounds/${perk.rarity}.png`).default
   entries.push({
     id: perk.id,
     title: perk.title,
     type: "perk",
-    getImage: () => <Picture className={css.entryImage}
-      input={imgSrc}
-      style={{
-        background: `url(${backgroundSrc})`,
-        backgroundSize: "cover",
-      }}/>,
+    getImage: () => <PerkImage className={css.entryImage} perkId={perk.id}/>,
     link: `/perk/${perk.linkId}`,
   })
 }
