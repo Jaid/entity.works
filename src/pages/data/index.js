@@ -3,6 +3,7 @@ import React from "react"
 
 import {index} from "lib/findObject"
 import RichText from "components/RichText"
+import Title from "components/Title"
 
 import css from "./style.scss"
 
@@ -54,11 +55,14 @@ export default class SurvivorPage extends React.Component {
         </td>
       </tr>
     })
-    return <table className={css.table}>
-      <tbody>
-        {content}
-      </tbody>
-    </table>
+    return <main>
+      <Title>Data</Title>
+      <table className={css.table}>
+        <tbody>
+          {content}
+        </tbody>
+      </table>
+    </main>
   }
 
 }

@@ -1,16 +1,12 @@
 import classnames from "classnames"
-import moment from "moment"
 import PropTypes from "prop-types"
 import React from "react"
-
-import Headline from "components/Headline"
 
 import css from "./style.scss"
 
 /**
   * @typedef {{
-  *  className: *,
-  *  patchInfo: Object,
+  *   className: *,
   * }} Props
   */
 
@@ -18,7 +14,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class PatchHeadline extends React.Component {
+export default class Title extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -27,12 +23,13 @@ export default class PatchHeadline extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    patchInfo: PropTypes.object.isRequired,
+    children: PropTypes.node,
   }
 
   render() {
-    const agoString = `Released ${moment(this.props.patchInfo.dateMs).fromNow()}`
-    return <Headline miniText={agoString}>{this.props.patchInfo.semver}</Headline>
+    return <h1 className={classnames(this.props.className)}>
+      {this.props.children}
+    </h1>
   }
 
 }

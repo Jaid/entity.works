@@ -1,14 +1,10 @@
-import {camelCase} from "camel-case"
-import classnames from "classnames"
-import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
 import findObject from "lib/findObject"
-import perks from "lib/perks"
 import RelevantPatches from "components/RelevantPatches"
-import RichText from "components/RichText"
+import RichTitle from "components/RichTitle"
 
 import css from "./style.scss"
 
@@ -55,9 +51,7 @@ export default class PerkPage extends React.Component {
       <Helmet>
         <title>{referenceObject.title} Changelog | Dead by Daylight Patch Notes</title>
       </Helmet>
-      <h1>
-        <RichText>Changelog of {richTextReference}</RichText>
-      </h1>
+      <RichTitle>Changelog of {richTextReference}</RichTitle>
       <RelevantPatches referenceId={referenceObject.id}/>
     </main>
   }

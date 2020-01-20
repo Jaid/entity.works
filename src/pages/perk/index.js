@@ -8,6 +8,7 @@ import {Helmet} from "react-helmet"
 import perks from "lib/perks"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
+import Title from "components/Title"
 
 import css from "./style.scss"
 
@@ -65,6 +66,7 @@ export default class PerkPage extends React.Component {
       <Helmet>
         <title>{perk.title} | Dead by Daylight Perk</title>
       </Helmet>
+      <Title>{perk.title}</Title>
       <PerkBlock perkInfo={perk} displayOwnerBox/>
       <PatchesForReferenceText className={css.patchesText} referenceId={perk.id}/>
     </main>

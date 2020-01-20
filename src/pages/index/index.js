@@ -1,4 +1,3 @@
-import classnames from "classnames"
 import moment from "moment"
 import positionInRange from "position-in-range"
 import PropTypes from "prop-types"

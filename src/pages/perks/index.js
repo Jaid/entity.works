@@ -7,6 +7,7 @@ import {Helmet} from "react-helmet"
 import perks from "lib/perks"
 import NavigationPage from "components/NavigationPage"
 import PerkBlock from "components/PerkBlock"
+import Title from "components/Title"
 
 import css from "./style.scss"
 
@@ -73,11 +74,13 @@ export default class PerksPage extends React.Component {
         to: "/perks/all",
       },
     ]
+    const pageTitle = `${capitalize(this.props.match.params.type)} Perks`
     return <main>
       <Helmet>
-        <title>{capitalize(this.props.match.params.type)} Perks | Dead by Daylight Perks</title>
+        <title>{pageTitle} Perks | Dead by Daylight Perks</title>
       </Helmet>
       <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
+        <Title>{pageTitle}</Title>
         {perkBlocks}
       </NavigationPage>
     </main>

@@ -6,6 +6,7 @@ import {Helmet} from "react-helmet"
 
 import killers from "lib/killers"
 import CharacterPage from "components/CharacterPage"
+import Title from "components/Title"
 
 import css from "./style.scss"
 

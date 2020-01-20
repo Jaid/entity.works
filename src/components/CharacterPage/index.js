@@ -12,6 +12,7 @@ import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
 import RelevantPatches from "components/RelevantPatches"
 import RichText from "components/RichText"
+import Title from "components/Title"
 
 import css from "./style.scss"
 
@@ -71,6 +72,7 @@ export default class CharacterPage extends React.Component {
     })
     const imgSrc = require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`).default
     return <NavigationPage links={links}>
+      <Title>{this.props.info[myMeta.titleKey]}</Title>
       <Headline miniText={myMeta.overText || this.props.info[myMeta.overTextKey]} theme={this.props.type}>
         {this.props.info[myMeta.titleKey]}
       </Headline>

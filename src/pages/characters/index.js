@@ -10,6 +10,7 @@ import survivors from "lib/survivors"
 import KillerBox from "components/KillerBox"
 import PerkBox from "components/PerkBox"
 import SurvivorBox from "components/SurvivorBox"
+import Title from "components/Title"
 
 import css from "./style.scss"
 
@@ -71,8 +72,9 @@ export default class CharactersPage extends React.Component {
     ])
     return <main>
       <Helmet>
-        <title>Characters and Perks | Dead by Daylight</title>
+        <title>Characters and Perks Overview | Dead by Daylight</title>
       </Helmet>
+      <Title>Characters</Title>
       <table className={css.characterList}>
         <tbody>{characterGroupNodes}</tbody>
       </table>

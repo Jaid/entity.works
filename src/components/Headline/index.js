@@ -38,7 +38,7 @@ export default class Headline extends React.Component {
   render() {
     return <div className={classnames(css.container, css[`${this.props.theme}Theme`], this.props.className)}>
       <div className={css.overTitle}>{this.props.miniText}</div>
-      <div className={css.title}>{this.props.children}</div>
+      <h2 className={css.title}>{this.props.children}</h2>
     </div>
   }
 

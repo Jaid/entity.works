@@ -7,6 +7,7 @@ import {NavLink} from "react-router-dom"
 import patches from "lib/patches"
 import NavigationPage from "components/NavigationPage"
 import PatchBlock from "components/PatchBlock"
+import Title from "components/Title"
 
 import css from "./style.scss"
 
@@ -66,6 +67,7 @@ export default class PatchPage extends React.Component {
         <title>{patch.semver} | Dead by Daylight Patch Notes</title>
       </Helmet>
       <NavigationPage links={links}>
+        <Title>{patch.title || `Patch ${patch.semver}`}</Title>
         <PatchBlock patchId={patch.id}/>
       </NavigationPage>
     </main>
