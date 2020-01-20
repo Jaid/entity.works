@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import {Helmet} from "react-helmet"
 import zahl from "zahl"
 
 import killers from "lib/killers"
@@ -68,7 +69,10 @@ export default class CharactersPage extends React.Component {
         </td>)}
       </tr>),
     ])
-    return <main className={classnames(css.container, this.props.className)}>
+    return <main>
+      <Helmet>
+        <title>Characters and Perks | Dead by Daylight</title>
+      </Helmet>
       <table className={css.characterList}>
         <tbody>{characterGroupNodes}</tbody>
       </table>

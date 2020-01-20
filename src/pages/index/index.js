@@ -94,7 +94,7 @@ export default class IndexPage extends React.Component {
       <div className={css.linkBoxCount}>{count}</div>
       <div className={css.linkBoxText}>{text}</div>
     </Link>)
-    return <main className={classnames(css.container, this.props.className)}>
+    return <main>
       <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>
       <nav className={css.linkList}>
         {linkBoxes}
