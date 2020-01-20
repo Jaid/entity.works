@@ -14,6 +14,7 @@ export default class KillerBox extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
+    imageClassName: PropTypes.string,
     killer: PropTypes.string.isRequired,
     large: PropTypes.bool,
     inline: PropTypes.bool,
@@ -31,7 +32,7 @@ export default class KillerBox extends React.Component {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <Picture className={css.icon} input={imgSrc}/>
+      <Picture className={classnames(css.icon, this.props.imageClassName)} input={imgSrc}/>
       <KillerLink info={info}>{this.props.large ? info.title : info.shortTitle}</KillerLink>
     </span>
     return <Tooltip html={<KillerTooltip info={info}/>} noPadding>{content}</Tooltip>

@@ -14,6 +14,7 @@ export default class SurvivorBox extends React.Component {
 
   static propTypes = {
     className: PropTypes.string,
+    imageClassName: PropTypes.string,
     survivor: PropTypes.string.isRequired,
     large: PropTypes.bool,
     inline: PropTypes.bool,
@@ -31,7 +32,7 @@ export default class SurvivorBox extends React.Component {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <Picture className={css.icon} input={imgSrc}/>
+      <Picture className={classnames(css.icon, this.props.imageClassName)} input={imgSrc}/>
       <SurvivorLink info={info}>{info.shortTitle}</SurvivorLink>
     </span>
     return <Tooltip html={<SurvivorTooltip info={info}/>} noPadding>{content}</Tooltip>

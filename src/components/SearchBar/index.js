@@ -20,7 +20,8 @@ for (const perk of perks.filter(({visible}) => Boolean(visible))) {
     id: perk.id,
     title: perk.title,
     type: "perk",
-    getImage: () => <Picture input={imgSrc}
+    getImage: () => <Picture className={css.entryImage}
+      input={imgSrc}
       style={{
         background: `url(${backgroundSrc})`,
         backgroundSize: "cover",
@@ -35,7 +36,7 @@ for (const killer of killers) {
     id: killer.id,
     title: killer.title,
     type: "killer",
-    getImage: () => <Picture input={imgSrc}/>,
+    getImage: () => <Picture className={css.entryImage} input={imgSrc}/>,
     link: `/killer/${killer.linkId}`,
   })
 }
@@ -46,7 +47,7 @@ for (const survivor of survivors) {
     id: survivor.id,
     title: survivor.title,
     type: "survivor",
-    getImage: () => <Picture input={imgSrc}/>,
+    getImage: () => <Picture className={css.entryImage} input={imgSrc}/>,
     link: `/survivor/${survivor.linkId}`,
   })
 }

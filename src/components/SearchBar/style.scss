@@ -36,12 +36,12 @@
     transition: none;
     color     : black;
   }
+}
 
-  &>img {
-    width       : 2.5em;
-    height      : auto;
-    margin-right: 0.5em;
-  }
+.entryImage {
+  width       : 2.5em;
+  height      : auto;
+  margin-right: 0.5em;
 }
 
 .killerEntry {

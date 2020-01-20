@@ -62,10 +62,10 @@ export default class CharactersPage extends React.Component {
       </tr>,
       list.map(character => <tr key={character.id} className={classnames(css.characterEntry, css[id])}>
         <td>
-          <Box className={css.characterBox} inline={false} {...{[boxKey]: character.id}}/>
+          <Box className={css.characterBox} imageClassName={css.characterBoxImage} inline={false} {...{[boxKey]: character.id}}/>
         </td>
         {perksByOwner(character.id).map(perk => <td key={perk.level} className={css.perkCell}>
-          <PerkBox className={css.perkBox} inline={false} perk={perk.id}/>
+          <PerkBox className={css.perkBox} imageClassName={css.perkBoxImage} inline={false} perk={perk.id}/>
         </td>)}
       </tr>),
     ])
