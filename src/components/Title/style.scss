@@ -1,11 +1,11 @@
-h1 {
+.container {
   font-size    : 48px;
   margin-bottom: 60px;
 }
 
 @media only screen and (max-width: 768px) {
 
-  h1 {
+  .container {
     font-size    : 28px;
     text-align   : center;
     margin-left  : 12px;

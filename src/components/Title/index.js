@@ -27,7 +27,7 @@ export default class Title extends React.Component {
   }
 
   render() {
-    return <h1 className={classnames(this.props.className)}>
+    return <h1 className={classnames(this.props.className, css.container)}>
       {this.props.children}
     </h1>
   }
