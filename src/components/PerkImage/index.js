@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import Picture from "react-modern-picture"
 
 import findObject from "lib/findObject"
 
@@ -32,8 +33,8 @@ export default class PerkImage extends React.Component {
     const perk = findObject(this.props.perkId)
     const imgSrc = require(`../../data/perks/${perk.id}/icon.png`).default
     const backgroundSrc = require(`../../data/perkBackgrounds/${perk.rarity}.png`).default
-    return <img className={classnames(css.element, this.props.className)}
-      src={imgSrc}
+    return <Picture className={classnames(css.element, this.props.className)}
+      input={imgSrc}
       style={{
         backgroundImage: `url(${backgroundSrc})`,
       }}/>

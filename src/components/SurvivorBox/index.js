@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import Picture from "react-modern-picture"
 
 import survivors from "lib/survivors"
 import SurvivorLink from "components/SurvivorLink"
@@ -30,7 +31,7 @@ export default class SurvivorBox extends React.Component {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <img className={css.icon} src={imgSrc}/>
+      <Picture className={css.icon} input={imgSrc}/>
       <SurvivorLink info={info}>{info.shortTitle}</SurvivorLink>
     </span>
     return <Tooltip html={<SurvivorTooltip info={info}/>} noPadding>{content}</Tooltip>

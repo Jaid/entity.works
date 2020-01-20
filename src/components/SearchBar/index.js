@@ -2,6 +2,7 @@ import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 import Autosuggest from "react-autosuggest"
+import Picture from "react-modern-picture"
 import {withRouter} from "react-router"
 
 import killers from "lib/killers"
@@ -19,7 +20,7 @@ for (const perk of perks.filter(({visible}) => Boolean(visible))) {
     id: perk.id,
     title: perk.title,
     type: "perk",
-    getImage: () => <img src={imgSrc}
+    getImage: () => <Picture input={imgSrc}
       style={{
         background: `url(${backgroundSrc})`,
         backgroundSize: "cover",
@@ -34,7 +35,7 @@ for (const killer of killers) {
     id: killer.id,
     title: killer.title,
     type: "killer",
-    getImage: () => <img src={imgSrc}/>,
+    getImage: () => <Picture input={imgSrc}/>,
     link: `/killer/${killer.linkId}`,
   })
 }
@@ -45,7 +46,7 @@ for (const survivor of survivors) {
     id: survivor.id,
     title: survivor.title,
     type: "survivor",
-    getImage: () => <img src={imgSrc}/>,
+    getImage: () => <Picture input={imgSrc}/>,
     link: `/survivor/${survivor.linkId}`,
   })
 }

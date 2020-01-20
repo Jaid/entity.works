@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import Picture from "react-modern-picture"
 
 import killers from "lib/killers"
 import {perksByOwner} from "lib/perks"
@@ -74,7 +75,7 @@ export default class CharacterPage extends React.Component {
         {this.props.info[myMeta.titleKey]}
       </Headline>
       <div className={css.introduction}>
-        <img className={css.icon} src={imgSrc}/>
+        <Picture className={css.icon} input={imgSrc}/>
         <RichText className={css.description}>{this.props.description}</RichText>
       </div>
       <PatchesForReferenceText className={css.patchesText} referenceId={this.props.info.id}/>

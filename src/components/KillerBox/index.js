@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import Picture from "react-modern-picture"
 
 import killers from "lib/killers"
 import KillerLink from "components/KillerLink"
@@ -30,7 +31,7 @@ export default class KillerBox extends React.Component {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <img className={css.icon} src={imgSrc}/>
+      <Picture className={css.icon} input={imgSrc}/>
       <KillerLink info={info}>{this.props.large ? info.title : info.shortTitle}</KillerLink>
     </span>
     return <Tooltip html={<KillerTooltip info={info}/>} noPadding>{content}</Tooltip>

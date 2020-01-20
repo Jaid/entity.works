@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import Picture from "react-modern-picture"
 import {Link} from "react-router-dom"
 
 import {charactersLink, patchesLink, survivorPerksLink} from "lib/links"
@@ -33,7 +34,7 @@ export default class Header extends React.Component {
 
   render() {
     return <div className={classnames(css.container, this.props.className)}>
-      <img className={css.icon} src={icon}/>
+      <Picture className={css.icon} input={icon}/>
       <Link className={css.title} to="/"><span className={css.entity}>Entity</span><span className={css.works}>Works</span></Link>
       <nav className={css.nav}>
         <Link to={charactersLink}>Characters</Link>
