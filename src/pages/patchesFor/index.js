@@ -3,7 +3,7 @@ import classnames from "classnames"
 import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
-import DocumentTitle from "react-document-title"
+import {Helmet} from "react-helmet"
 
 import findObject from "lib/findObject"
 import perks from "lib/perks"
@@ -51,14 +51,15 @@ export default class PerkPage extends React.Component {
       return "Nothing found."
     }
     const richTextReference = `{${referenceObject.id}}`
-    return <DocumentTitle title={`${referenceObject.title} Changelog · Dead by Daylight Patch Notes`}>
-      <main className={classnames(css.container, this.props.className)}>
-        <h1>
-          <RichText>Changelog of {richTextReference}</RichText>
-        </h1>
-        <RelevantPatches referenceId={referenceObject.id}/>
-      </main>
-    </DocumentTitle>
+    return <main>
+      <Helmet>
+        <title>{referenceObject.title} Changelog | Dead by Daylight Patch Notes</title>
+      </Helmet>
+      <h1>
+        <RichText>Changelog of {richTextReference}</RichText>
+      </h1>
+      <RelevantPatches referenceId={referenceObject.id}/>
+    </main>
   }
 
 }

@@ -2,7 +2,7 @@ import classnames from "classnames"
 import {capitalize} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
-import DocumentTitle from "react-document-title"
+import {Helmet} from "react-helmet"
 
 import perks from "lib/perks"
 import NavigationPage from "components/NavigationPage"
@@ -73,11 +73,14 @@ export default class PerksPage extends React.Component {
         to: "/perks/all",
       },
     ]
-    return <DocumentTitle title={`${this.props.match.params.type |> capitalize} Perks - Dead by Daylight Perks`}>
+    return <main>
+      <Helmet>
+        <title>{capitalize(this.props.match.params.type)} Perks | Dead by Daylight Perks</title>
+      </Helmet>
       <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
         {perkBlocks}
       </NavigationPage>
-    </DocumentTitle>
+    </main>
   }
 
 }

@@ -3,9 +3,8 @@ import "./analytics"
 
 import {ensureArray} from "magina"
 import React from "react"
-import DocumentTitle from "react-document-title"
 import Fader from "react-fader"
-import ReactGoogleAnalytics from "react-ga"
+import {Helmet} from "react-helmet"
 import {Route, Router} from "react-router-dom"
 import ReactRouterScrollTop from "react-router-scroll-top"
 import Switch from "react-router-transition-switch"
@@ -25,18 +24,19 @@ export default class App extends React.Component {
         routeBlocks.push(<Route key={`${index}-${pathIndex}`} component={require(`../../pages/${id}`).default} path={path} exact/>)
       })
     })
-    return <DocumentTitle title={_PKG_TITLE}>
-      <div className={css.container}>
-        <Router history={history}>
-          <ReactRouterScrollTop>
-            <Header/>
-            <Switch component={Fader}>
-              {routeBlocks}
-            </Switch>
-          </ReactRouterScrollTop>
-        </Router>
-      </div>
-    </DocumentTitle>
+    return <div className={css.container}>
+      <Helmet>
+        <title>{_PKG_TITLE}</title>
+      </Helmet>
+      <Router history={history}>
+        <ReactRouterScrollTop>
+          <Header/>
+          <Switch component={Fader}>
+            {routeBlocks}
+          </Switch>
+        </ReactRouterScrollTop>
+      </Router>
+    </div>
   }
 
 }

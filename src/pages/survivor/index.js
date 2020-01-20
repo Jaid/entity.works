@@ -2,7 +2,7 @@ import {camelCase} from "camel-case"
 import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
-import DocumentTitle from "react-document-title"
+import {Helmet} from "react-helmet"
 
 import survivors from "lib/survivors"
 import CharacterPage from "components/CharacterPage"
@@ -59,9 +59,12 @@ export default class SurvivorPage extends React.Component {
     if (!info) {
       return "No survivor found."
     }
-    return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
+    return <main>
+      <Helmet>
+        <title>{info.title} | Dead by Daylight Survivor</title>
+      </Helmet>
       <CharacterPage description={info.title} info={info} type="survivor"/>
-    </DocumentTitle>
+    </main>
   }
 
 }

@@ -3,7 +3,7 @@ import classnames from "classnames"
 import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
-import DocumentTitle from "react-document-title"
+import {Helmet} from "react-helmet"
 
 import perks from "lib/perks"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
@@ -61,12 +61,13 @@ export default class PerkPage extends React.Component {
     if (!perk) {
       return `No perk with id ${this.props.match.params.id} found.`
     }
-    return <DocumentTitle title={`${perk.title} · Dead by Daylight Perk`}>
-      <main className={classnames(css.container, this.props.className)}>
-        <PerkBlock perkInfo={perk} displayOwnerBox/>
-        <PatchesForReferenceText className={css.patchesText} referenceId={perk.id}/>
-      </main>
-    </DocumentTitle>
+    return <main>
+      <Helmet>
+        <title>{perk.title} | Dead by Daylight Perk</title>
+      </Helmet>
+      <PerkBlock perkInfo={perk} displayOwnerBox/>
+      <PatchesForReferenceText className={css.patchesText} referenceId={perk.id}/>
+    </main>
   }
 
 }

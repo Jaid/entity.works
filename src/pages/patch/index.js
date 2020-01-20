@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import DocumentTitle from "react-document-title"
+import {Helmet} from "react-helmet"
 import {NavLink} from "react-router-dom"
 
 import patches from "lib/patches"
@@ -61,11 +61,14 @@ export default class PatchPage extends React.Component {
     if (!patch) {
       return "No patch found."
     }
-    return <DocumentTitle title={`Patch ${patch.semver} in Dead by Daylight`}>
+    return <main>
+      <Helmet>
+        <title>{patch.semver} | Dead by Daylight Patch Notes</title>
+      </Helmet>
       <NavigationPage links={links}>
         <PatchBlock patchId={patch.id}/>
       </NavigationPage>
-    </DocumentTitle>
+    </main>
   }
 
 }

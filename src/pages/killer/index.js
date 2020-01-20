@@ -2,7 +2,7 @@ import {camelCase} from "camel-case"
 import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
-import DocumentTitle from "react-document-title"
+import {Helmet} from "react-helmet"
 
 import killers from "lib/killers"
 import CharacterPage from "components/CharacterPage"
@@ -55,9 +55,12 @@ export default class KillerPage extends React.Component {
       return "No killer found."
     }
     const description = `POWER: ${info.powerTitle}\n\n${info.power}`
-    return <DocumentTitle title={`${info.title} in Dead by Daylight`}>
+    return <main>
+      <Helmet>
+        <title>{info.title} | Dead by Daylight Killer</title>
+      </Helmet>
       <CharacterPage description={description} info={info} type="killer"/>
-    </DocumentTitle>
+    </main>
   }
 
 }
