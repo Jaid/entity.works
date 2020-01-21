@@ -2,6 +2,7 @@ import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 import Picture from "react-modern-picture"
+import zahl from "zahl"
 
 import killers from "lib/killers"
 import {perksByOwner} from "lib/perks"
@@ -81,6 +82,7 @@ export default class CharacterPage extends React.Component {
         <RichText className={css.description}>{this.props.description}</RichText>
       </div>
       <PatchesForReferenceText className={css.patchesText} referenceId={this.props.info.id}/>
+      <Title>{zahl(perkNodes, "perk")}</Title>
       {perkNodes}
     </NavigationPage>
   }
