@@ -2,6 +2,8 @@ import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 
+import SmallerTitle from "components/SmallerTitle"
+
 import css from "./style.scss"
 
 const getCategoryTitle = category => {
@@ -49,9 +51,9 @@ export default class PatchCategory extends React.Component {
 
   render() {
     const content = getCategoryTitle(this.props.category)
-    return <div className={classnames(css.container, this.props.className)}>
+    return <SmallerTitle>
       {content}
-    </div>
+    </SmallerTitle>
   }
 
 }
