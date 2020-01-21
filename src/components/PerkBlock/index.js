@@ -61,7 +61,7 @@ export default class PerkBlock extends React.Component {
         return <div className={css.owner}>
           {this.props.displayOwnerBox && ownerInfo.box}
           <span className={css.level}>
-            <Tooltip html={<RichText>{tooltip}</RichText>}>
+            <Tooltip html={<RichText className={css.ownerBoxTooltip}>{tooltip}</RichText>}>
               <i className={classnames("fa", "fa-unlock-alt", css.lockIcon)}/>
               {this.props.perkInfo.level}
             </Tooltip>
