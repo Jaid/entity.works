@@ -17,7 +17,7 @@
 - for: sprintBurst
   text: Fixed an issue that allowed Survivors to trigger {sprintBurst} while incapacitated.
 - for: spiritFury
-  text: Fixed an issue that caused a desync around the broken pallet area when the pallet was destroyed with the {spiritFury} perk.
+  text: Fixed an issue that caused a desync around the broken pallet area when the pallet was destroyed with {spiritFury}.
 - for: adrenaline, nightmare
   text: Fixed an issue that caused {adrenaline} to wake up the Obsession that was affected by {nightmare}'s Black Box add-on.
 - for: decisiveStrike

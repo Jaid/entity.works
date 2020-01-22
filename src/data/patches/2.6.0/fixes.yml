@@ -18,7 +18,7 @@
 - for: plague
   text: Fixed an issue that caused sickness to be gained when using a map item or a key with aura reading add-ons.
 - for: plague, diversion
-  text: Fixed an issue that caused sickness to be gained when using the {diversion} perk.
+  text: Fixed an issue that caused sickness to be gained when using {diversion}.
 - for: ironGrasp
   text: Fixed an issue that caused the 75% reduced wiggle effect not to be applied on Tiers I & II of {ironGrasp}.
 - for: shape

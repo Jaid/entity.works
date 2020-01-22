@@ -10,6 +10,6 @@
 - for: spirit
   text: Fixed an issue that caused the cooldown for {spirit}'s Yamaoka's Haunting to be reduced when combining the Kaiun Talisman and the Katsumori Talisman add-ons
 - for: devourHope
-  text: Fixed an issue that caused the {devourHope} perk to gain tokens every time a Survivor starts the unhook action (instead of upon completion of the interaction).
+  text: Fixed an issue that caused {devourHope} to gain tokens every time a Survivor starts the unhook action (instead of upon completion of the interaction).
 - for: spirit
   text: Fixed an issue that caused the duration of Yamaoka's Haunting to last longer as a client {spirit} killer in Kill Your Friends

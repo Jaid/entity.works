@@ -23,7 +23,7 @@
   text: Fixed an issue that caused {trapper}'s bear traps not to fully open when set with the Iridescent Stone add-on.
 - Fixed an issue that caused all players to lose their Offerings if a player got disconnected during the loading screen.
 - for: tenacity
-  text: Fixed an issue that caused male Survivors to have the incorrect crawling animation while using the {tenacity} perk.
+  text: Fixed an issue that caused male Survivors to have the incorrect crawling animation while using {tenacity}.
 - Fixed an issue that caused some assets to have low-resolution textures/LODs.
 - Fixed an issue that caused the End Game Collapse timer to permanently slow down if a Survivor disconnected while in crawl state.
 - Fixed an issue that caused the Item picked up SFX is triggered when entering a Trial with an item.

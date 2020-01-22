@@ -32,7 +32,7 @@
 
 - "Rainbow maps will now track chests if revealed by a perk that shows chests (for example: {detectivesHunch})."
 - for: kindred
-  text: Fixed an issue that caused the {kindred} perk to stay active for another player with the perk equipped if the perk owner disconnected while it was active.
+  text: Fixed an issue that caused {kindred} to stay active for another player with the perk equipped if the perk owner disconnected while it was active.
 - for: huntressLullaby
   text: Fixed an issue that caused Survivors not to get notified of {huntressLullaby} when succeeding a great skill check.
 - for: legion, anyMeansNecessary

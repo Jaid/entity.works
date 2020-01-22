@@ -41,14 +41,14 @@
 - for: pig, nightmare
   text: Fixed an issue where the {pig} and the {nightmare} didn't fall after vaulting through the window on the car crusher asset in Autohaven Wrecker's themed maps
 - for: bloodWarden
-  text: Fixed an issue that caused Survivor aura not to be visible within the exit gates when using the {bloodWarden} perk
+  text: Fixed an issue that caused Survivor aura not to be visible within the exit gates when using {bloodWarden}
 - Fixed an issue that caused generator progression when succeeding an Overcharge skill check
 - for: stakeOut
-  text: Fixed an issue that caused the {stakeOut} perk to accumulate tokens during the interrupt animation
+  text: Fixed an issue that caused {stakeOut} to accumulate tokens during the interrupt animation
 - for: windowsOfOpportunity
-  text: Fixed an issue that caused the {windowsOfOpportunity} perk to show the aura of a boarded-up window vault in Léry's Memorial Institute
+  text: Fixed an issue that caused {windowsOfOpportunity} to show the aura of a boarded-up window vault in Léry's Memorial Institute
 - for: slipperyMeat
-  text: Fixed an issue where the extra hook escape attempts sometimes weren't given when using the {slipperyMeat} perk
+  text: Fixed an issue where the extra hook escape attempts sometimes weren't given when using {slipperyMeat}
 - Added a tooltip on the "Filter" icon in the Store
 - Fixed an issue that prevented players from viewing how much Player XP was calculated during the match when switching pages in the tally screen
 - Fixed an issue that allowed clients to spectate a broken screen if the host of the match disconnected

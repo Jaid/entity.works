@@ -2,7 +2,7 @@
 - Fixed an issue that caused players to become stuck in the Play As Survivor pre-lobby when accepting an invite from a user in a full lobby.
 - Fixed an issue that could cause a crash when the user cycled through searching for a lobby and opening the Store.
 - for: nemesis, furtiveChase
-  text: Fixed an issue that caused {nemesis} not to trigger on an Obsession switch from the {furtiveChase} perk.
+  text: Fixed an issue that caused {nemesis} not to trigger on an Obsession switch from {furtiveChase}.
 - for: breakout
   text: Fixed an issue that caused {breakout} not to reactivate when being healed from the dying state within 6 meters of a Survivor being carried by the Killer.
 - for: sprintBurst

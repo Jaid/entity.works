@@ -34,7 +34,7 @@
 - for: ruin
   text: Fixed an issue that caused no VFX or SFX if a Survivor got a good skill check and let go of the repair interaction at the same time with {ruin} active.
 - for: ironMaiden
-  text: Fixed an issue that caused the locker doors animation to be out of sync with the Killers locker search animation when using the {ironMaiden} perk.
+  text: Fixed an issue that caused the locker doors animation to be out of sync with the Killers locker search animation when using {ironMaiden}.
 - for: danceWithMe
   text: Fixed an issue that caused {danceWithMe} to show Survivor scratch marks when the Survivor rushed out of a locker.
 

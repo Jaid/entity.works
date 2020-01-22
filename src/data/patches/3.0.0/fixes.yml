@@ -42,7 +42,7 @@
 - for: territorialImperative
   text: Fixed an issue that caused {territorialImperative} to trigger on hooked and hiding Survivors.
 - for: resilience
-  text: Fixed an issue that caused the {resilience} perk not to affect window vaults.
+  text: Fixed an issue that caused {resilience} not to affect window vaults.
 
 - Fixed an issue that could cause a disconnect or make it impossible to execute a mori when the Survivor was recovering.
 - for: pig, bill
@@ -70,7 +70,7 @@
 - for: borrowedTime
   text: Fixed an issue that caused progress on the Deranged Pursuit achievement when downing a Survivor with the Deep Wound status effect from {borrowedTime}.
 - for: deadHard
-  text: Fixed an issue that caused the {deadHard} perk prompt not to appear when bound to keys 1, 2 or R.
+  text: Fixed an issue that caused {deadHard} prompt not to appear when bound to keys 1, 2 or R.
 - for: deadHard
   text: Fixed an issue that made it impossible to trigger {deadHard} when bound to keys 3 and 4.
 - Updated the intro video.

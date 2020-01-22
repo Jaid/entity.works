@@ -55,7 +55,7 @@
 - for: borrowedTime
   text: Fixed an issue that caused the Endurance timer from {borrowedTime} to be removed from the player unhooked if the player unhooking got downed.
 - for: diversion
-  text: Fixed an issue that caused the loud noise indicator and scratch marks from the {diversion} perk to appear on the Survivor who threw the pebble, if thrown outside of - the Killers terror radius.
+  text: Fixed an issue that caused the loud noise indicator and scratch marks from {diversion} to appear on the Survivor who threw the pebble, if thrown outside of - the Killers terror radius.
 - for: plunderersInstinct
   text: Fixed an issue with {plunderersInstinct} causing a lower rate of Event items to appear in chests.
 

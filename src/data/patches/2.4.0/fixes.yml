@@ -45,7 +45,7 @@
 - Fixed an issue that made it impossible to repair a generator from one of the shorts sides next to the van in the street in Lampkin Lane.
 
 - for: diversion
-  text: Fixed an issue that allowed Survivors to spam the {diversion} perk while repairing a generator.
+  text: Fixed an issue that allowed Survivors to spam {diversion} while repairing a generator.
 - for: adrenaline
   text: Fixed an issue that caused {adrenaline} to trigger during the pick-up and interrupt animations.
 - for: noOneEscapesDeath
@@ -57,7 +57,7 @@
 
 - Disabled all VR related plugins.
 - for: distortion, deerstalker
-  text: Fixed an issue that caused {distortion} tokens to be consumed while being interrupted and carried by a Killer with the {deerstalker} perk.
+  text: Fixed an issue that caused {distortion} tokens to be consumed while being interrupted and carried by a Killer with {deerstalker}.
 - for: kate
   text: Fixed an issue that caused {kate} to scream too loud when downed, hooked, gassed and shocked.
 - Fixed an issue that caused Survivors to overlap on one another in the match result screen.
@@ -83,7 +83,7 @@
   text: Fixed an issue that caused {legion}'s camera to become offset when they interrupted the mori.
 - Fixed an issue that caused the Mangled status effect to stack when applied from different sources (add-ons, perks).
 - for: objectOfObsession
-  text: Fixed an issue that caused the {objectOfObsession} perk not to work when the character body was not facing a non-host Killer in a Kill Your Friends match.
+  text: Fixed an issue that caused {objectOfObsession} not to work when the character body was not facing a non-host Killer in a Kill Your Friends match.
 - for: spirit
   text: Fixed an issue that caused the Rite of {spirit} Daily Ritual to unlock without meeting the requirements.
 - Fixed an issue that caused the Spectator camera to remain in spectate when the last player would leave the match.

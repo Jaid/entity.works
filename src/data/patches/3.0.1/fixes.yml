@@ -1,15 +1,15 @@
 - for: wakeUp
   text: Fixed an issue that caused {wakeUp} to grant {tiers:5%/10%/15%} increased action speed to all interactions at all times.
 - for: bamboozle
-  text: Fixed an issue that caused the {bamboozle} perk not to have an activation sound.
+  text: Fixed an issue that caused {bamboozle} not to have an activation sound.
 - for: bbqAndChili, fireUp, rememberMe, wereGonnaLiveForever
   text: Fixed an issue that caused the {bbqAndChili}, {fireUp}, {rememberMe} and {wereGonnaLiveForever} perks to visually only gain up to 3 tokens.
 - for: sprintBurst
   text: Fixed an issue that caused {sprintBurst} not to always trigger Exhaustion.
 - for: spiesFromTheShadows
-  text: Fixed an issue that caused the {spiesFromTheShadows} perk to go on cooldown whenever a Survivor triggered a crow outside of the maximum effect radius.
+  text: Fixed an issue that caused {spiesFromTheShadows} to go on cooldown whenever a Survivor triggered a crow outside of the maximum effect radius.
 - for: playWithYourFood
-  text: Fixed an issue that caused the {playWithYourFood} perk to gain a token when downing the Obsession.
+  text: Fixed an issue that caused {playWithYourFood} to gain a token when downing the Obsession.
 - for: legion
   text: Fixed an issue that caused {legion}'s Nasty and Filthy Blade add-ons to increase all interaction times.
 - for: ghostFace

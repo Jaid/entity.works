@@ -1,6 +1,6 @@
 - Added a progression bar and the name of the player Mending you, this should be the same as when being healed by another Survivor.
 - for: aftercare
-  text: Added the {aftercare} perk icon in the HUD when affected by it from another player.
+  text: Added {aftercare} icon in the HUD when affected by it from another player.
 - Updated layout for the character information screen. Killer information screens now show basic stats (Max Base Speed, Base Terror Radius, and Height).
 - for: borrowedTime
   text: Unhooked Survivors are now affected by the Deep Wound Status effect. Changed the Bleedout timer from {tiers:15/20/25} seconds to {tiers:10/15/20} seconds. VFX have been updated.

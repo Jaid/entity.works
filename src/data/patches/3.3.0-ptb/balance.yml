@@ -7,7 +7,7 @@
 - Updated the icon style for cosmetic items rarities.
 - Updated the Auric Cells and Iridescent Shards background colors from yellow/blue to orange/indigo respectively.
 - for: babysitter
-  text: Added a perk indicator in the HUD when affected by the {babysitter} perk.
+  text: Added a perk indicator in the HUD when affected by {babysitter}.
 
 - "Camping Aid Kit: Increased the speed at which you heal others from +15% to +25%."
 - "First Aid Kit: Increased the speed at which you heal others from +25% to +35%."

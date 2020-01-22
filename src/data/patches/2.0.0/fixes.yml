@@ -73,11 +73,11 @@
 - for: monitorAndAbuse
   text: Fixed an issue that could make the heartbeat extremely difficult to hear when the Killer had the perk {monitorAndAbuse} equipped
 - for: deadHard
-  text: Fixed improper formatting in the {deadHard} perk in English
+  text: Fixed improper formatting in {deadHard} in English
 - for: claudette
   text: Fixed the description for {claudette}'s Myopian Frohawk head customization in French, Italian, German and Spanish
 - for: bloodhound
-  text: Fixed the improper values in the {bloodhound} perk for Tier II in English
+  text: Fixed the improper values in {bloodhound} for Tier II in English
 - Integrated some missing localization for Italian
 - Misc UI and icon improvements
 - Tweaked the hatch audio to be a bit louder and fixed sound occlusion
