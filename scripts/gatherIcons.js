@@ -1,10 +1,11 @@
 import fsp from "@absolunet/fsp"
 import chalk from "chalk"
 import deadByDaylight from "dead-by-daylight"
+import {uniq} from "lodash"
 import path from "path"
 import yargs from "yargs"
 
-async function job(argv) {
+async function job() {
   const deadByDaylightFolder = process.env.deadByDaylightFolder || path.resolve("E:/Steam Library", "steamapps", "common", "Dead by Daylight", "DeadByDaylight", "Content")
   const iconsFolder = path.resolve(__dirname, "..", "src", "gameIcons")
   await fsp.ensureDir(iconsFolder)
@@ -21,6 +22,29 @@ async function job(argv) {
       to: `${powerId}.png`,
     })
   }
+  for (const {id, iconPath} of Object.values(deadByDaylight.offerings)) {
+    copyTasks.push({
+      from: iconPath,
+      to: `${id}.png`,
+    })
+  }
+  for (const {id, iconPath} of Object.values(deadByDaylight.addOns)) {
+    copyTasks.push({
+      from: iconPath,
+      to: `${id}.png`,
+    })
+  }
+  for (const {id, iconPath} of Object.values(deadByDaylight.items)) {
+    copyTasks.push({
+      from: iconPath,
+      to: `${id}.png`,
+    })
+  }
+  const destinations = copyTasks.map(copyTask => copyTask.to)
+  const uniqueDestinations = uniq(destinations)
+  if (uniqueDestinations.length !== destinations.length) {
+    throw new Error("Multiple game assets are about to get written to the same destination")
+  }
   for (const {from, to} of copyTasks) {
     const fullFrom = path.join(deadByDaylightFolder, from)
     const fullTo = path.join(iconsFolder, to)
@@ -32,6 +56,7 @@ async function job(argv) {
     console.log(`${chalk.yellow(from)} -> ${chalk.yellow(to)}`)
     await fsp.copyFile(fullFrom, fullTo)
   }
+  console.log(`Total assets: ${copyTasks.length}`)
 }
 
 yargs
