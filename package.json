@@ -14,6 +14,7 @@
     "babel-runtime": "^6.26.0",
     "camel-case": "^4.1.1",
     "classnames": "^2.2.6",
+    "dead-by-daylight": "^1.3.0",
     "debug": "^4.1.1",
     "filter-nil": "^1.0.1",
     "fork-awesome": "^1.1.7",
