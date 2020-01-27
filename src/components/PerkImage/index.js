@@ -31,7 +31,7 @@ export default class PerkImage extends React.Component {
 
   render() {
     const perk = findObject(this.props.perkId)
-    const imgSrc = require(`../../data/perks/${perk.id}/icon.png`).default
+    const imgSrc = require(`../../gameIcons/${perk.id}.png`).default
     const backgroundSrc = require(`../../data/perkBackgrounds/${perk.rarity}.png?raw`).default
     return <Picture className={classnames(css.element, this.props.className)}
       input={imgSrc}
