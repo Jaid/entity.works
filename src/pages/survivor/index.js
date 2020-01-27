@@ -4,22 +4,22 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
-import survivors from "lib/survivors"
+import Survivor from "lib/Survivor"
 import CharacterPage from "components/CharacterPage"
 
 import css from "./style.scss"
 
-/**
- * @param {string} query
- * @return {import("../../lib/survivors").survivor}
- */
-const findSurvivor = query => {
-  return survivors.find(survivor => survivor.linkId === query)
-  || survivors.find(survivor => paramCase(survivor.title) === query)
-  || survivors.find(survivor => camelCase(survivor.title) === query)
-  || survivors.find(survivor => paramCase(survivor.shortTitle) === query)
-  || survivors.find(survivor => camelCase(survivor.shortTitle) === query)
-}
+// /**
+//  * @param {string} query
+//  * @return {import("../../lib/survivors").survivor}
+//  */
+// const findSurvivor = query => {
+//   return survivors.find(survivor => survivor.linkId === query)
+//   || survivors.find(survivor => paramCase(survivor.title) === query)
+//   || survivors.find(survivor => camelCase(survivor.title) === query)
+//   || survivors.find(survivor => paramCase(survivor.shortTitle) === query)
+//   || survivors.find(survivor => camelCase(survivor.shortTitle) === query)
+// }
 
 /**
   * @typedef {{
@@ -55,7 +55,7 @@ export default class SurvivorPage extends React.Component {
   }
 
   render() {
-    const info = findSurvivor(this.props.match.params.id)
+    const info = Survivor.find(this.props.match.params.id)
     if (!info) {
       return "No survivor found."
     }

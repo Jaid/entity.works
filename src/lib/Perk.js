@@ -1,21 +1,8 @@
 import deadByDaylight from "dead-by-daylight"
 import {sortBy} from "lodash"
+import {paramCase} from "param-case"
 
 import perkEffects from /* aot */ "src/aotLoaders/perkEffects"
-
-// import Survivor from "./Survivor"
-
-/**
- * @typedef Perk
- * @prop {string} id
- * @prop {string} title
- * @prop {string} ingameId
- * @prop {string|boolean} owner
- * @prop {number} level
- * @prop {string} rarity
- * @prop {boolean} visible
- * @prop {string} linkId
- */
 
 class Perk {
 
@@ -57,13 +44,32 @@ class Perk {
   /**
    * @type {boolean}
    */
-  visible = false
+  visible = null
+
+  /**
+   * @type {string}
+   */
+  linkId = null
+
+  /**
+   * @type {string}
+   */
+  id = null
 
   /**
    * @param {string} effect
    */
   setEffect(effect) {
     this.richEffect = effect
+    this.plainEffect = effect
+  }
+
+  /**
+   * @param {string} id
+   */
+  setId(id) {
+    this.id = id
+    this.linkId = paramCase(id)
   }
 
 }
@@ -72,17 +78,14 @@ Perk.all = Object.entries(deadByDaylight.perks).map(([id, basePerk]) => {
   const perk = new Perk
   const effect = perkEffects[id]
   perk.setEffect(effect || "No effect.")
-  perk.id = id
-  console.log(basePerk)
+  perk.setId(id)
   perk.title = basePerk.title
   perk.visible = basePerk.visible
   perk.released = basePerk.released
   perk.rarity = basePerk.rarity
+  perk.for = basePerk.for
   if (basePerk.owner) {
     perk.owner = basePerk.owner
-    perk.for = basePerk.for
-  } else {
-    perk.for = basePerk.for
   }
   if (basePerk.level) {
     perk.level = basePerk.level
@@ -99,7 +102,7 @@ Perk.findByOwner = ownerId => {
   return sortedPerks
 }
 Perk.find = id => {
-  return Perk.all.find(perk => perk.id === id) || null
+  return Perk.all.find(perk => perk.id === id) || Perk.all.find(perk => perk.linkId === id)
 }
 
 export default Perk

@@ -4,9 +4,9 @@ import React from "react"
 import {Helmet} from "react-helmet"
 import zahl from "zahl"
 
-import killers from "lib/killers"
+import Killer from "lib/Killer"
 import Perk from "lib/Perk"
-import survivors from "lib/survivors"
+import Survivor from "lib/Survivor"
 import KillerBox from "components/KillerBox"
 import PerkBox from "components/PerkBox"
 import SurvivorBox from "components/SurvivorBox"
@@ -17,13 +17,13 @@ import css from "./style.scss"
 const characterGroups = {
   killers: {
     title: "Killer",
-    list: killers,
+    list: Killer.allVisible,
     Box: KillerBox,
     boxKey: "killer",
   },
   survivors: {
     title: "Survivor",
-    list: survivors,
+    list: Survivor.allVisible,
     Box: SurvivorBox,
     boxKey: "survivor",
   },

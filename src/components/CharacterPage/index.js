@@ -1,17 +1,15 @@
-import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 import Picture from "react-modern-picture"
 import zahl from "zahl"
 
-import killers from "lib/killers"
+import Killer from "lib/Killer"
 import Perk from "lib/Perk"
-import survivors from "lib/survivors"
+import Survivor from "lib/Survivor"
 import Headline from "components/Headline"
 import NavigationPage from "components/NavigationPage"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
-import RelevantPatches from "components/RelevantPatches"
 import RichText from "components/RichText"
 import Title from "components/Title"
 
@@ -19,14 +17,15 @@ import css from "./style.scss"
 
 const meta = {
   killer: {
-    list: killers,
+    list: Killer.allVisible,
     referenceType: "killers",
     navigationTitleKey: "shortTitle",
     titleKey: "title",
-    overTextKey: "fullName",
+    overText: "Killer",
+    overTextKey: "realName",
   },
   survivor: {
-    list: survivors,
+    list: Survivor.allVisible,
     referenceType: "survivors",
     navigationTitleKey: "shortTitle",
     titleKey: "title",
@@ -72,9 +71,15 @@ export default class CharacterPage extends React.Component {
       return <PerkBlock key={perk.id} className={css.perk} perkInfo={perk}/>
     })
     const imgSrc = require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`).default
+    let overText = null
+    if (myMeta.overTextKey) {
+      overText = this.props.info[myMeta.overTextKey] || myMeta.overText
+    } else {
+      overText = myMeta.overText
+    }
     return <NavigationPage links={links}>
       <Title>{this.props.info[myMeta.titleKey]}</Title>
-      <Headline miniText={myMeta.overText || this.props.info[myMeta.overTextKey]} theme={this.props.type}>
+      <Headline miniText={overText} theme={this.props.type}>
         {this.props.info[myMeta.titleKey]}
       </Headline>
       <div className={css.introduction}>

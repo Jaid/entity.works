@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Picture from "react-modern-picture"
 
-import survivors from "lib/survivors"
+import Survivor from "lib/Survivor"
 import SurvivorLink from "components/SurvivorLink"
 import SurvivorTooltip from "components/SurvivorTooltip"
 import Tooltip from "components/Tooltip"
@@ -27,7 +27,7 @@ export default class SurvivorBox extends React.Component {
 
   render() {
     const imgSrc = require(`../../data/survivors/${this.props.survivor}/icon.png`).default
-    const info = survivors.find(({id}) => id === this.props.survivor)
+    const info = Survivor.find(this.props.survivor)
     const content = <span className={classnames(css.container, this.props.className, {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,

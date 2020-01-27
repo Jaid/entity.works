@@ -42,6 +42,9 @@ export default class PerkBlock extends React.Component {
   render() {
     const getOwnerInfo = () => {
       const ownerObject = this.props.perkInfo.owner && findObject(this.props.perkInfo.owner)
+      if (!ownerObject) {
+        return null
+      }
       if (ownerObject.type === "killer") {
         return {
           ownerObject,

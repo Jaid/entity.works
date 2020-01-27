@@ -4,11 +4,11 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Link} from "react-router-dom"
 
-import killers from "lib/killers"
+import Killer from "lib/Killer"
 import {killerPerksLink, killersLink, patchesLink, survivorPerksLink, survivorsLink} from "lib/links"
 import patches from "lib/patches"
 import Perk from "lib/Perk"
-import survivors from "lib/survivors"
+import Survivor from "lib/Survivor"
 import Headline from "components/Headline"
 import RichText from "components/RichText"
 
@@ -17,7 +17,7 @@ import css from "./style.scss"
 
 const links = [
   {
-    count: killers.length,
+    count: Killer.allVisible.length,
     text: "Killers",
     to: killersLink,
   },
@@ -32,7 +32,7 @@ const links = [
     to: survivorPerksLink,
   },
   {
-    count: survivors.length,
+    count: Survivor.allVisible.length,
     text: "Survivors",
     to: survivorsLink,
   },

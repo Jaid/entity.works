@@ -5,9 +5,9 @@ import Autosuggest from "react-autosuggest"
 import Picture from "react-modern-picture"
 import {withRouter} from "react-router"
 
-import killers from "lib/killers"
+import Killer from "lib/Killer"
 import Perk from "lib/Perk"
-import survivors from "lib/survivors"
+import Survivor from "lib/Survivor"
 import PerkImage from "components/PerkImage"
 
 import css from "./style.scss"
@@ -24,7 +24,7 @@ for (const perk of Perk.allVisible) {
   })
 }
 
-for (const killer of killers) {
+for (const killer of Killer.allVisible) {
   const imgSrc = require(`../../data/killers/${killer.id}/icon.png`).default
   entries.push({
     id: killer.id,
@@ -35,7 +35,7 @@ for (const killer of killers) {
   })
 }
 
-for (const survivor of survivors) {
+for (const survivor of Survivor.allVisible) {
   const imgSrc = require(`../../data/survivors/${survivor.id}/icon.png`).default
   entries.push({
     id: survivor.id,

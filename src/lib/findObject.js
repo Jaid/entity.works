@@ -1,7 +1,7 @@
-import killers from "lib/killers"
+import Killer from "lib/Killer"
 import patches from "lib/patches"
 import Perk from "lib/Perk"
-import survivors from "lib/survivors"
+import Survivor from "lib/Survivor"
 
 /**
  * @typedef {Object} DaylightObject
@@ -32,7 +32,7 @@ import survivors from "lib/survivors"
  *
  * @typedef {Object} KillerInterface
  * @prop {string} shortTitle
- * @prop {string} fullName
+ * @prop {string} realName
  * @prop {string} linkId
  * @prop {string} power
  * @prop {string} powerTitle
@@ -64,7 +64,7 @@ for (const perk of Perk.all) {
 }
 
 const killersObject = {}
-for (const killer of killers) {
+for (const killer of Killer.allVisible) {
   killersObject[killer.id] = killer
   index[killer.id] = {
     ...killer,
@@ -73,7 +73,7 @@ for (const killer of killers) {
 }
 
 const survivorsObject = {}
-for (const survivor of survivors) {
+for (const survivor of Survivor.allVisible) {
   survivorsObject[survivor.id] = survivor
   index[survivor.id] = {
     ...survivor,

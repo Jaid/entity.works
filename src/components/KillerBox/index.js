@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Picture from "react-modern-picture"
 
-import killers from "lib/killers"
+import Killer from "lib/Killer"
 import KillerLink from "components/KillerLink"
 import KillerTooltip from "components/KillerTooltip"
 import Tooltip from "components/Tooltip"
@@ -26,7 +26,7 @@ export default class KillerBox extends React.Component {
   }
 
   render() {
-    const info = killers.find(({id}) => id === this.props.killer)
+    const info = Killer.find(this.props.killer)
     const imgSrc = require(`../../data/killers/${this.props.killer}/icon.png`).default
     const content = <span className={classnames(css.container, this.props.className, {
       [css.large]: this.props.large,
