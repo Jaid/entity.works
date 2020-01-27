@@ -5,7 +5,7 @@ import Picture from "react-modern-picture"
 import zahl from "zahl"
 
 import killers from "lib/killers"
-import {perksByOwner} from "lib/perks"
+import Perk from "lib/Perk"
 import survivors from "lib/survivors"
 import Headline from "components/Headline"
 import NavigationPage from "components/NavigationPage"
@@ -67,7 +67,7 @@ export default class CharacterPage extends React.Component {
       to: `/${this.props.type}/${character.linkId}`,
       text: character[myMeta.navigationTitleKey],
     }))
-    const ownPerks = perksByOwner(this.props.info.id)
+    const ownPerks = Perk.findByOwner(this.props.info.id)
     const perkNodes = ownPerks.map(perk => {
       return <PerkBlock key={perk.id} className={css.perk} perkInfo={perk}/>
     })

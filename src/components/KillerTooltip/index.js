@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Picture from "react-modern-picture"
 
-import perks from "lib/perks"
+import Perk from "lib/Perk"
 import PerkBox from "components/PerkBox"
 
 import css from "./style.scss"
@@ -17,14 +17,13 @@ export default class KillerTooltip extends React.Component {
   }
 
   render() {
-    const ownPerks = perks.filter(({owner}) => owner === this.props.info.id)
-    const orderedPerks = sortBy(ownPerks, "level")
+    const ownPerks = Perk.findByOwner(this.props.info.id)
     const imgSrc = require(`../../data/killers/${this.props.info.id}/icon.png`).default
     return <div className={classnames(css.container, this.props.className)}>
       <Picture className={css.banner} input={imgSrc}/>
       <div className={css.title}>{this.props.info.shortTitle}</div>
       <div className={css.content}>
-        {orderedPerks.map(perk => <div key={perk.level} className={css.perk}><PerkBox perk={perk.id}/></div>)}
+        {ownPerks.map(perk => <div key={perk.level} className={css.perk}><PerkBox perk={perk.id}/></div>)}
       </div>
     </div>
   }

@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 import killers from "lib/killers"
 import {killerPerksLink, killersLink, patchesLink, survivorPerksLink, survivorsLink} from "lib/links"
 import patches from "lib/patches"
-import {killerPerks, survivorPerks} from "lib/perks"
+import Perk from "lib/Perk"
 import survivors from "lib/survivors"
 import Headline from "components/Headline"
 import RichText from "components/RichText"
@@ -22,12 +22,12 @@ const links = [
     to: killersLink,
   },
   {
-    count: killerPerks.length,
+    count: Perk.forKiller.length,
     text: "Killer Perks",
     to: killerPerksLink,
   },
   {
-    count: survivorPerks.length,
+    count: Perk.forSurvivor.length,
     text: "Survivor Perks",
     to: survivorPerksLink,
   },

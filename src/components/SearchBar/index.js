@@ -6,7 +6,7 @@ import Picture from "react-modern-picture"
 import {withRouter} from "react-router"
 
 import killers from "lib/killers"
-import perks from "lib/perks"
+import Perk from "lib/Perk"
 import survivors from "lib/survivors"
 import PerkImage from "components/PerkImage"
 
@@ -14,7 +14,7 @@ import css from "./style.scss"
 
 const entries = []
 
-for (const perk of perks.filter(({visible}) => Boolean(visible))) {
+for (const perk of Perk.allVisible) {
   entries.push({
     id: perk.id,
     title: perk.title,

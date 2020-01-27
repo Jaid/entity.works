@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
-import perks from "lib/perks"
+import Perk from "lib/Perk"
 import NavigationPage from "components/NavigationPage"
 import PerkBlock from "components/PerkBlock"
 import Title from "components/Title"
@@ -45,16 +45,13 @@ export default class PerksPage extends React.Component {
   }
 
   render() {
-    const visiblePerks = perks.filter(({visible}) => visible)
-    const killerPerks = visiblePerks.filter(perk => perk.for === "killer")
-    const survivorPerks = visiblePerks.filter(perk => perk.for === "survivor")
     const filteredPerks = do {
       if (this.props.match.params.type === "killer") {
-        killerPerks
+        Perk.forKiller
       } else if (this.props.match.params.type === "survivor") {
-        survivorPerks
+        Perk.forSurvivor
       } else {
-        visiblePerks
+        Perk.allVisible
       }
     }
     const perkBlocks = filteredPerks.map(perk => {
@@ -62,15 +59,15 @@ export default class PerksPage extends React.Component {
     })
     const links = [
       {
-        text: `Killer (${killerPerks.length})`,
+        text: `Killer (${Perk.forKiller.length})`,
         to: "/perks/killer",
       },
       {
-        text: `Survivor  (${survivorPerks.length})`,
+        text: `Survivor  (${Perk.forSurvivor.length})`,
         to: "/perks/survivor",
       },
       {
-        text: `All (${visiblePerks.length})`,
+        text: `All (${Perk.allVisible.length})`,
         to: "/perks/all",
       },
     ]

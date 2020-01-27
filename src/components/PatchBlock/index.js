@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import findObject, {findPatch} from "lib/findObject"
-import perks from "lib/perks"
+import Perk from "lib/Perk"
 import PatchCategory from "components/PatchCategory"
 import PatchHeadline from "components/PatchHeadline"
 import PatchLines from "components/PatchLines"
@@ -18,7 +18,7 @@ const getDisplayPriorityFromPatchReference = patchReference => {
 
 const getTitleFromPatchReference = patchReference => {
   if (patchReference.referenceType === "perks") {
-    const foundPerk = perks.find(({id}) => id === patchReference.referenceName)
+    const foundPerk = Perk.find(patchReference.referenceName)
     if (foundPerk) {
       return foundPerk.title
     } else {

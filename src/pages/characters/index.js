@@ -5,7 +5,7 @@ import {Helmet} from "react-helmet"
 import zahl from "zahl"
 
 import killers from "lib/killers"
-import {perksByOwner} from "lib/perks"
+import Perk from "lib/Perk"
 import survivors from "lib/survivors"
 import KillerBox from "components/KillerBox"
 import PerkBox from "components/PerkBox"
@@ -65,7 +65,7 @@ export default class CharactersPage extends React.Component {
         <td>
           <Box className={css.characterBox} imageClassName={css.characterBoxImage} inline={false} {...{[boxKey]: character.id}}/>
         </td>
-        {perksByOwner(character.id).map(perk => <td key={perk.level} className={css.perkCell}>
+        {Perk.findByOwner(character.id).map(perk => <td key={perk.level} className={css.perkCell}>
           <PerkBox className={css.perkBox} imageClassName={css.perkBoxImage} inline={false} perk={perk.id}/>
         </td>)}
       </tr>),

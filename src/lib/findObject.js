@@ -1,6 +1,6 @@
 import killers from "lib/killers"
 import patches from "lib/patches"
-import perks from "lib/perks"
+import Perk from "lib/Perk"
 import survivors from "lib/survivors"
 
 /**
@@ -55,7 +55,7 @@ import survivors from "lib/survivors"
 const index = {}
 
 const perksObject = {}
-for (const perk of perks) {
+for (const perk of Perk.all) {
   perksObject[perk.id] = perk
   index[perk.id] = {
     ...perk,

@@ -42,7 +42,7 @@ export default class PerkTooltip extends React.Component {
         </div>
       </div>
       <div className={css.effect}>
-        <RichText>{replaceString(perk.effect, "{this}", perk.title)}</RichText>
+        <RichText>{replaceString(perk.richEffect, "{this}", perk.title)}</RichText>
       </div>
     </div>
   }

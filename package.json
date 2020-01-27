@@ -67,6 +67,7 @@
     "param-case": "^3.0.3",
     "prevent-end": "^1.0.6",
     "react-hot-loader": "^4.12.19",
+    "read-file-string": "^1.0.1",
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.0",

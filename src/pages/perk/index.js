@@ -5,24 +5,24 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
-import perks from "lib/perks"
+import Perk from "lib/Perk"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
 import Title from "components/Title"
 
 import css from "./style.scss"
 
-/**
- * @param {string} query
- * @return {import("../../lib/perks").Perk}
- */
-const findPerk = query => {
-  return perks.find(perk => perk.linkId === query)
-  || perks.find(perk => paramCase(perk.title) === query)
-  || perks.find(perk => camelCase(perk.title) === query)
-  || perks.find(perk => paramCase(perk.ingameId) === query)
-  || perks.find(perk => camelCase(perk.ingameId) === query)
-}
+// /**
+//  * @param {string} query
+//  * @return {import("../../lib/perks").Perk}
+//  */
+// const findPerk = query => {
+//   return perks.find(perk => perk.linkId === query)
+//   || perks.find(perk => paramCase(perk.title) === query)
+//   || perks.find(perk => camelCase(perk.title) === query)
+//   || perks.find(perk => paramCase(perk.ingameId) === query)
+//   || perks.find(perk => camelCase(perk.ingameId) === query)
+// }
 
 /**
   * @typedef {{
@@ -58,7 +58,7 @@ export default class PerkPage extends React.Component {
   }
 
   render() {
-    const perk = findPerk(this.props.match.params.id)
+    const perk = Perk.find(this.props.match.params.id)
     if (!perk) {
       return `No perk with id ${this.props.match.params.id} found.`
     }
