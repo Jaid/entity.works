@@ -74,7 +74,7 @@ export default class PerksPage extends React.Component {
     const pageTitle = `${capitalize(this.props.match.params.type)} Perks`
     return <main>
       <Helmet>
-        <title>{pageTitle} Perks | Dead by Daylight Perks</title>
+        <title>{pageTitle} | Dead by Daylight Perk List</title>
       </Helmet>
       <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
         <Title>{pageTitle}</Title>
