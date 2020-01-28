@@ -1,0 +1,32 @@
+- Fixed an issue that caused the movement extrapolation system (tested during the 3.5.0 PTB) to have a slight effect on Survivors movement (although it was meant to be fully disabled).
+- for: meg
+  text: Fixed an issue causing the Alpine Ski Vest {meg} cosmetic to be automatically granted to all players. The cosmetic will now be granted after reaching level 35 in The Reckoning's Rift.
+- for: nea
+  text: Fixed an issue that caused {nea}'s prestige and legacy torsos to be missing the effects on her arms.
+- for: plague
+  text: Fixed an issue that caused {plague}'s vomit splashes to be very loud.
+- Adjusted the distance and intensity at which players would hear the fireworks SFX from hooks and generators.
+- for: legion
+  text: Fixed an issue that caused {legion}'s Fairview Varsity Jacket (Graffiti) to play the wrong audio if a Julie or Suzie body cosmetic was previously selected.
+- Tentatively fixed multiple crashes relating to the Archives {doctor} changes.
+- for: doctor
+  text: Partially fixed an issue that caused {doctor}'s Iridescent Queen add-on VFX to be displaced in front of the Survivor if they were moving. The VFX is still displaced when turning.
+- for: doctor
+  text: Fixed an issue that caused Survivors not to see illusionary pallets created by {doctor}'s "Order" - Cater's Notes add-on.
+- for: doctor, decisiveStrike
+  text: Fixed an issue that caused {decisiveStrike} not to work against {doctor} if the Survivor has an insane skill check.
+- for: doctor
+  text: Fixed an issue that caused succeeding a Snap Out Of It skill check to grant extra progress.
+- for: hag
+  text: Fixed an issue that caused {hag}'s red stain to change brightness when teleporting to a trap.
+- for: nightmare
+  text: Fixed an issue that caused {nightmare}'s Dream Snare placement animation to be slower.
+- Fixed an issue that caused an impassable gap between a hooked Survivor and a hospital bed in one of the hallways in the Treatment Theatre map.
+- Fixed an issue that caused Survivors to get temporarily stuck when cleansing a specific totem in a bathroom in the Treatment Theatre map.
+- Fixed multiple collision issues on the second floor of the Shock room in the Treatment Theatre map.
+- Fixed an issue that caused the Entity VFX to be missing on a specific hook in the Treatment Theatre map.
+- Fixed an issue that caused multiple unreachable totems and pick up spots in the Springwood maps. Shortly after the 3.5.0 update, the maps were removed from the rotation because of these unfair and exploiting issues. With this bug fix in 3.5.1, the maps have now been re-enabled.
+- Fixed an issue that caused an invisible collision on the right side of the basement stairs when exiting the basement in The Underground Complex map.
+- Fixed an issue that could cause party members to see a corrupted lobby briefly after the Offering burn sequence.
+- Fixed an issue that caused an incorrect chat message when the Custom Game host returns to lobby.
+- Fixed an issue that caused players to automatically unlock the ranking achievements without meeting the requirements.

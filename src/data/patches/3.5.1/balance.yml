@@ -1,0 +1,6 @@
+- text: "Treatment Theatre map changes: The following changes were done based on PTB feedback where it was found that some window vaults were too strong in the large rectangle rooms so we reduced the strength of those window loops and increased the strength of the pallet loops in those rooms to compensate:"
+  points:
+    - "Tile Rec_Bath_1P_01: Reduced window loop safety, increased pallet loop safety to 80+."
+    - "Tile Rec_Bath_1P_02: Reduced window loop safety, increased pallet loop safety to 82."
+    - "Tile Rec_Bed_2P_01: Reduced window loop safety, increased pallet loop safety to 82."
+    - "Tile Rec_Wait_1P_01: Reduced window loop safety, increased pallet loop safety to 80+."
