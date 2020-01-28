@@ -1,8 +1,8 @@
-import patches from "lib/patches"
+import Patch from "lib/Patch"
 
 export default id => {
   const filteredPatches = {}
-  for (const patch of patches) {
+  for (const patch of Patch.all) {
     for (const [categoryName, {points, references}] of Object.entries(patch.points)) {
       if (references[id]) {
         if (!filteredPatches[patch.id]) {

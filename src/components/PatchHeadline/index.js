@@ -31,7 +31,7 @@ export default class PatchHeadline extends React.Component {
   }
 
   render() {
-    const agoString = `Released ${moment(this.props.patchInfo.dateMs).fromNow()}`
+    const agoString = `Released ${moment(this.props.patchInfo.date).fromNow()}`
     return <Headline miniText={agoString}>{this.props.patchInfo.semver}</Headline>
   }
 

@@ -1,5 +1,5 @@
 import Killer from "lib/Killer"
-import patches from "lib/patches"
+import Patch from "lib/Patch"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
 
@@ -40,7 +40,7 @@ import Survivor from "lib/Survivor"
  *
  * @typedef {Object} PatchInterface
  * @prop {string} semver
- * @prop {number} dateMs
+ * @prop {number} date
  * @prop {string} title
  * @prop {string} date
  * @prop {object} points
@@ -82,7 +82,7 @@ for (const survivor of Survivor.allVisible) {
 }
 
 const patchesObject = {}
-for (const patch of patches) {
+for (const patch of Patch.all) {
   patchesObject[patch.id] = patch
   index[patch.id] = {
     ...patch,

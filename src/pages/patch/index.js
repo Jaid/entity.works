@@ -4,21 +4,21 @@ import React from "react"
 import {Helmet} from "react-helmet"
 import {NavLink} from "react-router-dom"
 
-import patches from "lib/patches"
+import Patch from "lib/Patch"
 import NavigationPage from "components/NavigationPage"
 import PatchBlock from "components/PatchBlock"
 import Title from "components/Title"
 
 import css from "./style.scss"
 
-/**
- * @param {string} query
- * @return {import("../../lib/patches").patch}
- */
-const findPatch = query => {
-  return patches.find(patch => patch.linkId === query)
-  || patches.find(patch => patch.semver === query)
-}
+// /**
+//  * @param {string} query
+//  * @return {import("../../lib/patches").patch}
+//  */
+// const findPatch = query => {
+//   return patches.find(patch => patch.linkId === query)
+//   || patches.find(patch => patch.semver === query)
+// }
 
 /**
   * @typedef {{
@@ -54,11 +54,11 @@ export default class PatchPage extends React.Component {
   }
 
   render() {
-    const links = patches.map(patch => ({
+    const links = Patch.all.map(patch => ({
       to: `/patch/${patch.linkId}`,
       text: patch.semver,
     }))
-    const patch = findPatch(this.props.match.params.version)
+    const patch = Patch.find(this.props.match.params.version)
     if (!patch) {
       return "No patch found."
     }
