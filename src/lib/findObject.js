@@ -1,3 +1,4 @@
+import AddOn from "lib/AddOn"
 import Killer from "lib/Killer"
 import Patch from "lib/Patch"
 import Perk from "lib/Perk"
@@ -87,6 +88,15 @@ for (const patch of Patch.all) {
   index[patch.id] = {
     ...patch,
     type: "patch",
+  }
+}
+
+const addOnsObject = {}
+for (const addOn of AddOn.all) {
+  addOnsObject[addOn.id] = addOn
+  index[addOn.id] = {
+    ...addOn,
+    type: "addOn",
   }
 }
 
