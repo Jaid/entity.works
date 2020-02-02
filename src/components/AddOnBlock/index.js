@@ -35,7 +35,7 @@ export default class AddOnBlock extends React.Component {
     const addOn = AddOn.find(this.props.addOnId)
     return <div className={classnames(css.container, this.props.className)}>
       <Headline miniText={addOn.getOverTitle()} theme="addOn">{addOn.title}</Headline>
-      <AddOnImage addOnId={this.props.addOnId}/>
+      <AddOnImage addOnId={this.props.addOnId} className={css.image}/>
     </div>
   }
 
