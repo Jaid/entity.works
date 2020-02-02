@@ -31,7 +31,7 @@ export default class PerkBox extends React.Component {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <PerkImage className={classnames(css.icon, this.props.imageClassName)} perkId={perk.id}/>
+      <PerkImage className={classnames(css.icon, this.props.imageClassName)} height="2.5em" perkId={perk.id}/>
       <PerkLink perkInfo={perk}/>
     </span>
     return <Tooltip html={<PerkTooltip perkId={perk.id}/>} minWidth={300} noPadding>

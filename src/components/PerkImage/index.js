@@ -1,11 +1,8 @@
-import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import Picture from "react-modern-picture"
 
 import findObject from "lib/findObject"
-
-import css from "./style.scss"
+import ImagesOverlap from "components/ImagesOverlap"
 
 /**
   * @typedef {{
@@ -19,24 +16,26 @@ import css from "./style.scss"
   */
 export default class PerkImage extends React.Component {
 
-  static propTypes = {
-    className: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.object,
-      PropTypes.arrayOf(PropTypes.string),
-      PropTypes.arrayOf(PropTypes.object),
-    ]),
-    perkId: PropTypes.string.isRequired,
+ static propTypes = {
+   className: PropTypes.oneOfType([
+     PropTypes.string,
+     PropTypes.object,
+     PropTypes.arrayOf(PropTypes.string),
+     PropTypes.arrayOf(PropTypes.object),
+   ]),
+   perkId: PropTypes.string.isRequired,
+   height: PropTypes.any,
+ }
+
+  static defaultProps= {
+    height: 256,
   }
 
   render() {
     const perk = findObject(this.props.perkId)
-    const imgSrc = require(`../../gameIcons/${perk.id}.png`).default
+    const iconSrc = require(`../../gameIcons/${perk.id}.png`).default
     const backgroundSrc = require(`../../data/perkBackgrounds/${perk.rarity}.png`).default
-    return <span className={classnames(css.container, this.props.className)}>
-      <Picture className={css.backgroundImage} input={backgroundSrc}/>
-      <Picture className={css.iconImage} input={imgSrc}/>
-    </span>
+    return <ImagesOverlap backgroundInput={backgroundSrc} foregroundInput={iconSrc} height={this.props.height}/>
   }
 
 }

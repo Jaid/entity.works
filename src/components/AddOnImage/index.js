@@ -1,11 +1,8 @@
-import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import Picture from "react-modern-picture"
 
 import AddOn from "lib/AddOn"
-
-import css from "./style.scss"
+import ImagesOverlap from "components/ImagesOverlap"
 
 /**
   * @typedef {{
@@ -28,16 +25,18 @@ export default class AddOnImage extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     addOnId: PropTypes.string.isRequired,
+    height: PropTypes.any,
+  }
+
+  static defaultProps= {
+    height: 256,
   }
 
   render() {
     const addOn = AddOn.find(this.props.addOnId)
     const iconSrc = require(`../../gameIcons/${addOn.id}.png`).default
     const backgroundSrc = require(`../../data/addOnBackgrounds/${addOn.rarity}.png`).default
-    return <span className={classnames(css.container, this.props.className)}>
-      <Picture className={css.backgroundImage} input={backgroundSrc}/>
-      <Picture className={css.iconImage} input={iconSrc}/>
-    </span>
+    return <ImagesOverlap backgroundInput={backgroundSrc} foregroundInput={iconSrc} height={this.props.height}/>
   }
 
 }

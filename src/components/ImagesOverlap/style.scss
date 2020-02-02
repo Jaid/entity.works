@@ -1,13 +1,10 @@
-.iconImage {
+.foregroundImage {
   z-index : 1;
   position: relative;
+  display : block;
 }
 
 .backgroundImage {
   position: absolute;
-}
-
-.container img {
-  width  : inherit;
-  display: block;
+  display : block;
 }
