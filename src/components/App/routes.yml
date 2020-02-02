@@ -9,3 +9,4 @@ survivor: /survivor/:id
 characters: /characters
 data: /data
 patchesFor: /patches/for/:id
+addOn: /add-on/:id
