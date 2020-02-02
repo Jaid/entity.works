@@ -65,9 +65,7 @@ class Patch {
 
 }
 
-
 Patch.all = Object.entries(deadByDaylight.patches).map(([id, basePatch]) => {
-  console.log(deadByDaylight.patches)
   const patch = new Patch
   patch.id = id
   patch.semver = patch.id

@@ -86,9 +86,6 @@ Killer.all = Object.entries(deadByDaylight.killers).map(([id, baseKiller]) => {
   return killer
 })
 
-console.log(Killer.all)
-
-
 Killer.allVisible = Killer.all.filter(killer => killer.visible)
 
 Killer.find = id => {
