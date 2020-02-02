@@ -3,9 +3,12 @@ import React from "react"
 import Picture from "react-modern-picture"
 import zahl from "zahl"
 
+import AddOn from "lib/AddOn"
+import findObject from "lib/findObject"
 import Killer from "lib/Killer"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
+import AddOnBlock from "components/AddOnBlock"
 import Headline from "components/Headline"
 import NavigationPage from "components/NavigationPage"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
@@ -60,16 +63,38 @@ export default class CharacterPage extends React.Component {
     description: PropTypes.string,
   }
 
+  getPerks(character) {
+    const ownPerks = Perk.findByOwner(this.props.info.id)
+    const perkNodes = ownPerks.map(perk => {
+      return <PerkBlock key={perk.id} className={css.perk} perkInfo={perk}/>
+    })
+    return <section className={css.perksSection}>
+      <Title>{zahl(perkNodes, `${character.shortTitle || character.title} perk`)}</Title>
+      {perkNodes}
+    </section>
+  }
+
+  getAddOns(character) {
+    if (this.props.type === "survivor") {
+      return null
+    }
+    const addOns = AddOn.findByOwner(this.props.info.id)
+    const addOnBlocks = addOns.map(addOn => {
+      return <AddOnBlock key={addOn.id} addOnId={addOn.id}/>
+    })
+    return <section className={css.addOnsSection}>
+      <Title>{zahl(addOnBlocks, `${character.shortTitle || character.title} add-on`)}</Title>
+      {addOnBlocks}
+    </section>
+  }
+
   render() {
     const myMeta = meta[this.props.type]
     const links = myMeta.list.map(character => ({
       to: `/${this.props.type}/${character.linkId}`,
       text: character[myMeta.navigationTitleKey],
     }))
-    const ownPerks = Perk.findByOwner(this.props.info.id)
-    const perkNodes = ownPerks.map(perk => {
-      return <PerkBlock key={perk.id} className={css.perk} perkInfo={perk}/>
-    })
+    const character = findObject(this.props.info.id)
     const imgSrc = require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`).default
     let overText = null
     if (myMeta.overTextKey) {
@@ -87,8 +112,8 @@ export default class CharacterPage extends React.Component {
         <RichText className={css.description}>{this.props.description}</RichText>
       </div>
       <PatchesForReferenceText className={css.patchesText} referenceId={this.props.info.id}/>
-      <Title>{zahl(perkNodes, "perk")}</Title>
-      {perkNodes}
+      {this.getPerks(character)}
+      {this.getAddOns(character)}
     </NavigationPage>
   }
 
