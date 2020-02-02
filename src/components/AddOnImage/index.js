@@ -33,7 +33,7 @@ export default class AddOnImage extends React.Component {
   render() {
     const addOn = AddOn.find(this.props.addOnId)
     const iconSrc = require(`../../gameIcons/${addOn.id}.png`).default
-    const backgroundSrc = require("../../data/perkBackgrounds/veryRare.png").default
+    const backgroundSrc = require(`../../data/perkBackgrounds/${addOn.rarity}.png`).default
     return <div className={classnames(css.container, this.props.className)}>
       <Picture className={css.backgroundImage} input={backgroundSrc}/>
       <Picture className={css.iconImage} input={iconSrc}/>

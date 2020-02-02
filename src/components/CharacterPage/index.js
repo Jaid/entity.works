@@ -5,6 +5,7 @@ import zahl from "zahl"
 
 import AddOn from "lib/AddOn"
 import findObject from "lib/findObject"
+import getRarityIndex from "lib/getRarityIndex"
 import Killer from "lib/Killer"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
@@ -34,6 +35,16 @@ const meta = {
     titleKey: "title",
     overText: "Survivor",
   },
+}
+
+const collator = new Intl.Collator("en")
+
+function sortAddOns(addOn1, addOn2) {
+  const rarityIndexDifference = getRarityIndex(addOn1.rarity) - getRarityIndex(addOn2.rarity)
+  if (rarityIndexDifference !== 0) {
+    return rarityIndexDifference
+  }
+  return collator.compare(addOn1.title, addOn2.title)
 }
 
 /**
@@ -79,6 +90,7 @@ export default class CharacterPage extends React.Component {
       return null
     }
     const addOns = AddOn.findByOwner(this.props.info.id)
+    addOns.sort(sortAddOns)
     const addOnBlocks = addOns.map(addOn => {
       return <AddOnBlock key={addOn.id} addOnId={addOn.id}/>
     })
