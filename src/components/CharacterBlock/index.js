@@ -6,7 +6,9 @@ import findObject from "lib/findObject"
 import Killer from "lib/Killer"
 import Survivor from "lib/Survivor"
 import Headline from "components/Headline"
+import KillerLink from "components/KillerLink"
 import RichText from "components/RichText"
+import SurvivorLink from "components/SurvivorLink"
 
 import css from "./style.scss"
 
@@ -51,6 +53,13 @@ export default class CharacterPage extends React.Component {
     characterId: PropTypes.string.isRequired,
   }
 
+  getLink(character) {
+    const Link = character.type === "killer" ? KillerLink : SurvivorLink
+    return <div className={css.characterTitle}>
+      <Link info={character}>{character.title}</Link>
+    </div>
+  }
+
   getRichDescription(character) {
     if (character.type === "killer") {
       return `POWER: ${character.powerTitle}\n\n${character.richEffect}`
@@ -74,7 +83,10 @@ export default class CharacterPage extends React.Component {
       </Headline>
       <div className={css.introduction}>
         <Picture className={css.icon} input={imgSrc}/>
-        <RichText className={css.description}>{this.getRichDescription(character)}</RichText>
+        <div className={css.description}>
+          {this.getLink(character)}
+          <RichText>{this.getRichDescription(character)}</RichText>
+        </div>
       </div>
     </div>
   }
