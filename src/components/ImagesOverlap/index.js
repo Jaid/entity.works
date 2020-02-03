@@ -31,6 +31,7 @@ export default class ImagesOverlap extends React.Component {
     foregroundInput: PropTypes.any.isRequired,
     backgroundInput: PropTypes.any.isRequired,
     height: PropTypes.any,
+    style: PropTypes.any,
   }
 
   render() {
@@ -40,7 +41,7 @@ export default class ImagesOverlap extends React.Component {
         height: pxByDefault(this.props.height),
       }
     }
-    return <span className={classnames(css.container, this.props.className)}>
+    return <span className={classnames(css.container, this.props.className)} style={this.props.style}>
       <Picture className={css.backgroundImage} input={this.props.backgroundInput} {...sizeProps}/>
       <Picture className={css.foregroundImage} input={this.props.foregroundInput} {...sizeProps}/>
     </span>

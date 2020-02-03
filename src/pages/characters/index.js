@@ -66,7 +66,7 @@ export default class CharactersPage extends React.Component {
           <Box className={css.characterBox} imageClassName={css.characterBoxImage} inline={false} {...{[boxKey]: character.id}}/>
         </td>
         {Perk.findByOwner(character.id).map(perk => <td key={perk.level} className={css.perkCell}>
-          <PerkBox className={css.perkBox} imageClassName={css.perkBoxImage} inline={false} perk={perk.id}/>
+          <PerkBox className={css.perkBox} heightEm={2.5} imageClassName={css.perkBoxImage} inline={false} perk={perk.id}/>
         </td>)}
       </tr>),
     ])

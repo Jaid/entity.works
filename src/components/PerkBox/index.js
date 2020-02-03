@@ -16,22 +16,22 @@ export default class PerkBox extends React.Component {
     className: PropTypes.string,
     imageClassName: PropTypes.string,
     perk: PropTypes.string.isRequired,
-    large: PropTypes.bool,
-    inline: PropTypes.bool,
+    heightEm: PropTypes.number,
   }
 
   static defaultProps = {
-    large: false,
-    inline: true,
+    heightEm: 1.5,
   }
 
   render() {
     const perk = findPerk(this.props.perk)
-    const text = <span className={classnames(css.container, this.props.className, {
-      [css.large]: this.props.large,
-      [css.inline]: this.props.inline,
-    })}>
-      <PerkImage className={classnames(css.icon, this.props.imageClassName)} height="2.5em" perkId={perk.id}/>
+    const style = {
+      marginRight: `${this.props.heightEm / 4}em`,
+      marginTop: `${-this.props.heightEm / 2}em`,
+      marginBottom: `${-this.props.heightEm / 2}em`,
+    }
+    const text = <span className={classnames(css.container, this.props.className)}>
+      <PerkImage className={classnames(css.icon, this.props.imageClassName)} height={`${this.props.heightEm}em`} perkId={perk.id} style={style}/>
       <PerkLink perkInfo={perk}/>
     </span>
     return <Tooltip html={<PerkTooltip perkId={perk.id}/>} minWidth={300} noPadding>

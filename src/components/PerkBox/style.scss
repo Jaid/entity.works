@@ -1,15 +1,8 @@
 .container {
-  color: #fdbe2b;
-}
-
-.inline {
+  color      : #fdbe2b;
   white-space: nowrap;
 
   .icon {
-    width         : 1.5em;
-    margin-top    : -1em;
-    margin-bottom : -1em;
-    margin-right  : 0.25em;
     vertical-align: middle;
   }
 }
