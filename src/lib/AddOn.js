@@ -93,12 +93,16 @@ class AddOn {
     return this.forType === "item"
   }
 
-  getOverTitle() {
+  getForTitle() {
     if (this.isForItem()) {
       return `${this.for} Add-On`
     }
     const killer = Killer.find(this.for)
-    return `${killer.shortTitle || killer.title} Add-On`
+    return killer.shortTitle || killer.title
+  }
+
+  getOverTitle() {
+    return `${this.getForTitle()} Add-On`
   }
 
 }

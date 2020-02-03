@@ -4,6 +4,8 @@ import Helmet from "react-helmet"
 
 import AddOn from "lib/AddOn"
 import AddOnBlock from "components/AddOnBlock"
+import CharacterBlock from "components/CharacterBlock"
+import SmallerTitle from "components/SmallerTitle"
 import Title from "components/Title"
 
 import css from "./style.scss"
@@ -34,6 +36,16 @@ export default class AddOnPage extends React.Component {
     }).isRequired,
   }
 
+  getOwnerContent(addOn) {
+    if (addOn.isForPower()) {
+      return <div>
+        <SmallerTitle>Available for {addOn.getForTitle()}</SmallerTitle>
+        <CharacterBlock characterId={addOn.for}/>
+      </div>
+    }
+    return null
+  }
+
   render() {
     const addOn = AddOn.find(this.props.match.params.id)
     return <main className={css.container}>
@@ -42,6 +54,7 @@ export default class AddOnPage extends React.Component {
       </Helmet>
       <Title>{addOn.title} Add-On</Title>
       <AddOnBlock addOnId={addOn.id}/>
+      {this.getOwnerContent(addOn)}
     </main>
   }
 

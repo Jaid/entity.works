@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Picture from "react-modern-picture"
 import zahl from "zahl"
 
 import AddOn from "lib/AddOn"
@@ -10,11 +9,10 @@ import Killer from "lib/Killer"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
 import AddOnBlock from "components/AddOnBlock"
-import Headline from "components/Headline"
+import CharacterBlock from "components/CharacterBlock"
 import NavigationPage from "components/NavigationPage"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
-import RichText from "components/RichText"
 import Title from "components/Title"
 
 import css from "./style.scss"
@@ -107,22 +105,9 @@ export default class CharacterPage extends React.Component {
       text: character[myMeta.navigationTitleKey],
     }))
     const character = findObject(this.props.info.id)
-    const imgSrc = require(`../../data/${myMeta.referenceType}/${this.props.info.id}/icon.png`).default
-    let overText = null
-    if (myMeta.overTextKey) {
-      overText = this.props.info[myMeta.overTextKey] || myMeta.overText
-    } else {
-      overText = myMeta.overText
-    }
     return <NavigationPage links={links}>
       <Title>{this.props.info[myMeta.titleKey]}</Title>
-      <Headline miniText={overText} theme={this.props.type}>
-        {this.props.info[myMeta.titleKey]}
-      </Headline>
-      <div className={css.introduction}>
-        <Picture className={css.icon} input={imgSrc}/>
-        <RichText className={css.description}>{this.props.description}</RichText>
-      </div>
+      <CharacterBlock characterId={this.props.info.id}/>
       <PatchesForReferenceText className={css.patchesText} referenceId={this.props.info.id}/>
       {this.getPerks(character)}
       {this.getAddOns(character)}
