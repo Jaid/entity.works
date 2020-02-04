@@ -80,7 +80,7 @@ export default class IndexPage extends React.Component {
     const nowMoment = moment()
     const thisMonth13Moment = moment().utcOffset(-4).set({
       date: 13,
-      hour: 10,
+      hour: 8,
       minute: 0,
       second: 0,
       millisecond: 0,
