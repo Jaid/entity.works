@@ -27,7 +27,7 @@ const collectUrls = () => {
     ...Object.keys(deadByDaylight.perks).map(id => `perk/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.killers).map(id => `killer/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.survivors).map(id => `survivor/${paramCase(id)}`),
-    ...Object.keys(deadByDaylight.patches).map(patch => `add-on/${paramCase(patch.id)}`),
+    ...Object.keys(deadByDaylight.patches).map(patch => `patch/${paramCase(patch.id)}`),
   ]
   return filterNil(urls)
 }
