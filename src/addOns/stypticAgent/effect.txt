@@ -1,0 +1,9 @@
+{flavor:A white powder with coagulant properties. Apply the agent to a wound to stop it from haemorrhaging.}
+
+Use with Secondary Action.
+When the {this} is used on an injured Survivor, they gain the Endurance Status Effect for 8 seconds.
+Any damage taken during that time that would put the Survivor into the Dying State will instead apply the Deep Wound Status Effect.
+The Survivors has then 20 seconds to Mend themselves.
+If the Survivor takes any damage while affected by Deep Wound or if the Deep Wound timer ends, they will immediately be put into the Dying State.
+
+{this} depletes the Med-Kit on use.

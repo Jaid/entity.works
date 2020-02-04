@@ -1,0 +1,5 @@
+{flavor:Not exactly a medical device, however it can be used to quickly and painfully close up a wound.}
+
+Moderately increases Healing Skill Check Trigger odds.
+Moderately increases Healing speed.
+Grants 100 % Bonus Bloodpoints for Great Skill Check Score Events when Healing.

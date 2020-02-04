@@ -1,0 +1,3 @@
+{flavor:A white and blue wooden block depicting two woolly Lambs grazing and the letter "S".}
+
+Interacting with a Dream Trap afflicts Survivors with the Blindness Status Effect for 30 seconds.

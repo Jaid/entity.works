@@ -1,0 +1,3 @@
+{flavor:A disgusting syrup of unknown origin. The thick yellow liquid is consumed to induce vomiting. Used to purge evil from the body.}
+
+Moderately increases Effectiveness of Vile Purge.

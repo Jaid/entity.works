@@ -1,0 +1,3 @@
+{flavor:This puck shaped honing tool can be used to sharpen the Hatchets' blades and inflicts clean wounds.}
+
+Hit target suffers from a moderate Haemorrhage Status Effect for 60 seconds.

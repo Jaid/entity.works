@@ -1,0 +1,5 @@
+{flavor:This chain is stained with a foul substance that debilitates anyone it touches.}
+
+Moderately decreases Repair speed of Survivors injured by the Chainsaw for 120 seconds.
+Survivors injured by the Chainsaw suffer from the Mangled Status Effect for 120 seconds.
+{this} does not stack with other Chain Add-ons.

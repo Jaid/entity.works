@@ -1,0 +1,3 @@
+{flavor:A torn piece of red and black plaid flannel. The scrap of fabric imbues The Nurse with devastating focus.}
+
+Allows The Nurse to see Blink Target Locations.

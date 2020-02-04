@@ -1,0 +1,3 @@
+{flavor:A clean spark plug fitted for a Chainsaw.}
+
+Slightly reduces Chainsaw Charge time.

@@ -1,0 +1,4 @@
+{flavor:The Kunwulju symbol, representing the Realm of Fear, is finger-drawn out of soot on the body of the Bell.}
+
+The Wraith's Terror Radius is no longer suppressed when cloaked.
+Grants 100 % Bonus Bloodpoints for Stalking and Surprise Attack Score Events.

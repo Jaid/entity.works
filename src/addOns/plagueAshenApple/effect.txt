@@ -1,0 +1,4 @@
+{flavor:A peeled apple rolled into sanctified ashes. Eating such a fruit warded off the malignantly envious spirits of the deceased.}
+
+Start the Trial with 1 Pool of Devotion already corrupted.
+Slightly increases Infection duration on objects.

@@ -1,0 +1,4 @@
+{flavor:The Ohuwe-Onmnea symbol, representing a howling storm, is stamped in white ink on the body of the Bell.}
+
+Considerably increases The Wraith's Movement speed when cloaked.
+Slightly decreases The Wraith's Movement speed while uncloaking.

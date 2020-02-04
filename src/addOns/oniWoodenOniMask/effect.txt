@@ -1,0 +1,4 @@
+{flavor:A mask that a young Kazan bought to celebrate Setsubun, its repulsively fanged mouth began haunting his nightmares.}
+
+Slightly reduces the Passive Blood Orb Drop Rate cool-down.
+Survivors drop 1 extra Blood Orb on Game Events.

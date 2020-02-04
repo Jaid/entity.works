@@ -1,0 +1,4 @@
+{flavor:A sturdy utility belt pillaged from a soldier. Its multiple leather loops and holsters are useful to transport tools.}
+
+Start with 2 extra Hatchets.
+Increases Hatchet Carrying capacity by 2.

@@ -1,0 +1,4 @@
+{flavor:Scratches cover the Chainsaw's body, caused by a searing blade. Memories of reprimands fill its holder with the fear of failure.}
+
+Slightly increases Chainsaw Sweep Movement speed.
+Slightly increases Chainsaw Charge time.

@@ -1,0 +1,4 @@
+{flavor:The twitchy and tremulous breath stolen from the "Bad Man". Aggressively pulses and jumps at The Nurse's touch.}
+
+Temporarily disables Spencer's Last Breath and increases The Nurse's Movement speed to 4.6 m/s after hitting a Survivor with a successful post-Blink Attack.
+This effect lasts for 60 seconds.

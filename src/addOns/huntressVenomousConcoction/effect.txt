@@ -1,0 +1,3 @@
+{flavor:A toxic concoction applied to the Hatchets' blades. The murky concoction is mainly composed of Berus snake venom which gives it fatiguing capabilities.}
+
+Hit target suffers from a considerable Exhausted Status Effect for 90 seconds.

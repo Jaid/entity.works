@@ -1,0 +1,4 @@
+{flavor:The tasty guts of an unfortunate victim.}
+
+Increases the total number of available Portals by 1.
+Slightly reduces the cool-down of missed Shred attacks.

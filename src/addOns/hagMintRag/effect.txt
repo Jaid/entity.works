@@ -1,0 +1,4 @@
+{flavor:A small piece of cotton torn from the dress worn by Lisa Sherwood on the day she disappeared. The trapped life essence within unlocks tremendous potential in The Hag's power.}
+
+The Hag can teleport to any Phantasm Trap on the Map at will, with a cooldown of 15 seconds in-between Teleports.
+Tripped Phantasm Trap Teleportation remains unchanged.

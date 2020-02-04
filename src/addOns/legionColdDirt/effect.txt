@@ -1,0 +1,3 @@
+{flavor:A handful of dirt collected from the janitor's final resting place. It is unnaturally cold.}
+
+Considerably decreases cool-down of Feral Frenzy.

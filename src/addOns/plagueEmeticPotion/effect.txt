@@ -1,0 +1,3 @@
+{flavor:A mustard-water based syrup that induces vomiting when consumed. Used to purge evil from the body.}
+
+Slightly increases Effectiveness of Vile Purge.

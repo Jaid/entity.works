@@ -1,0 +1,3 @@
+{flavor:A modification to the Jigsaw Box: the lubricated parts make the search a more delicate exercise.}
+
+Slightly increases Jigsaw Box Skill Check Trigger odds.

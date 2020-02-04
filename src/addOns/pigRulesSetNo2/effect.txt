@@ -1,0 +1,3 @@
+{flavor:Not all games need to have the same rules.}
+
+Disables the Survivors' ability to see the Auras of Jigsaw Boxes until their Reverse Bear Trap is activated.

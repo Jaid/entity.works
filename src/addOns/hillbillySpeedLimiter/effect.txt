@@ -1,0 +1,4 @@
+{flavor:A mechanical device that limits the amount of fuel small engines can intake at one time, forcing a constant and safe speed.}
+
+Chainsaw hits do not automatically trigger the Dying State.
+Grants 50 % Bonus Bloodpoints for Chainsaw Hit Score Events in the Deviousness Category.

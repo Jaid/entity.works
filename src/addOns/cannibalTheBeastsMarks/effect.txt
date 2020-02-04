@@ -1,0 +1,4 @@
+{flavor:Jagged marks cover the Chainsaw's body, punishment from the dark beast that lives in The Fog. Memories of violent reprimands fill its holder with the fear of failure.}
+
+Moderately increases Chainsaw Sweep Movement speed.
+Slightly increases the Chainsaw Charge time.

@@ -1,0 +1,3 @@
+{flavor:A Bell clapper made from a highly polished piece of bone. Causes the sounds of the Wailing Bell to echo and warp chaotically.}
+
+Survivors can no longer discern the Wailing Bell's distance or direction.

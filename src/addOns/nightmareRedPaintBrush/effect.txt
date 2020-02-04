@@ -1,0 +1,4 @@
+{flavor:A large paint brush, wet with crimson paint.}
+
+All Survivors start the Trial inside the Dream World.
+Failing a Skill Check will no longer allow Survivors to wake up.

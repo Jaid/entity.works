@@ -1,0 +1,10 @@
+{flavor:Project Awakening ECT procedure for disciplinary action, annotated by Doctor Herman Carter himself. The intolerably high voltage leaves the patient in a severe state of paranoia.}
+
+Considerably increases Madness inflicted by Shock Therapy.
+
+Survivors with Madness suffer from the following Afflictions:
+Madness II: When a Chase begins, Survivors perceive the Red Stain and Terror Radius as though The Doctor were right behind them for a duration of 10 seconds.
+Madness III: When a Chase begins, Survivors constantly perceive the Red Stain and Terror Radius as though The Doctor were right behind them.
+The Doctor shares in his patients' Madness in order to see the Illusionary Red Stain.
+
+Afflictions of the same type do not stack.

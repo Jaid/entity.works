@@ -1,0 +1,4 @@
+{flavor:A matchbox containing an odd collection of mismatched buttons. Serves as a reminder of a horrible place.}
+
+Increases The Nurse's Movement speed to 4.2 m/s.
+Removes 1 Chain Blink Charge.

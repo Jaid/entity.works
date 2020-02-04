@@ -1,0 +1,4 @@
+{flavor:These padded jaws are meant to restrain, not to wound.}
+
+Bear Traps do not inflict damage to trapped victims.
+Grants 100% Bonus Bloodpoints for trapping Survivors.

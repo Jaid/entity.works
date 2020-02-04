@@ -1,0 +1,4 @@
+{flavor:A large and heavy coil spring which adds a good amount of strength to the Bear Trap's hold.}
+
+Slightly decreases Bear Trap Disarm speed.
+Slightly decreases Bear Trap Sabotage speed.

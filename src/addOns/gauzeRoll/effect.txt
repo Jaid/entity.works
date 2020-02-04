@@ -1,0 +1,3 @@
+{flavor:A sterile gauze used for a variety of wounds. Part of a total wound care system.}
+
+Adds 12 Charges to the Med-Kit.

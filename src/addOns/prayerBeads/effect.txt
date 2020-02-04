@@ -1,0 +1,3 @@
+{flavor:A chain of matte beads of various sizes used in praying ritual. Can be attached to the Key.}
+
+Adds 15 seconds of use to the Key.

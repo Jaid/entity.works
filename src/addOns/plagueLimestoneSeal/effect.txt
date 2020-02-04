@@ -1,0 +1,3 @@
+{flavor:A cylindrical seal made from porous stone that displays a ritualistic scene with winged deities.}
+
+Slightly increases Infection duration on objects.

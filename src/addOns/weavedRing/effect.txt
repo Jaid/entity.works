@@ -1,0 +1,3 @@
+{flavor:A mundane key ring in appearance with an unusual bluish dark sheen. The ring binds the Key to the user, preventing its loss even in the darkest of times.}
+
+Do not lose the Key upon death, lose this Add-on instead.

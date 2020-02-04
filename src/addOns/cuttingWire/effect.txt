@@ -1,0 +1,3 @@
+{flavor:A rudimentary cutting tool made from a jagged metal wire and two wooden handles.}
+
+Slightly increases Toolbox Sabotage speed.

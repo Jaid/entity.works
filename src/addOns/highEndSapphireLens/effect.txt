@@ -1,0 +1,6 @@
+{flavor:A wide lens made of unscratchable sapphire that optimises the power and range of the light beam.}
+
+Slightly increases Flashlight Beam range.
+Moderately increases Flashlight Beam width.
+Moderately increases Flashlight Beam brightness.
+Moderately increases Blindness duration.

@@ -1,0 +1,3 @@
+{flavor:Leather straps that hold fabric in place for nimbler movement.}
+
+Slightly reduces Crouch Activation time.

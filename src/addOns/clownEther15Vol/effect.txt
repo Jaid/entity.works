@@ -1,0 +1,3 @@
+{flavor:A highly volatile organic compound, toxic at this concentration.}
+
+Considerably increases Intoxicated Effect duration.

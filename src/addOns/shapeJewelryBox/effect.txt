@@ -1,0 +1,3 @@
+{flavor:A barren wooden box in which vanity items were once stored.}
+
+Considerably increases Stalking Movement speed.

@@ -1,0 +1,3 @@
+{flavor:Protective padded leather gloves.}
+
+Slightly increases Bear Trap Setting speed.

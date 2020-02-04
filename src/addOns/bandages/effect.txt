@@ -1,0 +1,3 @@
+{flavor:A pack of bandages usually found in First Aid Kits.}
+
+Adds 8 Charges to the Med-Kit.

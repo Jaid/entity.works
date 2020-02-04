@@ -1,0 +1,4 @@
+{flavor:A sweet-smelling organic compound with strong anaesthetic capabilities.}
+
+Moderately expands The Afterpiece Tonic Gas Area of Effect.
+Moderately increases The Afterpiece Tonic Gas Spread velocity.

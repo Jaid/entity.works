@@ -1,0 +1,3 @@
+{flavor:A rusty, metal whistle that once ruled the Hawkins public pool.}
+
+Survivors under the effect of a Portal suffer from the Exhausted Status Effect. Once out of contact with the Portal, this effect persists for 5 seconds.

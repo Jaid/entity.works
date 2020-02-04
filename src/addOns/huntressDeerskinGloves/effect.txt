@@ -1,0 +1,3 @@
+{flavor:Cured leather gloves that protect the hands and give a sure grip.}
+
+Moderately reduces Hatchet Reload time.

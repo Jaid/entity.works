@@ -1,0 +1,3 @@
+{flavor:Murky water contained in a glass pill bottle from another time.}
+
+Slightly increases Phantasm Trap range.

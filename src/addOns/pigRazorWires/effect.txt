@@ -1,0 +1,3 @@
+{flavor:A modification to the Jigsaw Box: the addition of razor sharp wires makes it extra difficult and potentially painful to search them.}
+
+Moderately increases Jigsaw Box Skill Check Trigger odds.

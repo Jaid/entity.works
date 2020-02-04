@@ -1,0 +1,3 @@
+{flavor:A stamp carved out of sturdy blonde wood. The text found at the base is incomprehensible: "kw'zvre'od". Can be used with a map.}
+
+Considerably increases Map Tracking range.

@@ -1,0 +1,3 @@
+{flavor:This blade is stained with foul spots of blood and grime that make injuries particularly difficult to mend.}
+
+Moderately increases Mending time.

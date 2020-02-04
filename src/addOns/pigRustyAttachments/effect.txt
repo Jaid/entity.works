@@ -1,0 +1,3 @@
+{flavor:A modification to the Reverse Bear Trap: mouth spikes, covered with crusty and volatile rust spots that make injuries particularly difficult to heal.}
+
+Survivors caught in a Reverse Bear Trap suffer from the Mangled Status Effect.

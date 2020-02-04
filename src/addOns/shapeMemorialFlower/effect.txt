@@ -1,0 +1,3 @@
+{flavor:A partially faded and dried pink larkspur picked up from a gravestone.}
+
+Slightly increases Evil Gain rate when Stalking.

@@ -1,0 +1,4 @@
+{flavor:A mouldy electrode which can nevertheless conduct a weak electrical current.}
+
+Slightly increases Shock Therapy Attack range.
+Slightly decreases Shock Therapy Charge rate.

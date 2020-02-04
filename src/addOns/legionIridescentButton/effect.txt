@@ -1,0 +1,7 @@
+{flavor:A glass-like button moulded from The Fog that captures The Legion's likeness. The surface is warm and reverberating with The Entity's power.}
+
+During Feral Frenzy:
+Your Terror Radius affects the entire Map.
+Any Pallets you vault are immediately broken.
+
+This effect lasts until the Power gauge is depleted.

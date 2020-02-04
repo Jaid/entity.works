@@ -1,0 +1,3 @@
+{flavor:Pumpkin flesh infected by the rotten soil in Hawkins.}
+
+Increases the total number of available Portals by 1.

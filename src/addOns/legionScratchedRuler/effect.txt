@@ -1,0 +1,3 @@
+{flavor:A wooden ruler deeply scratched with hash marks.}
+
+Slightly reduces Feral Frenzy Recovery time.

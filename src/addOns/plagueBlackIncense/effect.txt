@@ -1,0 +1,3 @@
+{flavor:A dark paste made of sharp osseous shavings. The inhaling of its foul fumes sharpens the mind's eye.}
+
+Survivors' Auras are revealed to you for 5 seconds when they vomit.

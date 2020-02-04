@@ -1,0 +1,3 @@
+{flavor:A wooden ruler deeply etched with the names of enemies.}
+
+Moderately reduces Feral Frenzy Recovery time.

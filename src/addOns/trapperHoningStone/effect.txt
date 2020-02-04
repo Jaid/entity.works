@@ -1,0 +1,3 @@
+{flavor:When used with the Bear Trap, the Honing Stone sharpens its blades. The razor-sharp blades inflict deep wounds aimed at bleeding the victim as fast as possible.}
+
+Inflicts the Dying State upon the trapped victim if they free themselves.

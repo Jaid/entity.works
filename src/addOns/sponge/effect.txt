@@ -1,0 +1,3 @@
+{flavor:A mundane sponge used to soak up extra blood, providing easier access to wounds.}
+
+Considerably increases Great Healing Skill Check Progression bonus.

@@ -1,0 +1,3 @@
+{flavor:A handful of small, pristine flower clusters covered in a fine greyish fur.}
+
+Reveals the Survivor's Aura for 3 seconds when they trip the Phantasm Trap.

@@ -1,0 +1,3 @@
+{flavor:A timer that has been fiddled with. A spring in the mechanism forces the gears to turn faster.}
+
+Moderately reduces Reverse Bear Trap Death timer.

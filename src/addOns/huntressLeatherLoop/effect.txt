@@ -1,0 +1,4 @@
+{flavor:This leather strip tied into a loop can be attached to a belt to allow easy transportation of tools.}
+
+Start with 1 extra Hatchet.
+Increases Hatchet Carrying capacity by 1.

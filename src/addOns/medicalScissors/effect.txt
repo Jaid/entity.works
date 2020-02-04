@@ -1,0 +1,3 @@
+{flavor:Scissors designed to easily cut through textiles.}
+
+Moderately increases Healing speed.

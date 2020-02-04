@@ -1,0 +1,3 @@
+{flavor:A chewy rat tail for The Demogorgon to consume.}
+
+Slightly increases Portal Opening speed.

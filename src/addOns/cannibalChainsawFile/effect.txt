@@ -1,0 +1,3 @@
+{flavor:A file whose purpose is to hone Chainsaw chains.}
+
+Slightly decreases the range of Chainsaw Noises.

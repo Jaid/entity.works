@@ -1,0 +1,3 @@
+{flavor:A warm orange feather, soft to the touch.}
+
+Slightly decreases cool-down time between Bottle throws.

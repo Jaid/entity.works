@@ -1,0 +1,4 @@
+{flavor:The cold heart of the cannibal village elder. The trapped life essence within unlocks tremendous potential in The Hag's power.}
+
+Reduces The Hag's Terror Radius to 0 metres when a Survivor triggers a Phantasm Trap.
+Increases a Mud Phantasm's Terror Radius to 16 metres for the tripped Phantasm Trap duration.

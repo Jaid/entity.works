@@ -1,0 +1,3 @@
+{flavor:A charred and broken pocket watch with rattling pieces. Taken from Nurse Moris' body.}
+
+Moderately increases Chain Blink Window duration.

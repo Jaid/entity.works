@@ -1,0 +1,3 @@
+{flavor:A big bowl of steaming Chilli to keep you fresh and strong.}
+
+Moderately increases Chainsaw Sweep acceleration.

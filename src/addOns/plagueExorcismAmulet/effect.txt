@@ -1,0 +1,3 @@
+{flavor:An obsidian amulet to ward off sickness during exorcism rituals. Inscribed with a prayer to the God of Mayhem and Pestilence. Fills the wearer with fierce devotion.}
+
+Moderately increases Corrupt Purge duration.

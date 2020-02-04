@@ -1,0 +1,3 @@
+{flavor:The decaying severed toe of Adiris, weaved on a thread and worn as an amulet around the neck. Radiates with vile power.}
+
+Considerably increases Infection rate of Survivors from interactions.

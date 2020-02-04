@@ -1,0 +1,4 @@
+{flavor:Skin pieces of all sorts crudely stitched together making for a very large bag.}
+
+Start with 2 extra Bear Traps.
+Increases Bear Trap Carrying capacity by 2.

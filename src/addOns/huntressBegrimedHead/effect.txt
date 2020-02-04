@@ -1,0 +1,5 @@
+{flavor:These Hatchets' heads are stained with a foul substance that afflicts anyone who it touches with debilities.}
+
+Hit target suffers from a tremendous Mangled Status Effect for 120 seconds.
+Moderately decreases Repair speed of Survivors injured by the Hatchet.
+{this} does not stack with other Head Add-ons.

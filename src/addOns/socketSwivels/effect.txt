@@ -1,0 +1,3 @@
+{flavor:Swivels provide bend and flexibility for bolts that are out of reach, deep within mechanical devices.}
+
+Moderately increases Toolbox Repair speed.

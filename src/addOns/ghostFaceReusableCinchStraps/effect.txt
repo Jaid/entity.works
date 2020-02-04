@@ -1,0 +1,3 @@
+{flavor:Black straps that keep everything in place while on the prowl.}
+
+Slightly increases Movement speed when crouched.

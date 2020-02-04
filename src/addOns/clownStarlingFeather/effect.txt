@@ -1,0 +1,3 @@
+{flavor:A black feather with an emerald gloss, very soft to the touch.}
+
+Moderately decreases cool-down time between Bottle throws.

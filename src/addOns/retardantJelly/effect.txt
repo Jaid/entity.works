@@ -1,0 +1,3 @@
+{flavor:A slimy, translucent substance with a ghastly lavender shade. This jelly from unknown origin is highly resistant to heat.}
+
+Moderately slows Map Burning rate.

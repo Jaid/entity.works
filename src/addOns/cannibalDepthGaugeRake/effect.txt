@@ -1,0 +1,3 @@
+{flavor:Tool that increases the angle of the depth gauge, making the chain eat more "wood".}
+
+Moderately reduces the Time penalty when bumping into obstacles.

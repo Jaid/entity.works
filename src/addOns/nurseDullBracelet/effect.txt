@@ -1,0 +1,4 @@
+{flavor:A worthless piece of jewellery that might have an important significance to someone. Taken from the "Anxious Girl's" body.}
+
+Increases Bloodpoints for Precise Blink Score Events by 100 %.
+Moderately decreases maximum Blink range.

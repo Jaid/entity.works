@@ -1,0 +1,3 @@
+{flavor:Had the rope been stronger it would have likely held Kazan. As it was, he escaped and butchered his captors.}
+
+Slightly increases Blood Orb Aura Detection range.

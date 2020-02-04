@@ -1,0 +1,3 @@
+{flavor:First-aid bandages securely rolled and attached to the Hatchets' hafts.}
+
+Slightly reduces cool-down time between Hatchet throws.

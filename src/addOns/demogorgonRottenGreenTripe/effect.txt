@@ -1,0 +1,3 @@
+{flavor:Rotten tripe that fuels The Demogorgon.}
+
+Slightly increases the Demogorgon's Movement speed while traversing the Upside Down.

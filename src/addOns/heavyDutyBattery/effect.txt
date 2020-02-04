@@ -1,0 +1,3 @@
+{flavor:A battery marked as "industrial strength".}
+
+Adds 4 seconds of use to the Flashlight.

@@ -1,0 +1,3 @@
+{flavor:A potent lichen that grows like dust on the rocks in the Upside Down.}
+
+Reveals the Aura Survivors while traversing the Upside Down.

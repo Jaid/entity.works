@@ -1,0 +1,8 @@
+{flavor:An experimental ECT procedure developed within the Fog, crudely annotated. The extra surge of power causes extreme muscle tension which depletes the patient's energy.}
+
+Snap Out of It takes 2 seconds longer for Survivors to complete.
+
+Survivors with Madness II or III suffer from the following Affliction:
+Skill Checks have a considerable chance to turn counter-clockwise.
+
+Afflictions of the same type do not stack.

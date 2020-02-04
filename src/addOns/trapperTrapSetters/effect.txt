@@ -1,0 +1,3 @@
+{flavor:Simple tools designed to quickly and safely set Bear Traps.}
+
+Moderately increases Bear Trap Setting speed.

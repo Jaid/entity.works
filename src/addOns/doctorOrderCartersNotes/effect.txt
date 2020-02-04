@@ -1,0 +1,10 @@
+{flavor:An experimental version of the ECT procedure, annotated by Doctor Herman Carter himself. The long, constant stimulus leaves the patient in a state of severe confusion.}
+
+Considerably increases Madness inflicted by Static Blast.
+
+Survivors with Madness suffer from the following Afflictions:
+Broken Pallets may appear to be replaced with Illusionary Pallets that persist until approached.
+Illusionary Pallets are generated every 20 seconds at the location of a broken Pallet anywhere on the Map.
+The Doctor shares in his patients' Madness in order to read the Auras of Illusionary Pallets.
+
+Afflictions of the same type do not stack.

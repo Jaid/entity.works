@@ -1,0 +1,3 @@
+{flavor:A very cheap piece of jewellery made from plastic. Painted to resemble precious material.}
+
+Slightly increases Stalking Movement speed.

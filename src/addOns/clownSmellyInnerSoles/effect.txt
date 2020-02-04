@@ -1,0 +1,3 @@
+{flavor:A mouldy inner sole which gives much comfort to tired feet.}
+
+Slightly increases Reloading Movement speed.

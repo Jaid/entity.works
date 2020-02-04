@@ -1,0 +1,5 @@
+{flavor:Some for the face and some for the Tonic. The diluted make-up sticks to the lungs.}
+
+Moderately expands The Afterpiece Tonic Gas Area of Effect.
+Moderately increases The Afterpiece Tonic Gas Spread velocity.
+Moderately increases Intoxicated Effect duration.

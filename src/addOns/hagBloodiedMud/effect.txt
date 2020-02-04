@@ -1,0 +1,3 @@
+{flavor:A handful of mud with veins of deep crimson. The bloody layers empower the mud.}
+
+Considerably increases Phantasm Trap range.

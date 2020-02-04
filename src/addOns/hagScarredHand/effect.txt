@@ -1,0 +1,6 @@
+{flavor:The cut up, severed hand of the cannibal village butcher. The trapped life essence within unlocks tremendous potential in The Hag's power.}
+
+Mud Phantasms have collision.
+Removes The Hag's ability to teleport to tripped Phantasm Traps.
+Grants 300% Bonus Bloodpoints from Deviousness Score Events.
+{this} trumps all other Add-ons.

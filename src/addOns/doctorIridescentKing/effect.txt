@@ -1,0 +1,11 @@
+{flavor:A glass-like king chess piece moulded from The Fog itself. The Entity's trace reverberating within can break the most powerful minds.}
+
+The Shock Therapy and Static Blast special abilities cause the Survivor to gain a random Madness Affliction from the following list:
+
+Iridescent Calm: Survivors hear a constant distant Heartbeat.
+Iridescent Discipline: When a Chase begins, Survivors in Madness II perceive the Red Stain and Terror Radius as though The Doctor were right behind them for a duration of 10 seconds. This effect is constant for Survivors in Madness III.
+Iridescent Obedience: Skill Checks turn counter-clockwise.
+Iridescent Order: Broken Pallets may appear to be replaced with Illusionary Pallets that persist until approached.
+Iridescent Restraint: Tremendously increased duration for an Illusionary Doctor.
+
+Afflictions of the same type do not stack.

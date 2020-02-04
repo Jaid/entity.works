@@ -1,0 +1,4 @@
+{flavor:A powerful last breath snatched from Crotus Prenn Asylum Patient known as the "Bad Man". In the hands of The Nurse, it jolts with intensity.}
+
+Grants The Nurse the Undetectable Status Effect after hitting a Survivor with a successful post-Blink Attack.
+This effect lasts for 16 seconds and may only be triggered once every 60 seconds.

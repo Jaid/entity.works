@@ -1,0 +1,3 @@
+{flavor:A heavily worn out token made of brass. If an inscription or drawing was once engraved in it, it has today completely disappeared. Can be attached to the Key using its jump ring to channel the Key's Aura-reading ability.}
+
+Reveals Survivors' Auras when within a range of 24 metres.

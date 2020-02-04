@@ -1,0 +1,4 @@
+{flavor:The scabbard of an ancestral blade. Once crafted for the Yamaoka family.}
+
+Moderately increases Yamaoka's Haunting Reappearance duration.
+Moderately increases Yamaoka's Haunting Reappearance Movement speed.

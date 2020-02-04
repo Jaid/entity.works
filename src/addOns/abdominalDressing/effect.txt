@@ -1,0 +1,4 @@
+{flavor:A highly absorbent pad that prevents bodily fluid leakage when applied to large abdominal wounds.}
+
+Considerably increases Med-Kit Healing speed.
+Reduces Med-Kit Charges by 8.

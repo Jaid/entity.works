@@ -1,0 +1,4 @@
+{flavor:Thick, thorny vines that stretch and reinforce the inter-dimensional tunnels.}
+
+Slightly increases the radius in which Survivors can be detected by Of the Abyss.
+Slightly increases the time taken by Survivors to seal a Portal.

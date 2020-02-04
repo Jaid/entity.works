@@ -1,0 +1,4 @@
+{flavor:A chain with unusually hefty cutter teeth that leaves victims crippled even after being healed.}
+
+Moderately decreases Repair speed of Survivors injured by the Chainsaw for 90 seconds.
+{this} does not stack with other Chain Add-ons.

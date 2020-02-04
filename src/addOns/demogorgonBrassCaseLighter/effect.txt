@@ -1,0 +1,3 @@
+{flavor:A lighter used to ignite trouble.}
+
+Survivors under the effect of a Portal suffer from the Blindness Status Effect. Once out of contact with the Portal, this effect persists for 45 seconds.

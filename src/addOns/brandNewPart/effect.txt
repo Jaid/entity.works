@@ -1,0 +1,8 @@
+{flavor:This intricate mechanical part feels oddly out of place. It is clean and shiny as if straight out of the factory.}
+
+Toolbox Repair action is replaced with Install Brand New Part.
+Installing the {this} will complete 15 % of a Generator over 5 seconds.
+During the install, you will be faced with 2 difficult Skill Checks.
+Hitting each Skill Check will result in 5 % progression for a maximum of 25 % added progression.
+
+{this} is consumed on use.

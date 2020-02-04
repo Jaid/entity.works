@@ -1,0 +1,4 @@
+{flavor:Rusty, but sturdy chains used to securely attach a swing seat.}
+
+Applies a slight Action Speed penalty to Repair, Healing, and Sabotage actions for awake and asleep Survivors.
+For each Survivor in the Dream World, this Effect increases up to a tremendous Action Speed penalty.

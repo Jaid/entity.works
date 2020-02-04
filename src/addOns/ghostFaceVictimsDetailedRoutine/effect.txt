@@ -1,0 +1,4 @@
+{flavor:A ripped page outlining the weekly routine of Olsen's first victim in Roseville. Compiling your victim's habits allows you to anticipate their movements.}
+
+Moderately increases Killer Instinct duration when The Ghost Face is revealed.
+Moderately decreases the Detection range to reveal The Ghost Face while Night Shroud is active.

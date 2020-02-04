@@ -1,0 +1,3 @@
+{flavor:Wet, elastic webs that broaden the inter-dimensional tunnels.}
+
+Slightly increases the time taken by Survivors to seal a Portal.

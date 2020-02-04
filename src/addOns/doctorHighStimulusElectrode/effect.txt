@@ -1,0 +1,4 @@
+{flavor:An experimental electrode that can withstand very high charges for a longer period of time.}
+
+Considerably increases Shock Therapy Attack range.
+Considerably decreases Shock Therapy Charge rate.

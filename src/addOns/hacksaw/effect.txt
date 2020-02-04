@@ -1,0 +1,3 @@
+{flavor:A small hand saw mounted with a metal cutting blade.}
+
+Moderately increases Toolbox Sabotage speed.

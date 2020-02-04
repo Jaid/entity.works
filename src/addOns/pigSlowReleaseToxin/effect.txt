@@ -1,0 +1,3 @@
+{flavor:A modification to the Reverse Bear Trap: a poison that is not fatal, but weakens the body and makes it nearly impossible to recover fully from any effort.}
+
+Survivors caught in a Reverse Bear Trap suffer from the Exhausted Status Effect.

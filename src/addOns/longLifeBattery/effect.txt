@@ -1,0 +1,3 @@
+{flavor:A recent model of battery that lasts longer.}
+
+Adds 6 seconds of use to the Flashlight.

@@ -1,0 +1,4 @@
+{flavor:A glass-like Hatchet head moulded from The Fog itself. The blade is warm and reverberating with The Entity's power.}
+
+Inflicts Dying upon the victim.
+Reduces Hatchet Carrying capacity by 4.

@@ -1,0 +1,3 @@
+{flavor:Pumps more gas in the ignition system to ensure a quick and powerful start.}
+
+Moderately reduces Chainsaw Charge time.

@@ -1,0 +1,3 @@
+{flavor:A quiet and flexible sheath to carry your blade. Movement is easier when things are fastened into place.}
+
+Moderately increases Movement speed when crouched.

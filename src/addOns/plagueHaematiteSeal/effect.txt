@@ -1,0 +1,3 @@
+{flavor:A cylindrical seal forged from a metallic hard-stone, engraved with bird-headed beings that stood next to strange machines. Used as a container for sanctified ashes.}
+
+Moderately increases Infection duration on objects.

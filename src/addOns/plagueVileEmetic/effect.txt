@@ -1,0 +1,3 @@
+{flavor:A foul-smelling and half-congealed potion of unidentifiable ingredients. Consumed to rapidly induce vomiting. Used to purge evil from the body.}
+
+Considerably increases Effectiveness of Vile Purge.

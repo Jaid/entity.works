@@ -1,0 +1,3 @@
+{flavor:A stolen camera from a victim of Olsen in Philadelphia, where he worked before. The film inside captured his last night in the city.}
+
+Slightly reduces the Stalk time when not leaning from cover.

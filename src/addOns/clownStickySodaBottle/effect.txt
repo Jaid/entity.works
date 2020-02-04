@@ -1,0 +1,4 @@
+{flavor:An empty bottle, sticky with dried sugar and blood.}
+
+Start with 1 extra Bottle of The Afterpiece Tonic.
+Increases Bottle Carrying capacity by 1.

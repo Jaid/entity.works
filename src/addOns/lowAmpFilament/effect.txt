@@ -1,0 +1,3 @@
+{flavor:A filament bulb designed to extend a Flashlight battery's life.}
+
+Moderately decreases Flashlight Battery Consumption rate.

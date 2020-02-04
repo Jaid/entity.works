@@ -1,0 +1,3 @@
+{flavor:A mundane rag. Suspiciously clean.}
+
+Slightly increases Toolbox Repair speed.

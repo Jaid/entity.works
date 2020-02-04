@@ -1,0 +1,3 @@
+{flavor:A dark fleshed mushroom from the Upside Down that allows The Demogorgon to telepathically distort the senses in its prey.}
+
+Slightly increases the duration of the Undetectable Status Effect applied to The Demogorgon when emerging from a Portal.

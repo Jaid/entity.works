@@ -1,0 +1,3 @@
+{flavor:A sheath allowing for a full motion range: ideal to inflict quick and powerful wounds while moving freely. Stolen from a patrol officer the night Danny left Philadelphia.}
+
+Considerably increases Movement speed when crouched.

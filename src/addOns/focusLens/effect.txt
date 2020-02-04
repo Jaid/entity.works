@@ -1,0 +1,6 @@
+{flavor:A thick glass lens that focuses the Flashlight beam to increase its intensity.}
+
+Slightly increases Flashlight Beam range.
+Slightly increases Flashlight Beam brightness.
+Slightly increases Flashlight Beam width.
+Slightly increases Blindness duration.

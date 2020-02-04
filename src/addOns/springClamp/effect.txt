@@ -1,0 +1,3 @@
+{flavor:Useful tool to clamp hoses or hold wires in place and prevent damage or injury.}
+
+Slightly increases Toolbox Repair Skill Check success zones.

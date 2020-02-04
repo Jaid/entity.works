@@ -1,0 +1,4 @@
+{flavor:A small claw rake, a must have tool for any accomplished gardener.}
+
+Replaces Dream Snares with Dream Pallets.
+10 Dream Tokens.

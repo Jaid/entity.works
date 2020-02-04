@@ -1,0 +1,3 @@
+{flavor:A black rope used as a belt in times of mourning. Taken from Father Campbell's body.}
+
+Moderately reduces Blink Recovery time.

@@ -1,0 +1,4 @@
+{flavor:These Hatchets' heads are covered with crusty and volatile rust spots that make injuries particularly difficult to heal from.}
+
+Hit target suffers from a tremendous Mangled Status Effect for 120 seconds.
+Rusty Head does not stack with other Head Add-ons.

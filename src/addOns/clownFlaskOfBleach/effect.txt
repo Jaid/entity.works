@@ -1,0 +1,3 @@
+{flavor:A potent chemical which causes irritation, burns and lung damage.}
+
+Intoxicated target suffers moderately from an extra Hindered penalty.

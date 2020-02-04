@@ -1,0 +1,3 @@
+{flavor:A leather strip wrapped around the Flashlight for more grip.}
+
+Slightly increases Flashlight Beam accuracy.

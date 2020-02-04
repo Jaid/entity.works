@@ -1,0 +1,3 @@
+{flavor:Part of the standard Clown apparel, the cut fingers allow for dexterous manipulations.}
+
+Slightly decreases Reload time.

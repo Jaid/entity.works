@@ -1,0 +1,3 @@
+{flavor:A thin and clear combustible liquid which numbs the mind when inhaled.}
+
+Intoxicated target suffers from the Blindness Status Effect for 30 seconds.

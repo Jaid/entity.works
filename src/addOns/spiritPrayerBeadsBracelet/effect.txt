@@ -1,0 +1,3 @@
+{flavor:A powerful bracelet that reads a sacred mantra.}
+
+The phasing sound emission is heard by all Survivors outside of the Terror Radius.

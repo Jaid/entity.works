@@ -1,0 +1,3 @@
+{flavor:A strange bead circled with gold that can be used to magnify the map and mark a specific position. The bead emits an energy which can be felt and seen by Survivors.}
+
+Unlocks the Map's ability to place a Light Beacon in the Trial Grounds that can be seen by all Survivors.

@@ -1,0 +1,3 @@
+{flavor:A wooden stamp with a cross-hatched rubber pad used to mark documents. It is unclear as to how or by whom this stamp was originally used. Can be used with a map.}
+
+Moderately increases Map Tracking range.

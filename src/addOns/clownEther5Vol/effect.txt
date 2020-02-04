@@ -1,0 +1,3 @@
+{flavor:An organic compound used for anaesthetic purposes.}
+
+Slightly increases Intoxicated Effect duration.

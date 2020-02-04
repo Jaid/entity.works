@@ -1,0 +1,3 @@
+{flavor:A bright red poisonous mushroom from the Upside Down.}
+
+Moderately increases the duration of the Undetectable Status Effect applied to The Demogorgon when emerging from a Portal.

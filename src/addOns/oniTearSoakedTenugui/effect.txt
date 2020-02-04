@@ -1,0 +1,3 @@
+{flavor:The cloth that Kazan's mother cried into when he left on his pilgrimage to cleanse the samurai.}
+
+Considerably reduces Blood Fury Duration penalty when downing a Survivor.

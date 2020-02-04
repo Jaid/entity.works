@@ -1,0 +1,4 @@
+{flavor:The handguard of an ancestral blade. Crafted for the Yamaoka family.}
+
+Slightly increases Yamaoka's Haunting Reappearance duration.
+Slightly increases Yamaoka's Haunting Reappearance Movement speed.

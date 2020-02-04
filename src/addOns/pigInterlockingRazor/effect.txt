@@ -1,0 +1,3 @@
+{flavor:A modification to the Jigsaw Box: the addition of interlocking razor blades makes it impossible to move suddenly in the Jigsaw Box without slitting one's wrists.}
+
+Tremendously increases the Regression penalty of failed Skill Checks on Jigsaw Boxes.

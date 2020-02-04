@@ -1,0 +1,3 @@
+{flavor:A sturdy iron replacement bar for long chains.}
+
+Slightly extends Chainsaw Attack range.

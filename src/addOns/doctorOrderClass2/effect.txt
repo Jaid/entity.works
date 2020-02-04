@@ -1,0 +1,10 @@
+{flavor:A high stimulus ECT procedure, part of a patient's daily routine at the Léry's Memorial Institute. Can cause a state of moderate confusion in the patient.}
+
+Moderately increases Madness inflicted by Static Blast.
+
+Survivors with Madness II or III suffer from the following Afflictions:
+Broken Pallets may appear to be replaced with Illusionary Pallets that persist until approached.
+Illusionary Pallets are generated every 20 seconds at the location of a Broken Pallet within 64 metres of The Doctor.
+The Doctor shares in his patients' Madness in order to read the Auras of Illusionary Pallets.
+
+Afflictions of the same type do not stack.

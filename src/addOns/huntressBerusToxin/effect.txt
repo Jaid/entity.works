@@ -1,0 +1,3 @@
+{flavor:A toxin applied to the Hatchets' blades. The Berus snake toxin causes tiredness in such a small amount.}
+
+Hit target suffers from a slight Exhausted Status Effect for 30 seconds.

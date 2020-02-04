@@ -1,0 +1,3 @@
+{flavor:A copper pin defaced beyond recognition yet polished to a high sheen. Pillaged from a particularly difficult prey.}
+
+Slightly increases Hatchet Wind-up Movement speed.

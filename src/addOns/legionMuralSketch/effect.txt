@@ -1,0 +1,3 @@
+{flavor:A rough sketch of The Legion mural torn from a notebook.}
+
+Moderately increases Feral Frenzy duration.

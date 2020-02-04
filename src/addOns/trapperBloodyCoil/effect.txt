@@ -1,0 +1,5 @@
+{flavor:Part sticky, part slippery, this grim liquid makes handling the Trap's spring more dangerous.}
+
+When a Trap is sabotaged or disarmed by a Healthy Survivor, the bloody coils exact their price and that Survivor becomes Injured.
+Slightly decreases Bear Trap Disarm speed.
+Slightly decreases Bear Trap Sabotage speed.

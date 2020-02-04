@@ -1,0 +1,3 @@
+{flavor:Medical quality tape used to close small wounds.}
+
+Slightly increases Healing speed.

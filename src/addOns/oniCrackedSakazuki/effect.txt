@@ -1,0 +1,4 @@
+{flavor:A cup from Kazan's wedding ceremony. It never made it through the night before being damaged.}
+
+Slightly reduces Blood Fury Activation time.
+Slightly reduces Blood Fury Deactivation time.

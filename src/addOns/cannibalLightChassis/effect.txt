@@ -1,0 +1,3 @@
+{flavor:A light and durable Chainsaw chassis with a shorter guide bar. Makes the Chainsaw easier to handle.}
+
+Considerably reduces the Time penalty when bumping into obstacles.

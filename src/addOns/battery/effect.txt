@@ -1,0 +1,3 @@
+{flavor:A standard battery of unknown brand.}
+
+Adds 2 seconds of use to the Flashlight.

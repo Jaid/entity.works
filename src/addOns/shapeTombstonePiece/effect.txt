@@ -1,0 +1,6 @@
+{flavor:A fist-sized granite piece taken from a broken tombstone.}
+
+Kill healthy or injured Survivors with Evil Within III.
+Disables the ability to Stalk with Evil Within III.
+Considerably drains the Power Gauge after killing a Survivor.
+Considerably increases the amount of Evil required to reach Evil Within III.

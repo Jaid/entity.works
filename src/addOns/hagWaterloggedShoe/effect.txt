@@ -1,0 +1,6 @@
+{flavor:A child's shoe, long lost in the bog's waters. The trapped life essence within unlocks tremendous potential in The Hag's power.}
+
+Survivors within the Phantasm Trap range suffer from the Hindered Status Effect.
+Slightly increases The Hag's Base Movement speed.
+Removes The Hag's ability to teleport to tripped Phantasm Traps.
+{this} trumps all other Add-ons.

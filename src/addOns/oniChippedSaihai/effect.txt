@@ -1,0 +1,3 @@
+{flavor:A baton that belonged to Renjiro. It was stolen by Kazan upon his departure.}
+
+Slightly increases Blood Fury duration.

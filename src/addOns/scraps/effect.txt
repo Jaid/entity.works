@@ -1,0 +1,3 @@
+{flavor:Springs, screws and gears. Mostly unusable junk.}
+
+Adds 15 Charges to the Toolbox.

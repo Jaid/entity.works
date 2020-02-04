@@ -1,0 +1,4 @@
+{flavor:A deeply scratched and burnt wooden block which's only recognisable feature is the letter "Z".}
+
+Interacting with a Dream Trap afflicts Survivors with the Haemorrhage Status Effect for 60 seconds.
+If the Survivor is Healthy, they will nevertheless bleed for the duration of the Haemorrhage Status Effect.

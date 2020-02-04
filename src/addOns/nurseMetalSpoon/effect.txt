@@ -1,0 +1,4 @@
+{flavor:A dull, partially rusted and stained metallic spoon. Confiscated from Room 202's patient, the "Bad Man".}
+
+Moderately increases Grunts of Pain Volume after hitting the Survivor with a successful post-Blink Attack.
+This effects lasts for 60 seconds.

@@ -1,0 +1,3 @@
+{flavor:A list of mischievous missions to accomplish, memento of brighter days.}
+
+Slightly increases Feral Frenzy duration.

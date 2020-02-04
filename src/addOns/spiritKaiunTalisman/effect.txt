@@ -1,0 +1,3 @@
+{flavor:A Talisman to get luck on your side.}
+
+Moderately increases Yamaoka's Haunting duration.

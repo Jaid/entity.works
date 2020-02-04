@@ -1,0 +1,4 @@
+{flavor:A toxic concoction applied to the Hatchets' blades. The muddy concoction is mainly composed of yew seeds which give it paralytic capabilities.}
+
+Hit target suffers from a moderate Hindered Status Effect for 30 seconds.
+{this} does not stack with other Yew Seed Add-ons.

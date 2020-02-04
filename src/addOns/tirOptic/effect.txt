@@ -1,0 +1,4 @@
+{flavor:A lens and reflector combo which can magnify a Flashlight's beam.}
+
+Moderately increases Flashlight Beam brightness.
+Moderately increases Blindness duration.

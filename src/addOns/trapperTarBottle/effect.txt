@@ -1,0 +1,3 @@
+{flavor:A black, matte and sticky substance similar to tar. When applied to Bear Traps, makes them far less noticeable.}
+
+Considerably darkens the Bear Trap.

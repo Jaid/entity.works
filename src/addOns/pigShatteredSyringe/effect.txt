@@ -1,0 +1,3 @@
+{flavor:Symbol of a broken way of life. Reminiscing about her past-self hardens her determination.}
+
+Slightly decreases missed Ambush Attack cool-down.

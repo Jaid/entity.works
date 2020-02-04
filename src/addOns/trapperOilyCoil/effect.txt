@@ -1,0 +1,4 @@
+{flavor:A clear oil that makes handling the Trap's spring more hazardous.}
+
+Tremendously decreases Bear Trap Disarm speed.
+Tremendously decreases Bear Trap Sabotage speed.

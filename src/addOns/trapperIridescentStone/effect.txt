@@ -1,0 +1,3 @@
+{flavor:Traps sharpened with this sickly gleaming stone seem to gain a life of their own.}
+
+Every 30 seconds, one closed Bear Trap chosen at random becomes set.

@@ -1,0 +1,3 @@
+{flavor:An all time classic.}
+
+Moderately increases Reloading Movement speed.

@@ -1,0 +1,3 @@
+{flavor:A soda can charged with psychic energy.}
+
+Moderately reduces Of the Abyss Recovery cool-down after traversing the Upside Down.

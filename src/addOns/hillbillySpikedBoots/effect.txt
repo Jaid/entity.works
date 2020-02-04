@@ -1,0 +1,3 @@
+{flavor:Boots with metal spikes protruding from the soles, which provide more stability and control when walking on slippery soil.}
+
+Moderately increases Chainsaw Sprint steering.

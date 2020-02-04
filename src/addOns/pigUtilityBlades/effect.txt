@@ -1,0 +1,3 @@
+{flavor:A modification to the Reverse Bear Trap: sharp blades attached to the Trap's interior lacerate the victim with every movement.}
+
+Survivors caught in a Reverse Bear Trap suffer from the Haemorrhage Status Effect.

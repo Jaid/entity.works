@@ -1,0 +1,3 @@
+{flavor:A trinket given to Kazan at birth, its powers are meant to protect his family from harm.}
+
+Moderately increases Demon Dash Movement speed while Blood Fury is active.

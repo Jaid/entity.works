@@ -1,0 +1,3 @@
+{flavor:The Yiwarick symbol, representing dark synergy, is stamped in blood on the body of the Bell.}
+
+Considerably reduces Window Damage time when cloaked.

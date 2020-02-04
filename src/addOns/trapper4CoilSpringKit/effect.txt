@@ -1,0 +1,4 @@
+{flavor:A replacement kit for Bear Traps which changes the usual dual spring system to 4 coil springs, adding a great amount of strength to a Bear Trap's hold.}
+
+Moderately decreases Bear Trap Disarm speed.
+Moderately decreases Bear Trap Sabotage speed.

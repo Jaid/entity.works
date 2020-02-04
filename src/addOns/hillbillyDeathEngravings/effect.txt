@@ -1,0 +1,4 @@
+{flavor:Engravings found on the Chainsaw body counting the amount of lives it took. Fills the user with determination.}
+
+Slightly increases Chainsaw Sprint Movement speed.
+Slightly increases Chainsaw Charge time.

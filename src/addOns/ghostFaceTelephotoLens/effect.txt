@@ -1,0 +1,4 @@
+{flavor:A manual focus lens to remain undetected while taking pictures from afar.}
+
+Slightly reduces the Stalk time when not leaning from cover.
+Slightly increases Marked duration on Survivors.

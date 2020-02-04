@@ -1,0 +1,3 @@
+{flavor:A simple coxcomb knotted rope wrapped around the Bell Clapper to muffle its sound. A malevolent Aura emanates from it.}
+
+Renders the Wailing Bell completely silent.

@@ -1,0 +1,3 @@
+{flavor:An odour-less syrupy liquid with high corrosiveness.}
+
+Intoxicated target suffers from a tremendous Mangled Status Effect for 120 seconds.

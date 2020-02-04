@@ -1,0 +1,3 @@
+{flavor:Tightly knitted rope used in praying rituals. Can be attached to the Key.}
+
+Adds 10 seconds of use to the Key.

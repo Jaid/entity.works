@@ -1,0 +1,3 @@
+{flavor:A block of wax used to lower friction and facilitate movement in mechanical parts.}
+
+Moderately lowers Bear Trap Escape chance.

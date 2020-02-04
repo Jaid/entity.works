@@ -1,0 +1,3 @@
+{flavor:A blood stone amulet carved intricately with the effigy of the Babylonian God of Mayhem and Pestilence. Fills the wearer with boundless devotion.}
+
+Considerably increases Corrupt Purge duration.

@@ -1,0 +1,3 @@
+{flavor:A rigid ornament worn around the neck made from dead plants adorned with crudely attached cypress bark and swamp moss.}
+
+Moderately reduces Phantasm Traps Setting time.

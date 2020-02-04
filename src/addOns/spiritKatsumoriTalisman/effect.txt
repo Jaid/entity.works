@@ -1,0 +1,3 @@
+{flavor:A Talisman that brings swift success.}
+
+Considerably increases Yamaoka's Haunting duration.

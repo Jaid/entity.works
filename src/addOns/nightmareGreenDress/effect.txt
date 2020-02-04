@@ -1,0 +1,5 @@
+{flavor:A little girl's green dress with a silky white ribbon.}
+
+While Survivors are in the Dream World:
+Slightly increases Regression penalties of Repair, Healing, and Sabotage actions.
+When failing such an action's Skill Check is revealed to The Nightmare for 3 seconds.

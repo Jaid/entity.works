@@ -1,0 +1,4 @@
+{flavor:A stone tablet adorned with gold, showing the drawings and writings of a corrupted incantation used originally to worship forgotten deities.}
+
+Moderately increases the Activation speed of Pools of Devotion.
+Moderately increases Movement speed while holding Corrupt Purge.

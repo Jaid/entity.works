@@ -1,0 +1,3 @@
+{flavor:A polished haft which allows for a quick and sly manipulation of the deadly tool.}
+
+Moderately reduces cool-down time between Hatchet throws.

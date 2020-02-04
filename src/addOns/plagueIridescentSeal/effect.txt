@@ -1,0 +1,5 @@
+{flavor:A translucent cylindrical seal moulded from The Fog itself with the effigy of The Plague. Its surface is warm and pulsates with The Entity's power.}
+
+Vile Purge becomes Corrupt Purge every time a Generator is completed.
+Tremendously reduces Corrupt Purge duration.
+Moderately decreases Movement speed while holding Corrupt Purge.

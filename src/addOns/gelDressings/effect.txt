@@ -1,0 +1,3 @@
+{flavor:A pack of gel forming pads used to patch up heavily exuding wounds.}
+
+Adds 16 Charges to the Med-Kit.

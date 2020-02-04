@@ -1,0 +1,9 @@
+{flavor:An experimental ECT procedure developed within the Fog, crudely annotated. Uses an unbearable stimulus wavelength to link the patient's and Doctor's minds. This procedure is known to cause severe cases of hallucinations in the patient.}
+
+Reveals Survivors' Auras for 3 seconds when Madness increases.
+
+Survivors with Madness II or III suffer from the following Affliction:
+Tremendously increased duration for an Illusionary Doctor.
+The Doctor shares in his patients' Madness in order to read the Auras of Illusionary Doctors.
+
+Afflictions of the same type do not stack.

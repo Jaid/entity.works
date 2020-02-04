@@ -1,0 +1,4 @@
+{flavor:A chemical bulb that generates an intensely clear light.}
+
+Considerably increases Flashlight Beam brightness.
+Considerably increases Blindness duration.

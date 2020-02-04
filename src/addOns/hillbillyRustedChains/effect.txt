@@ -1,0 +1,4 @@
+{flavor:This chain is covered with crusty and volatile rust spots that make injuries particularly difficult to heal.}
+
+Survivors injured by the Chainsaw suffer from the Mangled Status Effect for 120 seconds.
+{this} does not stack with other Chain Add-ons.

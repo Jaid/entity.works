@@ -1,0 +1,3 @@
+{flavor:A Talisman that makes one happy and enthusiastic.}
+
+Slightly increases Yamaoka's Haunting duration.

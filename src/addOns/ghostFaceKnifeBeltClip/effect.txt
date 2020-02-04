@@ -1,0 +1,3 @@
+{flavor:A perfect belt clip to scout carry your blade discreetly. No one knows what you are planning to do tonight.}
+
+Moderately reduces the Stalk time when not leaning from cover.

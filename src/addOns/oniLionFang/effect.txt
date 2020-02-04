@@ -1,0 +1,3 @@
+{flavor:A tooth sold from an exotic vendor, it symbolises power and nobility.}
+
+Considerably increases Blood Fury duration.

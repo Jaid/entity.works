@@ -1,0 +1,3 @@
+{flavor:Minuscule eggshell fragments shimmering with a pale golden hue.}
+
+Slightly increases tripped Phantasm Trap duration.

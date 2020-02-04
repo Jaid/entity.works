@@ -1,0 +1,3 @@
+{flavor:A soapstone amulet crudely engraved with a winged deity that wards off sickness. Fills the wearer with devotion.}
+
+Slightly increases Corrupt Purge duration.

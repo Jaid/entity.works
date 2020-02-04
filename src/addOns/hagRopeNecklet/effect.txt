@@ -1,0 +1,3 @@
+{flavor:A rigid ornament worn around the neck made from dead plants.}
+
+Slightly reduces Phantasm Trap Setting time.

@@ -1,0 +1,4 @@
+{flavor:A psychedelic moss that grows on tree barks in the Upside Down.}
+
+Tremendously increases the duration of the Undetectable Status Effect applied to The Demogorgon when emerging from a Portal.
+Tremendously reduces Of the Abyss Recovery cool-down after traversing the Upside Down.

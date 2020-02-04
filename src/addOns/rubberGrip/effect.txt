@@ -1,0 +1,3 @@
+{flavor:A rubber grip specifically fitting Flashlights for more grip.}
+
+Moderately increases Flashlight Beam accuracy.

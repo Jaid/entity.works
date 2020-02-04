@@ -1,0 +1,5 @@
+{flavor:A large photograph taken at Badham Preschool showing the cheerful class of '94-95.}
+
+All Generators will now spew blood while The Nightmare channels the Dream Projection ability.
+The Nightmare's Husk will not appear while using Dream Projection.
+The Nightmare can no longer cancel the Dream Projection action.

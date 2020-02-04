@@ -1,0 +1,3 @@
+{flavor:A rancid oil used as a poor quality lubricant.}
+
+Slightly decreases Chainsaw cool-down.

@@ -1,0 +1,3 @@
+{flavor:This opaque piece of glass emits a dull vibrating noise. When the Skeleton or Dull Key is used to unlock a Black Lock, the glass token protects the Key from breaking, channelling the Black Fog's energy into the glass.}
+
+Do not lose the Key when unlocking the Hatch, lose this Add-on instead.

@@ -1,0 +1,4 @@
+{flavor:A like-new standard electrode equipment to conduct electro-convulsive treatments.}
+
+Moderately increases Shock Therapy Attack range.
+Moderately decreases Shock Therapy Charge rate.

@@ -1,0 +1,3 @@
+{flavor:An otherworldly concoction that faintly glows a foreboding light.}
+
+Hit victims' Auras are shown to you for 5 seconds.

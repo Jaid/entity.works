@@ -1,0 +1,3 @@
+{flavor:An oil specifically formulated for Chainsaws. A special additive prevents oil throw off.}
+
+Moderately decreases Chainsaw cooldown.

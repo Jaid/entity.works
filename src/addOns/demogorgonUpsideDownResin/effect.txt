@@ -1,0 +1,3 @@
+{flavor:A sticky, flammable sap that fortifies the gateway to the inter-dimensional tunnels.}
+
+Moderately increases the time taken by Survivors to seal a Portal.

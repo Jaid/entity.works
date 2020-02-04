@@ -1,0 +1,4 @@
+{flavor:A silver ring engraved with "for my precious daughter".}
+
+Tremendously increases Yamaoka's Haunting Movement speed.
+Scratch Marks are no longer visible while using Yamaoka's Haunting.

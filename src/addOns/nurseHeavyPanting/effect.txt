@@ -1,0 +1,4 @@
+{flavor:The slow and bulging breath stolen from the "Fat Orderly" Kavanagh. Dimly oscillates at The Nurse's touch.}
+
+Considerably increases maximum Blink range.
+Considerably increases Blink Charge time.

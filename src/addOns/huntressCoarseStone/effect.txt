@@ -1,0 +1,3 @@
+{flavor:This stone is too coarse to do any good. A blade damaged by it inflicts awful open wounds.}
+
+Hit target suffers from a slight Haemorrhage Status Effect for 30 seconds.

@@ -1,0 +1,4 @@
+{flavor:A crude leather sack suitable for foraging.}
+
+Start with 1 extra Bear Trap.
+Increases Bear Trap Carrying capacity by 1.

@@ -1,0 +1,3 @@
+{flavor:A pale orange turtle egg, cracked and emptied of its content.}
+
+Considerably increases tripped Phantasm Trap duration.

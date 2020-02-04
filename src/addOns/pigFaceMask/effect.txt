@@ -1,0 +1,4 @@
+{flavor:A modification to the Reverse Bear Trap: the heavy cloth face mask, laced with a sedative, partially suffocates the target, making it hard to concentrate.}
+
+Survivors caught in a Reverse Bear Trap suffer from the Blindness Status Effect.
+Does not affect the Jigsaw Box Aura.

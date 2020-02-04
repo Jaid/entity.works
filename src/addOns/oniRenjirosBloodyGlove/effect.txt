@@ -1,0 +1,5 @@
+{flavor:The glove Renjiro held to his sternum following the strike dealt by his son Kazan.}
+
+All Survivors can see Blood Orbs.
+A Survivor's Aura is revealed for 2 seconds whenever they come into contact with a Blood Orb, absorbing it in the process.
+This effect stacks for each Blood Orb absorbed.

@@ -1,0 +1,4 @@
+{flavor:This collection of mechanical parts allows the creation of extra-challenging Jigsaw Boxes and Reverse Bear Traps that are easier to install.}
+
+Considerably increases Jigsaw Box Search time.
+Moderately reduces Reverse Bear Trap Setting time.

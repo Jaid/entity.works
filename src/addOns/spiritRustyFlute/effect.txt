@@ -1,0 +1,3 @@
+{flavor:A rusty transverse flute with a haunting sound.}
+
+Considerably increases Yamaoka's Haunting Recovery rate.

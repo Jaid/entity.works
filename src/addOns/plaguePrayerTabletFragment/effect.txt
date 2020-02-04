@@ -1,0 +1,4 @@
+{flavor:A fragmented stone tablet with a corrupted incantation originally used to purge illnesses and feelings of general malaise.}
+
+Slightly increases the Activation speed of Pools of Devotion.
+Slightly increases Movement speed while holding Corrupt Purge.

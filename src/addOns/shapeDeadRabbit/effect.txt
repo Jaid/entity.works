@@ -1,0 +1,4 @@
+{flavor:A grey rabbit which has been opened from neck to tail.}
+
+Moderately decreases The Shape's Terror Radius in Evil Within II.
+Moderately increases The Shape's Terror Radius in Evil Within III.

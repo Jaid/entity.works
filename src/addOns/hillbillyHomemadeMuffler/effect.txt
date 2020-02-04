@@ -1,0 +1,3 @@
+{flavor:A makeshift exhaust system made of black gas pipes.}
+
+Moderately decreases the range of Chainsaw Noises.

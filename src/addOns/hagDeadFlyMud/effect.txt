@@ -1,0 +1,3 @@
+{flavor:A small lump of mud, black with the remains of flies. Devoured to increase stamina.}
+
+Slightly increases Phantasm Trap Teleportation distance.

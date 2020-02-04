@@ -1,0 +1,3 @@
+{flavor:The annotated map of Northern Roseville, Florida. Each 'X' represents a victim of The Ghost Face. Mapping out your targets allows you to roam the streets undetected.}
+
+Slightly increases Killer Instinct duration when The Ghost Face is revealed.

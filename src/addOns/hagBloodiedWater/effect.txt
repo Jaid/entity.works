@@ -1,0 +1,3 @@
+{flavor:Tainted water contained in a folded water lily leaf.}
+
+Moderately increases Phantasm Trap range.

@@ -1,0 +1,3 @@
+{flavor:Precious resin extracted from Boswellia trees, used during ceremonies for their sweet citrusy fragrance.}
+
+Slightly increases Movement speed while charging Vile Purge.

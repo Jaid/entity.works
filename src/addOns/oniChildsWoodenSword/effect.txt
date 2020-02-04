@@ -1,0 +1,3 @@
+{flavor:Akito's practice sword. The child had little use for it after his injury.}
+
+Moderately increases Blood Orb Aura Detection range.

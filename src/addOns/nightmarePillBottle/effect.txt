@@ -1,0 +1,5 @@
+{flavor:An empty pill bottle which once contained a medicine called "Zoneral".}
+
+Survivors will see The Nightmare intermittently at a reduced distance of 12 to 24 metres.
+The Nightmare is invisible to Survivors beyond 24 metres.
+The Nightmare is invisible to awake Survivors while carrying another Survivor.

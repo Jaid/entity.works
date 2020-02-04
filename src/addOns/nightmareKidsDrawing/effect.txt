@@ -1,0 +1,4 @@
+{flavor:An unattributed drawing clearly crafted by a young child.}
+
+Gain an extra 200 Bonus Bloodpoints in the Deviousness Category when a Survivor triggers a Dream Snare.
+Considerably decreases Dream Snare slow-down.

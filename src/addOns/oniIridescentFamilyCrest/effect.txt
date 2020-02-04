@@ -1,0 +1,3 @@
+{flavor:A crest that denotes its owner as being a part of the Yamaoka family.}
+
+While Blood Fury is active, missing a Demon Strike will cause all Survivors within 12 metres to scream and reveal their current location to you.

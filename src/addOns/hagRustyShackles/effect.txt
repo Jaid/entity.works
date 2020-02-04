@@ -1,0 +1,4 @@
+{flavor:Shackles once used to hold prisoners and carcasses in the cannibal village cellar. The trapped life essence within unlocks tremendous potential in The Hag's power.}
+
+Tripped Phantasm Traps do not spawn a Mud Phantasm.
+Tripped Phantasm Traps give no indication of being triggered to the Survivor.

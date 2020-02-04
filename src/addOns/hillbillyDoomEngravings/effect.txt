@@ -1,0 +1,4 @@
+{flavor:Engravings found on the Chainsaw body representing the dark beast that lives in the Fog. Fills the user with determination.}
+
+Moderately increases Chainsaw Sprint Movement speed.
+Moderately increases Chainsaw Charge time.

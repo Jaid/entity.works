@@ -1,0 +1,3 @@
+{flavor:A smooth black cord with a soft appearance. Can be tied around a map to enhance its Aura-reading ability.}
+
+Unlocks the Map's ability to track the Hatch.
