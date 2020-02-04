@@ -1,11 +1,13 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import replaceString from "replace-string"
 
 import AddOn from "lib/AddOn"
 import AddOnImage from "components/AddOnImage"
 import AddOnLink from "components/AddOnLink"
 import Headline from "components/Headline"
+import RichText from "components/RichText"
 
 import css from "./style.scss"
 
@@ -40,6 +42,9 @@ export default class AddOnBlock extends React.Component {
         <AddOnImage addOnId={this.props.addOnId} className={css.image}/>
         <div className={css.text}>
           <AddOnLink addOnId={this.props.addOnId}>{addOn.title}</AddOnLink>
+          <RichText className={css.effect}>
+            {replaceString(addOn.richEffect, "{this}", `{${addOn.id}}`)}
+          </RichText>
         </div>
       </div>
     </div>

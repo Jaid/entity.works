@@ -4,14 +4,13 @@ const globby = require("globby")
 const readFileString = require("read-file-string").default
 
 module.exports = async () => {
-  return {}
-  const perksFolder = path.resolve(__dirname, "..", "data", "perks")
-  const perkIds = await globby("*", {
-    cwd: perksFolder,
+  const addOnsFolder = path.resolve(__dirname, "..", "data", "addOns")
+  const addOnIds = await globby("*", {
+    cwd: addOnsFolder,
     onlyDirectories: true,
   })
-  const jobs = perkIds.map(async id => {
-    const effectFile = path.join(perksFolder, id, "effect.txt")
+  const jobs = addOnIds.map(async id => {
+    const effectFile = path.join(addOnsFolder, id, "effect.txt")
     const effect = await readFileString(effectFile)
     return [id, effect]
   })
