@@ -19,7 +19,7 @@ for (const perk of Perk.allVisible) {
     id: perk.id,
     title: perk.title,
     type: "perk",
-    getImage: () => <PerkImage className={css.entryImage} perkId={perk.id}/>,
+    getImage: () => <PerkImage className={css.entryImage} height="2em" perkId={perk.id}/>,
     link: `/perk/${perk.linkId}`,
   })
 }
