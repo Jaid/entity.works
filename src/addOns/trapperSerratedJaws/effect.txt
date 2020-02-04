@@ -1,0 +1,3 @@
+{flavor:These replacement Bear Trap jaws have saw-like blades which cause awful open wounds when they snap.}
+
+Survivors injured by a Bear Trap suffer from the Haemorrhage Status Effect until healed.
