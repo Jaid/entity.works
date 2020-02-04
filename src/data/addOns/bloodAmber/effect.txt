@@ -1,4 +1,4 @@
 {flavor:A blood-red amber striped with black veins. The amber is warm to the touch. Can be attached to the Key using its jump ring to channel the Key's Aura-reading ability.}
 
-Reveals the Killer's Aura when within a range of 32 metres.
+Reveals the Killer's Aura when within a range of 32 meters.
 Tremendously decreases Key Efficiency.

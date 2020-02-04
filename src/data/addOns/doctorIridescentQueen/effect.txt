@@ -1,5 +1,5 @@
 {flavor:A glass-like queen chess piece moulded from The Fog itself. It can't be touched without receiving a considerable jolt of electricity.}
 
 Any Survivor struck by the Shock Therapy or Static Blast special abilities acquires a lingering Static Charge. The Static Charge remains with the Survivor until discharge.
-Multiple Survivors struck by the same Shock Therapy or Static Blast special ability, that are within 4 metres of each other, do not acquire a Static Charge.
-Any time a Survivor is within 4 metres of another Survivor carrying a Static Charge, the Survivor receives a shock identical to a Shock Therapy Attack and the Static Charge is discharged immediately.
+Multiple Survivors struck by the same Shock Therapy or Static Blast special ability, that are within 4 meters of each other, do not acquire a Static Charge.
+Any time a Survivor is within 4 meters of another Survivor carrying a Static Charge, the Survivor receives a shock identical to a Shock Therapy Attack and the Static Charge is discharged immediately.

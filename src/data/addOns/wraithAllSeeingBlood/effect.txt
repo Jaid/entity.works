@@ -1,4 +1,4 @@
 {flavor:The Kra-Frabai symbol, representing the Entity watching over us, is stamped in blood on the head of the Bell.}
 
 Unlocks hidden potential in The Wraith's Aura-reading ability.
-When cloaked, Survivors' Auras within 12 metres are revealed to you.
+When cloaked, Survivors' Auras within 12 meters are revealed to you.

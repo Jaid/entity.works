@@ -4,7 +4,7 @@ Slightly increases Madness inflicted by Static Blast.
 
 Survivors with Madness II or III suffer from the following Afflictions:
 Broken Pallets may appear to be replaced with Illusionary Pallets that persist until approached.
-Illusionary Pallets are generated every 20 seconds at the location of a Broken Pallet within 32 metres of {doctor}.
+Illusionary Pallets are generated every 20 seconds at the location of a Broken Pallet within 32 meters of {doctor}.
 {doctor} shares in his patients' Madness in order to read the Auras of Illusionary Pallets.
 
 Afflictions of the same type do not stack.

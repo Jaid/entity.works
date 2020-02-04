@@ -1,4 +1,4 @@
 {flavor:A rotten molar ripped from the "Bad Man's" cold dead hand.}
 
-The Aura of a Survivor healing or being healed is revealed to The Nurse within 28 metres after hitting the Survivor with a successful post-Blink Attack.
+The Aura of a Survivor healing or being healed is revealed to The Nurse within 28 meters after hitting the Survivor with a successful post-Blink Attack.
 This effect lasts for 60 seconds.

@@ -1,3 +1,3 @@
 {flavor:A gold token with a dull appearance. Both faces are smooth and void of any inscriptions. Can be attached to the Key using its jump ring to channel the Key's Aura-reading ability.}
 
-Reveals Survivors' Auras when within a range of 48 metres.
+Reveals Survivors' Auras when within a range of 48 meters.
