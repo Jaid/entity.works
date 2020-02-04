@@ -14,7 +14,7 @@ const getHeader = (referenceType, referenceName) => {
     return <KillerBox killer={referenceName} large/>
   }
   if (referenceType === "perk") {
-    return <PerkBox perk={referenceName} large/>
+    return <PerkBox heightEm={3} perk={referenceName}/>
   }
   if (referenceType === "survivor") {
     return <SurvivorBox survivor={referenceName} large/>
