@@ -7,6 +7,7 @@ import Killer from "lib/Killer"
 import Survivor from "lib/Survivor"
 import Headline from "components/Headline"
 import KillerLink from "components/KillerLink"
+import PowerImage from "components/PowerImage"
 import RichText from "components/RichText"
 import SurvivorLink from "components/SurvivorLink"
 
@@ -60,9 +61,13 @@ export default class CharacterPage extends React.Component {
     </div>
   }
 
-  getRichDescription(character) {
+  getDescription(character) {
     if (character.type === "killer") {
-      return `POWER: ${character.powerTitle}\n\n${character.richEffect}`
+      return <div>
+        <PowerImage className={css.powerImage} height="3em" powerId={character.powerId}/>
+        <span className={css.powerTitle}>{character.powerTitle}</span>
+        <RichText className={css.powerDescription}>{character.richEffect}</RichText>
+      </div>
     }
     return ""
   }
@@ -85,7 +90,7 @@ export default class CharacterPage extends React.Component {
         <Picture className={css.icon} input={imgSrc}/>
         <div className={css.description}>
           {this.getLink(character)}
-          <RichText>{this.getRichDescription(character)}</RichText>
+          {this.getDescription(character)}
         </div>
       </div>
     </div>
