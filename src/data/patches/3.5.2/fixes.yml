@@ -1,0 +1,15 @@
+- 'Treatment Theatre: Fixed an issue that caused the Survivors to be unable to unhook their teammate if the Killer is "facecamping" on a specific hook'
+- Fixed the display of the "Sealed Shut" Archive challenge which erroneously read "Survivor Master Challenge"
+- Fixed an issue that caused the Rift progress bar to disappear from the widget when no challenges are available.
+- Fixed an issue that caused an infinite loading when opening various Overlay menus as the Lobby timer ends.
+- Adjusted the lighting in The Rift.
+- Fixed an issue in Hawkins Lab where the user's screen would go dark when their camera is placed on a certain way.
+- Fixed an issue that caused an influx of Player Level update error
+- Fixed an issue that caused the Archives level 4 to open when fully completing level 1 of Tome 2.
+- "Treatment Theatre: Fixed an issue that could push Survivors out of world after destroying a specific totem."
+- "Treatment Theatre: Adjusted the collision on two stairway walls."
+- for: hag
+  text: Fixed an issue that caused The Hag's Red Stain to change when teleporting to a triggered trap.
+- for: trapper
+  text: Fixed an issue that caused Survivors to avoid getting trapped by a Bear Trap while performing an interaction.
+- Misc Cosmetics improvement
