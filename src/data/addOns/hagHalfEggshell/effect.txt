@@ -1,0 +1,3 @@
+{flavor:One half of a perfectly round hollow eggshell.}
+
+Slightly increases tripped Phantasm Trap duration.

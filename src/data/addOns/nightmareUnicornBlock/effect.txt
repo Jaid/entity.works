@@ -1,0 +1,3 @@
+{flavor:A white and red wooden block depicting a prancing Unicorn and the letter "U".}
+
+Interacting with a Dream Trap afflicts Survivors with the Blindness Status Effect for 60 seconds.
