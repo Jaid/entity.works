@@ -1,3 +1,3 @@
 {flavor:A small surveillance camera that filmed Ghost Face breaking into a house on Belleview Road in Northern Roseville. The camera was positioned at the perfect angle to catch a glimpse of Ghost Face without providing any real clue to the police.}
 
-The Auras.
+The Auras of all Survivors outside of your Terror Radius are revealed for 4 seconds when a Marked Survivor is put into the Dying State.
