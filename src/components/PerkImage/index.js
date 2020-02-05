@@ -35,7 +35,7 @@ export default class PerkImage extends React.Component {
     const perk = findObject(this.props.perkId)
     const iconSrc = require(`../../gameIcons/${perk.id}.png`).default
     const backgroundSrc = require(`../../data/perkBackgrounds/${perk.rarity}.png`).default
-    return <ImagesOverlap backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    return <ImagesOverlap alt={`${perk.title} (Dead by Daylight Perk)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
   }
 
 }

@@ -27,15 +27,15 @@ export default class SurvivorBox extends React.Component {
 
   render() {
     const imgSrc = require(`../../data/survivors/${this.props.survivor}/icon.png`).default
-    const info = Survivor.find(this.props.survivor)
+    const survivor = Survivor.find(this.props.survivor)
     const content = <span className={classnames(css.container, this.props.className, {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <Picture className={classnames(css.icon, this.props.imageClassName)} input={imgSrc}/>
-      <SurvivorLink info={info}>{info.shortTitle}</SurvivorLink>
+      <Picture alt={`${survivor.title} (Dead by Daylight Survivor)`} className={classnames(css.icon, this.props.imageClassName)} input={imgSrc}/>
+      <SurvivorLink info={survivor}>{survivor.shortTitle}</SurvivorLink>
     </span>
-    return <Tooltip html={<SurvivorTooltip info={info}/>} noPadding>{content}</Tooltip>
+    return <Tooltip html={<SurvivorTooltip info={survivor}/>} noPadding>{content}</Tooltip>
   }
 
 }

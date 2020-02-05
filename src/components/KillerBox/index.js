@@ -26,16 +26,16 @@ export default class KillerBox extends React.Component {
   }
 
   render() {
-    const info = Killer.find(this.props.killer)
+    const killer = Killer.find(this.props.killer)
     const imgSrc = require(`../../data/killers/${this.props.killer}/icon.png`).default
     const content = <span className={classnames(css.container, this.props.className, {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <Picture className={classnames(css.icon, this.props.imageClassName)} input={imgSrc}/>
-      <KillerLink info={info}>{this.props.large ? info.title : info.shortTitle}</KillerLink>
+      <Picture alt={`${killer.title} (Dead by Daylight Killer)`} className={classnames(css.icon, this.props.imageClassName)} input={imgSrc}/>
+      <KillerLink info={killer}>{this.props.large ? killer.title : killer.shortTitle}</KillerLink>
     </span>
-    return <Tooltip html={<KillerTooltip info={info}/>} noPadding>{content}</Tooltip>
+    return <Tooltip html={<KillerTooltip info={killer}/>} noPadding>{content}</Tooltip>
   }
 
 }

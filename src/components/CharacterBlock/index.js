@@ -64,7 +64,7 @@ export default class CharacterPage extends React.Component {
   getDescription(character) {
     if (character.type === "killer") {
       return <div>
-        <PowerImage className={css.powerImage} height="3em" powerId={character.powerId}/>
+        <PowerImage className={css.powerImage} height="3em" killerId={character.id}/>
         <span className={css.powerTitle}>{character.powerTitle}</span>
         <RichText className={css.powerDescription}>{character.richEffect}</RichText>
       </div>

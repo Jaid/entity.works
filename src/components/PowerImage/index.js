@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
+import Killer from "lib/Killer"
 import ImagesOverlap from "components/ImagesOverlap"
 
 /**
@@ -22,7 +23,7 @@ export default class PerkImage extends React.Component {
      PropTypes.arrayOf(PropTypes.string),
      PropTypes.arrayOf(PropTypes.object),
    ]),
-   powerId: PropTypes.string.isRequired,
+   killerId: PropTypes.string.isRequired,
    height: PropTypes.any,
  }
 
@@ -31,9 +32,10 @@ export default class PerkImage extends React.Component {
   }
 
   render() {
-    const iconSrc = require(`../../gameIcons/${this.props.powerId}.png`).default
+    const killer = Killer.find(this.props.killerId)
+    const iconSrc = require(`../../gameIcons/${killer.powerId}.png`).default
     const backgroundSrc = require("../../data/addOnBackgrounds/common.png").default
-    return <ImagesOverlap backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    return <ImagesOverlap alt={`${killer.powerTitle} (Dead by Daylight ${killer.shortTitle} Power)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
   }
 
 }
