@@ -39,6 +39,7 @@ export default configure({
   googleAnalyticsTrackingId: "UA-154709538-3",
   themeColor: "8b1b9d",
   twitterAuthorHandle: "jaidchen",
+  twitterSiteHandle: "entitydotworks",
   extra: {
     resolve: {
       alias: {
