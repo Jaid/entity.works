@@ -38,15 +38,16 @@ export default class ImagesOverlap extends React.Component {
   }
 
   render() {
-    const passedProps = pick(this.props, ["alt"])
+    const foregroundProps = pick(this.props, ["alt"])
+    const sizeProps = {}
     if (this.props.height) {
-      passedProps.style = {
+      sizeProps.style = {
         height: pxByDefault(this.props.height),
       }
     }
     return <span className={classnames(css.container, this.props.className)} style={this.props.style}>
-      <Picture className={css.backgroundImage} input={this.props.backgroundInput} {...passedProps}/>
-      <Picture className={css.foregroundImage} input={this.props.foregroundInput} {...passedProps}/>
+      <Picture className={css.backgroundImage} input={this.props.backgroundInput} {...sizeProps}/>
+      <Picture className={css.foregroundImage} input={this.props.foregroundInput} {...sizeProps} {...foregroundProps}/>
     </span>
   }
 
