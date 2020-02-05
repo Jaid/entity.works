@@ -1,20 +1,28 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import {reduxForm} from "redux-form"
+
+import TextInput from "components/TextInput"
 
 import css from "./style.scss"
 
 /**
   * @typedef {{
   *   className: *,
+  *   FormComponent: *,
   * }} Props
   */
+
+@reduxForm({
+  form: "build",
+})
 
 /**
   * @class
   * @extends {React.Component<Props>}
   */
-export default class SmallerTitle extends React.Component {
+export default class extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -23,13 +31,17 @@ export default class SmallerTitle extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    children: PropTypes.node,
+    FormComponent: PropTypes.object.isRequired,
   }
 
   render() {
-    return <h2 className={classnames(this.props.className, css.container)}>
-      {this.props.children}
-    </h2>
+    return <div className={classnames(css.container, this.props.className)}>
+      <form>
+        <div>Title</div>
+        <TextInput className={css.titleInput}/>
+        <this.props.FormComponent/>
+      </form>
+    </div>
   }
 
 }

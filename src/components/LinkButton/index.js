@@ -1,12 +1,15 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import {Link} from "react-router-dom"
 
 import css from "./style.scss"
 
 /**
   * @typedef {{
   *   className: *,
+  *   children: *,
+  *   to: string
   * }} Props
   */
 
@@ -14,7 +17,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class SmallerTitle extends React.Component {
+export default class LinkButton extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -24,12 +27,13 @@ export default class SmallerTitle extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     children: PropTypes.node,
+    to: PropTypes.string,
   }
 
   render() {
-    return <h2 className={classnames(this.props.className, css.container)}>
+    return <Link className={classnames(css.container, this.props.className)} to={this.props.to}>
       {this.props.children}
-    </h2>
+    </Link>
   }
 
 }

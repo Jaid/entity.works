@@ -10,3 +10,5 @@ characters: /characters
 data: /data
 patchesFor: /patches/for/:id
 addOn: /add-on/:id
+build: /build
+buildForm: /build/:formType

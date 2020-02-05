@@ -45,6 +45,7 @@
     "react-string-replace": "^0.4.4",
     "redux": "^4.0.5",
     "redux-action": "^1.2.2",
+    "redux-form": "^8.2.6",
     "redux-sock": "^2.0.0",
     "replace-string": "^3.0.0",
     "sentence-case": "^3.0.3",

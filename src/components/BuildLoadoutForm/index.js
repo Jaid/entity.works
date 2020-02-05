@@ -1,8 +1,7 @@
-import classnames from "classnames"
-import PropTypes from "prop-types"
 import React from "react"
-
+import PropTypes from "prop-types"
 import css from "./style.scss"
+import classnames from "classnames"
 
 /**
   * @typedef {{
@@ -14,7 +13,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class SmallerTitle extends React.Component {
+export default class BuildLoadoutForm extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -23,13 +22,13 @@ export default class SmallerTitle extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    children: PropTypes.node,
   }
 
   render() {
-    return <h2 className={classnames(this.props.className, css.container)}>
-      {this.props.children}
-    </h2>
+    const content = <span>Component BuildLoadoutForm</span>
+    return <div className={classnames(css.container, this.props.className)}>
+      {content}
+    </div>
   }
 
 }
