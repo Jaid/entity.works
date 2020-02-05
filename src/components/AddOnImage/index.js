@@ -36,7 +36,7 @@ export default class AddOnImage extends React.Component {
     const addOn = AddOn.find(this.props.addOnId)
     const iconSrc = require(`../../gameIcons/${addOn.id}.png`).default
     const backgroundSrc = require(`../../data/addOnBackgrounds/${addOn.rarity}.png`).default
-    return <ImagesOverlap backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    return <ImagesOverlap alt={`${addOn.title} (Dead by Daylight Add-On)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
   }
 
 }

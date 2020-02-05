@@ -1,4 +1,5 @@
 import classnames from "classnames"
+import {pick} from "lodash"
 import PropTypes from "prop-types"
 import pxByDefault from "px-by-default"
 import React from "react"
@@ -11,7 +12,8 @@ import css from "./style.scss"
   *   className: *,
   *   foregroundInput: *,
   *   backgroundInput: *,
-  *   height: *
+  *   height: *,
+  *   alt: string
   * }} Props
   */
 
@@ -32,18 +34,19 @@ export default class ImagesOverlap extends React.Component {
     backgroundInput: PropTypes.any.isRequired,
     height: PropTypes.any,
     style: PropTypes.any,
+    alt: PropTypes.string,
   }
 
   render() {
-    const sizeProps = {}
+    const passedProps = pick(this.props, ["alt"])
     if (this.props.height) {
-      sizeProps.style = {
+      passedProps.style = {
         height: pxByDefault(this.props.height),
       }
     }
     return <span className={classnames(css.container, this.props.className)} style={this.props.style}>
-      <Picture className={css.backgroundImage} input={this.props.backgroundInput} {...sizeProps}/>
-      <Picture className={css.foregroundImage} input={this.props.foregroundInput} {...sizeProps}/>
+      <Picture className={css.backgroundImage} input={this.props.backgroundInput} {...passedProps}/>
+      <Picture className={css.foregroundImage} input={this.props.foregroundInput} {...passedProps}/>
     </span>
   }
 
