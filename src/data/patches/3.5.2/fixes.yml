@@ -12,4 +12,7 @@
   text: Fixed an issue that caused {hag}'s Red Stain to change when teleporting to a triggered trap.
 - for: trapper
   text: Fixed an issue that caused Survivors to avoid getting trapped by a Bear Trap while performing an interaction.
-- Misc Cosmetics improvement
+- Fixed in issue In The Rift when selecting any Cosmetic causing not to display a preview instantly.
+- Fixed an issue in The Rift when selecting any Charms or any Cosmetic causing to display a preview that looks faded which is inconsistent with other areas of the application.
+- for: spirit
+  text: Fixed an issue with {spirit}'s Headband cosmetic hair models behave erratically once Yamaoka's Haunting has been channeled.
