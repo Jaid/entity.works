@@ -57,7 +57,7 @@ export default class SurvivorPage extends React.Component {
   render() {
     const info = Survivor.find(this.props.match.params.id)
     if (!info) {
-      return "No survivor found."
+      return `No survivor found for "${this.props.match.params.id}".`
     }
     return <main>
       <Helmet>

@@ -60,7 +60,7 @@ export default class PerkPage extends React.Component {
   render() {
     const perk = Perk.find(this.props.match.params.id)
     if (!perk) {
-      return `No perk with id ${this.props.match.params.id} found.`
+      return `No perk found for "${this.props.match.params.id}".`
     }
     return <main>
       <Helmet>

@@ -39,7 +39,7 @@ export default class KillerPage extends React.Component {
   render() {
     const info = Killer.find(this.props.match.params.id)
     if (!info) {
-      return "No killer found."
+      return `No killer found for "${this.props.match.params.id}".`
     }
     const description = `POWER: ${info.powerTitle}\n\n${info.richEffect}`
     return <main>

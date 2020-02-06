@@ -48,6 +48,9 @@ export default class AddOnPage extends React.Component {
 
   render() {
     const addOn = AddOn.find(this.props.match.params.id)
+    if (!addOn) {
+      return `No add-on found for "${this.props.match.params.id}".`
+    }
     return <main className={css.container}>
       <Helmet>
         <title>{addOn.title} | Dead by Daylight {addOn.getOverTitle()}</title>

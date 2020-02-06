@@ -60,7 +60,7 @@ export default class PatchPage extends React.Component {
     }))
     const patch = Patch.find(this.props.match.params.version)
     if (!patch) {
-      return "No patch found."
+      return `No patch found for "${this.props.match.params.id}".`
     }
     return <main>
       <Helmet>
