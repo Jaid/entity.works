@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import {reduxForm} from "redux-form"
 
+import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
 import TextInput from "components/TextInput"
 
 import css from "./style.scss"
@@ -31,8 +32,14 @@ export default class extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    FormComponent: PropTypes.object.isRequired,
+    formType: PropTypes.object.isRequired,
     change: PropTypes.func.isRequired,
+  }
+
+  getFormComponent() {
+    if (this.props.formType.id === "killerLoadout") {
+      return BuildKillerLoadoutForm
+    }
   }
 
   render() {

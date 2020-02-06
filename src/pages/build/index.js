@@ -2,10 +2,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
+import formTypes from "lib/formTypes"
 import LinkButton from "components/LinkButton"
 import Title from "components/Title"
 
-import formTypes from "./formTypes"
 import css from "./style.scss"
 
 /**
@@ -35,8 +35,8 @@ export default class BuildPage extends React.Component {
   }
 
   render() {
-    const links = Object.entries(formTypes).map(([id, formType]) => {
-      return <div key={id}>
+    const links = formTypes.map(formType => {
+      return <div key={formType.id}>
         <LinkButton to={`/build/${formType.linkId}`}>Build {formType.title}</LinkButton>
       </div>
     })

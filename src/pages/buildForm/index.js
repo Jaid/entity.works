@@ -2,10 +2,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
+import {getFormType} from "lib/formTypes"
 import BuildForm from "components/BuildForm"
 import Title from "components/Title"
 
-import {getFormType} from "../build/formTypes"
 import css from "./style.scss"
 
 /**

@@ -5,7 +5,7 @@ import path from "path"
 import {EnvironmentPlugin} from "webpack"
 import configure from "webpack-config-jaid"
 
-import formTypes from "src/pages/build/formTypes"
+import formTypes from "./src/lib/formTypes"
 
 const development = process.env.NODE_ENV !== "production"
 
@@ -31,7 +31,7 @@ const collectUrls = () => {
     ...Object.keys(deadByDaylight.killers).map(id => `killer/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.survivors).map(id => `survivor/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.patches).map(id => `patch/${paramCase(id)}`),
-    ...Object.values(formTypes).map(formType => `build/${formType.linkId}`),
+    ...formTypes.map(formType => `build/${formType.linkId}`),
   ]
   return filterNil(urls)
 }
