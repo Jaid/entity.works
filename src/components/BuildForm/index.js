@@ -1,7 +1,7 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import {reduxForm} from "redux-form"
+import {Field, reduxForm} from "redux-form"
 
 import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
 import TextInput from "components/TextInput"
@@ -43,12 +43,12 @@ export default class extends React.Component {
   }
 
   render() {
-    console.log(this.props)
+    const FormComponent = this.getFormComponent()
     return <div className={classnames(css.container, this.props.className)}>
       <form>
         <div>Title</div>
-        <TextInput className={css.titleInput}/>
-        <this.props.FormComponent change={this.props.change}/>
+        <Field className={css.titleInput} component={TextInput} name="title"/>
+        <FormComponent change={this.props.change}/>
       </form>
     </div>
   }

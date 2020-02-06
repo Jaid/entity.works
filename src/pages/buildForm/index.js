@@ -41,7 +41,7 @@ export default class BuildPage extends React.Component {
         <title>{formType.pageTitle} | Entity Works</title>
       </Helmet>
       <Title>{formType.pageTitle}</Title>
-      <BuildForm FormComponent={formType.FormComponent}/>
+      <BuildForm formType={formType}/>
     </main>
   }
 

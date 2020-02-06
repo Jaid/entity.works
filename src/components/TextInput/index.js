@@ -25,6 +25,7 @@ export default class TextInput extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     title: PropTypes.string,
+    input: PropTypes.object.isRequired,
   }
 
   getTitle() {
@@ -36,7 +37,7 @@ export default class TextInput extends React.Component {
 
   render() {
     const inputProps = omit(this.props, ["className", "title"])
-    const input = <input className={css.input} type="text" {...inputProps}/>
+    const input = <input className={css.input} type="text" {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
     return <div className={classnames(this.props.className)}>
       {this.getTitle()}
       {input}
