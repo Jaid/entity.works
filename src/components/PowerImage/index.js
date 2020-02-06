@@ -14,7 +14,7 @@ import ImagesOverlap from "components/ImagesOverlap"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class PerkImage extends React.Component {
+export default class PowerImage extends React.Component {
 
  static propTypes = {
    className: PropTypes.oneOfType([

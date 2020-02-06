@@ -1,5 +1,6 @@
 import immer from "immer"
 import {combineReducers} from "redux"
+import {reducer as formReducer} from "redux-form"
 
 import loginManager from "lib/loginManager"
 import {socketMiddleware} from "lib/socketMiddleware"
@@ -18,4 +19,5 @@ export default combineReducers({
   main: mainReducer,
   socket: socketMiddleware.reducer,
   login: loginManager.getReducer(),
+  form: formReducer,
 })

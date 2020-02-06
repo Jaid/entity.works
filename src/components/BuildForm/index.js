@@ -32,14 +32,16 @@ export default class extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     FormComponent: PropTypes.object.isRequired,
+    change: PropTypes.func.isRequired,
   }
 
   render() {
+    console.log(this.props)
     return <div className={classnames(css.container, this.props.className)}>
       <form>
         <div>Title</div>
         <TextInput className={css.titleInput}/>
-        <this.props.FormComponent/>
+        <this.props.FormComponent change={this.props.change}/>
       </form>
     </div>
   }

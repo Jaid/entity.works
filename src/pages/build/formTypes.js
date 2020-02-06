@@ -1,15 +1,15 @@
 import {paramCase} from "param-case"
 
-import BuildLoadoutForm from "components/BuildLoadoutForm"
+import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
 
 const formTypes = {
   killerLoadout: {
     title: "Killer Loadout",
-    FormComponent: BuildLoadoutForm,
+    FormComponent: BuildKillerLoadoutForm,
   },
   killerTierList: {
     title: "Killer Tierlist",
-    FormComponent: BuildLoadoutForm,
+    FormComponent: BuildKillerLoadoutForm,
   },
 }
 

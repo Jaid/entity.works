@@ -1,3 +1,8 @@
-.container {
+.container {}
 
+@media only screen and (max-width: 768px) {
+  .container {
+    margin-left : 1em;
+    margin-right: 1em;
+  }
 }

@@ -21,12 +21,14 @@ img {
   margin-bottom: 80px;
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar,
+select::-webkit-scrollbar {
   width      : 6px;
   border-left: 1px solid rgba(255, 255, 255, 0.212);
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb,
+select::-webkit-scrollbar-thumb {
   width     : 6px;
   background: rgb(146, 22, 22);
 }
@@ -38,6 +40,13 @@ a {
 
 a:hover {
   color: rgb(112, 231, 148);
+}
+
+select {
+  background: black;
+  color     : white;
+  padding   : 4px;
+  width     : 240px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -54,5 +63,9 @@ a:hover {
 
   a:hover {
     color: rgb(59, 189, 98);
+  }
+
+  select {
+    width: 100%;
   }
 }

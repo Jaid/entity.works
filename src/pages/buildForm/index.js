@@ -36,11 +36,6 @@ export default class BuildPage extends React.Component {
 
   render() {
     const formType = getFormType(this.props.match.params.formType)
-    // const links = Object.entries(formTypes).map(([id, formTypeInfo]) => {
-    //   return <div key={id}>
-    //     <Link to={`/build/${paramCase(id)}`}>Build {formTypeInfo.title}</Link>
-    //   </div>
-    // })
     return <main className={css.container}>
       <Helmet>
         <title>{formType.pageTitle} | Entity Works</title>
