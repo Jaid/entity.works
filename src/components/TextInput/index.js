@@ -8,6 +8,8 @@ import css from "./style.scss"
 /**
   * @typedef {{
   *   className: *,
+  *   multiline: boolean,
+  *   title: string
   * }} Props
   */
 
@@ -26,6 +28,7 @@ export default class TextInput extends React.Component {
     ]),
     title: PropTypes.string,
     input: PropTypes.object.isRequired,
+    multiline: PropTypes.bool,
   }
 
   getTitle() {
@@ -35,9 +38,16 @@ export default class TextInput extends React.Component {
     return <div className={css.title}>{this.props.title}</div>
   }
 
-  render() {
+  getInput() {
     const inputProps = omit(this.props, ["className", "title"])
-    const input = <input className={css.input} type="text" {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
+    if (this.props.multiline) {
+      return <textarea className={css.input} {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
+    }
+    return <input className={css.input} type="text" {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
+  }
+
+  render() {
+    const input = this.getInput()
     return <div className={classnames(this.props.className)}>
       {this.getTitle()}
       {input}

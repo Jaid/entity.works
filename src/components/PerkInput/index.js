@@ -70,7 +70,7 @@ export default class PerkInput extends React.Component {
           {this.props.title}
         </div>
         <select onChange={this.props.input.onChange.bind(this)}>
-          <option value=""/>
+          <option value="">(none)</option>
           {options}
         </select>
       </div>

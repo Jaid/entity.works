@@ -4,6 +4,8 @@ import React from "react"
 import {Field, reduxForm} from "redux-form"
 
 import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
+import BuildPreview from "components/BuildPreview"
+import SmallerTitle from "components/SmallerTitle"
 import TextInput from "components/TextInput"
 
 import css from "./style.scss"
@@ -24,6 +26,8 @@ import css from "./style.scss"
   * @extends {React.Component<Props>}
   */
 export default class extends React.Component {
+
+  static displayName = "BuildForm"
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -49,6 +53,8 @@ export default class extends React.Component {
         <Field className={css.titleInput} component={TextInput} name="title" title="Title"/>
         <FormComponent change={this.props.change}/>
       </form>
+      <SmallerTitle>Preview</SmallerTitle>
+      <BuildPreview type={this.props.formType.id}/>
     </div>
   }
 

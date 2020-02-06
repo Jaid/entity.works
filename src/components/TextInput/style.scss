@@ -10,6 +10,15 @@
   padding      : 8px;
   margin       : 2px;
   outline      : none;
-  resize       : none;
   width        : 100%;
+}
+
+input.input {
+  resize: none;
+}
+
+textarea.input {
+  border-top-right-radius   : 0;
+  border-bottom-right-radius: 0;
+  resize                    : vertical;
 }

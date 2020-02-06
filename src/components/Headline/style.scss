@@ -6,33 +6,31 @@
   margin-bottom : 24px;
 
   &.redTheme {
-    background: rgb(149, 27, 27);
     background: linear-gradient(45deg, rgb(177, 36, 36) 15%, rgba(255, 204, 89, 0) 100%);
   }
 
   &.yellowTheme {
-    background: rgb(177, 130, 20);
     background: linear-gradient(45deg, rgb(177, 130, 20) 15%, rgba(255, 204, 89, 0) 100%);
   }
 
   &.greenTheme {
-    background: #1f5f0f;
     background: linear-gradient(45deg, #1f5f0f 15%, rgba(255, 204, 89, 0) 100%);
   }
 
   &.killerTheme {
-    background: rgb(136, 0, 0);
     background: linear-gradient(45deg, rgb(136, 0, 0) 15%, rgba(255, 204, 89, 0) 100%)
   }
 
   &.survivorTheme {
-    background: rgb(136, 0, 0);
     background: linear-gradient(45deg, rgb(49, 146, 211) 15%, rgba(255, 204, 89, 0) 100%)
   }
 
   &.addOnTheme {
-    background: rgb(136, 0, 0);
     background: linear-gradient(45deg, rgb(121, 57, 20) 15%, rgba(255, 204, 89, 0) 100%)
+  }
+
+  &.miscTheme {
+    background: linear-gradient(45deg, rgb(46, 39, 53) 15%, rgba(255, 204, 89, 0) 100%)
   }
 }
 
