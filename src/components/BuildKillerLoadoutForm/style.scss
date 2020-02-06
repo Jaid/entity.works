@@ -1,4 +1,7 @@
-.container {}
+.container {
+  display      : flex;
+  place-content: space-between;
+}
 
 .field {
   margin-top   : 20px;

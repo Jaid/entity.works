@@ -46,8 +46,7 @@ export default class extends React.Component {
     const FormComponent = this.getFormComponent()
     return <div className={classnames(css.container, this.props.className)}>
       <form>
-        <div>Title</div>
-        <Field className={css.titleInput} component={TextInput} name="title"/>
+        <Field className={css.titleInput} component={TextInput} name="title" title="Title"/>
         <FormComponent change={this.props.change}/>
       </form>
     </div>

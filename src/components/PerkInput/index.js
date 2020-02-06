@@ -2,7 +2,6 @@ import classnames from "classnames"
 import {isEmpty} from "has-content"
 import PropTypes from "prop-types"
 import React from "react"
-import {Field} from "redux-form"
 
 import collator from "lib/collator"
 import Perk from "lib/Perk"
@@ -52,7 +51,7 @@ export default class PerkInput extends React.Component {
 
   getImage() {
     if (isEmpty(this.props.input.value)) {
-      return null
+      return <span className={css.iconPlaceholder}/>
     }
     return <PerkImage height="2.5em" perkId={this.props.input.value}/>
   }
