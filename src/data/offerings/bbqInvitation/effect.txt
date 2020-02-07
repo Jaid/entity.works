@@ -1,0 +1,8 @@
+Calls upon The Entity to generate 1 Grill Hook and 1 Frozen Cocktail Machine'.
+
+As a Killer, hook a Survivor on a Grill Hook for the first time to gain a Survivor Chop. Grants bonus Bloodpoints.
+As a Survivor, complete repairs on a Frozen Cocktail Machine for all Survivors to gain a Frosty Margarita. Grants bonus Bloodpoints.
+Stacks.
+Only playable during the Scorching Summer BBQ Event.
+
+Note: During the Event, 2 default Grill Hooks and 2 default Frozen Cocktail Machines will spawn on the Map.

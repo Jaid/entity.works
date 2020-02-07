@@ -1,0 +1,10 @@
+Calls upon The Entity to generate 1 Lunar Vessel.
+
+As a Killer, hook a Survivor to corrupt the Vessels in the Trial and make them temporarily destructible. Destroying a Vessel earns Moonrise progress and bonus Bloodpoints.
+As a Survivor, take and escape the Trial with a Vessel to earn Moonrise progress and bonus Bloodpoints.
+Stacks.
+Only playable during the Moonrise Event.
+
+Completing the Moonrise Event will earn you Golden Coins for use in the Store.
+
+Note: During the Event, 2 default Lunar Vessels will spawn on the Map.

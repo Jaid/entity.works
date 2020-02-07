@@ -1,0 +1,10 @@
+Calls upon The Entity to generate 1 Cankerous Hook and 1 Cankerous Generator.
+
+As a Killer, hook a Survivor on a Cankerous Hook for the first time to earn bonus Bloodpoints.
+As a Survivor, find and repair a Cankerous Generator to earn bonus Bloodpoints.
+Stacks.
+Using this Offering increases the amount of Bloodpoints earned for these interactions.
+
+Note: During the Event, 1 default Cankerous Hook and 1 default Cankerous Generator will spawn on the Map.
+
+Only playable during the The Withering Blight Event.
