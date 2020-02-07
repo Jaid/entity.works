@@ -4,7 +4,7 @@
   "domain": "entity.works",
   "private": true,
   "webpackConfigJaid": "webapp",
-  "version": "2.29.4",
+  "version": "2.30.0",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
     "@babel/runtime": "^7.8.4",
