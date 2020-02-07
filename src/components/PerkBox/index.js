@@ -15,7 +15,7 @@ export default class PerkBox extends React.Component {
   static propTypes = {
     className: PropTypes.string,
     imageClassName: PropTypes.string,
-    perk: PropTypes.string.isRequired,
+    perkId: PropTypes.string.isRequired,
     heightEm: PropTypes.number,
   }
 
@@ -24,7 +24,7 @@ export default class PerkBox extends React.Component {
   }
 
   render() {
-    const perk = findPerk(this.props.perk)
+    const perk = findPerk(this.props.perkId)
     const style = {
       marginRight: `${this.props.heightEm / 4}em`,
       marginTop: `${-this.props.heightEm / 2}em`,

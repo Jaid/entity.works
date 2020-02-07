@@ -21,7 +21,7 @@ export default class SurvivorTooltip extends React.Component {
       <Picture className={css.banner} input={imgSrc}/>
       <div className={css.title}>{this.props.info.shortTitle}</div>
       <div className={css.content}>
-        {ownPerks.map(perk => <div key={perk.level} className={css.perk}><PerkBox perk={perk.id}/></div>)}
+        {ownPerks.map(perk => <div key={perk.level} className={css.perk}><PerkBox perkId={perk.id}/></div>)}
       </div>
     </div>
   }

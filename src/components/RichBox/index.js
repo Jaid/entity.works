@@ -28,7 +28,7 @@ export default class RichBox extends React.Component {
     }
     if (this.props.type === "perk") {
       const id = this.props.name || this.props.info.id
-      return <PerkBox className={this.props.className} perk={id}/>
+      return <PerkBox className={this.props.className} perkId={id}/>
     }
     return null
   }

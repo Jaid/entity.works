@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import filterNil from "filter-nil"
-import {uniq} from "lodash"
+import {isEmpty} from "has-content"
+import {sortBy, uniq} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -9,6 +10,7 @@ import AddOnBox from "components/AddOnBox"
 import AddOnImage from "components/AddOnImage"
 import KillerBox from "components/KillerBox"
 import OfferingBox from "components/OfferingBox"
+import PerkBox from "components/PerkBox"
 import PowerImage from "components/PowerImage"
 import RichText from "components/RichText"
 
@@ -40,7 +42,7 @@ export default class BuildKillerLoadoutContent extends React.Component {
     if (!killer) {
       return null
     }
-    return <div className={css.title}>
+    return <div className={css.killerBox}>
       <KillerBox killer={killer.id}/>
     </div>
   }
@@ -49,14 +51,17 @@ export default class BuildKillerLoadoutContent extends React.Component {
     if (!killer) {
       return null
     }
-    const addOnIds = uniq(filterNil([this.props.data.addOn1, this.props.data.addOn2]))
+    const addOnsInput = [
+      this.props.data.addOn1,
+      this.props.data.addOn2,
+    ]
+    const addOnIds = sortBy(uniq(filterNil(addOnsInput)))
     const addOnElements = addOnIds.map(id => {
       return <div key={id}>
         <AddOnBox addOnId={id} imageHeight="2em"/>
       </div>
     })
     return <div>
-      <PowerImage height="2em" killerId={killer.id}/>{killer.powerTitle}
       {addOnElements}
     </div>
   }
@@ -67,6 +72,27 @@ export default class BuildKillerLoadoutContent extends React.Component {
     }
     return <div>
       <OfferingBox offeringId={this.props.data.offering}/>
+    </div>
+  }
+
+  getPerks() {
+    const perksInput = [
+      this.props.data.perk1,
+      this.props.data.perk2,
+      this.props.data.perk3,
+      this.props.data.perk4,
+    ]
+    const perkIds = sortBy(uniq(filterNil(perksInput)))
+    if (isEmpty(perkIds)) {
+      return null
+    }
+    const perkElements = perkIds.map(id => {
+      return <div key={id} className={css.perk}>
+        <PerkBox perkId={id}/>
+      </div>
+    })
+    return <div>
+      {perkElements}
     </div>
   }
 
@@ -88,9 +114,16 @@ export default class BuildKillerLoadoutContent extends React.Component {
       killer = Killer.find(this.props.data.killer)
     }
     return <div className={classnames(css.container, this.props.className)}>
-      {this.getKillerBox(killer)}
-      {this.getPower(killer)}
-      {this.getOffering()}
+      <div className={css.content}>
+        <div>
+          {this.getKillerBox(killer)}
+          {this.getPower(killer)}
+          {this.getOffering()}
+        </div>
+        <div>
+          {this.getPerks()}
+        </div>
+      </div>
       {this.getDescription()}
     </div>
   }
