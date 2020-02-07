@@ -1,1 +1,1 @@
-Calls upon the Entity IconHelp entity.png for the brightest Moonlight.
+Calls upon the Entity for the brightest Moonlight.

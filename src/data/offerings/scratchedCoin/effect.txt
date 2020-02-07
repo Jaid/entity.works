@@ -1,1 +1,1 @@
-Calls on the Entity IconHelp entity.png to prevent the appearance of 1 Chest IconHelp chests.png.
+Calls on the Entity to prevent the appearance of 1 Chest.

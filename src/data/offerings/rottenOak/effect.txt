@@ -1,1 +1,1 @@
-Calls on The Entity IconHelp entity.png to moderately decrease the distance between sacrificial Hooks IconHelpLoading hook.png appearing in the world.
+Calls on The Entity to moderately decrease the distance between sacrificial Hooks appearing in the world.

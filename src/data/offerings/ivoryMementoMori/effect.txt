@@ -1,1 +1,1 @@
-Grants the ability to kill one Survivor IconHelpLoading survivor.png who has been hooked by your hand during the next trial.
+Grants the ability to kill one Survivor who has been hooked by your hand during the next trial.

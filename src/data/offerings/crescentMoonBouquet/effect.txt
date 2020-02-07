@@ -1,1 +1,1 @@
-Calls upon the Entity IconHelp entity.png for a dimmed Moonlight.
+Calls upon the Entity for a dimmed Moonlight.

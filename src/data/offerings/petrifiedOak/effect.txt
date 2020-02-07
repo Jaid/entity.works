@@ -1,1 +1,1 @@
-Calms The Entity IconHelp entity.png and slightly increases the distance between sacrificial Hooks IconHelpLoading hook.png appearing in the world.
+Calms The Entity and slightly increases the distance between sacrificial Hooks appearing in the world.
