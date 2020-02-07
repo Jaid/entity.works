@@ -5,10 +5,10 @@ const formTypes = [
     id: "killerLoadout",
     title: "Killer Loadout",
   },
-  {
-    id: "killerTierList",
-    title: "Killer Tierlist",
-  },
+  // {
+  //   id: "killerTierList",
+  //   title: "Killer Tierlist",
+  // },
 ]
 
 for (const formType of formTypes) {
