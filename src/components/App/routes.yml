@@ -15,3 +15,4 @@ buildForm: /build/:formType
 offerings:
   - /offerings
   - /offerings/:type
+offering: /offering/:id

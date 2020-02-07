@@ -26,11 +26,15 @@ const collectUrls = () => {
     "data",
     "perks/all",
     "build",
+    "offerings/all",
+    "offerings/killer",
+    "offerings/survivor",
     ...Object.keys(deadByDaylight.addOns).map(id => `add-on/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.perks).map(id => `perk/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.killers).map(id => `killer/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.survivors).map(id => `survivor/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.patches).map(id => `patch/${paramCase(id)}`),
+    ...Object.keys(deadByDaylight.offerings).map(id => `offering/${paramCase(id)}`),
     ...formTypes.map(formType => `build/${formType.linkId}`),
   ]
   return filterNil(urls)

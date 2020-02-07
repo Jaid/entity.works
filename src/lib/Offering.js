@@ -81,9 +81,9 @@ Offering.all = Object.entries(deadByDaylight.offerings).map(([id, baseOffering])
   if (offering.type === "survivor") {
     offering.overTitle = "Survivor Offering"
   } else if (offering.type === "killer") {
-    offering.overTitle = "General Offering"
+    offering.overTitle = "Killer Offering"
   } else {
-    offering.overTitle = "General Offering"
+    offering.overTitle = "Offering"
   }
   return offering
 })
