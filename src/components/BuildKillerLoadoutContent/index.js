@@ -8,6 +8,7 @@ import Killer from "lib/Killer"
 import AddOnBox from "components/AddOnBox"
 import AddOnImage from "components/AddOnImage"
 import KillerBox from "components/KillerBox"
+import OfferingBox from "components/OfferingBox"
 import PowerImage from "components/PowerImage"
 import RichText from "components/RichText"
 
@@ -60,11 +61,20 @@ export default class BuildKillerLoadoutContent extends React.Component {
     </div>
   }
 
+  getOffering() {
+    if (!this.props.data.offering) {
+      return null
+    }
+    return <div>
+      <OfferingBox offeringId={this.props.data.offering}/>
+    </div>
+  }
+
   getDescription() {
     if (!this.props.data.description) {
       return null
     }
-    return <div>
+    return <div className={css.description}>
       <RichText>{this.props.data.description}</RichText>
     </div>
   }
@@ -80,6 +90,7 @@ export default class BuildKillerLoadoutContent extends React.Component {
     return <div className={classnames(css.container, this.props.className)}>
       {this.getKillerBox(killer)}
       {this.getPower(killer)}
+      {this.getOffering()}
       {this.getDescription()}
     </div>
   }

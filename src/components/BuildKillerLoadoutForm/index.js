@@ -7,6 +7,7 @@ import {Field} from "redux-form"
 import Killer from "lib/Killer"
 import AddOnInput from "components/AddOnInput"
 import KillerInput from "components/KillerInput"
+import OfferingInput from "components/OfferingInput"
 import PerkInput from "components/PerkInput"
 import PowerImage from "components/PowerImage"
 import TextInput from "components/TextInput"
@@ -69,6 +70,7 @@ export default class BuildKillerLoadoutForm extends React.Component {
           <Field className={css.field} component={PerkInput} name="perk2" title="Perk 2" onlyKillerPerks/>
           <Field className={css.field} component={PerkInput} name="perk3" title="Perk 3" onlyKillerPerks/>
           <Field className={css.field} component={PerkInput} name="perk4" title="Perk 4" onlyKillerPerks/>
+          <Field className={css.field} component={OfferingInput} name="offering" title="Offering" onlyKillerPerks/>
         </div>
       </div>
       <Field component={TextInput} name="description" title="Description (optional)" multiline/>
