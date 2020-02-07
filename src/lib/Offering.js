@@ -1,5 +1,4 @@
 import deadByDaylight from "dead-by-daylight"
-import {sortBy} from "lodash"
 import {paramCase} from "param-case"
 
 import offeringEffects from /* aot */ "src/aotLoaders/offeringEffects"
@@ -90,8 +89,8 @@ Offering.all = Object.entries(deadByDaylight.offerings).map(([id, baseOffering])
 })
 
 Offering.allVisible = Offering.all.filter(offering => offering.visible)
-Offering.forKiller = Offering.allVisible.filter(offering => offering.for === "killer")
-Offering.forSurvivor = Offering.allVisible.filter(offering => offering.for === "survivor")
+Offering.forKiller = Offering.allVisible.filter(offering => offering.type !== "survivor")
+Offering.forSurvivor = Offering.allVisible.filter(offering => offering.type !== "killer")
 Offering.find = id => {
   return Offering.all.find(offering => offering.id === id) || Offering.all.find(offering => offering.linkId === id)
 }

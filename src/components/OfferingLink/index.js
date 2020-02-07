@@ -33,7 +33,7 @@ export default class OfferingLink extends React.Component {
 
   render() {
     const offering = findObject(this.props.offeringId)
-    return <Link className={classnames(css.container, this.props.className)} to={`/add-on/${offering.linkId}`}>
+    return <Link className={classnames(css.container, this.props.className)} to={`/offering/${offering.linkId}`}>
       {this.props.children}
     </Link>
   }
