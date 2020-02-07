@@ -42,9 +42,14 @@ class Offering {
   id = null
 
   /**
+   * @type {string}
+   */
+  overTitle = null
+
+  /**
    * @type {"killer"|"survivor"}
    */
-  for = null
+  type = null
 
   /**
    * @param {string} effect
@@ -73,7 +78,14 @@ Offering.all = Object.entries(deadByDaylight.offerings).map(([id, baseOffering])
   offering.visible = baseOffering.visible
   offering.released = baseOffering.released
   offering.rarity = baseOffering.rarity
-  offering.for = baseOffering.for
+  offering.type = baseOffering.type
+  if (offering.type === "survivor") {
+    offering.overTitle = "Survivor Offering"
+  } else if (offering.type === "killer") {
+    offering.overTitle = "General Offering"
+  } else {
+    offering.overTitle = "General Offering"
+  }
   return offering
 })
 

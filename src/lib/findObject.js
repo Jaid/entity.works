@@ -4,6 +4,8 @@ import Patch from "lib/Patch"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
 
+import Offering from "./Offering"
+
 /**
  * @typedef {Object} DaylightObject
  * @prop {string} id
@@ -97,6 +99,15 @@ for (const addOn of AddOn.all) {
   index[addOn.id] = {
     ...addOn,
     type: "addOn",
+  }
+}
+
+const offeringsObject = {}
+for (const addOn of Offering.all) {
+  offeringsObject[addOn.id] = addOn
+  index[addOn.id] = {
+    ...addOn,
+    type: "offering",
   }
 }
 
