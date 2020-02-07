@@ -39,8 +39,6 @@ export default class Header extends React.Component {
       <nav className={css.nav}>
         <Link to="/build">Build</Link>
         <Link to={charactersLink}>Characters</Link>
-        <Link to={survivorPerksLink}>Perks</Link>
-        <Link to={patchesLink}>Patches</Link>
         <SearchBar/>
       </nav>
     </div>
