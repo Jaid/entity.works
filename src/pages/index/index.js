@@ -6,6 +6,7 @@ import {Link} from "react-router-dom"
 
 import Killer from "lib/Killer"
 import {killerPerksLink, killersLink, patchesLink, survivorPerksLink, survivorsLink} from "lib/links"
+import Offering from "lib/Offering"
 import Patch from "lib/Patch"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
@@ -40,6 +41,16 @@ const links = [
     count: Patch.all.length,
     text: "Patches",
     to: patchesLink,
+  },
+  {
+    count: Offering.forKiller.length,
+    text: "Killer Offerings",
+    to: "/offerings/killer",
+  },
+  {
+    count: Offering.forSurvivor.length,
+    text: "Survivor Offerings",
+    to: "/offerings/survivor",
   },
 ]
 
