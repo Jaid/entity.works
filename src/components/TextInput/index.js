@@ -29,6 +29,7 @@ export default class TextInput extends React.Component {
     title: PropTypes.string,
     input: PropTypes.object.isRequired,
     multiline: PropTypes.bool,
+    password: PropTypes.bool,
   }
 
   getTitle() {
@@ -39,9 +40,19 @@ export default class TextInput extends React.Component {
   }
 
   getInput() {
-    const inputProps = omit(this.props, ["className", "title"])
+    const inputProps = omit(this.props, [
+      "className",
+      "title",
+      "multiline",
+      "password",
+      "input",
+      "meta",
+    ])
     if (this.props.multiline) {
       return <textarea className={css.input} {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
+    }
+    if (this.props.password) {
+      return <input className={css.input} type="password" {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
     }
     return <input className={css.input} type="text" {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
   }

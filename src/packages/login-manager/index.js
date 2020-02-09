@@ -23,7 +23,9 @@ export default class LoginManager {
    * @return {import("redux").Middleware}
    */
   getMiddleware() {
-    return store => next => action => {
+    return store => {
+      this.store = store
+      return next => action => {
       // const authCookie = jsCookie.getJSON(this.options.twitchAuthCookie)
       // if (hasContent(authCookie)) {
       //   if (action.type === "@@socket/loggedIn") {
@@ -33,10 +35,11 @@ export default class LoginManager {
       //     })
       //   }
       // }
-      if (action.type === "@@socket/persistLogin") {
-        jsCookie.set(this.options.cookieName, action.payload)
+        if (action.type === "@@socket/persistLogin") {
+          jsCookie.set(this.options.cookieName, action.payload)
+        }
+        return next(action)
       }
-      return next(action)
     }
   }
 
@@ -123,6 +126,32 @@ export default class LoginManager {
 
   getCallbackRoute() {
     return <Route component={this.getCallbackPage()} path={this.options.callbackPath} exact/>
+  }
+
+  dispatchLogin(values) {
+    if (!this.store) {
+      throw new Error("Redux store not set in LoginManager")
+    }
+    this.store.dispatch({
+      type: "@@socket/send/register",
+      payload: {
+        user: values.user,
+        password: values.password,
+      },
+    })
+  }
+
+  dispatchRegister(values) {
+    if (!this.store) {
+      throw new Error("Redux store not set in LoginManager")
+    }
+    this.store.dispatch({
+      type: "@@socket/send/register",
+      payload: {
+        user: values.user,
+        password: values.password,
+      },
+    })
   }
 
 }

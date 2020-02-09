@@ -5,6 +5,7 @@ import Picture from "react-modern-picture"
 import {Link} from "react-router-dom"
 
 import {charactersLink, patchesLink, survivorPerksLink} from "lib/links"
+import LoginButton from "components/LoginButton"
 import SearchBar from "components/SearchBar"
 
 import icon from "root/icon.png"
@@ -39,6 +40,7 @@ export default class Header extends React.Component {
       <nav className={css.nav}>
         <Link to="/build">Build</Link>
         <Link to={charactersLink}>Characters</Link>
+        <LoginButton/>
         <SearchBar/>
       </nav>
     </div>

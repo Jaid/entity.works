@@ -1,0 +1,34 @@
+.loginButton {
+  cursor: pointer;
+}
+
+.modal {
+  background: black;
+  color     : white;
+  min-width : 400px;
+  border    : 1px solid gray;
+}
+
+.closeIcon {
+  fill: rgb(200, 200, 200);
+}
+
+.tabList {
+  display   : flex;
+  list-style: none;
+
+  &>* {
+    color         : rgb(59, 189, 98);
+    cursor        : pointer;
+    padding-top   : 4px;
+    padding-bottom: 4px;
+    padding-left  : 12px;
+    padding-right : 12px;
+    border-bottom : 1px solid transparent;
+  }
+}
+
+.selectedTab {
+  color        : white;
+  border-bottom: 1px solid white;
+}
