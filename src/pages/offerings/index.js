@@ -4,6 +4,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
+import collator from "lib/collator"
+import getRarityIndex from "lib/getRarityIndex"
 import Offering from "lib/Offering"
 import NavigationPage from "components/NavigationPage"
 import OfferingBlock from "components/OfferingBlock"
@@ -22,6 +24,14 @@ import css from "./style.scss"
   *  },
   * }} Props
   */
+
+function sortOfferings(offering1, offering2) {
+  const rarityIndexDifference = getRarityIndex(offering1.rarity) - getRarityIndex(offering2.rarity)
+  if (rarityIndexDifference !== 0) {
+    return rarityIndexDifference
+  }
+  return collator.compare(offering1.title, offering2.title)
+}
 
 /**
   * @class
@@ -59,7 +69,9 @@ export default class OfferingsPage extends React.Component {
   }
 
   render() {
-    const offeringBlocks = this.getOfferingList().map(offering => {
+    const offerings = [...this.getOfferingList()]
+    offerings.sort(sortOfferings)
+    const offeringBlocks = offerings.map(offering => {
       return <OfferingBlock key={offering.id} className={css.offeringBlock} offeringId={offering.id}/>
     })
     const links = [

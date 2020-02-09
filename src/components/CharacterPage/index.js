@@ -3,6 +3,7 @@ import React from "react"
 import zahl from "zahl"
 
 import AddOn from "lib/AddOn"
+import collator from "lib/collator"
 import findObject from "lib/findObject"
 import getRarityIndex from "lib/getRarityIndex"
 import Killer from "lib/Killer"
@@ -34,8 +35,6 @@ const meta = {
     overText: "Survivor",
   },
 }
-
-const collator = new Intl.Collator("en")
 
 function sortAddOns(addOn1, addOn2) {
   const rarityIndexDifference = getRarityIndex(addOn1.rarity) - getRarityIndex(addOn2.rarity)

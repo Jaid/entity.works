@@ -69,7 +69,7 @@ export default class CharacterPage extends React.Component {
         <RichText className={css.powerDescription}>{character.richEffect}</RichText>
       </div>
     }
-    return ""
+    return null
   }
 
   render() {
