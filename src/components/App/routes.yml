@@ -16,3 +16,4 @@ offerings:
   - /offerings
   - /offerings/:type
 offering: /offering/:id
+user: /user/:id

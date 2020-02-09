@@ -8,9 +8,7 @@ export default class LoginManager {
     this.options = {
       prefix: "@@login/",
       socketClient: null,
-      callbackPath: "/callback",
       cookieName: "login",
-      loginRedirectUrl: "/",
       ...options,
     }
     this.login = jsCookie.getJSON(this.options.cookieName)
@@ -23,10 +21,12 @@ export default class LoginManager {
     return store => {
       this.store = store
       return next => action => {
-      // const authCookie = jsCookie.getJSON(this.options.twitchAuthCookie)
-      // if (hasContent(authCookie)) {
         if (action.type === this.createActionType("persist")) {
           jsCookie.set(this.options.cookieName, action.payload)
+        }
+        if (action.type === this.createActionType("logout")) {
+          this.login = null
+          jsCookie.remove(this.options.cookieName)
         }
         return next(action)
       }
@@ -56,6 +56,14 @@ export default class LoginManager {
           draft.key = action.payload.key
         })
       }
+      if (actionType === "logout") {
+        return immer(state, draft => {
+          draft.loggedIn = false
+          draft.title = null
+          draft.name = null
+          draft.key = null
+        })
+      }
       return state
     }
   }
@@ -64,10 +72,13 @@ export default class LoginManager {
     return this.options.prefix + type
   }
 
+  logout() {
+    this.store.dispatch({
+      type: this.createActionType("logout"),
+    })
+  }
+
   async dispatchLogin(values) {
-    if (!this.store) {
-      throw new Error("Redux store not set in LoginManager")
-    }
     const result = await emitPromise.withDefaultTimeout(this.options.socketClient, "login", values)
     if (result?.error) {
       this.store.dispatch({
@@ -87,9 +98,6 @@ export default class LoginManager {
   }
 
   async dispatchRegister(values) {
-    if (!this.store) {
-      throw new Error("Redux store not set in LoginManager")
-    }
     const result = await emitPromise.withDefaultTimeout(this.options.socketClient, "register", values)
     if (result?.error) {
       this.store.dispatch({

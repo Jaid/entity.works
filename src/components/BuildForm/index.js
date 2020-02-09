@@ -1,10 +1,12 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
+import {connect} from "react-redux"
 import {Field, reduxForm} from "redux-form"
 
 import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
 import BuildPreview from "components/BuildPreview"
+import LinkButton from "components/LinkButton"
 import SmallerTitle from "components/SmallerTitle"
 import TextInput from "components/TextInput"
 
@@ -20,6 +22,10 @@ import css from "./style.scss"
 @reduxForm({
   form: "build",
 })
+
+@connect(({login}) => ({
+  loggedIn: login.loggedIn,
+}))
 
 /**
   * @class
@@ -38,12 +44,24 @@ export default class extends React.Component {
     ]),
     formType: PropTypes.object.isRequired,
     change: PropTypes.func.isRequired,
+    loggedIn: PropTypes.bool,
   }
 
   getFormComponent() {
     if (this.props.formType.id === "killerLoadout") {
       return BuildKillerLoadoutForm
     }
+  }
+
+  getSaveButton() {
+    const button = <button disabled={!this.props.loggedIn} type="submit">Save</button>
+    if (this.props.loggedIn) {
+      return button
+    }
+    return <div>
+      {button}
+      <span>Log in or register to save and publish this build.</span>
+    </div>
   }
 
   render() {
@@ -53,8 +71,11 @@ export default class extends React.Component {
         <Field className={css.titleInput} component={TextInput} name="title" title="Title"/>
         <FormComponent change={this.props.change}/>
       </form>
-      <SmallerTitle>Preview</SmallerTitle>
-      <BuildPreview type={this.props.formType.id}/>
+      {this.getSaveButton()}
+      <div className={css.buildPreview}>
+        <SmallerTitle>Preview</SmallerTitle>
+        <BuildPreview type={this.props.formType.id}/>
+      </div>
     </div>
   }
 

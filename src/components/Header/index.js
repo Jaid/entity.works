@@ -6,6 +6,7 @@ import {connect} from "react-redux"
 import {Link} from "react-router-dom"
 
 import {charactersLink} from "lib/links"
+import loginManager from "lib/loginManager"
 import LoginButton from "components/LoginButton"
 import SearchBar from "components/SearchBar"
 
@@ -46,7 +47,10 @@ export default class Header extends React.Component {
       return null
     }
     if (this.props.login.loggedIn) {
-      return <Link to={`/user/${this.props.login.name}`}>{this.props.login.title}</Link>
+      return [
+        <Link key="user" to={`/user/${this.props.login.name}`}>{this.props.login.title}</Link>,
+        <a key="logout" onClick={loginManager.logout.bind(loginManager)}>Logout</a>,
+      ]
     }
     return <LoginButton/>
   }
