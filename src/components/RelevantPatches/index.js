@@ -1,4 +1,5 @@
 import classnames from "classnames"
+import {isEmpty} from "has-content"
 import PropTypes from "prop-types"
 import React from "react"
 import {Link} from "react-router-dom"
@@ -35,10 +36,13 @@ export default class RelevantPatches extends React.Component {
     referenceId: PropTypes.string.isRequired,
   }
 
-  render() {
+  getContent() {
     const object = findObject(this.props.referenceId)
     const patches = findPatchesForReference(object.id)
-    const content = Object.values(patches).map(patch => {
+    if (isEmpty(patches)) {
+      return `No changelog found for ${object.title}.`
+    }
+    return Object.values(patches).map(patch => {
       const headline = <PatchHeadline patchInfo={patch}/>
       const changes = Object.keys(patch.points).map(category => {
         return <div key={category} className={css.categoryBlock}>
@@ -54,8 +58,11 @@ export default class RelevantPatches extends React.Component {
         </TextSection>
       </div>
     })
+  }
+
+  render() {
     return <div className={classnames(css.container, this.props.className)}>
-      {content}
+      {this.getContent()}
     </div>
   }
 
