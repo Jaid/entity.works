@@ -52,9 +52,9 @@ export default class RegisterForm extends React.Component {
     return <div className={classnames(css.container, this.props.className)}>
       <form onSubmit={this.props.handleSubmit}>
         <div className={css.fields}>
-          <Field autocomplete="username" className={css.field} component={TextInput} name="user" title="User"/>
-          <Field autocomplete="new-password" className={css.field} component={TextInput} name="password" title="Password" password/>
-          <Field autocomplete="new-password" className={css.field} component={TextInput} name="passwordRepeat" title="Password (repeat)" password/>
+          <Field autoComplete="username" className={css.field} component={TextInput} name="user" title="User"/>
+          <Field autoComplete="new-password" className={css.field} component={TextInput} name="password" title="Password" password/>
+          <Field autoComplete="new-password" className={css.field} component={TextInput} name="passwordRepeat" title="Password (repeat)" password/>
         </div>
         <button disabled={!this.props.valid} type="submit">Register</button>
       </form>

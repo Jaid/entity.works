@@ -49,8 +49,8 @@ export default class LoginForm extends React.Component {
     return <div className={classnames(css.container, this.props.className)}>
       <form onSubmit={this.props.handleSubmit}>
         <div className={css.fields}>
-          <Field autocomplete="username" className={css.field} component={TextInput} name="user" title="User"/>
-          <Field autocomplete="password" className={css.field} component={TextInput} name="password" title="Password" password/>
+          <Field autoComplete="username" className={css.field} component={TextInput} name="user" title="User"/>
+          <Field autoComplete="password" className={css.field} component={TextInput} name="password" title="Password" password/>
         </div>
         <button disabled={!this.props.valid} type="submit">Login</button>
       </form>

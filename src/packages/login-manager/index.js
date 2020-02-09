@@ -1,9 +1,6 @@
+import emitPromise from "emit-promise"
 import immer from "immer"
 import jsCookie from "js-cookie"
-import {parse} from "query-string"
-import React from "react"
-import {connect} from "react-redux"
-import {Redirect, Route} from "react-router-dom"
 
 export default class LoginManager {
 
@@ -28,14 +25,7 @@ export default class LoginManager {
       return next => action => {
       // const authCookie = jsCookie.getJSON(this.options.twitchAuthCookie)
       // if (hasContent(authCookie)) {
-      //   if (action.type === "@@socket/loggedIn") {
-      //     store.dispatch({
-      //       type: "@@socket/send/login",
-      //       payload: authCookie,
-      //     })
-      //   }
-      // }
-        if (action.type === "@@socket/persistLogin") {
+        if (action.type === this.createActionType("persist")) {
           jsCookie.set(this.options.cookieName, action.payload)
         }
         return next(action)
@@ -44,114 +34,78 @@ export default class LoginManager {
   }
 
   getReducer() {
-    console.log(this)
     return (state, action) => {
       if (!state) {
         return {
-          loggedIn: false,
+          loggedIn: Boolean(this.login?.key),
           ...this.login,
         }
       }
       if (typeof action?.type !== "string") {
         return state
       }
-      if (action.type === "@@socket/received/loggedIn") {
-        return immer(state, draft => {
-          draft.loggedIn = true
-          draft.displayName = action.payload.displayName
-          draft.twitchId = action.payload.twitchId
-        })
-      }
-      if (action.type === "@@socket/received/twitchAuthUrl") {
-        return immer(state, draft => {
-          draft.authUrl = action.payload
-        })
-      }
-      if (action.type === "@@socket/received/persistLogin") {
-        jsCookie.set(this.options.cookieName, action.payload)
-        return immer(state, draft => {
-          draft.apiKey = action.payload.apiKey
-          draft.displayName = action.payload.displayName
-        })
-      }
       if (!action.type.startsWith(this.options.prefix)) {
         return state
       }
       const actionType = action.type.slice(this.options.prefix.length)
+      if (actionType === "persist") {
+        return immer(state, draft => {
+          draft.loggedIn = true
+          draft.title = action.payload.title
+          draft.name = action.payload.name
+          draft.key = action.payload.key
+        })
+      }
       return state
     }
   }
 
-  getCallbackPage() {
-    const CallbackPage = class extends React.Component {
-
-      displayName = "CallbackPage"
-
-      constructor(props) {
-        super(props)
-        console.log(props)
-        const query = parse(document.location.search)
-        this.code = query.code
-        this.state = {
-        }
-      }
-
-      componentDidMount() {
-        if (this.state.redirect) {
-          return
-        }
-        this.props.dispatch({
-          type: "@@socket/send/login",
-          payload: {
-            code: this.code,
-          },
-        })
-      }
-
-      render() {
-        if (this.props.apiKey) {
-          return <Redirect to="/"/>
-        }
-        // if (this.state.result === false) {
-        //   return "Login did not work."
-        // }
-        return "Logging in..."
-      }
-
-    }
-    return connect(state => ({
-      apiKey: state.login.apiKey,
-    }))(CallbackPage)
+  createActionType(type) {
+    return this.options.prefix + type
   }
 
-  getCallbackRoute() {
-    return <Route component={this.getCallbackPage()} path={this.options.callbackPath} exact/>
-  }
-
-  dispatchLogin(values) {
+  async dispatchLogin(values) {
     if (!this.store) {
       throw new Error("Redux store not set in LoginManager")
     }
+    const result = await emitPromise.withDefaultTimeout(this.options.socketClient, "login", values)
+    if (result?.error) {
+      this.store.dispatch({
+        type: this.createActionType("error"),
+        payload: {
+          action: "login",
+          ...result,
+        },
+      })
+      return false
+    }
     this.store.dispatch({
-      type: "@@socket/send/register",
-      payload: {
-        user: values.user,
-        password: values.password,
-      },
+      type: this.createActionType("persist"),
+      payload: result,
     })
+    return true
   }
 
-  dispatchRegister(values) {
+  async dispatchRegister(values) {
     if (!this.store) {
       throw new Error("Redux store not set in LoginManager")
     }
+    const result = await emitPromise.withDefaultTimeout(this.options.socketClient, "register", values)
+    if (result?.error) {
+      this.store.dispatch({
+        type: this.createActionType("error"),
+        payload: {
+          action: "register",
+          ...result,
+        },
+      })
+      return false
+    }
     this.store.dispatch({
-      type: "@@socket/send/register",
-      payload: {
-        user: values.user,
-        password: values.password,
-      },
+      type: this.createActionType("persist"),
+      payload: result,
     })
+    return true
   }
 
 }

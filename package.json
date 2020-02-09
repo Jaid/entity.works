@@ -17,6 +17,7 @@
     "classnames": "^2.2.6",
     "dead-by-daylight": "^1.11.2",
     "debug": "^4.1.1",
+    "emit-promise": "^3.1.1",
     "ensure-array": "^1.0.0",
     "ensure-object": "^1.0.1",
     "filter-nil": "^1.0.1",
