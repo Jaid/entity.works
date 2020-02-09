@@ -36,7 +36,6 @@ export default class OfferingBlock extends React.Component {
 
   render() {
     const offering = findObject(this.props.offeringId)
-    console.log(offering)
     return <div className={classnames(css.container, this.props.className)}>
       <Headline miniText={offering.overTitle} theme="offering">{offering.title}</Headline>
       <div className={css.content}>

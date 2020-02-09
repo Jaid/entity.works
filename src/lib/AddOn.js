@@ -110,9 +110,6 @@ class AddOn {
 AddOn.all = Object.entries(deadByDaylight.addOns).map(([id, baseAddOn]) => {
   const addOn = new AddOn
   const effect = addOnEffects[id]
-  if (!effect) {
-    console.log(id)
-  }
   addOn.setEffect(effect || "No effect.")
   addOn.setId(id)
   addOn.title = baseAddOn.title
