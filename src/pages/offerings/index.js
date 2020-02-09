@@ -49,6 +49,10 @@ export default class OfferingsPage extends React.Component {
       return Offering.forKiller
     } else if (this.props.match.params.type === "survivor") {
       return Offering.forSurvivor
+    } else if (this.props.match.params.type === "survivor-exclusive") {
+      return Offering.forSurvivorExclusive
+    } else if (this.props.match.params.type === "killer-exclusive") {
+      return Offering.forKillerExclusive
     } else {
       return Offering.allVisible
     }
@@ -64,8 +68,16 @@ export default class OfferingsPage extends React.Component {
         to: "/offerings/killer",
       },
       {
+        text: `Killer only (${Offering.forKillerExclusive.length})`,
+        to: "/offerings/killer-exclusive",
+      },
+      {
         text: `Survivor  (${Offering.forSurvivor.length})`,
         to: "/offerings/survivor",
+      },
+      {
+        text: `Survivor only (${Offering.forSurvivorExclusive.length})`,
+        to: "/offerings/survivor-exclusive",
       },
       {
         text: `All (${Offering.allVisible.length})`,

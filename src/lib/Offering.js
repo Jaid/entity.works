@@ -91,6 +91,8 @@ Offering.all = Object.entries(deadByDaylight.offerings).map(([id, baseOffering])
 Offering.allVisible = Offering.all.filter(offering => offering.visible)
 Offering.forKiller = Offering.allVisible.filter(offering => offering.type !== "survivor")
 Offering.forSurvivor = Offering.allVisible.filter(offering => offering.type !== "killer")
+Offering.forKillerExclusive = Offering.allVisible.filter(offering => offering.type === "killer")
+Offering.forSurvivorExclusive = Offering.allVisible.filter(offering => offering.type === "survivor")
 Offering.find = id => {
   return Offering.all.find(offering => offering.id === id) || Offering.all.find(offering => offering.linkId === id)
 }

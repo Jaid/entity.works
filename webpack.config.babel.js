@@ -29,6 +29,8 @@ const collectUrls = () => {
     "offerings/all",
     "offerings/killer",
     "offerings/survivor",
+    "offerings/killer-exclusive",
+    "offerings/survivor-exclusive",
     ...Object.keys(deadByDaylight.addOns).map(id => `add-on/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.perks).map(id => `perk/${paramCase(id)}`),
     ...Object.keys(deadByDaylight.killers).map(id => `killer/${paramCase(id)}`),
