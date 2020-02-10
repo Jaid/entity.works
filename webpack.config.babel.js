@@ -61,7 +61,7 @@ export default configure({
     },
     plugins: [
       new EnvironmentPlugin({
-        backendHost: "server.entity.works",
+        backendHost: "wss://server.entity.works",
       }),
     ],
   },
