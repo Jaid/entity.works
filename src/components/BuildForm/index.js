@@ -60,7 +60,7 @@ export default class extends React.Component {
     }
     return <div>
       {button}
-      <span>Log in or register to save and publish this build.</span>
+      <span className={css.loginNotice}>Login or register to save and publish this build.</span>
     </div>
   }
 

@@ -1,6 +1,10 @@
 import emitPromise from "emit-promise"
 import immer from "immer"
 import jsCookie from "js-cookie"
+import PropTypes from "prop-types"
+import React from "react"
+import {connect} from "react-redux"
+import {Link} from "react-router-dom"
 
 export default class LoginManager {
 
@@ -9,9 +13,57 @@ export default class LoginManager {
       prefix: "@@login/",
       socketClient: null,
       cookieName: "login",
+      profileLinkPrefix: "/user/",
       ...options,
     }
     this.login = jsCookie.getJSON(this.options.cookieName)
+  }
+
+  getProfileLinkComponent() {
+    const profileLinkPrefix = this.options.profileLinkPrefix
+    const Component = class extends React.Component {
+      static displayName = "loginManager.ProfileLink"
+
+      static propTypes = {
+        socketStatus: PropTypes.string,
+        login: PropTypes.object.isRequired,
+      }
+
+      render() {
+        if (!this.props.login.loggedIn) {
+          return null
+        }
+        const link = `${profileLinkPrefix}${this.props.login.name}`
+        return <Link to={link}>{this.props.login.title}</Link>
+      }
+    }
+    return connect(({socket, login}) => ({
+      login,
+      socketStatus: socket.status,
+    }))(Component)
+  }
+
+  getLogoutLinkComponent() {
+    const logout = this.logout.bind(this)
+    const Component = class extends React.Component {
+      static displayName = "loginManager.LogoutLink"
+
+      static propTypes = {
+        socketStatus: PropTypes.string,
+        loggedIn: PropTypes.bool,
+      }
+
+      render() {
+        if (!this.props.loggedIn) {
+          return null
+        }
+        return <a href="javascript:void(0)" onClick={logout}>Logout</a>
+      }
+    }
+    return connect(({socket, login}) => ({
+      loggedIn: login?.loggedIn,
+      socketStatus: socket.status,
+    }))(Component)
   }
 
   /**
