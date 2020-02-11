@@ -44,7 +44,7 @@ export default class TextInput extends React.Component {
 
   componentDidMount() {
     if (this.props.focusOnMount) {
-      setImmediate(this.ref.focus.bind(this.ref))
+      setImmediate(this.ref.current.focus.bind(this.ref))
     }
   }
 
@@ -66,9 +66,7 @@ export default class TextInput extends React.Component {
       "focusOnMount",
     ])
     if (this.props.focusOnMount) {
-      inputProps.ref = ref => {
-        this.ref = ref
-      }
+      inputProps.ref = this.ref
     }
     if (this.props.multiline) {
       return <textarea className={css.input} {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
