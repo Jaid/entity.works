@@ -1,4 +1,5 @@
 import AddOn from "lib/AddOn"
+import Item from "lib/Item"
 import Killer from "lib/Killer"
 import Patch from "lib/Patch"
 import Perk from "lib/Perk"
@@ -108,6 +109,15 @@ for (const addOn of Offering.all) {
   index[addOn.id] = {
     ...addOn,
     type: "offering",
+  }
+}
+
+const itemsObject = {}
+for (const item of Item.all) {
+  itemsObject[item.id] = item
+  index[item.id] = {
+    ...item,
+    type: "item",
   }
 }
 

@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Link} from "react-router-dom"
 
+import Item from "lib/Item"
 import Killer from "lib/Killer"
 import {killerPerksLink, killersLink, patchesLink, survivorPerksLink, survivorsLink} from "lib/links"
 import Offering from "lib/Offering"
@@ -17,6 +18,11 @@ import description from "./description.txt"
 import css from "./style.scss"
 
 const links = [
+  {
+    count: Patch.all.length,
+    text: "Patches",
+    to: patchesLink,
+  },
   {
     count: Killer.allVisible.length,
     text: "Killers",
@@ -38,9 +44,9 @@ const links = [
     to: survivorsLink,
   },
   {
-    count: Patch.all.length,
-    text: "Patches",
-    to: patchesLink,
+    count: Item.allVisible.length,
+    text: "Items",
+    to: "/items/toolbox",
   },
   {
     count: Offering.forKiller.length,

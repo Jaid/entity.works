@@ -33,11 +33,6 @@ class AddOn {
   /**
    * @type {string}
    */
-  linkId = null
-
-  /**
-   * @type {string}
-   */
   owner = null
 
   /**

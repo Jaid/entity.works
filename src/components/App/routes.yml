@@ -16,4 +16,8 @@ offerings:
   - /offerings
   - /offerings/:type
 offering: /offering/:id
+items:
+  - /items
+  - /items/:type
+item: /item/:id
 user: /user/:id
