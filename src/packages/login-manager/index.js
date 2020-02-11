@@ -10,7 +10,7 @@ export default class LoginManager {
 
   constructor(options) {
     this.options = {
-      prefix: "@@login/",
+      actionTypePrefix: "@@login/",
       socketClient: null,
       cookieName: "login",
       profileLinkPrefix: "/user/",
