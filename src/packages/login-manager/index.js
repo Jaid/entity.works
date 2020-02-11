@@ -21,7 +21,7 @@ export default class LoginManager {
 
   getProfileLinkComponent() {
     const profileLinkPrefix = this.options.profileLinkPrefix
-    const Component = class extends React.Component {
+    class ProfileLink extends React.Component {
       static displayName = "loginManager.ProfileLink"
 
       static propTypes = {
@@ -40,14 +40,14 @@ export default class LoginManager {
     return connect(({socket, login}) => ({
       login,
       socketStatus: socket.status,
-    }))(Component)
+    }))(ProfileLink)
   }
 
   getLogoutLinkComponent() {
     const logoutAction = {
       type: this.createActionType("logout"),
     }
-    const Component = class extends React.Component {
+    class LogoutLink extends React.Component {
       static displayName = "loginManager.LogoutLink"
 
       static propTypes = {
@@ -69,7 +69,7 @@ export default class LoginManager {
     return connect(({socket, login}) => ({
       loggedIn: login?.loggedIn,
       socketStatus: socket.status,
-    }))(Component)
+    }))(LogoutLink)
   }
 
   /**
