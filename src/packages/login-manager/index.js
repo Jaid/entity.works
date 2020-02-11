@@ -60,7 +60,7 @@ export default class LoginManager {
         if (!this.props.loggedIn) {
           return null
         }
-        return <a href="javascript:void(0)"
+        return <a style={{cursor: "pointer"}}
           onClick={() => {
             this.props.dispatch(logoutAction)
           }}>Logout</a>
