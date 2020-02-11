@@ -48,8 +48,8 @@ export default class LoginButton extends React.Component {
   }
 
   render() {
-    return <a className={css.loginButton} onClick={this.openModal.bind(this)}>
-      Login
+    return <span>
+      <a className={css.loginButton} onClick={this.openModal.bind(this)}>Login</a>
       <Modal classNames={{...css}} open={this.state.modalOpen} closeOnOverlayClick onClose={this.handleCloseModal.bind(this)}>
         <Tabs selectedTabClassName={css.selectedTab}>
           <TabList className={css.tabList}>
@@ -64,7 +64,7 @@ export default class LoginButton extends React.Component {
           </TabPanel>
         </Tabs>
       </Modal>
-    </a>
+    </span>
   }
 
 }
