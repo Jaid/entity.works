@@ -30,6 +30,22 @@ export default class TextInput extends React.Component {
     input: PropTypes.object.isRequired,
     multiline: PropTypes.bool,
     password: PropTypes.bool,
+    focusOnMount: PropTypes.bool,
+  }
+
+  static defaultProps = {
+    focusOnMount: false,
+  }
+
+  constructor(props) {
+    super(props)
+    this.ref = React.createRef()
+  }
+
+  componentDidMount() {
+    if (this.props.focusOnMount) {
+      setImmediate(this.ref.focus.bind(this.ref))
+    }
   }
 
   getTitle() {
@@ -47,7 +63,13 @@ export default class TextInput extends React.Component {
       "password",
       "input",
       "meta",
+      "focusOnMount",
     ])
+    if (this.props.focusOnMount) {
+      inputProps.ref = ref => {
+        this.ref = ref
+      }
+    }
     if (this.props.multiline) {
       return <textarea className={css.input} {...inputProps} onChange={this.props.input.onChange.bind(this)}/>
     }
