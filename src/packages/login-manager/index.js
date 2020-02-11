@@ -102,10 +102,10 @@ export default class LoginManager {
       if (typeof action?.type !== "string") {
         return state
       }
-      if (!action.type.startsWith(this.options.prefix)) {
+      if (!action.type.startsWith(this.options.actionTypePrefix)) {
         return state
       }
-      const actionType = action.type.slice(this.options.prefix.length)
+      const actionType = action.type.slice(this.options.actionTypePrefix.length)
       if (actionType === "persist") {
         return immer(state, draft => {
           draft.loggedIn = true
@@ -127,7 +127,7 @@ export default class LoginManager {
   }
 
   createActionType(type) {
-    return this.options.prefix + type
+    return this.options.actionTypePrefix + type
   }
 
   logout() {

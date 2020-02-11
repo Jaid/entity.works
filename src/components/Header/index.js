@@ -47,10 +47,7 @@ export default class Header extends React.Component {
       return null
     }
     if (this.props.login.loggedIn) {
-      return [
-        <Link key="user" to={`/user/${this.props.login.name}`}>{this.props.login.title}</Link>,
-        <a key="logout" className={css.logoutButton} onClick={loginManager.logout.bind(loginManager)}>Logout</a>,
-      ]
+      return null
     }
     return <LoginButton/>
   }
@@ -64,6 +61,7 @@ export default class Header extends React.Component {
         <Link to={charactersLink}>Characters</Link>
         <ProfileLink/>
         <LogoutLink/>
+        {this.getLoginButton()}
         <SearchBar/>
       </nav>
     </div>
