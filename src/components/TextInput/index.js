@@ -44,7 +44,8 @@ export default class TextInput extends React.Component {
 
   componentDidMount() {
     if (this.props.focusOnMount) {
-      setImmediate(this.ref.current.focus.bind(this.ref))
+      const input = this.ref.current
+      setImmediate(input.focus.bind(input))
     }
   }
 

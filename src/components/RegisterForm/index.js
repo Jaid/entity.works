@@ -52,7 +52,7 @@ export default class extends React.Component {
     return <div className={classnames(css.container, this.props.className)}>
       <form onSubmit={this.props.handleSubmit}>
         <div className={css.fields}>
-          <Field autoComplete="username" className={css.field} component={TextInput} name="user" title="User"/>
+          <Field autoComplete="username" className={css.field} component={TextInput} name="user" title="User" focusOnMount/>
           <Field autoComplete="new-password" className={css.field} component={TextInput} name="password" title="Password" password/>
           <Field autoComplete="new-password" className={css.field} component={TextInput} name="passwordRepeat" title="Password (repeat)" password/>
         </div>
