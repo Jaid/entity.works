@@ -44,20 +44,26 @@ export default class LoginManager {
   }
 
   getLogoutLinkComponent() {
-    const logout = this.logout.bind(this)
+    const logoutAction = {
+      type: this.createActionType("logout"),
+    }
     const Component = class extends React.Component {
       static displayName = "loginManager.LogoutLink"
 
       static propTypes = {
         socketStatus: PropTypes.string,
         loggedIn: PropTypes.bool,
+        dispatch: PropTypes.func.isRequired,
       }
 
       render() {
         if (!this.props.loggedIn) {
           return null
         }
-        return <a href="javascript:void(0)" onClick={logout}>Logout</a>
+        return <a href="javascript:void(0)"
+          onClick={() => {
+            this.props.dispatch(logoutAction)
+          }}>Logout</a>
       }
     }
     return connect(({socket, login}) => ({
