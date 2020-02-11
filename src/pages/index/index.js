@@ -46,7 +46,7 @@ const links = [
   {
     count: Item.allVisible.length,
     text: "Items",
-    to: "/items/toolbox",
+    to: "/items/firecracker",
   },
   {
     count: Offering.forKiller.length,

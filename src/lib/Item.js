@@ -1,7 +1,10 @@
 import deadByDaylight from "dead-by-daylight"
 import {paramCase} from "param-case"
+import {titleCase} from "title-case"
 
 import itemEffects from /* aot */ "src/aotLoaders/itemEffects"
+
+import itemTypes from "./itemTypes"
 
 class Item {
 
@@ -41,15 +44,16 @@ class Item {
   itemType = null
 
   /**
+   * @type {string}
+   */
+  itemTypeTitle = null
+
+  /**
    * @param {string} id
    */
   setId(id) {
     this.id = id
     this.linkId = paramCase(id)
-  }
-
-  getOverTitle() {
-    return `Item`
   }
 
 }
@@ -63,6 +67,7 @@ Item.all = Object.entries(deadByDaylight.items).map(([id, baseItem]) => {
   item.released = baseItem.released
   item.rarity = baseItem.rarity
   item.itemType = baseItem.type
+  item.itemTypeTitle = itemTypes.find(itemType => itemType.id === item.itemType).title
   return item
 })
 

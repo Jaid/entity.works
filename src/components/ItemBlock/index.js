@@ -37,7 +37,7 @@ export default class ItemBlock extends React.Component {
   render() {
     const item = findObject(this.props.itemId)
     return <div className={classnames(css.container, this.props.className)}>
-      <Headline miniText={item.overTitle} theme="item">{item.title}</Headline>
+      <Headline miniText={`${item.itemTypeTitle} Item`} theme="item">{item.title}</Headline>
       <div className={css.content}>
         <ItemImage className={css.image} itemId={this.props.itemId}/>
         <div className={css.text}>

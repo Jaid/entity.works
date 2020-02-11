@@ -41,7 +41,7 @@ export default class ItemPage extends React.Component {
     }
     return <main className={css.container}>
       <Helmet>
-        <title>{item.title} | Dead by Daylight {item.overTitle}</title>
+        <title>{item.title} | Dead by Daylight Item</title>
       </Helmet>
       <Title>{item.title} Item</Title>
       <ItemBlock itemId={item.id}/>
