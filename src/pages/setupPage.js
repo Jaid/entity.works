@@ -40,7 +40,7 @@ export default socketCommand => {
       }
 
       render() {
-        if (!this.state.data) {
+        if (this.state.data === undefined) {
           return `Loading ${this.socketCommand.event}`
         }
         return <TargetComponent data={this.state.data} {...this.props}/>

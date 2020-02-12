@@ -86,6 +86,10 @@ export default class LoginManager {
           this.login = null
           jsCookie.remove(this.options.cookieName)
         }
+        if (action.type === "@@socket/received/invalidateLogin") {
+          this.login = null
+          jsCookie.remove(this.options.cookieName)
+        }
         return next(action)
       }
     }
