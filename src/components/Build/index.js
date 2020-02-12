@@ -45,7 +45,7 @@ export default class Build extends React.Component {
       return null
     }
     return <div className={css.authorLine}>
-      by <UserLink name={this.props.userName} title={this.props.userTitle}/>
+      Published by <UserLink name={this.props.userName} title={this.props.userTitle}/>.
     </div>
   }
 
