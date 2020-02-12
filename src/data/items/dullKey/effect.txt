@@ -1,0 +1,3 @@
+{flavor:A bent and dull Key that once held great power. The Dull Key's power cannot be triggered by itself. Various objects can be attached to its jump ring, which channels the Dull Key's remaining power into various effects.}
+
+Can be consumed to open the Hatch.

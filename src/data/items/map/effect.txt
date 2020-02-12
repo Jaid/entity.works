@@ -1,0 +1,7 @@
+{flavor:An old piece of parchment made out of a skin-like material. Is rolled and sealed with an uncoloured leather string.}
+
+Holding and channelling the Map unlocks great potential in one's Aura-reading ability which slowly burns the Map.
+Generators' Auras which you have already encountered are revealed to you for as long as the Map has charges left.+
+
+Start with 1 Object tracked.
+Unlocks the ability to track Generators IconHelpLoading generators.png within a range of 8 metres.

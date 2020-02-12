@@ -1,0 +1,4 @@
+{flavor:A standard First Aid Kit with all the necessary equipment for treating common to more serious injuries.}
+
+Considerably increases Altruistic Healing speed.
+Unlocks the Self-Healing action.

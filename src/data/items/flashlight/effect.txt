@@ -1,0 +1,3 @@
+{flavor:A standard Flashlight.}
+
+Can be used to light your way in the darkness.

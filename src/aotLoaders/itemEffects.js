@@ -4,7 +4,7 @@ const globby = require("globby")
 const readFileString = require("read-file-string").default
 
 module.exports = async () => {
-  const addOnsFolder = path.resolve(__dirname, "..", "data", "addOns")
+  const addOnsFolder = path.resolve(__dirname, "..", "data", "items")
   const addOnIds = await globby("*", {
     cwd: addOnsFolder,
     onlyDirectories: true,

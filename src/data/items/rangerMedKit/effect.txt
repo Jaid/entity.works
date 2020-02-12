@@ -1,0 +1,6 @@
+{flavor:A large metal box containing medical supplies aimed at emergency rescues in hard to reach, often isolated locations.}
+
+Tremendously increases Altruistic Healing speed.
+Moderately increases Skill Check success zones.
+Moderately increases Skill Check bonus zones.
+Unlocks the Self-Healing action.

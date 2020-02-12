@@ -1,0 +1,3 @@
+{flavor:A Flashlight equipped with a special lens cover that adds an orange tint and a little Ghost to the beam.}
+
+Considerably increases friendly Ghosts in your life.

@@ -1,0 +1,4 @@
+{flavor:A metal box containing mainly saws and vice grips of varying sizes but also other tools. Even though the content of this Toolbox is clearly aimed at destructive deeds, it can be used to repair various mechanical components as well.}
+
+Slightly increases Repair speed.
+Moderately increases Sabotage speed.

@@ -1,0 +1,5 @@
+{flavor:A sturdy and well organised Med-Kit equipped with top condition emergency supplies.}
+
+Tremendously increases Altruistic Healing speed.
+Tremendously increases Personal Healing speed.
+Unlocks the Self-Healing action.

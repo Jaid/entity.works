@@ -1,0 +1,4 @@
+{flavor:A rudimentary Aid Kit which can save lives in emergencies, even if it's lacking some of its supplies.}
+
+Moderately increases Altruistic Healing speed.
+Unlocks the Self-Healing action.

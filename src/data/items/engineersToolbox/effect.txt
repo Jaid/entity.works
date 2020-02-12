@@ -1,0 +1,3 @@
+{flavor:A metal box with highly specialised tools meant for engineering. Most of the tools can be used by neophytes to make quick repairs or break various mechanical components.}
+
+Tremendously increases Repair speed.

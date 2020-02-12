@@ -1,0 +1,5 @@
+{flavor:A metal box with specialised mechanics tools. Even without training, can be used to repair or break various mechanical components.}
+
+Considerably increases Repair speed.
+Moderately decreases Sabotage speed.
+Unlocks the Sabotage action.
