@@ -35,7 +35,7 @@ export default class ItemImage extends React.Component {
   render() {
     const item = Item.find(this.props.itemId)
     const iconSrc = require(`../../gameIcons/${item.id}.png`).default
-    const backgroundSrc = require(`../../data/offeringBackgrounds/${item.rarity}.png`).default
+    const backgroundSrc = require(`../../data/addOnBackgrounds/${item.rarity}.png`).default
     return <ImagesOverlap alt={`${item.title} (Dead by Daylight Item)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
   }
 
