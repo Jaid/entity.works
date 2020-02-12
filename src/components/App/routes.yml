@@ -24,3 +24,5 @@ user: /user/:id
 userBuild:
   - /user-build/:id
   - /user-build/:id/:seoId
+builds: /user-builds
+buildsForType: /user-builds/:type
