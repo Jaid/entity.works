@@ -45,6 +45,9 @@ export default class extends React.Component {
     formType: PropTypes.object.isRequired,
     change: PropTypes.func.isRequired,
     loggedIn: PropTypes.bool,
+    dispatch: PropTypes.func.isRequired,
+    submitting: PropTypes.bool.isRequired,
+    handleSubmit: PropTypes.func.isRequired,
   }
 
   getFormComponent() {
@@ -54,7 +57,7 @@ export default class extends React.Component {
   }
 
   getSaveButton() {
-    const button = <button disabled={!this.props.loggedIn} type="submit">Save</button>
+    const button = <button className={css.submitButton} disabled={!this.props.loggedIn || this.props.submitting} type="submit">Save</button>
     if (this.props.loggedIn) {
       return button
     }
@@ -67,11 +70,11 @@ export default class extends React.Component {
   render() {
     const FormComponent = this.getFormComponent()
     return <div className={classnames(css.container, this.props.className)}>
-      <form>
+      <form onSubmit={this.props.handleSubmit}>
         <Field className={css.titleInput} component={TextInput} name="title" title="Title"/>
         <FormComponent change={this.props.change}/>
+        {this.getSaveButton()}
       </form>
-      {this.getSaveButton()}
       <div className={css.buildPreview}>
         <SmallerTitle>Preview</SmallerTitle>
         <BuildPreview type={this.props.formType.id}/>

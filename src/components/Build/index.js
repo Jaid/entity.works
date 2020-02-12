@@ -5,6 +5,7 @@ import React from "react"
 import {getFormType} from "lib/formTypes"
 import BuildKillerLoadoutContent from "components/BuildKillerLoadoutContent"
 import Headline from "components/Headline"
+import UserLink from "components/UserLink"
 
 import css from "./style.scss"
 
@@ -29,6 +30,8 @@ export default class Build extends React.Component {
     ]),
     type: PropTypes.string.isRequired,
     data: PropTypes.object,
+    userName: PropTypes.string,
+    userTitle: PropTypes.string,
   }
 
   getContentComponent(formType) {
@@ -37,11 +40,21 @@ export default class Build extends React.Component {
     }
   }
 
+  getAuthorLine() {
+    if (!this.props.userName) {
+      return null
+    }
+    return <div className={css.authorLine}>
+      by <UserLink name={this.props.userName} title={this.props.userTitle}/>
+    </div>
+  }
+
   render() {
     const formType = getFormType(this.props.type)
     const ContentComponent = this.getContentComponent(formType)
     return <div className={classnames(css.container, this.props.className)}>
       <Headline miniText={formType.title} theme="misc">{this.props.data?.title || "untitled"}</Headline>
+      {this.getAuthorLine()}
       <ContentComponent data={this.props.data}/>
     </div>
   }

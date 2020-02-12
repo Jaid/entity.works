@@ -21,3 +21,6 @@ items:
   - /items/:type
 item: /item/:id
 user: /user/:id
+userBuild:
+  - /user-build/:id
+  - /user-build/:id/:seoId

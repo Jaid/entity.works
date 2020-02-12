@@ -1,8 +1,11 @@
+import emitPromise from "emit-promise"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
+import {withRouter} from "react-router-dom"
 
 import {getFormType} from "lib/formTypes"
+import socketClient from "lib/socketMiddleware"
 import BuildForm from "components/BuildForm"
 import Title from "components/Title"
 
@@ -19,11 +22,13 @@ import css from "./style.scss"
   * }} Props
   */
 
+@withRouter
+
 /**
   * @class
   * @extends {React.Component<Props>}
   */
-export default class BuildPage extends React.Component {
+export default class extends React.Component {
 
   static propTypes = {
     match: PropTypes.exact({
@@ -32,6 +37,15 @@ export default class BuildPage extends React.Component {
       url: PropTypes.string.isRequired,
       params: PropTypes.object,
     }).isRequired,
+    history: PropTypes.object.isRequired,
+  }
+
+  async handleSubmit(values) {
+    const result = await emitPromise.withDefaultTimeout(socketClient, "addBuild", values)
+    if (result?.error) {
+      console.error(result)
+    }
+    this.props.history.push(`/user-build/${result.linkId}/${result.seoLinkId}`)
   }
 
   render() {
@@ -41,7 +55,7 @@ export default class BuildPage extends React.Component {
         <title>{formType.pageTitle} | Entity Works</title>
       </Helmet>
       <Title>{formType.pageTitle}</Title>
-      <BuildForm formType={formType}/>
+      <BuildForm formType={formType} onSubmit={this.handleSubmit.bind(this)}/>
     </main>
   }
 
