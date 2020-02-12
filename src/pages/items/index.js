@@ -76,14 +76,17 @@ export default class ItemsPage extends React.Component {
 
   render() {
     const type = itemTypes.find(itemType => itemType.linkId === this.props.match.params.type)
-    const items = [...Item.findByType(type.id)]
+    if (!type) {
+      return `No item type found for "${this.props.match.params.type}".`
+    }
+    const items = [...Item.findVisibleByType(type.id)]
     items.sort(sortItems)
     const itemBlocks = items.map(item => {
       return <ItemBlock key={item.id} className={css.itemBlock} itemId={item.id}/>
     })
     const links = Object.values(itemTypes).map(itemType => {
       return {
-        text: `${itemType.title} (${Item.findByType(itemType.id).length})`,
+        text: `${itemType.title} (${Item.findVisibleByType(itemType.id).length})`,
         to: `/items/${itemType.linkId}`,
       }
     })

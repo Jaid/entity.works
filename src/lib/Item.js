@@ -72,6 +72,9 @@ Item.all = Object.entries(deadByDaylight.items).map(([id, baseItem]) => {
 })
 
 Item.allVisible = Item.all.filter(item => item.visible)
+Item.findVisibleByType = type => {
+  return Item.allVisible.filter(item => item.itemType === type)
+}
 Item.findByType = type => {
   return Item.all.filter(item => item.itemType === type)
 }
