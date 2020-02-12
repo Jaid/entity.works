@@ -93,7 +93,7 @@ export default class ItemsPage extends React.Component {
         <title>{pageTitle} | Dead by Daylight Item List</title>
       </Helmet>
       <NavigationPage className={classnames(css.container, this.props.className)} links={links}>
-        <Title>{pageTitle}</Title>
+        <Title>{items.length} {pageTitle}</Title>
         {itemBlocks}
         {this.getAddOns(type)}
       </NavigationPage>
