@@ -116,12 +116,12 @@ export default class BuildKillerLoadoutContent extends React.Component {
     return <div className={classnames(css.container, this.props.className)}>
       <div className={css.content}>
         <div>
+          {this.getPerks()}
+        </div>
+        <div>
           {this.getKillerBox(killer)}
           {this.getPower(killer)}
           {this.getOffering()}
-        </div>
-        <div>
-          {this.getPerks()}
         </div>
       </div>
       {this.getDescription()}
