@@ -1,0 +1,22 @@
+$tiers: strong,
+good,
+usable,
+bad,
+trash,
+unrated;
+
+$colors: (strong: rgb(255, 120, 226),
+  good: rgb(134, 211, 62),
+  usable: rgb(62, 169, 211),
+  bad: rgb(255, 101, 80),
+  trash:rgb(182, 114, 51),
+  unrated:rgb(78, 78, 78));
+
+@each $tier in $tiers {
+  .#{$tier} {
+    color     : black;
+    background: map-get($colors, $tier);
+  }
+}
+
+.inner {}

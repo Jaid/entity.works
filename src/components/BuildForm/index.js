@@ -5,6 +5,7 @@ import {connect} from "react-redux"
 import {Field, reduxForm} from "redux-form"
 
 import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
+import BuildKillerTierListForm from "components/BuildKillerTierListForm"
 import BuildPreview from "components/BuildPreview"
 import BuildSurvivorLoadoutForm from "components/BuildSurvivorLoadoutForm"
 import LinkButton from "components/LinkButton"
@@ -57,6 +58,9 @@ export default class extends React.Component {
     }
     if (this.props.formType.id === "survivorLoadout") {
       return BuildSurvivorLoadoutForm
+    }
+    if (this.props.formType.id === "killerTierList") {
+      return BuildKillerTierListForm
     }
   }
 

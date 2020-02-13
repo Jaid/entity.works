@@ -1,0 +1,45 @@
+$tiers: strong,
+good,
+usable,
+bad,
+trash,
+unrated;
+
+$colors: (strong: rgb(255, 120, 226),
+  good: rgb(134, 211, 62),
+  usable: rgb(62, 169, 211),
+  bad: rgb(255, 101, 80),
+  trash:rgb(182, 114, 51),
+  unrated:rgb(78, 78, 78));
+
+.container {
+  user-select: none;
+}
+
+.button {
+  display       : inline-block;
+  text-align    : center;
+  margin        : 2px;
+  padding-top   : 12px;
+  padding-bottom: 12px;
+  border-width  : 2px;
+  border-style  : solid;
+  cursor        : pointer;
+  min-width     : 100px;
+}
+
+@each $tier in $tiers {
+  .#{$tier}Button {
+    color       : map-get($colors, $tier);
+    border-color: map-get($colors, $tier);
+
+    &.selected {
+      color     : black;
+      background: map-get($colors, $tier);
+    }
+
+    &:hover {
+      border-color: white;
+    }
+  }
+}

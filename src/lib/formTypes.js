@@ -21,6 +21,10 @@ const formTypes = [
     id: "survivorLoadout",
     title: "Survivor Loadout",
   },
+  {
+    id: "killerTierList",
+    title: "Killer Tier List",
+  },
 ]
 
 for (const formType of formTypes) {
