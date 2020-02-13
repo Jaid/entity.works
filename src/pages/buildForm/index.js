@@ -40,8 +40,11 @@ export default class extends React.Component {
     history: PropTypes.object.isRequired,
   }
 
-  async handleSubmit(values) {
-    const result = await emitPromise.withDefaultTimeout(socketClient, "addBuild", values)
+  async handleSubmit(formType, values) {
+    const result = await emitPromise.withDefaultTimeout(socketClient, "addBuild", {
+      formType,
+      formData: values,
+    })
     if (result?.error) {
       console.error(result)
     }
@@ -55,7 +58,7 @@ export default class extends React.Component {
         <title>{formType.pageTitle} | Entity Works</title>
       </Helmet>
       <Title>{formType.pageTitle}</Title>
-      <BuildForm formType={formType} onSubmit={this.handleSubmit.bind(this)}/>
+      <BuildForm formType={formType} onSubmit={values => this.handleSubmit(formType.id, values)}/>
     </main>
   }
 

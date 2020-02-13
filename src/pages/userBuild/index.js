@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
-import formTypes, {getFormType} from "lib/formTypes"
+import {getFormType} from "lib/formTypes"
 import Build from "components/Build"
 import Title from "components/Title"
 
@@ -47,16 +47,12 @@ export default class extends React.Component {
       return `No user found for "${this.props.match.params.id}".`
     }
     const buildType = getFormType(this.props.data.type)
-    const buildData = {
-      title: this.props.data.title,
-      ...this.props.data.data,
-    }
     return <main className={css.container}>
       <Helmet>
-        <title>{this.props.data.title} | Dead by Daylight {buildType.title}</title>
+        <title>{this.props.data.data.title || buildType.title} | Dead by Daylight {buildType.title}</title>
       </Helmet>
       <Title>{buildType.title}</Title>
-      <Build data={buildData} type={this.props.data.type} userName={this.props.data.userName} userTitle={this.props.data.userTitle}/>
+      <Build data={this.props.data.data} type={this.props.data.type} userName={this.props.data.userName} userTitle={this.props.data.userTitle}/>
     </main>
   }
 

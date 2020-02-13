@@ -41,11 +41,11 @@ export default class BuildsPage extends React.Component {
   }
 
   render() {
-    const links = Object.entries(this.props.data).map(([formTypeId, count]) => {
-      const formType = getFormType(formTypeId)
+    const links = this.props.data.map(entry => {
+      const formType = getFormType(entry.type)
       return {
         to: `user-builds/${formType.linkId}`,
-        count,
+        count: entry.count,
         text: `${formType.title}s`,
       }
     })
