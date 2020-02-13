@@ -17,10 +17,10 @@ const formTypes = [
     id: "killerLoadout",
     title: "Killer Loadout",
   },
-  // {
-  //   id: "killerTierList",
-  //   title: "Killer Tierlist",
-  // },
+  {
+    id: "survivorLoadout",
+    title: "Survivor Loadout",
+  },
 ]
 
 for (const formType of formTypes) {

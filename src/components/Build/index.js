@@ -6,6 +6,7 @@ import {Link} from "react-router-dom"
 
 import {getFormType} from "lib/formTypes"
 import BuildKillerLoadoutContent from "components/BuildKillerLoadoutContent"
+import BuildSurvivorLoadoutContent from "components/BuildSurvivorLoadoutContent"
 import Headline from "components/Headline"
 import UserLink from "components/UserLink"
 
@@ -41,6 +42,9 @@ export default class Build extends React.Component {
   getContentComponent(formType) {
     if (formType.id === "killerLoadout") {
       return BuildKillerLoadoutContent
+    }
+    if (formType.id === "survivorLoadout") {
+      return BuildSurvivorLoadoutContent
     }
   }
 

@@ -68,7 +68,7 @@ export default class BuildKillerLoadoutForm extends React.Component {
           <Field className={css.field} component={PerkInput} name="perk4" title="Perk 4" onlyKillerPerks/>
         </div>
         <div>
-          <Field className={css.field} component={OfferingInput} name="offering" title="Offering" onlyKillerPerks/>
+          <Field className={css.field} component={OfferingInput} name="offering" title="Offering" onlyKillerOfferings/>
           <Field className={css.field} component={KillerInput} name="killer" title="Killer" onChange={this.handleKillerChange.bind(this)}/>
           {this.getAddOnFields()}
         </div>

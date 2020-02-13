@@ -6,6 +6,7 @@ import {Field, reduxForm} from "redux-form"
 
 import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
 import BuildPreview from "components/BuildPreview"
+import BuildSurvivorLoadoutForm from "components/BuildSurvivorLoadoutForm"
 import LinkButton from "components/LinkButton"
 import SmallerTitle from "components/SmallerTitle"
 import TextInput from "components/TextInput"
@@ -53,6 +54,9 @@ export default class extends React.Component {
   getFormComponent() {
     if (this.props.formType.id === "killerLoadout") {
       return BuildKillerLoadoutForm
+    }
+    if (this.props.formType.id === "survivorLoadout") {
+      return BuildSurvivorLoadoutForm
     }
   }
 

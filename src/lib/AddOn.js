@@ -113,9 +113,6 @@ AddOn.all = Object.entries(deadByDaylight.addOns).map(([id, baseAddOn]) => {
   addOn.rarity = baseAddOn.rarity
   addOn.for = baseAddOn.for
   addOn.forType = baseAddOn.forType
-  if (baseAddOn.owner) {
-    addOn.owner = baseAddOn.owner
-  }
   return addOn
 })
 
