@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 
 import Title from "components/Title"
 
-import setupPage from "src/pages/setupPage"
+import reduxSockConnect from "src/packages/redux-sock-connect"
 
 import css from "./style.scss"
 
@@ -19,7 +19,7 @@ import css from "./style.scss"
   * }} Props
   */
 
-@setupPage(props => ({
+@reduxSockConnect(props => ({
   event: "profile",
   payload: props.match.params.id,
 }))
@@ -37,18 +37,18 @@ export default class extends React.Component {
       url: PropTypes.string.isRequired,
       params: PropTypes.object,
     }).isRequired,
-    data: PropTypes.object,
+    fetchedData: PropTypes.object,
   }
 
   render() {
-    if (!this.props.data?.name) {
+    if (!this.props.fetchedData?.name) {
       return `No user found for "${this.props.match.params.id}".`
     }
     return <main className={css.container}>
       <Helmet>
-        <title>{this.props.data.title} | Profile on Entity Works</title>
+        <title>{this.props.fetchedData.title} | Profile on Entity Works</title>
       </Helmet>
-      <Title>{this.props.data.title}</Title>
+      <Title>{this.props.fetchedData.title}</Title>
     </main>
   }
 

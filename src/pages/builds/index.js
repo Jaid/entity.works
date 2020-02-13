@@ -6,7 +6,8 @@ import {getFormType} from "lib/formTypes"
 import ContentLinkList from "components/ContentLinkList"
 import Title from "components/Title"
 
-import setupPage from "../setupPage"
+import reduxSockConnect from "src/packages/redux-sock-connect"
+
 import css from "./style.scss"
 
 /**
@@ -20,7 +21,7 @@ import css from "./style.scss"
   * }} Props
   */
 
-@setupPage({
+@reduxSockConnect({
   event: "getBuildTypes",
 })
 
@@ -37,11 +38,11 @@ export default class BuildsPage extends React.Component {
       url: PropTypes.string.isRequired,
       params: PropTypes.object,
     }).isRequired,
-    data: PropTypes.object,
+    fetchedData: PropTypes.object,
   }
 
   render() {
-    const links = this.props.data.map(entry => {
+    const links = this.props.fetchedData.map(entry => {
       const formType = getFormType(entry.type)
       return {
         to: `user-builds/${formType.linkId}`,

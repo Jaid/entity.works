@@ -46,6 +46,7 @@
     "react-router-transition-switch": "^1.1.2",
     "react-string-replace": "^0.4.4",
     "react-tabs": "^3.1.0",
+    "readable-ms": "^2.0.1",
     "redux": "^4.0.5",
     "redux-action": "^1.2.2",
     "redux-form": "^8.3.0",

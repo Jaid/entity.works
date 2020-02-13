@@ -3,10 +3,10 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import {getFormType} from "lib/formTypes"
-import ContentLinkList from "components/ContentLinkList"
 import Title from "components/Title"
 
-import setupPage from "../setupPage"
+import reduxSockConnect from "src/packages/redux-sock-connect"
+
 import css from "./style.scss"
 
 /**
@@ -20,7 +20,7 @@ import css from "./style.scss"
   * }} Props
   */
 
-@setupPage(props => ({
+@reduxSockConnect(props => ({
   event: "getLatestBuilds",
   payload: {
     where: {

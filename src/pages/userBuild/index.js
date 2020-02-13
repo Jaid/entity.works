@@ -6,7 +6,7 @@ import {getFormType} from "lib/formTypes"
 import Build from "components/Build"
 import Title from "components/Title"
 
-import setupPage from "src/pages/setupPage"
+import reduxSockConnect from "src/packages/redux-sock-connect"
 
 import css from "./style.scss"
 
@@ -21,7 +21,7 @@ import css from "./style.scss"
   * }} Props
   */
 
-@setupPage(props => ({
+@reduxSockConnect(props => ({
   event: "getBuild",
   payload: props.match.params.id,
 }))
@@ -39,20 +39,20 @@ export default class extends React.Component {
       url: PropTypes.string.isRequired,
       params: PropTypes.object,
     }).isRequired,
-    data: PropTypes.object,
+    fetchedData: PropTypes.object,
   }
 
   render() {
-    if (!this.props.data?.type) {
+    if (!this.props.fetchedData?.type) {
       return `No user found for "${this.props.match.params.id}".`
     }
-    const buildType = getFormType(this.props.data.type)
+    const buildType = getFormType(this.props.fetchedData.type)
     return <main className={css.container}>
       <Helmet>
-        <title>{this.props.data.data.title || buildType.title} | Dead by Daylight {buildType.title}</title>
+        <title>{this.props.fetchedData.data.title || buildType.title} | Dead by Daylight {buildType.title}</title>
       </Helmet>
       <Title>{buildType.title}</Title>
-      <Build data={this.props.data.data} type={this.props.data.type} userName={this.props.data.userName} userTitle={this.props.data.userTitle}/>
+      <Build data={this.props.fetchedData.data} type={this.props.fetchedData.type} userName={this.props.fetchedData.userName} userTitle={this.props.fetchedData.userTitle}/>
     </main>
   }
 

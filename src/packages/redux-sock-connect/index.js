@@ -3,14 +3,16 @@ import ensureObject from "ensure-object"
 import {isFunction} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
+import readableMs from "readable-ms"
 
 import socket from "lib/socketMiddleware"
 
 export default socketCommand => {
   return function setupPage(TargetComponent) {
+    const childComponentName = TargetComponent.displayName || TargetComponent.name || "Component"
     return class extends React.Component {
 
-      displayName = `setupPage(${TargetComponent.displayName || TargetComponent.name || "Component"})`
+      static displayName = `redux-sock-connect(${childComponentName})`
 
       constructor(props) {
         super(props)
@@ -22,26 +24,38 @@ export default socketCommand => {
         this.socketCommand = ensureObject(this.socketCommand, "event")
       }
 
-      state = {}
+      state = {
+        fetchedData: null,
+        fetchState: "fetching",
+      }
 
       componentDidMount() {
+        const startTime = Date.now()
         let fetchJob
         if (this.socketCommand.payload === undefined) {
           fetchJob = emitPromise.withDefaultTimeout(socket, this.socketCommand.event)
         } else {
           fetchJob = emitPromise.withDefaultTimeout(socket, this.socketCommand.event, this.socketCommand.payload)
         }
-        fetchJob.then(data => {
-          console.debug(`Got data from ${this.socketCommand.event}:`, data)
-          this.setState({data})
-        }).catch(console.error)
+        fetchJob.then(fetchedData => {
+          console.debug(`Fetched data for ${childComponentName} from ${this.socketCommand.event} in ${readableMs(Date.now() - startTime)}`, fetchedData)
+          this.setState({
+            fetchedData,
+            fetchState: "success",
+          })
+        }).catch(error => {
+          console.error(error)
+          this.setState({
+            fetchState: "fail",
+          })
+        })
       }
 
       render() {
-        if (this.state.data === undefined) {
+        if (this.state.fetchState === "fetching") {
           return `Loading ${this.socketCommand.event}`
         }
-        return <TargetComponent data={this.state.data} {...this.props}/>
+        return <TargetComponent {...this.state} {...this.props}/>
       }
 
     }
