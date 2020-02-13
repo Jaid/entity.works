@@ -11,6 +11,7 @@ import Offering from "lib/Offering"
 import Patch from "lib/Patch"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
+import ContentLinkList from "components/ContentLinkList"
 import Headline from "components/Headline"
 import RichText from "components/RichText"
 
@@ -106,14 +107,10 @@ export default class IndexPage extends React.Component {
     const nextRankResetMoment = moment(isRankResetThisMonth ? thisMonth13Moment : thisMonth13Moment.add(1, "month"))
     const previousRankResetMoment = moment(nextRankResetMoment).subtract(1, "month")
     const rankSeasonProgress = positionInRange(Number(previousRankResetMoment), Number(nextRankResetMoment), Number(nowMoment)) * 100
-    const linkBoxes = links.map(({count, text, to}) => <Link key={to} className={css.linkBox} to={to}>
-      <div className={css.linkBoxCount}>{count}</div>
-      <div className={css.linkBoxText}>{text}</div>
-    </Link>)
     return <main>
       <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>
       <nav className={css.linkList}>
-        {linkBoxes}
+        <ContentLinkList links={links}/>
       </nav>
       <div className={css.rankSeasonProgressBar}
         style={{

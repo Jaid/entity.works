@@ -1,30 +1,5 @@
 .container {}
 
-.linkList {
-  display        : flex;
-  justify-content: center;
-  flex-wrap      : wrap;
-  user-select    : none;
-}
-
-.linkBox {
-  border       : 1px solid #6dff6d;
-  padding      : 12px;
-  margin       : 4px;
-  border-radius: 8px;
-  min-width    : 152px;
-}
-
-.linkBoxCount {
-  font-size : 58px;
-  display   : block;
-  text-align: center;
-}
-
-.linkBoxText {
-  text-align: center;
-}
-
 .rankSeasonProgressBar {
   border         : 1px solid #6dff6d;
   border-radius  : 6px;
