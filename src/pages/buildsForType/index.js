@@ -35,7 +35,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class BuildsForTypePage extends React.Component {
+export default class extends React.Component {
 
   static propTypes = {
     match: PropTypes.exact({
