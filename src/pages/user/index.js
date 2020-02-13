@@ -1,4 +1,5 @@
 import {isEmpty} from "has-content"
+import moment from "moment"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
@@ -57,6 +58,15 @@ export default class extends React.Component {
     </div>
   }
 
+  getCreatedAt() {
+    if (!this.props.fetchedData.user.createdAt) {
+      return null
+    }
+    const createdAtMoment = moment(this.props.fetchedData.user.createdAt)
+    const agoString = createdAtMoment.fromNow()
+    return <div className={css.createdAt}>registered {agoString}</div>
+  }
+
   render() {
     if (!this.props.fetchedData?.user) {
       return `No user found for "${this.props.match.params.id}".`
@@ -66,6 +76,7 @@ export default class extends React.Component {
         <title>{this.props.fetchedData.user.title} | Profile on Entity Works</title>
       </Helmet>
       <Title>{this.props.fetchedData.user.title}</Title>
+      {this.getCreatedAt()}
       {this.getLatestBuilds()}
     </main>
   }
