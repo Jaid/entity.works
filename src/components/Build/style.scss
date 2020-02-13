@@ -1,6 +1,9 @@
 .container {}
 
-.authorLine {
-  margin-bottom: 20px;
-  text-align   : right;
+.titleLine {
+  display        : flex;
+  justify-content: space-between;
+  margin-bottom  : 1em;
 }
+
+.author {}

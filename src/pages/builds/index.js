@@ -2,11 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
-import {getFormType} from "lib/formTypes"
-import ContentLinkList from "components/ContentLinkList"
 import Title from "components/Title"
-
-import reduxSockConnect from "src/packages/redux-sock-connect"
+import UserContentOverview from "components/UserContentOverview"
 
 import css from "./style.scss"
 
@@ -20,10 +17,6 @@ import css from "./style.scss"
   *  },
   * }} Props
   */
-
-@reduxSockConnect({
-  event: "getBuildTypes",
-})
 
 /**
   * @class
@@ -42,20 +35,12 @@ export default class BuildsPage extends React.Component {
   }
 
   render() {
-    const links = this.props.fetchedData.map(entry => {
-      const formType = getFormType(entry.type)
-      return {
-        to: `user-builds/${formType.linkId}`,
-        count: entry.count,
-        text: `${formType.title}s`,
-      }
-    })
     return <main className={css.container}>
       <Helmet>
         <title>User Builds | Entity Works</title>
       </Helmet>
       <Title>Build Types</Title>
-      <ContentLinkList links={links}/>
+      <UserContentOverview/>
     </main>
   }
 

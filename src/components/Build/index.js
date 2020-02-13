@@ -1,6 +1,8 @@
 import classnames from "classnames"
+import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
+import {Link} from "react-router-dom"
 
 import {getFormType} from "lib/formTypes"
 import BuildKillerLoadoutContent from "components/BuildKillerLoadoutContent"
@@ -32,6 +34,8 @@ export default class Build extends React.Component {
     data: PropTypes.object,
     userName: PropTypes.string,
     userTitle: PropTypes.string,
+    linkId: PropTypes.string,
+    seoLinkId: PropTypes.string,
   }
 
   getContentComponent(formType) {
@@ -40,21 +44,35 @@ export default class Build extends React.Component {
     }
   }
 
-  getAuthorLine() {
+  getLink(title) {
+    if (!this.props.linkId) {
+      return <span>{title}</span>
+    }
+    const link = `/build/${this.props.linkId}/${this.props.seoLinkId || paramCase(title)}`
+    return <Link to={link}>{title}</Link>
+  }
+
+  getAuthor() {
     if (!this.props.userName) {
       return null
     }
-    return <div className={css.authorLine}>
-      Published by <UserLink name={this.props.userName} title={this.props.userTitle}/>.
+    return <span>by <UserLink name={this.props.userName} title={this.props.userTitle}/></span>
+  }
+
+  getTitleLine(formType, title) {
+    return <div className={css.titleLine}>
+      {this.getLink(title)}
+      {this.getAuthor()}
     </div>
   }
 
   render() {
     const formType = getFormType(this.props.type)
+    const title = this.props.data?.title || formType.title
     const ContentComponent = this.getContentComponent(formType)
     return <div className={classnames(css.container, this.props.className)}>
-      <Headline miniText={formType.title} theme="misc">{this.props.data?.title || "untitled"}</Headline>
-      {this.getAuthorLine()}
+      <Headline miniText={formType.title} theme="misc">{title}</Headline>
+      {this.getTitleLine(formType, title)}
       <ContentComponent data={this.props.data}/>
     </div>
   }

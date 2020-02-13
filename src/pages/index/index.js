@@ -14,6 +14,7 @@ import Headline from "components/Headline"
 import RankSeasonProgressBar from "components/RankSeasonProgressBar"
 import RichText from "components/RichText"
 import SmallerTitle from "components/SmallerTitle"
+import UserContentOverview from "components/UserContentOverview"
 
 import description from "./description.txt"
 import css from "./style.scss"
@@ -103,6 +104,7 @@ export default class IndexPage extends React.Component {
         <ContentLinkList links={links}/>
       </nav>
       <SmallerTitle>User Content</SmallerTitle>
+      <UserContentOverview/>
     </main>
   }
 
