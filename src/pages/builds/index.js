@@ -5,6 +5,7 @@ import {Link} from "react-router-dom"
 import zahl from "zahl"
 
 import {getFormType} from "lib/formTypes"
+import ContentLinkList from "components/ContentLinkList"
 import Title from "components/Title"
 
 import setupPage from "../setupPage"
@@ -42,18 +43,20 @@ export default class BuildsPage extends React.Component {
   }
 
   render() {
-    const typesElements = Object.entries(this.props.data).map(([formTypeId, count]) => {
+    const links = Object.entries(this.props.data).map(([formTypeId, count]) => {
       const formType = getFormType(formTypeId)
-      return <div key={formTypeId}>
-        <Link to={`user-builds/${formType.linkId}`}>{zahl(count, formType.title)}</Link>
-      </div>
+      return {
+        to: `user-builds/${formType.linkId}`,
+        count,
+        text: `${formType.title}s`,
+      }
     })
     return <main className={css.container}>
       <Helmet>
         <title>User Builds | Entity Works</title>
       </Helmet>
       <Title>Build Types</Title>
-      {typesElements}
+      <ContentLinkList links={links}/>
     </main>
   }
 
