@@ -1,5 +1,3 @@
-import moment from "moment"
-import positionInRange from "position-in-range"
 import PropTypes from "prop-types"
 import React from "react"
 import {Link} from "react-router-dom"
@@ -13,7 +11,9 @@ import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
 import ContentLinkList from "components/ContentLinkList"
 import Headline from "components/Headline"
+import RankSeasonProgressBar from "components/RankSeasonProgressBar"
 import RichText from "components/RichText"
+import SmallerTitle from "components/SmallerTitle"
 
 import description from "./description.txt"
 import css from "./style.scss"
@@ -95,31 +95,14 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    const nowMoment = moment()
-    const thisMonth13Moment = moment().utcOffset(-4).set({
-      date: 13,
-      hour: 8,
-      minute: 0,
-      second: 0,
-      millisecond: 0,
-    })
-    const isRankResetThisMonth = nowMoment.isBefore(thisMonth13Moment)
-    const nextRankResetMoment = moment(isRankResetThisMonth ? thisMonth13Moment : thisMonth13Moment.add(1, "month"))
-    const previousRankResetMoment = moment(nextRankResetMoment).subtract(1, "month")
-    const rankSeasonProgress = positionInRange(Number(previousRankResetMoment), Number(nextRankResetMoment), Number(nowMoment)) * 100
     return <main>
       <Headline miniText={_PKG_TITLE} theme="green"><RichText>{description}</RichText></Headline>
+      <SmallerTitle>Game Content</SmallerTitle>
+      <RankSeasonProgressBar className={css.rankSeasonProgressBar}/>
       <nav className={css.linkList}>
         <ContentLinkList links={links}/>
       </nav>
-      <div className={css.rankSeasonProgressBar}
-        style={{
-          background: `linear-gradient(to right, #6dff6d44 0%, #6dff6d44 ${rankSeasonProgress - 0.5}%, transparent ${rankSeasonProgress + 0.5}%, transparent 100%)`,
-        }}>
-        <span>{previousRankResetMoment.format("MMMM")} 13</span>
-        <span>Rank reset {nextRankResetMoment.fromNow()}</span>
-        <span>{nextRankResetMoment.format("MMMM")} 13</span>
-      </div>
+      <SmallerTitle>User Content</SmallerTitle>
     </main>
   }
 

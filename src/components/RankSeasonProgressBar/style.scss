@@ -1,0 +1,16 @@
+.container {
+  border         : 1px solid #6dff6d;
+  border-radius  : 6px;
+  display        : flex;
+  justify-content: space-between;
+  margin-left    : 4px;
+  margin-right   : 4px;
+  user-select    : none;
+
+  >span {
+    padding-left  : 6px;
+    padding-right : 6px;
+    padding-top   : 2px;
+    padding-bottom: 2px;
+  }
+}
