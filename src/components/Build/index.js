@@ -48,7 +48,7 @@ export default class Build extends React.Component {
     if (!this.props.linkId) {
       return <span>{title}</span>
     }
-    const link = `/build/${this.props.linkId}/${this.props.seoLinkId || paramCase(title)}`
+    const link = `/user-build/${this.props.linkId}/${this.props.seoLinkId || paramCase(title)}`
     return <Link to={link}>{title}</Link>
   }
 

@@ -1,7 +1,11 @@
+import {isEmpty} from "has-content"
 import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
+import zahl from "zahl"
 
+import BuildFromDatabase from "components/BuildFromDatabase"
+import SmallerTitle from "components/SmallerTitle"
 import Title from "components/Title"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
@@ -20,7 +24,7 @@ import css from "./style.scss"
   */
 
 @reduxSockConnect(props => ({
-  event: "profile",
+  event: "getProfile",
   payload: props.match.params.id,
 }))
 
@@ -40,15 +44,29 @@ export default class extends React.Component {
     fetchedData: PropTypes.object,
   }
 
+  getLatestBuilds() {
+    if (isEmpty(this.props.fetchedData.latestBuilds)) {
+      return null
+    }
+    const buildElements = this.props.fetchedData.latestBuilds.map(entry => {
+      return <BuildFromDatabase key={entry.linkId} className={css.build} entry={entry}/>
+    })
+    return <div>
+      <SmallerTitle>{zahl(buildElements, "contributed build")}</SmallerTitle>
+      {buildElements}
+    </div>
+  }
+
   render() {
-    if (!this.props.fetchedData?.name) {
+    if (!this.props.fetchedData?.user) {
       return `No user found for "${this.props.match.params.id}".`
     }
     return <main className={css.container}>
       <Helmet>
-        <title>{this.props.fetchedData.title} | Profile on Entity Works</title>
+        <title>{this.props.fetchedData.user.title} | Profile on Entity Works</title>
       </Helmet>
-      <Title>{this.props.fetchedData.title}</Title>
+      <Title>{this.props.fetchedData.user.title}</Title>
+      {this.getLatestBuilds()}
     </main>
   }
 

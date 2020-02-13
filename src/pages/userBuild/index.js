@@ -4,6 +4,7 @@ import Helmet from "react-helmet"
 
 import {getFormType} from "lib/formTypes"
 import Build from "components/Build"
+import LinkButton from "components/LinkButton"
 import Title from "components/Title"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
@@ -53,6 +54,10 @@ export default class extends React.Component {
       </Helmet>
       <Title>{buildType.title}</Title>
       <Build data={this.props.fetchedData.data} type={this.props.fetchedData.type} userName={this.props.fetchedData.userName} userTitle={this.props.fetchedData.userTitle}/>
+      <div className={css.buttons}>
+        <LinkButton to={`/user-builds/${buildType.linkId}`}>See more {buildType.pluralTitle}</LinkButton>
+        <LinkButton to={`/build/${buildType.linkId}`}>Build your own {buildType.title}</LinkButton>
+      </div>
     </main>
   }
 
