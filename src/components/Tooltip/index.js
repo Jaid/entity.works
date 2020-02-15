@@ -41,7 +41,14 @@ export default class Tooltip extends React.Component {
     minWidth: null,
   }
 
-  render() {
+  state = {
+    shouldRender: false,
+  }
+
+  getContent() {
+    if (!this.state.shouldRender) {
+      return null
+    }
     /**
      * @type {import("react").CSSProperties}
      */
@@ -50,10 +57,19 @@ export default class Tooltip extends React.Component {
     if (this.props.minWidth) {
       style.minWidth = isNumber(this.props.minWidth) ? `${this.props.minWidth}px` : this.props.minWidth
     }
-    const tooltipContent = <div className={classnames(css.container, {[css.noPadding]: this.props.noPadding}, this.props.className)} style={style}>
+    return <div className={classnames(css.container, {[css.noPadding]: this.props.noPadding}, this.props.className)} style={style}>
       {this.props.html}
     </div>
-    return <Tippy animation="perspective" content={tooltipContent} delay={100} distance={24} theme="entity" touch={false} inertia interactive>
+  }
+
+  startRender() {
+    this.setState({
+      shouldRender: true,
+    })
+  }
+
+  render() {
+    return <Tippy animation="perspective" content={this.getContent()} distance={24} theme="entity" touch={false} inertia interactive onShow={this.startRender.bind(this)}>
       <span>{this.props.children}</span>
     </Tippy>
   }

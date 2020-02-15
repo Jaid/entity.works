@@ -36,9 +36,7 @@ export default class WithPowerTooltip extends React.Component {
   }
 
   prepareRichText(killer) {
-    const withThisReplaced = replaceString(killer.richEffect, "{this}", killer.powerTitle)
-    const withKillerReplaced = replaceString(withThisReplaced, `{${killer.id}}`, killer.title)
-    return withKillerReplaced
+    return replaceString(killer.richEffect, "{this}", killer.powerTitle)
   }
 
   getContent() {
