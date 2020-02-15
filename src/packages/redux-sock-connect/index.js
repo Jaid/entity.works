@@ -53,7 +53,7 @@ export default socketCommand => {
 
       render() {
         if (this.state.fetchState === "fetching") {
-          return `Loading ${this.socketCommand.event}`
+          return null
         }
         return <TargetComponent {...this.state} {...this.props}/>
       }
