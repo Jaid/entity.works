@@ -35,7 +35,7 @@ export default class RichText extends React.Component {
         richObject = findObject(content)
       }
       if (richObject) {
-        return <RichBox key={`RichBox${index}`} info={richObject} type={richObject.type}/>
+        return <RichBox objectId={richObject.id}/>
       }
     })
 
