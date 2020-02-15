@@ -32,7 +32,7 @@ export default class extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    fetchedData: PropTypes.object,
+    fetchedData: PropTypes.array,
   }
 
   render() {

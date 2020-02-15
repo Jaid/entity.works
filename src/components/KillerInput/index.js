@@ -30,7 +30,6 @@ export default class KillerInput extends React.Component {
     ]),
     killerList: PropTypes.array,
     title: PropTypes.string,
-    name: PropTypes.string.isRequired,
     onChange: PropTypes.func,
     input: PropTypes.any.isRequired,
   }

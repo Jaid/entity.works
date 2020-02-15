@@ -33,7 +33,6 @@ export default class AddOnInput extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     title: PropTypes.string,
-    name: PropTypes.string.isRequired,
     filter: PropTypes.string,
     input: PropTypes.any.isRequired,
   }

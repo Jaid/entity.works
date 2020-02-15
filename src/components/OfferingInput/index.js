@@ -33,7 +33,6 @@ export default class OfferingInput extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     title: PropTypes.string,
-    name: PropTypes.string.isRequired,
     onlyKillerOfferings: PropTypes.bool,
     onlySurvivorOfferings: PropTypes.bool,
     input: PropTypes.any.isRequired,

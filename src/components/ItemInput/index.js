@@ -33,7 +33,6 @@ export default class ItemInput extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     title: PropTypes.string,
-    name: PropTypes.string.isRequired,
     onlyKillerItems: PropTypes.bool,
     onlySurvivorItems: PropTypes.bool,
     input: PropTypes.any.isRequired,

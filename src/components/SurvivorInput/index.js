@@ -29,7 +29,6 @@ export default class SurvivorInput extends React.Component {
     ]),
     survivorList: PropTypes.array,
     title: PropTypes.string,
-    name: PropTypes.string.isRequired,
     onChange: PropTypes.func,
     input: PropTypes.any.isRequired,
   }

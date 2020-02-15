@@ -47,7 +47,7 @@ export default class Tooltip extends React.Component {
 
   getContent() {
     if (!this.state.shouldRender) {
-      return null
+      return ""
     }
     /**
      * @type {import("react").CSSProperties}
@@ -69,7 +69,7 @@ export default class Tooltip extends React.Component {
   }
 
   render() {
-    return <Tippy animation="perspective" content={this.getContent()} distance={24} theme="entity" touch={false} inertia interactive onShow={this.startRender.bind(this)}>
+    return <Tippy animation="perspective" content={this.getContent()} distance={24} theme="entity" inertia interactive onShow={this.startRender.bind(this)}>
       <span>{this.props.children}</span>
     </Tippy>
   }

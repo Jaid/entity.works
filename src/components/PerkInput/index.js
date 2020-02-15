@@ -33,7 +33,6 @@ export default class PerkInput extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     title: PropTypes.string,
-    name: PropTypes.string.isRequired,
     onlyKillerPerks: PropTypes.bool,
     onlySurvivorPerks: PropTypes.bool,
     input: PropTypes.any.isRequired,
