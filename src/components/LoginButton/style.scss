@@ -9,6 +9,10 @@
   border    : 1px solid gray;
 }
 
+.overlay {
+  z-index: 2000;
+}
+
 .closeIcon {
   fill: rgb(200, 200, 200);
 }

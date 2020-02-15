@@ -24,7 +24,7 @@ export default class App extends React.Component {
         routeBlocks.push(<Route key={`${index}-${pathIndex}`} component={require(`../../pages/${id}`).default} path={path} exact/>)
       })
     })
-    return <div className={css.container}>
+    return <div id={css.containerWithId}>
       <Helmet>
         <title>{_PKG_TITLE}</title>
       </Helmet>

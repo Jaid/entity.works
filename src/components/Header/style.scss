@@ -1,6 +1,9 @@
-.container {
-  margin-bottom: 40px;
-  user-select  : none;
+#container {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  margin-bottom  : 40px;
+  user-select    : none;
 }
 
 .icon {
@@ -34,7 +37,7 @@
   color: rgb(45, 133, 45);
 }
 
-.nav {
+.navBar {
   display    : inline-flex;
   float      : right;
   align-items: center;
@@ -43,6 +46,10 @@
   >* {
     margin: 10px;
   }
+}
+
+.burgerButton {
+  display: none;
 }
 
 .logoutButton {
@@ -54,11 +61,53 @@
     display: inline-block;
   }
 
-  .nav {
+  #container {
+    margin-top   : 10px;
+    margin-bottom: 20px;
+  }
+
+  .navBar {
     display: none;
   }
 
-  .container {
-    margin-top: 10px;
+  .burgerButton {
+    position    : relative;
+    width       : 24px;
+    height      : 18px;
+    float       : right;
+    margin-right: 8px;
+    display     : initial;
+  }
+
+  .burgerBar {
+    background: rgb(185, 185, 185);
+  }
+
+  .burgerBody {
+    background: rgba(0, 0, 0, 0.95);
+  }
+
+  .burgerItemList {
+    display       : flex;
+    flex-direction: column;
+    font-size     : 140%;
+    padding-right : 0.5em;
+    padding-left  : 0.5em;
+    padding-top   : 40px;
+    align-items   : flex-end;
+  }
+
+  .burgerItemList>a,
+  .burgerItemList span {
+    padding-top   : 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .burgerCrossIcon {
+    background: #bdc3c7;
+  }
+
+  .burgerOverlay {
+    background: red;
   }
 }

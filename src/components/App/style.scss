@@ -7,18 +7,18 @@ body {
   color      : #DCDDDE;
   background : black;
   font-family: Roboto Condensed, sans-serif;
-  font-size  : 20px;
 }
 
 img {
   user-select: none;
 }
 
-.container {
+#containerWithId {
   max-width    : 800px;
   margin       : 0 auto;
   margin-top   : 20px;
   margin-bottom: 80px;
+  font-size    : 20px;
 }
 
 ::-webkit-scrollbar,
