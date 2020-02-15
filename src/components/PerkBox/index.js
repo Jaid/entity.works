@@ -30,13 +30,10 @@ export default class PerkBox extends React.Component {
       marginTop: `${-this.props.heightEm / 2}em`,
       marginBottom: `${-this.props.heightEm / 2}em`,
     }
-    const text = <span className={classnames(css.container, this.props.className)}>
+    return <span className={classnames(css.container, this.props.className)}>
       <PerkImage className={classnames(css.icon, this.props.imageClassName)} height={`${this.props.heightEm}em`} perkId={perk.id} style={style}/>
       <PerkLink perkInfo={perk}/>
     </span>
-    return <Tooltip html={<PerkTooltip perkId={perk.id}/>} minWidth={300} noPadding>
-      {text}
-    </Tooltip>
   }
 
 }

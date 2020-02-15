@@ -1,12 +1,10 @@
 import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
-import Picture from "react-modern-picture"
 
 import Survivor from "lib/Survivor"
+import SurvivorImage from "components/SurvivorImage"
 import SurvivorLink from "components/SurvivorLink"
-import SurvivorTooltip from "components/SurvivorTooltip"
-import Tooltip from "components/Tooltip"
 
 import css from "./style.scss"
 
@@ -26,16 +24,14 @@ export default class SurvivorBox extends React.Component {
   }
 
   render() {
-    const imgSrc = require(`../../data/survivors/${this.props.survivor}/icon.png`).default
     const survivor = Survivor.find(this.props.survivor)
-    const content = <span className={classnames(css.container, this.props.className, {
+    return <span className={classnames(css.container, this.props.className, {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
-      <Picture alt={`${survivor.title} (Dead by Daylight Survivor)`} className={classnames(css.icon, this.props.imageClassName)} input={imgSrc}/>
+      <SurvivorImage className={classnames(css.icon, this.props.imageClassName)} survivorId={survivor.id}/>
       <SurvivorLink info={survivor}>{survivor.shortTitle}</SurvivorLink>
     </span>
-    return <Tooltip html={<SurvivorTooltip info={survivor}/>} noPadding>{content}</Tooltip>
   }
 
 }

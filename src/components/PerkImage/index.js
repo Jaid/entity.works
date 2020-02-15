@@ -3,6 +3,7 @@ import React from "react"
 
 import findObject from "lib/findObject"
 import ImagesOverlap from "components/ImagesOverlap"
+import WithPerkTooltip from "components/WithPerkTooltip"
 
 /**
   * @typedef {{
@@ -25,6 +26,7 @@ export default class PerkImage extends React.Component {
    ]),
    perkId: PropTypes.string.isRequired,
    height: PropTypes.any,
+   noTooltip: PropTypes.bool,
  }
 
   static defaultProps= {
@@ -35,7 +37,11 @@ export default class PerkImage extends React.Component {
     const perk = findObject(this.props.perkId)
     const iconSrc = require(`../../gameIcons/${perk.id}.png`).default
     const backgroundSrc = require(`../../data/perkBackgrounds/${perk.rarity}.png`).default
-    return <ImagesOverlap alt={`${perk.title} (Dead by Daylight Perk)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    const imageElement = <ImagesOverlap alt={`${perk.title} (Dead by Daylight Perk)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    if (this.props.noTooltip) {
+      return imageElement
+    }
+    return <WithPerkTooltip perkId={perk.id}>{imageElement}</WithPerkTooltip>
   }
 
 }

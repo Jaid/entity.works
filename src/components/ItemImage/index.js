@@ -3,6 +3,7 @@ import React from "react"
 
 import Item from "lib/Item"
 import ImagesOverlap from "components/ImagesOverlap"
+import WithItemTooltip from "components/WithItemTooltip"
 
 /**
   * @typedef {{
@@ -26,6 +27,7 @@ export default class ItemImage extends React.Component {
     ]),
     itemId: PropTypes.string.isRequired,
     height: PropTypes.any,
+    noTooltip: PropTypes.bool,
   }
 
   static defaultProps= {
@@ -36,7 +38,11 @@ export default class ItemImage extends React.Component {
     const item = Item.find(this.props.itemId)
     const iconSrc = require(`../../gameIcons/${item.id}.png`).default
     const backgroundSrc = require(`../../data/addOnBackgrounds/${item.rarity}.png`).default
-    return <ImagesOverlap alt={`${item.title} (Dead by Daylight Item)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    const imageElement = <ImagesOverlap alt={`${item.title} (Dead by Daylight Item)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    if (this.props.noTooltip) {
+      return imageElement
+    }
+    return <WithItemTooltip itemId={item.id}>{imageElement}</WithItemTooltip>
   }
 
 }

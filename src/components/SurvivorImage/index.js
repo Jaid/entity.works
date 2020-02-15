@@ -3,6 +3,7 @@ import React from "react"
 import Picture from "react-modern-picture"
 
 import Survivor from "lib/Survivor"
+import WithSurvivorTooltip from "components/WithSurvivorTooltip"
 
 /**
   * @typedef {{
@@ -25,12 +26,17 @@ export default class SurvivorImage extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     survivorId: PropTypes.string.isRequired,
+    noTooltip: PropTypes.bool,
   }
 
   render() {
     const survivor = Survivor.find(this.props.survivorId)
     const imgSrc = require(`../../data/survivors/${this.props.survivorId}/icon.png`).default
-    return <Picture alt={`${survivor.title} (Dead by Daylight Survivor)`} className={this.props.className} input={imgSrc}/>
+    const imageElement = <Picture alt={`${survivor.title} (Dead by Daylight Survivor)`} className={this.props.className} input={imgSrc}/>
+    if (this.props.noTooltip) {
+      return imageElement
+    }
+    return <WithSurvivorTooltip survivorId={survivor.id}>{imageElement}</WithSurvivorTooltip>
   }
 
 }

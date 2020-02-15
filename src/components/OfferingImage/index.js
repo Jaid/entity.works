@@ -3,6 +3,7 @@ import React from "react"
 
 import Offering from "lib/Offering"
 import ImagesOverlap from "components/ImagesOverlap"
+import WithOfferingTooltip from "components/WithOfferingTooltip"
 
 /**
   * @typedef {{
@@ -26,6 +27,7 @@ export default class OfferingImage extends React.Component {
     ]),
     offeringId: PropTypes.string.isRequired,
     height: PropTypes.any,
+    noTooltip: PropTypes.bool,
   }
 
   static defaultProps= {
@@ -36,7 +38,13 @@ export default class OfferingImage extends React.Component {
     const offering = Offering.find(this.props.offeringId)
     const iconSrc = require(`../../gameIcons/${offering.id}.png`).default
     const backgroundSrc = require(`../../data/offeringBackgrounds/${offering.rarity}.png`).default
-    return <ImagesOverlap alt={`${offering.title} (Dead by Daylight Offering)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    const imageElement = <ImagesOverlap alt={`${offering.title} (Dead by Daylight Offering)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    if (this.props.noTooltip) {
+      return imageElement
+    }
+    return <WithOfferingTooltip offeringId={offering.id}>
+      {imageElement}
+    </WithOfferingTooltip>
   }
 
 }

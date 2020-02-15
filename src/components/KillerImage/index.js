@@ -3,6 +3,7 @@ import React from "react"
 import Picture from "react-modern-picture"
 
 import Killer from "lib/Killer"
+import WithKillerTooltip from "components/WithKillerTooltip"
 
 /**
   * @typedef {{
@@ -25,12 +26,17 @@ export default class KillerImage extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     killerId: PropTypes.string.isRequired,
+    noTooltip: PropTypes.bool,
   }
 
   render() {
     const killer = Killer.find(this.props.killerId)
     const imgSrc = require(`../../data/killers/${this.props.killerId}/icon.png`).default
-    return <Picture alt={`${killer.title} (Dead by Daylight Killer)`} className={this.props.className} input={imgSrc}/>
+    const imageElement = <Picture alt={`${killer.title} (Dead by Daylight Killer)`} className={this.props.className} input={imgSrc}/>
+    if (this.props.noTooltip) {
+      return imageElement
+    }
+    return <WithKillerTooltip killerId={killer.id}>{imageElement}</WithKillerTooltip>
   }
 
 }

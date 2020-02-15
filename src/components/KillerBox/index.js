@@ -5,8 +5,6 @@ import React from "react"
 import Killer from "lib/Killer"
 import KillerImage from "components/KillerImage"
 import KillerLink from "components/KillerLink"
-import KillerTooltip from "components/KillerTooltip"
-import Tooltip from "components/Tooltip"
 
 import css from "./style.scss"
 
@@ -27,14 +25,13 @@ export default class KillerBox extends React.Component {
 
   render() {
     const killer = Killer.find(this.props.killer)
-    const content = <span className={classnames(css.container, this.props.className, {
+    return <span className={classnames(css.container, this.props.className, {
       [css.large]: this.props.large,
       [css.inline]: this.props.inline,
     })}>
       <KillerImage className={classnames(css.icon, this.props.imageClassName)} killerId={this.props.killer}/>
       <KillerLink info={killer}>{this.props.large ? killer.title : killer.shortTitle}</KillerLink>
     </span>
-    return <Tooltip html={<KillerTooltip info={killer}/>} noPadding>{content}</Tooltip>
   }
 
 }

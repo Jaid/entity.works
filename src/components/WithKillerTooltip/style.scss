@@ -3,13 +3,13 @@
 }
 
 .banner {
-  width        : 180px;
-  height       : 120px;
-  width        : 100%;
-  height       : auto;
-  margin-bottom: -2em;
-  padding      : 4px;
-  user-select  : none;
+  width           : 220px;
+  // height       : 120px;
+  // width        : 100%;
+  height          : auto;
+  margin-bottom   : -2em;
+  padding         : 4px;
+  user-select     : none;
 
   &:hover~.title {
     opacity: 0;

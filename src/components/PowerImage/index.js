@@ -3,6 +3,7 @@ import React from "react"
 
 import Killer from "lib/Killer"
 import ImagesOverlap from "components/ImagesOverlap"
+import WithPowerTooltip from "components/WithPowerTooltip"
 
 /**
   * @typedef {{
@@ -25,6 +26,7 @@ export default class PowerImage extends React.Component {
    ]),
    killerId: PropTypes.string.isRequired,
    height: PropTypes.any,
+   noTooltip: PropTypes.bool,
  }
 
   static defaultProps= {
@@ -35,7 +37,11 @@ export default class PowerImage extends React.Component {
     const killer = Killer.find(this.props.killerId)
     const iconSrc = require(`../../gameIcons/${killer.powerId}.png`).default
     const backgroundSrc = require("../../data/addOnBackgrounds/common.png").default
-    return <ImagesOverlap alt={`${killer.powerTitle} (Dead by Daylight ${killer.shortTitle} Power)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    const imageElement = <ImagesOverlap alt={`${killer.powerTitle} (Dead by Daylight ${killer.shortTitle} Power)`} backgroundInput={backgroundSrc} {...this.props} foregroundInput={iconSrc}/>
+    if (this.props.noTooltip) {
+      return imageElement
+    }
+    return <WithPowerTooltip killerId={killer.id}>{imageElement}</WithPowerTooltip>
   }
 
 }
