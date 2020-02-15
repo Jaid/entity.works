@@ -1,6 +1,5 @@
 import deadByDaylight from "dead-by-daylight"
 import {paramCase} from "param-case"
-import {titleCase} from "title-case"
 
 import itemEffects from /* aot */ "src/aotLoaders/itemEffects"
 

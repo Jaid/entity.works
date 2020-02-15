@@ -3,7 +3,9 @@ import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
+import zahl from "zahl"
 
+import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
 import CharacterPage from "components/CharacterPage"
 
@@ -54,16 +56,22 @@ export default class SurvivorPage extends React.Component {
     }).isRequired,
   }
 
+  getFullDescription(survivor) {
+    const perks = Perk.findByOwner(survivor.id)
+    return `Dead by Daylight survivor ${survivor.title}. Has ${zahl(perks, "perk")}: ${perks.map(perk => perk.title).join(", ")}.`
+  }
+
   render() {
-    const info = Survivor.find(this.props.match.params.id)
-    if (!info) {
+    const survivor = Survivor.find(this.props.match.params.id)
+    if (!survivor) {
       return `No survivor found for "${this.props.match.params.id}".`
     }
     return <main>
       <Helmet>
-        <title>{info.title} | Dead by Daylight Survivor</title>
+        <title>{survivor.title} | Dead by Daylight Survivor</title>
+        <meta content={this.getFullDescription(survivor)} name="description"/>
       </Helmet>
-      <CharacterPage description={info.title} info={info} type="survivor"/>
+      <CharacterPage description={survivor.title} info={survivor} type="survivor"/>
     </main>
   }
 

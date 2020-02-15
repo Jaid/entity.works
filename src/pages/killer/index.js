@@ -3,8 +3,11 @@ import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
+import zahl from "zahl"
 
 import Killer from "lib/Killer"
+import {flattenRichText} from "lib/normalizeRichText"
+import Perk from "lib/Perk"
 import CharacterPage from "components/CharacterPage"
 import Title from "components/Title"
 
@@ -36,17 +39,23 @@ export default class KillerPage extends React.Component {
     }).isRequired,
   }
 
+  getFullDescription(killer) {
+    const perks = Perk.findByOwner(killer.id)
+    return `Dead by Daylight killer ${killer.shortTitle}. Has ${zahl(perks, "perk")}: ${perks.map(perk => perk.title).join(", ")}. ${flattenRichText(killer.richEffect, killer.shortTitle)}`
+  }
+
   render() {
-    const info = Killer.find(this.props.match.params.id)
-    if (!info) {
+    const killer = Killer.find(this.props.match.params.id)
+    if (!killer) {
       return `No killer found for "${this.props.match.params.id}".`
     }
-    const description = `POWER: ${info.powerTitle}\n\n${info.richEffect}`
+    const description = `POWER: ${killer.powerTitle}\n\n${killer.richEffect}`
     return <main>
       <Helmet>
-        <title>{info.title} | Dead by Daylight Killer</title>
+        <title>{killer.title} | Dead by Daylight Killer</title>
+        <meta content={this.getFullDescription(killer)} name="description"/>
       </Helmet>
-      <CharacterPage description={description} info={info} type="killer"/>
+      <CharacterPage description={description} info={killer} type="killer"/>
     </main>
   }
 

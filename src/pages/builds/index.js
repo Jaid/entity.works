@@ -38,6 +38,7 @@ export default class BuildsPage extends React.Component {
     return <main className={css.container}>
       <Helmet>
         <title>User Builds | Entity Works</title>
+        <meta content="Dead by Daylight builds contributed by the community." name="description"/>
       </Helmet>
       <Title>Build Types</Title>
       <UserContentOverview/>

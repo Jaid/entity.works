@@ -21,6 +21,7 @@
     "ensure-array": "^1.0.0",
     "ensure-object": "^1.0.1",
     "filter-nil": "^1.0.1",
+    "flatten-multiline": "^1.0.0",
     "fork-awesome": "^1.1.7",
     "has-content": "^1.1.1",
     "history": "^4.10.1",

@@ -3,6 +3,7 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import AddOn from "lib/AddOn"
+import {flattenRichText} from "lib/normalizeRichText"
 import AddOnBlock from "components/AddOnBlock"
 import CharacterBlock from "components/CharacterBlock"
 import SmallerTitle from "components/SmallerTitle"
@@ -46,6 +47,10 @@ export default class AddOnPage extends React.Component {
     return null
   }
 
+  getFullDescription(addOn) {
+    return `Dead by Daylight add-on ${addOn.title}. ${flattenRichText(addOn.richEffect, addOn.title)}`
+  }
+
   render() {
     const addOn = AddOn.find(this.props.match.params.id)
     if (!addOn) {
@@ -54,6 +59,7 @@ export default class AddOnPage extends React.Component {
     return <main className={css.container}>
       <Helmet>
         <title>{addOn.title} | Dead by Daylight {addOn.getOverTitle()}</title>
+        <meta content={this.getFullDescription()} name="description"/>
       </Helmet>
       <Title>{addOn.title} Add-On</Title>
       <AddOnBlock addOnId={addOn.id}/>

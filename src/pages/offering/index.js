@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
+import {flattenRichText} from "lib/normalizeRichText"
 import Offering from "lib/Offering"
 import OfferingBlock from "components/OfferingBlock"
 import Title from "components/Title"
@@ -34,6 +35,10 @@ export default class OfferingPage extends React.Component {
     }).isRequired,
   }
 
+  getFullDescription(offering) {
+    return `Dead by Daylight offering ${offering.title}. ${flattenRichText(offering.richEffect, offering.title)}`
+  }
+
   render() {
     const offering = Offering.find(this.props.match.params.id)
     if (!offering) {
@@ -42,6 +47,7 @@ export default class OfferingPage extends React.Component {
     return <main className={css.container}>
       <Helmet>
         <title>{offering.title} | Dead by Daylight {offering.overTitle}</title>
+        <meta content={this.getFullDescription(offering)} name="description"/>
       </Helmet>
       <Title>{offering.title} Offering</Title>
       <OfferingBlock offeringId={offering.id}/>

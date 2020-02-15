@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
+import {flattenRichText} from "lib/normalizeRichText"
 import Perk from "lib/Perk"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
@@ -57,6 +58,10 @@ export default class PerkPage extends React.Component {
     }).isRequired,
   }
 
+  getFullDescription(perk) {
+    return `Dead by Daylight perk ${perk.title}. ${flattenRichText(perk.richEffect, perk.title)}`
+  }
+
   render() {
     const perk = Perk.find(this.props.match.params.id)
     if (!perk) {
@@ -65,6 +70,7 @@ export default class PerkPage extends React.Component {
     return <main>
       <Helmet>
         <title>{perk.title} | Dead by Daylight Perk</title>
+        <meta content={this.getFullDescription(perk)} name="description"/>
       </Helmet>
       <Title>{perk.title}</Title>
       <PerkBlock perkInfo={perk} displayOwnerBox/>

@@ -3,6 +3,7 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import Item from "lib/Item"
+import {flattenRichText} from "lib/normalizeRichText"
 import ItemBlock from "components/ItemBlock"
 import Title from "components/Title"
 
@@ -34,6 +35,10 @@ export default class ItemPage extends React.Component {
     }).isRequired,
   }
 
+  getFullDescription(item) {
+    return `Dead by Daylight item ${item.title}. ${flattenRichText(item.richEffect, item.title)}`
+  }
+
   render() {
     const item = Item.find(this.props.match.params.id)
     if (!item) {
@@ -42,6 +47,7 @@ export default class ItemPage extends React.Component {
     return <main className={css.container}>
       <Helmet>
         <title>{item.title} | Dead by Daylight Item</title>
+        <meta content={this.getFullDescription(item)} name="description"/>
       </Helmet>
       <Title>{item.title} Item</Title>
       <ItemBlock itemId={item.id}/>

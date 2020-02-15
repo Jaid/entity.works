@@ -43,6 +43,7 @@ export default class BuildPage extends React.Component {
     return <main className={css.container}>
       <Helmet>
         <title>Build | Entity Works</title>
+        <meta content="Publish user-generated Dead by Daylight content." name="description"/>
       </Helmet>
       <Title>Build</Title>
       {links}
