@@ -10,21 +10,19 @@ const offlineRuntime = require("offline-plugin/runtime")
 
 offlineRuntime.install({
   onUpdating: () => {
-    console.log("SW Event:", "onUpdating")
+    console.debug("SW Event:", "onUpdating")
   },
   onUpdateReady: () => {
-    console.log("SW Event:", "onUpdateReady")
-    // Tells to new SW to take control immediately
+    console.debug("SW Event:", "onUpdateReady")
     offlineRuntime.applyUpdate()
   },
   onUpdated: () => {
-    console.log("SW Event:", "onUpdated")
-    // Reload the webpage to load into the new version
-    window.location.reload()
+    console.debug("SW Event:", "onUpdated")
+    // window.location.reload()
   },
 
   onUpdateFailed: () => {
-    console.log("SW Event:", "onUpdateFailed")
+    console.debug("SW Event:", "onUpdateFailed")
   },
 })
 
