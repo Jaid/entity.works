@@ -2,13 +2,20 @@ import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 import Autosuggest from "react-autosuggest"
-import Picture from "react-modern-picture"
 import {withRouter} from "react-router"
 
+import AddOn from "lib/AddOn"
+import Item from "lib/Item"
 import Killer from "lib/Killer"
+import Offering from "lib/Offering"
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
+import AddOnImage from "components/AddOnImage"
+import ItemImage from "components/ItemImage"
+import KillerImage from "components/KillerImage"
+import OfferingImage from "components/OfferingImage"
 import PerkImage from "components/PerkImage"
+import SurvivorImage from "components/SurvivorImage"
 
 import css from "./style.scss"
 
@@ -25,24 +32,52 @@ for (const perk of Perk.allVisible) {
 }
 
 for (const killer of Killer.allVisible) {
-  const imgSrc = require(`../../data/killers/${killer.id}/icon.png`).default
   entries.push({
     id: killer.id,
     title: killer.title,
     type: "killer",
-    getImage: () => <Picture className={css.entryImage} input={imgSrc}/>,
+    getImage: () => <KillerImage className={css.entryImage} killerId={killer.id}/>,
     link: `/killer/${killer.linkId}`,
   })
 }
 
 for (const survivor of Survivor.allVisible) {
-  const imgSrc = require(`../../data/survivors/${survivor.id}/icon.png`).default
   entries.push({
     id: survivor.id,
     title: survivor.title,
     type: "survivor",
-    getImage: () => <Picture className={css.entryImage} input={imgSrc}/>,
+    getImage: () => <SurvivorImage className={css.entryImage} survivorId={survivor.id}/>,
     link: `/survivor/${survivor.linkId}`,
+  })
+}
+
+for (const offering of Offering.allVisible) {
+  entries.push({
+    id: offering.id,
+    title: offering.title,
+    type: "offering",
+    getImage: () => <OfferingImage className={css.entryImage} height="2em" offeringId={offering.id}/>,
+    link: `/offering/${offering.linkId}`,
+  })
+}
+
+for (const addOn of AddOn.allVisible) {
+  entries.push({
+    id: addOn.id,
+    title: addOn.title,
+    type: "addOn",
+    getImage: () => <AddOnImage addOnId={addOn.id} className={css.entryImage} height="2em"/>,
+    link: `/add-on/${addOn.linkId}`,
+  })
+}
+
+for (const item of Item.allVisible) {
+  entries.push({
+    id: item.id,
+    title: item.title,
+    type: "item",
+    getImage: () => <ItemImage className={css.entryImage} height="2em" itemId={item.id}/>,
+    link: `/item/${item.linkId}`,
   })
 }
 

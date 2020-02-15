@@ -2,8 +2,6 @@ import deadByDaylight from "dead-by-daylight"
 import {sortBy} from "lodash"
 import {paramCase} from "param-case"
 
-import findObject from "lib/findObject"
-
 import addOnEffects from /* aot */ "src/aotLoaders/addOnEffects"
 
 import Killer from "./Killer"
@@ -74,10 +72,6 @@ class AddOn {
   setId(id) {
     this.id = id
     this.linkId = paramCase(id)
-  }
-
-  getOwner() {
-    return findObject(this.for)
   }
 
   isForPower() {

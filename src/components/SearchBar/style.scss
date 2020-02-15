@@ -66,6 +66,30 @@
   }
 }
 
+.offeringEntry {
+  color: #9b5268;
+
+  &:hover {
+    background: #9b5268;
+  }
+}
+
+.addOnEntry {
+  color: #b16040;
+
+  &:hover {
+    background: #b16040;
+  }
+}
+
+.addOnEntry {
+  color: #5be7d4;
+
+  &:hover {
+    background: #5be7d4;
+  }
+}
+
 .title {
   width: 100px;
 }
