@@ -7,3 +7,9 @@
 .createdAt {
   margin-bottom: 40px;
 }
+
+@media only screen and (max-width: 768px) {
+  .createdAt {
+    margin-left: 1em;
+  }
+}

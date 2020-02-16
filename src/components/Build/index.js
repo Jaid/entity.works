@@ -80,8 +80,10 @@ export default class Build extends React.Component {
     const ContentComponent = this.getContentComponent(formType)
     return <div className={classnames(css.container, this.props.className)}>
       <Headline miniText={formType.title} theme="misc">{title}</Headline>
-      {this.getTitleLine(formType, title)}
-      <ContentComponent data={this.props.data}/>
+      <div className={css.content}>
+        {this.getTitleLine(formType, title)}
+        <ContentComponent data={this.props.data}/>
+      </div>
     </div>
   }
 

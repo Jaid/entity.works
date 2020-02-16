@@ -7,3 +7,10 @@
 }
 
 .author {}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    margin-left : 1em;
+    margin-right: 1em;
+  }
+}
