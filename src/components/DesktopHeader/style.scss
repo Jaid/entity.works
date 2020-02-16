@@ -1,0 +1,48 @@
+.container {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  margin-bottom  : 20px;
+}
+
+.icon {
+  width         : 3em;
+  vertical-align: middle;
+  user-select   : none;
+}
+
+.nav {
+  display        : flex;
+  align-items    : center;
+  justify-content: space-between;
+
+  >* {
+    margin-left : 10px;
+    margin-right: 10px;
+  }
+}
+
+.title {
+  vertical-align: middle;
+  font-family   : Hind, sans-serif;
+  line-height   : 80%;
+  font-size     : 32px;
+  text-transform: uppercase;
+  display       : inline-grid;
+
+  &:hover>.entity {
+    color: rgb(204, 74, 243);
+  }
+
+  &:hover>.works {
+    color: rgb(79, 216, 79);
+  }
+}
+
+.entity {
+  color: rgb(139, 27, 173);
+}
+
+.works {
+  color: rgb(45, 133, 45);
+}
