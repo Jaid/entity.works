@@ -48,8 +48,8 @@ export default class BuildSurvivorLoadoutForm extends React.Component {
     if (!item) {
       return null
     }
-    const addOns = AddOn.findByOwner(item.id)
-    if (!isEmpty(addOns)) {
+    const addOns = AddOn.findByOwner(item.itemType)
+    if (isEmpty(addOns)) {
       return null
     }
     return <div className={css.addOnFields}>
