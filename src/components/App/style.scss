@@ -69,9 +69,10 @@ button {
 
 @media only screen and (max-width: 768px) {
   #containerWithId {
-    width    : 100vw;
-    margin   : 0;
-    max-width: unset;
+    width         : 100vw;
+    margin        : 0;
+    max-width     : unset;
+    padding-bottom: 80px;
   }
 
   body {
@@ -79,8 +80,9 @@ button {
     overflow-x: hidden;
   }
 
-  a:hover {
-    color: rgb(59, 189, 98);
+  a:hover,
+  a:active {
+    color: inherit;
   }
 
   select {
