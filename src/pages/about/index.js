@@ -43,7 +43,7 @@ export default class AboutPage extends React.Component {
         <div>Most of the static data is available as an npm package: <a href="https://github.com/Jaid/dead-by-daylight">dead-by-daylight</a></div>
       </p>
       <p>
-        Contains official Dead by Daylight content copied from the <a href="https://store.steampowered.com/app/381210">Steam release</a>. Copyright by <a href="https://bhvr.com">Behaviour Interactive</a>.
+        Contains official Dead by Daylight content copied from the <a href="https://store.steampowered.com/app/381210">Steam release</a>. Copyright by <a href="https://bhvr.com">Behaviour Interactive</a>. The creator of Entity Works is not affiliated with Behaviour Interactive.
       </p>
     </main>
   }

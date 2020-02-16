@@ -55,10 +55,10 @@ export default class Header extends React.Component {
     return <PickedHeader>
       <Link to="/build">Build</Link>
       <Link to={charactersLink}>Characters</Link>
+      <Link to="/about">About</Link>
       <ProfileLink/>
       <LogoutLink/>
       {this.getLoginButton()}
-      <Link to="/about">About</Link>
       <SearchBar/>
     </PickedHeader>
   }
