@@ -7,6 +7,7 @@ import configure from "webpack-config-jaid"
 
 import itemTypes from "lib/itemTypes"
 
+import pkg from "./package.json"
 import formTypes from "./src/lib/formTypes"
 
 const development = process.env.NODE_ENV !== "production"
@@ -26,6 +27,7 @@ const collectUrls = () => {
       priority: 0.8,
     },
     "data",
+    "about",
     "perks/all",
     "build",
     "offerings/all",
@@ -66,6 +68,7 @@ export default configure({
     plugins: [
       new EnvironmentPlugin({
         backendHost: "wss://server.entity.works",
+        version: pkg.version,
       }),
     ],
   },

@@ -26,3 +26,4 @@ userBuild:
   - /user-build/:id/:seoId
 builds: /user-builds
 buildsForType: /user-builds/:type
+about: /about

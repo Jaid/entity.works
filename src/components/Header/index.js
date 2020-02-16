@@ -58,6 +58,7 @@ export default class Header extends React.Component {
       <ProfileLink/>
       <LogoutLink/>
       {this.getLoginButton()}
+      <Link to="/about">About</Link>
       <SearchBar/>
     </PickedHeader>
   }
