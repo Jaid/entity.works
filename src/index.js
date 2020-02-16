@@ -20,7 +20,6 @@ offlineRuntime.install({
     console.debug("SW Event:", "onUpdated")
     // window.location.reload()
   },
-
   onUpdateFailed: () => {
     console.debug("SW Event:", "onUpdateFailed")
   },
