@@ -1,6 +1,7 @@
 import immer from "immer"
 import {combineReducers} from "redux"
 import {reducer as formReducer} from "redux-form"
+import {responsiveStateReducer} from "redux-responsive"
 
 import loginManager from "lib/loginManager"
 import {socketMiddleware} from "lib/socketMiddleware"
@@ -20,4 +21,5 @@ export default combineReducers({
   socket: socketMiddleware.reducer,
   login: loginManager.getReducer(),
   form: formReducer,
+  responsive: responsiveStateReducer,
 })

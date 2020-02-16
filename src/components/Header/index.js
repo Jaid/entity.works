@@ -7,7 +7,7 @@ import {connect} from "react-redux"
 import {Link} from "react-router-dom"
 
 import {charactersLink} from "lib/links"
-import loginManager, {LogoutLink, ProfileLink} from "lib/loginManager"
+import {LogoutLink, ProfileLink} from "lib/loginManager"
 import appCss from "components/App/style.scss"
 import LoginButton from "components/LoginButton"
 import SearchBar from "components/SearchBar"
