@@ -1,3 +1,4 @@
+import {isEmpty} from "has-content"
 import {paramCase} from "param-case"
 
 /**
@@ -16,14 +17,35 @@ const formTypes = [
   {
     id: "killerLoadout",
     title: "Killer Loadout",
+    validate(values) {
+      const errors = {}
+      if (isEmpty(values.title)) {
+        errors.title = "Empty"
+      }
+      return errors
+    },
   },
   {
     id: "survivorLoadout",
     title: "Survivor Loadout",
+    validate(values) {
+      const errors = {}
+      if (isEmpty(values.title)) {
+        errors.title = "Empty"
+      }
+      return errors
+    },
   },
   {
     id: "killerTierList",
     title: "Killer Tier List",
+    validate(values) {
+      const errors = {}
+      if (isEmpty(values.title)) {
+        errors.title = "Empty"
+      }
+      return errors
+    },
   },
 ]
 

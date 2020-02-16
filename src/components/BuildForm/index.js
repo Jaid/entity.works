@@ -8,7 +8,6 @@ import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
 import BuildKillerTierListForm from "components/BuildKillerTierListForm"
 import BuildPreview from "components/BuildPreview"
 import BuildSurvivorLoadoutForm from "components/BuildSurvivorLoadoutForm"
-import LinkButton from "components/LinkButton"
 import SmallerTitle from "components/SmallerTitle"
 import TextInput from "components/TextInput"
 
@@ -23,6 +22,9 @@ import css from "./style.scss"
 
 @reduxForm({
   form: "build",
+  validate(values, props) {
+    return props.formType.validate(values)
+  },
 })
 
 @connect(({login}) => ({
@@ -50,6 +52,7 @@ export default class extends React.Component {
     dispatch: PropTypes.func.isRequired,
     submitting: PropTypes.bool.isRequired,
     handleSubmit: PropTypes.func.isRequired,
+    valid: PropTypes.bool.isRequired,
   }
 
   getFormComponent() {
@@ -65,7 +68,7 @@ export default class extends React.Component {
   }
 
   getSaveButton() {
-    const button = <button className={css.submitButton} disabled={!this.props.loggedIn || this.props.submitting} type="submit">Save</button>
+    const button = <button className={css.submitButton} disabled={!this.props.loggedIn || !this.props.valid || this.props.submitting} type="submit">Publish</button>
     if (this.props.loggedIn) {
       return button
     }
@@ -79,7 +82,7 @@ export default class extends React.Component {
     const FormComponent = this.getFormComponent()
     return <div className={classnames(css.container, this.props.className)}>
       <form onSubmit={this.props.handleSubmit}>
-        <Field className={css.titleInput} component={TextInput} name="title" title="Title"/>
+        <Field className={css.titleInput} component={TextInput} maxLength={64} name="title" title="Title"/>
         <FormComponent change={this.props.change}/>
         {this.getSaveButton()}
       </form>
