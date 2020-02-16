@@ -10,17 +10,28 @@ import store from "src/redux/productionStore"
 offlineRuntime.install({
   onUpdating: () => {
     console.debug("SW Event:", "onUpdating")
+    store.dispatch({
+      type: "@@offlinePlugin/updating",
+    })
   },
   onUpdateReady: () => {
     console.debug("SW Event:", "onUpdateReady")
+    store.dispatch({
+      type: "@@offlinePlugin/updateReady",
+    })
     offlineRuntime.applyUpdate()
   },
   onUpdated: () => {
     console.debug("SW Event:", "onUpdated")
-    // window.location.reload()
+    store.dispatch({
+      type: "@@offlinePlugin/updated",
+    })
   },
   onUpdateFailed: () => {
     console.debug("SW Event:", "onUpdateFailed")
+    store.dispatch({
+      type: "@@offlinePlugin/updateFailed",
+    })
   },
 })
 
