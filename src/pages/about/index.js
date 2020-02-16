@@ -2,6 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
+import Title from "components/Title"
+
 import css from "./style.scss"
 
 /**
@@ -35,6 +37,7 @@ export default class AboutPage extends React.Component {
       <Helmet>
         <title>About | Entity Works</title>
       </Helmet>
+      <Title>Entity Works</Title>
       <p>
         <div>Entity Works v{process.env.version}</div>
       </p>
