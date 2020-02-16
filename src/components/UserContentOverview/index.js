@@ -36,6 +36,9 @@ export default class extends React.Component {
   }
 
   render() {
+    if (!this.props.fetchedData) {
+      return null
+    }
     const links = this.props.fetchedData.map(entry => {
       const formType = getFormType(entry.type)
       return {

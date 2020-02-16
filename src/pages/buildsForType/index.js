@@ -48,6 +48,9 @@ export default class extends React.Component {
   }
 
   render() {
+    if (!this.props.fetchedData) {
+      return null
+    }
     const elements = this.props.fetchedData.map(entry => {
       return <BuildFromDatabase key={entry.linkId} className={css.build} entry={entry}/>
     })
