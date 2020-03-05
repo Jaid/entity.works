@@ -1,0 +1,116 @@
+- text: Hooks and Sabotage
+  points:
+  - Removed skill checks for Hook sabotage.
+  - for: trapper
+    text: Survivors will no longer be able to sabotage {trapper}'s Bear Trap with a Toolbox or the Perk {saboteur}.
+  - Killers may not hook a Survivor on a hook that is currently being sabotaged.
+- text: Toolboxes, items and add-onsToolboxes, items and add-ons
+  points:
+  - Toolboxes now repair fewer charges of a generator, but have a greater speed boost.
+  - Doubled the chance to trigger a skill check when repairing a Generator with a Toolbox.
+  - When a Survivor item reaches zero charges, they may keep it. If they escape with that item, it will be automatically refilled for the next trial.
+  - Dropped items with zero charge behave the same way as items with charges; they can be picked up again later.
+  - When a Survivor escapes a trial with an item, that item loses its addons.
+  - Removed the possibility for all Splinter Offerings to spawn in the Bloodweb.
+  - Disabled all Splinter Offerings.
+- for: doctor
+  text: "With the update The Doctor received in the last mid-chapter, there are now two ways to inflict Madness: Shock Therapy, and Static Blast. To make it clearer what is required to increase a Survivor’s Madness level, we are making the following changes:"
+  points:
+    - Madness no longer decays passively over time.
+    - Shock Therapy will add half of a Madness level to any Survivors hit.
+    - Static Blast will add a full Madness level to any Survivors hit.
+- for: doctor
+  text: "In numbers:"
+  points:
+    - Previously, the thresholds for madness tier 1, 2 and 3 were 5, 55, and 105 points respectively.
+    - Shock therapy granted 30 points of madness and static blast granted 50.
+    - While outside the terror radius, madness would decay by 0.5 points per second.
+    - These thresholds were based on how much passive madness gain the Doctor used to have. Without that mechanic, the madness thresholds can be simplified.
+    - The new tiers for madness 1, 2 and 3 are 1, 2 and 3 points respectively.
+    - Shock therapy grants 0.5 points of madness and static blast grants 1
+- for: doctor
+  text: Previously, the "Order" add-ons increased the amount of madness inflicted by Static blast. They now reduce Static Blast's cooldown instead.
+- for: doctor
+  text: Previously, the "Discipline" add-ons increased the amount of madness inflicted by Shock Therapy. They now reduce the detonation delay of Shock Therapy instead.
+- for: doctor
+  text: "Further add-on changes:"
+  points:
+    - 'The Doctor''s madness can be customized by using his "Affliction" add-ons: Order, Discipline, Calm, Restraint and Obedience. Add-ons of the same type granted similar debuffs, but each one varied slightly in magnitude or madness threshold. The end result was that it was often unclear which add-on did what, and the lower rarity add-ons often seemed very unappealing in comparison to the higher rarity ones.'
+    - The "Afflictions" have now been standardized to be the same across all rarities. Only the passive bonus is different.
+- for: doctor
+  text: Order (Illusionary Pallets)
+  points:
+    - "Order - Class 1: Reduces the cooldown of Static Blast by 2 seconds"
+    - "Order - Class 2: Reduces the cooldown of Static Blast by 4 seconds"
+    - "Order - Carter's Notes: Reduces the cooldown of Static Blast by 6 seconds"
+    - The Affliction of Order used to vary in terms of what madness tier was required to show pallets, and how far away from {doctor} pallets could spawn. These variables are now the same across Order - Class 1, Order - Class 2 and Order - Carter's Notes
+    - text: "Survivors with Madness suffer from the Affliction of Order:"
+      points:
+        - Broken pallets may appear to be replaced with Illusionary Pallets that persist until approached.
+        - A new Illusionary Pallet is generated at the location of a random broken pallet every 20 seconds.
+        - The Doctor shares in his patients' Madness in order to read the auras of Illusionary Pallets.
+- for: doctor
+  text: Discipline (Illusionary Killer Stain)
+  points:
+    - "Discipline - Class 2: Slightly reduces the detonation delay of Shock Therapy (-0.1 seconds)"
+    - "Discipline - Class 3: Moderately reduces the detonation delay of Shock Therapy (-0.2 seconds)"
+    - "Discipline - Carter's Notes: Considerably reduces the detonation delay of Shock Therapy (-0.3 seconds)"
+    - The Affliction of Discipline used to vary in terms of how long the effect would stay active and whether they required a chase to activate. These variables are now the same across Discipline - Class 2, Discipline - Class 3 and Discipline - Carter's Notes
+    - text: "Survivors with Madness suffer from the Affliction of Discipline:"
+      points:
+        - "Madness II: While in a chase, survivors perceive an Illusionary Red Stain and Terror Radius as though The Doctor were right behind them. This effect persists for 6 seconds after the chase ends."
+        - "Madness III: Illusionary Red Stain and Terror Radius are constantly active."
+        - "The Doctor shares in his patients' Madness in order to see the Illusionary Red Stain."
+- for: doctor
+  text: Restraint (Illusionary Doctor)
+  points:
+    - "Restraint - Class 2: Reveal survivors' auras for 1 second when their Madness increases"
+    - "Restraint - Class 3: Reveal survivors' auras for 2 seconds when their Madness increases"
+    - "Restraint - Carter's Notes: Reveal survivors' auras for 3 seconds when their Madness increases"
+    - The Affliction of Restraint used to vary in terms of how much extra duration would be granted to illusionary doctor hallucinations. These variables are now the same across Restraint - Class 2, Restraint - Class 3 and Restraint - Carter's Notes.
+    - The passive bonuses of the restraint add-ons have not been changed.
+    - text: "Survivors with Madness suffer from the Affliction of Restraint:"
+      points:
+        - "Increased Illusionary Doctor duration to 8 seconds (These hallucinations normally last 1 second)"
+        - "The Doctor shares in his patients' Madness in order to read the Auras of Illusionary Doctors at any level. (This effect is normally only active in madness 3)"
+- for: doctor
+  text: Calm (Illusionary Terror Radius)
+  points:
+    - "Calm - Class 1: Terror radius increased/decreased by 4 meters (previously +/- 10%)"
+    - "Calm - Class 2: Terror radius increased/decreased by 6 meters (previously +/- 15%)"
+    - "Calm - Carter's Notes: Terror radius increased/decreased by 8 meters (previously +/- 25%)"
+    - Additive modifiers for Terror Radius are clearer and the result of stacking multiple modifiers is simpler to calculate. This is a slight increase in the effect for Class 1 and 2, and Carter's Notes are equivalent (25% of 32 is 8)
+    - The Affliction of Calm used to vary in terms of what madness tier was required to activate it, how long it stayed active, and how long it took between activations. These variables are now the same across Calm - Class 1, Calm - Class 2 and Calm - Carter's Notes
+    - text: "Survivors with Madness suffer from the Affliction of Calm:"
+      points:
+        - "Madness II: Intermittently causes survivors to hear a distant illusionary Heartbeat (10-15 seconds active, 30-45 seconds inactive)"
+        - "Madness III: Constantly causes survivors to hear a distant illusionary Heartbeat"
+- for: doctor
+  text: Obedience (Reverse Skill Checks)
+  points:
+    - "Obedience broke the pattern of affliction add-ons and has been removed. Reverse skill checks have been integrated into the Doctor's base ability."
+    - "When afflicted by a Madness Skill Check, there is a 33% chance of an off-center skill check, a 33% chance of a reverse skill check, and a 33% chance of a reverse off-center skill check. This is baseline and requires no add-ons."
+    - "Scrapped Tape, which was previously removed, has returned to take Obedience - Class III's place."
+- for: doctor
+  text: Iridescent King
+  points:
+    - "Previously, this add-on would inflict a random affliction on a survivor every time they were shocked. These afflictions would stack, until a survivor had all 5 afflictions after 5 shocks. However, this was mostly unnecessary, as these afflictions still had the same madness thresholds for activation. In light of the changes to the afflictions, Iridescent King has been simplified and the need to shock survivors to inflict afflictions has been removed"
+    - text: "Survivors with Madness suffer from the Afflictions of Calm, Discipline, Order, and Restraint:"
+      points:
+        - Intermittently causes survivors to hear a distant illusionary Heartbeat.
+        - While in a chase, survivors perceive an Illusionary Red Stain and Terror Radius as though The Doctor were right behind them. This effect persists for 6 seconds after the chase ends and is constantly active in Madness III.
+        - Broken pallets may appear to be replaced with Illusionary Pallets that persist until approached. A new Ilusionary Pallet is generated at the location of a random broken pallet every 20 seconds.
+        - Increases Illusionary Doctor duration to 8 seconds and grants the ability to read their auras at any level of madness.
+- for: doctor
+  text: Electrodes
+  points:
+    - The electrode add-ons increased shock therapy range by a percentage at the cost of a small penalty to shock therapy charge speed. This has been changed to grant extra range (in meters) with no penalty.
+    - The base range of Shock Therapy is 10 meters
+    - "Mouldy Electrode: Increases the range of Shock Therapy by 2 meters (previously +15% range, -5% charge speed)"
+    - "Polished Electrode: Increases the range of Shock Therapy by 3 meters (previously +25% range, -10% charge speed)"
+    - "High-Stimulus Electrode: Increases the range of Shock Therapy 4 meters (previously +35% range, -15% charge speed)"
+    - "Interview Tape: Range increased from 20 meters to 24 meters"
+- for: saboteur
+  text: See Hook auras in a 56 meters radius from the pickup spot if a Survivor is being carried. Sabotaging a Hook without a toolbox takes 2.5 seconds. The Sabotage action has a 60 seconds cooldown.
+- for: aceInTheHole
+  text: "{aceInTheHole} now adds the ability to keep the addons when escaping a trial with an item."

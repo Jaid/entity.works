@@ -1,0 +1,4 @@
+- Added a new Survivor ({zarina})
+- Added a new Killer ({deathslinger})
+- Added a new map (Dead Dawg Saloon - Grave of Glenvale)
+- Added a high-ping indicator to the HUD, displayed when the local ping to the server is above a certain threshold (white icon for 150ms, red icon for 300ms).

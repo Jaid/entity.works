@@ -1,0 +1,73 @@
+- Fixed an issue that caused a Spectator to be unable to switch Role if at least one user is ready in a Custom Game Lobby.
+- Fixed an issue that prevented starting a match in Custom Game when there is a spectator.
+- for: doctor
+  text: Fixed an issue that caused {doctor} to have his view partially blocked by the Survivor's body for a brief moment when performing an attack while carrying a Survivor.
+- Fixed an issue that caused players to be unable to select the 'Ready' option when returning to the Custom Game Lobby.
+- Fixed an issue that caused the Blood drops from failing a healing skillcheck while asleep pass through certain ground tiles and any elevated tile.
+- for: borrowedTime
+  text: Fixed an issue that caused the Blood VFX to be missing from the screen when a survivor is affected by Deep Wounds from {borrowedTime}.
+- Fixed an issue that caused the Prompt text to be missing upon leveling up in the Bloodweb Menu.
+- Fixed an issue that caused the Killer to jitter erraticaly when moving the cursor after interrupting a Survivor vaulting over a pallet.
+- Fixed an issue that caused other Survivors to have the Ready button grayed out in a Custom Game Lobby when a Survivor comes back to the Lobby after having closed the application during the Loading Screen.
+- Fixed an issue that could cause Trials to start in public matches with an incomplete Lobby.
+- Fixed an issue that caused The Mad House achievement to fail to trigger when 4 survivors are brought to Madness tier 3.
+- Fixed an issue that caused Various killers animations to be corrupted or misalinged when performing a Mori.
+- Fixed an issue that allowed Killers to break a pallet while a survivor is resetting the pallet from the same side.
+- Fixed an issue that caused players to be unable to click The Unlock Tiers button in The Rift if the current tier reward unlock overlaps with the button.
+- for: autodidact
+  text: Fixed an issue that caused Survivors to be unable to gain token with {autodidact}.
+- for: oni
+  text: Fixed an issue that caused parts of {oni}'s sound effect when absorbing blood orbs to loop when stunned after striking a Survivor.
+- Fixed an issue that briefly caused {shape}'s unique music to trigger upon exiting the Archives to the Main Menu.
+- for: boilOver
+  text: Fixed an issue that caused {boilOver} to not immediately hide hook auras when the pickup animation begins.
+- for: huntressLullaby
+  text: Fixed an issue that caused {huntressLullaby} to fail to apply to Brand New Part installations when 5 tokens are earned.
+- for: noOneLeftBehind
+  text: Fixed an issue that caused the extra points awarded for healing a survivor with {noOneLeftBehind} to not properly show in the score event.
+
+- "Treatment Theatre: Fixed an issue in Lery's long shower room that caused a hatch to not allow Survivors to open it with a Key"
+- "Treatment Theatre: Fixed an issue that displayed a floating book next to a Desk."
+- "Treatment Theatre: Fixed a collision issue on the ceiling."
+- Fixed the SFX on some tall grass when walking on them inside The Backwater Swamp theme.
+- for: deadHard
+  text: "Autohaven Wreckers: Fixed an issue that allowed Survivors to use {deadHard} to get onto tires near a crane"
+- "Gas Heaven: Fixed an issue that allowed survivors to go through the ground near the gas pumps."
+- "Gas Heaven: Fixed an issue that displayed a seam near the Gas Station."
+- "Disturbed Ward: Fixed an issue that caused the LOD to be seen updating on the second floor of the Asylum."
+- "Mount Ormond Resort: Fixed a collision issue that blocked the movement of both Survivors and Killer near a broken lift."
+- "Mount Ormond Resort: Fixed an issue that caused Killers to get stuck on a vault point in Mount Ormond Resort after increasing their vault speed."
+- "Mount Ormond Resort: Fixed an issue that caused Survivors and Killers to be unable to move freely when walking at a specific corner exterior of the main building."
+- "Mount Ormond Resort: Fixed the collision on the railing on the second floor of the main building."
+- "The Thompson House: Fixed an issue that caused A survivor to get stuck when collecting the item in a chest that spawns close to the combine harvester."
+- "Sanctum of Wrath: Fixed an issue that caused Killers to be unable to chase Survivors between Buddha statues and a rock."
+- "Fractured Cowshed: Fixed an issue that displayed a seam on the ground when walking around the map."
+- "Mother's Dwelling: Fixed a Lighting issue that caused a wall to appear completely shadowed and then brightens when approached."
+- Fixed the collision on several hill tiles that could cause the Survivor or the Killer to bounce up and down repeatedly when near a rock formation.
+
+- for: spirit
+  text: "Added a texture to {spirit}'s bandages on her left leg on the Cursed Silk Kimono from the Tattered Tradition Outfit."
+- for: doctor
+  text: Fixed the textures on {doctor}'s Metal Therapy Bat
+- for: huntress
+  text: Fixed a display issue when vewing a {huntress} wearing the Hunting Hitatare Torso.
+- for: huntress
+  text: Fixed an issue that could cause a crash when viewing a {huntress} wearing the Winter Hearth Torso.
+- for: huntress
+  text: Fixed an issue that caused various {huntress} Masks to clip through her neck.
+- for: doctor
+  text: Fixed an issue that displayed distorted legs when viewing {doctor}'s Ladykiller Frock Coat from a distance.
+- for: doctor
+  text: Fixed an issue that caused the hanging piece of cloth on {doctor}'s Straight Jacket Torso to be clipping through his body.
+- for: nea
+  text: Fixed a clipping issue when viewing all of {nea}'s shirt models.
+- for: clown
+  text: Fixed a graphic issue when viewing {clown}’s “Mr. Puddles’ Disembodied Head” on the tally screen.
+- for: trapper
+  tetx: Fixed a graphic issue when viewing {trapper}'s Neptune's Failure Torso on the tally screen.
+- for: wraith
+  text: Fixed an issue that caused {wraith}'s Glowing Vigil head customization to clip through the Evening Wear Body customization.
+- for: david
+  text: Fixed multiple clipping and lighting issues with {david}'s Hard Headlight Torso customization.
+
+- Fixed an issue that caused a superfluous grunt when a survivor lands after falling from any height.
