@@ -1,8 +1,13 @@
+import {isEmpty} from "has-content"
+
 import Patch from "lib/Patch"
 
 export default id => {
   const filteredPatches = {}
   for (const patch of Patch.all) {
+    if (isEmpty(patch.points)) {
+      continue
+    }
     for (const [categoryName, {points, references}] of Object.entries(patch.points)) {
       if (references[id]) {
         if (!filteredPatches[patch.id]) {
