@@ -35,8 +35,7 @@ offlineRuntime.install({
   },
 })
 
-const rootNode = document.createElement("div")
-document.body.append(rootNode)
+const rootNode = document.querySelector("body > div")
 
 ReactDom.render(<Provider store={store}>
   <App/>

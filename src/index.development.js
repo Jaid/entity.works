@@ -6,8 +6,7 @@ import HotApp from "components/HotApp"
 
 import store from "src/redux/developmentStore"
 
-const rootNode = document.createElement("div")
-document.body.append(rootNode)
+const rootNode = document.querySelector("body > div")
 
 ReactDom.render(<Provider store={store}>
   <HotApp/>
