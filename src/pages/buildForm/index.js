@@ -45,10 +45,11 @@ export default class extends React.Component {
       formType,
       formData: values,
     })
+    console.log(result)
     if (result?.error) {
       console.error(result)
     }
-    this.props.history.push(`/user-build/${result.linkId}/${result.seoLinkId}`)
+    this.props.history.push(`/user-build/${result.id}/${result.seoLinkId}`)
   }
 
   render() {
