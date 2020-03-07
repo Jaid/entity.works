@@ -83,8 +83,8 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.2",
-    "sitemap": "^5.1.0",
-    "webpack-config-jaid": "^11.7.0",
+    "sitemap": "^6.0.0",
+    "webpack-config-jaid": "^11.7.1",
     "yargs": "^15.1.0"
   },
   "scripts": {
