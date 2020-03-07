@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import Helmet from "react-helmet"
 
+import BackendVersion from "components/BackendVersion"
 import Title from "components/Title"
 
 import css from "./style.scss"
@@ -40,6 +41,7 @@ export default class AboutPage extends React.Component {
       <Title>Entity Works</Title>
       <p>
         <div>Entity Works v{process.env.version}</div>
+        <div>Backend: entity-serves <BackendVersion/></div>
       </p>
       <p>
         <div>Source code is available here: <a href="https://github.com/Jaid/entity.works">github.com/Jaid/entity.works</a></div>
