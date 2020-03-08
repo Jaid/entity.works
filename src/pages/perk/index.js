@@ -7,6 +7,7 @@ import {Helmet} from "react-helmet"
 
 import {flattenRichText} from "lib/normalizeRichText"
 import Perk from "lib/Perk"
+import FilteredBuilds from "components/FilteredBuilds"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
 import Title from "components/Title"
@@ -75,6 +76,7 @@ export default class PerkPage extends React.Component {
       <Title>{perk.title}</Title>
       <PerkBlock perkInfo={perk} displayOwnerBox/>
       <PatchesForReferenceText className={css.patchesText} referenceId={perk.id}/>
+      <FilteredBuilds className={css.filteredBuilds} filterType="perk" limit={3} title={`Builds with ${perk.title}`} value={perk.id}/>
     </main>
   }
 
