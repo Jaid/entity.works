@@ -1,0 +1,9 @@
+You become obsessed with one Survivor.
+
+After hooking the Obsession, {this} activates for the next {tiers:35/40/45} seconds.
+
+While activated, any Survivor that stops repairing a Generator before it is fully repaired causes The Entity to block the Generator until the effect of {this} ends.
+
+Affected Generators are highlighted by a white Aura.
+
+You can only be obsessed with one Survivor at a time.

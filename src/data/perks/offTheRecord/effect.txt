@@ -1,0 +1,5 @@
+{flavor:You've learnt that a quiet approach is sometimes best.}
+
+Once you are unhooked or escape from the Hook, {this} activates for {tiers:60/70/80} seconds.
+
+While {this} is active, your Aura will not be shown to the Killer and Grunts of Pain caused by injuries are reduced by 100 %.

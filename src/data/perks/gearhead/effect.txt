@@ -1,0 +1,5 @@
+{flavor:You've got an ear for well-oiled gears.}
+
+After hitting a Survivor 2 times with your Basic Attack, Gearhead activates for {tiers:35/40/45} seconds.
+
+Each time a Survivor completes a Good or Great Skill Check while repairing, the Generator will be revealed by a yellow Aura for as long as it is being repaired.

@@ -1,0 +1,7 @@
+{flavor:You've noticed that people pay attention to whatever makes the loudest noise.}
+
+After repairing a Generator for at least 3 seconds, it will be highlighted to you with a yellow Aura. The Generator stays highlighted until it is fully repaired, or you repair a new Generator, or enter a Locker.
+
+Entering any Locker will trigger a Loud Noise indicator for the Killer at the highlighted Generator's location.
+
+{this} can only be triggered once every {tiers:100/80/60} seconds.

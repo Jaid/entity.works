@@ -1,0 +1,5 @@
+{flavor:A Hex that lashes out upon its destruction. Those who cross you will be punished.}
+
+Any Survivor who cleanses a Dull Totem will suffer from the Oblivious Status Effect for {tiers:35/40/45} seconds.
+
+If any Hex Totem is cleansed, including this one, the Auras of all Survivors are revealed for 10 seconds.
