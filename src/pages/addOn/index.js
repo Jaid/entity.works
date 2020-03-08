@@ -59,7 +59,7 @@ export default class AddOnPage extends React.Component {
     return <main className={css.container}>
       <Helmet>
         <title>{addOn.title} | Dead by Daylight {addOn.getOverTitle()}</title>
-        <meta content={this.getFullDescription()} name="description"/>
+        <meta content={this.getFullDescription(addOn)} name="description"/>
       </Helmet>
       <Title>{addOn.title} Add-On</Title>
       <AddOnBlock addOnId={addOn.id}/>
