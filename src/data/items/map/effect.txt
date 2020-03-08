@@ -4,4 +4,4 @@ Holding and channelling the Map unlocks great potential in one's Aura-reading ab
 Generators' Auras which you have already encountered are revealed to you for as long as the Map has charges left.+
 
 Start with 1 Object tracked.
-Unlocks the ability to track Generators IconHelpLoading generators.png within a range of 8 metres.
+Unlocks the ability to track Generators within a range of 8 meters.

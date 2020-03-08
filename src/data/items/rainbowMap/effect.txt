@@ -4,8 +4,8 @@ Holding and channelling the Map unlocks a great potential in one's Aura-reading 
 Objects with Auras which you have already encountered are revealed to you for as long as the Map has charges left.
 
 Start with 3 Objects tracked.
-Unlocks the ability to track Generators within a range of 8 metres.
-Unlocks the ability to track Hooks within a range of 8 metres.
-Unlocks the ability to track Exit Gates within a range of 8 metres.
-Unlocks the ability to track Chests within a range of 8 metres.
-Unlocks the ability to track the Hatch within a range of 8 metres.
+Unlocks the ability to track Generators within a range of 8 meters.
+Unlocks the ability to track Hooks within a range of 8 meters.
+Unlocks the ability to track Exit Gates within a range of 8 meters.
+Unlocks the ability to track Chests within a range of 8 meters.
+Unlocks the ability to track the Hatch within a range of 8 meters.
