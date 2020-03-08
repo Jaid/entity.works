@@ -46,14 +46,14 @@ export default class extends React.Component {
   }
 
   getLatestBuilds() {
-    if (isEmpty(this.props.fetchedData.latestBuilds)) {
+    if (isEmpty(this.props.fetchedData.latestBuilds?.count)) {
       return null
     }
-    const buildElements = this.props.fetchedData.latestBuilds.map(entry => {
+    const buildElements = this.props.fetchedData.latestBuilds.rows.map(entry => {
       return <BuildFromDatabase key={entry.linkId} className={css.build} entry={entry}/>
     })
     return <div>
-      <SmallerTitle>{zahl(buildElements, "contributed build")}</SmallerTitle>
+      <SmallerTitle>{zahl(this.props.fetchedData.latestBuilds.count, "contributed build")}</SmallerTitle>
       {buildElements}
     </div>
   }
