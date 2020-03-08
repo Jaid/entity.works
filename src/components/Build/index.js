@@ -7,6 +7,7 @@ import {Link} from "react-router-dom"
 
 import findPatchForDate from "lib/findPatchForDate"
 import {getFormType} from "lib/formTypes"
+import Patch from "lib/Patch"
 import BuildKillerLoadoutContent from "components/BuildKillerLoadoutContent"
 import BuildKillerTierListContent from "components/BuildKillerTierListContent"
 import BuildSurvivorLoadoutContent from "components/BuildSurvivorLoadoutContent"
@@ -85,10 +86,10 @@ export default class Build extends React.Component {
     const createdAtMoment = moment(date)
     const agoString = createdAtMoment.fromNow()
     const patch = findPatchForDate(date)
-    if (patch) {
-      return <div className={css.createdAt}><div>Created {agoString}.</div><div>For an older ingame version: <Link to={`/patch/${patch.linkId}`}>{patch.semver}</Link></div></div>
+    if (!patch || Patch.all.indexOf(patch) === 0) {
+      return <div className={css.createdAt}>Created {agoString}.</div>
     }
-    return <div className={css.createdAt}>Created {agoString}.</div>
+    return <div className={css.createdAt}><div>Created {agoString}.</div><div>For an older ingame version: <Link to={`/patch/${patch.linkId}`}>{patch.semver}</Link></div></div>
   }
 
   render() {
