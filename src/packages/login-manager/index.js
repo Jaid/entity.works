@@ -14,6 +14,7 @@ export default class LoginManager {
       socketClient: null,
       cookieName: "login",
       profileLinkPrefix: "/user/",
+      cookieDomain: window.location.hostname === "localhost" ? "localhost" : `.${window.location.hostname}`,
       ...options,
     }
     this.login = jsCookie.getJSON(this.options.cookieName)
@@ -80,15 +81,21 @@ export default class LoginManager {
       this.store = store
       return next => action => {
         if (action.type === this.createActionType("persist")) {
-          jsCookie.set(this.options.cookieName, action.payload)
+          jsCookie.set(this.options.cookieName, action.payload, {
+            domain: this.options.cookieDomain,
+          })
         }
         if (action.type === this.createActionType("logout")) {
           this.login = null
-          jsCookie.remove(this.options.cookieName)
+          jsCookie.remove(this.options.cookieName, {
+            domain: this.options.cookieDomain,
+          })
         }
         if (action.type === "@@socket/received/invalidateLogin") {
           this.login = null
-          jsCookie.remove(this.options.cookieName)
+          jsCookie.remove(this.options.cookieName, {
+            domain: this.options.cookieDomain,
+          })
         }
         return next(action)
       }
