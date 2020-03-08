@@ -14,6 +14,7 @@ export default class LoginManager {
       socketClient: null,
       cookieName: "login",
       profileLinkPrefix: "/user/",
+      // The leading dot is important, see https://stackoverflow.com/a/49935655/11389747
       cookieDomain: window.location.hostname === "localhost" ? "localhost" : `.${window.location.hostname}`,
       ...options,
     }
