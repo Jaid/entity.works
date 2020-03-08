@@ -60,7 +60,7 @@ export default class FilteredBuilds extends React.Component {
 
   getContent() {
     const entries = this.props.fetchedData.rows.map(entry => {
-      return <BuildFromDatabase key={entry.id} entry={entry}/>
+      return <BuildFromDatabase className={css.build} key={entry.id} entry={entry}/>
     })
     return <div>
       {entries}
