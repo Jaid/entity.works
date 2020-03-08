@@ -53,7 +53,7 @@ export default class extends React.Component {
         <title>{this.props.fetchedData.data.title || buildType.title} | Dead by Daylight {buildType.title}</title>
       </Helmet>
       <Title>{buildType.title}</Title>
-      <Build data={this.props.fetchedData.data} type={this.props.fetchedData.type} userName={this.props.fetchedData.userName} userTitle={this.props.fetchedData.userTitle}/>
+      <Build createdAt={this.props.fetchedData.createdAt} data={this.props.fetchedData.data} type={this.props.fetchedData.type} userName={this.props.fetchedData.userName} userTitle={this.props.fetchedData.userTitle}/>
       <div className={css.buttons}>
         <LinkButton to={`/user-builds/${buildType.linkId}`}>See more {buildType.pluralTitle}</LinkButton>
         <LinkButton to={`/build/${buildType.linkId}`}>Build your own {buildType.title}</LinkButton>

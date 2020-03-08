@@ -28,7 +28,7 @@ export default class BuildFromDatabase extends React.Component {
   }
 
   render() {
-    return <Build className={this.props.className} data={this.props.entry.data} linkId={this.props.entry.id} seoLinkId={this.props.entry.seoLinkId} type={this.props.entry.type} userName={this.props.entry["User.name"]} userTitle={this.props.entry["User.title"]}/>
+    return <Build className={this.props.className} createdAt={this.props.entry.createdAt} data={this.props.entry.data} linkId={this.props.entry.id} seoLinkId={this.props.entry.seoLinkId} type={this.props.entry.type} userName={this.props.entry["User.name"]} userTitle={this.props.entry["User.title"]}/>
   }
 
 }

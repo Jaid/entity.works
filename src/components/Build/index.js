@@ -1,9 +1,11 @@
 import classnames from "classnames"
+import moment from "moment"
 import {paramCase} from "param-case"
 import PropTypes from "prop-types"
 import React from "react"
 import {Link} from "react-router-dom"
 
+import findPatchForDate from "lib/findPatchForDate"
 import {getFormType} from "lib/formTypes"
 import BuildKillerLoadoutContent from "components/BuildKillerLoadoutContent"
 import BuildKillerTierListContent from "components/BuildKillerTierListContent"
@@ -38,6 +40,7 @@ export default class Build extends React.Component {
     userTitle: PropTypes.string,
     linkId: PropTypes.string,
     seoLinkId: PropTypes.string,
+    createdAt: PropTypes.string,
   }
 
   getContentComponent(formType) {
@@ -74,6 +77,20 @@ export default class Build extends React.Component {
     </div>
   }
 
+  getDate() {
+    if (!this.props.createdAt) {
+      return null
+    }
+    const date = new Date(this.props.createdAt)
+    const createdAtMoment = moment(date)
+    const agoString = createdAtMoment.fromNow()
+    const patch = findPatchForDate(date)
+    if (patch) {
+      return <div className={css.createdAt}><div>Created {agoString}.</div><div>For an older ingame version: <Link to={`/patch/${patch.linkId}`}>{patch.semver}</Link></div></div>
+    }
+    return <div className={css.createdAt}>Created {agoString}.</div>
+  }
+
   render() {
     const formType = getFormType(this.props.type)
     const title = this.props.data?.title || formType.title
@@ -83,6 +100,7 @@ export default class Build extends React.Component {
       <div className={css.content}>
         {this.getTitleLine(formType, title)}
         <ContentComponent data={this.props.data}/>
+        {this.getDate()}
       </div>
     </div>
   }
