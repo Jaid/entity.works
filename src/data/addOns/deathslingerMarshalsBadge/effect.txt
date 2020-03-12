@@ -1,0 +1,4 @@
+{flavor:A silver badge taken from the corpse of a lawman in Arizona Territory who interfered with the Hellshire Gang's bounties.}
+
+Slightly decreases {deathslinger}'s Terror Radius while aiming down the Speargun's sights.
+Slightly decreases {deathslinger}'s Movement speed while aiming down the Speargun's sights.

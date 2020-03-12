@@ -1,0 +1,3 @@
+{flavor:A can holding a small amount of oil to reduce friction in machinery. Early models of the Speargun were notorious for jamming, and oil had to be readily available.}
+
+Moderately decreases Speargun cooldown after missed shots.

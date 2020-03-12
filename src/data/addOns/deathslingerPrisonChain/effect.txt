@@ -1,0 +1,3 @@
+{flavor:A thick, heavy chain that once held a steel ball and latched to Caleb's ankle. It's been re-purposed to hook onto a spear.}
+
+Considerably increases the amount of charges required for a Survivor to break free from the Speargun.

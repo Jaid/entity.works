@@ -1,0 +1,4 @@
+{flavor:Weak steel links first used on Caleb's prototype Speargun. Despite the chain's failings, it holds sentimental value.}
+
+Grants 50% bonus Bloodpoints for Speared Score Events.
+Survivors break free from the Speargun more easily.

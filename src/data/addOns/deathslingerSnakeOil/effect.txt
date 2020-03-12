@@ -1,0 +1,3 @@
+{flavor:A tincture of oils and extracts purchased from a travelling salesman. Purported to cure all that ails you.}
+
+Slightly increases Speargun Reeling speed.

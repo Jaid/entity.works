@@ -1,0 +1,3 @@
+{flavor:A glass-like coin moulded from the Fog itself. A payment to the bounty hunter for the services rendered.}
+
+Survivors speared from at least 15 meters away are inflicted with the Exposed Status Effect for as long as they remain speared.

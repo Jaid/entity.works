@@ -1,0 +1,3 @@
+{flavor:A quality cigar, plucked from the jacket of Caleb's boss while he wailed over the spear lodged in his abdomen.}
+
+Considerably decreases Stun duration when Survivors break free from the Speargun.

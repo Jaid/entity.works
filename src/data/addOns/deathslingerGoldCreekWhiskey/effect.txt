@@ -1,0 +1,4 @@
+{flavor:Warm comfort in a bottle that quelled Caleb's anger and slowed his step.}
+
+Moderately decreases {deathslinger}'s Terror Radius while aiming down the Speargun's sights.
+Moderately decreases {deathslinger}'s Movement speed while aiming down the Speargun's sights.

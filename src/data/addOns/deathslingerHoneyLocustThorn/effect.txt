@@ -1,0 +1,3 @@
+{flavor:Angered with a bounty who fled twice before, Caleb twisted thorn branches onto a spear and let it loose.}
+
+Survivors who break free from the Speargun are inflicted with the Mangled Status Effect for 60 seconds.

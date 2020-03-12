@@ -1,0 +1,3 @@
+{flavor:Pliable American-made steel lined with sharp barbs. Despite its simplicity, Caleb found it could be wrapped around a spear to increase its viciousness.}
+
+Moderately increases Survivors' Mending time when affected by the Deep Wound Status Effect.

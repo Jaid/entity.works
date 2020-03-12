@@ -1,0 +1,3 @@
+{flavor:An ordinary-looking plant, Caleb found out that spears coated in its oil cause unbearable blistering around wound.}
+
+Slightly increases Survivors' Mending time when affected by the Deep Wound Status Effect.

@@ -1,0 +1,3 @@
+{flavor:The bullet that ripped through Caleb's jaw during a frenzy shootout. It brings back burning desire for revenge.}
+
+Slightly increases {deathslinger}'s Movement speed while aiming down the Speargun's sights.

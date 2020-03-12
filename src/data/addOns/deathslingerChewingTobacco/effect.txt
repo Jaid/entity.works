@@ -1,0 +1,3 @@
+{flavor:A can of clipped and sweetened tobacco leaves lifted from a gutted body in Glenvale. Stimulates the nervous system.}
+
+Moderately decreases Stun duration when Survivors break free from the Speargun.

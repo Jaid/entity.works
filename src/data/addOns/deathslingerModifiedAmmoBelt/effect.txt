@@ -1,0 +1,3 @@
+{flavor:An old ammo belt Caleb altered for his specialised weaponry. Still holds the fine red dirt of the Arizona Territory desert.}
+
+Slightly reduces Speargun Reload time.
