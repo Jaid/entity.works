@@ -1,5 +1,4 @@
-{flavor:Your ingenious modifications to Hooks prevent tampering and permanent damage.}
+{flavor:Your ingenious modifications to Hooks alert you of tampering.}
 
-Hooks destroyed by sabotage or sacrifices repair automatically after {tiers:30/20/10} seconds.
-Gain a notification when someone starts sabotaging the Hooks.
-For {trapper}: Sabotaged Bear Traps automatic repair timer is reduced by 60 seconds.
+Gain a notification when a Survivor begins sabotaging a hook.
+While carrying a Survivor, see the aura of any Survivor within {tiers:4/8/12} meters of a hook.
