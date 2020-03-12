@@ -1,0 +1,3 @@
+{flavor:A compact cassette from Project Awakening containing mostly white noise. Opens The Doctor's mind to alternate treatment methods.}
+
+Shock Therapy's Area of Effect becomes a ring, placed 8 meters in front of {doctor}, with an outer radius of 4.2 meters and an inner radius of 3 meters.
