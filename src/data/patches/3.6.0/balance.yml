@@ -1,0 +1,14 @@
+- Dropping a Survivor now increases the Wiggle progression by 25% (down from 33%).
+
+- for: plague
+  text: "{plague} now starts with one Corrupted Fountain."
+- for: trapper
+  text: "{trapper}'s Bear Traps can no longer be sabotaged."
+- for: trapper
+  text: "{trapper}'s Bear Traps can now be reset without needing to pick them up first."
+
+- for: doctor
+  text: Reverse skill checks now happen 2/3 of the time an insane skill check is triggered by default.
+
+- for: hangmansTrick
+  text: Reduced the Perk range to {tiers:2/4/6} meters.

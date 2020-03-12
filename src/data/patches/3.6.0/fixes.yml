@@ -1,0 +1,22 @@
+- for: noOneEscapesDeath
+  text: Fixed an issue that would notify the Survivors of {noOneEscapesDeath} when certain Killers use their power while the exit gates are powered.
+- Fixed an issue that caused Survivors to be hit by projectiles that visually appear to pass over their head while performing various interaction's animations.
+- Fixed an issue that wouldn't award Malicious and Devout emblem progress when a Survivor disconnects.
+- for: trapper
+  text: Fixed an issue that caused the Chaser emblem to not acquire any points when catching a Survivor in a Trapper trap (in or out of chase).
+- for: demogorgon
+  text: Fixed an issue that wouldn't grant a Coop Action score event when mending or sealing a {demogorgon}'s portal with another Survivor.
+- for: nurse
+  text: Fixed an issue that caused the {nurse}'s {spasmodicBreath} to infinitely increases base movement speed if the killer lunges as the timer runs out.
+- for: hag
+  text: Fixed {hag}'s post-wiggle animation when a Survivor wiggles out.
+
+- "Yamaoka Estate: Fixed a texture at any exit gate to disappear as the Survivor or the Killer walks away."
+- "Yamaoka Estate: Fixed a missing collision at the bottom of the stairs of the Family Residence."
+- "Coldwind Farm: Fixed an issue that could cause a Survivor to get stuck when collecting the item in a chest that spawns close to the combine harvester."
+
+- Polished The Trapper's Mori SFX.
+- Polished The Hag's Mori SFX.
+- Fixed an issue that caused Survivors carrying a toolbox when injured while running to make the Survivors' footsteps play more often.
+- "The Underground Complex: Fixed some floors that would trigger a wet footprint sound."
+- "Father Campbell's Chapel: Polished the audio when inside the chapel."
