@@ -1,4 +1,4 @@
 {flavor:Your ingenious modifications to Hooks alert you of tampering.}
 
 Gain a notification when a Survivor begins sabotaging a hook.
-While carrying a Survivor, see the aura of any Survivor within {tiers:4/8/12} meters of a hook.
+While carrying a Survivor, see the aura of any Survivor within {tiers:2/4/6} meters of a hook.
