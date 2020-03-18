@@ -1,4 +1,11 @@
-{flavor:Your ingenious modifications to Hooks alert you of tampering.}
+{flavor:You risk life and injury for others.}
 
-Gain a notification when a Survivor begins sabotaging a hook.
-While carrying a Survivor, see the aura of any Survivor within {tiers:2/4/6} meters of a hook.
+{this} is only active while at full health.
+
+Press the active ability button while healing another Survivor without a Med-Kit to instantly heal them from Dying to Injured or from Injured to Healthy.
+
+You become injured and receive the Broken status effect for {tiers:110/100/90} seconds.
+You become the Obsession.
+
+Decreases your chances of being the Obsession.
+The Killer can only be obsessed with one Survivor at a time.
