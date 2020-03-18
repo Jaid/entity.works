@@ -1,0 +1,19 @@
+- for: nurse
+  text: "Dead Dawg Saloon: Fixed an issue that caused the {nurse} to see out of world when blinking in the basement."
+- "Dead Dawg Saloon: Fixed an issue that caused the Old West Oasis achievement to not unlock after repairing the Saloon generator and escaping."
+- for: trapper
+  text: "Family Residence: Fixed an issue that caused a Bear Trap to spawn inside a rock."
+- for: nurse
+  text: Fixed an issue that prevented {nurse} from blinking through the exit gates.
+- for: hag
+  text: Fixed a heavy frame drop when walking on multiple {hag} traps.
+- for: deathslinger
+  text: Fixed an issue that would award a Protection score event to a Survivor for breaking free from the Redeemer's spear near an injured Survivor.
+- for: hillbilly
+  text: Polished the animation when breaking pallets and breakable walls with the Chainsaw.
+- for: hag
+  text: Fixed an issue that caused {hag} lunge speed after teleporting to be slower than it should be.
+- for: deathslinger
+  text: Adjusted the sensitivity when aiming down sights when using a controller.
+- for: hangmansTrick
+  text: Fixed an issue that caused Killers using {hangmansTrick} to see Survivor auras until the end of the hooking or dropping animation instead of at the beginning.
