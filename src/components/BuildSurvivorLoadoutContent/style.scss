@@ -1,8 +1,7 @@
 .container {}
 
-.SurvivorBox {
+.survivorBox {
   margin-bottom: 10px;
-  margin-top   : 10px;
   font-size    : 120%;
 }
 
@@ -34,5 +33,9 @@
   .content {
     flex-direction: column-reverse;
     font-size     : 100%;
+  }
+
+  .survivorBox {
+    margin-top: 10px;
   }
 }
