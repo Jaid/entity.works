@@ -64,7 +64,7 @@ export default class AddOnInput extends React.Component {
         <div>
           {this.props.title}
         </div>
-        <select onChange={this.props.input.onChange.bind(this)}>
+        <select value={this.props.input.value} onChange={this.props.input.onChange.bind(this)}>
           <option value="">(none)</option>
           {options}
         </select>

@@ -48,6 +48,7 @@ export default class extends React.Component {
     console.log(result)
     if (result?.error) {
       console.error(result)
+      return
     }
     this.props.history.push(`/user-build/${result.id}/${result.seoLinkId}`)
   }

@@ -29,7 +29,7 @@ export default class TierInput extends React.Component {
   }
 
   state = {
-    value: "unrated",
+    value: this.props.input.value || "unrated",
   }
 
   handleChange(value) {

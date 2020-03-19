@@ -27,3 +27,4 @@ userBuild:
 builds: /user-builds
 buildsForType: /user-builds/:type
 about: /about
+editBuild: /edit-build/:id

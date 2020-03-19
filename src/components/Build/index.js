@@ -12,6 +12,7 @@ import BuildKillerLoadoutContent from "components/BuildKillerLoadoutContent"
 import BuildKillerTierListContent from "components/BuildKillerTierListContent"
 import BuildSurvivorLoadoutContent from "components/BuildSurvivorLoadoutContent"
 import Headline from "components/Headline"
+import LinkButton from "components/LinkButton"
 import UserLink from "components/UserLink"
 
 import css from "./style.scss"
@@ -42,6 +43,7 @@ export default class Build extends React.Component {
     linkId: PropTypes.string,
     seoLinkId: PropTypes.string,
     createdAt: PropTypes.string,
+    editable: PropTypes.bool,
   }
 
   getContentComponent(formType) {
@@ -92,6 +94,16 @@ export default class Build extends React.Component {
     return <div className={css.createdAt}><div>Created {agoString}.</div><div>For an older ingame version: <Link to={`/patch/${patch.linkId}`}>{patch.semver}</Link></div></div>
   }
 
+  getEditButton() {
+    if (!this.props.editable) {
+      return null
+    }
+    if (!this.props.linkId) {
+      return null
+    }
+    return <LinkButton className={css.editButton} to={`/edit-build/${this.props.linkId}`}>Edit</LinkButton>
+  }
+
   render() {
     const formType = getFormType(this.props.type)
     const title = this.props.data?.title || formType.title
@@ -102,6 +114,7 @@ export default class Build extends React.Component {
         {this.getTitleLine(formType, title)}
         <ContentComponent data={this.props.data}/>
         {this.getDate()}
+        {this.getEditButton()}
       </div>
     </div>
   }

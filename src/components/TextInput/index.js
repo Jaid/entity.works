@@ -66,6 +66,7 @@ export default class TextInput extends React.Component {
       "meta",
       "focusOnMount",
     ])
+    inputProps.value = this.props.input.value
     if (this.props.focusOnMount) {
       inputProps.ref = this.ref
     }

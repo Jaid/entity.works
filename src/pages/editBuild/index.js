@@ -1,10 +1,10 @@
+import emitPromise from "emit-promise"
 import PropTypes from "prop-types"
 import React from "react"
-import Helmet from "react-helmet"
 
 import {getFormType} from "lib/formTypes"
-import BuildFromDatabase from "components/BuildFromDatabase"
-import LinkButton from "components/LinkButton"
+import socketClient from "lib/socketMiddleware"
+import BuildForm from "components/BuildForm"
 import Title from "components/Title"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
@@ -31,7 +31,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class extends React.Component {
+export default class EditBuildPage extends React.Component {
 
   static propTypes = {
     match: PropTypes.exact({
@@ -40,24 +40,30 @@ export default class extends React.Component {
       url: PropTypes.string.isRequired,
       params: PropTypes.object,
     }).isRequired,
+    history: PropTypes.object.isRequired,
     fetchedData: PropTypes.object,
   }
 
-  render() {
-    if (!this.props.fetchedData?.type) {
-      return `No user found for "${this.props.match.params.id}".`
+  async handleSubmit(values) {
+    const result = await emitPromise.withDefaultTimeout(socketClient, "editBuild", {
+      id: this.props.match.params.id,
+      formData: values,
+    })
+    if (result?.error) {
+      console.error(result)
+      return
     }
-    const buildType = getFormType(this.props.fetchedData.type)
+    this.props.history.push(`/user-build/${result.id}/${result.seoLinkId}`)
+  }
+
+  render() {
+    if (!this.props.fetchedData) {
+      return null
+    }
+    const formType = getFormType(this.props.fetchedData.type)
     return <main className={css.container}>
-      <Helmet>
-        <title>{this.props.fetchedData.data.title || buildType.title} | Dead by Daylight {buildType.title}</title>
-      </Helmet>
-      <Title>{buildType.title}</Title>
-      <BuildFromDatabase entry={this.props.fetchedData}/>
-      <div className={css.buttons}>
-        <LinkButton to={`/user-builds/${buildType.linkId}`}>See more {buildType.pluralTitle}</LinkButton>
-        <LinkButton to={`/build/${buildType.linkId}`}>Build your own {buildType.title}</LinkButton>
-      </div>
+      <Title>Edit Build</Title>
+      <BuildForm formType={formType} initialValues={this.props.fetchedData.data} onSubmit={values => this.handleSubmit(values)}/>
     </main>
   }
 

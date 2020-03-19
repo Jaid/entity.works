@@ -53,6 +53,7 @@ export default class extends React.Component {
     submitting: PropTypes.bool.isRequired,
     handleSubmit: PropTypes.func.isRequired,
     valid: PropTypes.bool.isRequired,
+    initialValues: PropTypes.object,
   }
 
   getFormComponent() {
@@ -68,13 +69,14 @@ export default class extends React.Component {
   }
 
   getSaveButton() {
-    const button = <button className={css.submitButton} disabled={!this.props.loggedIn || !this.props.valid || this.props.submitting} type="submit">Publish</button>
+    const buttonLabel = this.props.initialValues ? "Save changes" : "Publish"
+    const button = <button className={css.submitButton} disabled={!this.props.loggedIn || !this.props.valid || this.props.submitting} type="submit">{buttonLabel}</button>
     if (this.props.loggedIn) {
       return button
     }
     return <div>
       {button}
-      <span className={css.loginNotice}>Login or register to save and publish this build.</span>
+      <div className={css.loginNotice}>Login or register to save and publish this build.</div>
     </div>
   }
 
