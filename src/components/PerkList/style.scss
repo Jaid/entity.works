@@ -1,0 +1,13 @@
+.perk {
+  margin-bottom: -1em;
+  margin-top   : -1em;
+}
+
+.container {
+  margin-bottom: 1em;
+  margin-top   : 1em;
+}
+
+.container>*:nth-child(odd)>*:nth-child(1) {
+  margin-left: 1em;
+}

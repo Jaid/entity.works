@@ -15,6 +15,7 @@ import OfferingBox from "components/OfferingBox"
 import PerkBox from "components/PerkBox"
 import PerkImage from "components/PerkImage"
 import PerkLink from "components/PerkLink"
+import PerkList from "components/PerkList"
 import RichText from "components/RichText"
 
 import css from "./style.scss"
@@ -87,18 +88,7 @@ export default class BuildKillerLoadoutContent extends React.Component {
       this.props.data.perk4,
     ]
     const perkIds = sortBy(uniq(filterNil(perksInput)))
-    if (isEmpty(perkIds)) {
-      return null
-    }
-    const perkElements = perkIds.map(id => {
-      return <div key={id} className={css.perk}>
-        <PerkImage height="3em" perkId={id}/>
-        <PerkLink perkId={id}/>
-      </div>
-    })
-    return <div className={css.perks}>
-      {perkElements}
-    </div>
+    return <PerkList perkIds={perkIds}/>
   }
 
   getDescription() {
