@@ -5,11 +5,14 @@ import {sortBy, uniq} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
 
+import findObject from "lib/findObject"
 import Killer from "lib/Killer"
 import AddOnBox from "components/AddOnBox"
 import KillerBox from "components/KillerBox"
 import OfferingBox from "components/OfferingBox"
 import PerkBox from "components/PerkBox"
+import PerkImage from "components/PerkImage"
+import PerkLink from "components/PerkLink"
 import RichText from "components/RichText"
 
 import css from "./style.scss"
@@ -85,11 +88,13 @@ export default class BuildKillerLoadoutContent extends React.Component {
       return null
     }
     const perkElements = perkIds.map(id => {
+      const perk = findObject(id)
       return <div key={id} className={css.perk}>
-        <PerkBox perkId={id}/>
+        <PerkImage height="3em" perkId={id}/>
+        <PerkLink perkInfo={perk}/>
       </div>
     })
-    return <div>
+    return <div className={css.perks}>
       {perkElements}
     </div>
   }

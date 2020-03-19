@@ -18,8 +18,16 @@
 }
 
 .perk {
-  margin-bottom: 10px;
-  margin-top   : 10px;
+  margin-bottom: -1em;
+  margin-top   : -1em;
+}
+
+.perks>*:nth-child(1)>*:nth-child(1) {
+  margin-left: 1em;
+}
+
+.perks>*:nth-child(3)>*:nth-child(1) {
+  margin-left: 1em;
 }
 
 @media only screen and (max-width: 768px) {

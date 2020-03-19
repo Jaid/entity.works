@@ -5,13 +5,17 @@ import {sortBy, uniq} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
 
+import findObject from "lib/findObject"
 import Item from "lib/Item"
+import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
 import AddOnBox from "components/AddOnBox"
 import AddOnImage from "components/AddOnImage"
 import ItemBox from "components/ItemBox"
 import OfferingBox from "components/OfferingBox"
 import PerkBox from "components/PerkBox"
+import PerkImage from "components/PerkImage"
+import PerkLink from "components/PerkLink"
 import PowerImage from "components/PowerImage"
 import RichText from "components/RichText"
 import SurvivorBox from "components/SurvivorBox"
@@ -91,11 +95,13 @@ export default class BuildSurvivorLoadoutContent extends React.Component {
       return null
     }
     const perkElements = perkIds.map(id => {
+      const perk = findObject(id)
       return <div key={id} className={css.perk}>
-        <PerkBox perkId={id}/>
+        <PerkImage height="3em" perkId={id}/>
+        <PerkLink perkInfo={perk}/>
       </div>
     })
-    return <div>
+    return <div className={css.perks}>
       {perkElements}
     </div>
   }
