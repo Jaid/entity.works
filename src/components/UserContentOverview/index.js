@@ -4,6 +4,7 @@ import React from "react"
 
 import {getFormType} from "lib/formTypes"
 import ContentLinkList from "components/ContentLinkList"
+import SmallerTitle from "components/SmallerTitle"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
 
@@ -33,6 +34,14 @@ export default class extends React.Component {
       PropTypes.arrayOf(PropTypes.object),
     ]),
     fetchedData: PropTypes.array,
+    withTitle: PropTypes.bool,
+  }
+
+  getTitle() {
+    if (!this.props.withTitle) {
+      return null
+    }
+    return <SmallerTitle>User Content</SmallerTitle>
   }
 
   render() {
@@ -47,7 +56,10 @@ export default class extends React.Component {
         text: `${formType.title}s`,
       }
     })
-    return <ContentLinkList links={links}/>
+    return <div>
+      {this.getTitle()}
+      <ContentLinkList links={links}/>
+    </div>
   }
 
 }

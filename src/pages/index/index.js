@@ -1,6 +1,5 @@
 import PropTypes from "prop-types"
 import React from "react"
-import {Link} from "react-router-dom"
 
 import Item from "lib/Item"
 import Killer from "lib/Killer"
@@ -103,8 +102,7 @@ export default class IndexPage extends React.Component {
       <nav className={css.linkList}>
         <ContentLinkList links={links}/>
       </nav>
-      <SmallerTitle>User Content</SmallerTitle>
-      <UserContentOverview/>
+      <UserContentOverview withTitle/>
     </main>
   }
 
