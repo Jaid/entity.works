@@ -36,3 +36,9 @@
   color        : white;
   border-bottom: 1px solid white;
 }
+
+@media only screen and (max-width: 768px) {
+  .modal {
+    min-width: 80vw;
+  }
+}
