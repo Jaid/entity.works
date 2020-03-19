@@ -6,6 +6,7 @@ import AddOn from "lib/AddOn"
 import {flattenRichText} from "lib/normalizeRichText"
 import AddOnBlock from "components/AddOnBlock"
 import CharacterBlock from "components/CharacterBlock"
+import FilteredBuilds from "components/FilteredBuilds"
 import SmallerTitle from "components/SmallerTitle"
 import Title from "components/Title"
 
@@ -64,6 +65,7 @@ export default class AddOnPage extends React.Component {
       <Title>{addOn.title} Add-On</Title>
       <AddOnBlock addOnId={addOn.id}/>
       {this.getOwnerContent(addOn)}
+      <FilteredBuilds className={css.filteredBuilds} filterType="addOn" limit={3} title="User builds" value={addOn.id}/>
     </main>
   }
 

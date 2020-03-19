@@ -11,6 +11,7 @@ import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
 import AddOnBlock from "components/AddOnBlock"
 import CharacterBlock from "components/CharacterBlock"
+import FilteredBuilds from "components/FilteredBuilds"
 import NavigationPage from "components/NavigationPage"
 import PatchesForReferenceText from "components/PatchesForReferenceText"
 import PerkBlock from "components/PerkBlock"
@@ -110,6 +111,7 @@ export default class CharacterPage extends React.Component {
       <PatchesForReferenceText className={css.patchesText} referenceId={this.props.info.id}/>
       {this.getPerks(character)}
       {this.getAddOns(character)}
+      <FilteredBuilds className={css.filteredBuilds} filterType={this.props.type} limit={3} title={`Builds with ${character.shortTitle || character.title}`} value={character.id}/>
     </NavigationPage>
   }
 
