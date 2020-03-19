@@ -1,5 +1,5 @@
 import "fork-awesome/css/fork-awesome.min.css"
-import "react-toastify/dist/ReactToastify.css"
+import "react-toastify/dist/ReactToastify.min.css"
 import "./analytics"
 
 import {ensureArray} from "magina"
