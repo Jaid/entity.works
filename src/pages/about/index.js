@@ -5,6 +5,7 @@ import Helmet from "react-helmet"
 import BackendVersion from "components/BackendVersion"
 import Title from "components/Title"
 
+import html from "./about.md"
 import css from "./style.scss"
 
 /**
@@ -39,16 +40,10 @@ export default class AboutPage extends React.Component {
         <title>About | Entity Works</title>
       </Helmet>
       <Title>Entity Works</Title>
+      <div dangerouslySetInnerHTML={{__html: html}}/>
       <p>
         <div>Entity Works v{process.env.version}</div>
-        <div>Backend: entity-serves <BackendVersion/></div>
-      </p>
-      <p>
-        <div>Source code is available here: <a href="https://github.com/Jaid/entity.works">github.com/Jaid/entity.works</a></div>
-        <div>Most of the static data is available as an npm package: <a href="https://github.com/Jaid/dead-by-daylight">dead-by-daylight</a></div>
-      </p>
-      <p>
-        Contains official Dead by Daylight content copied from the <a href="https://store.steampowered.com/app/381210">Steam release</a>. Copyright by <a href="https://bhvr.com">Behaviour Interactive</a>. The creator of Entity Works is not affiliated with Behaviour Interactive.
+        <div>entity-serves <BackendVersion/></div>
       </p>
     </main>
   }
