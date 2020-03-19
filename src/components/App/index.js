@@ -1,5 +1,5 @@
 import "fork-awesome/css/fork-awesome.min.css"
-import "react-toastify/dist/ReactToastify.min.css"
+import "react-toastify/dist/ReactToastify.css"
 import "./analytics"
 
 import {ensureArray} from "magina"
@@ -9,7 +9,7 @@ import {Helmet} from "react-helmet"
 import {Route, Router} from "react-router-dom"
 import ReactRouterScrollTop from "react-router-scroll-top"
 import Switch from "react-router-transition-switch"
-import {toast, ToastContainer} from "react-toastify"
+import {ToastContainer} from "react-toastify"
 
 import Header from "components/Header"
 
@@ -30,7 +30,7 @@ export default class App extends React.Component {
       <Helmet>
         <title>{_PKG_TITLE}</title>
       </Helmet>
-      <ToastContainer closeButton={false} progressClassName={css.toastProgress} toastClassName={css.toast} newestOnTop/>
+      <ToastContainer className={css.toastContainer} closeButton={false} progressClassName={css.toastProgress} toastClassName={css.toast} newestOnTop/>
       <Router history={history}>
         <ReactRouterScrollTop>
           <Header/>

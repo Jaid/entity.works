@@ -30,6 +30,10 @@ img {
   background: #ffffff9a;
 }
 
+.toastContainer {
+  z-index: 3000;
+}
+
 ::-webkit-scrollbar,
 select::-webkit-scrollbar {
   width      : 6px;
