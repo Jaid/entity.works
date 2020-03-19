@@ -3,7 +3,6 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import {getFormType} from "lib/formTypes"
-import Build from "components/Build"
 import BuildFromDatabase from "components/BuildFromDatabase"
 import Title from "components/Title"
 
@@ -23,11 +22,9 @@ import css from "./style.scss"
   */
 
 @reduxSockConnect(props => ({
-  event: "getLatestBuilds",
+  event: "getBuilds",
   payload: {
-    where: {
-      type: getFormType(props.match.params.type).id,
-    },
+    type: getFormType(props.match.params.type).id,
   },
 }))
 
@@ -51,7 +48,7 @@ export default class extends React.Component {
     if (!this.props.fetchedData) {
       return null
     }
-    const elements = this.props.fetchedData.map(entry => {
+    const elements = this.props.fetchedData.rows.map(entry => {
       return <BuildFromDatabase key={entry.linkId} className={css.build} entry={entry}/>
     })
     const formType = getFormType(this.props.match.params.type)
