@@ -25,7 +25,7 @@ offlineRuntime.install({
     console.debug("SW Event:", "onUpdated")
     store.dispatch({
       type: "@@toast/make",
-      payload: `Updated to entity.works v${_PKG_VERSION}`,
+      payload: "Update ready, please refresh me!",
     })
     store.dispatch({
       type: "@@offlinePlugin/updated",
