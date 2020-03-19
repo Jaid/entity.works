@@ -1,11 +1,11 @@
-$tiers: strong,
+$tiers: top,
 good,
 usable,
 bad,
 trash,
 unrated;
 
-$colors: (strong: rgb(255, 120, 226),
+$colors: (top: rgb(255, 120, 226),
   good: rgb(134, 211, 62),
   usable: rgb(62, 169, 211),
   bad: rgb(255, 101, 80),
@@ -18,5 +18,3 @@ $colors: (strong: rgb(255, 120, 226),
     background: map-get($colors, $tier);
   }
 }
-
-.inner {}
