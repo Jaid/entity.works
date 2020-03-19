@@ -74,7 +74,7 @@ export default class CharacterPage extends React.Component {
   getPerks(character) {
     const ownPerks = Perk.findByOwner(this.props.info.id)
     const perkNodes = ownPerks.map(perk => {
-      return <PerkBlock key={perk.id} className={css.perk} perkInfo={perk}/>
+      return <PerkBlock key={perk.id} className={css.perk} perkId={perk.id}/>
     })
     return <section className={css.perksSection}>
       <Title>{zahl(perkNodes, `${character.shortTitle || character.title} perk`)}</Title>

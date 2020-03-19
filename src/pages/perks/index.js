@@ -55,7 +55,7 @@ export default class PerksPage extends React.Component {
       }
     }
     const perkBlocks = filteredPerks.map(perk => {
-      return <PerkBlock key={perk.id} className={css.perkBlock} perkInfo={perk} displayOwnerBox/>
+      return <PerkBlock key={perk.id} className={css.perkBlock} perkId={perk.id} displayOwnerBox/>
     })
     const links = [
       {

@@ -17,7 +17,7 @@ import css from "./style.scss"
 /**
   * @typedef {{
   *  className: *,
-  *  perkInfo: Object,
+  *  perkId: string,
   *  displayOwnerBox: boolean
   * }} Props
   */
@@ -35,13 +35,14 @@ export default class PerkBlock extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    perkInfo: PropTypes.object.isRequired,
+    perkId: PropTypes.string.isRequired,
     displayOwnerBox: PropTypes.bool,
   }
 
   render() {
+    const perk = findObject(this.props.perkId)
     const getOwnerInfo = () => {
-      const ownerObject = this.props.perkInfo.owner && findObject(this.props.perkInfo.owner)
+      const ownerObject = perk.owner && findObject(perk.owner)
       if (!ownerObject) {
         return null
       }
@@ -60,29 +61,29 @@ export default class PerkBlock extends React.Component {
     const getOwnerNode = () => {
       const ownerInfo = getOwnerInfo()
       if (ownerInfo) {
-        const tooltip = `Teachable version of {${this.props.perkInfo.id}} can be unlocked in the bloodweb of {${ownerInfo.id}} at level ${this.props.perkInfo.level}`
+        const tooltip = `Teachable version of {${perk.id}} can be unlocked in the bloodweb of {${ownerInfo.id}} at level ${perk.level}`
         return <div className={css.owner}>
           {this.props.displayOwnerBox && ownerInfo.box}
           <span className={css.level}>
             <Tooltip html={<RichText className={css.ownerBoxTooltip}>{tooltip}</RichText>}>
               <i className={classnames("fa", "fa-unlock-alt", css.lockIcon)}/>
-              {this.props.perkInfo.level}
+              {perk.level}
             </Tooltip>
           </span>
         </div>
       }
     }
     return <div className={classnames(css.container, this.props.className)}>
-      <Headline miniText="Perk" theme="yellow">{this.props.perkInfo.title}</Headline>
+      <Headline miniText="Perk" theme="yellow">{perk.title}</Headline>
       <section className={css.perkInfo}>
-        <PerkImage className={css.icon} perkId={this.props.perkInfo.id}/>
+        <PerkImage className={css.icon} perkId={perk.id}/>
         <div className={css.description}>
           <div className={css.basicInfo}>
-            <PerkLink className={css.title} perkInfo={this.props.perkInfo}/>
+            <PerkLink className={css.title} perkId={perk.id}/>
             {getOwnerNode()}
           </div>
           <RichText className={css.effect}>
-            {replaceString(this.props.perkInfo.richEffect, "{this}", `{${this.props.perkInfo.id}}`)}
+            {replaceString(perk.richEffect, "{this}", `{${perk.id}}`)}
           </RichText>
         </div>
       </section>

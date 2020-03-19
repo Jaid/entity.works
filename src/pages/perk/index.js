@@ -74,7 +74,7 @@ export default class PerkPage extends React.Component {
         <meta content={this.getFullDescription(perk)} name="description"/>
       </Helmet>
       <Title>{perk.title}</Title>
-      <PerkBlock perkInfo={perk} displayOwnerBox/>
+      <PerkBlock perkId={perk.id} displayOwnerBox/>
       <PatchesForReferenceText className={css.patchesText} referenceId={perk.id}/>
       <FilteredBuilds className={css.filteredBuilds} filterType="perk" limit={3} title={`Builds with ${perk.title}`} value={perk.id}/>
     </main>

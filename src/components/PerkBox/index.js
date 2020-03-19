@@ -32,7 +32,7 @@ export default class PerkBox extends React.Component {
     }
     return <span className={classnames(css.container, this.props.className)}>
       <PerkImage className={classnames(css.icon, this.props.imageClassName)} height={`${this.props.heightEm}em`} perkId={perk.id} style={style}/>
-      <PerkLink perkInfo={perk}/>
+      <PerkLink perkId={perk.id}/>
     </span>
   }
 

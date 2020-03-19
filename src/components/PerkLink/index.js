@@ -3,12 +3,14 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Link} from "react-router-dom"
 
+import findObject from "lib/findObject"
+
 import css from "./style.scss"
 
 /**
   * @typedef {{
   *   className: *,
-  *   perkInfo: Object,
+  *   perkId: string,
   * }} Props
   */
 
@@ -25,12 +27,13 @@ export default class PerkLink extends React.Component {
       PropTypes.arrayOf(PropTypes.string),
       PropTypes.arrayOf(PropTypes.object),
     ]),
-    perkInfo: PropTypes.object.isRequired,
+    perkId: PropTypes.string.isRequired,
   }
 
   render() {
-    const content = this.props.perkInfo.title
-    return <Link className={classnames(css.container, this.props.className)} to={`/perk/${this.props.perkInfo.linkId}`}>
+    const perk = findObject(this.props.perkId)
+    const content = perk.title
+    return <Link className={classnames(css.container, this.props.className)} to={`/perk/${perk.linkId}`}>
       {content}
     </Link>
   }

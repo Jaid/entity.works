@@ -95,10 +95,9 @@ export default class BuildSurvivorLoadoutContent extends React.Component {
       return null
     }
     const perkElements = perkIds.map(id => {
-      const perk = findObject(id)
       return <div key={id} className={css.perk}>
         <PerkImage height="3em" perkId={id}/>
-        <PerkLink perkInfo={perk}/>
+        <PerkLink perkId={id}/>
       </div>
     })
     return <div className={css.perks}>
