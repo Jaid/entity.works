@@ -9,6 +9,8 @@ import findObject from "lib/findObject"
 import Killer from "lib/Killer"
 import AddOnBox from "components/AddOnBox"
 import KillerBox from "components/KillerBox"
+import KillerImage from "components/KillerImage"
+import KillerLink from "components/KillerLink"
 import OfferingBox from "components/OfferingBox"
 import PerkBox from "components/PerkBox"
 import PerkImage from "components/PerkImage"
@@ -44,7 +46,8 @@ export default class BuildKillerLoadoutContent extends React.Component {
       return null
     }
     return <div className={css.killerBox}>
-      <KillerBox killer={killer.id}/>
+      <KillerLink info={killer}>{killer.shortTitle}</KillerLink>
+      <KillerImage className={css.killerImage} killerId={killer.id}/>
     </div>
   }
 

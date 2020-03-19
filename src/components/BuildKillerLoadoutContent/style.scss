@@ -1,8 +1,15 @@
 .container {}
 
 .killerBox {
-  margin-bottom: 10px;
-  font-size    : 120%;
+  margin-bottom : 10px;
+  font-size     : 120%;
+  display       : flex;
+  flex-direction: column-reverse;
+  align-items   : center;
+}
+
+.killerImage {
+  height: 3em;
 }
 
 .description {
