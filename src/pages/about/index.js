@@ -41,10 +41,8 @@ export default class AboutPage extends React.Component {
       </Helmet>
       <Title>Entity Works</Title>
       <div dangerouslySetInnerHTML={{__html: html}}/>
-      <p>
-        <div>Entity Works v{process.env.version}</div>
-        <div>entity-serves <BackendVersion/></div>
-      </p>
+      <div>Entity Works v{process.env.version}</div>
+      <div>entity-serves <BackendVersion/></div>
     </main>
   }
 
