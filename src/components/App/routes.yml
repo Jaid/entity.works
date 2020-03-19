@@ -7,7 +7,7 @@ perks:
 killer: /killer/:id
 survivor: /survivor/:id
 characters: /characters
-data: /data
+objects: /objects
 patchesFor: /patches/for/:id
 addOn: /add-on/:id
 build: /build

@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
+import zahl from "zahl"
 
 import {index} from "lib/findObject"
 import RichText from "components/RichText"
@@ -23,7 +24,7 @@ import css from "./style.scss"
   * @class
   * @extends {React.Component<Props>}
   */
-export default class SurvivorPage extends React.Component {
+export default class ObjectsPage extends React.Component {
 
   static propTypes = {
     className: PropTypes.oneOfType([
@@ -56,7 +57,7 @@ export default class SurvivorPage extends React.Component {
       </tr>
     })
     return <main>
-      <Title>Data</Title>
+      <Title>{zahl(content, "object")}</Title>
       <table className={css.table}>
         <tbody>
           {content}

@@ -26,7 +26,7 @@ const collectUrls = () => {
       url: "characters",
       priority: 0.8,
     },
-    "data",
+    "objects",
     "about",
     "perks/all",
     "build",
