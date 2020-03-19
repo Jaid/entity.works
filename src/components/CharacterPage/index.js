@@ -111,7 +111,7 @@ export default class CharacterPage extends React.Component {
       <PatchesForReferenceText className={css.patchesText} referenceId={this.props.info.id}/>
       {this.getPerks(character)}
       {this.getAddOns(character)}
-      <FilteredBuilds className={css.filteredBuilds} filterType={this.props.type} limit={3} title={`Builds with ${character.shortTitle || character.title}`} value={character.id}/>
+      <FilteredBuilds className={css.filteredBuilds} filterType={this.props.type} limit={3} value={character.id}/>
     </NavigationPage>
   }
 

@@ -76,7 +76,7 @@ export default class PerkPage extends React.Component {
       <Title>{perk.title}</Title>
       <PerkBlock perkId={perk.id} displayOwnerBox/>
       <PatchesForReferenceText className={css.patchesText} referenceId={perk.id}/>
-      <FilteredBuilds className={css.filteredBuilds} filterType="perk" limit={3} title={`Builds with ${perk.title}`} value={perk.id}/>
+      <FilteredBuilds className={css.filteredBuilds} filterType="perk" limit={3} value={perk.id}/>
     </main>
   }
 

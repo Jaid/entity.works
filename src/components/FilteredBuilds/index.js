@@ -49,6 +49,7 @@ export default class FilteredBuilds extends React.Component {
 
   static defaultProps = {
     limit: 3,
+    title: "User builds",
   }
 
   getTitle() {
@@ -60,7 +61,7 @@ export default class FilteredBuilds extends React.Component {
 
   getContent() {
     const entries = this.props.fetchedData.rows.map(entry => {
-      return <BuildFromDatabase className={css.build} key={entry.id} entry={entry}/>
+      return <BuildFromDatabase key={entry.id} className={css.build} entry={entry}/>
     })
     return <div>
       {entries}
