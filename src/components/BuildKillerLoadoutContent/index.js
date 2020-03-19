@@ -7,11 +7,9 @@ import React from "react"
 
 import Killer from "lib/Killer"
 import AddOnBox from "components/AddOnBox"
-import AddOnImage from "components/AddOnImage"
 import KillerBox from "components/KillerBox"
 import OfferingBox from "components/OfferingBox"
 import PerkBox from "components/PerkBox"
-import PowerImage from "components/PowerImage"
 import RichText from "components/RichText"
 
 import css from "./style.scss"
