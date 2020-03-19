@@ -66,7 +66,7 @@ export default class extends React.Component {
     }
     const createdAtMoment = moment(this.props.fetchedData.user.createdAt)
     const agoString = createdAtMoment.fromNow()
-    return <div className={css.createdAt}>registered {agoString}</div>
+    return <div className={css.createdAt} title={this.props.fetchedData.user.createdAt}>Registered {agoString}.</div>
   }
 
   render() {
