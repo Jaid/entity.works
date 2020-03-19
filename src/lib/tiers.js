@@ -1,6 +1,6 @@
 const tiers = {
-  strong: {
-    title: "Strong",
+  top: {
+    title: "Top",
   },
   good: {
     title: "Good",
