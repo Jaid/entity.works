@@ -17,6 +17,10 @@ offlineRuntime.install({
   onUpdateReady: () => {
     console.debug("SW Event:", "onUpdateReady")
     store.dispatch({
+      type: "@@toast/make",
+      payload: "Update ready!",
+    })
+    store.dispatch({
       type: "@@offlinePlugin/updateReady",
     })
     offlineRuntime.applyUpdate()
@@ -24,11 +28,19 @@ offlineRuntime.install({
   onUpdated: () => {
     console.debug("SW Event:", "onUpdated")
     store.dispatch({
+      type: "@@toast/make",
+      payload: `Updated to entity.works v${_PKG_VERSION}`,
+    })
+    store.dispatch({
       type: "@@offlinePlugin/updated",
     })
   },
   onUpdateFailed: () => {
     console.debug("SW Event:", "onUpdateFailed")
+    store.dispatch({
+      type: "@@toast/make",
+      payload: "Update failed",
+    })
     store.dispatch({
       type: "@@offlinePlugin/updateFailed",
     })
