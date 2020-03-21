@@ -18,9 +18,15 @@ import UserLink from "components/UserLink"
 import css from "./style.scss"
 
 /**
-  * @typedef {{
-  *   className: *,
-  * }} Props
+  * @typedef {Object} Props
+  * @prop {string} type
+  * @prop {Object} data
+  * @prop {string} userName
+  * @prop {string} userTitle
+  * @prop {string} linkId
+  * @prop {string} seoLinkId
+  * @prop {string} createdAt
+  * @prop {boolean} editable
   */
 
 /**
