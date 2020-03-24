@@ -1,0 +1,9 @@
+- Fixed an issue that would award progress to both the Killer and the Survivor for the achievement Quick Draw.
+- for: deathslinger
+  text: Fixed an issue that caused the {deathslinger}'s chain winch to not break after shooting.
+- for: trapper
+  text: Fixed an issue that wouldn't award any score event when resetting a bear trap.
+- for: saboteur
+  text: Fixed an issue that caused Survivors with {saboteur} to see the hook auras while being in a locker.
+- for: solidarity, autodidact, forThePeople
+  text: Fixed an issue that caused Survivors to be unable to be healed to full health when using the perks {solidarity}, {autodidact} and {forThePeople} on other Survivors.
