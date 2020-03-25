@@ -2,7 +2,10 @@ import PropTypes from "prop-types"
 import React from "react"
 import reactStringReplace from "react-string-replace"
 
+import AddOn from "lib/AddOn"
+import Killer from "lib/Killer"
 import Perk from "lib/Perk"
+import AddOnImage from "components/AddOnImage"
 import PerkImage from "components/PerkImage"
 import RichText from "components/RichText"
 import SmallerTitle from "components/SmallerTitle"
@@ -30,7 +33,7 @@ export default class ComparePage extends React.Component {
     match: PropTypes.object.isRequired,
   }
 
-  getGamepediaEffect(id) {
+  getGamepediaPerkEffect(id) {
     const text = gamepediaData?.perks?.[id]
     if (!text) {
       return null
@@ -48,17 +51,49 @@ export default class ComparePage extends React.Component {
           <PerkImage height="40px" perkId={perk.id}/>
         </td>
         <td>
-          {perk.title}<br/><br/>
+          {perk.title}
+          <br/><br/>
           <RichText>{perk.richEffect}</RichText>
         </td>
         <td>
           <div className={css.gamepediaEffect}>
-            {this.getGamepediaEffect(perk.id)}
+            {this.getGamepediaPerkEffect(perk.id)}
           </div>
         </td>
       </tr>
     })
     return elements
+  }
+
+  getKiller(killer) {
+    const addOns = AddOn.allVisible.filter(addOn => {
+      return addOn.for === killer.id
+    })
+    const rows = addOns.map(addOn => {
+      return <tr key={addOn.id}>
+        <td>
+          <AddOnImage addOnId={addOn.id} height="40px"/>
+        </td>
+        <td>
+          {addOn.title}
+          <br/><br/>
+          <RichText>{addOn.richEffect}</RichText>
+        </td>
+        <td>
+          <div className={css.gamepediaEffect}>
+            a
+          </div>
+        </td>
+      </tr>
+    })
+    return <div>
+      <SmallerTitle>{killer.shortTitle}</SmallerTitle>
+      <table className={css.table}>
+        <tbody>
+          {rows}
+        </tbody>
+      </table>
+    </div>
   }
 
   render() {
@@ -73,6 +108,7 @@ export default class ComparePage extends React.Component {
           {this.getPerks()}
         </tbody>
       </table>
+      {Killer.allVisible.map(this.getKiller)}
     </main>
   }
 
