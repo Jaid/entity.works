@@ -1,8 +1,15 @@
 .container {
-  outline : 1px solid rgb(29, 29, 29);
-  width   : 1080px;
-  height  : 1080px;
-  overflow: hidden;
+  outline   : 1px solid rgb(29, 29, 29);
+  overflow  : hidden;
+  width     : 1080px;
+  height    : 1080px;
+  min-width : 1080px;
+  min-height: 1080px;
+}
+
+.showcase {
+  min-height: 1080px;
+  height    : 1080px;
 }
 
 .perk {

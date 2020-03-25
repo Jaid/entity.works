@@ -180,7 +180,6 @@ export default class ComparePage extends React.Component {
     if (!gamepediaData) {
       return "No data cached."
     }
-    console.log(gamepediaData)
     return <main className={css.container}>
       <SmallerTitle>Perks</SmallerTitle>
       <table className={css.table}>

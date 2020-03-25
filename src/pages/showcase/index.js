@@ -51,7 +51,7 @@ export default class ShowcasePage extends React.Component {
     const perks = objects.filter(object => object.type === "perk")
     const sortedPerks = Perk.sortByTitle(perks)
     return <main className={css.container}>
-      <div id="showcase">
+      <div className={css.showcase} id="showcase">
         <div className={css.perks}>
           {sortedPerks.map(this.getPerk)}
         </div>
