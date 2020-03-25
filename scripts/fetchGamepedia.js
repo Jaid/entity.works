@@ -161,7 +161,11 @@ async function job() {
       html = result.body
       const htmlFile = path.join(outputFolder, id, "page.html")
       writeJobs.push(fsp.outputFile(htmlFile, html))
-      data = await properties.getData(html)
+      try {
+        data = await properties.getData(html)
+      } catch (error) {
+        debugger
+      }
     } else {
       try {
         data = await properties.getData()
