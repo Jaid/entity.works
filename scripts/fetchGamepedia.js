@@ -57,6 +57,48 @@ const categories = {
       return result
     },
   },
+  items: {
+    url: "Items",
+    getData(html) {
+      const gamepediaTitleCorrections = {
+        "Map (Item)": "Map",
+        "Toolbox (Item)": "Toolbox",
+        "Flashlight (Item)": "Flashlight",
+      }
+      const dom = cheerio.load(html)
+      const tables = dom("table.wikitable").toArray()
+      const result = {}
+      for (const table of tables) {
+        const trs = dom("tr", table).toArray()
+        for (const tr of trs) {
+          const titleTd = dom(">*:nth-child(2)", tr)
+          const descriptionTd = dom(">*:nth-child(3)", tr)
+          if (!titleTd.length || !descriptionTd.length) {
+            continue
+          }
+          const title = dom.text(titleTd).trim()
+          const titleNormalized = normalizeStringId(gamepediaTitleCorrections[title] || title)
+          const matchingObject = Object.values(deadByDaylight.items).find(object => {
+            const matchNormalized = normalizeStringId(object.title)
+            return matchNormalized === titleNormalized
+          })
+          if (!matchingObject) {
+            continue
+          }
+          result[matchingObject.id] = dom.text(descriptionTd).trim()
+        }
+      }
+      for (const object of Object.values(deadByDaylight.items)) {
+        if (!object.visible) {
+          continue
+        }
+        if (!result[object.id]) {
+          console.log(chalk.yellow(`In dead-by-daylight, but not on Gamepedia: ${object.title}`))
+        }
+      }
+      return result
+    },
+  },
   addOns: {
     url: "Add-ons",
     getData(html) {
