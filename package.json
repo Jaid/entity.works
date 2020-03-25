@@ -70,7 +70,7 @@
     "babel-jest": "^25.1.0",
     "babel-preset-jaid": "^7.3.4",
     "browserslist-config-jaid-web": "^2.3.0",
-    "caniuse-lite": "^1.0.30001036",
+    "caniuse-lite": "^1.0.30001037",
     "change-case": "^4.1.1",
     "cheerio": "^1.0.0-rc.3",
     "cheerio-util": "^2.1.0",
