@@ -3,10 +3,13 @@ import React from "react"
 import reactStringReplace from "react-string-replace"
 
 import AddOn from "lib/AddOn"
+import Item from "lib/Item"
 import Killer from "lib/Killer"
 import Perk from "lib/Perk"
 import AddOnImage from "components/AddOnImage"
 import AddOnLink from "components/AddOnLink"
+import ItemImage from "components/ItemImage"
+import ItemLink from "components/ItemLink"
 import PerkImage from "components/PerkImage"
 import PerkLink from "components/PerkLink"
 import RichText from "components/RichText"
@@ -46,8 +49,30 @@ export default class ComparePage extends React.Component {
     return formattedText
   }
 
-  getGamepediaAddOnsEffect(killerId, addOnId) {
+  getGamepediaAddOnEffect(id) {
+    const text = gamepediaData?.addOns?.[id]
+    if (!text) {
+      return null
+    }
+    const formattedText = reactStringReplace(text, "\n", () => {
+      return <div className={css.lineBreak}/>
+    })
+    return formattedText
+  }
+
+  getGamepediaKillerAddOnEffect(killerId, addOnId) {
     const text = gamepediaData?.killers?.[killerId]?.addOns?.[addOnId]
+    if (!text) {
+      return null
+    }
+    const formattedText = reactStringReplace(text, "\n", () => {
+      return <div className={css.lineBreak}/>
+    })
+    return formattedText
+  }
+
+  getGamepediaItemEffect(id) {
+    const text = gamepediaData?.items?.[id]
     if (!text) {
       return null
     }
@@ -78,6 +103,48 @@ export default class ComparePage extends React.Component {
     return elements
   }
 
+  getItems() {
+    const elements = Item.allVisible.map(item => {
+      return <tr key={item.id}>
+        <td className={css.iconTd}>
+          <ItemImage height="40px" itemId={item.id}/>
+        </td>
+        <td>
+          <ItemLink itemId={item.id}>{item.title}</ItemLink>
+          <br/><br/>
+          <RichText>{item.richEffect}</RichText>
+        </td>
+        <td>
+          <div className={css.gamepediaEffect}>
+            {this.getGamepediaItemEffect(item.id)}
+          </div>
+        </td>
+      </tr>
+    })
+    return elements
+  }
+
+  getAddOns() {
+    const elements = AddOn.forItem.map(addOn => {
+      return <tr key={addOn.id}>
+        <td className={css.iconTd}>
+          <AddOnImage addOnId={addOn.id} height="40px"/>
+        </td>
+        <td>
+          <AddOnLink addOnId={addOn.id}>{addOn.title}</AddOnLink>
+          <br/><br/>
+          <RichText>{addOn.richEffect}</RichText>
+        </td>
+        <td>
+          <div className={css.gamepediaEffect}>
+            {this.getGamepediaAddOnEffect(addOn.id)}
+          </div>
+        </td>
+      </tr>
+    })
+    return elements
+  }
+
   getKiller(killer) {
     const addOns = AddOn.allVisible.filter(addOn => {
       return addOn.for === killer.id
@@ -94,7 +161,7 @@ export default class ComparePage extends React.Component {
         </td>
         <td>
           <div className={css.gamepediaEffect}>
-            {this.getGamepediaAddOnsEffect(killer.id, addOn.id)}
+            {this.getGamepediaKillerAddOnEffect(killer.id, addOn.id)}
           </div>
         </td>
       </tr>
@@ -119,6 +186,18 @@ export default class ComparePage extends React.Component {
       <table className={css.table}>
         <tbody>
           {this.getPerks()}
+        </tbody>
+      </table>
+      <SmallerTitle>Items</SmallerTitle>
+      <table className={css.table}>
+        <tbody>
+          {this.getItems()}
+        </tbody>
+      </table>
+      <SmallerTitle>Item Add-Ons</SmallerTitle>
+      <table className={css.table}>
+        <tbody>
+          {this.getAddOns()}
         </tbody>
       </table>
       {Killer.allVisible.map(killer => this.getKiller(killer))}
