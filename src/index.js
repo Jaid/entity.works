@@ -17,6 +17,10 @@ offlineRuntime.install({
   onUpdateReady: () => {
     console.debug("SW Event:", "onUpdateReady")
     store.dispatch({
+      type: "@@toast/make",
+      payload: `Updated to ${_PKG_VERSION}`,
+    })
+    store.dispatch({
       type: "@@offlinePlugin/updateReady",
     })
     offlineRuntime.applyUpdate()
