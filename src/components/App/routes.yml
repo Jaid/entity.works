@@ -1,9 +1,7 @@
 index: /
 patch: /patch/:version
 perk: /perk/:id
-perks:
-  - /perks
-  - /perks/:type
+perks: /perks/:type?
 killer: /killer/:id
 survivor: /survivor/:id
 characters: /characters
@@ -12,20 +10,15 @@ patchesFor: /patches/for/:id
 addOn: /add-on/:id
 build: /build
 buildForm: /build/:formType
-offerings:
-  - /offerings
-  - /offerings/:type
+offerings: /offerings/:type?
 offering: /offering/:id
-items:
-  - /items
-  - /items/:type
+items: /items/:type?
 item: /item/:id
 user: /user/:id
-userBuild:
-  - /user-build/:id
-  - /user-build/:id/:seoId
+userBuild: /user-build/:id/:seoId?
 builds: /user-builds
 buildsForType: /user-builds/:type
 about: /about
 editBuild: /edit-build/:id
 compare: /compare
+showcase: /showcase/:build?

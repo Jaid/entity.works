@@ -72,6 +72,10 @@ class Perk {
     this.linkId = paramCase(id)
   }
 
+  static sortByTitle(array) {
+    return sortBy(array, "title")
+  }
+
 }
 
 Perk.all = Object.entries(deadByDaylight.perks).map(([id, basePerk]) => {
