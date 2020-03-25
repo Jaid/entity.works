@@ -48,10 +48,13 @@ export default class ComparePage extends React.Component {
           <PerkImage height="40px" perkId={perk.id}/>
         </td>
         <td>
+          {perk.title}<br/><br/>
           <RichText>{perk.richEffect}</RichText>
         </td>
         <td>
-          {this.getGamepediaEffect(perk.id)}
+          <div className={css.gamepediaEffect}>
+            {this.getGamepediaEffect(perk.id)}
+          </div>
         </td>
       </tr>
     })
