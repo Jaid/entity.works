@@ -5,4 +5,4 @@ The affected Survivor will passively gain one Health State 16 seconds after use.
 The time required can be modified by Perks and Add-ons that affect Healing speeds.
 This effect is cancelled when the affected Survivor changes their Health State or is picked up by the Killer.
 
-{this} Syringe depletes the Med-Kit on use.
+{this} depletes the Med-Kit on use.

@@ -1,5 +1,6 @@
 {flavor:A metal box containing out of condition tools that could break at any moment. Even without training, can be used to repair or break various mechanical components.}
 
+16 Charges.
+
 Moderately increases Repair speed.
 Slightly decreases Skill Check success zones.
-Unlocks the Sabotage action.

@@ -3,5 +3,7 @@
 Holding and channelling the Map unlocks great potential in one's Aura-reading ability which slowly burns the Map.
 Generators' Auras which you have already encountered are revealed to you for as long as the Map has charges left.+
 
+20 seconds of use.
+
 Start with 1 Object tracked.
 Unlocks the ability to track Generators within a range of 8 meters.

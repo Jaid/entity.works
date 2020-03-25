@@ -1,3 +1,3 @@
 {flavor:An adjustable wrench with a tough grip. Essential in any Toolbox.}
 
-Moderately increases Toolbox Repair Skill Check success zones.
+Hooks sabotaged using the Toolbox take an extra 15 seconds to respawn.

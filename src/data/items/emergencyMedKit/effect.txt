@@ -1,5 +1,7 @@
 {flavor:A sturdy and well organised Med-Kit equipped with top condition emergency supplies.}
 
+16 Charges.
+
 Tremendously increases Altruistic Healing speed.
 Tremendously increases Personal Healing speed.
 Unlocks the Self-Healing action.

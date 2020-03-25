@@ -1,5 +1,7 @@
 {flavor:A sturdy but heavy Flashlight that packs a lot of power.}
 
+12 seconds of use.
+
 Moderately increases Flashlight Beam Brightness.
 Moderately increases Blindness duration.
 Slightly decreases Flashlight Beam accuracy.

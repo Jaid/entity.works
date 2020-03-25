@@ -1,3 +1,3 @@
 {flavor:A portable but heavy spool of copper wire.}
 
-Adds 30 Charges to the Toolbox.
+Adds 12 Charges to the Toolbox.

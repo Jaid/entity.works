@@ -1,4 +1,6 @@
 {flavor:A very portable Flashlight with a good grip. Its efficient technology produces a powerful light while consuming less power.}
 
+8 seconds of use.
+
 Slightly increases Flashlight Beam accuracy.
 Slightly decreases Flashlight Battery Consumption rate.

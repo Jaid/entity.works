@@ -1,3 +1,5 @@
 {flavor:A tarnished and crooked Key, vibrating with ominous power. The Skeleton Key's power cannot be triggered by itself. Various objects can be attached to its jump ring, which channels the Skeleton Key's power into various effects.}
 
+30 seconds of use.
+
 Can be consumed to open the Hatch.

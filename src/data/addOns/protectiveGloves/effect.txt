@@ -1,5 +1,3 @@
 {flavor:Thick gloves, which reduce menial dexterity but protect hands from injury.}
 
-Slightly increases Toolbox Sabotage Skill Check Trigger odds.
-Slightly increases Toolbox Sabotage Skill Check success zones.
-Considerably decreases failed Toolbox Sabotage Skill Check penalty.
+Prevents the Killer from being notified when sabotaging a Hook with the Toolbox.

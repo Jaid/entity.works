@@ -1,5 +1,7 @@
 {flavor:A plastic lunchbox with phosphorescent Halloween Stickers that has been packed with first-aid equipment.}
 
+24 Charges.
+
 Considerably increases Altruistic Healing speed.
 Unlocks the Self-Healing action.
 Makes you considerably more visible.

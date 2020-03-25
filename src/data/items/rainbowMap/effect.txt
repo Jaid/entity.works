@@ -3,6 +3,8 @@
 Holding and channelling the Map unlocks a great potential in one's Aura-reading ability which slowly burns up the Map.
 Objects with Auras which you have already encountered are revealed to you for as long as the Map has charges left.
 
+20 seconds of use.
+
 Start with 3 Objects tracked.
 Unlocks the ability to track Generators within a range of 8 meters.
 Unlocks the ability to track Hooks within a range of 8 meters.

@@ -1,3 +1,5 @@
 {flavor:The bow and shank of a key, vibrating with power. The Broken Key's power cannot be triggered by itself. Various objects can be attached to its jump ring, which channels the Broken Key's power into various effects.}
 
+10 seconds of use.
+
 Requires the use of Add-ons for any abilities.
