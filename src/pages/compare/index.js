@@ -6,7 +6,9 @@ import AddOn from "lib/AddOn"
 import Killer from "lib/Killer"
 import Perk from "lib/Perk"
 import AddOnImage from "components/AddOnImage"
+import AddOnLink from "components/AddOnLink"
 import PerkImage from "components/PerkImage"
+import PerkLink from "components/PerkLink"
 import RichText from "components/RichText"
 import SmallerTitle from "components/SmallerTitle"
 
@@ -58,11 +60,11 @@ export default class ComparePage extends React.Component {
   getPerks() {
     const elements = Perk.allVisible.map(perk => {
       return <tr key={perk.id}>
-        <td>
+        <td className={css.iconTd}>
           <PerkImage height="40px" perkId={perk.id}/>
         </td>
         <td>
-          {perk.title}
+          <PerkLink perkId={perk.id}/>
           <br/><br/>
           <RichText>{perk.richEffect}</RichText>
         </td>
@@ -82,11 +84,11 @@ export default class ComparePage extends React.Component {
     })
     const rows = addOns.map(addOn => {
       return <tr key={addOn.id}>
-        <td>
+        <td className={css.iconTd}>
           <AddOnImage addOnId={addOn.id} height="40px"/>
         </td>
         <td>
-          {addOn.title}
+          <AddOnLink addOnId={addOn.id}>{addOn.title}</AddOnLink>
           <br/><br/>
           <RichText>{addOn.richEffect}</RichText>
         </td>
