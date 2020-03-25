@@ -44,6 +44,17 @@ export default class ComparePage extends React.Component {
     return formattedText
   }
 
+  getGamepediaAddOnsEffect(killerId, addOnId) {
+    const text = gamepediaData?.killers?.[killerId]?.addOns?.[addOnId]
+    if (!text) {
+      return null
+    }
+    const formattedText = reactStringReplace(text, "\n", () => {
+      return <div className={css.lineBreak}/>
+    })
+    return formattedText
+  }
+
   getPerks() {
     const elements = Perk.allVisible.map(perk => {
       return <tr key={perk.id}>
@@ -81,13 +92,13 @@ export default class ComparePage extends React.Component {
         </td>
         <td>
           <div className={css.gamepediaEffect}>
-            a
+            {this.getGamepediaAddOnsEffect(killer.id, addOn.id)}
           </div>
         </td>
       </tr>
     })
     return <div>
-      <SmallerTitle>{killer.shortTitle}</SmallerTitle>
+      <SmallerTitle>{killer.shortTitle} Add-Ons</SmallerTitle>
       <table className={css.table}>
         <tbody>
           {rows}
@@ -108,7 +119,7 @@ export default class ComparePage extends React.Component {
           {this.getPerks()}
         </tbody>
       </table>
-      {Killer.allVisible.map(this.getKiller)}
+      {Killer.allVisible.map(killer => this.getKiller(killer))}
     </main>
   }
 
