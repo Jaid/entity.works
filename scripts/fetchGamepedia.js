@@ -6,22 +6,28 @@ import got from "got"
 import path from "path"
 import yargs from "yargs"
 
+import titleCase from "../src/lib/titleCase"
+
+const gamepediaGot = got.extend({
+  prefixUrl: "https://deadbydaylight.gamepedia.com",
+})
+
 function normalizeStringId(string) {
-  return string.replace(/[^a-z]/gi, "").toLowerCase()
+  return string.replace(/[^\da-z]/gi, "").toLowerCase()
 }
 
 const categories = {
   perks: {
     url: "Perks",
     getData(html) {
-      const perkTitleCorrections = {
+      const gamepediaTitleCorrections = {
         "Barbecue & Chilli": "Barbecue & Chili",
       }
       const dom = cheerio.load(html)
-      const perkTables = dom("table.sortable").toArray()
-      const fetchedPerks = {}
-      for (const perkTable of perkTables) {
-        const trs = dom("tr", perkTable).toArray()
+      const tables = dom("table.sortable").toArray()
+      const result = {}
+      for (const table of tables) {
+        const trs = dom("tr", table).toArray()
         for (const tr of trs) {
           const titleTd = dom(">*:nth-child(2)", tr)
           const descriptionTd = dom(">*:nth-child(3)", tr)
@@ -29,43 +35,144 @@ const categories = {
             continue
           }
           const title = dom.text(titleTd).trim()
-          const titleNormalized = normalizeStringId(perkTitleCorrections[title] || title)
-          const matchingPerk = Object.values(deadByDaylight.perks).find(perk => {
-            const matchNormalized = normalizeStringId(perk.title)
+          const titleNormalized = normalizeStringId(gamepediaTitleCorrections[title] || title)
+          const matchingObject = Object.values(deadByDaylight.perks).find(object => {
+            const matchNormalized = normalizeStringId(object.title)
             return matchNormalized === titleNormalized
           })
-          if (!matchingPerk) {
+          if (!matchingObject) {
             continue
           }
-          fetchedPerks[matchingPerk.id] = dom.text(descriptionTd).trim()
+          result[matchingObject.id] = dom.text(descriptionTd).trim()
         }
       }
-      for (const perk of Object.values(deadByDaylight.perks)) {
-        if (!fetchedPerks[perk.id]) {
-          console.log(chalk.yellow(`In dead-by-daylight, but not on Gamepedia: ${perk.title}`))
+      for (const object of Object.values(deadByDaylight.perks)) {
+        if (!object.visible) {
+          continue
+        }
+        if (!result[object.id]) {
+          console.log(chalk.yellow(`In dead-by-daylight, but not on Gamepedia: ${object.title}`))
         }
       }
-      return fetchedPerks
+      return result
+    },
+  },
+  addOns: {
+    url: "Add-ons",
+    getData(html) {
+      const itemAddOns = Object.values(deadByDaylight.addOns).filter(addOn => {
+        if (!addOn.visible) {
+          return false
+        }
+        return addOn.forType === "item"
+      })
+      const dom = cheerio.load(html)
+      const tables = dom("table").toArray()
+      const result = {}
+      for (const table of tables) {
+        const trs = dom("tr", table).toArray()
+        for (const tr of trs) {
+          const titleTd = dom(">*:nth-child(2)", tr)
+          const descriptionTd = dom(">*:nth-child(4)", tr)
+          if (!titleTd.length || !descriptionTd.length) {
+            continue
+          }
+          const title = dom.text(titleTd).trim()
+          const titleNormalized = normalizeStringId(title)
+          const matchingObject = itemAddOns.find(object => {
+            const matchNormalized = normalizeStringId(object.title)
+            return matchNormalized === titleNormalized
+          })
+          if (!matchingObject) {
+            continue
+          }
+          result[matchingObject.id] = dom.text(descriptionTd).trim()
+        }
+      }
+      for (const object of itemAddOns) {
+        if (!result[object.id]) {
+          console.log(chalk.yellow(`In dead-by-daylight, but not on Gamepedia: ${object.title}`))
+        }
+      }
+      return result
+    },
+  },
+  killers: {
+    async getData() {
+      const result = {}
+      const gamepediaTitleCorrections = {
+        "Grandma's Heart": "Granma's Heart",
+        Jewellery: "Jewelry",
+        "Jewellery Box": "Jewelry Box",
+      }
+      for (const killer of Object.values(deadByDaylight.killers)) {
+        result[killer.id] = {
+          addOns: {},
+        }
+        const url = titleCase(killer.id).replace(/ /g, "_")
+        const gotResult = await gamepediaGot(url)
+        const dom = cheerio.load(gotResult.body)
+        const killerAddOns = Object.values(deadByDaylight.addOns).filter(addOn => {
+          if (!addOn.visible) {
+            return false
+          }
+          return addOn.for === killer.id
+        })
+        const tables = dom("table").toArray()
+        for (const table of tables) {
+          const trs = dom("tr", table).toArray()
+          for (const tr of trs) {
+            const titleTd = dom(">*:nth-child(2)", tr)
+            const descriptionTd = dom(">*:nth-child(4)", tr)
+            if (!titleTd.length || !descriptionTd.length) {
+              continue
+            }
+            const title = dom.text(titleTd).trim()
+            const titleNormalized = normalizeStringId(gamepediaTitleCorrections[title] || title)
+            const matchingObject = killerAddOns.find(object => {
+              const matchNormalized = normalizeStringId(object.title)
+              return matchNormalized === titleNormalized
+            })
+            if (!matchingObject) {
+              continue
+            }
+            result[killer.id].addOns[matchingObject.id] = dom.text(descriptionTd).trim()
+          }
+        }
+        for (const object of killerAddOns) {
+          if (!result[killer.id].addOns[object.id]) {
+            console.log(chalk.yellow(`In dead-by-daylight, but not on Gamepedia: ${object.title}`))
+          }
+        }
+      }
+      return result
     },
   },
 }
 
 async function job() {
   const outputFolder = path.resolve(__dirname, "..", "dist", "gamepedia")
-  const gamepediaGot = got.extend({
-    prefixUrl: "https://deadbydaylight.gamepedia.com",
-  })
   const jobs = Object.entries(categories).map(async ([id, properties]) => {
-    const result = await gamepediaGot(properties.url)
-    const html = result.body
-    const htmlFile = path.join(outputFolder, id, "page.html")
-    const data = properties.getData(html)
+    let html
+    let data
+    const writeJobs = []
+    if (properties.url) {
+      const result = await gamepediaGot(properties.url)
+      html = result.body
+      const htmlFile = path.join(outputFolder, id, "page.html")
+      writeJobs.push(fsp.outputFile(htmlFile, html))
+      data = await properties.getData(html)
+    } else {
+      try {
+        data = await properties.getData()
+      } catch (error) {
+        debugger
+      }
+    }
     const dataFile = path.join(outputFolder, id, "data.yml")
-    const writeJobs = [
-      fsp.outputFile(htmlFile, html),
-      fsp.outputYaml(dataFile, data),
-    ]
+    writeJobs.push(fsp.outputYaml(dataFile, data))
     await Promise.all(writeJobs)
+    console.log(chalk.green(`Fetched ${id}`))
   })
   await Promise.all(jobs)
 }
