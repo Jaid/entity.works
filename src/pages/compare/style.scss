@@ -1,0 +1,14 @@
+.container {}
+
+.table>tbody>tr>td {
+  vertical-align: top;
+
+  &:not(:nth-child(1)) {
+    border : 1px solid white;
+    padding: 20px;
+  }
+}
+
+.lineBreak {
+  height: 16px;
+}
