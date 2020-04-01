@@ -18,7 +18,9 @@
 }
 
 .perkLink {
-  z-index: 1;
+  z-index    : 1;
+  color      : rgba(255, 255, 255, 0.9);
+  text-shadow: 0 0 2px black, 0 0 5px black;
 }
 
 .perks .perk:nth-child(1) {
