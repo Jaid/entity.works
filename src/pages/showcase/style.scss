@@ -1,7 +1,7 @@
 .container {
   outline   : 1px solid rgb(29, 29, 29);
   overflow  : hidden;
-  width     : 1080px;
+  width     : 1920px;
   height    : 1080px;
   min-width : 1080px;
   min-height: 1080px;
@@ -15,6 +15,10 @@
 .perk {
   display    : flex;
   align-items: center;
+}
+
+.perkLink {
+  z-index: 1;
 }
 
 .perks .perk:nth-child(1) {
