@@ -21,6 +21,7 @@
   z-index    : 1;
   color      : rgba(255, 255, 255, 0.9);
   text-shadow: 0 0 2px black, 0 0 5px black;
+  font-size  : 50px;
 }
 
 .perks .perk:nth-child(1) {
@@ -76,8 +77,4 @@
     width       : 400px;
     height      : 2em;
   }
-}
-
-.perkLink {
-  font-size: 50px;
 }
