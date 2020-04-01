@@ -27,10 +27,10 @@ offlineRuntime.install({
   },
   onUpdated: () => {
     console.debug("SW Event:", "onUpdated")
-    store.dispatch({
-      type: "@@toast/make",
-      payload: "Update ready, please refresh me!",
-    })
+    // store.dispatch({
+    //   type: "@@toast/make",
+    //   payload: "Update ready, please refresh me!",
+    // })
     store.dispatch({
       type: "@@offlinePlugin/updated",
     })
