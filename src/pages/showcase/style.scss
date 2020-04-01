@@ -22,20 +22,20 @@
 }
 
 .perks .perk:nth-child(1) {
-  left       : 412px;
+  left       : 832px;
   top        : 200px;
   position   : relative;
   align-items: end;
 
   .perkLink {
     margin-left: -40px;
-    width      : 320px;
+    width      : 400px;
     height     : 2em;
   }
 }
 
 .perks .perk:nth-child(2) {
-  left           : -548px;
+  left           : -968px;
   top            : 80px;
   position       : relative;
   flex-direction : row-reverse;
@@ -44,25 +44,25 @@
 
   .perkLink {
     margin-right: 12px;
-    width       : 260px;
+    width       : 320px;
     height      : 2em;
   }
 }
 
 .perks .perk:nth-child(3) {
-  left    : 549px;
+  left    : 969px;
   top     : -176px;
   position: relative;
 
   .perkLink {
     margin-left: 12px;
-    width      : 260px;
+    width      : 320px;
     height     : 2em;
   }
 }
 
 .perks .perk:nth-child(4) {
-  left          : -412px;
+  left          : -832px;
   top           : -298px;
   position      : relative;
   align-items   : flex-end;
@@ -71,7 +71,7 @@
 
   .perkLink {
     margin-right: -36px;
-    width       : 320px;
+    width       : 400px;
     height      : 2em;
   }
 }
