@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
-import Helmet from "react-helmet"
+import {Helmet} from "react-helmet"
 
 import {getFormType} from "lib/formTypes"
 import BuildFromDatabase from "components/BuildFromDatabase"

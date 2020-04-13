@@ -2,7 +2,7 @@ import {isEmpty} from "has-content"
 import moment from "moment"
 import PropTypes from "prop-types"
 import React from "react"
-import Helmet from "react-helmet"
+import {Helmet} from "react-helmet"
 import {Link} from "react-router-dom"
 import zahl from "zahl"
 
