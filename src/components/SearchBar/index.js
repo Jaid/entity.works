@@ -83,7 +83,17 @@ for (const item of Item.allVisible) {
 
 const getSuggestions = value => {
   const inputValue = value.trim().toLowerCase()
-  return entries.filter(entry => entry.title.toLowerCase().includes(inputValue) || entry.id.toLowerCase().includes(inputValue)).slice(0, 8)
+  let results
+  if (inputValue.length === 1) {
+    results = entries.filter(entry => {
+      return entry.title.toLowerCase()[0] === inputValue || entry.id.toLowerCase()[0] === inputValue
+    })
+  } else {
+    results = entries.filter(entry => {
+      return entry.title.toLowerCase().includes(inputValue) || entry.id.toLowerCase().includes(inputValue)
+    })
+  }
+  return results.slice(0, 8)
 }
 
 const getSuggestionValue = suggestion => suggestion.id
