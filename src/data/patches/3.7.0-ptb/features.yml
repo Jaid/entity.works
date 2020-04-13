@@ -1,0 +1,14 @@
+- When all remaining Survivors in a trial hit the Struggle phase on the hook, the Entity will instantly drain their remaining life bar.
+- The repair speed Efficiency Debuff for each Survivor working on a generator has been increased to 15% (up from 10%).
+- Great Skill Checks while repairing now give 1% bonus progression (down from 2%).
+- Great skill Checks while repairing now give 300 Bloodpoints (up from 150).
+- "Momento Mori interaction adjustment: Mori animations only begin playing at the end of the interaction charge."
+- for: legion
+  text: "Feral Frenzy adjustment: Restored {legion}'s ability to see scratch marks and pools of blood at the beginning of the fatigue (when Feral Frenzy expires)."
+- "The Emblem System: Adjusted the Benevolent Emblem progression thresholds."
+- Added additional player feedback when Survivors attempt to escape a hook by themselves.
+- Improved the Controller sensitivity range in Options.
+- Added score events for interrupting Survivors that are sabotaging a hook, cleansing a totem or digging around in {pig}'s Jigsaw box for a key.
+- Update the Party Management visuals. (Dark silhouette in the lobby)
+- "The Archives New Content: Tome 03"
+- Added a Details Screen to provide a full list of content available in the current Rift (Free + Premium tracks).

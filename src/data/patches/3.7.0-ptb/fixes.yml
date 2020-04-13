@@ -1,0 +1,51 @@
+- "Disturbed Ward: Fixed an issue that could cause the Killer and the Survivor to be unable to vault through a specific window."
+- "Rancid Abattoir: Fixed a Texture seam on the ground tile of the main building."
+- "Temple of Purgation: Fixed an issue that caused the Survivor to be misplaced when entering and exiting a specific locker."
+- "Thompson House: Fixed an invisible collision near a door frame on the second floor of the building."
+- In the Thompson House map an invisible collision prevents from passing through a door frame on the second floor of the building
+- "Thompson House: Fixed missing collision on the second floor of the building."
+- "Ironworks of Misery: Fixed an issue that prevented Survivors from cleansing a specific totem from certain angles."
+- "Mother's Dwelling: Fixed an issue that allowed a hill to be climbed on from its side."
+- Backwater Swamp. Fixed a ground collision issue that caused players to fall out of world.
+- for: hillbilly
+  text: Fixed the blood VFX when performing a Mori.
+- for: hillbilly
+  text: Fixed an issue that caused {hillbilly} to be stuck in an animation when being stunned by a pallet while charging forward with the chainsaw.
+- for: hag
+  text: Fixed the interrupt animation from the Survivor's point of view.
+- for: spirit
+  text: Fixed an issue that caused female Survivors to appear offset when being grabbed while vaulting away from {spirit}.
+- for: deathslinger
+  text: Fixed a clipping issue when aiming down sights with the default head customization.
+- for: nightmare
+  text: Fixed an issue that caused the Snares to appear black to a survivor if the snare was placed while the survivor was awake.
+- Fixed an issue that caused the Flashlight's beam to pass through assets and walls.
+- for: redHerring
+  text: Fixed an issue that caused Survivors with the {redHerring} perk to still see the aura of the last repaired generator while being affected by the Blindness status effect.
+- for: demogorgon
+  text: Fixed an issue that caused a particle emitter to remain present when a Survivor destroys a portal.
+- for: shape
+  text: Fixed an issue that caused the arms to stretch when performing a Mori.
+- for: legion, deathslinger
+  text: Fixed an issue that caused the heads of {legion} and {deathslinger} to snap back when finding a survivor in a locker.
+- for: nightmare
+  text: Fixed an issue that caused most of the shadows generated in the Dream State to be misplaced and stretched.
+- for: oni
+  text: Fixed an issue that allowed {oni} to turn faster when using a controller.
+- for: popGoesTheWeasel, surge
+  text: Fixed an issue that caused the perk {popGoesTheWeasel} to go on cooldown if a generator regresses due to {surge} activating.
+- "Mount Ormond Resort: Fixed various flickering snow textures."
+- for: plague
+  text: Fixed an issue that caused Survivors who are infected by {plague} have no falling animation.
+- Fixed an issue that caused most male Survivors have wide open eyes when using a flashlight.
+- for: kindred, insidious
+  text: Fixed an issue that caused {kindred} to reveal a killer using {insidious}.
+- Fixed an issue that caused Survivors to be stuck in the environment when sabotaging a hook from a certain angle on hill tiles in multiple maps.
+- for: kindred, nightmare
+  text: Fixed an issue that caused Survivors with {kindred} to briefly see {nightmare} when he teleports to a generator while {kindred} is active.
+- for: technician
+  text: Fixed an issue that caused {technician} to nullify the effect of the noise-reduction from {springClamp}
+- for: hillbilly
+  text: Fixed an issue that triggered the basic attack sound after revving the chainsaw and after attacking with the chainsaw.
+- "The Underground Complex: Fixed the audio on some plastic boxes when striking them with a basic attack."
+- Fixed a missing SFX when a Survivor wiggles out of the Killer's grasp.

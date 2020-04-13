@@ -1,0 +1,41 @@
+- text: Coldwind Farm
+  points:
+    - "Torment Creek: Removed strong window and tweaked the tile."
+    - "Rancid Abattoir: Removed the strong window and tweaked the tile. "
+    - "Fractured Cowshed: Removed strong window and tweaked the tile."
+    - "Thompson House: Added a drop down from the second floor and added a window vault.
+Added safety to the combine harvesters vault preventing a strong alternative path."
+
+- text: MacMillan Estate
+  points:
+    - "Coal Tower: Removed strong window and tweaked the tile."
+    - "Groaning Storehouse: Removed strong window and tweaked the tile."
+    - "Ironworks of Misery: Removed strong window and tweaked the tile."
+
+- text: Autohaven Wreckers
+  points:
+    - "Wretched Shop: Removed the RNG window spawn logic and reduced window safety."
+
+- text: Backwater Swamp
+  points:
+    - "Grim Pantry: Removed strong window and tweaked the tile."
+
+- text: "Layout Tweaks: Updated tile-type spacing and or map size."
+  points:
+    - "Rotten Fields: Size and type spacing."
+    - "Wretched Shop: Type spacing."
+    - "Fractured Cowshed: Size and type spacing."
+    - "Thompson House: Size and type spacing."
+    - "Wreckers' Yard: Size and type spacing."
+    - "The Temple of Purgation: Size and type spacing."
+    - "Mother's Dwelling: Type spacing."
+    - "Mount Ormond Resort: Type spacing."
+
+- for: headOn
+  text: Added visual feedback to clearly indicate how soon the perk will be ready for use.
+- for: proveThyself
+  text: Now adds 15% repair speed for each Survivor working on the same generator (up from 10%)
+- for: stakeOut
+  text: Now adds an additional 1% bonus progression for Great skill checks.
+- for: playWithYourFood
+  text: Rewrote the description of the Perk. The effect remains unchanged.
