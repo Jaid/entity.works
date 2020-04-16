@@ -98,10 +98,12 @@
     "build:dev": "NODE_ENV=development webpack",
     "prepareActionJest": "npm run build:prod"
   },
-  "description": "A moderately/considerably/tremendously modern Dead by Daylight wiki.",
+  "description": "Simple wiki for Dead by Daylight. Contains perks, killer powers and patch notes.",
   "funding": "https://github.com/sponsors/jaid",
   "repository": {
     "type": "git",
     "url": "https://github.com/jaid/entity.works"
-  }
+  },
+  "homepage": "https://entity.works",
+  "keywords": []
 }
