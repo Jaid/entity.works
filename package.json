@@ -70,7 +70,7 @@
     "babel-jest": "^25.3.0",
     "babel-preset-jaid": "^7.3.6",
     "browserslist-config-jaid-web": "^2.3.0",
-    "caniuse-lite": "^1.0.30001041",
+    "caniuse-lite": "^1.0.30001042",
     "change-case": "^4.1.1",
     "cheerio": "^1.0.0-rc.3",
     "cheerio-util": "^2.1.0",
@@ -88,7 +88,7 @@
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.2",
     "sitemap": "^6.1.1",
-    "webpack-config-jaid": "^11.7.2",
+    "webpack-config-jaid": "^11.8.0",
     "yargs": "^15.3.1"
   },
   "scripts": {
