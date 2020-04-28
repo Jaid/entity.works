@@ -1,0 +1,34 @@
+- Fixed an issue that allowed Invite notifications to show during a game.
+- Fixed an issue that failed to award a Protection Score Event when taking a hit while the Killer is carrying a Survivor.
+- Fixed an issue that caused all players to be kicked out of the trial when a Killer attempted to pick up a Survivor while that Survivor is being healed.
+- for: decisiveStrike, nurse
+  text: Fixed an issue that caused {decisiveStrike} to not activate when being interrupted by {nurse}'s blink grab.
+- for: franklinsDemise
+  text: Fixed an issue that caused {franklinsDemise} to not reduce the item charges.
+- "The Underground Complex: Fixed a clipping issue on the Survivors' right arm when entering and leaving a locker."
+- "Treatment Theatre: Fixed an issue that caused the camera to clip through the wall of the 2nd floor near the stairs."
+- "Treatment Theatre: Fixed some lights that were too bright."
+- "Treatment Theatre: Fixed an issue that caused survivors to clip through the iron gate near the staircase of the second floor."
+- "Dead Dawg Saloon: Fixed the collision on certain rocks that could be climbed on."
+- "Torment Creek: Fixed a camera issue that allowed a Survivor to see out of world."
+- "Coal Tower: Fixed an issue that allowed survivors to reach a location where the killer couldn't pick them up."
+- for: hag
+  text: Fixed an issue that caused the red stain of a triggered Phantasm Trap to still be visible from the Survivor point of view, when the Hag has the Add-on Rusty Shackles equipped.
+- for: cannibal
+  text: Fixed an issue that caused the Killer to be unable to press the attack button to cancel his chainsaw if the charge bar is full.
+- for: oni
+  text: Fixed an issue that caused the grab animation to trigger twice when picking up a survivor in Blood Fury mode.
+- for: wraith
+  text: Fixed an issue that caused {wraith} to not see his arm when stunned while carrying a Survivor.
+- Fixed an issue that caused the transitioning animation to the struggle phase to not play smoothly when being hooked as a female character.
+- for: soleSurvivor
+  text: Fixed an issue that caused {soleSurvivor} to only light up when the Survivor's aura is being hidden.
+- for: legion
+  text: Polished the animation of {legion}'s vaults during Feral Frenzy.
+- for: cannibal
+  text: Polished the prestige weapon skin.
+- Fixed various clipping issues.
+- for: huntress
+  text: Muted the lullaby for the Killer and the Survivor when in chase.
+- for: huntress
+  text: Fixed an issue that caused the breathing sound to play over the lullaby and other sounds.
