@@ -1,0 +1,33 @@
+- Fixed an issue that could cause Survivors to fall out of world when escaping a trial and transitioning to the match result screen.
+- Fixed an issue that allowed Survivors to vault while staggered after falling.
+- for: oni
+  text: Fixed an issue that caused the grab animation to trigger twice when picking up a survivor in Blood Fuiry mode.
+- for: huntress
+  text: Fixed an issue that caused the camera to reset incorrectly when putting away a hatchet.
+- for: huntress
+  text: Fixed an issue that failed to award bonus Deviousness points when hitting a Survivor with a hatchet.
+- for: oni
+  text: Fixed an issue that caused {oni}'s Kanobo to float briefly when he transitions to Demon Mode.
+- Fixed an issue that could cause the Killer to hang when the match start timer reaches zero.
+- Fixed an animation issue that caused the Killer to be offset when performing a Mori on a Survivor that is quickly spinning.
+- "Thompson House: Fixed invisible collisions in the Farmhouse."
+- for: insidious
+  text: Fixed an issue that caused the {insidious} icon to not be dimmed when the effect is inactive.
+- for: soleSurvivor
+  text: Fixed an issue that could cause a Survivor to crash when being sacrificed while using {soleSurvivor}.
+- Fixed an issue that failed to display the EULA website after confirming that the user is older than 18.
+- "Coldwind Farm: Fixed an issue that caused the Killer stain to be blocked by the corn, causing odd geometrical shapes to appear."
+- for: trapper
+  text: Fixed an issue that caused {trapper}'s Neptune Failure body customization to clip through the camera while the trap collecting animation is playing.
+- Fixed an issue that caused Auras to be visible through certain Survivor's hair or outfits.
+- Fixed an issue that caused the Background music to stop playing for the Killer once all generators have been powered up.
+- Fixed an issue that caused the offering description to be displayed in the bottom right of the screen when hovering the cursor over this area just before they are flipped over in the middle of the screen.
+- for: shape
+  text: Fixed some issues that could cause the Stalking powers to either not give any stalk progress or cause the stalking to continue once the Survivor walks past the field of view.
+- for: spirit
+  text: "{spiritPrayerBeadsBracelet}: Fixed an issue that caused the phase shifting SFX to be silent outside {spirit}'s terror radius if she starts phase shifting while inside the terror radius and then move farther away."
+- "Dead Dawg Saloon: Fixed an issue that caused the lantern's lights to flicker."
+- "Lampkin Lane: Fixed a one sided texture wall and floating grass above the stairs of the basement."
+- for: hag
+  text: Fixed an issue that caused the Red Stain of {hag} to change when teleporting to a triggered trap.
+- Fixed an issue that could sometimes kick a user from a party lobby back to the main menu with an unknown error.
