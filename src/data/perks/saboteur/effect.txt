@@ -1,6 +1,6 @@
 {flavor:Unlocks potential in one's Aura-reading ability.}
 
-See Hook IconHelpLoading hook.png Auras IconHelp auras.png in a radius of 56 meters from the pickup spot if a Survivor is being carried.
+See Hook Auras in a radius of 56 meters from the pickup spot if a Survivor is being carried.
 Unlocks the ability to sabotage Hooks without a Toolbox.
 Sabotaging a Hook without a Toolbox takes 2.5 seconds.
 The Sabotage action has a cool-down of {tiers:90/75/60} seconds.
