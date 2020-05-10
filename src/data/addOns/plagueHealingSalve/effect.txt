@@ -1,3 +1,3 @@
 {flavor:A bitterly pungent paste of crushed roots, which were marinated in fish brine for three days and in wine for two. Applied on skin rashes.}
 
-Slightly decreases cool-down of Vile Purge.
+Slightly decreases cooldown of Vile Purge.

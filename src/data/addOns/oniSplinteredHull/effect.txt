@@ -1,4 +1,4 @@
 {flavor:Fragments of a ship that carried Renjiro Yamaoka. Against all odds, the legendary samurai seemed to survive.}
 
-Moderately reduces the Passive Blood Orb Drop Rate cool-down.
+Moderately reduces the Passive Blood Orb Drop Rate cooldown.
 Survivors drop 1 extra Blood Orb on Game Events.

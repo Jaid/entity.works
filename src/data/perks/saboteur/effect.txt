@@ -3,4 +3,4 @@
 See Hook Auras in a radius of 56 meters from the pickup spot if a Survivor is being carried.
 Unlocks the ability to sabotage Hooks without a Toolbox.
 Sabotaging a Hook without a Toolbox takes 2.5 seconds.
-The Sabotage action has a cool-down of {tiers:90/75/60} seconds.
+The Sabotage action has a cooldown of {tiers:90/75/60} seconds.

@@ -29,7 +29,7 @@
 - for: monitorAndAbuse
   text: The FOV values are {tiers:3/5/10} instead of {tiers:slightly/moderately/considerably} increased. Also simplified the Terror Radius value so that each tier modifies the Terror Radius by the same value, 8 meters instead of 6/7/8.
 - for: spiesFromTheShadows
-  text: Added a 5 second cool-down when the perk triggers.
+  text: Added a 5 second cooldown when the perk triggers.
 - for: thanatophobia
   text: Tier values are incremented at a rate of {tiers:4%/5%/6%} up to a maximum of {tiers:16%/20%/24%}.
 

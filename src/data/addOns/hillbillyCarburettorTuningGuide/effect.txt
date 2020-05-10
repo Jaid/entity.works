@@ -1,6 +1,6 @@
 {flavor:A crudely drawn guide to properly adjust and tune a Chainsaw carburettor.}
 
 Moderately reduces Chainsaw Charge time.
-Slightly decreases Chainsaw cool-down.
+Slightly decreases Chainsaw cooldown.
 Slightly reduces the Time penalty when bumping into obstacles.
 Slightly decreases the range of Chainsaw Noises.

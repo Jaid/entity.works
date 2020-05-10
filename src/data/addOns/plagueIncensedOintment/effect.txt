@@ -1,4 +1,4 @@
 {flavor:A dark waxy paste, laced with cedar sap that diffuses a sweet and earthy aroma. Applied directly on infected skin.}
 
 Slightly increases Movement speed while charging Vile Purge.
-Moderately decreases cool-down of Vile Purge.
+Moderately decreases cooldown of Vile Purge.

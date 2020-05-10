@@ -1,7 +1,7 @@
 {flavor:An ECT procedure using a deep wavelength that soothes various mental illnesses. With Carter's Spark as its source, this procedure can cause mild anxiety in the patient.}
 
 Slightly increases Terror Radius while Static Blast is ready.
-Slightly decreases Terror Radius while Static Blast is on cool-down.
+Slightly decreases Terror Radius while Static Blast is on cooldown.
 
 Survivors with Madness II or III suffer from the following Affliction:
 Considerable chance of a distant Heartbeat to play for 15 seconds.

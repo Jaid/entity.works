@@ -1,3 +1,3 @@
 {flavor:A grimy piece of burlap. Spit and elbow grease was enough to wipe down the speargun in the heat of a shootout.}
 
-Slightly decreases Speargun cool-down after missed shots.
+Slightly decreases Speargun cooldown after missed shots.

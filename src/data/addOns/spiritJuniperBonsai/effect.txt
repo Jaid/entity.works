@@ -1,3 +1,3 @@
 {flavor:Dark blue-green foliage bonsai tree. Once the symbol of Yamaoka family tradition.}
 
-Slightly decreases Passive Phase cool-down.
+Slightly decreases Passive Phase cooldown.
