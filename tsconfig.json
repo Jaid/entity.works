@@ -4,4 +4,7 @@
     "src/**/*.js",
     "src/**/*.ts",
   ],
+  "compilerOptions": {
+    "jsx": "react"
+  }
 }
