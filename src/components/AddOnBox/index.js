@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import findObject from "lib/findObject"
+
 import AddOnImage from "src/components/AddOnImage"
 import AddOnLink from "src/components/AddOnLink"
 
