@@ -15,10 +15,10 @@ offlineRuntime.install({
   },
   onUpdateReady: () => {
     console.debug("SW Event:", "onUpdateReady")
-    store.dispatch({
-      type: "@@toast/make",
-      payload: `Updated to ${_PKG_VERSION}`,
-    })
+    // store.dispatch({
+    //   type: "@@toast/make",
+    //   payload: `Updated to ${_PKG_VERSION}`,
+    // })
     store.dispatch({
       type: "@@offlinePlugin/updateReady",
     })
@@ -36,10 +36,10 @@ offlineRuntime.install({
   },
   onUpdateFailed: () => {
     console.debug("SW Event:", "onUpdateFailed")
-    store.dispatch({
-      type: "@@toast/make",
-      payload: "Update failed",
-    })
+    // store.dispatch({
+    //   type: "@@toast/make",
+    //   payload: "Update failed",
+    // })
     store.dispatch({
       type: "@@offlinePlugin/updateFailed",
     })
