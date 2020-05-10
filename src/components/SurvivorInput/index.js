@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Survivor from "lib/Survivor"
-import SurvivorImage from "components/SurvivorImage"
+import SurvivorImage from "src/components/SurvivorImage"
 
 import css from "./style.scss"
 

@@ -4,7 +4,7 @@ import {ensureArray, ensureObject} from "magina"
 import PropTypes from "prop-types"
 import React from "react"
 
-import RichText from "components/RichText"
+import RichText from "src/components/RichText"
 
 import css from "./style.scss"
 

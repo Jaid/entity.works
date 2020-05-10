@@ -4,8 +4,8 @@ import React from "react"
 
 import {getFormType} from "lib/formTypes"
 import socketClient from "lib/socketMiddleware"
-import BuildForm from "components/BuildForm"
-import Title from "components/Title"
+import BuildForm from "src/components/BuildForm"
+import Title from "src/components/Title"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
 

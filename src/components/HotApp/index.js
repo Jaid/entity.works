@@ -1,5 +1,5 @@
 import {hot} from "react-hot-loader"
 
-import App from "components/App"
+import App from "src/components/App"
 
 export default hot(module)(App)

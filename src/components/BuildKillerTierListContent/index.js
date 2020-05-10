@@ -6,9 +6,9 @@ import React from "react"
 import collator from "lib/collator"
 import Killer from "lib/Killer"
 import tiers from "lib/tiers"
-import KillerBox from "components/KillerBox"
-import RichText from "components/RichText"
-import TierBox from "components/TierBox"
+import KillerBox from "src/components/KillerBox"
+import RichText from "src/components/RichText"
+import TierBox from "src/components/TierBox"
 
 import css from "./style.scss"
 

@@ -12,7 +12,7 @@ import ReactRouterScrollTop from "react-router-scroll-top"
 import Switch from "react-router-transition-switch"
 import {ToastContainer} from "react-toastify"
 
-import Header from "components/Header"
+import Header from "src/components/Header"
 
 import history from "./history"
 import routes from "./routes.yml"

@@ -3,7 +3,7 @@ import React from "react"
 import Picture from "react-modern-picture"
 
 import Killer from "lib/Killer"
-import WithKillerTooltip from "components/WithKillerTooltip"
+import WithKillerTooltip from "src/components/WithKillerTooltip"
 
 /**
   * @typedef {{

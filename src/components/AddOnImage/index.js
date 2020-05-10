@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import AddOn from "lib/AddOn"
-import ImagesOverlap from "components/ImagesOverlap"
-import WithAddOnTooltip from "components/WithAddOnTooltip"
+import ImagesOverlap from "src/components/ImagesOverlap"
+import WithAddOnTooltip from "src/components/WithAddOnTooltip"
 
 /**
   * @typedef {{

@@ -4,10 +4,10 @@ import React from "react"
 
 import findObject from "lib/findObject"
 import Perk from "lib/Perk"
-import PerkBox from "components/PerkBox"
-import SurvivorImage from "components/SurvivorImage"
-import Tooltip from "components/Tooltip"
-import css from "components/WithKillerTooltip/style.scss"
+import PerkBox from "src/components/PerkBox"
+import SurvivorImage from "src/components/SurvivorImage"
+import Tooltip from "src/components/Tooltip"
+import css from "src/components/WithKillerTooltip/style.scss"
 
 export default class WithSurvivorTooltip extends React.Component {
 

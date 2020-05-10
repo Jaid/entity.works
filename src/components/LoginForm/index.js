@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Field, reduxForm} from "redux-form"
 
-import TextInput from "components/TextInput"
+import TextInput from "src/components/TextInput"
 
 import css from "./style.scss"
 

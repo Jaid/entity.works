@@ -3,8 +3,8 @@ import React from "react"
 import {Helmet} from "react-helmet"
 
 import formTypes from "lib/formTypes"
-import LinkButton from "components/LinkButton"
-import Title from "components/Title"
+import LinkButton from "src/components/LinkButton"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

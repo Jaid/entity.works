@@ -4,10 +4,10 @@ import React from "react"
 import replaceString from "replace-string"
 
 import findObject from "lib/findObject"
-import KillerImage from "components/KillerImage"
-import PowerImage from "components/PowerImage"
-import RichText from "components/RichText"
-import Tooltip from "components/Tooltip"
+import KillerImage from "src/components/KillerImage"
+import PowerImage from "src/components/PowerImage"
+import RichText from "src/components/RichText"
+import Tooltip from "src/components/Tooltip"
 
 import css from "./style.scss"
 

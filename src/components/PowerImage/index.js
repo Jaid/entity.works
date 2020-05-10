@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Killer from "lib/Killer"
-import ImagesOverlap from "components/ImagesOverlap"
-import WithPowerTooltip from "components/WithPowerTooltip"
+import ImagesOverlap from "src/components/ImagesOverlap"
+import WithPowerTooltip from "src/components/WithPowerTooltip"
 
 /**
   * @typedef {{

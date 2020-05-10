@@ -3,10 +3,10 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import {findPerk} from "lib/findObject"
-import PerkImage from "components/PerkImage"
-import PerkLink from "components/PerkLink"
-import PerkTooltip from "components/PerkTooltip"
-import Tooltip from "components/Tooltip"
+import PerkImage from "src/components/PerkImage"
+import PerkLink from "src/components/PerkLink"
+import PerkTooltip from "src/components/PerkTooltip"
+import Tooltip from "src/components/Tooltip"
 
 import css from "./style.scss"
 

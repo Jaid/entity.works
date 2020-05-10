@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Patch from "lib/Patch"
-import PatchBlock from "components/PatchBlock"
+import PatchBlock from "src/components/PatchBlock"
 
 import css from "./style.scss"
 

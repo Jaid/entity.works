@@ -3,8 +3,8 @@ import React from "react"
 import zahl from "zahl"
 
 import {index} from "lib/findObject"
-import RichText from "components/RichText"
-import Title from "components/Title"
+import RichText from "src/components/RichText"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

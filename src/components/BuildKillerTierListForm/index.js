@@ -4,9 +4,9 @@ import React from "react"
 import {Field} from "redux-form"
 
 import Killer from "lib/Killer"
-import KillerBox from "components/KillerBox"
-import TextInput from "components/TextInput"
-import TierInput from "components/TierInput"
+import KillerBox from "src/components/KillerBox"
+import TextInput from "src/components/TextInput"
+import TierInput from "src/components/TierInput"
 
 import css from "./style.scss"
 

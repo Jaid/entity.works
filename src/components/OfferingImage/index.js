@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Offering from "lib/Offering"
-import ImagesOverlap from "components/ImagesOverlap"
-import WithOfferingTooltip from "components/WithOfferingTooltip"
+import ImagesOverlap from "src/components/ImagesOverlap"
+import WithOfferingTooltip from "src/components/WithOfferingTooltip"
 
 /**
   * @typedef {{

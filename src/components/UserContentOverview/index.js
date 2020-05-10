@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import {getFormType} from "lib/formTypes"
-import ContentLinkList from "components/ContentLinkList"
-import SmallerTitle from "components/SmallerTitle"
+import ContentLinkList from "src/components/ContentLinkList"
+import SmallerTitle from "src/components/SmallerTitle"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
 

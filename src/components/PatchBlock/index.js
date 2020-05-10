@@ -5,10 +5,10 @@ import React from "react"
 
 import findObject, {findPatch} from "lib/findObject"
 import Perk from "lib/Perk"
-import PatchCategory from "components/PatchCategory"
-import PatchHeadline from "components/PatchHeadline"
-import PatchLines from "components/PatchLines"
-import PatchReferenceBlock from "components/PatchReferenceBlock"
+import PatchCategory from "src/components/PatchCategory"
+import PatchHeadline from "src/components/PatchHeadline"
+import PatchLines from "src/components/PatchLines"
+import PatchReferenceBlock from "src/components/PatchReferenceBlock"
 
 import css from "./style.scss"
 

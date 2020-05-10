@@ -8,8 +8,8 @@ import zahl from "zahl"
 import Killer from "lib/Killer"
 import {flattenRichText} from "lib/normalizeRichText"
 import Perk from "lib/Perk"
-import CharacterPage from "components/CharacterPage"
-import Title from "components/Title"
+import CharacterPage from "src/components/CharacterPage"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

@@ -5,10 +5,10 @@ import {Link} from "react-router-dom"
 
 import {charactersLink} from "lib/links"
 import {LogoutLink, ProfileLink} from "lib/loginManager"
-import DesktopHeader from "components/DesktopHeader"
-import LoginButton from "components/LoginButton"
-import MobileHeader from "components/MobileHeader"
-import SearchBar from "components/SearchBar"
+import DesktopHeader from "src/components/DesktopHeader"
+import LoginButton from "src/components/LoginButton"
+import MobileHeader from "src/components/MobileHeader"
+import SearchBar from "src/components/SearchBar"
 
 /**
   * @typedef {{

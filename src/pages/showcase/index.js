@@ -5,8 +5,8 @@ import {Link} from "react-router-dom"
 
 import findObject from "lib/findObject"
 import Perk from "lib/Perk"
-import PerkImage from "components/PerkImage"
-import PerkLink from "components/PerkLink"
+import PerkImage from "src/components/PerkImage"
+import PerkLink from "src/components/PerkLink"
 
 import css from "./style.scss"
 

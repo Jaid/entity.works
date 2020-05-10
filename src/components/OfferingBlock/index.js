@@ -4,10 +4,10 @@ import React from "react"
 import replaceString from "replace-string"
 
 import findObject from "lib/findObject"
-import Headline from "components/Headline"
-import OfferingImage from "components/OfferingImage"
-import OfferingLink from "components/OfferingLink"
-import RichText from "components/RichText"
+import Headline from "src/components/Headline"
+import OfferingImage from "src/components/OfferingImage"
+import OfferingLink from "src/components/OfferingLink"
+import RichText from "src/components/RichText"
 
 import css from "./style.scss"
 

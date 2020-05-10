@@ -6,10 +6,10 @@ import {Link} from "react-router-dom"
 
 import findObject from "lib/findObject"
 import findPatchesForReference from "lib/findPatchesForReference"
-import PatchCategory from "components/PatchCategory"
-import PatchHeadline from "components/PatchHeadline"
-import PatchLines from "components/PatchLines"
-import TextSection from "components/TextSection"
+import PatchCategory from "src/components/PatchCategory"
+import PatchHeadline from "src/components/PatchHeadline"
+import PatchLines from "src/components/PatchLines"
+import TextSection from "src/components/TextSection"
 
 import css from "./style.scss"
 

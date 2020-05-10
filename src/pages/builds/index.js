@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
-import Title from "components/Title"
-import UserContentOverview from "components/UserContentOverview"
+import Title from "src/components/Title"
+import UserContentOverview from "src/components/UserContentOverview"
 
 import css from "./style.scss"
 

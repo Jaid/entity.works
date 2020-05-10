@@ -3,8 +3,8 @@ import React from "react"
 import {Helmet} from "react-helmet"
 
 import {getFormType} from "lib/formTypes"
-import BuildFromDatabase from "components/BuildFromDatabase"
-import Title from "components/Title"
+import BuildFromDatabase from "src/components/BuildFromDatabase"
+import Title from "src/components/Title"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
 

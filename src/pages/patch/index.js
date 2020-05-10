@@ -5,9 +5,9 @@ import {Helmet} from "react-helmet"
 import {NavLink} from "react-router-dom"
 
 import Patch from "lib/Patch"
-import NavigationPage from "components/NavigationPage"
-import PatchBlock from "components/PatchBlock"
-import Title from "components/Title"
+import NavigationPage from "src/components/NavigationPage"
+import PatchBlock from "src/components/PatchBlock"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

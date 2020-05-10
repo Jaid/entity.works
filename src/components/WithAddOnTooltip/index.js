@@ -4,9 +4,9 @@ import React from "react"
 import replaceString from "replace-string"
 
 import findObject from "lib/findObject"
-import AddOnImage from "components/AddOnImage"
-import RichText from "components/RichText"
-import Tooltip from "components/Tooltip"
+import AddOnImage from "src/components/AddOnImage"
+import RichText from "src/components/RichText"
+import Tooltip from "src/components/Tooltip"
 
 import css from "./style.scss"
 

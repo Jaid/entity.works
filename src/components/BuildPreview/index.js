@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import {connect} from "react-redux"
 
-import Build from "components/Build"
+import Build from "src/components/Build"
 
 import css from "./style.scss"
 

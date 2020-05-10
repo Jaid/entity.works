@@ -5,7 +5,7 @@ import React from "react"
 
 import collator from "lib/collator"
 import Perk from "lib/Perk"
-import PerkImage from "components/PerkImage"
+import PerkImage from "src/components/PerkImage"
 
 import css from "./style.scss"
 

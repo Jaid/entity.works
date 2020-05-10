@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import findObject from "lib/findObject"
-import KillerLink from "components/KillerLink"
-import PowerImage from "components/PowerImage"
+import KillerLink from "src/components/KillerLink"
+import PowerImage from "src/components/PowerImage"
 
 import css from "./style.scss"
 

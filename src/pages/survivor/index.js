@@ -7,7 +7,7 @@ import zahl from "zahl"
 
 import Perk from "lib/Perk"
 import Survivor from "lib/Survivor"
-import CharacterPage from "components/CharacterPage"
+import CharacterPage from "src/components/CharacterPage"
 
 import css from "./style.scss"
 

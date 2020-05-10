@@ -4,11 +4,11 @@ import {Helmet} from "react-helmet"
 
 import AddOn from "lib/AddOn"
 import {flattenRichText} from "lib/normalizeRichText"
-import AddOnBlock from "components/AddOnBlock"
-import CharacterBlock from "components/CharacterBlock"
-import FilteredBuilds from "components/FilteredBuilds"
-import SmallerTitle from "components/SmallerTitle"
-import Title from "components/Title"
+import AddOnBlock from "src/components/AddOnBlock"
+import CharacterBlock from "src/components/CharacterBlock"
+import FilteredBuilds from "src/components/FilteredBuilds"
+import SmallerTitle from "src/components/SmallerTitle"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

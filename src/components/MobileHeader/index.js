@@ -5,7 +5,7 @@ import {elastic as BurgerMenu} from "react-burger-menu"
 import Picture from "react-modern-picture"
 import {Link} from "react-router-dom"
 
-import appCss from "components/App/style.scss"
+import appCss from "src/components/App/style.scss"
 
 import icon from "root/icon.png"
 

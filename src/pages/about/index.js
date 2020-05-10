@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 import {Helmet} from "react-helmet"
 
-import BackendVersion from "components/BackendVersion"
-import Title from "components/Title"
+import BackendVersion from "src/components/BackendVersion"
+import Title from "src/components/Title"
 
 import html from "./about.md"
 import css from "./style.scss"

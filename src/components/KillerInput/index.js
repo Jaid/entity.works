@@ -5,7 +5,7 @@ import React from "react"
 import {Field} from "redux-form"
 
 import Killer from "lib/Killer"
-import KillerImage from "components/KillerImage"
+import KillerImage from "src/components/KillerImage"
 
 import css from "./style.scss"
 

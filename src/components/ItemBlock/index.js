@@ -4,10 +4,10 @@ import React from "react"
 import replaceString from "replace-string"
 
 import findObject from "lib/findObject"
-import Headline from "components/Headline"
-import ItemImage from "components/ItemImage"
-import ItemLink from "components/ItemLink"
-import RichText from "components/RichText"
+import Headline from "src/components/Headline"
+import ItemImage from "src/components/ItemImage"
+import ItemLink from "src/components/ItemLink"
+import RichText from "src/components/RichText"
 
 import css from "./style.scss"
 

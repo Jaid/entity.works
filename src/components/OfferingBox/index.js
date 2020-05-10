@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import findObject from "lib/findObject"
-import OfferingImage from "components/OfferingImage"
-import OfferingLink from "components/OfferingLink"
+import OfferingImage from "src/components/OfferingImage"
+import OfferingLink from "src/components/OfferingLink"
 
 import css from "./style.scss"
 

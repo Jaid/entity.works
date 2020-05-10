@@ -4,8 +4,8 @@ import React from "react"
 import replaceString from "replace-string"
 
 import findObject from "lib/findObject"
-import PerkImage from "components/PerkImage"
-import RichText from "components/RichText"
+import PerkImage from "src/components/PerkImage"
+import RichText from "src/components/RichText"
 
 import css from "./style.scss"
 

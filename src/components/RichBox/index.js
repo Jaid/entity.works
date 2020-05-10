@@ -3,13 +3,13 @@ import React from "react"
 import {Link} from "react-router-dom"
 
 import findObject from "lib/findObject"
-import AddOnBox from "components/AddOnBox"
-import ItemBox from "components/ItemBox"
-import KillerBox from "components/KillerBox"
-import OfferingBox from "components/OfferingBox"
-import PatchBox from "components/PatchBox"
-import PerkBox from "components/PerkBox"
-import SurvivorBox from "components/SurvivorBox"
+import AddOnBox from "src/components/AddOnBox"
+import ItemBox from "src/components/ItemBox"
+import KillerBox from "src/components/KillerBox"
+import OfferingBox from "src/components/OfferingBox"
+import PatchBox from "src/components/PatchBox"
+import PerkBox from "src/components/PerkBox"
+import SurvivorBox from "src/components/SurvivorBox"
 
 export default class RichBox extends React.Component {
 

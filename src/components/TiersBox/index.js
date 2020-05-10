@@ -3,8 +3,8 @@ import {last} from "lodash"
 import PropTypes from "prop-types"
 import React from "react"
 
-import TiersTooltip from "components/TiersTooltip"
-import Tooltip from "components/Tooltip"
+import TiersTooltip from "src/components/TiersTooltip"
+import Tooltip from "src/components/Tooltip"
 
 import css from "./style.scss"
 

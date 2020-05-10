@@ -3,7 +3,7 @@ import React from "react"
 import Picture from "react-modern-picture"
 
 import Survivor from "lib/Survivor"
-import WithSurvivorTooltip from "components/WithSurvivorTooltip"
+import WithSurvivorTooltip from "src/components/WithSurvivorTooltip"
 
 /**
   * @typedef {{

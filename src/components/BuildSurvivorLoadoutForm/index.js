@@ -7,12 +7,12 @@ import {Field} from "redux-form"
 
 import AddOn from "lib/AddOn"
 import Item from "lib/Item"
-import AddOnInput from "components/AddOnInput"
-import ItemInput from "components/ItemInput"
-import OfferingInput from "components/OfferingInput"
-import PerkInput from "components/PerkInput"
-import SurvivorInput from "components/SurvivorInput"
-import TextInput from "components/TextInput"
+import AddOnInput from "src/components/AddOnInput"
+import ItemInput from "src/components/ItemInput"
+import OfferingInput from "src/components/OfferingInput"
+import PerkInput from "src/components/PerkInput"
+import SurvivorInput from "src/components/SurvivorInput"
+import TextInput from "src/components/TextInput"
 
 import css from "./style.scss"
 

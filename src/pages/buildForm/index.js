@@ -6,8 +6,8 @@ import {withRouter} from "react-router-dom"
 
 import {getFormType} from "lib/formTypes"
 import socketClient from "lib/socketMiddleware"
-import BuildForm from "components/BuildForm"
-import Title from "components/Title"
+import BuildForm from "src/components/BuildForm"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

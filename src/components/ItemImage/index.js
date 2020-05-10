@@ -2,8 +2,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Item from "lib/Item"
-import ImagesOverlap from "components/ImagesOverlap"
-import WithItemTooltip from "components/WithItemTooltip"
+import ImagesOverlap from "src/components/ImagesOverlap"
+import WithItemTooltip from "src/components/WithItemTooltip"
 
 /**
   * @typedef {{

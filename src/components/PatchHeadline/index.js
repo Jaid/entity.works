@@ -3,7 +3,7 @@ import moment from "moment"
 import PropTypes from "prop-types"
 import React from "react"
 
-import Headline from "components/Headline"
+import Headline from "src/components/Headline"
 
 import css from "./style.scss"
 

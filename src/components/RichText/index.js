@@ -5,9 +5,9 @@ import reactStringReplace from "react-string-replace"
 import splitOnFirst from "split-on-first"
 
 import findObject from "lib/findObject"
-import FlavorText from "components/FlavorText"
-import RichBox from "components/RichBox"
-import TiersBox from "components/TiersBox"
+import FlavorText from "src/components/FlavorText"
+import RichBox from "src/components/RichBox"
+import TiersBox from "src/components/TiersBox"
 
 import css from "./style.scss"
 

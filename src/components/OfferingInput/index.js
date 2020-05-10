@@ -5,7 +5,7 @@ import React from "react"
 
 import collator from "lib/collator"
 import Offering from "lib/Offering"
-import OfferingImage from "components/OfferingImage"
+import OfferingImage from "src/components/OfferingImage"
 
 import css from "./style.scss"
 

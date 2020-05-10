@@ -5,12 +5,12 @@ import {connect} from "react-redux"
 import {Field} from "redux-form"
 
 import Killer from "lib/Killer"
-import AddOnInput from "components/AddOnInput"
-import KillerInput from "components/KillerInput"
-import OfferingInput from "components/OfferingInput"
-import PerkInput from "components/PerkInput"
-import PowerImage from "components/PowerImage"
-import TextInput from "components/TextInput"
+import AddOnInput from "src/components/AddOnInput"
+import KillerInput from "src/components/KillerInput"
+import OfferingInput from "src/components/OfferingInput"
+import PerkInput from "src/components/PerkInput"
+import PowerImage from "src/components/PowerImage"
+import TextInput from "src/components/TextInput"
 
 import css from "./style.scss"
 

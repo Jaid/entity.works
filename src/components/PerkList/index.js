@@ -3,8 +3,8 @@ import {isEmpty} from "has-content"
 import PropTypes from "prop-types"
 import React from "react"
 
-import PerkImage from "components/PerkImage"
-import PerkLink from "components/PerkLink"
+import PerkImage from "src/components/PerkImage"
+import PerkLink from "src/components/PerkLink"
 
 import css from "./style.scss"
 

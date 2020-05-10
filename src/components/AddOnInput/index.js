@@ -5,7 +5,7 @@ import React from "react"
 
 import AddOn from "lib/AddOn"
 import collator from "lib/collator"
-import AddOnImage from "components/AddOnImage"
+import AddOnImage from "src/components/AddOnImage"
 
 import css from "./style.scss"
 

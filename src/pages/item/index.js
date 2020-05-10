@@ -4,8 +4,8 @@ import {Helmet} from "react-helmet"
 
 import Item from "lib/Item"
 import {flattenRichText} from "lib/normalizeRichText"
-import ItemBlock from "components/ItemBlock"
-import Title from "components/Title"
+import ItemBlock from "src/components/ItemBlock"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

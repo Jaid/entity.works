@@ -5,9 +5,9 @@ import React from "react"
 import {Helmet} from "react-helmet"
 
 import Perk from "lib/Perk"
-import NavigationPage from "components/NavigationPage"
-import PerkBlock from "components/PerkBlock"
-import Title from "components/Title"
+import NavigationPage from "src/components/NavigationPage"
+import PerkBlock from "src/components/PerkBlock"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

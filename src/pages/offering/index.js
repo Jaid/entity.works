@@ -4,8 +4,8 @@ import {Helmet} from "react-helmet"
 
 import {flattenRichText} from "lib/normalizeRichText"
 import Offering from "lib/Offering"
-import OfferingBlock from "components/OfferingBlock"
-import Title from "components/Title"
+import OfferingBlock from "src/components/OfferingBlock"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

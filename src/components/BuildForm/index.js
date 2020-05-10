@@ -4,12 +4,12 @@ import React from "react"
 import {connect} from "react-redux"
 import {Field, reduxForm} from "redux-form"
 
-import BuildKillerLoadoutForm from "components/BuildKillerLoadoutForm"
-import BuildKillerTierListForm from "components/BuildKillerTierListForm"
-import BuildPreview from "components/BuildPreview"
-import BuildSurvivorLoadoutForm from "components/BuildSurvivorLoadoutForm"
-import SmallerTitle from "components/SmallerTitle"
-import TextInput from "components/TextInput"
+import BuildKillerLoadoutForm from "src/components/BuildKillerLoadoutForm"
+import BuildKillerTierListForm from "src/components/BuildKillerTierListForm"
+import BuildPreview from "src/components/BuildPreview"
+import BuildSurvivorLoadoutForm from "src/components/BuildSurvivorLoadoutForm"
+import SmallerTitle from "src/components/SmallerTitle"
+import TextInput from "src/components/TextInput"
 
 import css from "./style.scss"
 

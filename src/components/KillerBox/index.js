@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import Killer from "lib/Killer"
-import KillerImage from "components/KillerImage"
-import KillerLink from "components/KillerLink"
+import KillerImage from "src/components/KillerImage"
+import KillerLink from "src/components/KillerLink"
 
 import css from "./style.scss"
 

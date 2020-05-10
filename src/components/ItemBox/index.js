@@ -3,8 +3,8 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import findObject from "lib/findObject"
-import ItemImage from "components/ItemImage"
-import ItemLink from "components/ItemLink"
+import ItemImage from "src/components/ItemImage"
+import ItemLink from "src/components/ItemLink"
 
 import css from "./style.scss"
 

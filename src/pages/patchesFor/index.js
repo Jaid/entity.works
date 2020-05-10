@@ -3,8 +3,8 @@ import React from "react"
 import {Helmet} from "react-helmet"
 
 import findObject from "lib/findObject"
-import RelevantPatches from "components/RelevantPatches"
-import RichTitle from "components/RichTitle"
+import RelevantPatches from "src/components/RelevantPatches"
+import RichTitle from "src/components/RichTitle"
 
 import css from "./style.scss"
 

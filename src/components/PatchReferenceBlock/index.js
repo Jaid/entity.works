@@ -2,10 +2,10 @@ import classnames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 
-import KillerBox from "components/KillerBox"
-import PatchLines from "components/PatchLines"
-import PerkBox from "components/PerkBox"
-import SurvivorBox from "components/SurvivorBox"
+import KillerBox from "src/components/KillerBox"
+import PatchLines from "src/components/PatchLines"
+import PerkBox from "src/components/PerkBox"
+import SurvivorBox from "src/components/SurvivorBox"
 
 import css from "./style.scss"
 

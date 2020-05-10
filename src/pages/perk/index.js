@@ -7,10 +7,10 @@ import {Helmet} from "react-helmet"
 
 import {flattenRichText} from "lib/normalizeRichText"
 import Perk from "lib/Perk"
-import FilteredBuilds from "components/FilteredBuilds"
-import PatchesForReferenceText from "components/PatchesForReferenceText"
-import PerkBlock from "components/PerkBlock"
-import Title from "components/Title"
+import FilteredBuilds from "src/components/FilteredBuilds"
+import PatchesForReferenceText from "src/components/PatchesForReferenceText"
+import PerkBlock from "src/components/PerkBlock"
+import Title from "src/components/Title"
 
 import css from "./style.scss"
 

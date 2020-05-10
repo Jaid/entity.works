@@ -7,9 +7,9 @@ import zahl from "zahl"
 
 import findObject from "lib/findObject"
 import findPatchesForReferenece from "lib/findPatchesForReference"
-import RichText from "components/RichText"
-import SmallerTitle from "components/SmallerTitle"
-import TextSection from "components/TextSection"
+import RichText from "src/components/RichText"
+import SmallerTitle from "src/components/SmallerTitle"
+import TextSection from "src/components/TextSection"
 
 import css from "./style.scss"
 

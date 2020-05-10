@@ -7,9 +7,9 @@ import {Link} from "react-router-dom"
 import zahl from "zahl"
 
 import findPatchForDate from "lib/findPatchForDate"
-import BuildFromDatabase from "components/BuildFromDatabase"
-import SmallerTitle from "components/SmallerTitle"
-import Title from "components/Title"
+import BuildFromDatabase from "src/components/BuildFromDatabase"
+import SmallerTitle from "src/components/SmallerTitle"
+import Title from "src/components/Title"
 
 import reduxSockConnect from "src/packages/redux-sock-connect"
 

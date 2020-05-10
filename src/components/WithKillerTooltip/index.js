@@ -4,10 +4,10 @@ import React from "react"
 
 import findObject from "lib/findObject"
 import Perk from "lib/Perk"
-import KillerImage from "components/KillerImage"
-import PerkBox from "components/PerkBox"
-import PowerBox from "components/PowerBox"
-import Tooltip from "components/Tooltip"
+import KillerImage from "src/components/KillerImage"
+import PerkBox from "src/components/PerkBox"
+import PowerBox from "src/components/PowerBox"
+import Tooltip from "src/components/Tooltip"
 
 import css from "./style.scss"
 

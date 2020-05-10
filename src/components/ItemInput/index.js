@@ -5,7 +5,7 @@ import React from "react"
 
 import collator from "lib/collator"
 import Item from "lib/Item"
-import ItemImage from "components/ItemImage"
+import ItemImage from "src/components/ItemImage"
 
 import css from "./style.scss"
 

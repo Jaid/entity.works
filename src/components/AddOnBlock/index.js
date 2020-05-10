@@ -4,10 +4,10 @@ import React from "react"
 import replaceString from "replace-string"
 
 import AddOn from "lib/AddOn"
-import AddOnImage from "components/AddOnImage"
-import AddOnLink from "components/AddOnLink"
-import Headline from "components/Headline"
-import RichText from "components/RichText"
+import AddOnImage from "src/components/AddOnImage"
+import AddOnLink from "src/components/AddOnLink"
+import Headline from "src/components/Headline"
+import RichText from "src/components/RichText"
 
 import css from "./style.scss"
 

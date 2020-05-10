@@ -4,8 +4,8 @@ import Modal from "react-responsive-modal"
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs"
 
 import loginManager from "lib/loginManager"
-import LoginForm from "components/LoginForm"
-import RegisterForm from "components/RegisterForm"
+import LoginForm from "src/components/LoginForm"
+import RegisterForm from "src/components/RegisterForm"
 
 import css from "./style.scss"
 
