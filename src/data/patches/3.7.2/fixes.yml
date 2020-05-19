@@ -1,0 +1,23 @@
+- Fixed an issue that caused Killers or Survivors to be stuck in a dropped pallet location.
+- Fixed an issue that caused the user to be stuck when hooking or unhooking a Survivor.
+- Fixed an issue that caused {meg} to fly off the hook after being hooked a second time in the Tutorial.
+- for: cannibal
+  text: Fixed an issue that caused the chainsaw SFX to stay active after destroying a pallet.
+- Fixed an issue that caused the Entity Blockers to be invisible and have no smoke VFX after vaulting through a window 3 times.
+- for: nurse
+  text: Fixed an issue that caused {nurse} to be unable to blink in most of the Chapel.
+- for: hillbilly
+  text: Fixed an issue that caused the animation of {hillbilly}'s chainsaw attack to display incorrectly when hitting a wall.
+- for: ghostFace
+  text: Fixed an issue that caused Stalking as {ghostFace} and revealing {ghostFace} as a Survivor to be difficult when hiding in tall grass.
+- for: insidious
+  text: Fixed an issue that caused the Undetectable status to trigger as soon as the Killer stopped moving when using {insidious}.
+- Fixed an issue that caused the Offerings on the offering screen to be displayed smaller.
+- Fixed an issue that caused some generators to be unable to be damaged by the Killer from certain angles.
+- for: nightmare
+  text: Fixed an issue that caused Pallet remains to not be cleared when {nightmare} puts down a Dream Pallet.
+- for: headOn
+  text: Fixed an issue that caused {headOn} to deactivate if another Survivor is grabbed from a locker.
+- for: huntress
+  text: Fixed an issue that caused {huntress}' hatchets' addon on-hit effects to not work.
+- Fixed an issue that caused the end of match music to persist between trials.
