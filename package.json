@@ -14,7 +14,7 @@
     "camel-case": "^4.1.1",
     "chalk": "^4.0.0",
     "classnames": "^2.2.6",
-    "dead-by-daylight": "^1.24.0",
+    "dead-by-daylight": "^1.25.0",
     "debug": "^4.1.1",
     "emit-promise": "^3.1.1",
     "ensure-array": "^1.0.0",
