@@ -1,4 +1,6 @@
-Forever devoted to her masters cause, she punishes the ungrateful and the guilty with slyness and murderous puzzles. {pig} can move stealthily, dash in ambush attacks and put deadly Reverse Bear Traps on Survivors' heads
+{flavor:Forever devoted to her masters cause, she punishes the ungrateful and the guilty with slyness and murderous puzzles.}
+
+{pig} can move stealthily, dash in ambush attacks and put deadly Reverse Bear Traps on Survivors' heads
 
 Use the Active Ability to assume a crouching position. While crouching:
 

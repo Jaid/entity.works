@@ -1,4 +1,13 @@
-• Tap or hold and release the Power button to launch a bottle of The Afterpiece Tonic. On contact, the bottle will break, emitting a gas cloud that will intoxicate any survivors within the area of effect.
-• Intoxicated Survivors will suffer from impaired vision, reduced movement speed, and involuntary coughing for 2 seconds.
+{flavor:The Deathslinger's ingenuity affords him the ability to reel in bounties with a unique invention - a heavily modified hybrid rifle that replaces conventional ammunition with a rezor-sharp spear affixed to a chain.}
 
-Press and hold the Active Ability button to replenish your bottles of The Afterpiece Tonic.
+The Reedemer:
+
+Press and hold the Power button to aim down sights. Press the Attack button to shoot a spear that can lodge itself in a Survivor, allowing them to be reeled in towards {deathslinger} aganst their will.
+
+Reel:
+
+While a Survivor is speared by The Redeemer, press and hold the Power button to reel them in towards you. Survivors may struggle against the chain or use the environment to prssure the chain to break. Doing so will result in briefly stunning {deathslinger} as well as putting the Survivor in the injured state and applying the Deep Wound status effect. Using a basic attack while a Survivor is speared will break the chain without applying a pentaly to either {deathslinger} or the Survivor. Successfully hitting a Survivor with a basic attack while they are speared and healthy will also apply the Deep Wound status effect.
+
+Reload:
+
+The Redeemer must be reloaded after every shot, before it may be fired again. Press the Active Ability button to reload The Redeemer.

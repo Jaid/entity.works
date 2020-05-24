@@ -1,4 +1,4 @@
-A skill taught by her mother and mastered in the wild. {huntress} can hurl Hatchets with deadly precision.
+{flavor:A skill taught by her mother and mastered in the wild. Huntress can hurl Hatchets with deadly precision.}
 
 • Start the trial with 5 Hatchets.
 • Charge throw for maximum throwing speed.

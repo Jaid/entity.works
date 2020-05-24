@@ -1,4 +1,4 @@
-A heavy cast iron bell imbued with ancient powers. Allows its user to enter and walk the spirit world when rung.
+{flavor:A heavy cast iron bell imbued with ancient powers. Allows its user to enter and walk the spirit world when rung.}
 
 • Grants near total invisibility.
 • Faster movement when invisible.

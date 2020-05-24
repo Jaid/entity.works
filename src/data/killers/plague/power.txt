@@ -1,4 +1,4 @@
-Hold down the Power Bjtton to Charge Vile Purge. Releasing the button unleashes a stream of unfectious bile.
+Hold down the Power Button to Charge Vile Purge. Releasing the button unleashes a stream of unfectious bile.
 
 A Survivor hit by the stream becomes infected. A Survivor accumulates an amount of infection by being hit by the stream, running, or performing interactions. Environmental objects also become infected for a short duration when hit by the stream.
 
