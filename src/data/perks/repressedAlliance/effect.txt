@@ -1,0 +1,7 @@
+{flavor:You're accustomed to being hunted by malicious forces, and you've begun using it to your advantage.}
+
+{this} activates after repairing generators for a total of {80/?/?} seconds.
+
+When repairing a generator while {this} is active, press the Active Ability button to call upon the Entity to block the generator for 30 seconds. {this} deactivates.
+
+Affected generators will be revealed by a white aura to all Survivors.

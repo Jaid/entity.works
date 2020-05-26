@@ -1,0 +1,3 @@
+{flavor:You have been through immense hardship and you're stronger for it.}
+
+Gain the Endurance status effect for {4/?/?} seconds after being healed or having recovered from the dying state. While cursed by a hex, you can fully recover from the dying state.

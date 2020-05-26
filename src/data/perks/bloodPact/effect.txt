@@ -1,0 +1,9 @@
+{flavor:It's as if a latent part of yourself has awakened. You feel like you can reach out beyond yourself for assistance.}
+
+When you or the Obsession are injured, you both see each other's auras.
+
+After healing the Obsession or being healed by the Obsession, you both gain the Haste status effect for {4/?/?} seconds.
+
+Reduces the odds of being the Obsession.
+
+If you are the Obsession, {this} deactivates.
