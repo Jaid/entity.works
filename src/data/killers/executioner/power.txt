@@ -1,0 +1,20 @@
+{flavor:Open the gates of suffering and be judged. The Great Knife splits the ground, giving rise to an infernal construct and spreading agony to all who approach.}
+
+Rites of Judgment:
+
+Hold the Power button to activate, then move in any direction to carve a trail into the ground.
+Survivors who walk or run on the trail will trigger Killer Instinct and be afflicted with Torment. Survivors affected by Torment may be sent to a Cage of Atonement while they are in the dying state.
+
+Special attack: Punishment of the Damned
+
+Press the Attack button while Rites of Judgment is active to perform Punishment of the Damned. This unleashes a wave of force, damaging any Survivors in its path.
+
+Special ability: Cage of Atonement
+
+Press the Active Ability button while standing over a dying Survivor suffering from Torment to send them to a Cage of Atonement. Survivors in a Cage of Atonement can be sacrificed as if they were on a hook. During the second phase of summoning ritual they will be forced to complete skill checks to hold off the Entity.
+
+Being rescued or rescuing another Survivor from a Cage of Atonement will remove Torment.
+
+Special ability: Final Judgment
+
+Press the Active Ability button when standing over a dying Survivor suffering from Torment who has already reached struggle phase on a hook or in a cage to execute them.
