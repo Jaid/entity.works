@@ -2,7 +2,7 @@
 
 When you or the Obsession are injured, you both see each other's auras.
 
-After healing the Obsession or being healed by the Obsession, you both gain the Haste status effect for {4/?/?} seconds.
+After healing the Obsession or being healed by the Obsession, you both gain the Haste status effect for {4/6/8} seconds.
 
 Reduces the odds of being the Obsession.
 

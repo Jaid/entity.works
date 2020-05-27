@@ -1,3 +1,3 @@
 {flavor:Those whose lives are intertwined in darkness are destined to suffer together.}
 
-When a Survivor heals another Survivor for one health state at least {32/?/?} meters away from the Killer, the Survivor performing the healing action will scream, revealing their location and activating {this} for the next 45 seconds. During that time, the Survivor will suffer from the Oblivious status effect when further than 16 meters away from the healed Survivor.
+When a Survivor heals another Survivor for one health state at least 32 meters away from the Killer, the Survivor performing the healing action will scream, revealing their location and activating {this} for the next 45 seconds. During that time, the Survivor will suffer from the Oblivious status effect when further than {16/12/8} meters away from the healed Survivor.
