@@ -1,6 +1,6 @@
 {flavor:You're accustomed to being hunted by malicious forces, and you've begun using it to your advantage.}
 
-{this} activates after repairing generators for a total of {80/70/60} seconds.
+{this} activates after repairing generators for a total of {tiers:80/70/60} seconds.
 
 When repairing a generator while {this} is active, press the Active Ability button to call upon the Entity to block the generator for 30 seconds. {this} deactivates.
 

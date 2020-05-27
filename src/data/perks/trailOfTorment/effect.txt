@@ -2,4 +2,4 @@
 
 After kicking a generator, you become Detectable for 15 seconds. During this time, the generator's yellow aura is revealed to Survivors.
 
-This effect can only trigger once every {120/100/80} seconds.
+This effect can only trigger once every {tiers:120/100/80} seconds.
