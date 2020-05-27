@@ -1,0 +1,3 @@
+{flavor:A doll carved from wax, handcrafted by a prisoner who would soon face their judgment.}
+
+Moderately increases the reach of Punishment of the Damned.

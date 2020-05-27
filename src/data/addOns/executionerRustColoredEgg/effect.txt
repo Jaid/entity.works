@@ -1,0 +1,3 @@
+{flavor:An old-looking egg, colored reddish orange. About the size of quail's egg.}
+
+Survivors affected by Rites of Judgment suffer from the Blindness status effect for 60 seconds.

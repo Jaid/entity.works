@@ -1,0 +1,3 @@
+{flavor:A metal tablet engraved with Aztec figures.}
+
+Considerably increases the total amount of time that Rites of Judgment can be performed.

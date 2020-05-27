@@ -1,0 +1,3 @@
+{flavor:A shred of pink, leopard print fabric. It's difficult to tell what it was used for.}
+
+Slightly increases the duration of Killer Instinct when triggered by Rites of Judgment.

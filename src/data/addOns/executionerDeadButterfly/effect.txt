@@ -1,0 +1,3 @@
+{flavor:A butterfly found on a bed at Wood Side Apartments. It's frail and nearly falls apart when touched.}
+
+Slightly increases the recharge rate of Rites of Judgment.

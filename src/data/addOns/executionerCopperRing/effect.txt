@@ -1,0 +1,3 @@
+{flavor:Found in the basement of Brookhaven Hospital. It's engraved with a picture of a spider.}
+
+Slightly increases the total amount of time that Rites of Judgment can performed.

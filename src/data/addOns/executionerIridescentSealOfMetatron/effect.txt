@@ -1,0 +1,3 @@
+{flavor:A talisman with an odd design inscribed on it. The Entity's influence seem to have altered it.}
+
+When sending a Survivor to a Cage of Atonement, the auras of all Survivors suffering from Torment are revealed for 6 seconds.

@@ -1,0 +1,3 @@
+{flavor:A book about the history and legends of Silent Hill and the surrounding area.}
+
+Survivors affected by Rites of Judgment suffer from the Oblivious status effect for 15 seconds.

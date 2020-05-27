@@ -1,0 +1,3 @@
+{flavor:Found in a refrigerator. It's engraved with a disgusting, bloated face.}
+
+Slightly increases the duration Rites of Judgment trails remain in the environment.

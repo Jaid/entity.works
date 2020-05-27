@@ -1,0 +1,3 @@
+{flavor:A book about an ancient god. Author unknown.}
+
+Injured Survivors affected by Torment suffer from the Hemorrhage status effect.
