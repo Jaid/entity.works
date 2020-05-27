@@ -14,7 +14,7 @@
     "camel-case": "^4.1.1",
     "chalk": "^4.0.0",
     "classnames": "^2.2.6",
-    "dead-by-daylight": "^1.26.0",
+    "dead-by-daylight": "^1.26.1",
     "debug": "^4.1.1",
     "emit-promise": "^3.1.1",
     "ensure-array": "^1.0.0",
@@ -89,7 +89,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-logger": "^3.0.6",
     "rimraf": "^3.0.2",
-    "sitemap": "^6.1.4",
+    "sitemap": "^6.1.5",
     "webpack-config-jaid": "^11.10.0",
     "yargs": "^15.3.1"
   },
