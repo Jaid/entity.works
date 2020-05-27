@@ -1,4 +1,4 @@
-{flavor:A sturdy and well organised Med-Kit equipped with top condition emergency supplies.}
+{flavor:A sturdy and well organized Med-Kit equipped with top condition emergency supplies.}
 
 16 Charges.
 

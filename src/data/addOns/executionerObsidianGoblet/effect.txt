@@ -1,3 +1,3 @@
 {flavor:An ancient looking goblet carved from pure obsidian.}
 
-{executioner} ganis the Undetectable status effect when standing on a Rites of Judgment trail.
+{executioner} gains the Undetectable status effect when standing on a Rites of Judgment trail.
