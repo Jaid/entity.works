@@ -1,0 +1,46 @@
+- "Dead Dawg Saloon: Fixed an area where Killers couldn't follow Survivors. between a wall and a Cactus."
+- "Haddonfield: Fixed a missing collision in the street that could cause users to fall out of world."
+- "Torment Creek: Fixed a superfluous collision preventing the users from getting up the basement stair when hugging the - left wall in the Silo."
+- for: nightmare
+  text: Fixed the interrupt animation.
+- Fixed an issue that displayed black bars under the Survivors' names in lobbies.
+- for: doctor
+  text: Fixed an issue that caused {doctor}'s Static Blast to not be translated in other languages.
+- for: ghostFace
+  text: Fixed an issue that could cause the Reveal to not work.
+- "Treatment Theatre: Fixed an invisible collision that prevented projectiles from going through."
+- for: clown
+  text: Fixed an issue that caused the bottles to disappear a moment early after reloading.
+- for: shape
+  text: Fixed an issue that caused {shape}'s Evil Within extending add-ons to only increase the required stalking - amount on the first activation of Evil Within III.
+- for: forThePeople
+  text: Fixed an issue that caused {forThePeople} to activate when performing a heal skillcheck if it is bound to the - same key as the skillcheck action.
+- for: pig
+  text: "Mount Ormond Resort: Fixed an issue that caused Survivors to get stuck between a Jigsaw Box and a hill."
+- "Treatment Theatre: Fixed an issue that allowed Survivors to land on top of a desk once they sprint vaulted a window on - the second floor."
+- "Treatment Theatre: Fixed a specific totem that was unable to be cleansed."
+- for: distortion
+  text: Edited the description of {distortion} to better reflect its effect.
+- Fixed an issue that caused users to be stuck when hooking or unhooking a Survivor.
+- Fixed an issue that caused Female Survivors to not scream when transitioning to the struggle phase on hook.
+- for: wraith
+  text: Fixed an issue that caused the uncloak animation to not cancel when canceling the uncloak action.
+- for: nightmare
+  text: Fixed an issue that caused the top part of the power description tooltip to be slightly cut off in - windowed mode.
+- for: yui
+  text: Fixed an issue that caused Yui to briefly appear cross-eyed during her idle animation.
+
+- for: clown
+  text: Fixed an issue that caused {clown}'s tailcoat cosmetics to clip into his right calf.
+- for: yui
+  text: "Yui Kimura's Sakura Happi: fixed clipping issues with the sleeves."
+- for: zarina
+  text: "Zarina Kassir's Draped Cardigan: Fixed clipping issues with the sleeves and neck"
+- for: doctor
+  text: "The Doctor's Dr. Vivisection: Fixed a visible gap between the neck and shirt."
+- for: nea
+  text: "Nea Karlson's Summit Jacket: Fixed clipping issues on the neck"
+- for: david
+  text: "David King's Hard Headlights: Fixed visible seams during various actions."
+- for: feng
+  text: "Feng Min's Mad World: Fixed a visible hole on the sleeve of the Torso."
