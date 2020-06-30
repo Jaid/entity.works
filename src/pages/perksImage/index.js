@@ -70,7 +70,7 @@ export default class PerksImagePage extends React.Component {
     const perkNames = sortedPerks.map(perk => perk.id).join(", ")
     return <div>
       <div className={css.downloadButton}>
-        <button type="button" onClick={() => this.download(perkNames)}>Download</button>
+        <button type="button" onClick={() => this.download(perkNames)}>Download Png</button>
       </div>
       <main ref={this.canvasRef} className={css.container}>
         <div className={css.showcase} id="showcase">

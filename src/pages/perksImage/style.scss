@@ -1,19 +1,12 @@
 .container {
-  outline   : 1px solid rgb(29, 29, 29);
-  overflow  : hidden;
-  width     : 1920px;
-  height    : 1080px;
-  min-width : 1080px;
-  min-height: 1080px;
+  outline : 1px solid rgb(29, 29, 29);
+  overflow: hidden;
+  width   : 528px;
+  height  : 528px;
 }
 
 .downloadButton {
   margin-bottom: 20px;
-}
-
-.showcase {
-  min-height: 1080px;
-  height    : 1080px;
 }
 
 .perk {
@@ -22,32 +15,25 @@
 }
 
 .perks .perk:nth-child(1) {
-  left       : 832px;
-  top        : 200px;
-  position   : relative;
-  align-items: end;
+  left    : 136px;
+  top     : 1px;
+  position: relative;
 }
 
 .perks .perk:nth-child(2) {
-  left           : -968px;
-  top            : 80px;
-  position       : relative;
-  flex-direction : row-reverse;
-  justify-content: flex-start;
-  text-align     : end;
+  left    : 0;
+  top     : -119px;
+  position: relative;
 }
 
 .perks .perk:nth-child(3) {
-  left    : 969px;
-  top     : -176px;
+  left    : 272px;
+  top     : -375px;
   position: relative;
 }
 
 .perks .perk:nth-child(4) {
-  left          : -832px;
-  top           : -298px;
-  position      : relative;
-  align-items   : flex-end;
-  flex-direction: row-reverse;
-  text-align    : end;
+  left    : 136px;
+  top     : -498px;
+  position: relative;
 }
