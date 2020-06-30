@@ -1,0 +1,53 @@
+.container {
+  outline   : 1px solid rgb(29, 29, 29);
+  overflow  : hidden;
+  width     : 1920px;
+  height    : 1080px;
+  min-width : 1080px;
+  min-height: 1080px;
+}
+
+.downloadButton {
+  margin-bottom: 20px;
+}
+
+.showcase {
+  min-height: 1080px;
+  height    : 1080px;
+}
+
+.perk {
+  display    : flex;
+  align-items: center;
+}
+
+.perks .perk:nth-child(1) {
+  left       : 832px;
+  top        : 200px;
+  position   : relative;
+  align-items: end;
+}
+
+.perks .perk:nth-child(2) {
+  left           : -968px;
+  top            : 80px;
+  position       : relative;
+  flex-direction : row-reverse;
+  justify-content: flex-start;
+  text-align     : end;
+}
+
+.perks .perk:nth-child(3) {
+  left    : 969px;
+  top     : -176px;
+  position: relative;
+}
+
+.perks .perk:nth-child(4) {
+  left          : -832px;
+  top           : -298px;
+  position      : relative;
+  align-items   : flex-end;
+  flex-direction: row-reverse;
+  text-align    : end;
+}

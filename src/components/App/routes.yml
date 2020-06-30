@@ -22,3 +22,4 @@ about: /about
 editBuild: /edit-build/:id
 compare: /compare
 showcase: /showcase/:build?
+perksImage: /perks-image/:build?
