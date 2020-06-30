@@ -4,7 +4,7 @@
   "domain": "entity.works",
   "private": true,
   "webpackConfigJaid": "webapp",
-  "version": "3.27.0",
+  "version": "3.27.1",
   "author": "Jaid <jaid.jsx@gmail.com> (https://github.com/Jaid)",
   "dependencies": {
     "@tippy.js/react": "^3.1.1",
