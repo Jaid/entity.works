@@ -1,3 +1,3 @@
 {flavor:A tiny piece of tinted glass, probably from a broken object. It is impossible to determine its origin.}
 
-Stalking a Survivor for 1 second with Evil Within I for 3 seconds.
+Stalking a Survivor for 1 second with Evil Within I reveals their aura for 3 seconds.

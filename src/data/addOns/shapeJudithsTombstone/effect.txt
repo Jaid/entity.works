@@ -3,4 +3,4 @@
 Kill healthy or injured Survivors with Evil Within III.
 Disables the ability to Stalk with Evil Within III.
 Tremendously increases the amount of Evil required to reach Evil Within III.
-Moderately decreases The Shape's Movement speed.
+Moderately decreases {shape}'s Movement speed.
