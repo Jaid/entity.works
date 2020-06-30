@@ -60,7 +60,7 @@ export default class PerksImagePage extends React.Component {
         <div>
           No build given.
         </div>
-        <Link to="/perksImage/unbreakable,selfCare,adrenaline,wellMakeIt">Example</Link>
+        <Link to="/perks-image/unbreakable,selfCare,adrenaline,wellMakeIt">Example</Link>
       </div>
     }
     const objectIds = uniq(this.props.match.params.build.split(","))
