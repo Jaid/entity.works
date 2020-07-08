@@ -1,0 +1,42 @@
+- "Badham Preschool: Fixed an issue that caused various assets to appear offset, leaving a gap behind them."
+- "Macmillan Estate: Fixed an issue that caused some ground textures to flicker."
+- "Dead Dawg Saloon: Fixed an issue that caused 2 Survivors to be stuck when standing close to each other on the Hangman's Trapdoor as the Generator completes."
+- "Red Forest: Fixed an issue that caused Survivors to get stuck when crouch walking behind a tree."
+- "Haddonfield: Fixed an issue that displayed floating thrashbags in one of the houses's garage."
+- "Haddonfield: Fixed a missing collision above cars and trees that allowed players to land on them."
+- Fixed an issue that caused the Killer to respawn in place when equipping loadout pieces such as a perk, an offering, or an add-on.
+- for: shape, hillbilly
+  text: "{shape} / {hillbilly}: Fixed an issue that caused the Killer to briefly flicker when stunned by having the Survivor wiggle off or when holding a Survivor."
+- Fixed an issue that caused users to receive an error stating that a player from their blocked list is preventing the party from being joined when trying to invite two people to a custom lobby.
+- Fixed an issue that caused Survivors to briefly appear offset from the hook and then snap back to it.
+- Fixed an issue that caused downed survivors to make no sound.
+- for: nurse
+  text: "Temple of Purgation: Fixed an issue that caused the Nurse to be unable to blink in the main building."
+- "Temple of Purgation: Fixed a hole on the side of the main building that prevented the Killer from walking through."
+- for: plague
+  text: "Family Residence: Fixed an issue that prevented {plague} from Ingesting Corruption from a specific fountain."
+- for: plague
+  text: "Treatment Theatre: Fixed an issue that prevented {plague} from Ingesting Corruption from a specific fountain."
+- "Gideon Meat Plant: Fixed an issue that allowed Survivors to jump through a vault point by walking against the edge of a hole and falling further than intended."
+- for: clown
+  text: Fixed an issue that caused the bottles to disappear a moment early after reloading.
+- for: clown
+  text: Fixed an issue that caused {clown} to get a very large speed boost when reloading while using both the {clownVhsPorn} and {clownSmellyInnerSoles}.
+- "Treatment Theatre: Fixed an issue that caused the Killer's projectiles to hit an invisible collision in the middle in the middle of the map."
+- for: distortion
+  text: Edited the description of the perk to better reflect its effect.
+- Fixed an issue that caused users to be stuck when hooking or unhooking a Survivor.
+- Fixed an issue that caused Female Survivors to not scream when transitioning to the struggle phase on hook.
+- for: wraith
+  text: Fixed an issue that caused the uncloak animation to not cancel when canceling the uncloak action.
+- for: legion
+  text: Fixed an issue that displayed the Susie model holding the weapon incorrectly in the lobby.
+- for: legion
+  text: Fixed an issue that caused {legion} to be unable to vault windows which lead to a drop when Frenzied.
+- "The Underground Complex: Fixed an issue that caused the some doorways to lack collision and allowing players to see through the walls."
+- Fixed an issue that prevented crows from spawning when spamming gestures like pointing.
+- Fixed an issue that allowed users to edit settings to gain in-game advantages.
+- for: dwight
+  text: "Dwight's Office Slacks and Watermelon Pants: Fixed an issue that caused {dwight}'s leg to be deformed when wearing the Everyday Office Slacks."
+- for: executioner
+  text: Fixed an issue that caused Malicious Emblem points to not being awarded when sacrificing Survivors in a Cage of Atonement.
