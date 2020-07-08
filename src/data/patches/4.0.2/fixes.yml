@@ -28,7 +28,8 @@
   text: Fixed an issue that caused the trail to rise above certain collisions instead of going through.
 - for: legion
   text: Fixed an issue that caused the Party Crasher outfits to look extremely bright.
-- "Thompson House: Fixed an issue that caused traps placed on the stairs to not activate when a Survivor walked or ran near it."
+- for: hag, trapper
+  text: "Thompson House: Fixed an issue that caused traps placed on the stairs to not activate when a Survivor walked or ran near it."
 - Fixed an issue that would sometimes show the Survivors floating above the hook.
 - for: executioner
   text: Fixed an issue that caused kills from a Cage of Atonement to fail to award progress for Archive challenges which required to kill by any means.
