@@ -1,0 +1,71 @@
+- Fixed an issue that caused the Healthy Obsession achievement to not earn any progress when healing a Survivor marked as the Obsession.
+- for: kindred
+  text: Fixed an issue that caused {kindred} to activate when being sent to a Cage of Atonement.
+- for: bloodWarden
+  text: "Midwich Elementary School: Fixed an issue that caused the entity blockers created by {bloodWarden} to not prevent the Survivors from escaping."
+- Fixed an issue that prevented the profile from showing up when selecting another players profile while on the tally screen.
+- Fixed an issue that would trigger the Midwich siren when Spectating another Survivor opening the Exit gates on different maps.
+- for: forcedPenance
+  text: Fixed an issue that caused {forcedPenance} to trigger a placeholder string when hitting a Survivor that is taking a protection hit.
+- for: executioner
+  text: Fixed an issue that caused {executioner} to turn while performing his ranged attack, causing the ranged attack to go off in a direction he is no longer facing in.
+- for: adrenaline
+  text: Fixed an issue that caused {adrenaline} to trigger and provide a haste buff while the Survivor is still locked in a Cage of Atonement.
+- Fixed missing audio when a Survivor is rescued from a Cage of Atonement.
+- for: david
+  text: Fixed an issue that caused the face of {david} to look distorted to various degrees when playing.
+- Fixed an issue that caused the a placeholder string to show up when rescuing a Survivor from a Cage of Atonement.
+- Fixed an issue that cause a loss of the Bloodpoints when purchased from the Shrine of Secrets while in a Custom Game Lobby.
+- "Midwich Elementary School: Fixed missing texture on top of a table."
+- for: nurse
+  text: "Midwich Elementary School: Fixed an issue that caused the Nurse to be able to Blink out of world."
+- "Midwich Elementary School: Fixed an invisible collision for the Killer next to the Gore Pile on top of the stair case."
+- "Gideon Meat Plant: Fixed an issue that caused survivors to be able to reach a safe spot after vaulting from the balcony."
+- "Midwich Elementary School: Fixed an issue that caused the Killer to be unable to break pallets from one side."
+- for: executioner
+  text: Fixed an issue that caused the trail to rise above certain collisions instead of going through.
+- for: legion
+  text: Fixed an issue that caused the Party Crasher outfits to look extremely bright.
+- "Thompson House: Fixed an issue that caused traps placed on the stairs to not activate when a Survivor walked or ran near it."
+- Fixed an issue that would sometimes show the Survivors floating above the hook.
+- for: executioner
+  text: Fixed an issue that caused kills from a Cage of Atonement to fail to award progress for Archive challenges which required to kill by any means.
+- Fixed an issue that caused the Killer stain to not be visible on certain surfaces.
+- for: executioner
+  text: Fixed an issue that failed to trigger a noise indicator when a Survivor is rescued from a Cage of Atonement.
+- Fixed an issue that sometimes cause the Exit Gate to appear closed after it has been opened by the Killer.
+- for: shape, ghostFace
+  text: "Midwich Elementary School: Fixed an issue that allowed the Killer to stalk a Survivor hidden behind an opened school locker door."
+- for: executioner
+  text: Fixed the animation of the Survivor in a Cage of Atonement when the rescuer is being interrupted by the Killer.
+- for: trapper
+  text: "Midwich Elementary School: Fixed an issue that caused Bear traps to be triggered when walking underneath them."
+- for: executioner
+  text: Fixed an issue that caused the weapon to clip through windows when vaulting.
+- "Badham Preschool: Fixed an issue that prevented Killers to pick up Survivors in a corner of the boiler room."
+- "Mount Ormond Resort: Fixed a totem on the second floor that couldn't be cleansed."
+- "Midwich Elementary School: Fixed missing audio of walking footsteps."
+- for: oni
+  text: Fixed an issue that prevented Blood Fury from activating if the power meter was filled up while carrying a Survivor.
+- for: executioner
+  text: Fixed an issue that would sometimes allow {executioner} to avoid a pallet stun by cancelling the Rites of Judgment into an attack.
+- for: spiesFromTheShadow
+  text: Fixed an issue that caused {spiesFromTheShadow} to have no cooldown.
+- Added additional instructions to the customization and store tooltips to clarify that Outfit Sets cannot be mixed with other cosmetic pieces.
+- "Midwich Elementary School: Fixed an issue that could spawn the hatch under a gore pile."
+- "The Underground Complex: Fixed an invisible collision between the scaffolding in the storage room."
+- for: nightmare
+  text: Fixed an issue that caused Dream Snares to not Hinder Survivors who walk on it.
+- "Midwich Elementary School: Fixed a vaulting asset that could be walked on by falling from the second floor."
+- for: executioner
+  text: Fixed an issue that allowed {executioner} to stand in front of a Cage of Atonement, preventing any possible rescue.
+- for: executioner
+  text: Fixed the walking animation in order to correspond with his movement speed.
+- Fixed an display issue that wouldn't show the barbed wire vignette to spectators when a Survivor is afflicted with Agony.
+- for: hillbilly
+  text: Fixed the chainsaw audio loops.
+- for: hillbilly
+  text: Fixed an issue that caused the chainsaw to sometimes miss the hit detection.
+- Fixed an issue that caused the Ghastly Gateau to incorrectly award 140% instead of 104%.
+- Fixed an issue that caused the Ghastly Gateau to not stack the bonus bloodpoints with other Bonuses.
+- Fixed an issue that would prevent some players from earning the Anniversary Crowns despite escaping with the Crown.

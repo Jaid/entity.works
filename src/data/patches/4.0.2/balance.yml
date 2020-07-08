@@ -1,0 +1,5 @@
+- for: executioner
+  text: Removed the ability for {executioner} to see the aura of the Cage of Atonement and survivors inside them
+- for: executioner
+  text: Added a system that will despawn the Cage of Atonement if {executioner} near it for too long. The Cage of Atonement (and the survivor inside it) will respawn in a new location.
+- Adjusted the spawn rate of event items in bloodwebs.
