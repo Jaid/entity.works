@@ -14,8 +14,10 @@
 - Fixed missing audio when a Survivor is rescued from a Cage of Atonement.
 - for: david
   text: Fixed an issue that caused the face of {david} to look distorted to various degrees when playing.
-- Fixed an issue that caused the a placeholder string to show up when rescuing a Survivor from a Cage of Atonement.
-- Fixed an issue that cause a loss of the Bloodpoints when purchased from the Shrine of Secrets while in a Custom Game Lobby.
+- for: executioner
+  text: Fixed an issue that caused the a placeholder string to show up when rescuing a Survivor from a Cage of Atonement.
+- for: executioner
+  text: Fixed an issue that cause a loss of the Bloodpoints when purchased from the Shrine of Secrets while in a Custom Game Lobby.
 - "Midwich Elementary School: Fixed missing texture on top of a table."
 - for: nurse
   text: "Midwich Elementary School: Fixed an issue that caused the Nurse to be able to Blink out of world."
@@ -49,8 +51,8 @@
   text: Fixed an issue that prevented Blood Fury from activating if the power meter was filled up while carrying a Survivor.
 - for: executioner
   text: Fixed an issue that would sometimes allow {executioner} to avoid a pallet stun by cancelling the Rites of Judgment into an attack.
-- for: spiesFromTheShadow
-  text: Fixed an issue that caused {spiesFromTheShadow} to have no cooldown.
+- for: spiesFromTheShadows
+  text: Fixed an issue that caused {spiesFromTheShadows} to have no cooldown.
 - Added additional instructions to the customization and store tooltips to clarify that Outfit Sets cannot be mixed with other cosmetic pieces.
 - "Midwich Elementary School: Fixed an issue that could spawn the hatch under a gore pile."
 - "The Underground Complex: Fixed an invisible collision between the scaffolding in the storage room."
