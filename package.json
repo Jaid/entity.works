@@ -28,7 +28,7 @@
     "html2canvas": "^1.0.0-rc.5",
     "immer": "^7.0.5",
     "js-cookie": "^2.2.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "modern-normalize": "^0.6.0",
     "moment": "^2.27.0",
     "position-in-range": "^1.0.0",
