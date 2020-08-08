@@ -2,9 +2,12 @@
   "extends": "./tsconfigBase.json",
   "include": [
     "src/**/*.js",
-    "src/**/*.ts",
+    "src/**/*.ts"
   ],
   "compilerOptions": {
     "jsx": "react"
+  },
+  "typeAcquisition": {
+    "enable": true
   }
 }
