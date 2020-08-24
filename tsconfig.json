@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfigBase.json",
+  "extends": "tsconfig-jaid/react",
   "include": [
     "src/**/*.js",
     "src/**/*.ts"
