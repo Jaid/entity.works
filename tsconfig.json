@@ -5,7 +5,8 @@
     "src/**/*.ts"
   ],
   "compilerOptions": {
-    "jsx": "react"
+    "jsx": "react",
+    "baseUrl": "."
   },
   "typeAcquisition": {
     "enable": true
