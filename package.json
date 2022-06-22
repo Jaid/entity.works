@@ -81,7 +81,7 @@
     "eslint": "^7.10.0",
     "eslint-config-jaid-react": "^1.49.0",
     "globby": "^11.0.1",
-    "got": "^11.7.0",
+    "got": "^11.8.5",
     "jest": "^26.4.2",
     "param-case": "^3.0.3",
     "prevent-end": "^1.0.6",
