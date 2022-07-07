@@ -30,7 +30,7 @@
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.20",
     "modern-normalize": "^1.0.0",
-    "moment": "^2.29.0",
+    "moment": "^2.29.4",
     "position-in-range": "^1.0.0",
     "px-by-default": "^1.0.0",
     "query-string": "^6.13.4",
